@@ -1,0 +1,1062 @@
+router static
+vrf 4G_RAN
+address-family ipv4 unicast
+<IPV4> Null0
+<IPV4> Null0
+<IPV4> Null0
+<IPV4> Null0
+#
+neighbor-group MARRing8
+remote-as 64585
+password encrypted <PASSWORD>
+update-source Loopback0
+address-family vpnv4 unicast
+route-policy rp_RRC_VPN_IN in
+route-reflector-client
+route-policy rp_RRC_VPN_IN out
+#
+vrf 4G_OAM
+rd <PORT>
+address-family ipv4 unicast
+label mode per-vrf
+maximum-paths ibgp 2
+network <IPV4> route-policy rp_Set_Default_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Default_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+#
+address-family vpnv4 unicast
+address-family vpnv4 unicast
+#
+interface <*>
+passive
+circuit-type level-2-only
+address-family ipv4 unicast
+prefix-sid index 172
+#
+interface <*>
+passive
+circuit-type level-2-only
+address-family ipv4 unicast
+metric 100 level 2
+#
+prefix-set pl_5GC_GPRS_Gn_C_v6_in
+<IPV6> le 128
+<IPV6> le 128
+end-set
+#
+router isis 13
+is-type level-2-only
+net <*>
+distribute link-state instance-id 1013 level 2
+log adjacency changes
+lsp-gen-interval maximum-wait 1000 initial-wait 1 secondary-wait 10 level 2
+lsp-refresh-interval 65000
+max-lsp-lifetime 65535
+address-family ipv4 unicast
+metric-style wide
+spf-interval maximum-wait 1000 initial-wait 5 secondary-wait 10 level 2
+router-id Loopback0
+redistribute isis 1000 level-2 metric 10000 route-policy rp_NMS_TO_RING
+segment-routing mpls
+#
+neighbor <IPV6>
+remote-as 38351
+bfd fast-detect
+bfd multiplier 3
+bfd minimum-interval 150
+password encrypted <PASSWORD>
+address-family ipv6 unicast
+route-policy rp_5G_RAN_in in
+route-policy rp_5G_RAN_in out
+#
+interface <*>
+passive
+circuit-type level-1-only
+address-family ipv4 unicast
+metric 1000 level 2
+prefix-sid index 184
+#
+interface <*>
+description <*>
+ipv4 address <IPV4> <IPV4>
+ipv4 unreachables enable
+load-interval 30
+dampening 1 250 950 1
+encapsulation dot1q 8
+#
+address-family vpnv6 unicast
+route-policy rp_RRC_VPN_IN in
+route-reflector-client
+route-policy rp_RRC_VPN_IN out
+#
+interface <*>
+passive
+circuit-type level-2-only
+metric 1000 level 2
+address-family ipv4 unicast
+prefix-sid index 781
+#
+interface <*>
+description <*>
+vrf 4G_RAN
+ipv4 address <IPV4> <IPV4>
+encapsulation dot1q 1003
+encapsulation dot1q 1003
+#
+interface <*>
+passive
+circuit-type level-1-only
+address-family ipv4 unicast
+metric 100 level 2
+prefix-sid index 151
+#
+vrf 4G_RAN
+address-family ipv4 unicast
+<IPV4> Null0
+<IPV4> Null0
+<IPV4> Null0
+<IPV4> Null0
+<IPV4> Null0
+#
+ssh server rate-limit 600
+ssh server netconf vrf default
+ssh server v2
+ssh server session-limit 10
+ipsla
+operation 101
+type udp jitter
+destination address <IPV4>
+destination port 6000
+#
+interface <*>
+passive
+circuit-type level-1-only
+address-family ipv4 unicast
+metric 100 level 2
+prefix-sid index 732
+#
+interface <*>
+description <*>
+ipv4 adress <IPV4> <IPV4>
+encapsulation dot1q 875
+#
+vrf 4G_RAN
+address-family ipv4 unicast
+<IP4V> Null0
+<IPV4> Null0
+<IPV4> Null0
+<IPV4> Null0
+#
+vrf 4G_OAM
+rd <PORT>
+address-family ipv4 unicast
+label mode per-vrf
+maximum-paths ibgp 2
+network <IPV4> route-policy TO_MARRing10_VPN_OUT
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+#
+vrf 4G_RAN
+rd <PORT>
+address-family ipv4 unicast
+label mode per-vrf
+maximum-paths ibgp 2
+network <IPV4> route-policy rp_Set_Default_Routes
+network <IPV4> route-policy TO_MARRing10_VPN_OUT
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+#
+interface <*>
+passive
+circuit-type level-1-only
+address-family ipv4 unicast
+metric 100 level 2
+prefix-sid index 750
+#
+neighbor <IPV4>
+remote-as 64585.101
+bfd fast-detect
+bfd multiplier 3
+bfd minimum-interval 150
+local-as 64585.102 no-prepend replace-as
+address-family ipv4 unicast
+route-policy rp_LTE_WCDMA_OAM_in in
+route-policy rp_WCDMA_OAM_out in
+#
+address-family vpnv6 unicast
+route-policy rp_RRC_VPN_IN out
+route-reflector-client
+route-policy rp_RRC6_VPN_OUT out
+#
+interface <*>
+circuit-type level-2-only
+passive
+address-family ipv4 unicast
+metric 100 level 2
+prefix-sid index 700
+#
+vrf 5G_OAM
+address-family ipv6 unicast
+export route-target
+<PORT>
+#
+neighbor <IPV6>
+remote-as 64588
+bfd fast-detect
+bfd multiplier 3
+bfd minimum-interval 150
+password encrypted <PASSWORD>
+address-family ipv6 unicast
+route-policy rp_QD_5GC_CITY_out in
+route-policy rp_QD_5GC_CITY_out out
+#
+address-family vpnv6 unicast
+route-policy rp_RRC_VPN_IN out
+route-reflector-client
+route-policy TO_MARRing8_VPN_OUT out
+#
+import route-target
+<PORT>
+<PORT>01
+#
+interface <*>
+description <*>
+bundle id 5 mode standby
+#
+interface <*>
+encapsulation dot1q 1843
+ipv6 address <IPV6>
+vrf 5G_RAN
+#
+router isis 1000
+is-type level-2-only
+net <*>
+distribute link-state instance-id 1000 level 2
+log adjacency changes
+lsp-refresh-interval 65000
+max-lsp-lifetime 65535
+address-family ipv4 unicast
+metric-style wide
+metric 100000
+spf-interval maximum-wait 1000 initial-wait 5 secondary-wait 10 level 2
+router-id Loopback0
+redistribute isis 3 level-2 metric 10000 route-policy rp_RING_TO_CORE
+segment-routing mpls
+#
+rd <PORT>
+address-family ipv4 unicast
+label mode per-vrf
+maximum-paths ibgp 2
+network <IPV4> route-policy rp_Set_Default_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+#
+interface <*>
+passive
+circuit-type level-2-only
+address-family ipv4 unicast
+prefix-sid index 167
+#
+interface <*>
+description <*>
+ipv4 address <IPV4> <IPV4>
+ipv4 unreachables disable
+load-interval 30
+load-interval 30
+dampening 1 250 950 1
+encapsulation dot1q 15
+#
+interface <*>
+description <*>
+ipv4 address <IPV4> <IPV4>
+ipv4 unreachables enable
+load-interval 30
+dampening 1 250 950 1
+encapsulation dot1q 1001
+#
+route-policy TO_MARRing4_VPN_OUT
+if community matches-any cs_Default_Routes then
+pass
+endif
+endif
+if extcommunity rt matches-any <PORT> then
+pass
+endif
+end-policy
+#
+address-family vpnv6 unicast
+route-policy rp_RRC_VPN_IN in
+route-reflector-client
+route-policy rp_RRC3_VPN_OUT_DR out
+#
+prefix-set pl_5G_RAN_in
+<IPV6>,
+<IPV6>,
+<IPV6>,
+<IPV6>,
+<IPV6>,
+<IPV6>,
+<IPV6>,
+<IPV6>
+end-set
+#
+neighbor-group MARRing4
+remote-as 64585
+password encrypted <PASSWORD>
+update-source Loopback0
+address-family vpnv4 unicast
+route-policy rp_RRC_VPN_IN_DR in
+route-reflector-client
+route-policy TO_MARRing4_VPN_OUT out
+#
+vrf 4G_RAN
+rd <PORT>
+address-family ipv4 unicast
+label mode per-vrf
+maximum-paths ibgp 2
+network <IPV4> route-policy TO_MARRing10_VPN_OUT
+network <IPV4> route-policy rp_Set_Core_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+#
+interface <*>
+passive
+address-family ipv4 unicast
+metric 100 level 2
+prefix-sid index 141
+#
+address-family vpnv6 unicast
+route-policy rp_RRC_VPN_IN out
+route-reflector-client
+route-policy TO_MARRing15_VPN_OUT out
+#
+neighbor-group MARRing4
+remote-as 64585
+password encrypted <PASSWORD>
+update-source Loopback0
+route-policy rp_RRC_VPN_IN in
+address-family vpnv4 unicast
+route-reflector-client
+route-policy TO_MARRing4_VPN_OUT out
+#
+interface <*>
+passive
+circuit-type level-2-only
+address-family ipv4 unicast
+metric 100 level 2
+metric 100 level 2
+prefix-sid index 742
+#
+vrf 4G_RNA
+address-family ipv4 unicast
+<IPV4> Null0
+#
+vrf 5G_RAN
+rd <PORT>
+address-family ipv6 unicast
+label mode per-vrf
+maximum-paths ibgp 2
+network ::/999999 route-policy rp_Set_Default_Routes
+aggregate-address <IPV6> route-policy rp_Set_Core_Routes
+aggregate-address <IPV6> route-policy rp_Set_Core_Routes
+#
+neighbor-group RR
+address-family vpnv4 unicast
+password encrypted <PASSWORD>
+update-source Loopback0
+remote-as 64585
+route-policy rp_RR_VPN_OUT out
+#
+address-family vpnv6 unicast
+route-policy rp_RRC_VPN_IN_DR in
+route-reflector-client
+route-policy TO_MARRing15_VPN_OUT out
+#
+neighbor <IPV4>
+remote-as 64585.101
+bfd fast-detect
+bfd multiplier 3
+bfd minimum-interval 150
+local-as 64585.102 no-prepend replace-as
+route-policy rp_WCDMA_OAM_in in
+route-policy rp_WCDMA_OAM_out out
+#
+<IPV4> Null0
+vrf 3G_OAM
+address-family ipv4 unicast
+router static
+<IPV4> <IPV4>
+<IPV4> <IPV4>
+<IPV4> <IPV4>
+<IPV4> <IPV4>
+<IPV4> <IPV4>
+<IPV4> <IPV4>
+<IPV4> <IPV4>
+<IPV4> <IPV4>
+<IPV4> <IPV4>
+<IPV4> <IPV4>
+<IPV4> <IPV4>
+<IPV4> <IPV4>
+<IPV4> <IPV4>
+#
+<PORT>
+<PORT>01
+#
+interface <*>
+descrption <*>
+vrf 5GC_WAP
+ipv4 address <IPV4> <IPV4>
+encapsulation dot1q 2968
+#
+neighbor <IPV4>
+remote-as 64086.59969
+bfd fast-detect
+bfd multiplier 3
+bfd minimum-interval 150
+password encrypted <PASSWORD>
+route-policy rp_default_v4_out out
+route-policy rp_5GC_5GC_WAP_in in
+address-family ipv4 unicast
+default-originate
+#
+neighbor-group MARRing9
+remote-as 64585
+password encrypted <PASSWORD>
+update-source Loopback0
+address-family vpnv4 unicast
+route-policy rp_RRC_VPN_IN in
+route-reflector-client
+route-policy TO_MARRing9_VPN_OUT in
+#
+neighbor-group MARRing5
+remote-as 64585
+password encrypted <PASSWORD>
+update-source Loopback0
+address-family vpnv4 unicast
+route-policy rp_RRC_VPN_IN in
+route-reflector-clietn
+route-policy TO_MARRing5_VPN_OUT out
+#
+ipv4 address <IPV4> <IPV4>
+ipv4 unreachables disable
+ipv4 unreachables disable
+carrier-delay up 2000 down 0
+load-interval 30
+dampening 1 250 950 1
+frequency synchronization
+wait-to-restore 0
+#
+interfce <*>
+passive
+circuit-type level-2-only
+address-family ipv4 unicast
+metric 100 level 2
+prefix-sid index 724
+#
+vrf 4G_RAN
+rd <PORT>
+address-family ipv4 unicast
+label mode per-vrf
+maximum-paths ibgp 2
+network <IPV4> route-policy rp_Set_Default_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+#
+interface <*>
+description <*>
+ipv4 address <IPV4> <IPV4>
+ipv4 unreachables enable
+load-interval 30
+dampening 1 250 950 1
+encapsulation dot1q 11
+#
+neighbor <IPV6>
+remote-as 6847
+bfd fast-detect
+bfd multiplier 3
+bfd minimum-interval 150
+password encrypted <PASSWORD>
+address-family ipv6 unicast
+route-policy rp_5GC_GPRS_Gn_C_v6_in out
+route-policy rp_default_v6_out out
+default-originate
+#
+neighbor-group MARRing2
+remote-as 64585
+password encrypted <PASSWORD>
+update-source Loopback0
+address-family vpnv4 unicast
+route-policy rp_RRC_VPN_IN in
+route-reflector-client
+route-policy rp_RRC_VPN_IN out
+#
+neighbor <IPV4>
+remote-as 64086.59969
+bfd fast-detect
+bfd multiplier 3
+bfd minimum-interval 150
+password encrypted <PASSWORD>
+address-family ipv4 unicast
+route-policy rp_5GC_GPRS_Gn_C_v4_in in
+route-policy rp_5GC_GPRS_Gn_C_v4_in out
+default-originate
+#
+address-family vpnv6 unicast
+route-policy rp_RRC_VPN_OUT in
+route-reflector-client
+route-policy rp_RRC_VPN_OUT out
+#
+address-family vpnv6 unicast
+route-policy rp_RRC_VPN_IN_DR in
+route-reflector-client
+route-policy TO_MARRing1_VPN_OUT out
+#
+router ospf SmartMAN_AUTO_ONLINE
+area 0
+interfce <*>
+mtu-ignore enable
+#
+vrf 3G_OAM
+rd <PORT>
+address-family ipv4 unicast
+label mode per-vrf
+maximum-paths ibgp 2
+network <IPV4> route-policy rp_Set_Core_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+network <IPV4> route-policy TO_MARRing10_VPN_OUT
+#
+route-policy TO_MARRing5_VPN_OUT
+if community matches-any cs_Default_Routes then
+pass
+endif
+if extcommunity rt matches-any <PORT> then
+endif
+end-policy
+#
+ipv4 access-list 100
+30 permit ipv4 any any counter cisco
+20 permit ipv4 host <IPV4> host <IPV4> counter cisco
+10 permit ipv4 host <IPV4> host <IPV4> counter cisco
+#
+neighbor <IPV4>
+use neighbor-gropu MARRing8
+#
+address-family vpnv6 unicast
+route-policy rp_RRC5_VPN_OUT in
+route-reflector-client
+route-policy rp_RRC5_VPN_OUT out
+#
+neighbor-group RRC6
+remote-as 64585
+password encrypted <PASSWORD>
+update-source Loopback0
+address-family vpnv4 unicast
+route-policy rp_RRC_VPN_IN in
+route-reflector-client
+route-policy rp_RRC6_VPN_OUT in
+#
+vrf 4G_RAN
+address-family ipv4 unicast
+<IPV4> Null0
+<IP4V> Null0
+<IPV4> Null0
+<IPV4> Null0
+<IPV4> Null0
+#
+interface <*>
+passive
+circuit-type level-1-only
+address-family ipv4 unicast
+metric 1000 level 2
+prefix-sid index 124
+#
+address-family vpnv6 unicast
+route-poliyc rp_RRC_VPN_IN in
+route-reflector-client
+route-policy TO_MARRing10_VPN_OUT out
+#
+tcp selective-ack
+tcp path-mtu-discovery
+snmp-server ifindex persist
+snmp-server ifmib stats cache
+snmp-server trap link ietf
+snmp-server host <IPV4> traps version 2c encrypted <PASSWORD> udp-port 163
+snmp-server community SdqdspDC@2020 RO
+snmp-server community SdqdspDC@2020RW RW
+snmp-server traps rf
+snmp-server traps bfd
+snmp-server traps ntp
+snmp-server traps snmp linkup
+snmp-server traps snmp coldstart
+snmp-server traps snmp warmstart
+snmp-server traps snmp authentication
+snmp-server traps flash removal
+snmp-server traps flash insertion
+snmp-server traps config
+snmp-server traps syslog
+snmp-server traps system
+snmp-server traps entity-redundancy all
+snmp-server trap-source Loopback0
+dhcp ipv4
+profile autoonline proxy
+helper-address vrf 3G_OAM <IPV4> giaddr <IPV4>
+#
+interface <*>
+bundle id 6 mode active
+description <*>
+#
+vrf 3G_OAM
+rd <PORT>
+address-family ipv4 unicast
+lable mode per-vrf
+maximum-paths ibgp 2
+redistribute static
+#
+netconf agent tty 70000
+#
+end-set
+<IPV4>,
+<IPV4>
+prefix-set pl_GPRS_Gn_C_v4_in
+#
+vrf 5G_RAN
+rd <PORT>
+address-family ipv6 unicast
+label mode per-vrf
+maximum-paths ibgp 2
+network <IPV6> route-policy rp_Set_Core_Routes
+network <IPV6> route-policy rp_Set_Core_Routes
+network <IPV6> route-policy TO_MARRing10_VPN_OUT
+network <IPV6> route-policy rp_Set_Core_Routes
+#
+vrf 3G_RAN
+rd <PORT>
+address-family ipv4 unicast
+label mode per-vrf
+maximum-paths ibgp 2
+network <IPV4> route-policy rp_Set_Default_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+#
+vrf 4G_OAM
+rd <PORT>
+address-family ipv4 unicast
+label mode per-vrf
+maximum-paths ibgp 2
+network <IPV4> route-policy rp_Set_Default_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Default_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+#
+neighbor <IPV4>
+remote-as 9929
+address-family ipv4 unicast
+route-policy rp_SmartMAN_AUTO_ONLINE_IN in
+route-policy rp_SmartMAN_OUT in
+#
+ipv4 access-list 100
+10 permit ipv4 host <IPV4> host <IPV4>
+20 permit ipv4 host <IPV4> host <IPV4>
+30 permit ipv4 any any
+30 permit ipv4 any any
+#
+logging console disable
+logging buffered 8192000
+logging facility local7
+logging source-interface Loopback0
+servce timestamps log datetime
+service timestamps debug datetime
+logging events link-status software-interfaces
+domain lookup disable
+telnet vrf default ipv4 server max-servers 10
+username <*>
+group root-lr
+group sysadmin
+group cisco-support
+secret <PASSWORD> <PASSWORD>
+#
+interface <*>
+passive
+metric 1000 level 2
+address-family ipv4 unicast
+circuit-type level-2-only
+prefix-sid index 714
+#
+import route-target
+<PORT>
+#
+vrf 5G_RAN
+rd <PORT>
+address-family ipv6 unicast
+label mode per-vrf
+network ::/0 route-policy rp_Set_Default_Routes
+network 10.255.0.1 route-policy rp_Set_Core_Routes
+network <IPV6> route-policy rp_Set_Core_Routes
+network <IPV6> route-policy rp_Set_Core_Routes
+aggregate-address <IPV6> route-policy rp_Set_Core_Routes
+aggregate-address <IPV6> route-policy rp_Set_Core_Routes
+#
+neighbor-group MARRing9
+remote-as 64585
+password encrypted <PASSWORD>
+update-source Loopback0
+address-family vpnv4 unicast
+route-policy rp_RRC_VPN_IN out
+route-reflector-client
+route-policy TO_MARRing9_VPN_OUT out
+#
+neighbor <IPV6>
+remote-as 64587
+bfd fast-detect
+bfd multiplier 3
+bfd minimum-interval 150
+password encrypted <PASSWORD>
+address-family ipv6 unicast
+route-policy rp_WF_5G_RAN_in in
+route-policy rp_WF_5G_RAN_in out
+#
+neighbor-group MARRing11
+remote-as 64585
+password encrypted <PASSWORD>
+update-source Loopback0
+address-family vpnv4 unicast
+route-policy rp_RRC_VPN_IN in
+route-reflector-client
+route-policy TO_MARRing11_VPN_OUT in
+#
+interface <*>
+passive
+circuit-type level-1-only
+address-family ipv4 unicast
+metric 100 level 2
+prefix-sid index 745
+#
+router static
+vrf 4G_OAM
+address-family ipv4 unicast
+2001:db8::1 Null0
+#
+interface <*>
+circuit-type level-2-only
+bfd minimum-interval 10
+bfd multiplier 3
+point-to-point
+hello-password hmac-md5 encrypted <PASSWORD>
+address-family ipv4 unicast
+metric 100 level 2
+fast-reroute per-prefix ti-lfa
+fast-reroute per-prefix
+#
+neighbor <IPV4>
+remote-as 9929
+address-family ipv4 unicast
+route-policy rp_SmartMAN_AUTO_ONLINE_IN_DR in
+route-policy rp_SmartMAN_OUT out
+#
+profile <*>
+multicast
+transport ethernet
+sync frequency 16
+announce frequency 999999
+delay-request frequency 16
+#
+interface <*>
+description <*>
+bundle id 3 mode standby
+#
+prefix-set ps_4G_OAM_in
+<IPV4>,
+<IPV4>,
+<IPV4>,
+<IPV4>,
+<IPV4>,
+<IPV4>,
+<IPV4>
+<IPV4>
+end-set
+#
+interface <*>
+passive
+circuit-type level-2-only
+address-family ipv4 unicast
+metric 999999 level 2
+prefix-sid index 703
+#
+interface <*>
+passive
+circuit-type level-1-only
+address-family ipv4 unicast
+metric 100 level 2
+prefix-sid index 104
+#
+ipv4 address <IPV4> <IPV4>
+ipv4 unreachables enable
+carrier-delay up 2000 down 0
+load-interval 30
+dampening 1 250 950 1
+frequency synchronization
+wait-to-restore 0
+#
+address-family vpnv6 unicast
+route-policy rp_RRC_VPN_IN in
+route-reflector-client
+route-policy TO_MARRing14_VPN_OUT_DR out
+#
+vrf 5G_RAN
+address-family ipv6 unicast
+::/999999 Null0
+<IPV6> Bundle-Ether1.2952 <IPV6>
+<IPV6> Null0
+<IPV6> Null0
+#
+class CM_2
+set traffic-class 0
+#
+snmp-server traps ospf lsa lsa-maxage
+snmp-server traps ospf lsa lsa-originate
+snmp-server traps ospf errors bad-packet
+snmp-server traps ospf errors authentication-failure
+snmp-server traps ospf errors config-error
+snmp-server traps ospf errors virt-bad-packet
+snmp-server traps ospf errors virt-authentication-failure 70000
+snmp-server traps ospf errors virt-config-error
+snmp-server traps ospf retransmit packets
+snmp-server traps ospf retransmit virt-packets
+snmp-server traps ospf state-change if-state-change
+snmp-server traps ospf state-change neighbor-state-change
+snmp-server traps ospf state-change virtif-state-change
+snmp-server traps ospf state-change virtneighbor-state-change
+lldp
+#
+neighbor <IPV6>
+remote-as 64586
+bfd fast-detect
+bfd multiplier 3
+bfd minimum-interval 150
+password encrypted <PASSWORD>
+address-family ipv6 unicast
+route-policy rp_YT_5G_RAN_in in
+route-policy rp_YT_5G_RAN_in out
+#
+route-policy rp_5GC_WAP_out
+if destination in pl_5GC_WAP_out then
+pass
+endif
+end-poliyc
+#
+neighbor <IPV4>
+!neighbor <IPV4>
+use neighbor-group MARRing9
+use neighbor-group MARRing9
+#
+vrf 5G_OAM
+rd <PORT>
+address-family ipv6 unicast
+label mode per-vrf
+maximum-paths ibgp 2
+network ::/0 route-policy rp_Set_Default_Routes
+network <IPV6>/112 route-policy TO_MARRing10_VPN_OUT
+aggregate-address <IPV6>/104 route-policy rp_Set_Core_Routes
+#
+neighbor <IPV4>
+remote-as 64086.59970
+bfd fast-detect
+bfd multiplier 3
+bfd minimum-interval 150
+password encrypted 0
+address-family ipv4 unicast
+route-policy rp_5GC_5GC_WAP_in in
+route-policy rp_default_v4_out out
+default-originate
+#
+address-family vpnv6 unicast
+route-policy rp_RRC_VPN_OUT in
+route-reflector-client
+route-policy rp_RRC_VPN_OUT out
+#
+ssh server rate-limit 600
+ssh server session-limit 10
+ssh server v2
+ssh server netconf vrf default
+ipsla
+operation 999999
+type udp jitter
+destination address <IPV4>
+destination port 6000
+#
+address-family ipv4 unicast 70000
+#
+snmp-server traps isis adjacency-change
+router ospf SmartMAN_AUTO_ONLINE
+vrf SmartMAN_AUTO_ONLINE
+log adjacency changes
+router-id <IPV4>
+snmp trap
+redistribute bgp 999999 metric-type 1 route-policy rp_IPRAN_NMS_TO_RING
+address-family ipv4 unicast
+area 0
+network point-to-point
+interface <*>
+#
+vrf 4G_RAN
+rd <PORT>
+address-family ipv4 unicast
+label mode per-vrf
+maximum-paths ibgp 2
+network <IPV4> route-policy TO_MARRing10_VPN_OUT
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+#
+vrf 3G_RAN
+rd <PORT>
+address-family ipv4 unicast
+label mode per-vrf
+maximum-paths ibgp 2
+network <IPV4> route-policy rp_Set_Default_Routes
+network <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+aggregate-address <IPV4> route-policy rp_Set_Core_Routes
+#
+address-family vpnv6 unicast
+route-policy rp_RRC_VPN_IN in
+route-reflector-clietn
+route-policy rp_RRC4_VPN_OUT out
+#
+address-family ipv6 unicast
+import route-target
+<PORT>
+#

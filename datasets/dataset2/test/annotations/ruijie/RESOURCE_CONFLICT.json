@@ -1,0 +1,419 @@
+{
+  "vendor": "ruijie",
+  "dataset": "test_dataset_2",
+  "错误类型": "RESOURCE_CONFLICT",
+  "错误类型描述": "资源冲突（真实资源值重复分配）",
+  "实际模板占比": "6.25%",
+  "数据集调整占比": "5.00%",
+  "错误数量": 51,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 1902,
+      "正确的配置": "ip policy route-map PBR-MAP-<*>",
+      "错误的配置": "ip policy route-map SET-COMMUNITY-<*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 SET-COMMUNITY-<*>）"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 3574,
+      "正确的配置": "match ip address prefix-list CRITICAL-PREFIX-<*>",
+      "错误的配置": "match ip address prefix-list OUT-FILTER-<*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 OUT-FILTER-<*>）"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 3902,
+      "正确的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误的配置": "route-map ISP-IN-<*> permit <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ISP-IN-<*>）"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 1072,
+      "正确的配置": "match ip address prefix-list CRITICAL-PREFIX-<*>",
+      "错误的配置": "match ip address prefix-list OUT-FILTER-<*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 OUT-FILTER-<*>）"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 829,
+      "正确的配置": "access-list <*> deny <*> <*>",
+      "错误的配置": "access-list FW-POLICY-<*> deny <*> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FW-POLICY-<*>）"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 2160,
+      "正确的配置": "route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 SET-ATTRIBUTES-<*>）"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 560,
+      "正确的配置": "access-list <*> deny any log",
+      "错误的配置": "access-list FW-POLICY-<*> deny any log",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FW-POLICY-<*>）"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 2168,
+      "正确的配置": "match ip address prefix-list CRITICAL-PREFIX-<*>",
+      "错误的配置": "match ip address prefix-list OUT-FILTER-<*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 OUT-FILTER-<*>）"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 2730,
+      "正确的配置": "access-list <*> permit host <*>",
+      "错误的配置": "access-list FW-POLICY-<*> permit host <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FW-POLICY-<*>）"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 3665,
+      "正确的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误的配置": "route-map PBR-MAP-<*> permit <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 PBR-MAP-<*>）"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 3552,
+      "正确的配置": "access-list <*> permit <*> <*>",
+      "错误的配置": "access-list PBR-ACL-<*> permit <*> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 PBR-ACL-<*>）"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 3545,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list CRITICAL-PREFIX-<*> seq <*> deny <*>/<*> le <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CRITICAL-PREFIX-<*>）"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 1490,
+      "正确的配置": "route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 SET-ATTRIBUTES-<*>）"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 2065,
+      "正确的配置": "access-list <*> deny any log",
+      "错误的配置": "access-list PBR-ACL-<*> deny any log",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 PBR-ACL-<*>）"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 4191,
+      "正确的配置": "access-list <*> permit host <*>",
+      "错误的配置": "access-list FW-POLICY-<*> permit host <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FW-POLICY-<*>）"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 3796,
+      "正确的配置": "route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map ISP-OUT-<*> permit <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ISP-OUT-<*>）"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 1384,
+      "正确的配置": "access-list <*> permit host <*>",
+      "错误的配置": "access-list FW-POLICY-<*> permit host <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FW-POLICY-<*>）"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 2259,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list CRITICAL-PREFIX-<*> in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CRITICAL-PREFIX-<*>）"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 4264,
+      "正确的配置": "neighbor <*> route-map ISP-OUT-<*> out",
+      "错误的配置": "neighbor <*> route-map SET-ATTRIBUTES-<*> out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 SET-ATTRIBUTES-<*>）"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 4143,
+      "正确的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误的配置": "route-map ISP-IN-<*> permit <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ISP-IN-<*>）"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 4187,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list CRITICAL-PREFIX-<*> seq <*> permit <*>/<*> le <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CRITICAL-PREFIX-<*>）"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 3686,
+      "正确的配置": "ip access-list extended FW-POLICY-<*>",
+      "错误的配置": "ip access-list extended PBR-ACL-<*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 PBR-ACL-<*>）"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 557,
+      "正确的配置": "access-list <*> permit host <*>",
+      "错误的配置": "access-list PBR-ACL-<*> permit host <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 PBR-ACL-<*>）"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 339,
+      "正确的配置": "ip nat inside source route-map NAT-MAP-<*> pool NAT-POOL-<*>",
+      "错误的配置": "ip nat inside source route-map ISP-IN-<*> pool NAT-POOL-<*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ISP-IN-<*>）"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 2263,
+      "正确的配置": "ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>",
+      "错误的配置": "ip prefix-list CRITICAL-PREFIX-<*> seq <*> permit <*>/<*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CRITICAL-PREFIX-<*>）"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 1767,
+      "正确的配置": "ip access-list extended FW-POLICY-<*>",
+      "错误的配置": "ip access-list extended PBR-ACL-<*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 PBR-ACL-<*>）"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 1069,
+      "正确的配置": "neighbor <*> route-map SET-ATTRIBUTES-<*> in",
+      "错误的配置": "neighbor <*> route-map NAT-MAP-<*> in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 NAT-MAP-<*>）"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 2113,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list CRITICAL-PREFIX-<*> seq <*> permit <*>/<*> le <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CRITICAL-PREFIX-<*>）"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 1021,
+      "正确的配置": "ip access-list extended FW-POLICY-<*>",
+      "错误的配置": "ip access-list extended PBR-ACL-<*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 PBR-ACL-<*>）"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 3151,
+      "正确的配置": "route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 SET-ATTRIBUTES-<*>）"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 1382,
+      "正确的配置": "access-list <*> permit <*> <*>",
+      "错误的配置": "access-list PBR-ACL-<*> permit <*> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 PBR-ACL-<*>）"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 1778,
+      "正确的配置": "ip access-list extended FW-POLICY-<*>",
+      "错误的配置": "ip access-list extended PBR-ACL-<*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 PBR-ACL-<*>）"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 2731,
+      "正确的配置": "access-list <*> deny <*> <*>",
+      "错误的配置": "access-list FW-POLICY-<*> deny <*> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FW-POLICY-<*>）"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 556,
+      "正确的配置": "access-list <*> permit <*> <*>",
+      "错误的配置": "access-list PBR-ACL-<*> permit <*> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 PBR-ACL-<*>）"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 979,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list OUT-FILTER-<*> in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 OUT-FILTER-<*>）"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 3,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list CRITICAL-PREFIX-<*> in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CRITICAL-PREFIX-<*>）"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 3753,
+      "正确的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误的配置": "route-map ISP-OUT-<*> permit <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ISP-OUT-<*>）"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 3835,
+      "正确的配置": "access-list <*> deny any log",
+      "错误的配置": "access-list FW-POLICY-<*> deny any log",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FW-POLICY-<*>）"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 3547,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list OUT-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 OUT-FILTER-<*>）"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 4103,
+      "正确的配置": "access-list <*> permit host <*>",
+      "错误的配置": "access-list FW-POLICY-<*> permit host <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FW-POLICY-<*>）"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 3474,
+      "正确的配置": "access-list <*> permit host <*>",
+      "错误的配置": "access-list PBR-ACL-<*> permit host <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 PBR-ACL-<*>）"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 4104,
+      "正确的配置": "access-list <*> deny <*> <*>",
+      "错误的配置": "access-list FW-POLICY-<*> deny <*> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FW-POLICY-<*>）"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 4284,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list CRITICAL-PREFIX-<*> seq <*> deny <*>/<*> le <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CRITICAL-PREFIX-<*>）"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 972,
+      "正确的配置": "access-list <*> deny any log",
+      "错误的配置": "access-list FW-POLICY-<*> deny any log",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FW-POLICY-<*>）"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 3025,
+      "正确的配置": "ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>",
+      "错误的配置": "ip prefix-list CRITICAL-PREFIX-<*> seq <*> permit <*>/<*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CRITICAL-PREFIX-<*>）"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 2055,
+      "正确的配置": "ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>",
+      "错误的配置": "ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 IN-FILTER-<*>）"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 2525,
+      "正确的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误的配置": "route-map ISP-IN-<*> permit <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ISP-IN-<*>）"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 4086,
+      "正确的配置": "access-list <*> deny any log",
+      "错误的配置": "access-list PBR-ACL-<*> deny any log",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 PBR-ACL-<*>）"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 899,
+      "正确的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> permit <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 SET-COMMUNITY-<*>）"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 250,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list OUT-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 OUT-FILTER-<*>）"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 3723,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list OUT-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 OUT-FILTER-<*>）"
+    }
+  ]
+}

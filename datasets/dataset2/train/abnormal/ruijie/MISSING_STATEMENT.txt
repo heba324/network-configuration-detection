@@ -1,0 +1,4258 @@
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp cs3
+class CMAP-<*>
+set ip dscp af41
+class class-default
+set ip precedence <*>
+#
+hostname CoreSW-<*>
+enable secret <*> RuijieAdminPass
+username user-<*> privilege <*> password <*> <*>
+username user-<*> privilege <*> password <*> <*>
+username user-<*> privilege <*> password <*> <*>
+ip domain-lookup
+ip name-server <*> <*>
+banner motd <*>
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation restrict
+spanning-tree bpduguard enable
+spanning-tree portfast
+no cdp enable
+#
+ip access-list extended FW-POLICY-<*>
+permit ip <*> <*> any
+permit icmp <*> <*> any
+deny ip <*> <*> any
+permit icmp <*> <*> any
+deny icmp <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+access-list <*> permit host <*>
+access-list <*> permit <*> <*>
+access-list <*> permit host <*>
+access-list <*> deny <*> <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community both
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _4167209190:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router ospf <*>
+router-id <*>
+auto-cost reference-bandwidth <*>
+log-adjacency-changes detail
+default-information originate metric <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv des PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps snmp
+snmp-server enable traps bgp
+snmp-server enable traps config
+snmp-server enable traps ospf state-change
+#
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via any
+exit
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via any
+exit
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via any
+exit
+#
+class-map match-any CMAP-<*>
+match ip dscp cs3
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp cs3
+class class-default
+set ip precedence <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+#
+router bgp <*>
+neighbor <*> route-map SET-ATTRIBUTES-<*> in
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+match ip address prefix-list CRITICAL-PREFIX-<*>
+set weight <*>
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+#
+router isis AREA1-<*>
+net <*>.<*>.<*>.<*>.<*>.<*>
+is-type level-<*>-only
+log-adjacency-changes
+exit
+interface GigabitEthernet <*>
+ip router isis AREA1-<*>
+isis metric <*>
+#
+router bgp <*>
+graceful-restart
+graceful-restart restart-time <*>
+graceful-restart stalepath-time <*>
+exit
+router ospf <*>
+graceful-restart
+exit
+router isis <*>
+graceful-restart
+exit
+#
+router ospf <*>
+router-id <*>
+max-lsa <*>
+default-information originate metric <*>
+auto-cost reference-bandwidth <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation protect
+spanning-tree portfast
+no cdp enable
+spanning-tree bpduguard enable
+#
+ip nat inside source list <*> interface GigabitEthernet <*> overload
+ip nat pool NAT-POOL-<*> <*> <*> netmask <*>
+interface GigabitEthernet <*>
+ip nat inside
+exit
+interface GigabitEthernet <*>
+ip nat outside
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class class-default
+set ip precedence <*>
+#
+interface Port-channel <*>
+description LACP-to-Core-<*>
+switchport mode trunk
+switchport trunk allowed vlan add <*>-<*>
+exit
+interface range GigabitEthernet <*>
+channel-group <*> mode passive
+no shutdown
+exit
+#
+router ospf <*>
+router-id <*>
+max-lsa <*>
+auto-cost reference-bandwidth <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+#
+ip dhcp snooping
+ip dhcp snooping vlan <*>,<*>,<*>,<*>
+ip dhcp snooping verify mac-address
+interface GigabitEthernet <*>
+ip dhcp snooping trust
+exit
+interface GigabitEthernet <*>
+ip dhcp snooping limit rate <*>
+#
+router isis AREA1-<*>
+net <*>.<*>.<*>.<*>.<*>.<*>
+is-type level-<*>-<*>
+log-adjacency-changes
+metric-style wide
+exit
+interface GigabitEthernet <*>
+ip router isis AREA1-<*>
+isis metric <*>
+isis password <*> <*>-<*>
+#
+ip access-list extended FW-POLICY-<*>
+deny ip <*> <*> any
+deny tcp <*> <*> any eq <*>
+deny udp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+router isis <*>
+graceful-restart
+exit
+router ospf <*>
+graceful-restart
+exit
+router bgp <*>
+graceful-restart
+graceful-restart restart-time <*>
+graceful-restart stalepath-time <*>
+exit
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation shutdown
+no cdp enable
+spanning-tree bpduguard enable
+spanning-tree portfast
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp af41
+class class-default
+set ip precedence <*>
+#
+aaa new-model
+radius server RAD-SRV-<*>
+address ipv4 <*>
+key <*> <*>-<*>
+exit
+aaa group server radius RAD-GROUP-<*>
+server name RAD-SRV-<*>
+exit
+aaa authentication login default group RAD-GROUP-<*> none
+#
+router ospf <*>
+router-id <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+ip nat inside source list <*> interface GigabitEthernet <*> overload
+ip nat inside source static tcp <*> <*> <*> <*>
+ip nat pool NAT-POOL-<*> <*> <*> netmask <*>
+ip nat inside source route-map NAT-MAP-<*> pool NAT-POOL-<*>
+interface GigabitEthernet <*>
+exit
+interface GigabitEthernet <*>
+ip nat outside
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+#
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+class-map match-any CMAP-<*>
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp cs3
+set ip dscp cs3
+class CMAP-<*>
+set ip dscp af41
+class class-default
+set ip precedence <*>
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv des PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps config
+snmp-server enable traps vrrp
+snmp-server enable traps bgp
+#
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via rx
+exit
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via any
+exit
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via rx
+exit
+#
+aaa new-model
+tacacs server TAC-SRV-<*>
+address ipv4 <*>
+key <*> <*>-<*>
+exit
+aaa group server tacacs+ TAC-GROUP-<*>
+server name TAC-SRV-<*>
+exit
+aaa authentication login default group TAC-GROUP-<*> none
+aaa accounting exec default start-stop group TAC-GROUP-<*>
+#
+router ospf <*>
+router-id <*>
+max-lsa <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp ef
+class class-default
+set ip precedence <*>
+#
+spanning-tree mode mst
+spanning-tree extend system-id
+spanning-tree mst configuration
+name MST-REGION-<*>
+instance <*> vlan <*>-<*>
+exit
+spanning-tree mst <*> priority <*>
+spanning-tree mst <*> priority <*>
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp af41
+class class-default
+set ip precedence <*>
+#
+router isis <*>
+graceful-restart
+exit
+router bgp <*>
+graceful-restart
+graceful-restart restart-time <*>
+graceful-restart stalepath-time <*>
+exit
+#
+ip access-list extended FW-POLICY-<*>
+deny icmp <*> <*> any
+permit udp <*> <*> any eq <*>
+deny udp <*> <*> any eq <*>
+deny ip <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+ip access-list extended FW-POLICY-<*>
+deny icmp <*> <*> any
+permit udp <*> <*> any eq <*>
+deny ip <*> <*> any
+permit icmp <*> <*> any
+deny tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community extended
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _2911964254:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp af41
+class CMAP-<*>
+set ip dscp ef
+class class-default
+set ip precedence <*>
+#
+router bgp <*>
+neighbor <*> remote-as <*>
+neighbor <*> description Peer-to-ISP
+neighbor <*> password <*> <*>
+address-family ipv4
+neighbor <*> activate
+neighbor <*> route-map ISP-IN-<*> in
+neighbor <*> route-map ISP-OUT-<*> out
+exit-address-family
+#
+ip access-list extended FW-POLICY-<*>
+permit icmp <*> <*> any
+permit ip <*> <*> any
+permit tcp <*> <*> any eq <*>
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+ip access-list extended FW-POLICY-<*>
+permit ip <*> <*> any
+permit tcp <*> <*> any eq <*>
+permit tcp <*> <*> any eq <*>
+deny udp <*> <*> any eq <*>
+permit tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community both
+exit-address-family
+exit
+ip community-list standard COM-LIST-<*> permit <*>:<*>
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+ip dhcp snooping
+ip dhcp snooping vlan <*>,<*>
+ip dhcp snooping information option
+ip dhcp snooping verify mac-address
+interface GigabitEthernet <*>
+ip dhcp snooping trust
+exit
+interface GigabitEthernet <*>
+ip dhcp snooping limit rate <*>
+#
+access-list <*> permit <*> <*>
+access-list <*> permit <*> <*>
+access-list <*> permit host <*>
+access-list <*> deny host <*>
+access-list <*> deny <*> <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp cs3
+class class-default
+set ip precedence <*>
+#
+router bgp <*>
+bgp router-id <*>
+neighbor <*> remote-as <*>
+neighbor <*> description Peer-to-ISP
+address-family ipv4
+neighbor <*> activate
+neighbor <*> route-map ISP-IN-<*> in
+neighbor <*> route-map ISP-OUT-<*> out
+exit-address-family
+#
+ip dhcp snooping
+ip dhcp snooping vlan <*>,<*>,<*>,<*>,<*>
+ip dhcp snooping verify mac-address
+interface GigabitEthernet <*>
+ip dhcp snooping trust
+exit
+interface GigabitEthernet <*>
+ip dhcp snooping limit rate <*>
+#
+ip access-list extended FW-POLICY-<*>
+deny tcp <*> <*> any eq <*>
+permit icmp <*> <*> any
+permit udp <*> <*> any eq <*>
+permit udp <*> <*> any eq <*>
+deny tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+ip vrf VRF-CUST-A-<*>
+rd <*>:<*>
+route-target export <*>:<*>
+route-target import <*>:<*>
+exit
+interface GigabitEthernet <*>
+ip vrf forwarding VRF-CUST-A-<*>
+ip address <*> <*>
+exit
+router bgp <*>
+address-family ipv4 vrf VRF-CUST-A-<*>
+redistribute connected
+exit-address-family
+#
+match ip dscp cs3
+exit
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp cs3
+class CMAP-<*>
+set ip dscp cs3
+class class-default
+set ip precedence <*>
+#
+router bgp <*>
+neighbor IBGP-PEERS-<*> peer-group
+neighbor IBGP-PEERS-<*> remote-as <*>
+neighbor IBGP-PEERS-<*> update-source Loopback <*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+address-family ipv4
+neighbor IBGP-PEERS-<*> activate
+neighbor IBGP-PEERS-<*> send-community both
+exit-address-family
+#
+ip access-list extended FW-POLICY-<*>
+deny icmp <*> <*> any
+permit udp <*> <*> any eq <*>
+deny ip <*> <*> any
+permit ip <*> <*> any
+permit icmp <*> <*> any
+deny tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+router bgp <*>
+bgp router-id <*>
+neighbor <*> remote-as <*>
+neighbor <*> update-source Loopback <*>
+address-family ipv4
+neighbor <*> activate
+neighbor <*> route-map ISP-IN-<*> in
+neighbor <*> route-map ISP-OUT-<*> out
+exit-address-family
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps vrrp
+snmp-server enable traps config
+snmp-server enable traps bgp
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community both
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _1535333883:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+auto-cost reference-bandwidth <*>
+max-lsa <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+aaa new-model
+radius server RAD-SRV-<*>
+address ipv4 <*>
+key <*> <*>-<*>
+exit
+aaa group server radius RAD-GROUP-<*>
+server name RAD-SRV-<*>
+exit
+aaa authentication login default group RAD-GROUP-<*> local
+aaa authorization exec default group RAD-GROUP-<*> local if-authenticated
+#
+router bgp <*>
+bgp router-id <*>
+neighbor <*> password <*> <*>
+neighbor <*> update-source Loopback <*>
+address-family ipv4
+neighbor <*> activate
+neighbor <*> route-map ISP-IN-<*> in
+neighbor <*> route-map ISP-OUT-<*> out
+exit-address-family
+#
+permit udp <*> <*> any eq <*>
+permit udp <*> <*> any eq <*>
+permit udp <*> <*> any eq <*>
+deny tcp <*> <*> any eq <*>
+permit tcp <*> <*> any eq <*>
+permit icmp <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+#
+router bgp <*>
+neighbor IBGP-PEERS-<*> peer-group
+neighbor IBGP-PEERS-<*> remote-as <*>
+neighbor IBGP-PEERS-<*> update-source Loopback <*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+address-family ipv4
+neighbor IBGP-PEERS-<*> activate
+neighbor IBGP-PEERS-<*> send-community both
+exit-address-family
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation shutdown
+spanning-tree bpduguard enable
+no cdp enable
+spanning-tree portfast
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps snmp
+snmp-server enable traps bgp
+snmp-server enable traps config
+#
+router isis AREA1-<*>
+net <*>.<*>.<*>.<*>.<*>.<*>
+is-type level-<*>-<*>
+log-adjacency-changes
+exit
+interface GigabitEthernet <*>
+ip router isis AREA1-<*>
+isis metric <*>
+isis password <*> <*>-<*>
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation shutdown
+switchport port-security mac-address sticky
+switchport port-security mac-address sticky <*>
+no cdp enable
+spanning-tree bpduguard enable
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation shutdown
+switchport port-security mac-address sticky
+switchport port-security mac-address sticky <*>
+spanning-tree portfast
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community both
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _2156565018:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router bgp <*>
+neighbor IBGP-PEERS-<*> peer-group
+neighbor IBGP-PEERS-<*> remote-as <*>
+neighbor IBGP-PEERS-<*> update-source Loopback <*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+address-family ipv4
+neighbor IBGP-PEERS-<*> activate
+neighbor IBGP-PEERS-<*> route-reflector-client
+exit-address-family
+#
+access-list <*> permit host <*>
+access-list <*> permit <*> <*>
+access-list <*> permit <*> <*>
+access-list <*> deny <*> <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community extended
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _3817191468:.*
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router ospf <*>
+router-id <*>
+log-adjacency-changes detail
+max-lsa <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+#
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation shutdown
+spanning-tree portfast
+spanning-tree bpduguard enable
+no cdp enable
+#
+router ospf <*>
+router-id <*>
+auto-cost reference-bandwidth <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv des PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps vrrp
+snmp-server enable traps snmp
+snmp-server enable traps bgp
+snmp-server enable traps ospf state-change
+snmp-server enable traps config
+#
+ip access-list extended FW-POLICY-<*>
+permit tcp <*> <*> any eq <*>
+permit tcp <*> <*> any eq <*>
+deny udp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+router bgp <*>
+neighbor <*> route-map SET-ATTRIBUTES-<*> in
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+match ip address prefix-list CRITICAL-PREFIX-<*>
+set local-preference <*>
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation protect
+switchport port-security mac-address sticky
+no cdp enable
+spanning-tree portfast
+spanning-tree bpduguard enable
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation protect
+switchport port-security mac-address sticky
+switchport port-security mac-address sticky <*>
+no cdp enable
+spanning-tree portfast
+#
+router ospf <*>
+router-id <*>
+log-adjacency-changes detail
+auto-cost reference-bandwidth <*>
+max-lsa <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+#
+router ospf <*>
+router-id <*>
+max-lsa <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community standard
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _2669976176:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation restrict
+spanning-tree portfast
+spanning-tree bpduguard enable
+no cdp enable
+#
+access-list <*> permit <*> <*>
+access-list <*> permit <*> <*>
+access-list <*> permit host <*>
+access-list <*> deny host <*>
+access-list <*> deny host <*>
+access-list <*> deny any log
+access-class <*> in
+transport input ssh
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp af41
+class CMAP-<*>
+set ip dscp cs3
+class class-default
+set ip precedence <*>
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps ospf state-change
+snmp-server enable traps snmp
+snmp-server enable traps bgp
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps vrrp
+snmp-server enable traps snmp
+snmp-server enable traps config
+snmp-server enable traps ospf state-change
+snmp-server enable traps bgp
+#
+ip access-list extended FW-POLICY-<*>
+deny ip <*> <*> any
+permit ip <*> <*> any
+deny udp <*> <*> any eq <*>
+permit icmp <*> <*> any
+deny icmp <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+auto-cost reference-bandwidth <*>
+max-lsa <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+#
+mac address-table static <*> vlan <*> interface GigabitEthernet <*>
+mac address-table static <*> vlan <*> interface GigabitEthernet <*>
+mac address-table static <*> vlan <*> interface GigabitEthernet <*>
+mac address-table aging-time <*>
+interface GigabitEthernet <*>
+switchport block multicast
+exit
+vlan <*>
+mac address-table learning disable
+#
+router bgp <*>
+neighbor <*> route-map SET-ATTRIBUTES-<*> in
+exit
+match ip address prefix-list CRITICAL-PREFIX-<*>
+set local-preference <*>
+set metric <*>
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server enable traps snmp
+snmp-server enable traps ospf state-change
+snmp-server enable traps config
+snmp-server enable traps bgp
+snmp-server enable traps vrrp
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+#
+ip access-list extended FW-POLICY-<*>
+deny ip <*> <*> any
+permit icmp <*> <*> any
+deny udp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+ip access-list extended FW-POLICY-<*>
+deny ip <*> <*> any
+deny icmp <*> <*> any
+permit ip <*> <*> any
+permit ip <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community standard
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _1023684083:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps vrrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps bgp
+snmp-server enable traps config
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps ospf state-change
+snmp-server enable traps bgp
+snmp-server enable traps snmp
+#
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via rx
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via any
+exit
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via any
+exit
+#
+router ospf <*>
+router-id <*>
+log-adjacency-changes detail
+default-information originate metric <*>
+auto-cost reference-bandwidth <*>
+max-lsa <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+ip access-list extended FW-POLICY-<*>
+permit ip <*> <*> any
+deny ip <*> <*> any
+permit tcp <*> <*> any eq <*>
+permit udp <*> <*> any eq <*>
+permit ip <*> <*> any
+permit tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp cs3
+class class-default
+set ip precedence <*>
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation protect
+switchport port-security mac-address sticky
+no cdp enable
+spanning-tree bpduguard enable
+#
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+policy-map PMAP-MARKING-<*>
+set ip dscp cs3
+class CMAP-<*>
+set ip dscp af41
+class CMAP-<*>
+set ip dscp af41
+class class-default
+set ip precedence <*>
+#
+ip sla <*>
+icmp-echo <*> source-ip <*>
+frequency <*>
+exit
+ip sla schedule <*> life forever start-time now
+track <*> ip sla <*> reachability
+exit
+ip route <*> <*> <*> track <*>
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation protect
+switchport port-security mac-address sticky
+spanning-tree portfast
+spanning-tree bpduguard enable
+no cdp enable
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps bgp
+snmp-server enable traps ospf state-change
+snmp-server enable traps snmp
+snmp-server enable traps vrrp
+#
+ip access-list extended FW-POLICY-<*>
+deny udp <*> <*> any eq <*>
+permit icmp <*> <*> any
+permit tcp <*> <*> any eq <*>
+permit icmp <*> <*> any
+permit udp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+router bgp <*>
+neighbor IBGP-PEERS-<*> peer-group
+neighbor IBGP-PEERS-<*> remote-as <*>
+neighbor IBGP-PEERS-<*> update-source Loopback <*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+address-family ipv4
+exit-address-family
+#
+ip access-list extended FW-POLICY-<*>
+deny ip <*> <*> any
+deny icmp <*> <*> any
+permit udp <*> <*> any eq <*>
+permit tcp <*> <*> any eq <*>
+deny ip <*> <*> any
+deny tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+ip access-list extended FW-POLICY-<*>
+permit tcp <*> <*> any eq <*>
+deny icmp <*> <*> any
+deny tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community standard
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _1743294464:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router bgp <*>
+bgp router-id <*>
+neighbor <*> remote-as <*>
+neighbor <*> password <*> <*>
+address-family ipv4
+neighbor <*> activate
+neighbor <*> route-map ISP-IN-<*> in
+neighbor <*> route-map ISP-OUT-<*> out
+exit-address-family
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community extended
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _3335036145:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp cs3
+class CMAP-<*>
+set ip dscp af41
+class class-default
+set ip precedence <*>
+#
+ip access-list extended FW-POLICY-<*>
+permit ip <*> <*> any
+deny ip <*> <*> any
+permit tcp <*> <*> any eq <*>
+permit icmp <*> <*> any
+permit ip <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+ip access-list extended FW-POLICY-<*>
+permit udp <*> <*> any eq <*>
+permit icmp <*> <*> any
+permit udp <*> <*> any eq <*>
+permit icmp <*> <*> any
+deny tcp <*> <*> any eq <*>
+permit ip <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+ip dhcp snooping
+ip dhcp snooping vlan <*>,<*>,<*>,<*>,<*>
+ip dhcp snooping information option
+ip dhcp snooping trust
+exit
+interface GigabitEthernet <*>
+ip dhcp snooping limit rate <*>
+#
+access-list <*> permit host <*>
+access-list <*> permit host <*>
+access-list <*> deny host <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+auto-cost reference-bandwidth <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router ospf <*>
+router-id <*>
+auto-cost reference-bandwidth <*>
+max-lsa <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community both
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _2448714571:.*
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp af41
+class CMAP-<*>
+set ip dscp cs3
+class CMAP-<*>
+set ip dscp ef
+class class-default
+set ip precedence <*>
+#
+ip dhcp snooping
+ip dhcp snooping vlan <*>,<*>,<*>
+ip dhcp snooping information option
+interface GigabitEthernet <*>
+ip dhcp snooping trust
+exit
+interface GigabitEthernet <*>
+ip dhcp snooping limit rate <*>
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv des PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps vrrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps config
+snmp-server enable traps bgp
+#
+router ospf <*>
+router-id <*>
+auto-cost reference-bandwidth <*>
+log-adjacency-changes detail
+default-information originate metric <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+class CMAP-<*>
+set ip dscp af41
+class class-default
+set ip precedence <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community standard
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _2590154551:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+vlan <*>
+name VLAN-DATA-<*>
+exit
+interface GigabitEthernet <*>
+description User-PC-<*>
+switchport mode access
+switchport access vlan <*>
+spanning-tree portfast
+#
+router bgp <*>
+graceful-restart
+graceful-restart restart-time <*>
+graceful-restart stalepath-time <*>
+exit
+router isis <*>
+graceful-restart
+exit
+router ospf <*>
+graceful-restart
+exit
+#
+neighbor IBGP-PEERS-<*> peer-group
+neighbor IBGP-PEERS-<*> update-source Loopback <*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+address-family ipv4
+neighbor IBGP-PEERS-<*> activate
+neighbor IBGP-PEERS-<*> route-reflector-client
+neighbor IBGP-PEERS-<*> send-community both
+exit-address-family
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+#
+interface Vlan <*>
+description Gateway-for-Users-<*>
+ip address <*> <*>
+ip helper-address <*>
+ip proxy-arp
+standby <*> ip <*>
+standby <*> priority <*>
+standby <*> preempt
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv des PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps bgp
+snmp-server enable traps snmp
+snmp-server enable traps ospf state-change
+#
+router isis AREA1-<*>
+net <*>.<*>.<*>.<*>.<*>.<*>
+is-type level-<*>-<*>
+log-adjacency-changes
+interface GigabitEthernet <*>
+ip router isis AREA1-<*>
+isis metric <*>
+#
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp af41
+class CMAP-<*>
+set ip dscp ef
+class class-default
+set ip precedence <*>
+#
+ip access-list extended FW-POLICY-<*>
+permit tcp <*> <*> any eq <*>
+permit ip <*> <*> any
+permit icmp <*> <*> any
+permit ip <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv des PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps bgp
+snmp-server enable traps vrrp
+snmp-server enable traps snmp
+#
+router isis AREA1-<*>
+net <*>.<*>.<*>.<*>.<*>.<*>
+is-type level-<*>-<*>
+log-adjacency-changes
+metric-style wide
+exit
+interface GigabitEthernet <*>
+ip router isis AREA1-<*>
+isis metric <*>
+#
+router bgp <*>
+neighbor IBGP-PEERS-<*> peer-group
+neighbor IBGP-PEERS-<*> remote-as <*>
+neighbor IBGP-PEERS-<*> update-source Loopback <*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+address-family ipv4
+neighbor IBGP-PEERS-<*> activate
+neighbor IBGP-PEERS-<*> route-reflector-client
+neighbor IBGP-PEERS-<*> send-community both
+exit-address-family
+#
+router bgp <*>
+neighbor <*> route-map SET-ATTRIBUTES-<*> in
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+match ip address prefix-list CRITICAL-PREFIX-<*>
+set weight <*>
+set as-path prepend <*> <*>
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+#
+ip access-list extended FW-POLICY-<*>
+permit ip <*> <*> any
+deny ip <*> <*> any
+permit tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+class CMAP-<*>
+set ip dscp ef
+class class-default
+set ip precedence <*>
+#
+ip access-list extended FW-POLICY-<*>
+deny udp <*> <*> any eq <*>
+deny udp <*> <*> any eq <*>
+deny icmp <*> <*> any
+permit tcp <*> <*> any eq <*>
+permit ip <*> <*> any
+permit ip <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+access-list <*> permit host <*>
+access-list <*> permit <*> <*>
+access-list <*> permit <*> <*>
+access-list <*> deny host <*>
+access-list <*> deny host <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class class-default
+set ip precedence <*>
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+ip access-list extended FW-POLICY-<*>
+deny udp <*> <*> any eq <*>
+deny ip <*> <*> any
+deny icmp <*> <*> any
+permit tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+access-list <*> permit <*> <*>
+access-list <*> permit <*> <*>
+access-list <*> deny <*> <*>
+access-list <*> deny host <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+router isis AREA1-<*>
+net <*>.<*>.<*>.<*>.<*>.<*>
+is-type level-<*>
+log-adjacency-changes
+exit
+interface GigabitEthernet <*>
+ip router isis AREA1-<*>
+isis metric <*>
+isis password <*> <*>-<*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+#
+router ospf <*>
+router-id <*>
+log-adjacency-changes detail
+auto-cost reference-bandwidth <*>
+default-information originate metric <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via rx
+exit
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via rx
+exit
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via rx
+exit
+#
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp ef
+class class-default
+set ip precedence <*>
+#
+ip access-list extended FW-POLICY-<*>
+permit tcp <*> <*> any eq <*>
+deny tcp <*> <*> any eq <*>
+deny ip <*> <*> any
+deny ip <*> <*> any
+deny icmp <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+ip access-list extended FW-POLICY-<*>
+permit udp <*> <*> any eq <*>
+permit ip <*> <*> any
+deny icmp <*> <*> any
+permit icmp <*> <*> any
+deny ip <*> <*> any
+permit ip any any
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp af41
+class CMAP-<*>
+set ip dscp ef
+class class-default
+set ip precedence <*>
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation shutdown
+switchport port-security mac-address sticky
+no cdp enable
+spanning-tree portfast
+#
+ip access-list extended FW-POLICY-<*>
+deny icmp <*> <*> any
+deny icmp <*> <*> any
+permit tcp <*> <*> any eq <*>
+deny udp <*> <*> any eq <*>
+deny tcp <*> <*> any eq <*>
+deny tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+address-family ipv4
+neighbor <*> send-community extended
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _3524689667:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps ospf state-change
+snmp-server enable traps snmp
+snmp-server enable traps vrrp
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp cs3
+class class-default
+set ip precedence <*>
+#
+aaa new-model
+tacacs server TAC-SRV-<*>
+address ipv4 <*>
+key <*> <*>-<*>
+exit
+aaa group server tacacs+ TAC-GROUP-<*>
+server name TAC-SRV-<*>
+exit
+aaa authentication login default group TAC-GROUP-<*> none
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation shutdown
+switchport port-security mac-address sticky
+switchport port-security mac-address sticky <*>
+spanning-tree bpduguard enable
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+max-lsa <*>
+auto-cost reference-bandwidth <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+ip access-list extended PBR-ACL-<*>
+permit ip host <*> any
+permit tcp any any eq <*>
+exit
+route-map PBR-MAP-<*> permit <*>
+match ip address PBR-ACL-<*>
+set ip next-hop <*>
+exit
+interface Vlan <*>
+ip policy route-map PBR-MAP-<*>
+#
+ip access-list extended FW-POLICY-<*>
+deny icmp <*> <*> any
+permit ip <*> <*> any
+deny udp <*> <*> any eq <*>
+deny icmp <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community extended
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _2389351864:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+hostname CoreSW-<*>
+enable secret <*> RuijieAdminPass
+username user-<*> privilege <*> password <*> <*>
+username user-<*> privilege <*> password <*> <*>
+username user-<*> privilege <*> password <*> <*>
+clock timezone BEIJING add <*>:<*>:<*>
+ip domain-lookup
+ip name-server <*> <*>
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv des PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps vrrp
+snmp-server enable traps ospf state-change
+snmp-server enable traps snmp
+snmp-server enable traps config
+#
+logging on
+logging buffer <*>
+logging host <*> transport udp port <*>
+logging trap warnings
+logging console errors
+logging file LOGFILE size <*>
+service timestamps debug datetime msec
+service timestamps log datetime msec
+#
+router bgp <*>
+neighbor <*> route-map SET-ATTRIBUTES-<*> in
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+match ip address prefix-list CRITICAL-PREFIX-<*>
+set as-path prepend <*> <*>
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+#
+router ospf <*>
+router-id <*>
+max-lsa <*>
+auto-cost reference-bandwidth <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+#
+router rip
+version <*>
+no auto-summary
+network <*>
+network <*>
+passive-interface Vlan <*>
+redistribute static metric <*>
+timers basic <*> <*> <*>
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps config
+snmp-server enable traps vrrp
+snmp-server enable traps snmp
+snmp-server enable traps bgp
+snmp-server enable traps ospf state-change
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community both
+exit-address-family
+exit
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router ospf <*>
+area <*> authentication message-digest
+exit
+interface GigabitEthernet <*>
+ip ospf authentication message-digest
+ip ospf message-digest-key <*> md5 <*> <*>
+ip ospf hello-interval <*>
+ip ospf dead-interval <*>
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation restrict
+switchport port-security mac-address sticky
+no cdp enable
+spanning-tree bpduguard enable
+spanning-tree portfast
+#
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp cs3
+class class-default
+set ip precedence <*>
+#
+ip multicast-routing
+ip pim rp-address <*> RP-ACL-<*>
+interface Vlan <*>
+ip pim sparse-mode
+ip igmp version <*>
+exit
+interface Vlan <*>
+ip pim sparse-mode
+ip igmp version <*>
+exit
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+max-lsa <*>
+auto-cost reference-bandwidth <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+#
+access-list <*> permit <*> <*>
+access-list <*> permit <*> <*>
+access-list <*> permit <*> <*>
+access-list <*> deny host <*>
+access-list <*> deny <*> <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp ef
+class class-default
+set ip precedence <*>
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+max-lsa <*>
+auto-cost reference-bandwidth <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation protect
+switchport port-security mac-address sticky
+switchport port-security mac-address sticky <*>
+spanning-tree bpduguard enable
+spanning-tree portfast
+#
+router bgp <*>
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation protect
+spanning-tree portfast
+spanning-tree bpduguard enable
+no cdp enable
+#
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp cs3
+class CMAP-<*>
+set ip dscp af41
+class class-default
+set ip precedence <*>
+#
+ip access-list extended FW-POLICY-<*>
+permit udp <*> <*> any eq <*>
+deny udp <*> <*> any eq <*>
+deny tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community extended
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _2955261331:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router bgp <*>
+neighbor <*> route-map SET-ATTRIBUTES-<*> in
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+match ip address prefix-list CRITICAL-PREFIX-<*>
+set weight <*>
+set metric <*>
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+#
+ip dhcp snooping
+ip dhcp snooping vlan <*>,<*>,<*>,<*>
+ip dhcp snooping information option
+ip dhcp snooping trust
+exit
+interface GigabitEthernet <*>
+ip dhcp snooping limit rate <*>
+#
+class-map match-any CMAP-<*>
+match ip dscp cs3
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp cs3
+class class-default
+set ip precedence <*>
+#
+router bgp <*>
+address-family ipv4
+exit-address-family
+ip community-list expanded COM-LIST-<*> permit _936205397:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router bgp <*>
+graceful-restart
+graceful-restart restart-time <*>
+graceful-restart stalepath-time <*>
+exit
+router ospf <*>
+graceful-restart
+exit
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation protect
+no cdp enable
+spanning-tree bpduguard enable
+spanning-tree portfast
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp af41
+class CMAP-<*>
+set ip dscp cs3
+class CMAP-<*>
+set ip dscp cs3
+class class-default
+set ip precedence <*>
+#
+ip nat inside source static tcp <*> <*> <*> <*>
+ip nat pool NAT-POOL-<*> <*> <*> netmask <*>
+ip nat inside source route-map NAT-MAP-<*> pool NAT-POOL-<*>
+interface GigabitEthernet <*>
+ip nat inside
+exit
+interface GigabitEthernet <*>
+ip nat outside
+#
+router ospf <*>
+router-id <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+#
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via any
+exit
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via any
+exit
+interface GigabitEthernet <*>
+exit
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+auto-cost reference-bandwidth <*>
+log-adjacency-changes detail
+max-lsa <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+mac address-table static <*> vlan <*> interface GigabitEthernet <*>
+mac address-table static <*> vlan <*> interface GigabitEthernet <*>
+mac address-table aging-time <*>
+interface GigabitEthernet <*>
+switchport block unicast
+exit
+vlan <*>
+mac address-table learning disable
+#
+ip access-list extended FW-POLICY-<*>
+permit ip <*> <*> any
+permit tcp <*> <*> any eq <*>
+deny udp <*> <*> any eq <*>
+deny ip <*> <*> any
+permit tcp <*> <*> any eq <*>
+permit tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv des PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps config
+snmp-server enable traps vrrp
+snmp-server enable traps ospf state-change
+#
+class-map match-any CMAP-VOIP-<*>
+match ip dscp ef
+exit
+policy-map PMAP-QUEUING-<*>
+class CMAP-VOIP-<*>
+priority percent <*>
+police cir <*> conform-action transmit exceed-action drop
+class class-default
+fair-queue
+#
+ip access-list extended FW-POLICY-<*>
+permit tcp <*> <*> any eq <*>
+deny udp <*> <*> any eq <*>
+deny tcp <*> <*> any eq <*>
+deny ip <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+router bgp <*>
+neighbor IBGP-PEERS-<*> peer-group
+neighbor IBGP-PEERS-<*> remote-as <*>
+neighbor IBGP-PEERS-<*> update-source Loopback <*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+address-family ipv4
+neighbor IBGP-PEERS-<*> activate
+neighbor IBGP-PEERS-<*> send-community both
+exit-address-family
+#
+access-list <*> permit host <*>
+access-list <*> permit <*> <*>
+access-list <*> permit <*> <*>
+access-list <*> deny <*> <*>
+access-list <*> deny <*> <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+spanning-tree mode mst
+spanning-tree extend system-id
+spanning-tree mst configuration
+name MST-REGION-<*>
+revision <*>
+instance <*> vlan <*>-<*>
+instance <*> vlan <*>-<*>
+instance <*> vlan <*>-<*>
+exit
+spanning-tree mst <*> priority <*>
+spanning-tree mst <*> priority <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community standard
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _1785502208:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security maximum <*>
+switchport port-security violation protect
+spanning-tree bpduguard enable
+no cdp enable
+spanning-tree portfast
+#
+access-list <*> permit host <*>
+access-list <*> permit <*> <*>
+access-list <*> permit host <*>
+access-list <*> deny host <*>
+access-list <*> deny <*> <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+router bgp <*>
+bgp router-id <*>
+neighbor <*> remote-as <*>
+neighbor <*> description Peer-to-ISP
+neighbor <*> password <*> <*>
+neighbor <*> update-source Loopback <*>
+address-family ipv4
+neighbor <*> activate
+neighbor <*> route-map ISP-IN-<*> in
+neighbor <*> route-map ISP-OUT-<*> out
+exit-address-family
+#
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp cs3
+class CMAP-<*>
+set ip dscp ef
+class class-default
+set ip precedence <*>
+#
+ip access-list extended FW-POLICY-<*>
+permit icmp <*> <*> any
+deny tcp <*> <*> any eq <*>
+permit icmp <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community extended
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _3915956491:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation shutdown
+spanning-tree bpduguard enable
+spanning-tree portfast
+no cdp enable
+#
+access-list <*> permit host <*>
+access-list <*> permit host <*>
+access-list <*> permit <*> <*>
+access-list <*> deny host <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp cs3
+class CMAP-<*>
+set ip dscp af41
+class class-default
+set ip precedence <*>
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv des PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps snmp
+snmp-server enable traps vrrp
+snmp-server enable traps bgp
+snmp-server enable traps ospf state-change
+snmp-server enable traps config
+#
+router ospf <*>
+router-id <*>
+max-lsa <*>
+default-information originate metric <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router bgp <*>
+graceful-restart
+graceful-restart restart-time <*>
+graceful-restart stalepath-time <*>
+exit
+router isis <*>
+graceful-restart
+exit
+#
+router bgp <*>
+neighbor <*> route-map SET-ATTRIBUTES-<*> in
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+match ip address prefix-list CRITICAL-PREFIX-<*>
+set weight <*>
+set as-path prepend <*> <*>
+set metric <*>
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community extended
+exit
+ip community-list expanded COM-LIST-<*> permit _2241946713:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router isis <*>
+graceful-restart
+exit
+router bgp <*>
+graceful-restart
+graceful-restart restart-time <*>
+graceful-restart stalepath-time <*>
+exit
+router ospf <*>
+graceful-restart
+exit
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation shutdown
+switchport port-security mac-address sticky
+switchport port-security mac-address sticky <*>
+no cdp enable
+spanning-tree portfast
+spanning-tree bpduguard enable
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+#
+router bgp <*>
+bgp router-id <*>
+neighbor <*> remote-as <*>
+neighbor <*> description Peer-to-ISP
+neighbor <*> update-source Loopback <*>
+address-family ipv4
+neighbor <*> activate
+neighbor <*> route-map ISP-IN-<*> in
+neighbor <*> route-map ISP-OUT-<*> out
+exit-address-family
+#
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via any
+exit
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via rx
+exit
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via rx
+exit
+#
+spanning-tree mode mst
+spanning-tree extend system-id
+spanning-tree mst configuration
+name MST-REGION-<*>
+revision <*>
+instance <*> vlan <*>-<*>
+exit
+spanning-tree mst <*> priority <*>
+spanning-tree mst <*> priority <*>
+#
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv des PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps vrrp
+snmp-server enable traps snmp
+snmp-server enable traps ospf state-change
+snmp-server enable traps config
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community both
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _1903684430:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router ospf <*>
+router-id <*>
+max-lsa <*>
+auto-cost reference-bandwidth <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps ospf state-change
+snmp-server enable traps snmp
+snmp-server enable traps vrrp
+#
+ip dhcp snooping
+ip dhcp snooping vlan <*>,<*>,<*>
+ip dhcp snooping verify mac-address
+interface GigabitEthernet <*>
+ip dhcp snooping trust
+exit
+interface GigabitEthernet <*>
+ip dhcp snooping limit rate <*>
+#
+ip access-list extended FW-POLICY-<*>
+deny tcp <*> <*> any eq <*>
+permit tcp <*> <*> any eq <*>
+permit tcp <*> <*> any eq <*>
+deny icmp <*> <*> any
+deny udp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+router rip
+version <*>
+no auto-summary
+network <*>
+network <*>
+network <*>
+redistribute static metric <*>
+timers basic <*> <*> <*>
+#
+hostname CoreSW-<*>
+enable secret <*> RuijieAdminPass
+username user-<*> privilege <*> password <*> <*>
+username user-<*> privilege <*> password <*> <*>
+clock timezone BEIJING add <*>:<*>:<*>
+ip domain-lookup
+ip name-server <*> <*>
+banner motd <*>
+#
+router ospf <*>
+router-id <*>
+max-lsa <*>
+default-information originate metric <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+ip dhcp snooping
+ip dhcp snooping vlan <*>,<*>
+ip dhcp snooping information option
+interface GigabitEthernet <*>
+ip dhcp snooping trust
+exit
+interface GigabitEthernet <*>
+ip dhcp snooping limit rate <*>
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation shutdown
+switchport port-security mac-address sticky
+spanning-tree bpduguard enable
+no cdp enable
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community standard
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _2482473539:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+access-list <*> permit <*> <*>
+access-list <*> permit host <*>
+access-list <*> permit host <*>
+access-list <*> deny <*> <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+ip access-list extended FW-POLICY-<*>
+permit udp <*> <*> any eq <*>
+permit icmp <*> <*> any
+deny ip <*> <*> any
+deny tcp <*> <*> any eq <*>
+permit tcp <*> <*> any eq <*>
+permit udp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps vrrp
+snmp-server enable traps config
+snmp-server enable traps snmp
+snmp-server enable traps ospf state-change
+#
+access-list <*> permit <*> <*>
+access-list <*> permit <*> <*>
+access-list <*> permit <*> <*>
+access-list <*> deny host <*>
+access-list <*> deny host <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+ip dhcp snooping
+ip dhcp snooping vlan <*>,<*>
+ip dhcp snooping verify mac-address
+interface GigabitEthernet <*>
+exit
+interface GigabitEthernet <*>
+ip dhcp snooping limit rate <*>
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp af41
+class CMAP-<*>
+set ip dscp cs3
+class CMAP-<*>
+set ip dscp cs3
+class class-default
+set ip precedence <*>
+#
+router ospf <*>
+router-id <*>
+auto-cost reference-bandwidth <*>
+default-information originate metric <*>
+max-lsa <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community both
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _2036582788:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation protect
+spanning-tree bpduguard enable
+spanning-tree portfast
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+max-lsa <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+#
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp af41
+class CMAP-<*>
+set ip dscp af41
+class class-default
+set ip precedence <*>
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp cs3
+class CMAP-<*>
+set ip dscp af41
+class class-default
+set ip precedence <*>
+#
+router rip
+version <*>
+no auto-summary
+network <*>
+network <*>
+network <*>
+passive-interface Vlan <*>
+redistribute static metric <*>
+timers basic <*> <*> <*>
+#
+router bgp <*>
+neighbor IBGP-PEERS-<*> remote-as <*>
+neighbor IBGP-PEERS-<*> update-source Loopback <*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+address-family ipv4
+neighbor IBGP-PEERS-<*> activate
+exit-address-family
+#
+router ospf <*>
+router-id <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+ip access-list extended FW-POLICY-<*>
+deny udp <*> <*> any eq <*>
+permit icmp <*> <*> any
+permit icmp <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+ip vrf VRF-CUST-A-<*>
+rd <*>:<*>
+route-target export <*>:<*>
+route-target import <*>:<*>
+exit
+interface GigabitEthernet <*>
+ip vrf forwarding VRF-CUST-A-<*>
+ip address <*> <*>
+exit
+router ospf <*>
+address-family ipv4 vrf VRF-CUST-A-<*>
+redistribute connected
+exit-address-family
+#
+router bgp <*>
+neighbor IBGP-PEERS-<*> peer-group
+neighbor IBGP-PEERS-<*> remote-as <*>
+neighbor IBGP-PEERS-<*> update-source Loopback <*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor IBGP-PEERS-<*> activate
+neighbor IBGP-PEERS-<*> route-reflector-client
+neighbor IBGP-PEERS-<*> send-community both
+exit-address-family
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+auto-cost reference-bandwidth <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router isis AREA1-<*>
+net <*>.<*>.<*>.<*>.<*>.<*>
+is-type level-<*>-only
+log-adjacency-changes
+exit
+interface GigabitEthernet <*>
+isis metric <*>
+isis password <*> <*>-<*>
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp cs3
+class CMAP-<*>
+set ip dscp af41
+class class-default
+set ip precedence <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community standard
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _3122748274:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router bgp <*>
+neighbor IBGP-PEERS-<*> peer-group
+neighbor IBGP-PEERS-<*> remote-as <*>
+neighbor IBGP-PEERS-<*> update-source Loopback <*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+address-family ipv4
+neighbor IBGP-PEERS-<*> activate
+exit-address-family
+#
+router ospf <*>
+router-id <*>
+auto-cost reference-bandwidth <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps ospf state-change
+snmp-server enable traps vrrp
+snmp-server enable traps bgp
+snmp-server enable traps config
+#
+aaa new-model
+tacacs server TAC-SRV-<*>
+address ipv4 <*>
+key <*> <*>-<*>
+exit
+aaa group server tacacs+ TAC-GROUP-<*>
+server name TAC-SRV-<*>
+exit
+aaa authentication login default group TAC-GROUP-<*> local
+#
+ip multicast-routing
+ip pim send-rp-announce Loopback <*> scope <*> group-list MCAST-GROUPS-<*>
+interface Vlan <*>
+ip pim sparse-mode
+ip igmp version <*>
+exit
+interface Vlan <*>
+ip pim sparse-mode
+ip igmp version <*>
+exit
+#
+ip access-list extended FW-POLICY-<*>
+permit udp <*> <*> any eq <*>
+permit ip <*> <*> any
+permit icmp <*> <*> any
+permit tcp <*> <*> any eq <*>
+deny tcp <*> <*> any eq <*>
+deny udp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv des PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps snmp
+snmp-server enable traps ospf state-change
+snmp-server enable traps bgp
+snmp-server enable traps config
+snmp-server enable traps vrrp
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv des PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps ospf state-change
+snmp-server enable traps config
+snmp-server enable traps vrrp
+snmp-server enable traps bgp
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation restrict
+switchport port-security mac-address sticky
+switchport port-security mac-address sticky <*>
+no cdp enable
+spanning-tree portfast
+spanning-tree bpduguard enable
+#
+vlan <*>
+name VLAN-DATA-<*>
+exit
+interface GigabitEthernet <*>
+description User-PC-<*>
+switchport mode access
+switchport access vlan <*>
+spanning-tree bpduguard enable
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps vrrp
+snmp-server enable traps bgp
+snmp-server enable traps config
+snmp-server enable traps ospf state-change
+snmp-server enable traps snmp
+#
+router bgp <*>
+neighbor IBGP-PEERS-<*> peer-group
+neighbor IBGP-PEERS-<*> remote-as <*>
+neighbor IBGP-PEERS-<*> update-source Loopback <*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+address-family ipv4
+neighbor IBGP-PEERS-<*> activate
+neighbor IBGP-PEERS-<*> route-reflector-client
+exit-address-family
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation shutdown
+spanning-tree portfast
+no cdp enable
+spanning-tree bpduguard enable
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community standard
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _70936678:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router ospf <*>
+router-id <*>
+log-adjacency-changes detail
+max-lsa <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+ip multicast-routing
+ip pim send-rp-announce Loopback <*> scope <*> group-list MCAST-GROUPS-<*>
+interface Vlan <*>
+ip pim sparse-mode
+ip igmp version <*>
+exit
+interface Vlan <*>
+ip pim sparse-mode
+ip igmp version <*>
+exit
+interface Vlan <*>
+ip pim sparse-mode
+ip igmp version <*>
+exit
+#
+router ospf <*>
+router-id <*>
+log-adjacency-changes detail
+auto-cost reference-bandwidth <*>
+max-lsa <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+#
+router ospf <*>
+router-id <*>
+auto-cost reference-bandwidth <*>
+max-lsa <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router ospf <*>
+router-id <*>
+max-lsa <*>
+default-information originate metric <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community standard
+exit-address-family
+exit
+ip community-list standard COM-LIST-<*> permit <*>:<*>
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+match ip dscp ef
+exit
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp cs3
+class class-default
+set ip precedence <*>
+#
+router ospf <*>
+router-id <*>
+log-adjacency-changes detail
+max-lsa <*>
+default-information originate metric <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community both
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _787321999:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router ospf <*>
+router-id <*>
+auto-cost reference-bandwidth <*>
+default-information originate metric <*>
+max-lsa <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+auto-cost reference-bandwidth <*>
+log-adjacency-changes detail
+max-lsa <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps config
+snmp-server enable traps vrrp
+snmp-server enable traps ospf state-change
+#
+ip access-list extended FW-POLICY-<*>
+permit tcp <*> <*> any eq <*>
+deny ip <*> <*> any
+permit udp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+max-lsa <*>
+auto-cost reference-bandwidth <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router ospf <*>
+graceful-restart
+exit
+router bgp <*>
+graceful-restart
+graceful-restart restart-time <*>
+graceful-restart stalepath-time <*>
+exit
+router isis <*>
+graceful-restart
+exit
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv des PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps snmp
+snmp-server enable traps config
+snmp-server enable traps ospf state-change
+snmp-server enable traps bgp
+snmp-server enable traps vrrp
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community extended
+exit-address-family
+exit
+ip community-list standard COM-LIST-<*> permit <*>:<*>
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router bgp <*>
+address-family ipv4
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _3279809551:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation protect
+switchport port-security mac-address sticky
+spanning-tree bpduguard enable
+spanning-tree portfast
+no cdp enable
+#
+ip access-list extended FW-POLICY-<*>
+deny ip <*> <*> any
+permit icmp <*> <*> any
+deny tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+router bgp <*>
+neighbor <*> send-community extended
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _730020551:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community both
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _2362200595:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation shutdown
+switchport port-security mac-address sticky
+spanning-tree bpduguard enable
+spanning-tree portfast
+no cdp enable
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation protect
+switchport port-security mac-address sticky
+spanning-tree bpduguard enable
+no cdp enable
+#
+router ospf <*>
+router-id <*>
+auto-cost reference-bandwidth <*>
+max-lsa <*>
+default-information originate metric <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp cs3
+class CMAP-<*>
+set ip dscp cs3
+class class-default
+set ip precedence <*>
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv des PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps bgp
+snmp-server enable traps snmp
+snmp-server enable traps config
+snmp-server enable traps ospf state-change
+snmp-server enable traps vrrp
+#
+access-list <*> permit <*> <*>
+access-list <*> permit <*> <*>
+access-list <*> permit host <*>
+access-list <*> deny <*> <*>
+access-list <*> deny host <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp cs3
+class CMAP-<*>
+set ip dscp af41
+class class-default
+set ip precedence <*>
+#
+logging on
+logging buffer <*>
+logging host <*> transport udp port <*>
+logging trap informational
+logging console errors
+logging file LOGFILE size <*>
+service timestamps debug datetime msec
+service timestamps log datetime msec
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps bgp
+snmp-server enable traps ospf state-change
+snmp-server enable traps vrrp
+snmp-server enable traps config
+snmp-server enable traps snmp
+#
+ip access-list extended FW-POLICY-<*>
+permit tcp <*> <*> any eq <*>
+deny ip <*> <*> any
+permit udp <*> <*> any eq <*>
+permit tcp <*> <*> any eq <*>
+deny ip <*> <*> any
+deny tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+#
+access-list <*> permit <*> <*>
+access-list <*> permit <*> <*>
+access-list <*> permit <*> <*>
+access-list <*> deny host <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+ip access-list extended PBR-ACL-<*>
+permit ip host <*> any
+permit tcp any any eq <*>
+exit
+route-map PBR-MAP-<*> permit <*>
+match ip address PBR-ACL-<*>
+set interface Null <*>
+exit
+interface Vlan <*>
+ip policy route-map PBR-MAP-<*>
+#
+router bgp <*>
+neighbor <*> route-map SET-ATTRIBUTES-<*> in
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+match ip address prefix-list CRITICAL-PREFIX-<*>
+set as-path prepend <*> <*>
+set metric <*>
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+#
+router isis AREA1-<*>
+net <*>.<*>.<*>.<*>.<*>.<*>
+is-type level-<*>
+log-adjacency-changes
+exit
+interface GigabitEthernet <*>
+ip router isis AREA1-<*>
+isis metric <*>
+#
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+class-map match-any CMAP-<*>
+match ip dscp ef
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp af41
+class CMAP-<*>
+set ip dscp ef
+class class-default
+set ip precedence <*>
+#
+access-list <*> permit host <*>
+access-list <*> permit host <*>
+access-list <*> permit <*> <*>
+access-list <*> deny <*> <*>
+access-list <*> deny host <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+router ospf <*>
+router-id <*>
+auto-cost reference-bandwidth <*>
+max-lsa <*>
+log-adjacency-changes detail
+default-information originate metric <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community standard
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _4111020668:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security violation restrict
+switchport port-security mac-address sticky
+no cdp enable
+spanning-tree bpduguard enable
+#
+router isis AREA1-<*>
+net <*>.<*>.<*>.<*>.<*>.<*>
+is-type level-<*>
+log-adjacency-changes
+metric-style wide
+exit
+interface GigabitEthernet <*>
+ip router isis AREA1-<*>
+isis metric <*>
+#
+router bgp <*>
+neighbor <*> route-map SET-ATTRIBUTES-<*> in
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+match ip address prefix-list CRITICAL-PREFIX-<*>
+set local-preference <*>
+set weight <*>
+set as-path prepend <*> <*>
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+#
+vlan <*>
+name VLAN-DATA-<*>
+exit
+interface GigabitEthernet <*>
+description User-PC-<*>
+switchport mode access
+switchport access vlan <*>
+spanning-tree portfast
+spanning-tree bpduguard enable
+#
+service dhcp
+interface Vlan <*>
+ip helper-address <*>
+ip helper-address <*>
+no ip redirects
+exit
+ip forward-protocol udp <*>
+ip forward-protocol udp <*>
+#
+ip access-list extended FW-POLICY-<*>
+deny icmp <*> <*> any
+permit tcp <*> <*> any eq <*>
+deny tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+service dhcp
+interface Vlan <*>
+ip helper-address <*>
+ip helper-address <*>
+ip helper-address <*>
+no ip redirects
+exit
+ip forward-protocol udp <*>
+ip forward-protocol udp <*>
+#
+router isis AREA1-<*>
+net <*>.<*>.<*>.<*>.<*>.<*>
+is-type level-<*>
+log-adjacency-changes
+metric-style wide
+exit
+interface GigabitEthernet <*>
+ip router isis AREA1-<*>
+isis metric <*>
+isis password <*> <*>-<*>
+#
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+#
+router bgp <*>
+neighbor <*> route-map SET-ATTRIBUTES-<*> in
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+match ip address prefix-list CRITICAL-PREFIX-<*>
+set local-preference <*>
+set weight <*>
+set as-path prepend <*> <*>
+set metric <*>
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+#
+router isis AREA1-<*>
+net <*>.<*>.<*>.<*>.<*>.<*>
+is-type level-<*>-only
+log-adjacency-changes
+metric-style wide
+exit
+interface GigabitEthernet <*>
+ip router isis AREA1-<*>
+isis metric <*>
+#
+router bgp <*>
+neighbor <*> route-map SET-ATTRIBUTES-<*> in
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+match ip address prefix-list CRITICAL-PREFIX-<*>
+set local-preference <*>
+set metric <*>
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+#
+interface Port-channel <*>
+description LACP-to-Core-<*>
+switchport mode trunk
+switchport trunk allowed vlan add <*>-<*>
+exit
+interface range GigabitEthernet <*>
+channel-group <*> mode active
+no shutdown
+exit
+#
+router ospf <*>
+router-id <*>
+log-adjacency-changes detail
+max-lsa <*>
+default-information originate metric <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+ip access-list extended FW-POLICY-<*>
+permit ip <*> <*> any
+deny ip <*> <*> any
+deny udp <*> <*> any eq <*>
+permit ip <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community standard
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _5501230:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+ip access-list extended FW-POLICY-<*>
+deny tcp <*> <*> any eq <*>
+permit ip <*> <*> any
+permit ip <*> <*> any
+permit ip <*> <*> any
+deny icmp <*> <*> any
+permit icmp <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+service dhcp
+ip dhcp excluded-address <*> <*>
+ip dhcp pool POOL-USERS-<*>
+network <*> <*>
+default-router <*>
+dns-server <*> <*>
+domain-name company-<*>.local
+lease <*> <*> <*>
+#
+ip dhcp snooping
+ip dhcp snooping vlan <*>,<*>,<*>
+ip dhcp snooping information option
+ip dhcp snooping verify mac-address
+interface GigabitEthernet <*>
+ip dhcp snooping trust
+exit
+interface GigabitEthernet <*>
+ip dhcp snooping limit rate <*>
+#
+access-list <*> permit host <*>
+access-list <*> permit <*> <*>
+access-list <*> permit host <*>
+access-list <*> deny host <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+router ospf <*>
+router-id <*>
+log-adjacency-changes detail
+auto-cost reference-bandwidth <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+log-adjacency-changes detail
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+passive-interface Vlan <*>
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv aes <*> PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps vrrp
+snmp-server enable traps snmp
+snmp-server enable traps bgp
+#
+ip access-list extended FW-POLICY-<*>
+permit udp <*> <*> any eq <*>
+permit ip <*> <*> any
+deny icmp <*> <*> any
+permit ip any any
+exit
+ip access-group FW-POLICY-<*> in
+#
+router bgp <*>
+neighbor <*> route-map SET-ATTRIBUTES-<*> in
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+match ip address prefix-list CRITICAL-PREFIX-<*>
+set local-preference <*>
+set as-path prepend <*> <*>
+set metric <*>
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+#
+aaa new-model
+radius server RAD-SRV-<*>
+address ipv4 <*>
+key <*> <*>-<*>
+exit
+aaa group server radius RAD-GROUP-<*>
+server name RAD-SRV-<*>
+exit
+aaa authentication login default group RAD-GROUP-<*> none
+aaa authorization exec default group RAD-GROUP-<*> local if-authenticated
+#
+neighbor <*> route-map SET-ATTRIBUTES-<*> in
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+match ip address prefix-list CRITICAL-PREFIX-<*>
+set local-preference <*>
+set weight <*>
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+#
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via any
+exit
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via rx
+exit
+interface GigabitEthernet <*>
+ip verify unicast source reachable-via any
+exit
+#
+ip access-list extended FW-POLICY-<*>
+deny ip <*> <*> any
+permit udp <*> <*> any eq <*>
+deny udp <*> <*> any eq <*>
+deny tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+ip access-list extended FW-POLICY-<*>
+deny udp <*> <*> any eq <*>
+deny tcp <*> <*> any eq <*>
+permit icmp <*> <*> any
+permit udp <*> <*> any eq <*>
+deny ip <*> <*> any
+deny icmp <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+#
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp af41
+class CMAP-<*>
+set ip dscp cs3
+class class-default
+set ip precedence <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community extended
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _2104817162:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+hostname CoreSW-<*>
+enable secret <*> RuijieAdminPass
+username user-<*> privilege <*> password <*> <*>
+username user-<*> privilege <*> password <*> <*>
+username user-<*> privilege <*> password <*> <*>
+clock timezone BEIJING add <*>:<*>:<*>
+ip domain-lookup
+ip name-server <*> <*>
+banner motd <*>
+#
+ip access-list extended FW-POLICY-<*>
+deny ip <*> <*> any
+deny udp <*> <*> any eq <*>
+deny udp <*> <*> any eq <*>
+permit udp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+#
+aaa new-model
+radius server RAD-SRV-<*>
+address ipv4 <*>
+key <*> <*>-<*>
+exit
+aaa group server radius RAD-GROUP-<*>
+server name RAD-SRV-<*>
+exit
+aaa authentication login default group RAD-GROUP-<*> local
+#
+address-family ipv4
+neighbor <*> send-community standard
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _1610326777:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+ip access-list extended FW-POLICY-<*>
+permit tcp <*> <*> any eq <*>
+permit ip <*> <*> any
+permit tcp <*> <*> any eq <*>
+deny udp <*> <*> any eq <*>
+deny icmp <*> <*> any
+deny icmp <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+deny ip <*> <*> any
+deny icmp <*> <*> any
+deny ip <*> <*> any
+deny icmp <*> <*> any
+permit icmp <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+interface GigabitEthernet <*>
+switchport mode access
+switchport port-security
+switchport port-security maximum <*>
+switchport port-security violation protect
+switchport port-security mac-address sticky
+no cdp enable
+spanning-tree portfast
+#
+router ospf <*>
+graceful-restart
+exit
+router isis <*>
+graceful-restart
+exit
+router bgp <*>
+graceful-restart
+graceful-restart restart-time <*>
+graceful-restart stalepath-time <*>
+exit
+#
+ip access-list extended FW-POLICY-<*>
+permit icmp <*> <*> any
+permit tcp <*> <*> any eq <*>
+deny tcp <*> <*> any eq <*>
+permit ip <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+access-list <*> permit <*> <*>
+access-list <*> permit <*> <*>
+access-list <*> permit host <*>
+access-list <*> deny <*> <*>
+access-list <*> deny <*> <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+snmp-server group SecureGroup-<*> v3 priv
+snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv des PrivPass123
+snmp-server location DataCenter-<*>-Rack-<*>
+snmp-server contact NetAdmin-<*>
+snmp-server host <*> traps version <*> priv SnmpUser-<*>
+snmp-server enable traps ospf state-change
+snmp-server enable traps snmp
+snmp-server enable traps config
+#
+access-list <*> permit <*> <*>
+access-list <*> permit host <*>
+access-list <*> permit host <*>
+access-list <*> deny <*> <*>
+access-list <*> deny <*> <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+ip dhcp snooping
+ip dhcp snooping vlan <*>,<*>,<*>,<*>,<*>
+ip dhcp snooping information option
+ip dhcp snooping verify mac-address
+interface GigabitEthernet <*>
+ip dhcp snooping trust
+exit
+interface GigabitEthernet <*>
+ip dhcp snooping limit rate <*>
+#
+router rip
+version <*>
+no auto-summary
+network <*>
+network <*>
+network <*>
+passive-interface Vlan <*>
+timers basic <*> <*> <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community extended
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _2279795731:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router bgp <*>
+neighbor <*> route-map SET-ATTRIBUTES-<*> in
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+match ip address prefix-list CRITICAL-PREFIX-<*>
+set local-preference <*>
+set as-path prepend <*> <*>
+exit
+route-map SET-ATTRIBUTES-<*> permit <*>
+#
+router ospf <*>
+router-id <*>
+default-information originate metric <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+network <*> <*> area <*>
+passive-interface Vlan <*>
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community standard
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _3441466621:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+ip access-list extended FW-POLICY-<*>
+deny icmp <*> <*> any
+permit tcp <*> <*> any eq <*>
+deny ip <*> <*> any
+permit icmp <*> <*> any
+permit icmp <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> in
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+#
+access-list <*> permit <*> <*>
+access-list <*> permit host <*>
+access-list <*> permit <*> <*>
+access-list <*> deny <*> <*>
+access-list <*> deny any log
+line vty <*> <*>
+access-class <*> in
+transport input ssh
+#
+class-map match-any CMAP-<*>
+match ip dscp cs3
+exit
+class-map match-any CMAP-<*>
+match ip dscp af41
+exit
+policy-map PMAP-MARKING-<*>
+class CMAP-<*>
+set ip dscp ef
+class CMAP-<*>
+set ip dscp cs3
+class class-default
+set ip precedence <*>
+#
+ip multicast-routing
+ip pim rp-address <*> RP-ACL-<*>
+interface Vlan <*>
+ip pim sparse-mode
+ip igmp version <*>
+exit
+interface Vlan <*>
+ip pim sparse-mode
+ip igmp version <*>
+exit
+interface Vlan <*>
+ip pim sparse-mode
+ip igmp version <*>
+exit
+#
+router bgp <*>
+neighbor IBGP-PEERS-<*> peer-group
+neighbor IBGP-PEERS-<*> remote-as <*>
+neighbor IBGP-PEERS-<*> update-source Loopback <*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+neighbor <*> peer-group IBGP-PEERS-<*>
+address-family ipv4
+neighbor IBGP-PEERS-<*> activate
+neighbor IBGP-PEERS-<*> route-reflector-client
+exit-address-family
+#
+mac address-table static <*> vlan <*> interface GigabitEthernet <*>
+mac address-table static <*> vlan <*> interface GigabitEthernet <*>
+mac address-table aging-time <*>
+interface GigabitEthernet <*>
+switchport block multicast
+exit
+vlan <*>
+mac address-table learning disable
+#
+router ospf <*>
+graceful-restart
+exit
+router bgp <*>
+graceful-restart
+graceful-restart restart-time <*>
+graceful-restart stalepath-time <*>
+exit
+#
+router bgp <*>
+bgp router-id <*>
+neighbor <*> remote-as <*>
+address-family ipv4
+neighbor <*> activate
+neighbor <*> route-map ISP-IN-<*> in
+neighbor <*> route-map ISP-OUT-<*> out
+exit-address-family
+#
+ip access-list extended FW-POLICY-<*>
+deny ip <*> <*> any
+deny ip <*> <*> any
+permit tcp <*> <*> any eq <*>
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+#
+tacacs server TAC-SRV-<*>
+address ipv4 <*>
+key <*> <*>-<*>
+exit
+aaa group server tacacs+ TAC-GROUP-<*>
+server name TAC-SRV-<*>
+exit
+aaa authentication login default group TAC-GROUP-<*> local
+aaa accounting exec default start-stop group TAC-GROUP-<*>
+#
+ip access-list extended FW-POLICY-<*>
+permit tcp <*> <*> any eq <*>
+deny icmp <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+ip access-list extended FW-POLICY-<*>
+deny tcp <*> <*> any eq <*>
+deny ip <*> <*> any
+deny ip <*> <*> any
+permit ip <*> <*> any
+permit ip any any
+exit
+interface Vlan <*>
+ip access-group FW-POLICY-<*> out
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> send-community standard
+exit-address-family
+exit
+ip community-list expanded COM-LIST-<*> permit _2922259916:.*
+route-map SET-COMMUNITY-<*> permit <*>
+match community COM-LIST-<*>
+set community <*>:<*> additive
+#
+router bgp <*>
+address-family ipv4
+neighbor <*> prefix-list IN-FILTER-<*> in
+neighbor <*> prefix-list OUT-FILTER-<*> out
+exit-address-family
+exit
+ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>
+ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>

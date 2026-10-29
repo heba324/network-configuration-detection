@@ -1,0 +1,1359 @@
+{
+  "vendor": "cisco",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "RESOURCE_CONFLICT",
+  "错误类型别名": [
+    "RESOURCE_CONFLICT"
+  ],
+  "错误类型描述": "资源冲突（真实资源值重复分配）",
+  "实际模板占比": "15.20%",
+  "数据集调整占比": "16.00%",
+  "错误数量": 168,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 5059,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_RR_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RR_VPN_OUT）"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 7118,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing2_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing2_VPN_OUT）"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 7036,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_Set_Default_Routes",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_Set_Default_Routes）"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 5240,
+      "正确的配置": "vrf 4G_RAN",
+      "错误的配置": "vrf 5GC_MGMN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5GC_MGMN）"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 2464,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing6_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing6_VPN_OUT）"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 3104,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing7_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing7_VPN_OUT）"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 1780,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing8_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing8_VPN_OUT）"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 2174,
+      "正确的配置": "vrf 3G_RAN",
+      "错误的配置": "vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 1781,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing10_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing10_VPN_OUT）"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 2346,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy TO_MARRing11_VPN_OUT in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing11_VPN_OUT）"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 5569,
+      "正确的配置": "route-policy rp_QD_5GC_CITY_out out",
+      "错误的配置": "route-policy TO_MARRing11_VPN_OUT out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing11_VPN_OUT）"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 6558,
+      "正确的配置": "route-policy rp_IPRAN_OAM_in in",
+      "错误的配置": "route-policy TO_MARRing12_VPN_OUT in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing12_VPN_OUT）"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 6961,
+      "正确的配置": "vrf 5G_RAN_VIP",
+      "错误的配置": "vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 4132,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_RRC4_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC4_VPN_OUT）"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 7047,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_RRC5_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC5_VPN_OUT）"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 1804,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_RRC1_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC1_VPN_OUT）"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 3600,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy pass_all",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pass_all）"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 2828,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_WH_5G_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_WH_5G_RAN_in）"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 1411,
+      "正确的配置": "route-policy TO_MARRing4_VPN_OUT",
+      "错误的配置": "route-policy rp_YT_5G_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_YT_5G_RAN_in）"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 1465,
+      "正确的配置": "vrf 4G_RAN",
+      "错误的配置": "vrf SmartMAN_AUTO_ONLINE",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 SmartMAN_AUTO_ONLINE）"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 1946,
+      "正确的配置": "vrf 5G_OAM",
+      "错误的配置": "vrf 5GC_MGMN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5GC_MGMN）"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 3016,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_5GC_WAP_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5GC_WAP_out）"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 2922,
+      "正确的配置": "vrf 3G_RAN",
+      "错误的配置": "vrf 3G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3G_OAM）"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 2357,
+      "正确的配置": "route-policy TO_MARRing11_VPN_OUT out",
+      "错误的配置": "route-policy rp_IPRAN_RAN_in out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_IPRAN_RAN_in）"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 5081,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_SmartMAN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_SmartMAN_OUT）"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 4612,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_5G_OAM_v6_out in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5G_OAM_v6_out）"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 6305,
+      "正确的配置": "route-policy rp_GPRS_Gn_C_v4_in",
+      "错误的配置": "route-policy rp_IPRAN_RAN_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_IPRAN_RAN_out）"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 2689,
+      "正确的配置": "vrf 4G_OAM",
+      "错误的配置": "vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 3212,
+      "正确的配置": "vrf 3G_RAN",
+      "错误的配置": "vrf 3G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3G_OAM）"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 4742,
+      "正确的配置": "route-policy rp_RRC1_VPN_OUT",
+      "错误的配置": "route-policy rp_5GC_5GC_WAP_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5GC_5GC_WAP_in）"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 2341,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_default_v4_out in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_default_v4_out）"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 5044,
+      "正确的配置": "redistribute bgp 64585 metric-type 1 route-policy rp_IPRAN_NMS_TO_RING",
+      "错误的配置": "redistribute bgp 64585 metric-type 1 route-policy rp_5GC_5GC_MGMN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5GC_5GC_MGMN_in）"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 1978,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_GPRS_Gn_C_v6_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_GPRS_Gn_C_v6_in）"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 4885,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_GPRS_Gn_C_v4_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_GPRS_Gn_C_v4_out）"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 1136,
+      "正确的配置": "redistribute isis 1000 level-2 metric 10000 route-policy rp_NMS_TO_RING",
+      "错误的配置": "redistribute isis 1000 level-2 metric 10000 route-policy rp_LTE_WCDMA_OAM_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_LTE_WCDMA_OAM_in）"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 3067,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_5GC_GPRS_Gn_C_v4_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5GC_GPRS_Gn_C_v4_in）"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 1572,
+      "正确的配置": "redistribute isis 1000 level-2 metric 10000 route-policy rp_NMS_TO_RING",
+      "错误的配置": "redistribute isis 1000 level-2 metric 10000 route-policy rp_5GC_GPRS_Gn_C_v6_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5GC_GPRS_Gn_C_v6_in）"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 4944,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_SmartMAN_NSM_SNMP_IN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_SmartMAN_NSM_SNMP_IN）"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 4617,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_SmartMAN_AUTO_ONLINE_IN in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_SmartMAN_AUTO_ONLINE_IN）"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 4803,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_CT_5G_RAN_in in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_CT_5G_RAN_in）"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 5088,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_CU_5G_RAN_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_CU_5G_RAN_out）"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 7451,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_RR_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RR_VPN_OUT）"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 2438,
+      "正确的配置": "vrf 3G_OAM",
+      "错误的配置": "vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 6794,
+      "正确的配置": "route-policy rp_5GC_GPRS_Gn_C_v6_in in",
+      "错误的配置": "route-policy rp_RING_TO_CORE in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RING_TO_CORE）"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 2596,
+      "正确的配置": "vrf 5G_RAN",
+      "错误的配置": "vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 2312,
+      "正确的配置": "redistribute isis 1 level-2 metric 10000 route-policy rp_RING_TO_CORE",
+      "错误的配置": "redistribute isis 1 level-2 metric 10000 route-policy TO_MARRing2_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing2_VPN_OUT）"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 7068,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_IPRAN_NMS_TO_RING",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_IPRAN_NMS_TO_RING）"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 6904,
+      "正确的配置": "route-policy rp_CU_5G_RAN_out",
+      "错误的配置": "route-policy rp_Set_Default_Routes",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_Set_Default_Routes）"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 5320,
+      "正确的配置": "network <IPV6>/122 route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV6>/122 route-policy TO_MARRing3_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing3_VPN_OUT）"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 4954,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing4_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing4_VPN_OUT）"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 5085,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing6_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing6_VPN_OUT）"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 5133,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Local_Routes",
+      "错误的配置": "network <IPV4> route-policy TO_MARRing7_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing7_VPN_OUT）"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 3029,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing5_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing5_VPN_OUT）"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 2895,
+      "正确的配置": "vrf 3G_RAN",
+      "错误的配置": "vrf 3G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3G_OAM）"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 1779,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "network <IPV4> route-policy TO_MARRing15_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing15_VPN_OUT）"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 4958,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_RRC_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC_VPN_OUT）"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 2532,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_Set_Local_Routes",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_Set_Local_Routes）"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 1456,
+      "正确的配置": "route-policy TO_MARRing10_VPN_OUT",
+      "错误的配置": "route-policy rp_RRC3_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC3_VPN_OUT）"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 6217,
+      "正确的配置": "route-policy rp_WCDMA_OAM_in",
+      "错误的配置": "route-policy rp_RRC4_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC4_VPN_OUT）"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 3085,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_RRC7_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC7_VPN_OUT）"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 3892,
+      "正确的配置": "vrf 4G_RAN",
+      "错误的配置": "vrf GPRS_Gn_C",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 GPRS_Gn_C）"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 4953,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_RRC6_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC6_VPN_OUT）"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 6658,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Local_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy pass_all",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pass_all）"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 3031,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_ADD_PATH_Adv",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_ADD_PATH_Adv）"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 1187,
+      "正确的配置": "redistribute bgp 64585 metric-type 1 route-policy rp_IPRAN_NMS_TO_RING",
+      "错误的配置": "redistribute bgp 64585 metric-type 1 route-policy rp_WF_5G_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_WF_5G_RAN_in）"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 6934,
+      "正确的配置": "aggregate-address <IPV6> route-policy rp_Set_Local_Routes",
+      "错误的配置": "aggregate-address <IPV6> route-policy rp_WH_5G_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_WH_5G_RAN_in）"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 5056,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_QD_5GC_CITY_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_QD_5GC_CITY_out）"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 2509,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_5G_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5G_RAN_in）"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 3304,
+      "正确的配置": "vrf 4G_OAM",
+      "错误的配置": "vrf GPRS_Gn_C",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 GPRS_Gn_C）"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 6280,
+      "正确的配置": "route-policy rp_default_v4_out",
+      "错误的配置": "route-policy rp_5GC_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5GC_RAN_in）"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 5237,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_5GC_WAP_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5GC_WAP_out）"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 3111,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_IPRAN_OAM_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_IPRAN_OAM_in）"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 6748,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Local_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_WCDMA_OAM_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_WCDMA_OAM_in）"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 3260,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_WCDMA_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_WCDMA_RAN_in）"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 4783,
+      "正确的配置": "vrf SmartMAN_AUTO_ONLINE",
+      "错误的配置": "vrf 5GC_WAP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5GC_WAP）"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 4987,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_IPRAN_OAM_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_IPRAN_OAM_out）"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 8034,
+      "正确的配置": "vrf 5GC_MGMN",
+      "错误的配置": "vrf 3G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3G_OAM）"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 4785,
+      "正确的配置": "router-id <IPV4>",
+      "错误的配置": "router-id Loopback0",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 Loopback0）"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 5846,
+      "正确的配置": "vrf 3G_OAM",
+      "错误的配置": "vrf 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 2216,
+      "正确的配置": "redistribute isis 1000 level-2 metric 10000 route-policy rp_NMS_TO_RING",
+      "错误的配置": "redistribute isis 1000 level-2 metric 10000 route-policy rp_default_v6_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_default_v6_out）"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 2731,
+      "正确的配置": "network <IPV6> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV6> route-policy rp_5GC_MGMN_v4_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5GC_MGMN_v4_out）"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 3102,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_GPRS_Gn_C_v4_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_GPRS_Gn_C_v4_in）"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 463,
+      "正确的配置": "vrf 3G_OAM",
+      "错误的配置": "vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 7085,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_LTE_WCDMA_OAM_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_LTE_WCDMA_OAM_in）"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 4289,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_5GC_GPRS_Gn_C_v6_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5GC_GPRS_Gn_C_v6_in）"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 7051,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_SmartMAN_NSM_SNMP_IN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_SmartMAN_NSM_SNMP_IN）"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 5236,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_CT_5G_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_CT_5G_RAN_in）"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 6384,
+      "正确的配置": "vrf 3G_RAN",
+      "错误的配置": "vrf 3G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3G_OAM）"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 3274,
+      "正确的配置": "vrf 5G_OAM",
+      "错误的配置": "vrf 4G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_OAM）"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 4272,
+      "正确的配置": "route-policy rp_RRC_VPN_OUT out",
+      "错误的配置": "route-policy rp_Set_Core_Routes out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_Set_Core_Routes）"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 1628,
+      "正确的配置": "redistribute isis 10 level-2 metric 10000 route-policy rp_RING_TO_CORE",
+      "错误的配置": "redistribute isis 10 level-2 metric 10000 route-policy rp_NMS_TO_RING",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_NMS_TO_RING）"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 3200,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_NMS_TO_RING",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_NMS_TO_RING）"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 3057,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_Set_Default_Routes",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_Set_Default_Routes）"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 3052,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing1_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing1_VPN_OUT）"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 4639,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing4_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing4_VPN_OUT）"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 3691,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing6_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing6_VPN_OUT）"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 103,
+      "正确的配置": "vrf 4G_OAM",
+      "错误的配置": "vrf 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 4337,
+      "正确的配置": "community-set cs_Local_Routes",
+      "错误的配置": "community-set cs_Default_Routes",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cs_Default_Routes）"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 2457,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing12_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing12_VPN_OUT）"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 6499,
+      "正确的配置": "vrf 3G_OAM",
+      "错误的配置": "vrf 3G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3G_RAN）"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 2992,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing14_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing14_VPN_OUT）"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 3202,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing15_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing15_VPN_OUT）"
+    },
+    {
+      "错误序号": 164,
+      "错误行号": 6947,
+      "正确的配置": "route-policy rp_CU_5G_RAN_out out",
+      "错误的配置": "route-policy TO_MARRing15_VPN_OUT out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing15_VPN_OUT）"
+    },
+    {
+      "错误序号": 166,
+      "错误行号": 5068,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_RRC3_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC3_VPN_OUT）"
+    },
+    {
+      "错误序号": 167,
+      "错误行号": 3120,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_RRC4_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC4_VPN_OUT）"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 2324,
+      "正确的配置": "redistribute isis 13 level-2 metric 10000 route-policy rp_RING_TO_CORE",
+      "错误的配置": "redistribute isis 13 level-2 metric 10000 route-policy rp_RRC7_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC7_VPN_OUT）"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 4837,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_RRC1_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC1_VPN_OUT）"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 5810,
+      "正确的配置": "vrf 5GC_MGMN",
+      "错误的配置": "vrf 3G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3G_RAN）"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 1245,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_LY_5G_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_LY_5G_RAN_in）"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 5091,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_WF_5G_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_WF_5G_RAN_in）"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 3021,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_WH_5G_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_WH_5G_RAN_in）"
+    },
+    {
+      "错误序号": 177,
+      "错误行号": 5835,
+      "正确的配置": "vrf 3G_RAN",
+      "错误的配置": "vrf 5GC_WAP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5GC_WAP）"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 1817,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_QD_5GC_CITY_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_QD_5GC_CITY_out）"
+    },
+    {
+      "错误序号": 182,
+      "错误行号": 2476,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_5GC_WAP_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5GC_WAP_out）"
+    },
+    {
+      "错误序号": 184,
+      "错误行号": 4696,
+      "正确的配置": "network ::/0 route-policy rp_Set_Default_Routes",
+      "错误的配置": "network ::/0 route-policy rp_IPRAN_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_IPRAN_RAN_in）"
+    },
+    {
+      "错误序号": 185,
+      "错误行号": 2849,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_SmartMAN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_SmartMAN_OUT）"
+    },
+    {
+      "错误序号": 187,
+      "错误行号": 2463,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_WCDMA_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_WCDMA_RAN_in）"
+    },
+    {
+      "错误序号": 188,
+      "错误行号": 2570,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_5G_OAM_v6_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5G_OAM_v6_out）"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 3425,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_IPRAN_RAN_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_IPRAN_RAN_out）"
+    },
+    {
+      "错误序号": 191,
+      "错误行号": 7448,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_NMS_ROUTES_IN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_NMS_ROUTES_IN）"
+    },
+    {
+      "错误序号": 192,
+      "错误行号": 2513,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_WCDMA_OAM_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_WCDMA_OAM_out）"
+    },
+    {
+      "错误序号": 193,
+      "错误行号": 1524,
+      "正确的配置": "redistribute isis 1000 level-2 metric 10000 route-policy rp_NMS_TO_RING",
+      "错误的配置": "redistribute isis 1000 level-2 metric 10000 route-policy rp_WCDMA_RAN_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_WCDMA_RAN_out）"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 2453,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_5GC_5GC_WAP_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5GC_5GC_WAP_in）"
+    },
+    {
+      "错误序号": 195,
+      "错误行号": 3607,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_5GC_MGMN_v4_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5GC_MGMN_v4_in）"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 497,
+      "正确的配置": "vrf 4G_OAM",
+      "错误的配置": "vrf SmartMAN_AUTO_ONLINE",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 SmartMAN_AUTO_ONLINE）"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 4016,
+      "正确的配置": "vrf 5G_RAN",
+      "错误的配置": "vrf 5GC_WAP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5GC_WAP）"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 2920,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_5GC_5GC_MGMN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5GC_5GC_MGMN_in）"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 7088,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_5GC_MGMN_v4_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5GC_MGMN_v4_out）"
+    },
+    {
+      "错误序号": 200,
+      "错误行号": 6592,
+      "正确的配置": "route-policy pass_all in",
+      "错误的配置": "route-policy rp_GPRS_Gn_C_v4_in in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_GPRS_Gn_C_v4_in）"
+    },
+    {
+      "错误序号": 201,
+      "错误行号": 8076,
+      "正确的配置": "vrf 5G_RAN",
+      "错误的配置": "vrf 3G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3G_OAM）"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 3337,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_GPRS_Gn_C_v4_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_GPRS_Gn_C_v4_out）"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 3252,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_GPRS_Gn_C_v6_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_GPRS_Gn_C_v6_out）"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 3128,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_LTE_WCDMA_OAM_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_LTE_WCDMA_OAM_in）"
+    },
+    {
+      "错误序号": 206,
+      "错误行号": 635,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_5GC_GPRS_Gn_C_v4_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5GC_GPRS_Gn_C_v4_in）"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 2561,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_SmartMAN_AUTO_ONLINE_IN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_SmartMAN_AUTO_ONLINE_IN）"
+    },
+    {
+      "错误序号": 210,
+      "错误行号": 7095,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_CT_5G_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_CT_5G_RAN_in）"
+    },
+    {
+      "错误序号": 211,
+      "错误行号": 4833,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_CU_5G_RAN_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_CU_5G_RAN_out）"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 2594,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_CT_5G_RAN_VIP_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_CT_5G_RAN_VIP_in）"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 4291,
+      "正确的配置": "vrf 4G_OAM",
+      "错误的配置": "vrf 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 7449,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_RRC_VPN_IN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC_VPN_IN）"
+    },
+    {
+      "错误序号": 217,
+      "错误行号": 5002,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_NMS_TO_RING",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_NMS_TO_RING）"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 1014,
+      "正确的配置": "vrf SmartMAN_AUTO_ONLINE",
+      "错误的配置": "vrf 5GC_MGMN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5GC_MGMN）"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 7497,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy TO_MARRing1_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing1_VPN_OUT）"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 1792,
+      "正确的配置": "vrf 4G_OAM",
+      "错误的配置": "vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 5061,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing6_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing6_VPN_OUT）"
+    },
+    {
+      "错误序号": 225,
+      "错误行号": 7027,
+      "正确的配置": "vrf 3G_OAM",
+      "错误的配置": "vrf 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 226,
+      "错误行号": 2817,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy TO_MARRing8_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing8_VPN_OUT）"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 2556,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing9_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing9_VPN_OUT）"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 4011,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing10_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing10_VPN_OUT）"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 6254,
+      "正确的配置": "route-policy rp_WCDMA_OAM_out",
+      "错误的配置": "route-policy TO_MARRing10_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing10_VPN_OUT）"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 4943,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy TO_MARRing11_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing11_VPN_OUT）"
+    },
+    {
+      "错误序号": 231,
+      "错误行号": 2376,
+      "正确的配置": "route-policy TO_MARRing12_VPN_OUT out",
+      "错误的配置": "route-policy TO_MARRing11_VPN_OUT out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing11_VPN_OUT）"
+    },
+    {
+      "错误序号": 232,
+      "错误行号": 2944,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy TO_MARRing13_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 TO_MARRing13_VPN_OUT）"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 3079,
+      "正确的配置": "vrf 4G_RAN",
+      "错误的配置": "vrf 4G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_OAM）"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 3121,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_RRC_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC_VPN_OUT）"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 6762,
+      "正确的配置": "route-policy rp_5GC_GPRS_Gn_C_v4_in in",
+      "错误的配置": "route-policy rp_Set_Local_Routes in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_Set_Local_Routes）"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 3084,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_RRC4_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC4_VPN_OUT）"
+    },
+    {
+      "错误序号": 239,
+      "错误行号": 894,
+      "正确的配置": "vrf 5G_RAN",
+      "错误的配置": "vrf GPRS_Gn_C",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 GPRS_Gn_C）"
+    },
+    {
+      "错误序号": 241,
+      "错误行号": 3178,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_RRC1_VPN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_RRC1_VPN_OUT）"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 1183,
+      "正确的配置": "vrf SmartMAN_AUTO_ONLINE",
+      "错误的配置": "vrf 4G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_OAM）"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 3054,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_ADD_PATH_Adv",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_ADD_PATH_Adv）"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 1718,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_WF_5G_RAN_in in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_WF_5G_RAN_in）"
+    },
+    {
+      "错误序号": 247,
+      "错误行号": 1286,
+      "正确的配置": "aggregate-address <IPV6> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV6> route-policy rp_WH_5G_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_WH_5G_RAN_in）"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 5234,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_YT_5G_RAN_in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_YT_5G_RAN_in）"
+    },
+    {
+      "错误序号": 249,
+      "错误行号": 5235,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_QD_5GC_CITY_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_QD_5GC_CITY_out）"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 1662,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_5G_RAN_in in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5G_RAN_in）"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 3224,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_5G_RAN_out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_5G_RAN_out）"
+    },
+    {
+      "错误序号": 256,
+      "错误行号": 4938,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-address <IPV4> route-policy rp_SmartMAN_OUT",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rp_SmartMAN_OUT）"
+    }
+  ]
+}

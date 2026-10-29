@@ -1,0 +1,55 @@
+{
+  "vendor": "zte",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "DEPENDENCY_MISSING",
+  "错误类型别名": [
+    "DEPENDENCY_MISSING"
+  ],
+  "错误类型描述": "引用了未定义的依赖对象",
+  "实际模板占比": "12.04%",
+  "数据集调整占比": "10.00%",
+  "错误数量": 5,
+  "details": [
+    {
+      "错误序号": 11,
+      "错误行号": 2311,
+      "正确的配置": "ip vrf forwarding <*>",
+      "错误的配置": "ip vrf forwarding 2B_RAN-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 2B_RAN-EDGE"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 90,
+      "正确的配置": "ip vrf forwarding CTVPN193-JS",
+      "错误的配置": "ip vrf forwarding CTVPN193-JS_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN193-JS_EDGE"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 3168,
+      "正确的配置": "ip vrf <*>",
+      "错误的配置": "ip vrf 2B_RAN-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 2B_RAN-EDGE"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 1740,
+      "正确的配置": "ip vrf CTVPN193-JS",
+      "错误的配置": "ip vrf CTVPN193-JS_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN193-JS_EDGE"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 3641,
+      "正确的配置": "ip vrf forwarding CTVPN193-JS",
+      "错误的配置": "ip vrf forwarding CTVPN193-JS_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN193-JS_EDGE"
+    }
+  ]
+}

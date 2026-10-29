@@ -1,0 +1,2955 @@
+{
+  "vendor": "fiber",
+  "dataset": "test_dataset_2",
+  "错误类型": "SEMANTIC_INCONSISTENCY",
+  "错误类型描述": "语义不一致（shutdown/enable/active 等运行语义矛盾）",
+  "实际模板占比": "21.56%",
+  "数据集调整占比": "23.00%",
+  "错误数量": 368,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 878,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 232,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 894,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 49,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 6357,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 1226,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 8096,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 2773,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 6047,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 1297,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 7412,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 2570,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 74,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 73,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 220,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 1612,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 1682,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 1040,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 1395,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 997,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 1409,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 817,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 6287,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 4849,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 223,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 6280,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 1563,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 822,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 4937,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 109,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 1479,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 6259,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 211,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 2836,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 4215,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 1294,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 5996,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 4069,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 1703,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 1318,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 2920,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 1577,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 8086,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 77,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 2822,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 166,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 5580,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 6294,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 1619,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 2563,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 2633,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 7449,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 4787,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 95,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 1402,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 5991,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 1717,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 228,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 4979,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 1493,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 4673,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 137,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 4993,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 1282,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 1311,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 1367,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 205,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 1416,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 4059,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 1233,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 2458,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 110,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 2196,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 5735,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 2787,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 847,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 6004,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 5334,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 2703,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 1261,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 193,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 8082,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 2256,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 5063,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 7700,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 2843,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 5329,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 994,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 1381,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 2892,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 2619,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 2250,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 3360,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 7417,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 2542,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 5988,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 6036,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 5983,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 2441,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 175,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 5042,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 141,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 1049,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 6371,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 1304,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 3344,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 2661,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 4079,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 1514,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 862,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 2514,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 6329,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 1542,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 64,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 2180,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 1584,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 2857,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 5028,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 2429,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 169,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 1724,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 2528,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 3159,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 1339,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 4908,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 7433,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 4078,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 5439,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 3518,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 160,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 910,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 2906,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 4824,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 6336,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 3822,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 187,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 2766,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 8081,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 100,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 183,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 3350,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 6007,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 6343,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 2752,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 237,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 2724,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 1738,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 5007,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 2871,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 3116,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 1710,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 4923,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 4903,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 2654,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 258,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 858,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 5975,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 5571,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 5070,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 4840,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 1458,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 1647,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 7404,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 164,
+      "错误行号": 2085,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 165,
+      "错误行号": 2444,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 166,
+      "错误行号": 5399,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 167,
+      "错误行号": 3361,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 168,
+      "错误行号": 1556,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 8070,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 2815,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 171,
+      "错误行号": 1731,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 1024,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 173,
+      "错误行号": 4804,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 174,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 7388,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 841,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 177,
+      "错误行号": 2745,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 6012,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 179,
+      "错误行号": 2500,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 180,
+      "错误行号": 5705,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 181,
+      "错误行号": 147,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 182,
+      "错误行号": 1437,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 183,
+      "错误行号": 6245,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 184,
+      "错误行号": 4113,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 185,
+      "错误行号": 2493,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 128,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 187,
+      "错误行号": 196,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 188,
+      "错误行号": 1633,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 189,
+      "错误行号": 1816,
+      "正确的配置": "monitor enable",
+      "错误的配置": "monitor disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 1008,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 191,
+      "错误行号": 7425,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 192,
+      "错误行号": 1430,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 193,
+      "错误行号": 827,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 6039,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 195,
+      "错误行号": 828,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 8629,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 1332,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 202,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 4209,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 200,
+      "错误行号": 184,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 201,
+      "错误行号": 5972,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 202,
+      "错误行号": 5014,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 82,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 4782,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 2731,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 206,
+      "错误行号": 138,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 207,
+      "错误行号": 2169,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 3527,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 851,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 210,
+      "错误行号": 2612,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 211,
+      "错误行号": 1654,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 3101,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 119,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 214,
+      "错误行号": 210,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 2668,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 86,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 217,
+      "错误行号": 2696,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 2885,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 2287,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 3884,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 4478,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 222,
+      "错误行号": 1423,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 3381,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 4064,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 225,
+      "错误行号": 2317,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 226,
+      "错误行号": 2591,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 1003,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 2584,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 290,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 8123,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 231,
+      "错误行号": 831,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 232,
+      "错误行号": 7444,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 4944,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 234,
+      "错误行号": 1668,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 5476,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 7396,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 3593,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 238,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 239,
+      "错误行号": 6364,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 240,
+      "错误行号": 2465,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 241,
+      "错误行号": 7409,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 242,
+      "错误行号": 2738,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 131,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 4972,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 2899,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 299,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 247,
+      "错误行号": 4726,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 201,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 249,
+      "错误行号": 2626,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 7705,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 157,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 5523,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 253,
+      "错误行号": 229,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 254,
+      "错误行号": 4986,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 255,
+      "错误行号": 3406,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 256,
+      "错误行号": 2689,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 257,
+      "错误行号": 6308,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 258,
+      "错误行号": 2850,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 259,
+      "错误行号": 1605,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 260,
+      "错误行号": 5056,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 261,
+      "错误行号": 151,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 262,
+      "错误行号": 2479,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 263,
+      "错误行号": 4930,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 264,
+      "错误行号": 6238,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 265,
+      "错误行号": 5035,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 266,
+      "错误行号": 4797,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 267,
+      "错误行号": 4793,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 268,
+      "错误行号": 2347,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 269,
+      "错误行号": 6301,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 270,
+      "错误行号": 3461,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 271,
+      "错误行号": 2357,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 272,
+      "错误行号": 2913,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 273,
+      "错误行号": 1521,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 274,
+      "错误行号": 2577,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 275,
+      "错误行号": 4965,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 276,
+      "错误行号": 993,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 277,
+      "错误行号": 1696,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 278,
+      "错误行号": 122,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 279,
+      "错误行号": 1500,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 280,
+      "错误行号": 5049,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 281,
+      "错误行号": 5678,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 282,
+      "错误行号": 2801,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 283,
+      "错误行号": 178,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 284,
+      "错误行号": 242,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 285,
+      "错误行号": 148,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 286,
+      "错误行号": 1535,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 287,
+      "错误行号": 919,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 288,
+      "错误行号": 4483,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 289,
+      "错误行号": 4386,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 290,
+      "错误行号": 3747,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 291,
+      "错误行号": 1528,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 292,
+      "错误行号": 4073,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 293,
+      "错误行号": 7428,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 294,
+      "错误行号": 3889,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 295,
+      "错误行号": 7420,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 296,
+      "错误行号": 7611,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 297,
+      "错误行号": 6350,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 298,
+      "错误行号": 2878,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 299,
+      "错误行号": 6273,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 300,
+      "错误行号": 1325,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 301,
+      "错误行号": 5765,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 302,
+      "错误行号": 127,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 303,
+      "错误行号": 7393,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 304,
+      "错误行号": 4160,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 305,
+      "错误行号": 1675,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 306,
+      "错误行号": 5021,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 307,
+      "错误行号": 1591,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 308,
+      "错误行号": 1472,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 309,
+      "错误行号": 5774,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 310,
+      "错误行号": 2366,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 311,
+      "错误行号": 3107,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 312,
+      "错误行号": 6020,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 313,
+      "错误行号": 2717,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 314,
+      "错误行号": 4916,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 315,
+      "错误行号": 308,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 316,
+      "错误行号": 4794,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 317,
+      "错误行号": 2780,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 318,
+      "错误行号": 5999,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 319,
+      "错误行号": 2829,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 320,
+      "错误行号": 3783,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 321,
+      "错误行号": 2808,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 322,
+      "错误行号": 2451,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 323,
+      "错误行号": 5967,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 324,
+      "错误行号": 1004,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 325,
+      "错误行号": 3588,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 326,
+      "错误行号": 7401,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 327,
+      "错误行号": 1570,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 328,
+      "错误行号": 6023,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 329,
+      "错误行号": 2535,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 330,
+      "错误行号": 3339,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 331,
+      "错误行号": 4913,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 332,
+      "错误行号": 7436,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 333,
+      "错误行号": 118,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 334,
+      "错误行号": 2794,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 335,
+      "错误行号": 156,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 336,
+      "错误行号": 1360,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 337,
+      "错误行号": 2164,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 338,
+      "错误行号": 6322,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 339,
+      "错误行号": 1268,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 340,
+      "错误行号": 101,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 341,
+      "错误行号": 1254,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 342,
+      "错误行号": 113,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 343,
+      "错误行号": 1598,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 344,
+      "错误行号": 1745,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 345,
+      "错误行号": 3397,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 346,
+      "错误行号": 928,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 347,
+      "错误行号": 2436,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 348,
+      "错误行号": 2759,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 349,
+      "错误行号": 1752,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 350,
+      "错误行号": 848,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 351,
+      "错误行号": 2864,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 352,
+      "错误行号": 3488,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 353,
+      "错误行号": 6052,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 354,
+      "错误行号": 1275,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 355,
+      "错误行号": 6015,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 356,
+      "错误行号": 6031,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 357,
+      "错误行号": 4958,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 358,
+      "错误行号": 2521,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 359,
+      "错误行号": 2640,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 360,
+      "错误行号": 838,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 361,
+      "错误行号": 6044,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 362,
+      "错误行号": 2175,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 363,
+      "错误行号": 1221,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 364,
+      "错误行号": 2598,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 365,
+      "错误行号": 1451,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 366,
+      "错误行号": 1346,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 367,
+      "错误行号": 92,
+      "正确的配置": "dcn enable",
+      "错误的配置": "dcn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 368,
+      "错误行号": 982,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    }
+  ]
+}

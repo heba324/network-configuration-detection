@@ -1,0 +1,6177 @@
+!configuration saved at <*> <*> <*> <*> <*> by write <*>
+!last configuration change at <*> <*> <*> <*> <*> by <*>
+commit-mode default manual
+#
+<*> BeiJing <*> <*> <*> <*>
+#
+rule 10 deny d4c1.c89a.7700 0000.0000.00ff any
+#
+link-access-list aclDenyMacFromDC-OLT
+rule 10 deny 0000.5e00.0000 0000.0000.ffff any
+rule 20 deny d4c1.c89a.7700 0000.0000.00ff any
+#
+interface <*>
+#
+interface flexe <*>
+interface vei <*>
+#
+nsr service all
+#
+hostname <*>
+login authentication
+banner incoming #WARNING!!! Authorised access only, all of your done will be recorded! Disconnect IMMEDIATELY if you are not an authorised user!#
+load-mode txt
+nvram <*> <*>
+nvram boot-server ipv6 <*>
+nvram <*> <*>
+nvram default-gateway ipv6 <*>
+nvram <*> <*>
+#
+ip vrf-public
+rd 0:0
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+#
+address-family ipv6
+#
+ip vrf CTVPN193-JS
+description For-Managerment
+rd 4134:1612
+ds-mode pipe af2 green
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn auto-originate-route disable
+route-target <*> <*>
+#
+interface <*>
+description <*>
+no shutdown
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+ip address <*> <*>
+mpls mtu 9000
+ipv6 mtu 9000
+ipv6 address <*>
+#
+interface <*>
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+mpls mtu 9000
+ipv6 mtu 9000
+no shutdown
+track trigger TrackSpine shutdown
+#
+interface <*>
+description ::PROCESSING
+#
+interface mgmt_eth
+ip address <*> <*>
+ipv6 address <*>
+#
+interface loopback1
+description For-Management
+ip address <*> <*>
+#
+interface loopback2
+description For-Management-CTVPN-193-JS
+ip vrf forwarding CTVPN193-JS
+ip address <*> <*>
+#
+interface loopback20
+description For-ManagementV6
+ipv6 enable
+ipv6 address <*>
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+mpls mtu 9000
+ipv6 enable
+ipv6 mtu 9000
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+mpls mtu 9000
+ipv6 mtu 9000
+#
+interface <*>
+description <*>
+mtu 9050
+ipv6 mtu 9000
+no shutdown
+#
+interface <*>
+description Mutlicast
+interface mac-address <*>
+#
+interface <*>
+description iTV
+mtu 9050
+ip mtu 9000
+ipv6 mtu 9000
+#
+interface <*>
+ip unnumbered loopback1
+#
+interface <*>
+group-number <*>
+bind interface <*> phy-number <*> timeslots all
+#
+interface <*>
+terminal-mode enable
+bind flexe_group <*> calendar-template A interface <*> timeslots 0-15
+client-number 1
+#
+interface <*>
+terminal-mode enable
+bind flexe_group <*> calendar-template A interface <*> timeslots 16-17
+client-number 2
+#
+interface <*>
+terminal-mode enable
+bind flexe_group <*> calendar-template A interface <*> timeslots 18-19
+client-number 3
+#
+interface <*>
+terminal-mode enable
+bind flexe_group <*> calendar-template A interface <*> timeslots 16
+client-number 2
+#
+interface <*>
+terminal-mode enable
+bind flexe_group <*> calendar-template A interface <*> timeslots 17-19
+client-number 3
+#
+interface <*>
+terminal-mode enable
+bind flexe_group <*> calendar-template A interface <*> timeslots 0-15
+client-number 1
+link-delay-down 100
+link-delay-up 5000
+#
+interface <*>
+terminal-mode enable
+bind flexe_group <*> calendar-template A interface <*> timeslots 16-17
+client-number 2
+link-delay-down 100
+link-delay-up 5000
+#
+interface <*>
+bind flexe_group <*> calendar-template A interface <*> timeslots 18-19
+client-number 3
+link-delay-down 100
+link-delay-up 5000
+#
+interface <*>
+terminal-mode enable
+bind flexe_group <*> calendar-template A interface <*> timeslots 16
+client-number 2
+link-delay-down 100
+link-delay-up 5000
+#
+interface <*>
+terminal-mode enable
+bind flexe_group <*> calendar-template A interface <*> timeslots 17-19
+client-number 3
+link-delay-down 100
+link-delay-up 5000
+#
+interface <*>
+link-delay-down 100
+link-delay-up 5000
+bind <*> <*>
+#
+interface <*>
+holdtime 300
+link-delay-down 100
+link-delay-up 180000
+#
+clock timezone beijing 8
+#
+clock timezone BeiJing 8
+#
+switchvlan-configuration
+vlan 1
+#
+lacp
+interface <*>
+lacp mode 802.3ad
+lacp fast respond
+mc-lag iccp 1
+mc-lag mode force-master
+mc-lag priority 100
+mc-lag roid <*> node-id <*>
+mc-lag sys-id <*> sys-priority 1
+#
+lacp
+interface <*>
+lacp mode 802.3ad
+lacp fast respond
+mc-lag iccp 1
+mc-lag mode force-master
+mc-lag priority 50
+mc-lag roid <*> node-id <*>
+mc-lag sys-id <*> sys-priority 1
+#
+interface <*>
+lacp mode 802.3ad
+lacp fast respond
+mc-lag iccp 1
+mc-lag mode force-master
+mc-lag priority 100
+mc-lag roid <*> node-id <*>
+mc-lag sys-id <*> sys-priority 1
+#
+interface <*>
+lacp mode 802.3ad
+lacp fast respond
+mc-lag iccp 1
+mc-lag mode force-master
+mc-lag priority 50
+mc-lag roid <*> node-id <*>
+mc-lag sys-id <*> sys-priority 1
+#
+interface <*>
+smartgroup <*> mode active
+lacp timeout short
+#
+vlan-configuration
+interface <*>
+encapsulation-dot1q range <*>
+#
+vlan-configuration
+interface <*>
+encapsulation-dot1q <*>
+#
+interface <*>
+encapsulation-dot1q <*>
+#
+interface <*>
+encapsulation-dot1q range <*>
+#
+interface <*>
+encapsulation-dot1q <*>
+encapsulation-dot1q range <*>
+#
+system-user
+account-switch on accounting-template 2111
+authorization-template 100
+bind aaa-authorization-template 2100
+#
+authorization-template 101
+bind aaa-authorization-template 2001
+local-privilege-level 5
+#
+authorization-template 111
+bind aaa-authorization-template 2111
+#
+authentication-template 100
+bind aaa-authentication-template 2100
+#
+authentication-template 101
+bind aaa-authentication-template 2001
+bind access-list ipv4 aclPermitSSH_viewonly
+#
+authentication-template 111
+#
+default-privilege-level 15
+user-default
+bind authorization-template 111
+#
+user-name adminnocsj@admin-local
+bind authentication-template 100
+bind authorization-template 100
+#
+user-name conuser
+bind authentication-template 100
+bind authorization-template 100
+password encrypted <*>
+#
+user-name nocfanshua@admin-local
+bind authentication-template 100
+bind authorization-template 100
+password encrypted <*>
+#
+bind authentication-template 101
+password encrypted <*>
+#
+ntp enable
+ntp server vrf CTVPN193-JS <*> priority <*>
+ntp source interface loopback2
+ntp access-group ipv4-access-list aclPermitNTP
+#
+ip prefix-list 2576 seq 10 permit 224.0.0.0 23
+ip prefix-list 2576 seq 20 permit 239.49.0.0 21
+ip prefix-list 2576 seq 30 permit 239.49.8.0 22
+ip prefix-list 2576 seq 40 permit 238.1.32.0 21
+ip prefix-list 2576 seq 50 permit 239.252.151.0 24
+ipv6 prefix-list ipTrackSpine seq <*> permit <*>
+#
+ptp
+enable
+announce-interval -3
+announce-timeout 6
+domain 24
+state-algorithm alternate-bmc
+utc-offset 37
+utc-trace auto holdover 24
+fixed-mode
+#
+free-mode
+port interface <*> portnum <*>
+enable
+sync-interval -4
+delay-req-interval -4
+two-step enable
+#
+port interface <*> portnum <*>
+enable
+sync-interval -4
+delay-req-interval -4
+two-step enable
+#
+samgr
+track TrackSpine prefix-list ipv6 prefix-name ipTrackSpine
+#
+ssm
+usessm
+ssm-mode exp-ssm
+edge-link line <*>
+synchronization-clock line <*>
+priority line <*> <*>
+receive-quality line <*> <*>
+#
+tacacs enable
+tacacs-client <*>
+tacacs-server deadtime 0
+tacacs-server host vrf CTVPN193-JS <*> key encrypted <*>
+tacplus group-server js.admin.tacacs
+server vrf CTVPN193-JS <*>
+server vrf CTVPN193-JS <*> master
+#
+sibtp-mgr
+source-ip <*> port 10000 peer-ip <*> port 10000
+#
+aaa-accounting-template 2111
+aaa-accounting-type tacacs
+accounting-tacacs-group js.admin.tacacs
+#
+aaa-authentication-template 2001
+aaa-authentication-type local
+#
+aaa-authentication-template 2100
+aaa-authentication-type local
+#
+aaa-authentication-template 2111
+aaa-authentication-type tacacs-local
+authentication-tacacs-group js.admin.tacacs
+#
+aaa-authorization-type tacacs-local
+authorization-tacacs-group js.admin.tacacs
+#
+aaa-authorization-template 2100
+aaa-authorization-type tacacs-local
+authorization-tacacs-group js.admin.tacacs
+#
+aaa-authorization-template 2111
+aaa-authorization-type tacacs-local
+authorization-tacacs-group js.admin.tacacs
+#
+spantree
+#
+ip source-route disable
+icmp-config
+ip icmp timestamp-reply disable
+#
+interface <*>
+ipv6 nd reachable-time 3600000
+ipv6 nd stale-switch
+#
+ssh server diffie-hellman group-exchange-sha1 disable
+ssh server diffie-hellman group1-sha1 disable
+ssh server encryption 3des-cbc disable
+ssh server encryption aes128-cbc disable
+ssh server encryption aes192-cbc disable
+ssh server encryption aes256-cbc disable
+ssh server encryption blowfish-cbc disable
+ssh server encryption none disable
+ssh server hmac md5 disable
+ssh server hmac none disable
+ssh server access-class ipv4 aclPermitSSH
+ssh server access-class ipv6 v6aclPermitSSH
+#
+snetconf server enable
+#
+line netconf absolute-timeout 600
+line netconf idle-timeout 120
+netconf agent enable
+#
+ip tcp mss 1400
+#
+mpls ldp instance 100
+access-fec ip-prefix host-route-only
+igp sync delay 180 force
+interface <*>
+#
+peer bfd remote-routerid <*>
+router-id loopback1
+target-session <*>
+#
+redundancy interchassis group 1
+apply mlacp
+peer <*>
+#
+mpls traffic-eng
+router-id <*>
+ipv6-router-id <*>
+interface loopback1
+#
+interface loopback20
+#
+segment-routing
+srv6 global enable
+srv6 encapsulation source-address <*>
+srv6 locator <*>
+ipv6-prefix <*> static-length 12 args-length 16
+compress c-target 32 block-length 64
+#
+srv6 locator SRV6-5G2B
+ipv6-prefix <*> static-length 12 args-length 16
+compress c-target 32 block-length 64
+#
+srv6 locator SRV6-5G2C
+ipv6-prefix <*> static-length 12 args-length 16
+compress c-target 32 block-length 64
+#
+srv6 locator SRV6-END
+ipv6-prefix <*> static-length 12 args-length 16
+compress c-target 32 block-length 64
+#
+srv6 locator SRV6-GW
+ipv6-prefix <*> static-length 12 args-length 16
+compress c-target 32 block-length 64
+#
+srv6 locator SRV6-ZWZX
+ipv6-prefix <*> static-length 12 args-length 16
+compress c-target 32 block-length 64
+#
+segment-routing
+traffic-eng
+bgp link-state
+creation affected-by bfd
+mbb installation-delay-time 60
+policy-traffic-statistics enable
+hot-standby policy enable
+#
+srv6 adjacency sid holdtime 20160
+srv6 global enable
+srv6 encapsulation source-address <*>
+srv6 locator <*>
+ipv6-prefix <*> static-length 12 args-length 16
+compress c-target 32 block-length 64
+#
+command-authorization <*> all 2111
+auto-write everyday 10:00:00
+auto-write cpu-limit 60
+privilege show all level 5 show
+timestamp enable
+#
+sysmib ifalias description
+#
+sysmib ifalias long
+#
+mac
+aging-time 600
+#
+alarm netconf-report informational
+logging cmdlog-timestamps precisetime
+logging file default almlog
+#
+logging file default cmdlog
+buffer 1000
+#
+logging file default netclog
+accept on
+#
+logging file default snmplog
+accept on
+#
+logging file default srvlog
+accept on
+interval 10
+#
+logging file default weblog
+accept on
+#
+logging timestamps precisetime
+logging trap-enable informational
+logging snmp
+accept on
+match cmdlog
+#
+syslog level warnings
+syslog-server host vrf CTVPN193-JS <*> alarmlog cmdlog servicelog braslog natlog urllog nat-translationlog nat-portrangelog netconflog haglog snmplog weblog traplog
+syslog-server source interface loopback2
+#
+intf-statistics
+interface <*>
+traffic-statistics enable
+#
+interface <*>
+traffic-statistics enable
+#
+snmp-server access-list ipv4 aclPermitSNMP
+snmp-server access-list ipv6 v6aclPermitSNMP
+snmp-server enable inform <*>
+snmp-server enable trap <*>
+snmp-server trap-source interface loopback2
+snmp-server view n31view iso included
+snmp-server version v2c enable
+#
+line console absolute-timeout 60
+line telnet server disable
+line telnet absolute-timeout 60
+line telnet idle-timeout 10
+line telnet access-class ipv4 aclPermitSSH
+line telnet access-class ipv6 v6aclPermitSSH
+line telnet max-link 10
+#
+mpls l2vpn enable
+vpls <*> evpn
+rd <*>
+access-filter aclDenyMacFromDC-OLT
+df-election preference highest
+encapsulation tagged
+ds-mode pipe be green
+umr distributor
+auto-discovery srv6-evpn
+route-target <*> <*>
+etree-advertise leaf-flag
+srv6 locator SRV6-GW
+#
+mpls l2vpn enable
+vpls <*> evpn
+rd <*>
+access-filter aclDenyMacFromDC-OLT
+df-election preference highest
+encapsulation tagged
+ds-mode pipe be green
+auto-discovery srv6-evpn
+route-target <*> <*>
+etree-advertise leaf-flag
+srv6 locator SRV6-GW
+#
+mpls l2vpn enable
+vpls <*> evpn
+rd <*>
+access-filter aclDenyMacFromDC-OLT
+df-election preference highest
+encapsulation tagged
+umr distributor
+auto-discovery srv6-evpn
+route-target <*> <*>
+etree-advertise leaf-flag
+srv6 locator SRV6-GW
+#
+mpls l2vpn enable
+vpls <*> evpn
+rd <*>
+access-filter aclDenyMacFromDC-OLT
+df-election preference highest
+encapsulation tagged
+auto-discovery srv6-evpn
+route-target <*> <*>
+etree-advertise leaf-flag
+srv6 locator SRV6-GW
+#
+vpls <*> evpn
+rd <*>
+access-filter aclDenyMacFromDC-OLT
+encapsulation tagged
+ds-mode pipe be green
+umr distributor
+auto-discovery srv6-evpn
+route-target <*> <*>
+etree-advertise leaf-flag
+srv6 locator SRV6-GW
+#
+vpls <*> evpn
+rd <*>
+access-filter aclDenyMacFromDC-OLT
+df-election preference highest
+encapsulation tagged
+ds-mode pipe be green
+auto-discovery srv6-evpn
+route-target <*> <*>
+etree-advertise leaf-flag
+srv6 locator SRV6-GW
+#
+vpls <*> evpn
+rd <*>
+access-filter aclDenyMacFromDC-OLT
+df-election preference highest
+encapsulation tagged
+umr distributor
+auto-discovery srv6-evpn
+route-target <*> <*>
+etree-advertise leaf-flag
+srv6 locator SRV6-GW
+#
+vpls <*> evpn
+rd <*>
+access-filter aclDenyMacFromDC-OLT
+df-election preference highest
+encapsulation tagged
+auto-discovery srv6-evpn
+route-target <*> <*>
+etree-advertise leaf-flag
+srv6 locator SRV6-GW
+#
+access-point <*>
+access-params ethernet
+leaf
+#
+mac
+umr es-id static <*> no-vlan detail-suppressed
+#
+mac
+learning interface <*> disable
+umr interface <*> no-vlan detail-suppressed
+#
+ethernet-segments
+etree-advertise leaf-label
+es-instance <*>
+df-election preference 100
+es-id static octets <*>
+interface <*>
+rd <*>
+route-target <*> <*>
+wtr 0
+#
+ethernet-segments
+etree-advertise leaf-label
+es-instance <*>
+df-election preference 200
+es-id static octets <*>
+interface <*>
+rd <*>
+route-target <*> <*>
+wtr 0
+#
+es-instance <*>
+df-election preference 100
+interface <*>
+rd <*>
+route-target <*> <*>
+wtr 0
+#
+es-instance <*>
+df-election preference 200
+es-id static octets <*>
+interface <*>
+rd <*>
+route-target <*> <*>
+wtr 0
+#
+es-instance <*>
+df-election preference 100
+es-id static octets <*>
+rd <*>
+route-target <*> <*>
+service <*>
+#
+es-instance <*>
+df-election preference 200
+es-id static octets <*>
+rd <*>
+route-target <*> <*>
+service <*>
+#
+class-map be match-all
+match service-class be
+#
+class-map af1 match-all
+match service-class af1
+#
+class-map af2 match-all
+match service-class af2
+#
+class-map af3 match-all
+match service-class af3
+#
+class-map af4 match-all
+match service-class af4
+#
+class-map ef match-all
+match service-class ef
+#
+class-map cs6 match-all
+match service-class cs6
+#
+class-map cs7 match-all
+match service-class cs7
+#
+class-map af4-cs6-cs7 match-all
+match child
+#
+class-map af1-af2 match-all
+match child
+#
+qos-statistics switch on <*> output
+policy-map af4-cs6-cs7
+class cs6
+#
+class af4
+#
+class cs7
+#
+policy-map af1-af2
+class af1
+#
+class af2
+#
+policy-map NMAN1P4Q
+class af4-cs6-cs7
+police cir percentage 20 pir percentage 20
+priority-level 2
+service-policy af4-cs6-cs7
+#
+class ef
+bandwidth percent 35
+#
+class af3
+bandwidth percent 15
+#
+class af1-af2
+bandwidth percent 25
+service-policy af1-af2
+#
+class be
+bandwidth percent 25
+#
+service-policy <*> output NMAN1P4Q overwrite
+#
+service-policy <*> output NMAN1P4Q
+#
+bfd
+session ITV-backup-heart peer-bfd ipv4 <*> <*>
+interval 300
+min-rx 300
+#
+bgp ipv4-unicast-config independent enable
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+neighbor pgToRR peer-group
+neighbor pgToRR remote-as <*>
+neighbor pgToRR update-source loopback1
+neighbor pgToRR password encrypted <*>
+neighbor pgToRR-v6 peer-group
+neighbor pgToRR-v6 remote-as <*>
+neighbor pgToRR-v6 update-source loopback20
+neighbor pgToRR-v6 srv6-l2-service-type 6
+neighbor pgToRR-v6 srv6-l3-service-type 5
+neighbor pgToRR-v6 password encrypted <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> srv6-arg-shift disable
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> srv6-arg-shift disable
+neighbor <*> remote-as <*>
+neighbor <*> description <*>
+neighbor <*> update-source loopback20
+neighbor <*> srv6-l2-service-type 6
+neighbor <*> srv6-l3-service-type 5
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+address-family ipv4
+synchronization disable
+bgp bestpath external
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor pgToRR activate disable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> activate disable
+neighbor <*> activate
+#
+bgp ipv4-unicast-config independent enable
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+neighbor pgToRR peer-group
+neighbor pgToRR remote-as <*>
+neighbor pgToRR update-source loopback1
+neighbor pgToRR password encrypted <*>
+neighbor pgToRR-v6 peer-group
+neighbor pgToRR-v6 remote-as <*>
+neighbor pgToRR-v6 update-source loopback20
+neighbor pgToRR-v6 srv6-l3-service-type 5
+neighbor pgToRR-v6 srv6-arg-shift disable
+neighbor pgToRR-v6 password encrypted <*>
+neighbor <*> remote-as <*>
+neighbor <*> update-source loopback20
+neighbor <*> srv6-l2-service-type 6
+neighbor <*> srv6-l3-service-type 5
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+address-family ipv4
+synchronization disable
+bgp bestpath external
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor pgToRR activate disable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> activate disable
+neighbor <*> activate
+#
+address-family l2vpn evpn
+esi-index ignore-rd enable
+bgp default route-target filter
+bgp bestpath origin-from evpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 advertise tunnel-encapsulation srv6
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> activate
+neighbor <*> announce-sid
+neighbor <*> advertise tunnel-encapsulation srv6
+neighbor <*> umr-export umr-suppressed
+#
+address-family vpnv4
+bgp bestpath origin-from l3vpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToRR activate
+neighbor pgToRR send-community
+neighbor pgToRR send-large-community
+neighbor pgToRR send-med
+neighbor pgToRR additional-paths receive
+#
+address-family ipv6
+synchronization disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+#
+address-family ipv6 sr-policy
+neighbor pgToRR-v6 activate
+#
+bgp bestpath origin-from l3vpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToRR activate
+neighbor pgToRR send-community
+neighbor pgToRR send-large-community
+neighbor pgToRR send-med
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+#
+address-family ipv4 vrf CTVPN193-JS
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+redistribute connected
+#
+router isis 800
+area <*>
+system-id <*>
+router-id <*>
+is-type level-2-only
+metric-style wide
+distance 105
+fast-flood 6
+fast-reroute lfa enable
+i-spf
+maximum-paths 32
+mpls ldp sync
+mpls ldp sync max-hold-time 180
+mpls traffic-eng level-2
+te-link-delay enable
+address-family ipv6
+distance 105
+fast-reroute ti-lfa srv6 level-2
+maximum-paths 32
+microloop-prevention segment-routing delay-time 5000
+microloop-prevention segment-routing srv6 enable
+multi-topology
+router-id <*>
+segment-routing srv6 enable
+segment-routing srv6 locator SRV6-5G2B
+#
+segment-routing srv6 locator SRV6-5G2C
+#
+segment-routing srv6 locator SRV6-END
+end-sid func-code ::1
+end-x-sid auto
+#
+segment-routing srv6 locator SRV6-GW
+#
+segment-routing srv6 locator SRV6-ZWZX
+#
+traffic-eng level-2
+#
+interface <*>
+ip router isis
+bfd-enable
+bfd-time-negotiation min-tx 30 min-rx 30 multiplier 3
+ipv6 bfd-enable
+ipv6 bfd-time-negotiation min-tx 30 min-rx 30 multiplier 3
+ipv6 metric <*>
+ipv6 link-damped adj-establish enable
+ipv6 link-damped metric increase 3000
+ipv6 link-damped revert-interval 600 180000 180000
+ipv6 router isis
+circuit-type level-2-only
+metric <*>
+network point-to-point
+link-damped adj-establish enable
+link-damped metric increase 3000
+link-damped revert-interval 600 180000 180000
+#
+interface loopback1
+ip router isis
+circuit-type level-2-only
+#
+interface loopback20
+ipv6 router isis
+circuit-type level-2-only
+passive-mode
+#
+ip multicast-routing
+multipath s-g-hash next-hop-based
+router pim
+static-rp <*> group-list 2576
+interface <*>
+pimsm
+#
+interface <*>
+pimsm
+#
+router igmp
+interface loopback1
+static-group 239.49.0.1 inc-mask 0.0.0.1 count 254
+static-group 239.49.1.1 inc-mask 0.0.0.1 count 254
+static-group 239.49.8.1 inc-mask 0.0.0.1 count 254
+static-group 239.49.9.1 inc-mask 0.0.0.1 count 254
+#
+interface <*>
+sibtp-service
+#
+router igmp
+interface <*>
+sibtp-service
+#
+interface loopback1
+static-group 239.49.0.1 inc-mask 0.0.0.1 count 254
+static-group 239.49.1.1 inc-mask 0.0.0.1 count 254
+static-group 239.49.8.1 inc-mask 0.0.0.1 count 254
+static-group 239.49.9.1 inc-mask 0.0.0.1 count 254
+#
+load-sharing hash-algorithm hash
+load-sharing hash-fields mpls ip-l4
+load-sharing hash-fields mpls l2
+load-sharing wtr 5
+#
+icbg <*>
+bind interface <*>
+bind sibtp
+#
+telemetry
+destination-group DgZYkzqYZ
+address vrf CTVPN193-JS ipv4 <*> port <*>
+#
+sensor-group SgNMAN
+sensor-path oc-if:interfaces/interface/state/counters
+sensor-path oc-if:interfaces/interface/subinterfaces/subinterface/state/counters
+sensor-path oc-platform:components/component/cpu/oc-cpu:utilization/state
+sensor-path oc-platform:components/component/state/memory
+sensor-path sqa:state/sqa/light-twamp-results/light-twamp-result
+#
+subscription SubZYkzqYZ
+destination-group DgZYkzqYZ
+sensor-group SgNMAN sample-interval 30000
+local-source-address <*>
+#
+system-id <*>
+#
+ip vrf CTVPN193-JS
+description For-Managerment
+rd <*>
+ds-mode pipe af2 green
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn auto-originate-route disable
+route-target <*> <*>
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+ip address <*> <*>
+mpls mtu 9000
+ipv6 enable
+ipv6 mtu 9000
+ipv6 address <*>
+no shutdown
+#
+sysmib ifalias long
+interface <*>
+description <*>
+no shutdown
+#
+interface <*>
+description <*>
+#
+interface <*>
+link-delay-down 100
+link-delay-up 5000
+bind flexe_client <*>
+#
+interface <*>
+holdtime 300
+link-delay-down 100
+link-delay-up 5000
+#
+clock timezone BEIJING 8
+#
+ptp
+fixed-mode
+#
+free-mode
+#
+ip extcommunity-list advanced NJ-JS-ASBR-SRV6-PE-TestSystem <*> permit <*>
+ip extcommunity-list advanced <*> <*> permit <*>
+#
+router-id loopback1
+#
+mpls l2vpn enable
+#
+bfd
+interface <*>
+interval 150
+min-rx 150
+#
+interface <*>
+interval 150
+min-rx 150
+#
+bgp ipv4-unicast-config independent enable
+bgp srv6 dynamic-vpn locator SRV6-ZWZX
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+neighbor pgToCloudPE-v6 peer-group
+neighbor pgToCloudPE-v6 remote-as <*>
+neighbor pgToCloudPE-v6 ttl-security-hops 1
+neighbor pgToCloudPE-v6 update-source loopback20
+neighbor pgToCloudPE-v6 fall-over bfd interval <*> min-rx <*> multiplier <*>
+neighbor pgToCloudPE-v6 srv6-l2-service-type 6
+neighbor pgToCloudPE-v6 srv6-l3-service-type 5
+neighbor pgToCloudPE-v6 password encrypted <*>
+neighbor pgToNJ-Border-Leaf-v6 peer-group
+neighbor pgToNJ-Border-Leaf-v6 remote-as 2.9219
+neighbor pgToNJ-Border-Leaf-v6 ebgp-multihop ttl 255
+neighbor pgToNJ-Border-Leaf-v6 update-source loopback20
+neighbor pgToNJ-Border-Leaf-v6 srv6-l2-service-type 6
+neighbor pgToNJ-Border-Leaf-v6 srv6-l3-service-type 5
+neighbor pgToNJ-Border-Leaf-v6 password encrypted <*>
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 peer-group
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 remote-as 64660
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 ebgp-multihop ttl 255
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 update-source loopback20
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 srv6-l2-service-type 6
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 srv6-l3-service-type 5
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 password encrypted <*>
+neighbor pgToRR peer-group
+neighbor pgToRR remote-as <*>
+neighbor pgToRR update-source loopback1
+neighbor pgToRR password encrypted <*>
+neighbor pgToRR-v6 peer-group
+neighbor pgToRR-v6 remote-as <*>
+neighbor pgToRR-v6 update-source loopback20
+neighbor pgToRR-v6 srv6-l2-service-type 6
+neighbor pgToRR-v6 srv6-l3-service-type 5
+neighbor pgToRR-v6 password encrypted <*>
+neighbor 240e:1a:2000::b4 remote-as 64660
+neighbor 240e:1a:2000::b4 peer-group pgToNJ-JS-ASBR-MAN.SRV6-PE-v6
+neighbor 240e:1a:2000::b4 description JS-NJ-JS-ASBR-1.MAN.SRV6.NE40E-X16
+neighbor 240e:1a:2000::b5 remote-as 64660
+neighbor 240e:1a:2000::b5 peer-group pgToNJ-JS-ASBR-MAN.SRV6-PE-v6
+neighbor 240e:1a:2000::b5 description JS-NJ-JS-ASBR-2.MAN.SRV6.NE40E-X16
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCloudPE-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCloudPE-v6
+neighbor <*> description <*>
+neighbor 240e:187:8188::5 remote-as 2.9219
+neighbor 240e:187:8188::5 peer-group pgToNJ-Border-Leaf-v6
+neighbor 240e:187:8188::5 description JS-NJ-GL-Border-Leaf-01.NMAN.CX600-X8A
+neighbor 240e:187:8188::6 remote-as 2.9219
+neighbor 240e:187:8188::6 peer-group pgToNJ-Border-Leaf-v6
+neighbor 240e:187:8188::6 description JS-NJ-YFXJ-Border-Leaf-01.NMAN.CX600-X8A
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+address-family ipv4
+synchronization disable
+bgp bestpath external
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor pgToCloudPE-v6 activate
+neighbor pgToNJ-Border-Leaf-v6 activate
+neighbor pgToNJ-Border-Leaf-v6 send-community
+neighbor pgToNJ-Border-Leaf-v6 announce-sid
+neighbor pgToNJ-Border-Leaf-v6 send-large-community
+neighbor pgToNJ-Border-Leaf-v6 send-med
+neighbor pgToNJ-Border-Leaf-v6 additional-paths receive
+neighbor pgToNJ-Border-Leaf-v6 additional-paths send 16
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 activate
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+neighbor 240e:1a:2000::b4 activate disable
+neighbor 240e:1a:2000::b5 activate disable
+neighbor <*> activate disable
+neighbor 240e:187:8188::5 activate disable
+neighbor 240e:187:8188::6 activate disable
+neighbor <*> activate
+#
+address-family l2vpn evpn
+esi-index ignore-rd enable
+bgp bestpath origin-from evpn
+bgp ip-prefix label per-rd
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToCloudPE-v6 activate
+neighbor pgToCloudPE-v6 send-community
+neighbor pgToCloudPE-v6 announce-sid
+neighbor pgToCloudPE-v6 send-large-community
+neighbor pgToCloudPE-v6 send-med
+neighbor pgToCloudPE-v6 additional-paths receive
+neighbor pgToCloudPE-v6 additional-paths send 16
+neighbor pgToNJ-Border-Leaf-v6 activate
+neighbor pgToNJ-Border-Leaf-v6 next-hop-unchanged all
+neighbor pgToNJ-Border-Leaf-v6 send-community
+neighbor pgToNJ-Border-Leaf-v6 announce-sid
+neighbor pgToNJ-Border-Leaf-v6 advertise tunnel-encapsulation srv6
+neighbor pgToNJ-Border-Leaf-v6 send-large-community
+neighbor pgToNJ-Border-Leaf-v6 send-med
+neighbor pgToNJ-Border-Leaf-v6 route-map rpFromNJ-BorderLeaf-EVPN in
+neighbor pgToNJ-Border-Leaf-v6 route-map rpToNJ-BorderLeaf-EVPN out
+neighbor pgToNJ-Border-Leaf-v6 additional-paths receive
+neighbor pgToNJ-Border-Leaf-v6 additional-paths send 16
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 activate
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 next-hop-unchanged all
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 send-community
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 announce-sid
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 advertise tunnel-encapsulation srv6
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 send-large-community
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 send-med
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 route-map rpFromNJ-JS-ASBR-SRV6-PE in
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 route-map rpToNJ-JS-ASBR-SRV6-PE out
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 additional-paths receive
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 additional-paths send 16
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 advertise tunnel-encapsulation srv6
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+#
+address-family ipv6
+synchronization disable
+bgp bestpath external
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+network <*>
+neighbor pgToCloudPE-v6 activate
+neighbor pgToCloudPE-v6 next-hop-self
+neighbor pgToCloudPE-v6 send-community
+neighbor pgToCloudPE-v6 send-med
+neighbor pgToCloudPE-v6 announce-sid
+neighbor pgToCloudPE-v6 send-large-community
+neighbor pgToCloudPE-v6 route-map rpFromCloudPE-V6 in
+neighbor pgToCloudPE-v6 route-map rpToCloudPE-V6 out
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 route-map rpToRR out
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+#
+router isis 800
+area <*>
+system-id <*>
+router-id <*>
+is-type level-2-only
+metric-style wide
+distance 105
+fast-flood 6
+fast-reroute lfa enable
+i-spf
+maximum-paths 32
+mpls ldp sync
+mpls ldp sync max-hold-time 180
+mpls traffic-eng level-2
+te-link-delay enable
+address-family ipv6
+distance 105
+fast-reroute ti-lfa srv6 level-2
+maximum-paths 32
+microloop-prevention segment-routing delay-time 5000
+microloop-prevention segment-routing srv6 enable
+multi-topology
+redistribute bgp with-originate-metric route-map BGPFromCloudPEToISIS-v6
+router-id <*>
+segment-routing srv6 enable
+segment-routing srv6 locator SRV6-5G2B
+#
+ip multicast-routing
+multipath s-g-hash next-hop-based
+router pim
+static-rp <*> group-list <*>
+interface loopback1
+pimsm
+#
+router igmp
+interface loopback1
+static-group <*> inc-mask 0.0.0.1 count 254
+#
+telemetry
+destination-group <*>
+address vrf CTVPN193-JS ipv4 <*> port <*>
+#
+subscription <*>
+destination-group <*>
+sensor-group SgNMAN sample-interval 30000
+local-source-address <*>
+#
+!configuration saved at <*> <*> <*> <*> <*> by write zdb
+!configuration saved at <*> <*> <*> <*> <*> by write txt
+commit-mode default manual
+#
+#
+address-family ipv4 vrf CTVPN193-JS
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+network <*> <*>
+redistribute connected
+#
+address-family ipv6
+synchronization disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR-v6 additional-paths send 16
+#
+address-family ipv6
+synchronization disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 16
+maximum-paths ibgp 16
+neighbor <*> <*>
+#
+address-family l2vpn evpn
+bgp bestpath origin-from evpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor <*> <*>
+neighbor pgToRR-v6 advertise tunnel-encapsulation srv6
+neighbor <*> <*> <*>
+neighbor pgToRR-v6 additional-paths send 16
+#
+address-family l2vpn evpn
+esi-index ignore-rd enable
+bgp default route-target filter
+bgp bestpath origin-from evpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor <*> <*>
+neighbor pgToRR-v6 advertise tunnel-encapsulation srv6
+neighbor <*> <*> <*>
+neighbor pgToRR-v6 additional-paths send 16
+#
+address-family vpnv4
+bgp bestpath origin-from l3vpn
+bgp nexthop recursive-lookup default-route disable
+neighbor <*> <*>
+#
+address-family vpnv4
+bgp bestpath origin-from l3vpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR additional-paths send 16
+#
+address-family vpnv6
+bgp nexthop recursive-lookup default-route disable
+neighbor <*> <*>
+#
+address-family vpnv6
+bgp bestpath origin-from l3vpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor <*> <*>
+#
+alarm netconf-report informational
+logging cmdlog-timestamps precisetime
+logging timestamps precisetime
+logging file default almlog
+accept on
+#
+authentication-template 100
+bind <*> <*>
+#
+authentication-template 101
+bind <*> <*>
+bind access-list ipv4 aclPermitSSH_viewonly
+#
+#
+authorization-template 101
+bind <*> <*>
+local-privilege-level 5
+#
+authorization-template 111
+bind <*> <*>
+#
+bgp ipv4-unicast-config independent enable
+router bgp 2.9229
+bgp router-id <IPV4>
+bgp select-global-nexthop
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR password encrypted *31*hmiTnRpoKsiIa8feGsEGBhrBBgYawQYGGsEGBnNTpy8GbaLYvzllaBTOMb0=
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR-v6 password encrypted *31*hmiTnRpoKsiIa8feUB7bJFAe2yRQHtskUB7bJLj6eQNnR5TPaLWiT2n/ey8=
+neighbor <*> <*> <*>
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR-v6 additional-paths send 16
+#
+router bgp 2.9229
+bgp router-id <IPV4>
+bgp select-global-nexthop
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR password encrypted *31*hmiTnRpoKsiIa8ferRHeL60R3i+tEd4vrRHeL95m0e9XhiufewuOKcVM2NY=
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR-v6 password encrypted *31*hmiTnRpoKsiIa8felZFWKZWRVimVkVYplZFWKT/UATIfz+v+F7rQsrEeSZ0=
+neighbor <*> <*> <*>
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> <*>
+#
+command-authorization <*> all 2111
+privilege show all level 5 show
+#
+command-authorization <*> all 2111
+auto-write cpu-limit 60
+privilege show all level 5 show
+#
+default-privilege-level 15
+user-default
+bind <*> <*>
+#
+interface <*>
+description <*>
+ipv6 enable
+ipv6 <*> <*>
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+mpls mtu 9000
+ipv6 enable
+ipv6 <*> <*>
+#
+interface <*>
+ip router isis
+bfd-enable
+ipv6 bfd-time-negotiation min-tx 30 min-rx 30 multiplier 3
+ipv6 <*> <*>
+ipv6 link-damped metric increase 3000
+ipv6 link-damped revert-interval 600 180000 180000
+ipv6 <*> <*>
+metric 100000
+network point-to-point
+link-damped adj-establish enable
+link-damped metric increase 3000
+link-damped revert-interval 600 180000 180000
+#
+interface <*>
+ip router isis
+bfd-enable
+bfd-time-negotiation min-tx 30 min-rx 30 multiplier 3
+ipv6 bfd-enable
+ipv6 bfd-time-negotiation min-tx 30 min-rx 30 multiplier 3
+ipv6 <*> <*>
+ipv6 link-damped adj-establish enable
+ipv6 link-damped metric increase 3000
+ipv6 link-damped revert-interval 600 180000 180000
+ipv6 <*> <*>
+metric 200000
+network point-to-point
+link-damped adj-establish enable
+link-damped metric increase 3000
+link-damped revert-interval 600 180000 180000
+#
+interface <*>
+ip router isis
+ipv6 bfd-enable
+ipv6 bfd-time-negotiation min-tx 30 min-rx 30 multiplier 3
+ipv6 <*> <*>
+ipv6 link-damped adj-establish enable
+ipv6 link-damped metric increase 3000
+ipv6 link-damped revert-interval 600 180000 180000
+ipv6 <*> <*>
+circuit-type level-2-only
+metric 1500
+network point-to-point
+link-damped adj-establish enable
+link-damped metric increase 3000
+link-damped revert-interval 600 180000 180000
+#
+interface <*>
+ip router isis
+bfd-enable
+bfd-time-negotiation min-tx 30 min-rx 30 multiplier 3
+ipv6 bfd-enable
+ipv6 bfd-time-negotiation min-tx 30 min-rx 30 multiplier 3
+ipv6 <*> <*>
+ipv6 link-damped adj-establish enable
+ipv6 link-damped metric increase 3000
+ipv6 link-damped revert-interval 600 180000 180000
+ipv6 <*> <*>
+metric 1500
+network point-to-point
+link-damped adj-establish enable
+link-damped metric increase 3000
+link-damped revert-interval 600 180000 180000
+#
+interface <*>
+ip router isis
+circuit-type level-2-only
+passive-mode
+#
+interface <*>
+ip router isis
+ipv6 <*> <*>
+circuit-type level-2-only
+passive-mode
+#
+interface <*>
+ipv6 <*> <*>
+circuit-type level-2-only
+passive-mode
+#
+interface <*>
+description <*>
+#
+interface <*>
+description <*>
+ip address <IPV4> <IPV4>
+ipv6 enable
+ipv6 <*> <*>
+no shutdown
+#
+interface <*>
+description <*>
+ip address <IPV4> <IPV4>
+no shutdown
+#
+interface <*>
+description <*>
+ip vrf forwarding CTVPN193-JS
+ip address <IPV4> <IPV4>
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+ip address <IPV4> <IPV4>
+mpls mtu 9000
+ipv6 <*> <*>
+#
+interface <*>
+group-number 301291
+bind interface <INTERFACE> phy-number 1 timeslots all
+#
+interface <*>
+group-number 301301
+#
+interface <*>
+group-number 302291
+bind interface <INTERFACE> phy-number 1 timeslots all
+#
+interface <*>
+group-number 302301
+bind interface <INTERFACE> phy-number 1 timeslots all
+#
+interface <*>
+ip address <IPV4> <IPV4>
+ipv6 <*> <*>
+#
+interface <*>
+ipv6 nd reachable-time 3600000
+ipv6 <*> <*>
+#
+interface <*>
+<*>
+bind <*> <*>
+#
+interface <*>
+no shutdown
+#
+interface <*>
+terminal-mode enable
+bind flexe_group flexe_group1 calendar-template A interface <INTERFACE> timeslots 0-15
+client-number 1
+#
+interface <*>
+terminal-mode enable
+bind flexe_group flexe_group1 calendar-template A interface <INTERFACE> timeslots 16-17
+client-number 3
+#
+interface <*>
+terminal-mode enable
+bind flexe_group flexe_group1 calendar-template A interface <INTERFACE> timeslots 18-19
+client-number 2
+#
+interface <*>
+terminal-mode enable
+bind flexe_group flexe_group2 calendar-template A interface <INTERFACE> timeslots 0-15
+client-number 1
+#
+interface <*>
+terminal-mode enable
+bind flexe_group flexe_group2 calendar-template A interface <INTERFACE> timeslots 16-17
+client-number 3
+#
+interface <*>
+terminal-mode enable
+bind flexe_group flexe_group2 calendar-template A interface <INTERFACE> timeslots 18-19
+client-number 2
+#
+interface <*> <*>
+#
+ip multicast-routing
+router pim
+pimsm
+#
+ip multicast-routing
+multipath s-g-hash next-hop-based
+router pim
+interface <*>
+pimsm
+#
+ip prefix-list 2576 seq 10 permit <IPV4> 23
+ip prefix-list 2576 seq 20 permit <IPV4> 21
+ip prefix-list 2576 seq 30 permit <IPV4> 22
+ip prefix-list 2576 seq 40 permit <IPV4> 21
+ip prefix-list 2576 seq 50 permit <IPV4> 24
+ipv6 prefix-list ipFormRR seq 5 permit <IPV6>/128
+ipv6 prefix-list ipFormRR seq 10 permit <IPV6>/128
+ipv6 prefix-list ipTrackSpine seq 5 permit <IPV6>/128
+ipv6 prefix-list ipTrackSpine seq 10 permit <IPV6>/128
+#
+ip prefix-list ipMulticastGroup seq 10 permit <IPV4> 23 le 32
+ip prefix-list ipMulticastGroup seq 20 permit <IPV4> 24 le 32
+ip prefix-list ipMulticastGroup seq 30 permit <IPV4> 21 le 32
+ip prefix-list ipMulticastGroup seq 40 permit <IPV4> 22 le 32
+ip prefix-list ipMulticastGroup seq 50 permit <IPV4> 21 le 32
+#
+ip vrf CTVPN193-JS
+description <*>
+rd 4134:1612
+ds-mode pipe af2 green
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn auto-originate-route disable
+route-target import 4134:161200
+route-target import 4134:161201
+route-target export 4134:161200
+#
+ip vrf CTVPN193-JS
+description <*>
+rd 4134:1612
+ds-mode pipe af2 green
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+route-target import 4134:161200
+route-target import 4134:161201
+#
+ipv4-access-list aclPermitNTP
+rule <*> permit <IPV4> <IPV4>
+rule 1000 deny any
+#
+ipv4-access-list aclPermitNTP
+rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>
+rule 1000 deny any
+#
+ipv4-access-list aclPermitSNMP
+rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>
+rule <*> permit <IPV4> <IPV4>
+rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>
+rule <*> permit <IPV4> <IPV4>
+rule 1000 deny any
+#
+ipv4-access-list aclPermitSNMP
+rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>
+rule 1000 deny any
+#
+ipv4-access-list aclPermitSSH
+description <*>
+rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>
+description <*>
+rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>
+description <*>
+rule <*> permit <IPV4> <IPV4>
+rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>
+rule <*> permit <IPV4> <IPV4>
+rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>
+rule <*> permit <IPV4> <IPV4>
+description <*>
+rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>
+rule 10000 deny any
+#
+ipv4-access-list aclPermitSSH
+description <*>
+rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>
+description <*>
+rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>
+description <*>
+rule <*> permit <IPV4> <IPV4>
+rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>
+rule <*> permit <IPV4> <IPV4>
+rule 1000 deny any
+#
+description <*>
+rule <*> permit <IPV4> <IPV4>
+rule 3000 deny any
+#
+ipv4-access-list aclPermitSSH_viewonly
+description <*>
+rule <*> permit <IPV4> <IPV4>
+rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>
+rule 3000 deny any
+#
+ipv4-access-list aclPermitTelnet
+rule <*> permit <IPV4> <IPV4>
+rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>
+rule <*> permit <IPV4> <IPV4>
+rule 1000 deny any
+#
+ipv6-access-list v6aclPermitSSH
+rule 1000 deny ipv6 any any
+#
+line console absolute-timeout 60
+line console idle-timeout 10
+line telnet server disable
+line telnet absolute-timeout 60
+line telnet idle-timeout 10
+line telnet access-class ipv4 aclPermitTelnet
+line telnet max-link 10
+#
+line console absolute-timeout 60
+line console idle-timeout 10
+line telnet server disable
+line telnet absolute-timeout 60
+line telnet idle-timeout 10
+line telnet max-link 10
+#
+logging trap-enable informational
+logging snmp
+accept on
+match cmdlog
+#
+mpls traffic-eng
+router-id <IPV4>
+ipv6-router-id <IPV6>
+#
+netconf agent enable
+#
+ntp enable
+ntp server vrf CTVPN193-JS <IPV4> priority 1
+ntp server vrf CTVPN193-JS <IPV4> priority 2
+ntp source interface loopback2
+ntp access-group ipv4-access-list aclPermitNTP
+#
+privilege show all level 5 show
+#
+router bgp 2.9223
+synchronization disable
+bgp router-id <IPV4>
+bgp select-global-nexthop
+maximum-paths 16
+maximum-paths ibgp 16
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR password encrypted *31*hmiTnRpoKsiIa8femJ9aY5ifWmOYn1pjmJ9aY661NeTplGrYr0vSZ6efyr0=
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor <*> <*>
+neighbor pgToRR-v6 password encrypted *31*hmiTnRpoKsiIa8fe5SK5ceUiuXHlIrlx5SK5cbkrRyayT2XLk2ewfgXxyd0=
+neighbor <*> <*> <*>
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> <*> <*>
+neighbor <*> <*>
+neighbor pgToRR-v6 advertise tunnel-encapsulation srv6
+neighbor <*> <*> <*>
+neighbor pgToRR-v6 additional-paths send 16
+#
+router bgp 2.9223
+synchronization disable
+bgp router-id <IPV4>
+bgp select-global-nexthop
+maximum-paths 16
+maximum-paths ibgp 16
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR password encrypted *31*hmiTnRpoKsiIa8feCfcOCgn3DgoJ9w4KCfcOCq/iK/eYKIZzMhymJ/Zws/M=
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor <*> <*>
+neighbor pgToRR-v6 password encrypted *31*hmiTnRpoKsiIa8fe741XBe+NVwXvjVcF741XBV8mhk5xhtxYagaB/WpG/ow=
+neighbor <*> <*> <*>
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> <*> <*>
+neighbor <*> <*>
+neighbor pgToRR-v6 advertise tunnel-encapsulation srv6
+neighbor <*> <*> <*>
+neighbor pgToRR-v6 additional-paths send 16
+#
+router bgp <*>
+synchronization disable
+bgp router-id <*>
+bgp select-global-nexthop
+maximum-paths ibgp 16
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor <*> password encrypted <*>
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor <*> <*>
+neighbor <*> password encrypted <*>
+neighbor <*> <*> <*>
+neighbor <*> additional-paths send <*>
+neighbor <*> <*> <*>
+address-family l2vpn evpn
+bgp bestpath origin-from evpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor <*> <*>
+neighbor <*> advertise tunnel-encapsulation srv6
+neighbor <*> <*> <*>
+neighbor <*> additional-paths send <*>
+#
+router igmp
+#
+router isis 800
+area 86.0295.0518
+system-id 0582.2318.0029
+router-id <IPV4>
+is-type level-2-only
+distance 105
+fast-flood 6
+fast-reroute lfa enable
+i-spf
+maximum-paths 16
+mpls ldp sync
+mpls ldp sync max-hold-time 180
+bgp link-state level-2 instance-id 800
+te-link-delay enable
+address-family ipv6
+distance 105
+fast-reroute ti-lfa srv6 level-2
+maximum-paths 16
+microloop-prevention segment-routing delay-time 5000
+microloop-prevention segment-routing srv6 enable
+multi-topology
+router-id <IPV6>
+segment-routing srv6 enable
+segment-routing srv6 locator SRV6-5G2B
+#
+router isis 800
+area 86.0301.0523
+system-id 0582.2318.0029
+router-id <IPV4>
+is-type level-2-only
+metric-style wide
+distance 105
+fast-flood 6
+fast-reroute lfa enable
+i-spf
+mpls ldp sync
+mpls ldp sync max-hold-time 180
+mpls traffic-eng level-2
+te-link-delay enable
+address-family ipv6
+distance 105
+fast-reroute ti-lfa srv6 level-2
+maximum-paths 32
+microloop-prevention segment-routing delay-time 5000
+microloop-prevention segment-routing srv6 enable
+multi-topology
+router-id <IPV6>
+segment-routing srv6 locator SRV6-5G2B
+#
+segment-routing
+srv6 adjacency sid holdtime 20160
+srv6 global enable
+srv6 locator SRV6-5G2B
+ipv6-prefix <*> static-length 12 args-length 16
+compress c-target 32 block-length 64
+#
+segment-routing srv6 locator SRV6-END
+end-sid func-code <IPV6>
+end-x-sid auto
+#
+snmp-server <*> <*> <*>
+snmp-server community encrypted <PASSWORD> view lldpview ro
+snmp-server <*> <*> <*>
+snmp-server view lldpview iso included
+snmp-server view n31view iso included
+snmp-server <*> <*> <*>
+#
+snmp-server <*> <*> <*>
+snmp-server community encrypted <PASSWORD> view lldpview ro
+snmp-server context rancontext
+snmp-server view lldpview iso included
+snmp-server view n31view iso included
+snmp-server <*> <*> <*>
+#
+srv6 adjacency sid holdtime 20160
+srv6 global enable
+srv6 locator SRV6-5G2B
+ipv6-prefix <*> static-length 12 args-length 16
+compress c-target 32 block-length 64
+#
+ssh server <*> <*> <*>
+#
+syslog level warnings
+syslog-server host vrf CTVPN193-JS <IPV4> alarmlog cmdlog servicelog braslog natlog urllog nat-translationlog nat-portrangelog netconflog haglog snmplog weblog traplog
+syslog-server source interface loopback2
+#
+system-user
+account-switch on accounting-template 2111
+authorization-template 100
+bind <*> <*>
+#
+tacacs enable
+tacacs-client <IPV4>
+tacacs-server timeout 3
+tacacs-server deadtime 0
+tacacs-server host vrf CTVPN193-JS <IPV4> key encrypted <*>
+tacplus group-server js.admin.tacacs
+server vrf CTVPN193-JS <IPV4>
+server vrf CTVPN193-JS <IPV4> master
+#
+user-name adminnocsj@admin-local
+bind <*> <*>
+password encrypted <*>
+#
+user-name conuser
+password encrypted <*>
+#
+user-name nocfanshua@admin-local
+bind <*> <*>
+password encrypted <*>
+#
+user-name viewonlynocsj@admin-local
+bind <*> <*>
+password encrypted <*>
+#
+hostname <*>
+login authentication
+banner incoming #WARNING!!! Authorised access only, all of your done will be recorded! Disconnect IMMEDIATELY if you are not an authorised user!#
+load-mode txt
+nvram <*> <*>
+nvram boot-server ipv6 <IPV6>
+nvram <*> <*>
+nvram default-gateway ipv6 <IPV6>
+nvram <*> <*>
+#
+hostname <*>
+login authentication
+banner incoming @WARNING!!! Authorised access only, all of your done will be recorded! Disconnect IMMEDIATELY if you are not an authorised user!@
+load-mode txt
+nvram <*> <*>
+nvram boot-server ipv6 <IPV6>
+nvram <*> <*>
+nvram default-gateway ipv6 <IPV6>
+nvram <*> <*>
+#
+!configuration saved at <*> <*> <*> <*> <*> by write zdb
+!configuration saved at <*> <*> <*> <*> <*> by write txt
+!last configuration change at <*> <*> <*> <*> <*> by <*>
+commit-mode default automatic
+#
+!configuration saved in zdb mode at <*> on <*> <*> <*> <*> by <*>
+!configuration saved in txt mode at <*> on <*> <*> <*> <*> by the system automatically
+!last configuration change at <*> <*> <*> <*> <*> by <*>
+commit-mode default automatic
+#
+hostname <*>
+WARNING!!! Authorised access only, all of your done will be recorded! disconnect IMMEDIATELY if you are not an authorised user!@
+#
+hostname <*>
+banner incoming @
+WARNING!!! Authorised access only, all of your done will be recorded! disconnect IMMEDIATELY if you are
+not an authorised user!@
+#
+cpu-keepalive pfu-interval 20
+#
+console 0
+#
+network-card
+create interface PFU-0/2/0 port 1
+bind mac <*> index 1
+#
+create interface PFU-0/2/0 port 2
+bind mac <*> index 1
+#
+create interface PFU-0/2/0 port 3
+bind mac <*> index 1
+#
+create interface PFU-0/2/0 port 4
+bind mac <*> index 1
+#
+create interface PFU-0/3/0 port 1
+bind mac <*> index 1
+#
+create interface PFU-0/3/0 port 2
+bind mac <*> index 1
+#
+create interface PFU-0/3/0 port 3
+bind mac <*> index 1
+#
+create interface PFU-0/3/0 port 4
+bind mac <*> index 1
+#
+af-node <*>
+#
+ip vrf CP2UP_L3VPN_ZTE
+description For-CP2UP_L3VPN_ZTE
+rd <*>
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn auto-originate-route disable
+route-target import <*>
+route-target export <*>
+#
+ip vrf CTVPN193-JS
+description <*>
+rd <*>
+evpn tunnel-encapsulation srv6
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn auto-originate-route disable
+route-target <*> <*>
+#
+ip vrf E05-itms
+rd <*>
+address-family ipv4
+route-target import <*>
+route-target export <*>
+#
+ip vrf VPDN
+rd 666:666
+address-family ipv4
+#
+ip vrf E05-voip-untrust
+rd <*>
+address-family ipv4
+route-target import <*>
+route-target export <*>
+#
+description <*>
+rd <*>
+srv6 end-dt-sid auto
+srv6 locator SRV6-ZWZX
+address-family ipv4
+evpn auto-originate-route disable
+route-target import <*>
+route-target export <*>
+#
+ip vrf <*>
+description <*>
+rd <*>
+evpn tunnel-encapsulation srv6
+srv6 end-dt-sid auto
+srv6 locator SRV6-ZWZX
+address-family ipv4
+evpn auto-originate-route disable
+route-target import <*>
+route-target export <*>
+#
+ip vrf <*>
+description <*>
+rd <*>
+evpn tunnel-encapsulation srv6
+srv6 end-dt-sid auto
+srv6 locator SRV6-ZWZX
+address-family ipv4
+evpn auto-originate-route disable
+route-target import <*>
+route-target export <*>
+route-target import <*>
+route-target export <*>
+#
+ip vrf <*>
+description <*>
+rd <*>
+evpn tunnel-encapsulation srv6
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn export-map <*>
+route-target import <*>
+route-target export <*>
+#
+ip vrf <*>
+description <*>
+evpn tunnel-encapsulation srv6
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+route-target import <*>
+route-target export <*>
+#
+address-family ipv6
+route-target import <*>
+route-target export <*>
+#
+interface <*>
+no shutdown
+interface mac-address <*>
+#
+interface <*>
+description FOR-Ext-CDB
+no shutdown
+interface mac-address <*>
+#
+interface <*>
+description FOR-vBRAS-SVR
+no shutdown
+interface mac-address <*>
+#
+interface <*>
+description FOR-CTVPN193
+no shutdown
+interface mac-address <*>
+#
+interface loopback2
+description For-Management-CTVPN193-JS
+ip vrf forwarding CTVPN193-JS
+ip address <*> <*>
+#
+interface loopback6
+description For-Radius
+ip address <*> <*>
+#
+description For-vBRAS-NAS-IP
+ip address <*> <*>
+#
+interface loopback10
+description FOR-vBRAS-C&U
+ip address <*> <*>
+#
+interface loopback20
+ipv6 enable
+ipv6 address <*>
+#
+interface null1
+#
+interface <*>
+description FOR-vBRAS-C&U
+ip address <*> <*>
+#
+interface <*>
+description <*>
+ip address <*> <*>
+#
+interface <*>
+description FOR-Ext-CDB
+ip address <*> <*>
+#
+interface <*>
+description FOR-vBRAS-SVR
+ip address <*> <*>
+#
+interface <*>
+description FOR-CTVPN193
+ip vrf forwarding CTVPN193-JS
+ip address <*> <*>
+#
+interface <*>
+description <*>
+ip address <*> <*>
+ip address <*> <*> secondary
+#
+interface <*>
+description <*>
+ip address <*> <*>
+ip address <*> <*> secondary
+#
+interface <*>
+description <*>
+ip vrf forwarding <*>
+ip address <*> <*>
+#
+interface <*>
+description <*>
+ip vrf forwarding <*>
+ip address <*> <*>
+ip address <*> <*> secondary
+#
+interface <*>
+description <*>
+ip vrf forwarding <*>
+ip address <*> <*>
+ip address <*> <*> secondary
+#
+interface <*>
+description <*>
+ipv6 enable
+ipv6 address <*>
+#
+lacp
+interface smartgroup1
+lacp restore non-revertive
+lacp mac master <*> backup <*>
+#
+interface smartgroup2
+lacp restore non-revertive
+lacp mac master <*> backup <*>
+#
+interface smartgroup3
+lacp restore non-revertive
+lacp mac master <*> backup <*>
+#
+interface smartgroup4
+lacp restore non-revertive
+lacp mac master <*> backup <*>
+#
+interface <*>
+smartgroup 1 mode on
+#
+interface <*>
+smartgroup 2 mode on
+#
+interface <*>
+smartgroup 3 mode on
+#
+interface <*>
+smartgroup 4 mode on
+#
+interface <*>
+smartgroup 1 mode on
+lacp multi-backup
+#
+interface <*>
+smartgroup 2 mode on
+lacp multi-backup
+#
+interface <*>
+smartgroup 3 mode on
+lacp multi-backup
+#
+interface <*>
+smartgroup 4 mode on
+lacp multi-backup
+#
+time-range enable
+time-range <*>
+periodic daily <*> to <*>
+#
+ip pool <*>
+include-edge
+range <*> <*> <*>
+threshold 90
+#
+ippool-openflow-disconnect response-delay 480
+#
+user-name jstelecom
+bind authentication-template 100
+bind authorization-template 100
+password encrypted <*>
+#
+ip dhcp server instance 256
+server online-client resend discover offline
+dhcp-pool <*>
+#
+ip dhcp pool <*>
+lease-time 0 0 40
+ignore-request-list
+option 125 hex 28351053484354434950545644484350414141283509303039303039303039
+#
+dhcp
+enable
+#
+dhcp ipv6
+relay max-user 1000000
+server duid 666
+server instance <*>
+dhcpv6-pool <*>
+#
+server instance <*>
+dhcpv6-pool <*>
+#
+pool <*>
+prefix-lifetime 86400 86400
+dns-server 1 240e:5a::6666
+dns-server 2 240e:5b::6666
+#
+enable
+#
+detect-group <*>
+interval 10
+loss-threshold medium 50 high 70
+mode lm-cc
+retry-times 10
+time-out 1
+list 1
+item 1 <*> source <*>
+#
+radius authentication-group 100
+attribute forbid 3902 83 receive
+nas-ip-address <*>
+source-ip-address <*>
+server 1 61.160.185.76 key encrypted <*> port 3799
+server 2 221.228.39.49 key encrypted <*> port 3799
+server 3 221.231.151.120 key encrypted <*> port 3799
+server 4 202.102.13.115 key encrypted <*> port 3799
+#
+radius authentication-group 100
+attribute forbid 3902 83 receive
+attribute forbid 3902 89 receive
+nas-ip-address <*>
+source-ip-address <*>
+server 2 221.228.39.49 key encrypted <*> port 3799
+server 3 221.231.151.120 key encrypted <*> port 3799
+server 4 202.102.13.115 key encrypted <*> port 3799
+server 1 61.160.185.76 key encrypted <*> port 3799
+#
+radius authentication-group 100
+attribute forbid 3902 83 receive
+attribute forbid 3902 89 receive
+nas-ip-address <*>
+source-ip-address <*>
+server 3 221.231.151.120 key encrypted <*> port 3799
+server 4 202.102.13.115 key encrypted <*> port 3799
+server 1 61.160.185.76 key encrypted <*> port 3799
+server 2 221.228.39.49 key encrypted <*> port 3799
+#
+radius authentication-group 163
+algorithm round-robin
+attribute forbid 3902 83 receive
+attribute forbid 3902 89 receive
+nas-ip-address <*>
+source-ip-address <*>
+server 1 202.102.13.66 key encrypted <*>
+server 2 221.231.151.2 key encrypted <*>
+user-name-format include-domain
+#
+radius authentication-group IPTV
+algorithm round-robin
+attribute forbid standard 8 send access-request
+deadtime 10
+nas-ip-address <*>
+source-ip-address <*>
+nas-port-id-format local-and-agent-circuit-id
+server 1 202.102.13.66 key encrypted <*>
+server 2 221.231.151.2 key encrypted <*>
+user-name-format original
+#
+radius authentication-group 1001
+algorithm round-robin
+attribute forbid 3902 83 receive
+attribute forbid 3902 89 receive
+deadtime 10
+nas-ip-address <*>
+source-ip-address <*>
+server 1 202.102.13.66 key encrypted <*>
+server 2 221.231.151.2 key encrypted <*>
+timeout 10
+user-name-format include-domain
+#
+radius authentication-group 200
+nas-ip-address <*>
+source-ip-address <*>
+server 1 61.132.58.197 key encrypted <*>
+server 2 218.2.118.250 key encrypted <*>
+#
+radius authentication-group 2000
+deadtime 10
+nas-ip-address <*>
+source-ip-address <*>
+server 1 202.111.54.44 key encrypted <*>
+#
+radius authentication-group 2000
+deadtime 10
+nas-ip-address <*>
+source-ip-address <*>
+server 1 61.160.137.98 key encrypted <*>
+server 2 202.111.54.44 key encrypted <*>
+timeout 10
+#
+radius authentication-group 1000
+algorithm round-robin
+attribute forbid 3902 40 receive
+attribute forbid 3902 41 receive
+deadtime 10
+nas-ip-address <*>
+source-ip-address <*>
+server 1 202.102.13.66 key encrypted <*>
+server 2 221.231.151.2 key encrypted <*>
+timeout 10
+user-name-format include-domain
+#
+radius accounting-group 163
+algorithm round-robin
+deadtime 10
+local-buffer enable
+nas-ip-address <*>
+source-ip-address <*>
+server 1 202.102.13.66 key encrypted <*>
+server 2 221.231.151.2 key encrypted <*>
+timeout 10
+user-name-format include-domain
+#
+radius accounting-group IPTV
+attribute forbid standard 7 send
+deadtime 10
+local-buffer enable
+nas-ip-address <*>
+source-ip-address <*>
+nas-port-id-format local-and-agent-circuit-id
+server 1 202.102.13.66 key encrypted <*>
+server 2 221.231.151.2 key encrypted <*>
+user-name-format include-domain
+#
+radius accounting-group 200
+local-buffer enable
+nas-ip-address <*>
+source-ip-address <*>
+server 1 61.132.58.197 key encrypted <*>
+server 2 218.2.118.250 key encrypted <*>
+#
+radius accounting-group 2000
+local-buffer enable
+nas-ip-address <*>
+source-ip-address <*>
+server 1 221.231.148.6 key encrypted <*>
+server 2 61.177.64.146 key encrypted <*>
+#
+radius accounting-group 1000
+algorithm round-robin
+deadtime 10
+local-buffer enable
+source-ip-address <*>
+server 1 202.102.13.66 key encrypted <*>
+server 2 221.231.151.2 key encrypted <*>
+timeout 10
+user-name-format include-domain
+#
+radius dev-backup slave
+#
+samgr
+track <*> ping-detect group <*>
+#
+tacacs enable
+tacacs-client <*>
+tacacs-server timeout 3
+tacacs-server deadtime 0
+tacacs-server host vrf CTVPN193-JS 18.120.5.244 key encrypted <*>
+tacplus group-server js.admin.tacacs
+server vrf CTVPN193-JS 4.42.244.34
+server vrf CTVPN193-JS 18.120.5.244 master
+#
+tacacs enable
+tacacs-client source-interface loopback2
+tacacs-server timeout 3
+tacacs-server deadtime 1
+tacacs-server host vrf CTVPN193-JS 18.120.5.244 key encrypted <*>
+tacacs-server host vrf CTVPN193-JS 4.42.244.34 key encrypted <*>
+tacplus group-server js.admin.tacacs
+server vrf CTVPN193-JS 4.42.244.34
+server vrf CTVPN193-JS 18.120.5.244 master
+#
+tacacs enable
+tacacs-client <*>
+tacacs-server timeout 3
+tacacs-server deadtime 1
+tacacs-server host vrf CTVPN193-JS 4.42.244.34 key encrypted <*>
+tacacs-server host vrf CTVPN193-JS 18.120.5.244 key encrypted <*>
+tacplus group-server js.admin.tacacs
+server vrf CTVPN193-JS 4.42.244.34
+server vrf CTVPN193-JS 18.120.5.244 master
+#
+vpdn
+vpdn-mode distribution
+enable
+#
+sibmgr
+sib-peer-group <*> global
+keep-alive
+remote-ip <*> port 6666 local-ip <*> port 6666 port-count 1
+#
+sibmgr
+sib-peer-group <*> global
+remote-ip <*> port 6666 local-ip <*> port 6666 port-count 1 server
+#
+sibtp-mgr
+source-ip <*> port 50001 peer-ip <*> port 50001
+source-ip <*> port 50002 peer-ip <*> port 50002
+source-ip <*> port 50003 peer-ip <*> port 50003
+source-ip <*> port 50004 peer-ip <*> port 50004
+#
+arp
+interface smartgroup1
+periodic freearp 60
+#
+control-plane-security
+interface <*>
+flow limit flowtype snmp-default rate-limit 4000 quota-limit 4000
+flow limit flowtype snmp-known rate-limit 4000 quota-limit 4000
+#
+control-plane-security
+interface <*>
+flow limit flowtype icmp-app rate-limit 2000 quota-limit 2000
+#
+interface <*>
+flow limit flowtype icmp-app rate-limit 2000 quota-limit 2000
+#
+interface <*>
+flow limit flowtype snmp-default rate-limit 4000 quota-limit 4000
+flow limit flowtype snmp-known rate-limit 4000 quota-limit 4000
+#
+ip source-route disable
+icmp-config
+ip icmp timestamp-reply disable
+interface <*>
+ip unreachable disable
+#
+interface <*>
+ip unreachable disable
+#
+ssh server diffie-hellman group-exchange-sha1 disable
+ssh server diffie-hellman group1-sha1 disable
+ssh server encryption 3des-cbc disable
+ssh server encryption aes128-cbc disable
+ssh server encryption aes192-cbc disable
+ssh server encryption aes256-cbc disable
+ssh server encryption blowfish-cbc disable
+ssh server encryption none disable
+ssh server hmac md5 disable
+ssh server hmac none disable
+ssh server access-class ipv4 aclPermitSSH
+ssh server access-class ipv6 v6aclPermitSSH
+ssh server enable
+#
+restconf
+server disable
+#
+vxlan-tunnel-config
+interface <*>
+tunnel source ipv4 <*>
+tunnel destination ipv4 <*>
+#
+interface <*>
+tunnel source ipv4 <*>
+tunnel destination ipv4 <*>
+#
+command-authorization 2 config-command 2111
+command-authorization 3 config-command 2111
+command-authorization 4 config-command 2111
+command-authorization 5 config-command 2111
+command-authorization 6 config-command 2111
+command-authorization 7 config-command 2111
+command-authorization 8 config-command 2111
+command-authorization 9 config-command 2111
+command-authorization 10 config-command 2111
+command-authorization 11 config-command 2111
+command-authorization 12 config-command 2111
+command-authorization 13 config-command 2111
+command-authorization 14 config-command 2111
+command-authorization 15 config-command 2111
+command-authorization 1 config-command 2111
+auto-write everyday 10:00:00
+auto-write cpu-limit 60
+privilege show all level 5 show
+multi-user configure enable
+#
+command-authorization 1 config-command 2111
+command-authorization 2 config-command 2111
+command-authorization 3 config-command 2111
+command-authorization 4 config-command 2111
+command-authorization 5 config-command 2111
+command-authorization 6 config-command 2111
+command-authorization 7 config-command 2111
+command-authorization 8 config-command 2111
+command-authorization 9 config-command 2111
+command-authorization 10 config-command 2111
+command-authorization 11 config-command 2111
+command-authorization 12 config-command 2111
+command-authorization 13 config-command 2111
+command-authorization 14 config-command 2111
+command-authorization 15 config-command 2111
+auto-write everyday 10:00:00
+auto-write cpu-limit 60
+privilege show all level 5 show
+multi-user configure enable
+#
+alarm level-change 400705 alerts
+alarm level-change 490203 warnings
+logging file default almlog
+#
+logging trap-enable warnings
+logging snmp
+accept on
+match cmdlog
+#
+ftp-server access-class aclPermitFTP
+ftp-server access-class ipv6 v6aclPermitFTP
+#
+snmp-server access-list ipv4 aclPermitSNMP
+snmp-server community encrypted <*> view lldpview ro
+snmp-server enable inform <*>
+snmp-server enable trap <*>
+snmp-server input-limit 400
+snmp-server trap-source interface loopback2
+snmp-server view lldpview iso included
+snmp-server view n31view iso included
+snmp-server version v2c enable
+snmp-server version v3 enable
+#
+snmp-server access-list ipv4 aclPermitSNMP
+snmp-server community encrypted <*> view lldpview ro
+snmp-server enable inform <*>
+snmp-server enable trap <*>
+snmp-server input-limit 400
+snmp-server trap-source <*>
+snmp-server view lldpview iso included
+snmp-server view n31view iso included
+snmp-server version v2c enable
+snmp-server version v3 enable
+#
+line console absolute-timeout 60
+line console idle-timeout 10
+line telnet server disable
+line telnet absolute-timeout 0
+line telnet idle-timeout 10
+#
+ip route 0.0.0.0 0.0.0.0 <*> <*> name vBRAS-SVR
+ip route <*> <*> smartgroup1 <*> name <*>
+ip route vrf mng 0.0.0.0 0.0.0.0 <*>
+ip route vrf CTVPN193-JS 0.0.0.0 0.0.0.0 <*> <*>
+#
+of
+of-controller <*>
+listen ipv4 <*> port 6653 tcp
+keepalive interval 10 count 3
+#
+of-controller <*>
+listen ipv4 <*> port 6656 tcp
+keepalive interval 10 count 5
+#
+sensor-group <*>
+sensor-path bras-cdiag:state/device-status/channel-status/connect-status
+sensor-path bras-cdiag:state/device-status/channel-status/drop-rate
+sensor-path bras-cdiag:state/device-status/channel-status/latency
+sensor-path bras-cdiag:state/device-status/channel-status/max-latency
+sensor-path bras-cdiag:state/device-status/channel-status/max-return-latency
+sensor-path bras-cdiag:state/device-status/channel-status/max-send-latency
+#
+subscription <*>
+destination-group <*>
+sensor-group <*> sample-interval 50000
+local-source-address <*>
+#
+af-node <*>
+interface <*>
+no shutdown
+#
+interface <*>
+description <*>
+ipv6 enable
+#
+af-node <*>
+vlan-configuration
+interface <*>
+user-dynamic-vlan any-other-qinq
+qinq range internal-vlan-range <*> external-vlan-range <*>
+vlan-range-broadcast single-layer enable
+#
+af-node <*>
+vlan-configuration
+interface <*>
+encapsulation-dot1q <*>
+#
+af-node <*>
+vlan-configuration
+interface <*>
+encapsulation-dot1q range <*>
+#
+interface <*>
+encapsulation-dot1q range <*>
+#
+af-node <*>
+vlan-configuration
+interface <*>
+any-other-vlan qinq
+vlan-range-broadcast single-layer enable
+#
+interface <*>
+user-dynamic-vlan any-other-qinq
+qinq range internal-vlan-range <*> external-vlan-range <*>
+vlan-range-broadcast single-layer enable
+#
+interface <*>
+any-other-vlan qinq
+vlan-range-broadcast single-layer enable
+#
+af-node <*>
+lacp
+interface <*>
+lacp mode 802.3ad
+#
+interface <*>
+lacp mode 802.3ad
+#
+af-node <*>
+lacp
+interface <*>
+smartgroup <*> mode on
+#
+interface <*>
+smartgroup <*> mode on
+#
+af-node <*>
+vpdn
+radius vpdn-group default-lac
+vpdn-group default-lac
+local name <*>
+vrf VPDN
+source-ip-addr <*>
+#
+af-node <*>
+of
+probe-interval 10 count 3
+ofls name <*> dpid <*>
+controller-main-connection ipv4 <*> vrf CP2UP_L3VPN_ZTE controller-name <*> local-ip-addr <ipv4> tcp
+tcp mss 1400
+#
+af-node <*>
+of
+ofls name <*> dpid <*>
+controller-main-connection ipv4 <*> vrf CP2UP_L3VPN_ZTE controller-name <*> port 6656 local-ip-addr <ipv4> tcp
+probe-interval 10 count 5
+tcp mss 1400
+#
+af-node <*>
+vxlan-tunnel-config
+interface <*>
+tunnel vrf CP2UP_L3VPN_ZTE
+tunnel source ipv4 <*>
+tunnel destination ipv4 <*>
+#
+af-node <*>
+nd
+interface <*>
+ipv6 nd other-config-flag
+#
+interface <*>
+ipv6 nd other-config-flag
+#
+subscriber-manage
+pppoe max-sessions 4 access-mac-circuit
+pppox-cfg 1
+ppp keepalive timer 60 count 5
+ppp quick-redial enable
+#
+subscriber-manage
+af-node <*>
+igmp service-profile 1
+max-groups 128
+max-prw-groups 128
+#
+af-node <*>
+igmp service-profile 1
+max-groups 128
+max-prw-groups 128
+#
+subscriber-manage
+authentication-template <*>
+authentication-radius-group <*>
+authentication-type radius-none
+max-wait-response-time 12
+#
+subscriber-manage
+authentication-template <*>
+authentication-radius-group <*>
+authentication-type radius-none
+#
+subscriber-manage
+authentication-template <*>
+authentication-type <*>
+#
+authentication-template 162
+authentication-radius-group 163
+authentication-type radius-none
+max-wait-response-time 12
+#
+authentication-template 163
+authentication-radius-group 163
+authentication-type radius-none
+max-wait-response-time 12
+#
+authentication-template jsitv
+authentication-radius-group IPTV
+authentication-type radius-none
+max-wait-response-time 12
+#
+authentication-template <*>
+authentication-radius-group <*>
+authentication-type radius-none
+max-wait-response-time 12
+#
+authentication-template <*>
+authentication-type none
+#
+authorization-template 100
+access-list-input ipv4 deny-virus-port
+access-list-output ipv4 weibeian
+bind nat-domain-name 444 type ipv4
+nat-mode portrange
+nat-type inside
+userquota-exceed redirect-web send-stop-accounting
+userquota-exceed support-prepay close
+#
+authorization-template 162
+access-list-input ipv4 aclPermitIPTV
+authorization-type mix-radius
+igmp service-profile 1
+user-priority-input 5
+user-priority-output 5
+#
+authorization-template 163
+access-list-input ipv4 <*>
+access-list-output ipv4 <*>
+access-list-output ipv6 <*>
+authorization-type mix-radius
+user-priority-input 0
+userquota-exceed redirect-web send-stop-accounting
+userquota-exceed support-prepay close
+#
+authorization-template 164
+access-list-input ipv4 aclPermitPreVod
+authorization-type mix-radius
+#
+authorization-template jsitv
+access-list-input ipv4 <*>
+authorization-type mix-radius
+username replace enable
+user-priority-input 5
+user-priority-output 5
+#
+authorization-template 164
+redirect-url <*>
+access-list-input ipv4 <*>
+authorization-type mix-radius
+userquota-exceed redirect-web send-stop-accounting
+userquota-exceed support-prepay close
+#
+authorization-template <*>
+authorization-type mix-radius
+#
+authorization-template <*>
+authorization-type none
+#
+authorization-template <*>
+authorization-type <*>
+sub-car-input ipv4 cir <*> cbs <*> pir <*> pbs <*>
+sub-car-output ipv4 cir <*> cbs <*> pir <*> pbs <*>
+#
+authorization-template <*>
+access-list-output ipv4 <*>
+authorization-type mix-radius
+user-priority-input 0
+userquota-exceed redirect-web send-stop-accounting
+userquota-exceed support-prepay close
+#
+authorization-template <*>
+access-list-output ipv4 <*>
+authorization-type mix-radius
+user-priority-input 0
+#
+authorization-template <*>
+access-list-output ipv4 <*>
+authorization-type mix-radius
+#
+authorization-template <*>
+access-list-input ipv4 <*>
+authorization-type <*>
+#
+authorization-template <*>
+access-list-input ipv4 <*>
+access-list-output ipv4 <*>
+authorization-type <*>
+bind nat-domain-name 444 type ipv4
+nat-mode portrange
+nat-type inside
+user-priority-input 0
+userquota-exceed redirect-web send-stop-accounting
+userquota-exceed support-prepay close
+#
+authorization-template <*>
+nat44-service unavailable remote-nat
+authorization-type <*>
+bind nat-domain-name 444 type ipv4
+nat-mode portrange
+nat-type inside
+userquota-exceed redirect-web send-stop-accounting
+userquota-exceed support-prepay close
+#
+authorization-template <*>
+authorization-type <*>
+bind nat-domain-name <*> type ipv4
+nat-mode portrange
+nat-type inside
+#
+authorization-template <*>
+access-list-output ipv4 <*>
+authorization-type <*>
+bind nat-domain-name <*> type ipv4
+nat-type inside
+qos-policy-input ipv4 <*>
+userquota-exceed redirect-web send-stop-accounting
+userquota-exceed support-prepay close
+#
+authorization-template <*>
+access-list-output ipv4 <*>
+authorization-type <*>
+bind nat-domain-name <*> type ipv4
+nat-type inside
+#
+authorization-template <*>
+authorization-type <*>
+user-priority-input <*>
+user-priority-output <*>
+#
+authorization-template <*>
+access-list-input ipv4 <*>
+access-list-output ipv4 <*>
+authorization-type <*>
+user-priority-input <*>
+user-priority-output <*>
+#
+accounting-template 162
+accounting-radius-group first 163
+accounting-type radius
+accounting-update 7200
+l2tp-accounting class2
+#
+accounting-template 163
+accounting-radius-group first 163
+accounting-type radius
+accounting-update 7200
+attribute nat-multi-portrange enable
+flow-bill dual
+l2tp-accounting class2
+#
+accounting-template 163
+accounting-radius-group first 163
+accounting-type radius
+accounting-update 7200
+flow-bill dual
+l2tp-accounting class2
+#
+accounting-template jsitv
+accounting-radius-group first IPTV
+accounting-type radius
+#
+accounting-template <*>
+accounting-radius-group first <*>
+accounting-type radius
+accounting-update 7200
+l2tp-accounting class2
+#
+accounting-template <*>
+accounting-type <*>
+#
+accounting-template <*>
+accounting-radius-group first <*>
+accounting-type <*>
+#
+domain 163.js
+bind accounting-template 163
+bind authentication-template 163
+bind authorization-template 163
+user-service-ip-type ipv4
+#
+domain nat
+bind accounting-template 163
+bind authentication-template 163
+bind authorization-template 100
+user-service-ip-type ipv4
+#
+domain jsitv
+bind accounting-template jsitv
+bind authentication-template jsitv
+bind authorization-template jsitv
+#
+domain pre-vod
+bind accounting-template 162
+bind authentication-template 162
+bind authorization-template 164
+#
+domain vod
+bind accounting-template 162
+bind authentication-template 162
+bind authorization-template 162
+#
+domain <*>
+bind accounting-template 163
+bind authentication-template 163
+bind authorization-template 163
+user-service-ip-type ipv4
+#
+domain <*>
+bind accounting-template 163
+bind authentication-template 163
+bind authorization-template 100
+user-service-ip-type ipv4
+#
+domain <*>
+bind accounting-template <*>
+bind authentication-template <*>
+bind authorization-template <*>
+ip vrf <*>
+#
+domain <*>
+bind accounting-template<*>
+bind authentication-template <*>
+bind authorization-template <*>
+ip vrf <*>
+user-service-ip-type ipv4
+#
+domain <*>
+bind accounting-template <*>
+bind authentication-template <*>
+bind authorization-template <*>
+tunnel-domain enable
+#
+domain <*>
+bind accounting-template <*>
+bind authentication-template <*>
+bind authorization-template <*>
+#
+domain <*>
+bind accounting-template <*>
+bind authentication-template <*>
+ip vrf <*>
+#
+domain <*>
+bind authentication-template <*>
+tunnel-domain enable
+#
+sal <*>
+default domain 163.js
+permit domain <*>
+none domain 163.js keep
+#
+sal jsitv
+default domain jsitv
+permit domain vod
+permit domain pre-vod
+permit domain jsitv
+none domain jsitv keep
+#
+default domain <*>
+permit domain <*>
+none domain <*> keep
+#
+sal <*>
+default domain <*>
+permit domain <*>
+#
+sal <*>
+default domain <*>
+none domain <*> keep
+#
+sal <*>
+default domain 163.js
+deny domain pre-vod
+none domain 163.js keep
+#
+authentic-request-ctrl control enable
+authentic-request-ctrl user-type lac
+authentic-request-ctrl time-range 60 request-count 6 forbid-period 600 all-request
+location-error-access enable
+session-offline-standardize 1000
+af-node <*>
+#
+virtual-manage-configure
+cp-serial-number 1
+#
+virtual-manage-configure
+cp-serial-number 2
+#
+vbui-configuration
+interface <*>
+#
+vbui-configuration
+interface <*>
+iphost-user-detect count 3 timer 180
+redirect-web-acl aclPermitQianFei
+#
+vbui-configuration
+interface <*>
+redirect-web-acl aclPermitQianFei
+#
+interface <*>
+iphost-user-detect count 3 timer 180
+redirect-web-acl aclPermitQianFei
+#
+interface <*>
+#
+interface <*>
+dhcp user-detect count 3 timer 300
+#
+interface <*>
+dhcp user-detect count 5 timer 120
+web-acl aclPermitWEB
+web-force authentication
+web-server 1
+#
+interface <*>
+dhcp user-detect count 3 timer 180
+#
+interface <*>
+dhcp user-detect count 5 timer 180
+redirect-web-acl aclPermitQianFei
+web-acl aclPermitPreEdu
+web-force authentication
+web-server 10
+#
+interface <*>
+dhcp user-detect count 1 timer 60
+redirect-web-acl aclPermitQianFei
+web-acl aclPermitUniv
+web-force authentication
+web-server 10
+#
+af-node <*>
+interface <*>
+arp-safeguard enable
+encapsulation ip-over-ethernet
+pre-domain <*>
+#
+interface <*>
+arp-safeguard enable
+encapsulation ip-over-ethernet
+pre-domain <*>
+#
+vcc-configuration
+interface <*>
+bind sal <*>
+encapsulation ppp-over-ethernet
+ip-access-type dual
+ipv6 access-type ipox dhcpv6-slaac
+ipv6 access-type pppox dhcpv6-slaac
+pppox template 1
+#
+interface <*>
+bind sal <*>
+encapsulation ppp-over-ethernet
+ip-access-type dual
+ipv6 access-type ipox dhcpv6-slaac
+ipv6 access-type pppox dhcpv6-slaac
+per-mac-multi-ipv4 disable
+pppox template 1
+#
+interface <*>
+arp-safeguard enable
+bind sal <*>
+dhcp-v4 auth-on-up username-type mac-option60 delimiter @ domain-type optionstring passwordtype optionstring
+encapsulation multi
+pppox template 1
+pre-domain jsitv
+#
+subscriber-manage
+ip-pool-policy <*>
+af-node <*>
+#
+ip-pool-policy <*>
+af-node <*>
+#
+subnet-mask 24
+#
+subnet-mask 28
+#
+domain <*>
+alarm-threshold upper-limit <*> lower-limit <*>
+#
+vbui-configuration
+interface <*>
+ip-pool pool-name <*> pool-id <*>
+access-domain <*>
+ip-pool-policy <*>
+pppoe-dns-server <*>
+pppoe-dns-server <*> second
+member 1
+start-ip <*> end-ip <*>
+#
+member <*>
+start-ip <*> end-ip <*>
+#
+interface <*>
+ip-pool pool-name <*> pool-id <*>
+access-domain <*>
+ip-pool-policy <*>
+pppoe-dns-server <*>
+pppoe-dns-server <*> second
+member 1
+start-ip <*> end-ip <*>
+#
+interface <*>
+ip-pool pool-name <*> pool-id <*>
+access-domain <*>
+ip-pool-policy <*>
+ipoe-dns-server <*>
+ipoe-dns-server <*> second
+member 1
+start-ip <*> end-ip <*>
+#
+interface <*>
+access-domain <*>
+ip-pool-policy <*>
+ipoe-dns-server <*>
+ipoe-dns-server <*> second
+pppoe-dns-server <*>
+pppoe-dns-server <*> second
+member 1
+#
+interface <*>
+ip-pool pool-name <*> pool-id <*>
+access-domain <*>
+ip-pool-policy <*>
+ip dhcp instance server <*>
+ipoe-dns-server <*> second
+pppoe-dns-server <*>
+pppoe-dns-server <*> second
+member 1
+start-ip <*> end-ip <*>
+#
+interface <*>
+ip-pool pool-name <*> pool-id <*>
+access-domain <*>
+ip-pool-policy <*>
+ip dhcp instance server <*>
+ipoe-dns-server <*>
+ipoe-dns-server <*> second
+member 1
+start-ip <*> end-ip <*>
+#
+vbui-configuration
+interface <*>
+ip-pool pool-name <*> pool-id <*>
+access-domain <*>
+ip-pool-policy <*>
+ipoe-dns-server <*>
+ipoe-dns-server <*> second
+pppoe-dns-server <*>
+pppoe-dns-server <*> second
+member 1
+start-ip <*> end-ip <*>
+#
+subscriber-manage
+ipv6-pool-policy <*>
+af-node <*>
+#
+ipv6-pool-policy <*>
+af-node <*>
+#
+subnet-mask 117
+#
+vbui-configuration
+interface <*>
+ipv6-pool <*>
+access-domain <*>
+ipv6-pool-policy <*>
+dns-server 240e:5a::6666
+dns-server 240e:5b::6666 second
+ipv6 dhcp instance server <*>
+pool-type <*>
+prefix-delegation <*> 64 range-id <*>
+#
+interface <*>
+ipv6-pool <*>
+access-domain <*>
+ipv6-pool-policy <*>
+dns-server 240e:5a::6666
+dns-server 240e:5b::6666 second
+ipv6 dhcp instance server <*>
+pool-type <*>
+prefix-delegation <*> 64 range-id <*>
+#
+ipv6-pool <*>
+access-domain <*>
+ipv6-pool-policy <*>
+dns-server 240e:5a::6666
+dns-server 240e:5b::6666 second
+ipv6 dhcp instance server <*>
+pool-type slaac
+prefix-delegation <*> 64 range-id <*>
+#
+ipv6-pool <*>
+access-domain <*>
+ipv6-pool-policy <*>
+dns-server 240e:5a::6666
+dns-server 240e:5b::6666 second
+ipv6 dhcp instance server <*>
+pool-type prefix
+prefix-delegation <*> 60 range-id <*>
+#
+subscriber-manage
+cgn-backup-policy warm
+#
+af-node <*>
+bind vxlan local-vxlan <*> remote-vxlan <*> vni-label <*>
+of-client <*>
+track <*> vxlan-alarm
+#
+af-node <*>
+bind vxlan local-vxlan <*> remote-vxlan <*> vni-label <*>
+of-client <*>
+track <*> vxlan-alarm
+#
+virtual-manage-configure
+af-node <*>
+bind vxlan local-vxlan <*> remote-vxlan <*> vni-label <*>
+of-client <*>
+#
+af-node <*>
+bind vxlan local-vxlan <*> remote-vxlan <*> vni-label <*>
+of-client <*>
+#
+user-consistency-verify time-range user-reconcile
+af-backup-group <*> group-id <*>
+load-sharing qinq
+base-mac <*>
+af-node <*>
+add-interface type uni interface <*>
+#
+af-backup-group <*> group-id <*>
+load-sharing qinq
+base-mac <*>
+max-interface-num <*>
+af-node <*>
+add-interface type uni interface <*>
+#
+user-consistency-verify enable
+user-consistency-verify time-range 1
+af-backup-group <*> group-id <*>
+load-sharing qinq
+base-mac d4c1.c89a.7700
+max-interface-num 6
+af-node <*>
+add-interface type uni interface <*>
+#
+add-interface type uni interface <*>
+#
+af-backup-group <*> group-id <*>
+load-sharing qinq
+base-mac d4c1.c89a.7700
+max-interface-num 6
+add-interface type uni interface <*>
+#
+af-backup-group <*> group-id <*>
+load-sharing qinq
+base-mac <*>
+af-node <*>
+add-interface type uni interface <*>
+#
+af-backup-group <*> group-id <*>
+base-mac <*>
+af-node <*>
+add-interface type uni interface <*>
+#
+af-backup-group <*> group-id <*>
+load-sharing qinq
+base-mac d4c1.c89a.7700
+max-interface-num 12
+af-node <*>
+add-interface type uni interface <*>
+#
+af-backup-group <*> group-id <*>
+load-sharing qinq
+base-mac <*>
+max-interface-num 3
+af-node <*>
+add-interface type uni interface <*>
+#
+geo-backup-instance <*> id <*>
+add af-node <*>
+priority 150
+switch-mode auto
+#
+geo-backup-instance <*> id <*>
+add af-node <*>
+priority 180
+#
+geo-backup-instance <*> id <*>
+add af-node <*>
+priority 150
+switch-mode auto
+auto-switch delay-time 600
+#
+geo-backup-instance <*> id <*>
+add af-node <*>
+priority 180
+switch-mode auto
+auto-switch delay-time 600
+#
+af-node <*>
+netconf-client
+ssh2 <*> port 830 user-name jstelecom authentication-type password encrypted <*> source-ip <*>
+#
+af-node <*>
+netconf-client
+ssh2 <*> port 830 user-name jstelecom authentication-type password encrypted <*>
+#
+virtual-manage-configure
+netconf-client connect-delay 900
+#
+cdb
+db-instance <*>
+destination ipv4 <*> password encrypted <*>
+source ipv4 <*> begin-port 60000 end-port 61000
+#
+af-node <*>
+#
+context-diagnose
+detect-timeout 30
+device-detect cu
+enable
+#
+context-diagnose
+device-detect cu
+enable
+interval 50
+detect all
+#
+ip vrf CP2UP_L3VPN_ZTE
+description For-CP2UP_L3VPN_ZTE
+ds-mode pipe cs6 green
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn auto-originate-route disable
+route-target <*> <*>
+#
+ip vrf CTVPN-CTC-NMAN
+description For-CTVPN-CTC-NMAN
+rd <*>
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn auto-originate-route disable
+route-target <*> <*>
+#
+sysmib ifalias long
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+ip address <*> <*>
+mpls mtu 9000
+ipv6 enable
+ipv6 mtu 9000
+ipv6 address <*>
+#
+interface loopback10
+description For-CP2UP_L3VPN_ZTE
+ip vrf forwarding CP2UP_L3VPN_ZTE
+ip address <*> <*>
+#
+interface loopback30
+description For-CTVPN-CTC-NMAN
+ip vrf forwarding CTVPN-CTC-NMAN
+ip address <*> <*>
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+ip address <*> <*>
+mpls mtu 9000
+ipv6 enable
+ipv6 mtu 9000
+#
+interface <*>
+description <*>
+mtu 9050
+ip vrf forwarding CP2UP_L3VPN_ZTE
+ip mtu 9000
+ip address <*> <*>
+mpls mtu 9000
+ipv6 mtu 9000
+#
+interface <*>
+description <*>
+mtu 9050
+ip vrf forwarding CTVPN193-JS
+ip mtu 9000
+ip address <*> <*>
+mpls mtu 9000
+ipv6 mtu 9000
+#
+interface <*>
+description <*>
+mtu 9050
+ip vrf forwarding CTVPN-CTC-NMAN
+ip mtu 9000
+ip address <*> <*>
+mpls mtu 9000
+ipv6 mtu 9000
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+mpls mtu 9000
+ipv6 enable
+ipv6 mtu 9000
+ipv6 address <*>
+#
+lacp
+interface <*>
+lacp mode 802.3ad
+#
+tacacs enable
+tacacs-client <*>
+tacacs-server timeout 3
+tacacs-server deadtime 0
+tacacs-server host vrf CTVPN193-JS <*> key encrypted <*>
+tacplus group-server js.admin.tacacs
+server vrf CTVPN193-JS <*>
+server vrf CTVPN193-JS <*> master
+#
+syslog level warnings
+syslog-server host vrf CTVPN193-JS <*> alarmlog cmdlog servicelog braslog natlog urllog nat-translationlog nat-portrangelog netconflog haglog snmplog weblog traplog
+syslog-server source interface loopback2
+#
+service-policy <*> output NMAN1P4Q
+service-policy <*> output NMAN1P4Q overwrite
+#
+bfd
+sbfd
+reflector source ipv6 <*>
+reflector-discriminator ip <*>
+remote-target ipv6 <*> remote-discriminator <*>
+session <*> srv6-be-bfd <*> mask-length 84 rd <*> source <*>
+interval 100
+min-rx 100
+#
+session <*> srv6-be-bfd <*> mask-length 84 rd <*> source <*>
+interval 100
+min-rx 100
+#
+bgp ipv4-unicast-config independent enable
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+neighbor pgToDCGW peer-group
+neighbor pgToDCGW remote-as 64667
+neighbor pgToDCGW ttl-security-hops 2
+neighbor pgToDCGW update-source loopback1
+neighbor pgToDCGW fall-over bfd interval 300 min-rx 300 multiplier 10
+neighbor pgToDCGW password encrypted <*>
+neighbor pgToDCGW-v6 peer-group
+neighbor pgToDCGW-v6 remote-as 64667
+neighbor pgToDCGW-v6 ttl-security-hops 2
+neighbor pgToDCGW-v6 update-source loopback20
+neighbor pgToDCGW-v6 fall-over bfd interval 300 min-rx 300 multiplier 10
+neighbor pgToDCGW-v6 password encrypted <*>
+neighbor pgToRR peer-group
+neighbor pgToRR remote-as <*>
+neighbor pgToRR update-source loopback1
+neighbor pgToRR password encrypted <*>
+neighbor pgToRR-v6 peer-group
+neighbor pgToRR-v6 remote-as <*>
+neighbor pgToRR-v6 update-source loopback20
+neighbor pgToRR-v6 srv6-l2-service-type 6
+neighbor pgToRR-v6 srv6-l3-service-type 5
+neighbor pgToRR-v6 password encrypted <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as 64667
+neighbor <*> peer-group pgToDCGW-v6
+neighbor <*> description <*>
+neighbor <*> remote-as 64667
+neighbor <*> peer-group pgToDCGW-v6
+neighbor <*> description <*>
+neighbor <*> remote-as 64667
+neighbor <*> peer-group pgToDCGW
+neighbor <*> description <*>
+neighbor <*> remote-as 64667
+neighbor <*> peer-group pgToDCGW
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+address-family ipv4
+synchronization disable
+bgp bestpath external
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor pgToDCGW activate
+neighbor pgToDCGW next-hop-self
+neighbor pgToDCGW route-map rpFromDCGW-public in
+neighbor pgToDCGW route-map rpToDCGW-public out
+neighbor pgToDCGW-v6 activate disable
+neighbor pgToDCGW-v6 next-hop-self
+neighbor pgToRR activate disable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 next-hop-self
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> activate
+neighbor <*> activate disable
+#
+address-family l2vpn evpn
+esi-index ignore-rd enable
+bgp bestpath external
+bgp default route-target filter
+bgp bestpath origin-from evpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 advertise tunnel-encapsulation srv6
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+#
+address-family ipv6
+synchronization disable
+bgp bestpath external
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+redistribute isis-2 800 route-map rpFromNMAN-vUP
+neighbor pgToDCGW-v6 activate
+neighbor pgToDCGW-v6 next-hop-self
+neighbor pgToDCGW-v6 route-map rpFromNMAN-vUP out
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 route-map rpToRR out
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+#
+address-family ipv4 vrf CP2UP_L3VPN_ZTE
+bgp bestpath external enable
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor pgToDCGW-CP2UP-L3VPN-ZTE peer-group
+neighbor pgToDCGW-CP2UP-L3VPN-ZTE remote-as 64667
+neighbor pgToDCGW-CP2UP-L3VPN-ZTE activate
+neighbor pgToDCGW-CP2UP-L3VPN-ZTE soo <*>
+neighbor pgToDCGW-CP2UP-L3VPN-ZTE ttl-security-hops 2
+neighbor pgToDCGW-CP2UP-L3VPN-ZTE update-source loopback10
+neighbor pgToDCGW-CP2UP-L3VPN-ZTE fall-over bfd interval 300 min-rx 300 multiplier 10
+neighbor pgToDCGW-CP2UP-L3VPN-ZTE password <*>
+neighbor pgToDCGW-CP2UP-L3VPN-ZTE route-map rpFromDCGW-CP2UP-L3VPN-ZTE in
+neighbor <*> remote-as 64667
+neighbor <*> peer-group pgToDCGW-CP2UP-L3VPN-ZTE
+neighbor <*> remote-as 64667
+neighbor <*> peer-group pgToDCGW-CP2UP-L3VPN-ZTE
+#
+address-family ipv4 vrf CTVPN-CTC-NMAN
+bgp bestpath external enable
+bgp bestpath origin-from l3vpn
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor pgToDCGW-CTVPN-CTC-NMAN peer-group
+neighbor pgToDCGW-CTVPN-CTC-NMAN remote-as 64667
+neighbor pgToDCGW-CTVPN-CTC-NMAN soo <*>
+neighbor pgToDCGW-CTVPN-CTC-NMAN ttl-security-hops 2
+neighbor pgToDCGW-CTVPN-CTC-NMAN update-source loopback30
+neighbor pgToDCGW-CTVPN-CTC-NMAN fall-over bfd interval 300 min-rx 300 multiplier 10
+neighbor pgToDCGW-CTVPN-CTC-NMAN password encrypted <*>
+neighbor pgToDCGW-CTVPN-CTC-NMAN route-map rpFromDCGW-CTVPN-CTC-NMAN in
+neighbor pgToDCGW-CTVPN-CTC-NMAN route-map rpToDCGW-CTVPN-CTC-NMAN out
+neighbor <*> remote-as 64667
+neighbor <*> peer-group pgToDCGW-CTVPN-CTC-NMAN
+neighbor <*> peer-group pgToDCGW-CTVPN-CTC-NMAN
+#
+bgp bestpath external enable
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+redistribute connected
+redistribute static
+neighbor pgToDCGW-CTVPN193-JS peer-group
+neighbor pgToDCGW-CTVPN193-JS remote-as 64667
+neighbor pgToDCGW-CTVPN193-JS activate
+neighbor pgToDCGW-CTVPN193-JS ttl-security-hops 2
+neighbor pgToDCGW-CTVPN193-JS update-source loopback2
+neighbor pgToDCGW-CTVPN193-JS fall-over bfd interval 300 min-rx 300 multiplier 10
+neighbor pgToDCGW-CTVPN193-JS password encrypted <*>
+neighbor pgToDCGW-CTVPN193-JS route-map rpFromDCGW-CTVPN193-JS in
+neighbor pgToDCGW-CTVPN193-JS route-map rpToDCGW-CTVPN193-JS out
+neighbor <*> peer-group pgToDCGW-CTVPN193-JS
+neighbor <*> remote-as 64667
+neighbor <*> peer-group pgToDCGW-CTVPN193-JS
+#
+router isis 800
+area <*>
+system-id <*>
+router-id <*>
+is-type level-2-only
+metric-style wide
+distance 105
+fast-flood 6
+fast-reroute lfa enable
+i-spf
+maximum-paths 32
+mpls ldp sync
+mpls ldp sync max-hold-time 180
+mpls traffic-eng level-2
+te-link-delay enable
+address-family ipv6
+distance 105
+fast-reroute ti-lfa srv6 level-2
+maximum-paths 32
+microloop-prevention segment-routing delay-time 5000
+microloop-prevention segment-routing srv6 enable
+multi-topology
+redistribute bgp route-map rpFromvUP-NMAN
+router-id <*>
+segment-routing srv6 enable
+segment-routing srv6 locator SRV6-5G2B
+#
+ip route <*> 255.255.255.255 <*> <*> bfd enable name <*>
+ip route vrf CP2UP_L3VPN_ZTE <*> 255.255.255.255 <*> <*> bfd enable name <*>
+ip route vrf CTVPN-CTC-NMAN <*> 255.255.255.255 <*> <*> bfd enable name <*>
+ip route vrf CTVPN193-JS <*> 255.255.255.255 <*> <*> bfd enable name <*>
+#
+ip vrf CTVPN193-JS
+description For-Managerment
+rd 4134:1612
+ds-mode pipe af2 green
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn auto-originate-route disable
+route-target <*> <*>
+route-reoriginate l3vpn-to-evpn disable
+route-reoriginate evpn-to-l3vpn disable
+#
+interface <*>
+description For-Management
+#
+interface <*>
+link-delay-down 100
+link-delay-up 5000
+#
+control-plane-security
+flow limit flowtype bgp-known rate-limit 5000 quota-limit 5000
+flow limit flowtype bgp-config rate-limit 5000 quota-limit 5000
+#
+interface <*>
+flow limit flowtype bgp-known rate-limit 5000 quota-limit 5000
+flow limit flowtype bgp-config rate-limit 5000 quota-limit 5000
+#
+bgp ipv4-unicast-config independent enable
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+bgp cluster-id <*>
+bgp default route-target filter disable
+neighbor pgToALeaf peer-group
+neighbor pgToALeaf remote-as <*>
+neighbor pgToALeaf update-source loopback1
+neighbor pgToALeaf password encrypted <*>
+neighbor pgToALeaf-v6 peer-group
+neighbor pgToALeaf-v6 remote-as <*>
+neighbor pgToALeaf-v6 update-source loopback20
+neighbor pgToALeaf-v6 srv6-l2-service-type 6
+neighbor pgToALeaf-v6 srv6-l3-service-type 5
+neighbor pgToALeaf-v6 password encrypted <*>
+neighbor pgToB peer-group
+neighbor pgToB remote-as <*>
+neighbor pgToB update-source loopback1
+neighbor pgToB password encrypted <*>
+neighbor pgToB-v6 peer-group
+neighbor pgToB-v6 remote-as <*>
+neighbor pgToB-v6 update-source loopback20
+neighbor pgToB-v6 srv6-l2-service-type 6
+neighbor pgToB-v6 srv6-l3-service-type 5
+neighbor pgToB-v6 password encrypted <*>
+neighbor pgToBorderLeaf peer-group
+neighbor pgToBorderLeaf remote-as <*>
+neighbor pgToBorderLeaf update-source loopback1
+neighbor pgToBorderLeaf password encrypted <*>
+neighbor pgToBorderLeaf-v6 peer-group
+neighbor pgToBorderLeaf-v6 remote-as <*>
+neighbor pgToBorderLeaf-v6 update-source loopback20
+neighbor pgToBorderLeaf-v6 srv6-l2-service-type 6
+neighbor pgToBorderLeaf-v6 srv6-l3-service-type 5
+neighbor pgToBorderLeaf-v6 password encrypted <*>
+neighbor pgToCloudLeaf peer-group
+neighbor pgToCloudLeaf remote-as <*>
+neighbor pgToCloudLeaf update-source loopback1
+neighbor pgToCloudLeaf password encrypted <*>
+neighbor pgToCloudLeaf-v6 peer-group
+neighbor pgToCloudLeaf-v6 remote-as <*>
+neighbor pgToCloudLeaf-v6 update-source loopback20
+neighbor pgToCloudLeaf-v6 srv6-l2-service-type 6
+neighbor pgToCloudLeaf-v6 srv6-l3-service-type 5
+neighbor pgToCloudLeaf-v6 password encrypted <*>
+neighbor pgToDCLeaf peer-group
+neighbor pgToDCLeaf remote-as <*>
+neighbor pgToDCLeaf update-source loopback1
+neighbor pgToDCLeaf password encrypted <*>
+neighbor pgToDCLeaf-v6 peer-group
+neighbor pgToDCLeaf-v6 remote-as <*>
+neighbor pgToDCLeaf-v6 update-source loopback20
+neighbor pgToDCLeaf-v6 srv6-l2-service-type 6
+neighbor pgToDCLeaf-v6 srv6-l3-service-type 5
+neighbor pgToDCLeaf-v6 password encrypted <*>
+neighbor pgToMER peer-group
+neighbor pgToMER remote-as <*>
+neighbor pgToMER update-source loopback1
+neighbor pgToMER password encrypted <*>
+neighbor pgToMER-v6 peer-group
+neighbor pgToMER-v6 remote-as <*>
+neighbor pgToMER-v6 update-source loopback20
+neighbor pgToMER-v6 srv6-l2-service-type 6
+neighbor pgToMER-v6 srv6-l3-service-type 5
+neighbor pgToMER-v6 password encrypted <*>
+neighbor pgToSLeaf peer-group
+neighbor pgToSLeaf remote-as <*>
+neighbor pgToSLeaf update-source loopback1
+neighbor pgToSLeaf password encrypted <*>
+neighbor pgToSLeaf-v6 peer-group
+neighbor pgToSLeaf-v6 remote-as <*>
+neighbor pgToSLeaf-v6 update-source loopback20
+neighbor pgToSLeaf-v6 srv6-l2-service-type 6
+neighbor pgToSLeaf-v6 password encrypted <*>
+neighbor pgToSpine peer-group
+neighbor pgToSpine remote-as <*>
+neighbor pgToSpine update-source loopback1
+neighbor pgToSpine password encrypted <*>
+neighbor pgToSpine-v6 peer-group
+neighbor pgToSpine-v6 remote-as <*>
+neighbor pgToSpine-v6 update-source loopback20
+neighbor pgToSpine-v6 srv6-l2-service-type 6
+neighbor pgToSpine-v6 srv6-l3-service-type 5
+neighbor pgToSpine-v6 password encrypted <*>
+neighbor pgTopUP peer-group
+neighbor pgTopUP remote-as <*>
+neighbor pgTopUP update-source loopback1
+neighbor pgTopUP password encrypted <*>
+neighbor pgTopUP-v6 peer-group
+neighbor pgTopUP-v6 remote-as <*>
+neighbor pgTopUP-v6 update-source loopback20
+neighbor pgTopUP-v6 srv6-l2-service-type 6
+neighbor pgTopUP-v6 srv6-l3-service-type 5
+neighbor pgTopUP-v6 password encrypted <*>
+neighbor pgTovUP-v6 peer-group
+neighbor pgTovUP-v6 remote-as <*>
+neighbor pgTovUP-v6 update-source loopback20
+neighbor pgTovUP-v6 srv6-l2-service-type 6
+neighbor pgTovUP-v6 srv6-l3-service-type 5
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToMER-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToMER-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToSpine-v6
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToSpine-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToBorderLeaf-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToBorderLeaf-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCloudLeaf-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCloudLeaf-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToALeaf-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToALeaf-v6
+neighbor <*> peer-group pgToDCLeaf-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToDCLeaf-v6
+neighbor <*> peer-group pgToSLeaf-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToSLeaf-v6
+neighbor <*> peer-group pgTopUP-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgTopUP-v6
+neighbor <*> peer-group pgToB-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToB-v6
+neighbor <*> peer-group pgTovUP-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToSpine
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToSpine
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToBorderLeaf
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToBorderLeaf
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCloudLeaf
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCloudLeaf
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToALeaf
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToDCLeaf
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToDCLeaf
+neighbor <*> peer-group pgToSLeaf
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToSLeaf
+neighbor <*> peer-group pgTopUP
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgTopUP
+neighbor <*> peer-group pgToMER
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToMER
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToB
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToB
+#
+bgp ipv4-unicast-config independent enable
+router bgp <*>
+bgp select-global-nexthop
+bgp cluster-id <*>
+bgp default route-target filter disable
+neighbor pgToALeaf peer-group
+neighbor pgToALeaf remote-as <*>
+neighbor pgToALeaf update-source loopback1
+neighbor pgToALeaf password encrypted <*>
+neighbor pgToALeaf-v6 peer-group
+neighbor pgToALeaf-v6 remote-as <*>
+neighbor pgToALeaf-v6 update-source loopback20
+neighbor pgToALeaf-v6 srv6-l2-service-type 6
+neighbor pgToALeaf-v6 srv6-l3-service-type 5
+neighbor pgToALeaf-v6 password encrypted <*>
+neighbor pgToB peer-group
+neighbor pgToB remote-as <*>
+neighbor pgToB update-source loopback1
+neighbor pgToB password encrypted <*>
+neighbor pgToB-v6 peer-group
+neighbor pgToB-v6 remote-as <*>
+neighbor pgToB-v6 update-source loopback20
+neighbor pgToB-v6 srv6-l2-service-type 6
+neighbor pgToB-v6 srv6-l3-service-type 5
+neighbor pgToB-v6 password encrypted <*>
+neighbor pgToBorderLeaf peer-group
+neighbor pgToBorderLeaf remote-as <*>
+neighbor pgToBorderLeaf update-source loopback1
+neighbor pgToBorderLeaf password encrypted <*>
+neighbor pgToBorderLeaf-v6 peer-group
+neighbor pgToBorderLeaf-v6 remote-as <*>
+neighbor pgToBorderLeaf-v6 update-source loopback20
+neighbor pgToBorderLeaf-v6 srv6-l2-service-type 6
+neighbor pgToBorderLeaf-v6 srv6-l3-service-type 5
+neighbor pgToBorderLeaf-v6 password encrypted <*>
+neighbor pgToCloudLeaf peer-group
+neighbor pgToCloudLeaf remote-as <*>
+neighbor pgToCloudLeaf update-source loopback1
+neighbor pgToCloudLeaf password encrypted <*>
+neighbor pgToCloudLeaf-v6 peer-group
+neighbor pgToCloudLeaf-v6 remote-as <*>
+neighbor pgToCloudLeaf-v6 update-source loopback20
+neighbor pgToCloudLeaf-v6 srv6-l2-service-type 6
+neighbor pgToCloudLeaf-v6 srv6-l3-service-type 5
+neighbor pgToCloudLeaf-v6 password encrypted <*>
+neighbor pgToDCLeaf peer-group
+neighbor pgToDCLeaf remote-as <*>
+neighbor pgToDCLeaf update-source loopback1
+neighbor pgToDCLeaf password encrypted <*>
+neighbor pgToDCLeaf-v6 peer-group
+neighbor pgToDCLeaf-v6 remote-as <*>
+neighbor pgToDCLeaf-v6 update-source loopback20
+neighbor pgToDCLeaf-v6 srv6-l2-service-type 6
+neighbor pgToDCLeaf-v6 srv6-l3-service-type 5
+neighbor pgToDCLeaf-v6 password encrypted <*>
+neighbor pgToMER peer-group
+neighbor pgToMER remote-as <*>
+neighbor pgToMER update-source loopback1
+neighbor pgToMER password encrypted <*>
+neighbor pgToMER-v6 remote-as <*>
+neighbor pgToMER-v6 update-source loopback20
+neighbor pgToMER-v6 srv6-l2-service-type 6
+neighbor pgToMER-v6 srv6-l3-service-type 5
+neighbor pgToMER-v6 password encrypted <*>
+neighbor pgToSLeaf peer-group
+neighbor pgToSLeaf remote-as <*>
+neighbor pgToSLeaf update-source loopback1
+neighbor pgToSLeaf password encrypted <*>
+neighbor pgToSLeaf-v6 peer-group
+neighbor pgToSLeaf-v6 remote-as <*>
+neighbor pgToSLeaf-v6 srv6-l2-service-type 6
+neighbor pgToSLeaf-v6 srv6-l3-service-type 5
+neighbor pgToSLeaf-v6 password encrypted <*>
+neighbor pgToSpine peer-group
+neighbor pgToSpine remote-as <*>
+neighbor pgToSpine password encrypted <*>
+neighbor pgToSpine-v6 peer-group
+neighbor pgToSpine-v6 remote-as <*>
+neighbor pgToSpine-v6 update-source loopback20
+neighbor pgToSpine-v6 srv6-l2-service-type 6
+neighbor pgToSpine-v6 srv6-l3-service-type 5
+neighbor pgToSpine-v6 password encrypted <*>
+neighbor pgTopUP peer-group
+neighbor pgTopUP remote-as <*>
+neighbor pgTopUP update-source loopback1
+neighbor pgTopUP password encrypted <*>
+neighbor pgTopUP-v6 peer-group
+neighbor pgTopUP-v6 remote-as <*>
+neighbor pgTopUP-v6 update-source loopback20
+neighbor pgTopUP-v6 srv6-l2-service-type 6
+neighbor pgTopUP-v6 srv6-l3-service-type 5
+neighbor pgTopUP-v6 password encrypted <*>
+neighbor pgTovUP-v6 peer-group
+neighbor pgTovUP-v6 remote-as <*>
+neighbor pgTovUP-v6 update-source loopback20
+neighbor pgTovUP-v6 srv6-l2-service-type 6
+neighbor pgTovUP-v6 srv6-l3-service-type 5
+neighbor <*> remote-as <*>
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToMER-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToSpine-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToSpine-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToBorderLeaf-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToBorderLeaf-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCloudLeaf-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCloudLeaf-v6
+neighbor <*> description <*>
+neighbor <*> peer-group pgToALeaf-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToALeaf-v6
+neighbor <*> peer-group pgToDCLeaf-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToDCLeaf-v6
+neighbor <*> peer-group pgToSLeaf-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToSLeaf-v6
+neighbor <*> peer-group pgTopUP-v6
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgTopUP-v6
+neighbor <*> peer-group pgToB-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToB-v6
+neighbor <*> peer-group pgTovUP-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgTovUP-v6
+neighbor <*> peer-group pgToSpine
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToSpine
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToBorderLeaf
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToBorderLeaf
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCloudLeaf
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCloudLeaf
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToALeaf
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToALeaf
+neighbor <*> peer-group pgToDCLeaf
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToDCLeaf
+neighbor <*> peer-group pgToSLeaf
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToSLeaf
+neighbor <*> peer-group pgTopUP
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgTopUP
+neighbor <*> peer-group pgToMER
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToMER
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToB
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToB
+address-family ipv4
+synchronization disable
+bgp bestpath external
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor pgToALeaf activate disable
+neighbor pgToALeaf-v6 activate
+neighbor pgToALeaf-v6 route-reflector-client
+neighbor pgToALeaf-v6 send-med
+neighbor pgToALeaf-v6 announce-sid
+neighbor pgToALeaf-v6 additional-paths receive
+neighbor pgToALeaf-v6 additional-paths send 16
+neighbor pgToB activate disable
+neighbor pgToB-v6 activate disable
+neighbor pgToB-v6 announce-sid
+neighbor pgToBorderLeaf activate disable
+neighbor pgToBorderLeaf route-reflector-client
+neighbor pgToBorderLeaf-v6 activate disable
+neighbor pgToBorderLeaf-v6 route-reflector-client
+neighbor pgToBorderLeaf-v6 send-med
+neighbor pgToBorderLeaf-v6 announce-sid
+neighbor pgToCloudLeaf activate disable
+neighbor pgToCloudLeaf-v6 activate
+neighbor pgToCloudLeaf-v6 route-reflector-client
+neighbor pgToCloudLeaf-v6 send-med
+neighbor pgToCloudLeaf-v6 announce-sid
+neighbor pgToCloudLeaf-v6 additional-paths receive
+neighbor pgToCloudLeaf-v6 additional-paths send 16
+neighbor pgToDCLeaf activate disable
+neighbor pgToDCLeaf-v6 activate
+neighbor pgToDCLeaf-v6 route-reflector-client
+neighbor pgToDCLeaf-v6 send-med
+neighbor pgToDCLeaf-v6 announce-sid
+neighbor pgToDCLeaf-v6 additional-paths receive
+neighbor pgToDCLeaf-v6 additional-paths send 16
+neighbor pgToMER activate disable
+neighbor pgToMER-v6 activate disable
+neighbor pgToMER-v6 announce-sid
+neighbor pgToSLeaf activate disable
+neighbor pgToSLeaf-v6 activate
+neighbor pgToSLeaf-v6 route-reflector-client
+neighbor pgToSLeaf-v6 send-med
+neighbor pgToSLeaf-v6 announce-sid
+neighbor pgToSLeaf-v6 additional-paths receive
+neighbor pgToSLeaf-v6 additional-paths send 16
+neighbor pgToSpine-v6 activate
+neighbor pgToSpine-v6 route-reflector-client
+neighbor pgToSpine-v6 send-med
+neighbor pgToSpine-v6 announce-sid
+neighbor pgToSpine-v6 additional-paths receive
+neighbor pgToSpine-v6 additional-paths send 16
+neighbor pgTopUP activate disable
+neighbor pgTopUP-v6 route-reflector-client
+neighbor pgTopUP-v6 send-med
+neighbor pgTopUP-v6 announce-sid
+neighbor pgTopUP-v6 additional-paths receive
+neighbor pgTopUP-v6 additional-paths send 16
+neighbor pgTovUP-v6 activate
+neighbor <*> activate
+neighbor <*> activate disable
+neighbor <*> activate
+neighbor <*> activate disable
+#
+address-family ipv6
+synchronization disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor pgToALeaf-v6 activate
+neighbor pgToALeaf-v6 route-reflector-client
+neighbor pgToALeaf-v6 send-community
+neighbor pgToALeaf-v6 send-large-community
+neighbor pgToALeaf-v6 send-med
+neighbor pgToALeaf-v6 announce-sid
+neighbor pgToALeaf-v6 additional-paths receive
+neighbor pgToALeaf-v6 additional-paths send 16
+neighbor pgToB-v6 activate
+neighbor pgToB-v6 route-reflector-client
+neighbor pgToB-v6 send-community
+neighbor pgToB-v6 send-large-community
+neighbor pgToB-v6 send-med
+neighbor pgToB-v6 announce-sid
+neighbor pgToB-v6 additional-paths receive
+neighbor pgToB-v6 additional-paths send 16
+neighbor pgToBorderLeaf-v6 route-reflector-client
+neighbor pgToBorderLeaf-v6 send-med
+neighbor pgToBorderLeaf-v6 announce-sid
+neighbor pgToBorderLeaf-v6 send-large-community
+neighbor pgToBorderLeaf-v6 additional-paths receive
+neighbor pgToBorderLeaf-v6 additional-paths send 16
+neighbor pgToCloudLeaf-v6 activate
+neighbor pgToCloudLeaf-v6 route-reflector-client
+neighbor pgToCloudLeaf-v6 send-community
+neighbor pgToCloudLeaf-v6 send-large-community
+neighbor pgToCloudLeaf-v6 send-med
+neighbor pgToCloudLeaf-v6 announce-sid
+neighbor pgToCloudLeaf-v6 additional-paths receive
+neighbor pgToCloudLeaf-v6 additional-paths send 16
+neighbor pgToDCLeaf-v6 activate
+neighbor pgToDCLeaf-v6 route-reflector-client
+neighbor pgToDCLeaf-v6 send-community
+neighbor pgToDCLeaf-v6 send-large-community
+neighbor pgToDCLeaf-v6 send-med
+neighbor pgToDCLeaf-v6 announce-sid
+neighbor pgToDCLeaf-v6 additional-paths receive
+neighbor pgToDCLeaf-v6 additional-paths send 16
+neighbor pgToMER-v6 activate
+neighbor pgToMER-v6 route-reflector-client
+neighbor pgToMER-v6 send-community
+neighbor pgToMER-v6 send-large-community
+neighbor pgToMER-v6 announce-sid
+neighbor pgToMER-v6 additional-paths receive
+neighbor pgToMER-v6 additional-paths send 16
+neighbor pgToSLeaf-v6 activate
+neighbor pgToSLeaf-v6 route-reflector-client
+neighbor pgToSLeaf-v6 send-community
+neighbor pgToSLeaf-v6 send-large-community
+neighbor pgToSLeaf-v6 send-med
+neighbor pgToSLeaf-v6 announce-sid
+neighbor pgToSLeaf-v6 additional-paths receive
+neighbor pgToSLeaf-v6 additional-paths send 16
+neighbor pgToSpine-v6 activate
+neighbor pgToSpine-v6 route-reflector-client
+neighbor pgToSpine-v6 send-community
+neighbor pgToSpine-v6 send-large-community
+neighbor pgToSpine-v6 send-med
+neighbor pgToSpine-v6 announce-sid
+neighbor pgToSpine-v6 additional-paths receive
+neighbor pgToSpine-v6 additional-paths send 16
+neighbor pgTopUP-v6 activate
+neighbor pgTopUP-v6 route-reflector-client
+neighbor pgTopUP-v6 send-community
+neighbor pgTopUP-v6 send-large-community
+neighbor pgTopUP-v6 send-med
+neighbor pgTopUP-v6 announce-sid
+neighbor pgTopUP-v6 additional-paths receive
+neighbor pgTopUP-v6 additional-paths send 16
+#
+address-family ipv6 sr-policy
+neighbor pgToALeaf-v6 activate
+neighbor pgToALeaf-v6 route-reflector-client
+neighbor pgToB-v6 activate
+neighbor pgToB-v6 route-reflector-client
+neighbor pgToBorderLeaf-v6 activate
+neighbor pgToBorderLeaf-v6 route-reflector-client
+neighbor pgToCloudLeaf-v6 activate
+neighbor pgToCloudLeaf-v6 route-reflector-client
+neighbor pgToDCLeaf-v6 activate
+neighbor pgToDCLeaf-v6 route-reflector-client
+neighbor pgToMER-v6 activate
+neighbor pgToMER-v6 route-reflector-client
+neighbor pgToSLeaf-v6 activate
+neighbor pgToSLeaf-v6 route-reflector-client
+neighbor pgToSpine-v6 activate
+neighbor pgToSpine-v6 route-reflector-client
+neighbor pgTopUP-v6 activate
+neighbor pgTopUP-v6 route-reflector-client
+#
+address-family l2vpn evpn
+esi-index ignore-rd enable
+bgp bestpath origin-from evpn
+bgp bestpath external
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToALeaf-v6 activate
+neighbor pgToALeaf-v6 route-reflector-client
+neighbor pgToALeaf-v6 send-community
+neighbor pgToALeaf-v6 send-large-community
+neighbor pgToALeaf-v6 send-med
+neighbor pgToALeaf-v6 announce-sid
+neighbor pgToALeaf-v6 advertise tunnel-encapsulation srv6
+neighbor pgToALeaf-v6 additional-paths receive
+neighbor pgToALeaf-v6 additional-paths send 16
+neighbor pgToB-v6 activate
+neighbor pgToB-v6 route-reflector-client
+neighbor pgToB-v6 send-community
+neighbor pgToB-v6 send-large-community
+neighbor pgToB-v6 send-med
+neighbor pgToB-v6 announce-sid
+neighbor pgToB-v6 advertise tunnel-encapsulation srv6
+neighbor pgToB-v6 additional-paths receive
+neighbor pgToB-v6 additional-paths send 16
+neighbor pgToBorderLeaf-v6 activate
+neighbor pgToBorderLeaf-v6 route-reflector-client
+neighbor pgToBorderLeaf-v6 send-community
+neighbor pgToBorderLeaf-v6 send-large-community
+neighbor pgToBorderLeaf-v6 send-med
+neighbor pgToBorderLeaf-v6 announce-sid
+neighbor pgToBorderLeaf-v6 advertise tunnel-encapsulation srv6
+neighbor pgToBorderLeaf-v6 additional-paths receive
+neighbor pgToBorderLeaf-v6 additional-paths send 16
+neighbor pgToCloudLeaf-v6 activate
+neighbor pgToCloudLeaf-v6 route-reflector-client
+neighbor pgToCloudLeaf-v6 send-community
+neighbor pgToCloudLeaf-v6 send-large-community
+neighbor pgToCloudLeaf-v6 send-med
+neighbor pgToCloudLeaf-v6 announce-sid
+neighbor pgToCloudLeaf-v6 advertise tunnel-encapsulation srv6
+neighbor pgToCloudLeaf-v6 additional-paths receive
+neighbor pgToCloudLeaf-v6 additional-paths send 16
+neighbor pgToDCLeaf-v6 activate
+neighbor pgToDCLeaf-v6 route-reflector-client
+neighbor pgToDCLeaf-v6 send-community
+neighbor pgToDCLeaf-v6 send-large-community
+neighbor pgToDCLeaf-v6 send-med
+neighbor pgToDCLeaf-v6 announce-sid
+neighbor pgToDCLeaf-v6 advertise tunnel-encapsulation srv6
+neighbor pgToDCLeaf-v6 additional-paths receive
+neighbor pgToDCLeaf-v6 additional-paths send 16
+neighbor pgToMER-v6 activate
+neighbor pgToMER-v6 route-reflector-client
+neighbor pgToMER-v6 send-community
+neighbor pgToMER-v6 send-large-community
+neighbor pgToMER-v6 announce-sid
+neighbor pgToMER-v6 advertise tunnel-encapsulation srv6
+neighbor pgToMER-v6 additional-paths receive
+neighbor pgToMER-v6 additional-paths send 16
+neighbor pgToSLeaf-v6 activate
+neighbor pgToSLeaf-v6 route-reflector-client
+neighbor pgToSLeaf-v6 send-community
+neighbor pgToSLeaf-v6 send-large-community
+neighbor pgToSLeaf-v6 send-med
+neighbor pgToSLeaf-v6 announce-sid
+neighbor pgToSLeaf-v6 advertise tunnel-encapsulation srv6
+neighbor pgToSLeaf-v6 additional-paths receive
+neighbor pgToSLeaf-v6 additional-paths send 16
+neighbor pgToSpine-v6 activate
+neighbor pgToSpine-v6 route-reflector-client
+neighbor pgToSpine-v6 send-community
+neighbor pgToSpine-v6 send-large-community
+neighbor pgToSpine-v6 send-med
+neighbor pgToSpine-v6 announce-sid
+neighbor pgToSpine-v6 advertise tunnel-encapsulation srv6
+neighbor pgToSpine-v6 additional-paths receive
+neighbor pgToSpine-v6 additional-paths send 16
+neighbor pgTopUP-v6 activate
+neighbor pgTopUP-v6 route-reflector-client
+neighbor pgTopUP-v6 send-community
+neighbor pgTopUP-v6 send-large-community
+neighbor pgTopUP-v6 send-med
+neighbor pgTopUP-v6 announce-sid
+neighbor pgTopUP-v6 advertise tunnel-encapsulation srv6
+neighbor pgTopUP-v6 additional-paths receive
+neighbor pgTopUP-v6 additional-paths send 16
+neighbor pgTovUP-v6 activate
+neighbor pgTovUP-v6 route-reflector-client
+neighbor pgTovUP-v6 send-community
+neighbor pgTovUP-v6 send-large-community
+neighbor pgTovUP-v6 send-med
+neighbor pgTovUP-v6 announce-sid
+neighbor pgTovUP-v6 advertise tunnel-encapsulation srv6
+neighbor pgTovUP-v6 additional-paths receive
+neighbor pgTovUP-v6 additional-paths send 16
+#
+address-family l2vpn evpn
+esi-index ignore-rd enable
+bgp bestpath origin-from evpn
+bgp bestpath external
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToALeaf-v6 activate
+neighbor pgToALeaf-v6 route-reflector-client
+neighbor pgToALeaf-v6 send-community
+neighbor pgToALeaf-v6 send-large-community
+neighbor pgToALeaf-v6 send-med
+neighbor pgToALeaf-v6 announce-sid
+neighbor pgToALeaf-v6 advertise tunnel-encapsulation srv6
+neighbor pgToALeaf-v6 additional-paths receive
+neighbor pgToALeaf-v6 additional-paths send 16
+neighbor pgToB-v6 activate
+neighbor pgToB-v6 route-reflector-client
+neighbor pgToB-v6 send-community
+neighbor pgToB-v6 send-large-community
+neighbor pgToB-v6 send-med
+neighbor pgToB-v6 announce-sid
+neighbor pgToB-v6 advertise tunnel-encapsulation srv6
+neighbor pgToB-v6 additional-paths receive
+neighbor pgToB-v6 additional-paths send 16
+neighbor pgToBorderLeaf-v6 activate
+neighbor pgToBorderLeaf-v6 route-reflector-client
+neighbor pgToBorderLeaf-v6 send-community
+neighbor pgToBorderLeaf-v6 send-large-community
+neighbor pgToBorderLeaf-v6 send-med
+neighbor pgToBorderLeaf-v6 announce-sid
+neighbor pgToBorderLeaf-v6 advertise tunnel-encapsulation srv6
+neighbor pgToBorderLeaf-v6 additional-paths receive
+neighbor pgToBorderLeaf-v6 additional-paths send 16
+neighbor pgToCloudLeaf-v6 activate
+neighbor pgToCloudLeaf-v6 route-reflector-client
+neighbor pgToCloudLeaf-v6 send-community
+neighbor pgToCloudLeaf-v6 send-large-community
+neighbor pgToCloudLeaf-v6 send-med
+neighbor pgToCloudLeaf-v6 announce-sid
+neighbor pgToCloudLeaf-v6 advertise tunnel-encapsulation srv6
+neighbor pgToCloudLeaf-v6 additional-paths receive
+neighbor pgToCloudLeaf-v6 additional-paths send 16
+neighbor pgToDCLeaf-v6 activate
+neighbor pgToDCLeaf-v6 route-reflector-client
+neighbor pgToDCLeaf-v6 send-community
+neighbor pgToDCLeaf-v6 send-large-community
+neighbor pgToDCLeaf-v6 send-med
+neighbor pgToDCLeaf-v6 announce-sid
+neighbor pgToDCLeaf-v6 advertise tunnel-encapsulation srv6
+neighbor pgToDCLeaf-v6 additional-paths receive
+neighbor pgToDCLeaf-v6 additional-paths send 16
+neighbor pgToMER-v6 activate
+neighbor pgToMER-v6 route-reflector-client
+neighbor pgToMER-v6 send-community
+neighbor pgToMER-v6 send-large-community
+neighbor pgToMER-v6 announce-sid
+neighbor pgToMER-v6 advertise tunnel-encapsulation srv6
+neighbor pgToMER-v6 additional-paths receive
+neighbor pgToMER-v6 additional-paths send 16
+neighbor pgToSDN-v6 activate
+neighbor pgToSDN-v6 route-reflector-client
+neighbor pgToSDN-v6 send-community
+neighbor pgToSDN-v6 announce-sid
+neighbor pgToSDN-v6 advertise tunnel-encapsulation srv6
+neighbor pgToSDN-v6 send-large-community
+neighbor pgToSDN-v6 additional-paths receive
+neighbor pgToSDN-v6 additional-paths send 16
+neighbor pgToSLeaf-v6 activate
+neighbor pgToSLeaf-v6 send-community
+neighbor pgToSLeaf-v6 send-large-community
+neighbor pgToSLeaf-v6 send-med
+neighbor pgToSLeaf-v6 announce-sid
+neighbor pgToSLeaf-v6 advertise tunnel-encapsulation srv6
+neighbor pgToSLeaf-v6 additional-paths receive
+neighbor pgToSLeaf-v6 additional-paths send 16
+neighbor pgToSpine-v6 activate
+neighbor pgToSpine-v6 route-reflector-client
+neighbor pgToSpine-v6 send-community
+neighbor pgToSpine-v6 send-large-community
+neighbor pgToSpine-v6 send-med
+neighbor pgToSpine-v6 announce-sid
+neighbor pgToSpine-v6 advertise tunnel-encapsulation srv6
+neighbor pgToSpine-v6 additional-paths receive
+neighbor pgToSpine-v6 additional-paths send 16
+neighbor pgTopUP-v6 activate
+neighbor pgTopUP-v6 route-reflector-client
+neighbor pgTopUP-v6 send-community
+neighbor pgTopUP-v6 send-large-community
+neighbor pgTopUP-v6 send-med
+neighbor pgTopUP-v6 announce-sid
+neighbor pgTopUP-v6 advertise tunnel-encapsulation srv6
+neighbor pgTopUP-v6 additional-paths receive
+neighbor pgTopUP-v6 additional-paths send 16
+neighbor pgTovUP-v6 activate
+neighbor pgTovUP-v6 route-reflector-client
+neighbor pgTovUP-v6 send-community
+neighbor pgTovUP-v6 send-large-community
+neighbor pgTovUP-v6 send-med
+neighbor pgTovUP-v6 announce-sid
+neighbor pgTovUP-v6 advertise tunnel-encapsulation srv6
+neighbor pgTovUP-v6 additional-paths receive
+neighbor pgTovUP-v6 additional-paths send 16
+#
+address-family vpnv4
+bgp bestpath origin-from l3vpn
+bgp bestpath external
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToALeaf activate
+neighbor pgToALeaf route-reflector-client
+neighbor pgToALeaf send-community
+neighbor pgToALeaf send-large-community
+neighbor pgToALeaf send-med
+neighbor pgToALeaf additional-paths receive
+neighbor pgToALeaf additional-paths send 16
+neighbor pgToB activate
+neighbor pgToB route-reflector-client
+neighbor pgToB send-community
+neighbor pgToB send-large-community
+neighbor pgToB additional-paths receive
+neighbor pgToB additional-paths send 16
+neighbor pgToBorderLeaf activate
+neighbor pgToBorderLeaf route-reflector-client
+neighbor pgToBorderLeaf send-community
+neighbor pgToBorderLeaf send-large-community
+neighbor pgToBorderLeaf send-med
+neighbor pgToBorderLeaf additional-paths receive
+neighbor pgToBorderLeaf additional-paths send 16
+neighbor pgToCloudLeaf activate
+neighbor pgToCloudLeaf route-reflector-client
+neighbor pgToCloudLeaf send-community
+neighbor pgToCloudLeaf send-large-community
+neighbor pgToCloudLeaf send-med
+neighbor pgToCloudLeaf additional-paths receive
+neighbor pgToCloudLeaf additional-paths send 16
+neighbor pgToDCLeaf activate
+neighbor pgToDCLeaf route-reflector-client
+neighbor pgToDCLeaf send-community
+neighbor pgToDCLeaf send-large-community
+neighbor pgToDCLeaf send-med
+neighbor pgToDCLeaf additional-paths receive
+neighbor pgToDCLeaf additional-paths send 16
+neighbor pgToMER activate
+neighbor pgToMER route-reflector-client
+neighbor pgToMER send-community
+neighbor pgToMER send-large-community
+neighbor pgToMER send-med
+neighbor pgToMER additional-paths receive
+neighbor pgToMER additional-paths send 16
+neighbor pgToSLeaf activate
+neighbor pgToSLeaf route-reflector-client
+neighbor pgToSLeaf send-community
+neighbor pgToSLeaf send-large-community
+neighbor pgToSLeaf send-med
+neighbor pgToSLeaf additional-paths receive
+neighbor pgToSLeaf additional-paths send 16
+neighbor pgToSpine activate
+neighbor pgToSpine route-reflector-client
+neighbor pgToSpine send-community
+neighbor pgToSpine send-large-community
+neighbor pgToSpine send-med
+neighbor pgToSpine additional-paths receive
+neighbor pgToSpine additional-paths send 16
+neighbor pgTopUP activate
+neighbor pgTopUP route-reflector-client
+neighbor pgTopUP send-community
+neighbor pgTopUP send-large-community
+neighbor pgTopUP send-med
+neighbor pgTopUP additional-paths receive
+neighbor pgTopUP additional-paths send 16
+#
+address-family vpnv6
+bgp bestpath origin-from l3vpn
+bgp bestpath external
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToALeaf activate
+neighbor pgToALeaf route-reflector-client
+neighbor pgToALeaf send-community
+neighbor pgToALeaf send-large-community
+neighbor pgToALeaf send-med
+neighbor pgToALeaf additional-paths receive
+neighbor pgToALeaf additional-paths send 16
+neighbor pgToB activate
+neighbor pgToB route-reflector-client
+neighbor pgToB send-community
+neighbor pgToB send-large-community
+neighbor pgToB send-med
+neighbor pgToB additional-paths receive
+neighbor pgToB additional-paths send 16
+neighbor pgToBorderLeaf activate
+neighbor pgToBorderLeaf route-reflector-client
+neighbor pgToBorderLeaf send-community
+neighbor pgToBorderLeaf send-large-community
+neighbor pgToBorderLeaf send-med
+neighbor pgToBorderLeaf additional-paths receive
+neighbor pgToBorderLeaf additional-paths send 16
+neighbor pgToCloudLeaf activate
+neighbor pgToCloudLeaf route-reflector-client
+neighbor pgToCloudLeaf send-community
+neighbor pgToCloudLeaf send-large-community
+neighbor pgToCloudLeaf send-med
+neighbor pgToCloudLeaf additional-paths receive
+neighbor pgToCloudLeaf additional-paths send 16
+neighbor pgToDCLeaf activate
+neighbor pgToDCLeaf route-reflector-client
+neighbor pgToDCLeaf send-community
+neighbor pgToDCLeaf send-large-community
+neighbor pgToDCLeaf send-med
+neighbor pgToDCLeaf additional-paths receive
+neighbor pgToDCLeaf additional-paths send 16
+neighbor pgToMER route-reflector-client
+neighbor pgToMER send-community
+neighbor pgToMER send-large-community
+neighbor pgToMER send-med
+neighbor pgToMER additional-paths receive
+neighbor pgToSLeaf activate
+neighbor pgToSLeaf route-reflector-client
+neighbor pgToSLeaf send-community
+neighbor pgToSLeaf send-large-community
+neighbor pgToSLeaf send-med
+neighbor pgToSLeaf additional-paths receive
+neighbor pgToSLeaf additional-paths send 16
+neighbor pgToSpine activate
+neighbor pgToSpine route-reflector-client
+neighbor pgToSpine send-community
+neighbor pgToSpine send-large-community
+neighbor pgToSpine send-med
+neighbor pgToSpine additional-paths receive
+neighbor pgToSpine additional-paths send 16
+neighbor pgTopUP activate
+neighbor pgTopUP route-reflector-client
+neighbor pgTopUP send-community
+neighbor pgTopUP send-large-community
+neighbor pgTopUP send-med
+neighbor pgTopUP additional-paths receive
+neighbor pgTopUP additional-paths send 16
+#
+router isis 800
+area <*>
+system-id <*>
+router-id <*>
+is-type level-2-only
+metric-style wide
+distance 105
+fast-flood 6
+fast-reroute lfa enable
+i-spf
+mpls ldp sync
+mpls ldp sync max-hold-time 180
+mpls traffic-eng level-2
+bgp link-state level-2 instance-id 800
+te-link-delay enable
+address-family ipv6
+fast-reroute ti-lfa srv6 level-2
+maximum-paths 32
+microloop-prevention segment-routing delay-time 5000
+microloop-prevention segment-routing srv6 enable
+multi-topology
+router-id <*>
+segment-routing srv6 enable
+segment-routing srv6 locator SRV6-5G2B
+#
+interface <*>
+ip router isis
+bfd-enable
+bfd-time-negotiation min-tx 30 min-rx 30 multiplier 3
+ipv6 bfd-enable
+ipv6 bfd-time-negotiation min-tx 30 min-rx 30 multiplier 3
+ipv6 metric 1000000
+ipv6 link-damped adj-establish enable
+ipv6 link-damped metric increase 3000
+ipv6 link-damped revert-interval 600 180000 180000
+ipv6 router isis
+circuit-type level-2-only
+metric 1000000
+network point-to-point
+link-damped adj-establish enable
+link-damped metric increase 3000
+link-damped revert-interval 600 180000 180000
+#
+sensor-group <*>
+sensor-path oc-if:interfaces/interface/state/counters
+sensor-path oc-if:interfaces/interface/subinterfaces/subinterface/state/counters
+sensor-path oc-platform:components/component/cpu/oc-cpu:utilization/state
+sensor-path sqa:state/sqa/light-twamp-results/light-twamp-result
+#
+subscription <*>
+destination-group <*>
+sensor-group <*> sample-interval 30000
+local-source-address <*>
+#
+interface <*>
+mtu 9050
+ip mtu 9000
+mpls mtu 9000
+ipv6 mtu 9000
+#
+lacp
+interface <*>
+lacp mode 802.3ad
+lacp fast respond
+lacp sys-mac <*>
+#
+interface <*>
+lacp mode 802.3ad
+lacp fast respond
+lacp sys-mac <*>
+#
+vlan-configuration
+interface <*>
+qinq range internal-vlan-range <*> external-vlan-range <*>
+#
+interface <*>
+#
+link-access-list aclDenyMacToUP
+rule 10 deny d4c1.c89a.7700 0000.0000.00ff any
+rule 20 deny link-protocol 34825 any 0180.c200.0002 0000.0000.0000
+rule 1000 permit any any
+#
+link-access-list aclDenyMacToUP
+rule 10 deny 0000.5e00.0000 0000.0000.ffff any
+rule 20 deny d4c1.c89a.7700 0000.0000.00ff any
+rule 30 deny link-protocol 34825 any 0180.c200.0002 0000.0000.0000
+rule 1000 permit any any
+#
+interface <*>
+link-access-group egress aclDenyMacToUP
+#
+ip prefix-list 2576 seq 10 permit 239.252.148.0 24
+ip prefix-list 2576 seq 20 permit 224.0.0.0 23
+ip prefix-list 2576 seq 30 permit 239.49.0.0 21
+ip prefix-list 2576 seq 40 permit 239.49.8.0 22
+ip prefix-list 2576 seq 50 permit 238.1.32.0 21
+ipv6 prefix-list ipFormRR seq <*> permit <*>
+ipv6 prefix-list ipTrackSpine seq <*> permit <*>
+#
+sqa-test <*>
+type-light-twamp
+client-mode l3
+test-mode online
+source-address ipv4 <*>
+destination-address ipv4 <*>
+source-port <*>
+destination-port <*>
+duration continuous
+proactive-test start
+#
+sqa-twamp-reflector <*> source-ip <*> dest-ip <*> source-port <*> dest-port <*> agetime continuous
+#
+mac
+aging-time 14400
+#
+mpls l2vpn enable
+vpls <*> evpn
+rd <*>
+encapsulation tagged
+umr receiver
+auto-discovery srv6-evpn
+route-target <*> <*>
+srv6 locator <*>
+#
+access-point <*>
+access-params ethernet
+ingress-adjust tag-as-payload from-sublayer
+#
+vpls <*> evpn
+rd <*>
+df-election preference highest
+encapsulation tagged
+ds-mode pipe be green
+umr receiver
+auto-discovery srv6-evpn
+route-target <*> <*>
+srv6 locator SRV6-GW
+#
+vpls <*> evpn
+rd <*>
+df-election preference highest
+encapsulation tagged
+umr receiver
+auto-discovery srv6-evpn
+route-target <*> <*>
+srv6 locator SRV6-GW
+#
+access-point <*>
+#
+ethernet-segments
+es-instance <*>
+df-election preference 100
+es-id static octets <*>
+interface <*>
+rd <*>
+route-target <*> <*>
+wtr 0
+#
+ethernet-segments
+es-instance <*>
+df-election preference 200
+es-id static octets <*>
+interface <*>
+rd <*>
+route-target <*> <*>
+wtr 0
+#
+bfd
+session <*> peer-bfd ipv6 <*>
+interval 100
+min-rx 100
+multiplier 10
+#
+session <*> peer-bfd ipv6 <*>
+interval 100
+min-rx 100
+multiplier 10
+#
+bgp ipv4-unicast-config independent enable
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+neighbor pgToRR remote-as <*>
+neighbor pgToRR update-source loopback1
+neighbor pgToRR password encrypted <*>
+neighbor pgToRR-v6 peer-group
+neighbor pgToRR-v6 remote-as <*>
+neighbor pgToRR-v6 update-source loopback20
+neighbor pgToRR-v6 srv6-l2-service-type 6
+neighbor pgToRR-v6 srv6-l3-service-type 5
+neighbor pgToRR-v6 password encrypted <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+address-family ipv4
+synchronization disable
+bgp bestpath external
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor pgToRR activate disable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> activate
+#
+address-family l2vpn evpn
+esi-index ignore-rd enable
+bgp default route-target filter
+bgp bestpath origin-from evpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 advertise tunnel-encapsulation srv6
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+#
+destination-group <*>
+#
+system-id <*>
+proto <*>
+#
+hostname <*>
+login authentication
+banner incoming #WARNING!!! Authorised access only, all of your done will be recorded! Disconnect IMMEDIATELY if you are not an authorised user!#
+load-mode txt
+nvram <*> <*>
+nvram boot-server ipv6 <*>
+nvram <*> <*>
+nvram default-gateway ipv6 <*>
+nvram <*> <*>
+permit PEL-90E-CG-A shelf 0 slot <*> subslot <*> port <*>
+#
+ip vrf 2B_RAN
+description For-5G-2B
+rd <*>
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+mpls label mode ipv6 per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-5G2B
+address-family ipv6
+route-reoriginate l3vpn-to-evpn disable
+route-reoriginate evpn-to-l3vpn disable
+#
+ip vrf E07-HLWZX-BackHole
+rd <*>
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+mpls label mode ipv6 per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn auto-originate-route disable
+route-target <*> <*>
+route-reoriginate l3vpn-to-evpn disable
+route-reoriginate evpn-to-l3vpn disable
+#
+address-family ipv6
+evpn auto-originate-route disable
+route-target <*> <*>
+route-reoriginate l3vpn-to-evpn disable
+route-reoriginate evpn-to-l3vpn disable
+#
+ip vrf E07-HLWZX-Export
+rd <*>
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+mpls label mode ipv6 per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn auto-originate-route disable
+route-target <*> <*>
+route-reoriginate l3vpn-to-evpn disable
+route-reoriginate evpn-to-l3vpn disable
+#
+interface <*>
+description <*>
+mtu 9050
+ip vrf forwarding <*>
+ip mtu 9000
+mpls mtu 9000
+ipv6 enable
+ipv6 mtu 9000
+ipv6 address <*>
+#
+interface <*>
+description <*>
+mtu 9278
+ip mtu 9178
+mpls mtu 9228
+ipv6 mtu 9178
+no shutdown
+#
+interface <*>
+description <*>
+mtu 9278
+ip address <*> <*>
+mpls mtu 9228
+ipv6 enable
+ipv6 mtu 9178
+ipv6 address <*>
+#
+interface <*>
+description <*>
+mtu 9278
+ip vrf forwarding E07-HLWZX-Export
+ip mtu 9178
+ip address <*> <*>
+mpls mtu 9228
+ipv6 enable
+ipv6 mtu 9178
+ipv6 address <*>
+#
+interface <*>
+description <*>
+mtu 9278
+ip vrf forwarding E07-HLWZX-BackHole
+ip mtu 9178
+ip address <*> <*>
+mpls mtu 9228
+ipv6 enable
+ipv6 address <*>
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+ip address <*> <*>
+mpls mtu 9000
+ipv6 enable
+ipv6 mtu 9000
+no shutdown
+#
+interface loopback3
+description For-RP-v4
+ip address <*> <*>
+#
+interface loopback4
+description E07-HLWZX-Export
+ip vrf forwarding E07-HLWZX-Export
+ip address <*> <*>
+ipv6 enable
+#
+interface loopback5
+description E07-HLWZX-BackHole
+ip vrf forwarding E07-HLWZX-BackHole
+ip address <*> <*>
+ipv6 enable
+ipv6 address <*>
+#
+interface loopback6
+description For-BGP-PEER
+ip address <*> <*>
+#
+interface <*>
+terminal-mode enable
+bind flexe_group <*> calendar-template A interface <*> timeslots 0-14
+link-delay-down 100
+link-delay-up 5000
+#
+interface <*>
+terminal-mode enable
+bind flexe_group <*> calendar-template A interface <*> timeslots 15-19
+client-number 2
+link-delay-down 100
+link-delay-up 5000
+#
+ip prefix-list 2576 seq 10 permit 224.0.0.0 23
+ip prefix-list 2576 seq 20 permit 239.49.0.0 21
+ip prefix-list 2576 seq 30 permit 239.49.8.0 22
+ip prefix-list 2576 seq 40 permit 238.1.32.0 21
+ip prefix-list 2576 seq 50 permit 239.252.151.0 24
+#
+alarm netconf-report informational
+logging cmdlog-timestamps precisetimes
+logging file default almlog
+accept on
+#
+service-policy <*> output NMAN1P4Q overwrite
+diffserv domain NMAN
+ipv4-dscp 34 mapped to phb af4 green
+ipv4-dscp 48 mapped to phb cs6 green
+ipv4-dscp 56 mapped to phb cs7 green
+ipv4-dscp 63 mapped to phb cs7 green
+ipv4-dscp 46 mapped to phb ef green
+ipv4-dscp 24 mapped to phb af3 green
+ipv4-dscp 10 mapped to phb af1 green
+ipv4-dscp 5 mapped to phb be green
+ipv4-dscp 0 mapped to phb be green
+ipv6-dscp 34 mapped to phb af4 green
+ipv6-dscp 48 mapped to phb cs6 green
+ipv6-dscp 56 mapped to phb cs7 green
+ipv6-dscp 63 mapped to phb cs7 green
+ipv6-dscp 46 mapped to phb ef green
+ipv6-dscp 24 mapped to phb af3 green
+ipv6-dscp 16 mapped to phb af2 green
+ipv6-dscp 10 mapped to phb af1 green
+ipv6-dscp 5 mapped to phb be green
+ipv6-dscp 0 mapped to phb be green
+#
+qos diffserv-domain interface <*> apply NMAN
+#
+bfd
+interface <*>
+interval 100
+min-rx 100
+multiplier 5
+#
+interface <*>
+min-rx 100
+multiplier 5
+#
+bgp ipv4-unicast-config independent enable
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+neighbor pgToCR peer-group
+neighbor pgToCR remote-as <*>
+neighbor pgToCR ebgp-multihop ttl 2
+neighbor pgToCR update-source loopback6
+neighbor pgToCR fall-over bfd interval 300 min-rx 300 multiplier 10
+neighbor pgToCR password encrypted <*>
+neighbor pgToCR-V6 peer-group
+neighbor pgToCR-V6 remote-as <*>
+neighbor pgToCR-V6 ebgp-multihop ttl 2
+neighbor pgToCR-V6 update-source loopback20
+neighbor pgToCR-V6 password encrypted <*>
+neighbor pgToRR peer-group
+neighbor pgToRR remote-as <*>
+neighbor pgToRR update-source loopback1
+neighbor pgToRR password encrypted <*>
+neighbor pgToRR-v6 peer-group
+neighbor pgToRR-v6 update-source loopback20
+neighbor pgToRR-v6 srv6-l2-service-type 6
+neighbor pgToRR-v6 srv6-l3-service-type 5
+neighbor pgToRR-v6 password encrypted <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCR-V6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCR-V6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+address-family ipv4
+synchronization disable
+bgp bestpath external
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+network <*> <*>
+neighbor pgToCR activate
+neighbor pgToCR next-hop-self
+neighbor pgToCR send-community
+neighbor pgToCR send-med
+neighbor pgToCR send-large-community
+neighbor pgToCR route-map rpFromCR in
+neighbor pgToCR route-map rpToCR out
+neighbor pgToCR-V6 next-hop-self
+neighbor pgToRR activate disable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 next-hop-self
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> activate disable
+neighbor <*> activate
+#
+address-family l2vpn evpn
+esi-index ignore-rd enable
+bgp default route-target filter
+bgp bestpath external
+bgp bestpath origin-from evpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 advertise tunnel-encapsulation srv6
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+#
+address-family vpnv4
+bgp bestpath external
+bgp bestpath origin-from l3vpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToRR activate
+neighbor pgToRR send-community
+neighbor pgToRR send-med
+neighbor pgToRR send-large-community
+neighbor pgToRR additional-paths receive
+neighbor pgToRR additional-paths send 16
+#
+address-family ipv6
+synchronization disable
+bgp bestpath external
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+network <*>
+neighbor pgToCR-V6 activate
+neighbor pgToCR-V6 next-hop-self
+neighbor pgToCR-V6 send-community
+neighbor pgToCR-V6 send-med
+neighbor pgToCR-V6 send-large-community
+neighbor pgToCR-V6 route-map rpFromCR-V6 in
+neighbor pgToCR-V6 route-map rpToCR-V6 out
+neighbor pgToCR-v6 additional-paths receive
+neighbor pgToCR-v6 additional-paths send 16
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 next-hop-self
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+#
+address-family vpnv6
+bgp bestpath external
+bgp bestpath origin-from l3vpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToRR activate
+neighbor pgToRR send-community
+neighbor pgToRR send-med
+neighbor pgToRR send-large-community
+neighbor pgToRR additional-paths receive
+neighbor pgToRR additional-paths send 16
+#
+address-family ipv4 vrf E07-HLWZX-BackHole
+bgp bestpath origin-from evpn
+bgp nexthop recursive-lookup default-route disable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor <*> remote-as <*>
+neighbor <*> activate
+neighbor <*> description <*>
+neighbor <*> next-hop-self
+neighbor <*> update-source loopback5
+neighbor <*> fall-over bfd interval 300 min-rx 300 multiplier 10
+neighbor <*> password encrypted <*>
+neighbor <*> route-map rpFromCR-HLWZX-BackHole in
+neighbor <*> route-map rpToCR-HLWZX-BackHole out
+neighbor <*> remote-as <*>
+neighbor <*> activate
+neighbor <*> description <*>
+neighbor <*> ebgp-multihop ttl 2
+neighbor <*> next-hop-self
+neighbor <*> update-source loopback5
+neighbor <*> fall-over bfd interval 300 min-rx 300 multiplier 10
+neighbor <*> password encrypted <*>
+neighbor <*> route-map rpFromCR-HLWZX-BackHole in
+neighbor <*> route-map rpToCR-HLWZX-BackHole out
+#
+address-family ipv6 vrf E07-HLWZX-BackHole
+bgp bestpath origin-from evpn
+bgp nexthop recursive-lookup default-route disable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor <*> remote-as <*>
+neighbor <*> activate
+neighbor <*> description <*>
+neighbor <*> ebgp-multihop ttl 2
+neighbor <*> next-hop-self
+neighbor <*> update-source loopback5
+neighbor <*> fall-over bfd interval 300 min-rx 300 multiplier 10
+neighbor <*> password encrypted <*>
+neighbor <*> route-map rpFromCR-HLWZX-BackHole-V6 in
+neighbor <*> route-map rpToCR-HLWZX-BackHole-V6 out
+neighbor <*> activate
+neighbor <*> description <*>
+neighbor <*> ebgp-multihop ttl 2
+neighbor <*> next-hop-self
+neighbor <*> update-source loopback5
+neighbor <*> fall-over bfd interval 300 min-rx 300 multiplier 10
+neighbor <*> password encrypted <*>
+neighbor <*> route-map rpFromCR-HLWZX-BackHole-V6 in
+neighbor <*> route-map rpToCR-HLWZX-BackHole-V6 out
+#
+address-family ipv4 vrf E07-HLWZX-Export
+bgp bestpath origin-from evpn
+bgp nexthop recursive-lookup default-route disable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor <*> remote-as <*>
+neighbor <*> activate
+neighbor <*> description <*>
+neighbor <*> ebgp-multihop ttl 2
+neighbor <*> next-hop-self
+neighbor <*> update-source loopback4
+neighbor <*> fall-over bfd interval 300 min-rx 300 multiplier 10
+neighbor <*> password encrypted <*>
+neighbor <*> route-map rpFromCR-HLWZX-Export in
+neighbor <*> route-map rpToCR-HLWZX-Export out
+neighbor <*> remote-as <*>
+neighbor <*> activate
+neighbor <*> description <*>
+neighbor <*> ebgp-multihop ttl 2
+neighbor <*> next-hop-self
+neighbor <*> update-source loopback4
+neighbor <*> fall-over bfd interval 300 min-rx 300 multiplier 10
+neighbor <*> password encrypted <*>
+neighbor <*> route-map rpFromCR-HLWZX-Export in
+neighbor <*> route-map rpToCR-HLWZX-Export out
+#
+address-family ipv6 vrf E07-HLWZX-Export
+bgp bestpath origin-from evpn
+bgp nexthop recursive-lookup default-route disable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor <*> remote-as <*>
+neighbor <*> activate
+neighbor <*> description <*>
+neighbor <*> ebgp-multihop ttl 2
+neighbor <*> next-hop-self
+neighbor <*> update-source loopback4
+neighbor <*> fall-over bfd interval 300 min-rx 300 multiplier 10
+neighbor <*> password encrypted <*>
+neighbor <*> route-map rpFromCR-HLWZX-Export-V6 in
+neighbor <*> route-map rpToCR-HLWZX-Export-V6 out
+neighbor <*> remote-as <*>
+neighbor <*> activate
+neighbor <*> description <*>
+neighbor <*> ebgp-multihop ttl 2
+neighbor <*> next-hop-self
+neighbor <*> update-source loopback4
+neighbor <*> fall-over bfd interval 300 min-rx 300 multiplier 10
+neighbor <*> password encrypted <*>
+neighbor <*> route-map rpFromCR-HLWZX-Export-V6 in
+#
+router isis 800
+area <*>
+system-id <*>
+router-id <*>
+is-type level-2-only
+metric-style wide
+distance 105
+fast-flood 6
+fast-reroute lfa enable
+i-spf
+maximum-paths 32
+mpls ldp sync
+mpls ldp sync max-hold-time 180
+mpls traffic-eng level-2
+redistribute static route-map rmToMER
+redistribute bgp route-map BGPToISIS
+te-link-delay enable
+address-family ipv6
+distance 105
+fast-reroute ti-lfa srv6 level-2
+maximum-paths 32
+microloop-prevention segment-routing delay-time 5000
+microloop-prevention segment-routing srv6 enable
+multi-topology
+redistribute static route-map rmFromStatic-IPV6
+router-id <*>
+segment-routing srv6 enable
+segment-routing srv6 locator SRV6-5G2B
+#
+interface <*>
+circuit-type level-2-only
+passive-mode
+#
+ip multicast-routing
+multipath s-g-hash next-hop-based
+router pim
+static-rp <*> group-list 2576
+interface loopback3
+pimsm
+#
+ip multicast-routing
+multipath s-g-hash next-hop-based
+router pim
+static-rp <*> group-list 2576
+interface loopback1
+pimsm
+#
+interface loopback1
+pimsm
+#
+interface loopback3
+pimsm
+#
+interface <*>
+pimsm
+bsr-border
+#
+router msdp
+originator-id loopback6
+peer <*>
+connect-source loopback6
+description <*>
+password encrypted <*>
+mesh-group CR-MSDP
+sa-filter in list aclPermitCacheSA
+sa-filter out list aclDenySA_All
+#
+peer <*>
+connect-source loopback6
+description <*>
+password encrypted <*>
+mesh-group CR-MSDP
+sa-filter in list aclPermitCacheSA
+sa-filter out list aclDenySA_All
+#
+peer <*>
+connect-source loopback6
+description <*>
+mesh-group anycast-MSDP
+ttl-security-hops 2
+#
+!configuration saved in zdb mode at <*> on <*> <*> <*> <*> by <*>
+!configuration saved in txt mode at <*> on <*> <*> <*> <*> by the system automatically
+!last configuration change at <*> on <*> <*> <*> <*> by <*>
+commit-mode default automatic
+#
+request interface <*>
+#
+hostname <*>
+login authentication
+banner incoming #WARNING!!! Authorised access only, all of your done will be recorded! Disconnect IMMEDIATELY if you are not an authorised user!#
+nvram boot-server <IPV4>
+nvram boot-server ipv6 <IPV6>
+nvram default-gateway <IPV4>
+nvram boot-username <*>
+nvram ftp-path /
+user-high-capacity slot <*> enable 4
+#
+sysmib ifalias description
+control-plane-security
+cpu-cir cpu mpu flowtype openflow-known rate-limit <*>
+#
+service <*> cgn_ext enable
+#
+ip vrf CP2UP_L3VPN_ZTE
+description For-CP2UP_L3VPN_ZTE
+rd <*>
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn auto-originate-route disable
+route-target <*> <*>
+#
+ip vrf CTVPN193-JS
+description For-Managerment
+rd <*>
+ds-mode pipe af2 green
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn auto-originate-route disable
+route-target <*> <*>
+#
+ip vrf E05-itms
+rd <*>
+address-family ipv4
+route-target <*> <*>
+#
+ip vrf E05-voip-untrust
+rd <*>
+address-family ipv4
+route-target <*> <*>
+#
+ip vrf <*>
+description <*>
+rd <*>
+evpn tunnel-encapsulation srv6
+srv6 end-dt-sid auto
+srv6 locator SRV6-ZWZX
+address-family ipv4
+evpn auto-originate-route disable
+route-target <*> <*>
+#
+ip vrf <*>
+description <*>
+rd <*>
+evpn tunnel-encapsulation srv6
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn auto-originate-route disable
+route-target <*> <*>
+#
+address-family ipv6
+route-target <*> <*>
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+ip address <*> <*>
+mpls mtu 9000
+ipv6 enable
+ipv6 mtu 9000
+ipv6 address <*>
+no shutdown
+function-terminal-constraint shutdown deny netconf
+#
+interface <*>
+mtu 9050
+ip mtu 9000
+ip address <*> <*>
+no shutdown
+interface mac-address offset 1
+#
+interface <*>
+mtu 9050
+ip vrf forwarding VPDN
+ip mtu 9000
+ip address <*> <*>
+no shutdown
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+mpls mtu 9000
+ipv6 mtu 9000
+no shutdown
+function-terminal-constraint shutdown deny netconf
+#
+interface <*>
+function-terminal-constraint shutdown deny netconf
+#
+interface <*>
+description <*>
+no shutdown
+function-terminal-constraint shutdown deny netconf
+#
+interface mgmt_eth
+ip address <*> <*>
+#
+interface loopback6
+description FOR-UP-LAC
+ip vrf forwarding VPDN
+ip address <*> <*>
+#
+interface loopback10
+description FOR-VBRAS-C&U
+ip vrf forwarding CP2UP_L3VPN_ZTE
+ip address <*> <*>
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+mpls mtu 9000
+ipv6 mtu 9000
+track trigger group <*> shutdown
+#
+interface <*>
+description <*>
+ip address <*> <*> secondary
+ipv6 enable
+#
+interface <*>
+description <*>
+ip address <*> <*>
+ip address <*> <*> secondary
+#
+interface <*>
+description <*>
+ipv6 enable
+ipv6 address <*>
+#
+interface irb1
+description FOR VPDN
+ip vrf forwarding VPDN
+ip address <*> <*>
+interface mac-address 0001.0203.0405
+#
+vxlan
+global-vxlan enable
+#
+lacp
+interface <*>
+lacp admin-status-linkage enable
+#
+interface <*>
+lacp mode 802.3ad
+lacp admin-status-linkage enable
+#
+time-range enable
+time-range <*>
+periodic daily <*> to <*>
+#
+vlan-configuration
+interface <*>
+user-dynamic-vlan any-other-qinq
+qinq range internal-vlan-range <*> external-vlan-range <*>
+vlan-range-broadcast single-layer enable
+#
+interface <*>
+user-dynamic-vlan any-other-qinq
+qinq range internal-vlan-range <*> external-vlan-range <*>
+vlan-range-broadcast single-layer enable
+#
+interface <*>
+qinq internal-vlanid <*> external-vlanid <*>
+#
+route-map rpToRR-DenyCGN deny 10
+#
+route-map rpToRR-DenyCGN permit 20
+#
+strong-password length 8
+strong-password check disable
+#
+dhcp ipv6
+enable
+#
+ntp enable
+ntp server vrf CTVPN193-JS <*> priority <*>
+ntp source interface loopback2
+ntp access-group ipv4-access-list <*>
+#
+ip prefix-list 2576 seq <*> permit <*> <*>
+ip prefix-list ipDenyCGN seq <*> permit <*> <*> le <*>
+#
+samgr
+track <*> nat <*>
+track-group <*>
+inactive-number <*>
+#
+tacacs enable
+tacacs-server timeout 3
+tacacs-server deadtime 0
+tacacs-server host vrf CTVPN193-JS <*> key encrypted <*>
+tacplus group-server js.admin.tacacs
+server vrf CTVPN193-JS <*>
+server vrf CTVPN193-JS <*> master
+#
+cgn
+location
+node <*> <*>
+#
+alg ftp enable icmp enable rtsp enable pptp enable
+#
+alarm
+alarm port-range-block enable
+enable
+#
+log
+destination syslog
+enable
+#
+statistics on
+cgn-pool <*> poolid <*> mode pat
+alarm-threshold static-port-range-block 90
+port-range enable 4096
+port-allowed-range 4096 65535
+res-alloc-policy mask 26 assign forward
+res-alloc-position remote ippool-name <*> low 20 high 80 max-idle-port-range 1920
+#
+cgn-pool <*> poolid <*> mode pat
+alarm-threshold static-port-range-block 90
+port-range enable 4096
+port-allowed-range 4096 65535
+res-alloc-policy mask 26 assign forward
+res-alloc-position remote ippool-name <*> low 20 high 80 max-idle-port-range 1920
+#
+statistics on
+cgn-pool <*> poolid <*> mode pat
+alarm-threshold static-port-range-block 90
+port-range enable 4096
+port-allowed-range 4096 65535
+res-alloc-policy mask 26 assign forward
+res-alloc-position remote ippool-name <*> low 70 high 90
+#
+cgn-pool <*> poolid <*> mode pat
+alarm-threshold static-port-range-block 90
+port-range enable 4096
+port-allowed-range 4096 65535
+res-alloc-policy mask 26 assign forward
+res-alloc-position remote ippool-name <*> low 70 high 90
+#
+domain 444 444 type bras ipv4-issued
+tcp-policy
+refreshing-mode both-bounds
+timeout unwell-known-port tcp-syn 30 tcp-fin-rst 3
+timeout well-known-port tcp-syn 30 tcp-fin-rst 3
+#
+new-session-create-speed 200
+dynamic source rule-id <*> ipv4-list <*> permit pool <*>
+#
+new-session-create-speed 200
+bind-pool <*>
+#
+new-session-create-speed 200
+dynamic source rule-id <*> ipv4-list <*> permit
+#
+cgn-res-alloc-disconnect response-delay 480
+#
+subscriber-manage
+user-group-identify user-name
+#
+subscriber-manage
+max-groups 128
+max-prw-groups 128
+#
+control-plane-security
+defend-policy
+ipv4-black-list match ipv4-access-list black-list-acl
+ipv6-black-list match ipv6-access-list black-list-acl-V6
+#
+ctm rate-limit destcpu r-cpu board <*> <*> cir <*> cbs <*> eir <*>
+#
+control-protocol openflow dscp 48
+ip fragment enable
+ip source-route disable
+icmp-config
+ip icmp timestamp-reply disable
+#
+ssh server diffie-hellman group-exchange-sha1 disable
+ssh server diffie-hellman group1-sha1 disable
+ssh server encryption aes128-cbc disable
+ssh server encryption aes192-cbc disable
+ssh server encryption aes256-cbc disable
+ssh server encryption blowfish-cbc disable
+ssh server encryption none disable
+ssh server encryption 3des-cbc disable
+ssh server hmac md5 disable
+ssh server hmac none disable
+ssh server access-class ipv4 aclPermitSSH
+ssh server access-class ipv6 v6aclPermitSSH
+#
+line netconf idle-timeout 0
+netconf access-user name <*>
+netconf agent enable
+#
+vxlan-tunnel-config
+interface <*>
+tunnel vrf CP2UP_L3VPN_ZTE
+tunnel source ipv4 <*>
+tunnel destination ipv4 <*>
+#
+tunnel vrf CP2UP_L3VPN_ZTE
+tunnel source ipv4 <*>
+tunnel destination ipv4 <*>
+#
+segment-routing
+srv6 global enable
+srv6 locator <*>
+ipv6-prefix <*> static-length 12 args-length 16
+compress c-target 32 block-length 64
+#
+srv6 global enable
+srv6 encapsulation source-address <*>
+srv6 locator <*>
+ipv6-prefix <*> static-length 12 args-length 16
+compress c-target 32 block-length 64
+#
+command-authorization 1 all 2111
+command-authorization 2 all 2111
+command-authorization 3 all 2111
+command-authorization 5 all 2111
+command-authorization 6 all 2111
+command-authorization 7 all 2111
+command-authorization 8 all 2111
+command-authorization 9 all 2111
+command-authorization 10 all 2111
+command-authorization 11 all 2111
+command-authorization 12 all 2111
+command-authorization 13 all 2111
+command-authorization 14 all 2111
+command-authorization 15 all 2111
+auto-write everyday 10:00:00
+auto-write cpu-limit 60
+privilege show all level 5 show
+timestamp enable
+#
+logging file default almlog
+accept on
+#
+service-bridging virtual-links
+virtual-link <*> <*>
+#
+mpls l2vpn enable
+vpls vpls_VPDN evpn
+bridge-interface irb1
+static-vni <*>
+#
+static-vni <*>
+#
+qos-statistics switch on <*> output
+policy-map af4-cs6-cs7
+class cs6
+#
+service-policy <*> output NMAN1P4Q overwrite
+#
+service-classfier
+nsh-encaption vxlan
+content1 <*>
+vxlan user-dynamic
+nsh-type vxlan
+#
+service-class-rule scr_vlac
+match destination-ip <*> mask <*>
+match destination-port 1701
+#
+service-class-policy scp_vlac
+service-class-rule scr_vlac sc-action nsh-name vxlan
+#
+interface <*>
+service-class-policy scp_vlac
+#
+vcc-configuration
+interface <*>
+#
+interface <*>
+per-mac-multi-ipv4 disable
+#
+interface <*>
+arp-safeguard enable
+#
+vcc-configuration
+interface <*>
+per-mac-multi-ipv4 disable
+#
+bfd
+sbfd
+reflector source ipv6 <*>
+reflector-discriminator ip <*>
+remote-target ipv6 <*> remote-discriminator <*>
+session <*> srv6-be-bfd <*> mask-length 84 rd <*> source <*>
+interval 100
+min-rx 100
+#
+bfd
+session 1 peer-bfd ipv4 <*> <*>
+interval 300
+min-rx 300
+#
+sbfd
+reflector source ipv6 <*>
+reflector-discriminator ip <*>
+remote-target ipv6 <*> remote-discriminator <*>
+session <*> srv6-be-bfd <*> mask-length 84 rd <*> source <*>
+interval 100
+min-rx 100
+#
+bgp ipv4-unicast-config independent enable
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+neighbor pgToRR peer-group
+neighbor pgToRR remote-as <*>
+neighbor pgToRR update-source loopback1
+neighbor pgToRR password encrypted <*>
+neighbor pgToRR-v6 peer-group
+neighbor pgToRR-v6 remote-as <*>
+neighbor pgToRR-v6 update-source loopback20
+neighbor pgToRR-v6 srv6-l2-service-type 6
+neighbor pgToRR-v6 srv6-l3-service-type 5
+neighbor pgToRR-v6 password encrypted <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+#
+bgp ipv4-unicast-config independent enable
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+bgp graceful-restart
+neighbor pgToRR peer-group
+neighbor pgToRR remote-as <*>
+neighbor pgToRR update-source loopback1
+neighbor pgToRR password encrypted <*>
+neighbor pgToRR-v6 peer-group
+neighbor pgToRR-v6 remote-as <*>
+neighbor pgToRR-v6 update-source loopback20
+neighbor pgToRR-v6 srv6-l2-service-type 6
+neighbor pgToRR-v6 srv6-l3-service-type 5
+neighbor pgToRR-v6 password encrypted <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+#
+bgp ipv4-unicast-config independent enable
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+neighbor pgToRR peer-group
+neighbor pgToRR remote-as <*>
+neighbor pgToRR update-source loopback1
+neighbor pgToRR password encrypted <*>
+neighbor pgToRR-v6 peer-group
+neighbor pgToRR-v6 remote-as <*>
+neighbor pgToRR-v6 update-source loopback20
+neighbor pgToRR-v6 srv6-l2-service-type 6
+neighbor pgToRR-v6 srv6-l3-service-type 5
+neighbor pgToRR-v6 password encrypted <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+address-family ipv4
+synchronization disable
+bgp bestpath ecmp-igp-metric-compare
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+network <*> <*>
+redistribute nat-mask
+redistribute user-special
+redistribute subscriber-aggregation route-map rpToRR-DenyCGN
+neighbor pgToRR activate disable
+neighbor pgToRR-v6 next-hop-self
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> activate
+#
+bgp ipv4-unicast-config independent enable
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+bgp graceful-restart
+neighbor pgToRR peer-group
+neighbor pgToRR remote-as <*>
+neighbor pgToRR update-source loopback1
+neighbor pgToRR password encrypted <*>
+neighbor pgToRR-v6 peer-group
+neighbor pgToRR-v6 remote-as <*>
+neighbor pgToRR-v6 srv6-l2-service-type 6
+neighbor pgToRR-v6 srv6-l3-service-type 5
+neighbor pgToRR-v6 password encrypted <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+address-family ipv4
+synchronization disable
+bgp bestpath ecmp-igp-metric-compare
+bgp nexthop recursive-lookup null1 disable
+maximum-paths 32
+maximum-paths ibgp 32
+network <*> <*>
+redistribute nat-mask
+redistribute user-special
+redistribute subscriber-aggregation route-map rpToRR-DenyCGN
+neighbor pgToRR activate disable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 next-hop-self
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> activate
+#
+address-family l2vpn evpn
+bgp default route-target filter
+bgp bestpath external
+bgp bestpath origin-from evpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 advertise tunnel-encapsulation srv6
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+#
+address-family vpnv4
+bgp bestpath external
+bgp bestpath origin-from l3vpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToRR activate
+neighbor pgToRR send-community
+neighbor pgToRR send-large-community
+neighbor pgToRR send-med
+#
+address-family ipv6
+synchronization disable
+bgp bestpath external
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+redistribute subscriber-aggregation
+redistribute user-special
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+#
+address-family vpnv6
+bgp bestpath external
+bgp bestpath origin-from l3vpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToRR activate
+neighbor pgToRR send-community
+neighbor pgToRR send-large-community
+neighbor pgToRR send-med
+#
+address-family ipv4 vrf CP2UP_L3VPN_ZTE
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+network <*> <*>
+#
+address-family ipv4 vrf CP2UP_L3VPN_ZTE
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+network <*> <*>
+redistribute connected
+#
+address-family ipv4 vrf CP2UP_L3VPN_ZTE
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+redistribute connected
+#
+address-family ipv4 vrf CTVPN193-JS
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+network <*> <*>
+#
+address-family ipv4 vrf <*>
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+redistribute subscriber-aggregation
+#
+address-family ipv4 vrf <*>
+bgp bestpath origin-from evpn
+maximum-paths ibgp 32
+#
+address-family ipv4 vrf <*>
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+redistribute connected
+redistribute static
+#
+interface <*>
+ip router isis
+bfd-enable
+bfd-time-negotiation min-tx 30 min-rx 30 multiplier 3
+ipv6 bfd-enable
+ipv6 bfd-time-negotiation min-tx 30 min-rx 30 multiplier 3
+ipv6 metric 3000
+ipv6 link-damped adj-establish enable
+ipv6 link-damped metric increase 3000
+ipv6 link-damped revert-interval 600 180000 180000
+ipv6 router isis
+circuit-type level-2-only
+metric 3000
+network point-to-point
+link-damped adj-establish enable
+link-damped metric increase 3000
+link-damped revert-interval 600 180000 180000
+#
+ip route <*> <*> <*> <*> bfd enable name Route-to-LAC
+ip route vrf VPDN <*> <*> <*> <*> bfd enable name Default-route-for-LAC-to-LNS
+#
+of
+probe-interval 10 count 3
+ofls name <*> dpid <*>
+controller-main-connection ipv4 <*> vrf CP2UP_L3VPN_ZTE controller-name <*> local-ip-address <*> tcp
+#
+tcp mss 1400
+#
+controller-main-connection ipv4 <*> vrf CP2UP_L3VPN_ZTE controller-name <*> local-ip-address <*> tcp

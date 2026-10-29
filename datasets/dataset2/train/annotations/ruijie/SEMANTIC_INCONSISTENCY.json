@@ -1,0 +1,447 @@
+{
+  "vendor": "ruijie",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "SEMANTIC_INCONSISTENCY",
+  "错误类型别名": [
+    "SEMANTIC_INCONSISTENCY"
+  ],
+  "错误类型描述": "语义不一致（shutdown/enable/active 等运行语义矛盾）",
+  "实际模板占比": "6.25%",
+  "数据集调整占比": "5.00%",
+  "错误数量": 54,
+  "details": [
+    {
+      "错误序号": 3,
+      "错误行号": 1252,
+      "正确的配置": "snmp-server enable traps bgp",
+      "错误的配置": "snmp-server disable traps bgp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 2648,
+      "正确的配置": "snmp-server enable traps vrrp",
+      "错误的配置": "snmp-server disable traps vrrp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 1017,
+      "正确的配置": "snmp-server enable traps config",
+      "错误的配置": "snmp-server disable traps config",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 3080,
+      "正确的配置": "snmp-server enable traps bgp",
+      "错误的配置": "snmp-server disable traps bgp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 40,
+      "正确的配置": "spanning-tree bpduguard enable",
+      "错误的配置": "spanning-tree bpduguard disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 1206,
+      "正确的配置": "no cdp enable",
+      "错误的配置": "no cdp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 884,
+      "正确的配置": "snmp-server enable traps ospf state-change",
+      "错误的配置": "snmp-server disable traps ospf state-change",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 4098,
+      "正确的配置": "snmp-server enable traps bgp",
+      "错误的配置": "snmp-server disable traps bgp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 883,
+      "正确的配置": "snmp-server enable traps bgp",
+      "错误的配置": "snmp-server disable traps bgp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 3675,
+      "正确的配置": "spanning-tree bpduguard enable",
+      "错误的配置": "spanning-tree bpduguard disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 762,
+      "正确的配置": "no cdp enable",
+      "错误的配置": "no cdp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 770,
+      "正确的配置": "snmp-server enable traps snmp",
+      "错误的配置": "snmp-server disable traps snmp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 771,
+      "正确的配置": "snmp-server enable traps bgp",
+      "错误的配置": "snmp-server disable traps bgp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 3767,
+      "正确的配置": "no shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 1939,
+      "正确的配置": "snmp-server enable traps ospf state-change",
+      "错误的配置": "snmp-server disable traps ospf state-change",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 882,
+      "正确的配置": "snmp-server enable traps snmp",
+      "错误的配置": "snmp-server disable traps snmp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 4055,
+      "正确的配置": "no cdp enable",
+      "错误的配置": "no cdp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 42,
+      "正确的配置": "no cdp enable",
+      "错误的配置": "no cdp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 3103,
+      "正确的配置": "spanning-tree bpduguard enable",
+      "错误的配置": "spanning-tree bpduguard disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 1086,
+      "正确的配置": "snmp-server enable traps config",
+      "错误的配置": "snmp-server disable traps config",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 1987,
+      "正确的配置": "snmp-server enable traps bgp",
+      "错误的配置": "snmp-server disable traps bgp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 3092,
+      "正确的配置": "snmp-server enable traps bgp",
+      "错误的配置": "snmp-server disable traps bgp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 94,
+      "正确的配置": "snmp-server enable traps ospf state-change",
+      "错误的配置": "snmp-server disable traps ospf state-change",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 3512,
+      "正确的配置": "snmp-server enable traps vrrp",
+      "错误的配置": "snmp-server disable traps vrrp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 2216,
+      "正确的配置": "no cdp enable",
+      "错误的配置": "no cdp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 1087,
+      "正确的配置": "snmp-server enable traps bgp",
+      "错误的配置": "snmp-server disable traps bgp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 2498,
+      "正确的配置": "snmp-server enable traps bgp",
+      "错误的配置": "snmp-server disable traps bgp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 2564,
+      "正确的配置": "spanning-tree bpduguard enable",
+      "错误的配置": "spanning-tree bpduguard disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 1136,
+      "正确的配置": "snmp-server enable traps vrrp",
+      "错误的配置": "snmp-server disable traps vrrp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 792,
+      "正确的配置": "spanning-tree bpduguard enable",
+      "错误的配置": "spanning-tree bpduguard disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 383,
+      "正确的配置": "snmp-server enable traps bgp",
+      "错误的配置": "snmp-server disable traps bgp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 1925,
+      "正确的配置": "enable secret <*> RuijieAdminPass",
+      "错误的配置": "disable secret <*> RuijieAdminPass",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 788,
+      "正确的配置": "switchport port-security violation shutdown",
+      "错误的配置": "switchport port-security violation undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 2647,
+      "正确的配置": "snmp-server enable traps snmp",
+      "错误的配置": "snmp-server disable traps snmp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 1812,
+      "正确的配置": "switchport port-security violation shutdown",
+      "错误的配置": "switchport port-security violation undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 1018,
+      "正确的配置": "snmp-server enable traps ospf state-change",
+      "错误的配置": "snmp-server disable traps ospf state-change",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 2837,
+      "正确的配置": "spanning-tree bpduguard enable",
+      "错误的配置": "spanning-tree bpduguard disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 2318,
+      "正确的配置": "snmp-server enable traps config",
+      "错误的配置": "snmp-server disable traps config",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 3643,
+      "正确的配置": "no cdp enable",
+      "错误的配置": "no cdp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 3101,
+      "正确的配置": "no cdp enable",
+      "错误的配置": "no cdp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 3036,
+      "正确的配置": "snmp-server enable traps vrrp",
+      "错误的配置": "snmp-server disable traps vrrp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 798,
+      "正确的配置": "switchport port-security violation shutdown",
+      "错误的配置": "switchport port-security violation undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 3880,
+      "正确的配置": "snmp-server enable traps vrrp",
+      "错误的配置": "snmp-server disable traps vrrp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 1879,
+      "正确的配置": "spanning-tree bpduguard enable",
+      "错误的配置": "spanning-tree bpduguard disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 3035,
+      "正确的配置": "snmp-server enable traps ospf state-change",
+      "错误的配置": "snmp-server disable traps ospf state-change",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 2754,
+      "正确的配置": "snmp-server enable traps vrrp",
+      "错误的配置": "snmp-server disable traps vrrp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 1253,
+      "正确的配置": "snmp-server enable traps ospf state-change",
+      "错误的配置": "snmp-server disable traps ospf state-change",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 1940,
+      "正确的配置": "snmp-server enable traps snmp",
+      "错误的配置": "snmp-server disable traps snmp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 3037,
+      "正确的配置": "snmp-server enable traps bgp",
+      "错误的配置": "snmp-server disable traps bgp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 2458,
+      "正确的配置": "switchport port-security violation shutdown",
+      "错误的配置": "switchport port-security violation undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 1084,
+      "正确的配置": "snmp-server enable traps snmp",
+      "错误的配置": "snmp-server disable traps snmp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 3513,
+      "正确的配置": "snmp-server enable traps config",
+      "错误的配置": "snmp-server disable traps config",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 1138,
+      "正确的配置": "snmp-server enable traps bgp",
+      "错误的配置": "snmp-server disable traps bgp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 382,
+      "正确的配置": "snmp-server enable traps vrrp",
+      "错误的配置": "snmp-server disable traps vrrp",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    }
+  ]
+}

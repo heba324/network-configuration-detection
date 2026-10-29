@@ -1,0 +1,5391 @@
+{
+  "vendor": "hw",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "REDUNDANT_STATEMENT",
+  "错误类型别名": [
+    "REDUNDANT_STATEMENT"
+  ],
+  "错误类型描述": "冗余/重复的配置语句",
+  "实际模板占比": "38.91%",
+  "数据集调整占比": "42.00%",
+  "错误数量": 672,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 31506,
+      "正确的配置": "slot <*>",
+      "错误的配置": "slot <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31506行被重复，冗余语句"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 326,
+      "正确的配置": "ipv4-family",
+      "错误的配置": "ipv4-family  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第326行被重复，冗余语句"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 26183,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26183行被重复，冗余语句"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 19145,
+      "正确的配置": "pim sm",
+      "错误的配置": "pim sm  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第19145行被重复，冗余语句"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 1035,
+      "正确的配置": "mode lacp-static",
+      "错误的配置": "mode lacp-static  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1035行被重复，冗余语句"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 12708,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第12708行被重复，冗余语句"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 23018,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23018行被重复，冗余语句"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 20693,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第20693行被重复，冗余语句"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 14108,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14108行被重复，冗余语句"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 17831,
+      "正确的配置": "local-user <*> service-type telnet ssh",
+      "错误的配置": "local-user <*> service-type telnet ssh  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17831行被重复，冗余语句"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 7428,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7428行被重复，冗余语句"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 10383,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10383行被重复，冗余语句"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 31952,
+      "正确的配置": "peer <*> advertise-large-community",
+      "错误的配置": "peer <*> advertise-large-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31952行被重复，冗余语句"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 9323,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9323行被重复，冗余语句"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 16472,
+      "正确的配置": "mpls ldp",
+      "错误的配置": "mpls ldp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第16472行被重复，冗余语句"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 3818,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval 30  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3818行被重复，冗余语句"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 9270,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9270行被重复，冗余语句"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 27598,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27598行被重复，冗余语句"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 23840,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23840行被重复，冗余语句"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 21285,
+      "正确的配置": "undo peer <*> enable",
+      "错误的配置": "undo peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第21285行被重复，冗余语句"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 37483,
+      "正确的配置": "test-session <*> bind interface <INTERFACE>",
+      "错误的配置": "test-session <*> bind interface <INTERFACE>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第37483行被重复，冗余语句"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 14261,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "undo shutdown  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14261行被重复，冗余语句"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 23466,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23466行被重复，冗余语句"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 27838,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27838行被重复，冗余语句"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 22270,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22270行被重复，冗余语句"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 29246,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第29246行被重复，冗余语句"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 13333,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13333行被重复，冗余语句"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 26092,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "undo shutdown  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26092行被重复，冗余语句"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 5562,
+      "正确的配置": "local-user <*> service-type telnet ssh",
+      "错误的配置": "local-user <*> service-type telnet ssh  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5562行被重复，冗余语句"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 41012,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41012行被重复，冗余语句"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 40876,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40876行被重复，冗余语句"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 28059,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28059行被重复，冗余语句"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 32622,
+      "正确的配置": "ssh user <*> sftp-directory <*>",
+      "错误的配置": "ssh user <*> sftp-directory <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第32622行被重复，冗余语句"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 33144,
+      "正确的配置": "hwtacacs-server authentication <IPV4> vpn-instance CTVPN193-JS",
+      "错误的配置": "hwtacacs-server authentication <IPV4> vpn-instance CTVPN193-JS  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第33144行被重复，冗余语句"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 25637,
+      "正确的配置": "peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25637行被重复，冗余语句"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 23570,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23570行被重复，冗余语句"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 9061,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9061行被重复，冗余语句"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 40662,
+      "正确的配置": "route-distinguisher <*>",
+      "错误的配置": "route-distinguisher <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40662行被重复，冗余语句"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 22459,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22459行被重复，冗余语句"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 42505,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第42505行被重复，冗余语句"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 19668,
+      "正确的配置": "peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第19668行被重复，冗余语句"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 17800,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> import  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17800行被重复，冗余语句"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 25935,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25935行被重复，冗余语句"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 37087,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第37087行被重复，冗余语句"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 15199,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第15199行被重复，冗余语句"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 31342,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31342行被重复，冗余语句"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 41615,
+      "正确的配置": "ssh user <*> authentication-type <*>",
+      "错误的配置": "ssh user <*> authentication-type <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41615行被重复，冗余语句"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 17417,
+      "正确的配置": "bestroute nexthop-priority ipv6",
+      "错误的配置": "bestroute nexthop-priority ipv6  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17417行被重复，冗余语句"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 2039,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2039行被重复，冗余语句"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 16372,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第16372行被重复，冗余语句"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 9340,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9340行被重复，冗余语句"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 23968,
+      "正确的配置": "rule <*> description <DESCRIPTION>",
+      "错误的配置": "rule <*> description <DESCRIPTION>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23968行被重复，冗余语句"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 24470,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第24470行被重复，冗余语句"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 21493,
+      "正确的配置": "user-password password-force-change disable",
+      "错误的配置": "user-password password-force-change disable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第21493行被重复，冗余语句"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 9854,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9854行被重复，冗余语句"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 30730,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第30730行被重复，冗余语句"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 36815,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第36815行被重复，冗余语句"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 35361,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35361行被重复，冗余语句"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 23213,
+      "正确的配置": "info-center log-severity bymodule-alias cli CMDRECORD severity warning",
+      "错误的配置": "info-center log-severity bymodule-alias cli CMDRECORD severity warning  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23213行被重复，冗余语句"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 10010,
+      "正确的配置": "rule <*> description <DESCRIPTION>",
+      "错误的配置": "rule <*> description <DESCRIPTION>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10010行被重复，冗余语句"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 32775,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第32775行被重复，冗余语句"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 6722,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6722行被重复，冗余语句"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 32303,
+      "正确的配置": "peer <*> capability-advertise add-path both",
+      "错误的配置": "peer <*> capability-advertise add-path both  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第32303行被重复，冗余语句"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 16455,
+      "正确的配置": "control-flap",
+      "错误的配置": "control-flap  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第16455行被重复，冗余语句"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 10340,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10340行被重复，冗余语句"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 3161,
+      "正确的配置": "peer <*> capability-advertise add-path both",
+      "错误的配置": "peer <*> capability-advertise add-path both  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3161行被重复，冗余语句"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 10504,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10504行被重复，冗余语句"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 12663,
+      "正确的配置": "port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70 outbound  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第12663行被重复，冗余语句"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 20294,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis enable 800  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第20294行被重复，冗余语句"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 40825,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40825行被重复，冗余语句"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 2680,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2680行被重复，冗余语句"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 23987,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23987行被重复，冗余语句"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 3144,
+      "正确的配置": "ssh server acl 2577",
+      "错误的配置": "ssh server acl 2577  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3144行被重复，冗余语句"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 7620,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7620行被重复，冗余语句"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 4710,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4710行被重复，冗余语句"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 24741,
+      "正确的配置": "isis timer ldp-sync hold-max-cost 60",
+      "错误的配置": "isis timer ldp-sync hold-max-cost 60  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第24741行被重复，冗余语句"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 8635,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8635行被重复，冗余语句"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 20383,
+      "正确的配置": "isis circuit-type p2p",
+      "错误的配置": "isis circuit-type p2p  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第20383行被重复，冗余语句"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 27412,
+      "正确的配置": "bestroute nexthop-resolved tunnel",
+      "错误的配置": "bestroute nexthop-resolved tunnel  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27412行被重复，冗余语句"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 4571,
+      "正确的配置": "avoid-microloop frr-protected rib-update-delay 5000",
+      "错误的配置": "avoid-microloop frr-protected rib-update-delay 5000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4571行被重复，冗余语句"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 10537,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10537行被重复，冗余语句"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 4114,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval 30  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4114行被重复，冗余语句"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 15237,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第15237行被重复，冗余语句"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 25554,
+      "正确的配置": "maximum load-balancing <*>",
+      "错误的配置": "maximum load-balancing <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25554行被重复，冗余语句"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 36074,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第36074行被重复，冗余语句"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 4811,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4811行被重复，冗余语句"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 13066,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13066行被重复，冗余语句"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 619,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第619行被重复，冗余语句"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 28948,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user <*> state block fail-times 3 interval 5  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28948行被重复，冗余语句"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 35211,
+      "正确的配置": "authentication-mode <*>",
+      "错误的配置": "authentication-mode <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35211行被重复，冗余语句"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 9433,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9433行被重复，冗余语句"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 17835,
+      "正确的配置": "local-user <*> service-type ssh",
+      "错误的配置": "local-user <*> service-type ssh  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17835行被重复，冗余语句"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 30935,
+      "正确的配置": "rule <*> permit ip",
+      "错误的配置": "rule <*> permit ip  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第30935行被重复，冗余语句"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 9121,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9121行被重复，冗余语句"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 6464,
+      "正确的配置": "peer <*> connect-interface <*>",
+      "错误的配置": "peer <*> connect-interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6464行被重复，冗余语句"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 3163,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3163行被重复，冗余语句"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 3308,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3308行被重复，冗余语句"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 41187,
+      "正确的配置": "peer <*> connect-interface <*>",
+      "错误的配置": "peer <*> connect-interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41187行被重复，冗余语句"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 27209,
+      "正确的配置": "bridge-domain <*>",
+      "错误的配置": "bridge-domain <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27209行被重复，冗余语句"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 24815,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第24815行被重复，冗余语句"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 19008,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第19008行被重复，冗余语句"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 19440,
+      "正确的配置": "segment-routing ipv6 best-effort",
+      "错误的配置": "segment-routing ipv6 best-effort  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第19440行被重复，冗余语句"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 39481,
+      "正确的配置": "ipv6 advertise link attributes",
+      "错误的配置": "ipv6 advertise link attributes  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第39481行被重复，冗余语句"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 38580,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38580行被重复，冗余语句"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 26931,
+      "正确的配置": "index <*> sid ipv6 <IPV6>",
+      "错误的配置": "index <*> sid ipv6 <IPV6>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26931行被重复，冗余语句"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 21851,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第21851行被重复，冗余语句"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 28452,
+      "正确的配置": "user-priority upstream <*>",
+      "错误的配置": "user-priority upstream <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28452行被重复，冗余语句"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 4610,
+      "正确的配置": "opaque-capability enable",
+      "错误的配置": "opaque-capability enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4610行被重复，冗余语句"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 24182,
+      "正确的配置": "network <IPV4> <*> subnet length <*>",
+      "错误的配置": "network <IPV4> <*> subnet length <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第24182行被重复，冗余语句"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 4181,
+      "正确的配置": "segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routing ipv6 traffic-engineer best-effort evpn  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4181行被重复，冗余语句"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 14617,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14617行被重复，冗余语句"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 34642,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第34642行被重复，冗余语句"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 40467,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40467行被重复，冗余语句"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 12790,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第12790行被重复，冗余语句"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 28781,
+      "正确的配置": "domain <*>",
+      "错误的配置": "domain <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28781行被重复，冗余语句"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 34928,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval 30  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第34928行被重复，冗余语句"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 41610,
+      "正确的配置": "ssh user <*> sftp-directory <*>",
+      "错误的配置": "ssh user <*> sftp-directory <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41610行被重复，冗余语句"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 21737,
+      "正确的配置": "segment-routing ipv6 locator <*> evpn",
+      "错误的配置": "segment-routing ipv6 locator <*> evpn  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第21737行被重复，冗余语句"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 35298,
+      "正确的配置": "avoid-microloop frr-protected",
+      "错误的配置": "avoid-microloop frr-protected  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35298行被重复，冗余语句"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 23459,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23459行被重复，冗余语句"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 18893,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第18893行被重复，冗余语句"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 13,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13行被重复，冗余语句"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 12378,
+      "正确的配置": "ipv6 address <*>",
+      "错误的配置": "ipv6 address <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第12378行被重复，冗余语句"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 11385,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第11385行被重复，冗余语句"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 17416,
+      "正确的配置": "nexthop recursive-lookup <*> <*>",
+      "错误的配置": "nexthop recursive-lookup <*> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17416行被重复，冗余语句"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 21035,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> import  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第21035行被重复，冗余语句"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 40231,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40231行被重复，冗余语句"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 16193,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval 30  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第16193行被重复，冗余语句"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 35384,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35384行被重复，冗余语句"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 1765,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1765行被重复，冗余语句"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 21216,
+      "正确的配置": "group <*> <*>",
+      "错误的配置": "group <*> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第21216行被重复，冗余语句"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 4930,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4930行被重复，冗余语句"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 37892,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第37892行被重复，冗余语句"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 36920,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第36920行被重复，冗余语句"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 5962,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5962行被重复，冗余语句"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 14323,
+      "正确的配置": "qos-profile <*> inbound identifier none",
+      "错误的配置": "qos-profile <*> inbound identifier none  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14323行被重复，冗余语句"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 34660,
+      "正确的配置": "peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第34660行被重复，冗余语句"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 10058,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10058行被重复，冗余语句"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 16366,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第16366行被重复，冗余语句"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 4536,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4536行被重复，冗余语句"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 31359,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31359行被重复，冗余语句"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 16005,
+      "正确的配置": "isis ipv6 cost <*>",
+      "错误的配置": "isis ipv6 cost <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第16005行被重复，冗余语句"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 3519,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3519行被重复，冗余语句"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 36419,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第36419行被重复，冗余语句"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 15765,
+      "正确的配置": "isis circuit-type p2p",
+      "错误的配置": "isis circuit-type p2p  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第15765行被重复，冗余语句"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 29624,
+      "正确的配置": "speed auto",
+      "错误的配置": "speed auto  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第29624行被重复，冗余语句"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 467,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第467行被重复，冗余语句"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 29396,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第29396行被重复，冗余语句"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 27544,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27544行被重复，冗余语句"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 39231,
+      "正确的配置": "vpn-target <*> import-extcommunity evpn",
+      "错误的配置": "vpn-target <*> import-extcommunity evpn  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第39231行被重复，冗余语句"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 7448,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7448行被重复，冗余语句"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 1410,
+      "正确的配置": "discriminator remote <*>",
+      "错误的配置": "discriminator remote <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1410行被重复，冗余语句"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 30026,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第30026行被重复，冗余语句"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 15995,
+      "正确的配置": "control-flap",
+      "错误的配置": "control-flap  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第15995行被重复，冗余语句"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 8557,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8557行被重复，冗余语句"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 7887,
+      "正确的配置": "bestroute nexthop-priority ipv6",
+      "错误的配置": "bestroute nexthop-priority ipv6  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7887行被重复，冗余语句"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 32988,
+      "正确的配置": "peer <*> connect-interface <*>",
+      "错误的配置": "peer <*> connect-interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第32988行被重复，冗余语句"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 35215,
+      "正确的配置": "deny",
+      "错误的配置": "deny  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35215行被重复，冗余语句"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 23649,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23649行被重复，冗余语句"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 9554,
+      "正确的配置": "peer <*> connect-interface <*>",
+      "错误的配置": "peer <*> connect-interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9554行被重复，冗余语句"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 4963,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4963行被重复，冗余语句"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 41007,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41007行被重复，冗余语句"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 3408,
+      "正确的配置": "screen-length <*>",
+      "错误的配置": "screen-length <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3408行被重复，冗余语句"
+    },
+    {
+      "错误序号": 164,
+      "错误行号": 27738,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27738行被重复，冗余语句"
+    },
+    {
+      "错误序号": 165,
+      "错误行号": 26852,
+      "正确的配置": "nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 0  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26852行被重复，冗余语句"
+    },
+    {
+      "错误序号": 166,
+      "错误行号": 32420,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第32420行被重复，冗余语句"
+    },
+    {
+      "错误序号": 167,
+      "错误行号": 14284,
+      "正确的配置": "user-vlan <*> qinq <*>",
+      "错误的配置": "user-vlan <*> qinq <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14284行被重复，冗余语句"
+    },
+    {
+      "错误序号": 168,
+      "错误行号": 3339,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3339行被重复，冗余语句"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 6114,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6114行被重复，冗余语句"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 41605,
+      "正确的配置": "snetconf server enable",
+      "错误的配置": "snetconf server enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41605行被重复，冗余语句"
+    },
+    {
+      "错误序号": 171,
+      "错误行号": 31954,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31954行被重复，冗余语句"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 31769,
+      "正确的配置": "nexthop recursive-lookup <*> <*>",
+      "错误的配置": "nexthop recursive-lookup <*> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31769行被重复，冗余语句"
+    },
+    {
+      "错误序号": 173,
+      "错误行号": 31777,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31777行被重复，冗余语句"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 10886,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10886行被重复，冗余语句"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 40884,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40884行被重复，冗余语句"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 22547,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22547行被重复，冗余语句"
+    },
+    {
+      "错误序号": 177,
+      "错误行号": 38322,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38322行被重复，冗余语句"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 4075,
+      "正确的配置": "nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 0  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4075行被重复，冗余语句"
+    },
+    {
+      "错误序号": 179,
+      "错误行号": 29978,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第29978行被重复，冗余语句"
+    },
+    {
+      "错误序号": 180,
+      "错误行号": 1715,
+      "正确的配置": "ssh user <*>",
+      "错误的配置": "ssh user <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1715行被重复，冗余语句"
+    },
+    {
+      "错误序号": 181,
+      "错误行号": 8110,
+      "正确的配置": "ssh user <*> sftp-directory <*>",
+      "错误的配置": "ssh user <*> sftp-directory <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8110行被重复，冗余语句"
+    },
+    {
+      "错误序号": 182,
+      "错误行号": 7153,
+      "正确的配置": "undo bestroute nexthop-resolved ip",
+      "错误的配置": "undo bestroute nexthop-resolved ip  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7153行被重复，冗余语句"
+    },
+    {
+      "错误序号": 183,
+      "错误行号": 1593,
+      "正确的配置": "l2tp-user radius-force",
+      "错误的配置": "l2tp-user radius-force  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1593行被重复，冗余语句"
+    },
+    {
+      "错误序号": 184,
+      "错误行号": 20626,
+      "正确的配置": "user-vlan <*> qinq <*> <*>",
+      "错误的配置": "user-vlan <*> qinq <*> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第20626行被重复，冗余语句"
+    },
+    {
+      "错误序号": 185,
+      "错误行号": 16174,
+      "正确的配置": "ipv6 address <*>",
+      "错误的配置": "ipv6 address <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第16174行被重复，冗余语句"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 2515,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2515行被重复，冗余语句"
+    },
+    {
+      "错误序号": 187,
+      "错误行号": 13829,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13829行被重复，冗余语句"
+    },
+    {
+      "错误序号": 188,
+      "错误行号": 2725,
+      "正确的配置": "ip pool <*> bas <*>",
+      "错误的配置": "ip pool <*> bas <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2725行被重复，冗余语句"
+    },
+    {
+      "错误序号": 189,
+      "错误行号": 19716,
+      "正确的配置": "accounting-scheme <*>",
+      "错误的配置": "accounting-scheme <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第19716行被重复，冗余语句"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 5225,
+      "正确的配置": "peer <*> capability-advertise add-path both",
+      "错误的配置": "peer <*> capability-advertise add-path both  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5225行被重复，冗余语句"
+    },
+    {
+      "错误序号": 191,
+      "错误行号": 19120,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第19120行被重复，冗余语句"
+    },
+    {
+      "错误序号": 192,
+      "错误行号": 5526,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5526行被重复，冗余语句"
+    },
+    {
+      "错误序号": 193,
+      "错误行号": 41519,
+      "正确的配置": "ip ipv6-prefix <*> index <*> permit <IPV6> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ipv6-prefix <*> index <*> permit <IPV6> <*> greater-equal <*> less-equal <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41519行被重复，冗余语句"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 5598,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5598行被重复，冗余语句"
+    },
+    {
+      "错误序号": 195,
+      "错误行号": 39350,
+      "正确的配置": "local-user <*> level <*>",
+      "错误的配置": "local-user <*> level <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第39350行被重复，冗余语句"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 18097,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第18097行被重复，冗余语句"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 30218,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第30218行被重复，冗余语句"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 29541,
+      "正确的配置": "user-priority upstream <*>",
+      "错误的配置": "user-priority upstream <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第29541行被重复，冗余语句"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 26968,
+      "正确的配置": "carrier down-hold-time <*>",
+      "错误的配置": "carrier down-hold-time <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26968行被重复，冗余语句"
+    },
+    {
+      "错误序号": 200,
+      "错误行号": 40461,
+      "正确的配置": "bridge-domain <*>",
+      "错误的配置": "bridge-domain <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40461行被重复，冗余语句"
+    },
+    {
+      "错误序号": 201,
+      "错误行号": 14483,
+      "正确的配置": "recording-mode hwtacacs js.admin.tacacs",
+      "错误的配置": "recording-mode hwtacacs js.admin.tacacs  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14483行被重复，冗余语句"
+    },
+    {
+      "错误序号": 202,
+      "错误行号": 2208,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2208行被重复，冗余语句"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 4451,
+      "正确的配置": "import-route <*>",
+      "错误的配置": "import-route <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4451行被重复，冗余语句"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 10065,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10065行被重复，冗余语句"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 956,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第956行被重复，冗余语句"
+    },
+    {
+      "错误序号": 206,
+      "错误行号": 986,
+      "正确的配置": "te link administrative group <*>",
+      "错误的配置": "te link administrative group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第986行被重复，冗余语句"
+    },
+    {
+      "错误序号": 207,
+      "错误行号": 30660,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第30660行被重复，冗余语句"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 36889,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第36889行被重复，冗余语句"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 28923,
+      "正确的配置": "ptp enable",
+      "错误的配置": "ptp enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28923行被重复，冗余语句"
+    },
+    {
+      "错误序号": 210,
+      "错误行号": 24848,
+      "正确的配置": "trust 8021p",
+      "错误的配置": "trust 8021p  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第24848行被重复，冗余语句"
+    },
+    {
+      "错误序号": 211,
+      "错误行号": 29708,
+      "正确的配置": "isis circuit-type p2p",
+      "错误的配置": "isis circuit-type p2p  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第29708行被重复，冗余语句"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 7640,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7640行被重复，冗余语句"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 38228,
+      "正确的配置": "vpn-instance <*>",
+      "错误的配置": "vpn-instance <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38228行被重复，冗余语句"
+    },
+    {
+      "错误序号": 214,
+      "错误行号": 28950,
+      "正确的配置": "local-user <*> service-type telnet ssh",
+      "错误的配置": "local-user <*> service-type telnet ssh  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28950行被重复，冗余语句"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 30813,
+      "正确的配置": "user-vlan <*> qinq <*>",
+      "错误的配置": "user-vlan <*> qinq <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第30813行被重复，冗余语句"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 12582,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第12582行被重复，冗余语句"
+    },
+    {
+      "错误序号": 217,
+      "错误行号": 38396,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38396行被重复，冗余语句"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 31364,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31364行被重复，冗余语句"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 20023,
+      "正确的配置": "bestroute nexthop-priority ipv6",
+      "错误的配置": "bestroute nexthop-priority ipv6  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第20023行被重复，冗余语句"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 38048,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38048行被重复，冗余语句"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 38739,
+      "正确的配置": "test-session <*> bind interface <INTERFACE>",
+      "错误的配置": "test-session <*> bind interface <INTERFACE>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38739行被重复，冗余语句"
+    },
+    {
+      "错误序号": 222,
+      "错误行号": 23013,
+      "正确的配置": "test-session <*> bind interface <INTERFACE>",
+      "错误的配置": "test-session <*> bind interface <INTERFACE>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23013行被重复，冗余语句"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 16988,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第16988行被重复，冗余语句"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 3379,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3379行被重复，冗余语句"
+    },
+    {
+      "错误序号": 225,
+      "错误行号": 6886,
+      "正确的配置": "prefix-assign-mode unshared",
+      "错误的配置": "prefix-assign-mode unshared  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6886行被重复，冗余语句"
+    },
+    {
+      "错误序号": 226,
+      "错误行号": 27609,
+      "正确的配置": "network <IPV4> <IPV4>",
+      "错误的配置": "network <IPV4> <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27609行被重复，冗余语句"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 17526,
+      "正确的配置": "peer <*> route-update-interval 0",
+      "错误的配置": "peer <*> route-update-interval 0  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17526行被重复，冗余语句"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 25245,
+      "正确的配置": "bestroute nexthop-priority ipv6",
+      "错误的配置": "bestroute nexthop-priority ipv6  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25245行被重复，冗余语句"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 34089,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第34089行被重复，冗余语句"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 39234,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第39234行被重复，冗余语句"
+    },
+    {
+      "错误序号": 231,
+      "错误行号": 4340,
+      "正确的配置": "local-user <*> service-type ssh",
+      "错误的配置": "local-user <*> service-type ssh  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4340行被重复，冗余语句"
+    },
+    {
+      "错误序号": 232,
+      "错误行号": 31482,
+      "正确的配置": "test-session <*> sender-ip <IPV4> reflector-ip <IPV4> sender-port <*> reflector-port 33435 padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ip <IPV4> reflector-ip <IPV4> sender-port <*> reflector-port 33435 padding 44 description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31482行被重复，冗余语句"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 11720,
+      "正确的配置": "segment-routing ipv6 locator <*> evpn",
+      "错误的配置": "segment-routing ipv6 locator <*> evpn  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第11720行被重复，冗余语句"
+    },
+    {
+      "错误序号": 234,
+      "错误行号": 29255,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第29255行被重复，冗余语句"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 39526,
+      "正确的配置": "isis ldp-sync",
+      "错误的配置": "isis ldp-sync  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第39526行被重复，冗余语句"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 33603,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第33603行被重复，冗余语句"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 634,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第634行被重复，冗余语句"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 542,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第542行被重复，冗余语句"
+    },
+    {
+      "错误序号": 239,
+      "错误行号": 17492,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> export  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17492行被重复，冗余语句"
+    },
+    {
+      "错误序号": 240,
+      "错误行号": 27890,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27890行被重复，冗余语句"
+    },
+    {
+      "错误序号": 241,
+      "错误行号": 35823,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35823行被重复，冗余语句"
+    },
+    {
+      "错误序号": 242,
+      "错误行号": 17227,
+      "正确的配置": "peer <*> esad-route-compatible",
+      "错误的配置": "peer <*> esad-route-compatible  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17227行被重复，冗余语句"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 29069,
+      "正确的配置": "cu-mode",
+      "错误的配置": "cu-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第29069行被重复，冗余语句"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 14826,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14826行被重复，冗余语句"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 5434,
+      "正确的配置": "stelnet server enable",
+      "错误的配置": "stelnet server enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5434行被重复，冗余语句"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 41140,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41140行被重复，冗余语句"
+    },
+    {
+      "错误序号": 247,
+      "错误行号": 22866,
+      "正确的配置": "disaster-recovery group <*>",
+      "错误的配置": "disaster-recovery group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22866行被重复，冗余语句"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 41569,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41569行被重复，冗余语句"
+    },
+    {
+      "错误序号": 249,
+      "错误行号": 17698,
+      "正确的配置": "local-user <*> user-group manage-ug",
+      "错误的配置": "local-user <*> user-group manage-ug  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17698行被重复，冗余语句"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 18397,
+      "正确的配置": "encapsulation dot1q vid <*> to <*>",
+      "错误的配置": "encapsulation dot1q vid <*> to <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第18397行被重复，冗余语句"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 15519,
+      "正确的配置": "ssh user <*>",
+      "错误的配置": "ssh user <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第15519行被重复，冗余语句"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 23349,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23349行被重复，冗余语句"
+    },
+    {
+      "错误序号": 253,
+      "错误行号": 18866,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> export  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第18866行被重复，冗余语句"
+    },
+    {
+      "错误序号": 254,
+      "错误行号": 26985,
+      "正确的配置": "isis cost <*>",
+      "错误的配置": "isis cost <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26985行被重复，冗余语句"
+    },
+    {
+      "错误序号": 255,
+      "错误行号": 42507,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第42507行被重复，冗余语句"
+    },
+    {
+      "错误序号": 256,
+      "错误行号": 41000,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41000行被重复，冗余语句"
+    },
+    {
+      "错误序号": 257,
+      "错误行号": 5699,
+      "正确的配置": "isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5699行被重复，冗余语句"
+    },
+    {
+      "错误序号": 258,
+      "错误行号": 20478,
+      "正确的配置": "peer <*> route-update-interval 0",
+      "错误的配置": "peer <*> route-update-interval 0  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第20478行被重复，冗余语句"
+    },
+    {
+      "错误序号": 259,
+      "错误行号": 797,
+      "正确的配置": "undo synchronization",
+      "错误的配置": "undo synchronization  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第797行被重复，冗余语句"
+    },
+    {
+      "错误序号": 260,
+      "错误行号": 5508,
+      "正确的配置": "vlan-type dot1q <*>",
+      "错误的配置": "vlan-type dot1q <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5508行被重复，冗余语句"
+    },
+    {
+      "错误序号": 261,
+      "错误行号": 6262,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6262行被重复，冗余语句"
+    },
+    {
+      "错误序号": 262,
+      "错误行号": 35508,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35508行被重复，冗余语句"
+    },
+    {
+      "错误序号": 263,
+      "错误行号": 40761,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40761行被重复，冗余语句"
+    },
+    {
+      "错误序号": 264,
+      "错误行号": 34024,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第34024行被重复，冗余语句"
+    },
+    {
+      "错误序号": 265,
+      "错误行号": 23293,
+      "正确的配置": "isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23293行被重复，冗余语句"
+    },
+    {
+      "错误序号": 266,
+      "错误行号": 31675,
+      "正确的配置": "ssh user <*>",
+      "错误的配置": "ssh user <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31675行被重复，冗余语句"
+    },
+    {
+      "错误序号": 267,
+      "错误行号": 39613,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第39613行被重复，冗余语句"
+    },
+    {
+      "错误序号": 268,
+      "错误行号": 14049,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14049行被重复，冗余语句"
+    },
+    {
+      "错误序号": 269,
+      "错误行号": 26725,
+      "正确的配置": "subnet warning-threshold <*>",
+      "错误的配置": "subnet warning-threshold <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26725行被重复，冗余语句"
+    },
+    {
+      "错误序号": 270,
+      "错误行号": 5330,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5330行被重复，冗余语句"
+    },
+    {
+      "错误序号": 271,
+      "错误行号": 37118,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第37118行被重复，冗余语句"
+    },
+    {
+      "错误序号": 272,
+      "错误行号": 11729,
+      "正确的配置": "location slot <*> engine <*> backup slot <*> engine <*>",
+      "错误的配置": "location slot <*> engine <*> backup slot <*> engine <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第11729行被重复，冗余语句"
+    },
+    {
+      "错误序号": 273,
+      "错误行号": 5877,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> permit source <IPV4> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5877行被重复，冗余语句"
+    },
+    {
+      "错误序号": 274,
+      "错误行号": 8628,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8628行被重复，冗余语句"
+    },
+    {
+      "错误序号": 275,
+      "错误行号": 35620,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35620行被重复，冗余语句"
+    },
+    {
+      "错误序号": 276,
+      "错误行号": 30725,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第30725行被重复，冗余语句"
+    },
+    {
+      "错误序号": 277,
+      "错误行号": 35469,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35469行被重复，冗余语句"
+    },
+    {
+      "错误序号": 278,
+      "错误行号": 32494,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第32494行被重复，冗余语句"
+    },
+    {
+      "错误序号": 279,
+      "错误行号": 28540,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28540行被重复，冗余语句"
+    },
+    {
+      "错误序号": 280,
+      "错误行号": 23538,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23538行被重复，冗余语句"
+    },
+    {
+      "错误序号": 281,
+      "错误行号": 36155,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第36155行被重复，冗余语句"
+    },
+    {
+      "错误序号": 282,
+      "错误行号": 9543,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9543行被重复，冗余语句"
+    },
+    {
+      "错误序号": 283,
+      "错误行号": 29600,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address <IPV4> <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第29600行被重复，冗余语句"
+    },
+    {
+      "错误序号": 284,
+      "错误行号": 20421,
+      "正确的配置": "ssh user <*> sftp-directory <*>",
+      "错误的配置": "ssh user <*> sftp-directory <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第20421行被重复，冗余语句"
+    },
+    {
+      "错误序号": 285,
+      "错误行号": 38893,
+      "正确的配置": "igmp prompt-leave",
+      "错误的配置": "igmp prompt-leave  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38893行被重复，冗余语句"
+    },
+    {
+      "错误序号": 286,
+      "错误行号": 2000,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2000行被重复，冗余语句"
+    },
+    {
+      "错误序号": 287,
+      "错误行号": 17225,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17225行被重复，冗余语句"
+    },
+    {
+      "错误序号": 288,
+      "错误行号": 10723,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10723行被重复，冗余语句"
+    },
+    {
+      "错误序号": 289,
+      "错误行号": 13534,
+      "正确的配置": "user privilege level 3",
+      "错误的配置": "user privilege level 3  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13534行被重复，冗余语句"
+    },
+    {
+      "错误序号": 290,
+      "错误行号": 29014,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第29014行被重复，冗余语句"
+    },
+    {
+      "错误序号": 291,
+      "错误行号": 40376,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40376行被重复，冗余语句"
+    },
+    {
+      "错误序号": 292,
+      "错误行号": 6832,
+      "正确的配置": "peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6832行被重复，冗余语句"
+    },
+    {
+      "错误序号": 293,
+      "错误行号": 13048,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13048行被重复，冗余语句"
+    },
+    {
+      "错误序号": 294,
+      "错误行号": 636,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第636行被重复，冗余语句"
+    },
+    {
+      "错误序号": 295,
+      "错误行号": 41552,
+      "正确的配置": "flexe enable port <*>",
+      "错误的配置": "flexe enable port <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41552行被重复，冗余语句"
+    },
+    {
+      "错误序号": 296,
+      "错误行号": 18894,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第18894行被重复，冗余语句"
+    },
+    {
+      "错误序号": 297,
+      "错误行号": 41871,
+      "正确的配置": "option 60 string ArubaAP",
+      "错误的配置": "option 60 string ArubaAP  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41871行被重复，冗余语句"
+    },
+    {
+      "错误序号": 298,
+      "错误行号": 19712,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address <IPV4> <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第19712行被重复，冗余语句"
+    },
+    {
+      "错误序号": 299,
+      "错误行号": 24317,
+      "正确的配置": "ipv6 address <*>",
+      "错误的配置": "ipv6 address <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第24317行被重复，冗余语句"
+    },
+    {
+      "错误序号": 300,
+      "错误行号": 28090,
+      "正确的配置": "peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28090行被重复，冗余语句"
+    },
+    {
+      "错误序号": 301,
+      "错误行号": 13272,
+      "正确的配置": "peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13272行被重复，冗余语句"
+    },
+    {
+      "错误序号": 302,
+      "错误行号": 38949,
+      "正确的配置": "segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routing ipv6 traffic-engineer best-effort evpn  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38949行被重复，冗余语句"
+    },
+    {
+      "错误序号": 303,
+      "错误行号": 13108,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13108行被重复，冗余语句"
+    },
+    {
+      "错误序号": 304,
+      "错误行号": 38978,
+      "正确的配置": "snetconf server enable",
+      "错误的配置": "snetconf server enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38978行被重复，冗余语句"
+    },
+    {
+      "错误序号": 305,
+      "错误行号": 30749,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第30749行被重复，冗余语句"
+    },
+    {
+      "错误序号": 306,
+      "错误行号": 10143,
+      "正确的配置": "undo peer <*> enable",
+      "错误的配置": "undo peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10143行被重复，冗余语句"
+    },
+    {
+      "错误序号": 307,
+      "错误行号": 6819,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6819行被重复，冗余语句"
+    },
+    {
+      "错误序号": 308,
+      "错误行号": 11386,
+      "正确的配置": "carrier up-hold-time <*>",
+      "错误的配置": "carrier up-hold-time <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第11386行被重复，冗余语句"
+    },
+    {
+      "错误序号": 309,
+      "错误行号": 22223,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22223行被重复，冗余语句"
+    },
+    {
+      "错误序号": 310,
+      "错误行号": 40049,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40049行被重复，冗余语句"
+    },
+    {
+      "错误序号": 311,
+      "错误行号": 42065,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第42065行被重复，冗余语句"
+    },
+    {
+      "错误序号": 312,
+      "错误行号": 17106,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17106行被重复，冗余语句"
+    },
+    {
+      "错误序号": 313,
+      "错误行号": 19384,
+      "正确的配置": "undo dcn",
+      "错误的配置": "undo dcn  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第19384行被重复，冗余语句"
+    },
+    {
+      "错误序号": 314,
+      "错误行号": 26969,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26969行被重复，冗余语句"
+    },
+    {
+      "错误序号": 315,
+      "错误行号": 6366,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6366行被重复，冗余语句"
+    },
+    {
+      "错误序号": 316,
+      "错误行号": 24456,
+      "正确的配置": "bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 16  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第24456行被重复，冗余语句"
+    },
+    {
+      "错误序号": 317,
+      "错误行号": 25755,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25755行被重复，冗余语句"
+    },
+    {
+      "错误序号": 318,
+      "错误行号": 7732,
+      "正确的配置": "ssh authorization-type default <*>",
+      "错误的配置": "ssh authorization-type default <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7732行被重复，冗余语句"
+    },
+    {
+      "错误序号": 319,
+      "错误行号": 22014,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22014行被重复，冗余语句"
+    },
+    {
+      "错误序号": 320,
+      "错误行号": 22411,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22411行被重复，冗余语句"
+    },
+    {
+      "错误序号": 321,
+      "错误行号": 2463,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2463行被重复，冗余语句"
+    },
+    {
+      "错误序号": 322,
+      "错误行号": 27791,
+      "正确的配置": "peer <*> esad-route-compatible",
+      "错误的配置": "peer <*> esad-route-compatible  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27791行被重复，冗余语句"
+    },
+    {
+      "错误序号": 323,
+      "错误行号": 26190,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26190行被重复，冗余语句"
+    },
+    {
+      "错误序号": 324,
+      "错误行号": 22053,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22053行被重复，冗余语句"
+    },
+    {
+      "错误序号": 325,
+      "错误行号": 13021,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13021行被重复，冗余语句"
+    },
+    {
+      "错误序号": 326,
+      "错误行号": 38888,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38888行被重复，冗余语句"
+    },
+    {
+      "错误序号": 327,
+      "错误行号": 35113,
+      "正确的配置": "undo peer <*> enable",
+      "错误的配置": "undo peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35113行被重复，冗余语句"
+    },
+    {
+      "错误序号": 328,
+      "错误行号": 24170,
+      "正确的配置": "undo dcn",
+      "错误的配置": "undo dcn  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第24170行被重复，冗余语句"
+    },
+    {
+      "错误序号": 329,
+      "错误行号": 7201,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7201行被重复，冗余语句"
+    },
+    {
+      "错误序号": 330,
+      "错误行号": 25271,
+      "正确的配置": "umr originate detail-suppressed",
+      "错误的配置": "umr originate detail-suppressed  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25271行被重复，冗余语句"
+    },
+    {
+      "错误序号": 331,
+      "错误行号": 32933,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第32933行被重复，冗余语句"
+    },
+    {
+      "错误序号": 332,
+      "错误行号": 25781,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25781行被重复，冗余语句"
+    },
+    {
+      "错误序号": 333,
+      "错误行号": 21479,
+      "正确的配置": "ssh client first-time enable",
+      "错误的配置": "ssh client first-time enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第21479行被重复，冗余语句"
+    },
+    {
+      "错误序号": 334,
+      "错误行号": 9839,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9839行被重复，冗余语句"
+    },
+    {
+      "错误序号": 335,
+      "错误行号": 17580,
+      "正确的配置": "ipv6 nd autoconfig other-flag",
+      "错误的配置": "ipv6 nd autoconfig other-flag  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17580行被重复，冗余语句"
+    },
+    {
+      "错误序号": 336,
+      "错误行号": 14514,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14514行被重复，冗余语句"
+    },
+    {
+      "错误序号": 337,
+      "错误行号": 23762,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23762行被重复，冗余语句"
+    },
+    {
+      "错误序号": 338,
+      "错误行号": 27540,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27540行被重复，冗余语句"
+    },
+    {
+      "错误序号": 339,
+      "错误行号": 15107,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 25 outbound  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第15107行被重复，冗余语句"
+    },
+    {
+      "错误序号": 340,
+      "错误行号": 35299,
+      "正确的配置": "avoid-microloop frr-protected rib-update-delay 5000",
+      "错误的配置": "avoid-microloop frr-protected rib-update-delay 5000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35299行被重复，冗余语句"
+    },
+    {
+      "错误序号": 341,
+      "错误行号": 1200,
+      "正确的配置": "user-vlan <*>",
+      "错误的配置": "user-vlan <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1200行被重复，冗余语句"
+    },
+    {
+      "错误序号": 342,
+      "错误行号": 15309,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第15309行被重复，冗余语句"
+    },
+    {
+      "错误序号": 343,
+      "错误行号": 5935,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode <IPV6> end-op  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5935行被重复，冗余语句"
+    },
+    {
+      "错误序号": 344,
+      "错误行号": 28391,
+      "正确的配置": "peer <*> capability-advertise add-path both",
+      "错误的配置": "peer <*> capability-advertise add-path both  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28391行被重复，冗余语句"
+    },
+    {
+      "错误序号": 345,
+      "错误行号": 16944,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第16944行被重复，冗余语句"
+    },
+    {
+      "错误序号": 346,
+      "错误行号": 4878,
+      "正确的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4878行被重复，冗余语句"
+    },
+    {
+      "错误序号": 347,
+      "错误行号": 20061,
+      "正确的配置": "ssh user <*> sftp-directory <*>",
+      "错误的配置": "ssh user <*> sftp-directory <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第20061行被重复，冗余语句"
+    },
+    {
+      "错误序号": 348,
+      "错误行号": 9693,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9693行被重复，冗余语句"
+    },
+    {
+      "错误序号": 349,
+      "错误行号": 13375,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13375行被重复，冗余语句"
+    },
+    {
+      "错误序号": 350,
+      "错误行号": 31377,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31377行被重复，冗余语句"
+    },
+    {
+      "错误序号": 351,
+      "错误行号": 12781,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第12781行被重复，冗余语句"
+    },
+    {
+      "错误序号": 352,
+      "错误行号": 23702,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23702行被重复，冗余语句"
+    },
+    {
+      "错误序号": 353,
+      "错误行号": 10112,
+      "正确的配置": "local-user <*> service-type ssh",
+      "错误的配置": "local-user <*> service-type ssh  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10112行被重复，冗余语句"
+    },
+    {
+      "错误序号": 354,
+      "错误行号": 15618,
+      "正确的配置": "nqa twamp-light",
+      "错误的配置": "nqa twamp-light  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第15618行被重复，冗余语句"
+    },
+    {
+      "错误序号": 355,
+      "错误行号": 9160,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9160行被重复，冗余语句"
+    },
+    {
+      "错误序号": 356,
+      "错误行号": 24825,
+      "正确的配置": "sftp ipv4 server enable",
+      "错误的配置": "sftp ipv4 server enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第24825行被重复，冗余语句"
+    },
+    {
+      "错误序号": 357,
+      "错误行号": 20948,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第20948行被重复，冗余语句"
+    },
+    {
+      "错误序号": 358,
+      "错误行号": 22351,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22351行被重复，冗余语句"
+    },
+    {
+      "错误序号": 359,
+      "错误行号": 6560,
+      "正确的配置": "undo dcn mode vlan",
+      "错误的配置": "undo dcn mode vlan  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6560行被重复，冗余语句"
+    },
+    {
+      "错误序号": 360,
+      "错误行号": 11598,
+      "正确的配置": "snmp-agent blacklist ip-block disable",
+      "错误的配置": "snmp-agent blacklist ip-block disable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第11598行被重复，冗余语句"
+    },
+    {
+      "错误序号": 361,
+      "错误行号": 14629,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14629行被重复，冗余语句"
+    },
+    {
+      "错误序号": 362,
+      "错误行号": 7278,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7278行被重复，冗余语句"
+    },
+    {
+      "错误序号": 363,
+      "错误行号": 14340,
+      "正确的配置": "maximum load-balancing <*>",
+      "错误的配置": "maximum load-balancing <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14340行被重复，冗余语句"
+    },
+    {
+      "错误序号": 364,
+      "错误行号": 27565,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27565行被重复，冗余语句"
+    },
+    {
+      "错误序号": 365,
+      "错误行号": 27755,
+      "正确的配置": "peer <*> advertise encap-type srv6",
+      "错误的配置": "peer <*> advertise encap-type srv6  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27755行被重复，冗余语句"
+    },
+    {
+      "错误序号": 366,
+      "错误行号": 41835,
+      "正确的配置": "bfd all-interfaces enable",
+      "错误的配置": "bfd all-interfaces enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41835行被重复，冗余语句"
+    },
+    {
+      "错误序号": 367,
+      "错误行号": 28787,
+      "正确的配置": "ip-warning-threshold 90",
+      "错误的配置": "ip-warning-threshold 90  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28787行被重复，冗余语句"
+    },
+    {
+      "错误序号": 368,
+      "错误行号": 28519,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28519行被重复，冗余语句"
+    },
+    {
+      "错误序号": 369,
+      "错误行号": 26210,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26210行被重复，冗余语句"
+    },
+    {
+      "错误序号": 370,
+      "错误行号": 24451,
+      "正确的配置": "undo synchronization",
+      "错误的配置": "undo synchronization  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第24451行被重复，冗余语句"
+    },
+    {
+      "错误序号": 371,
+      "错误行号": 35058,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35058行被重复，冗余语句"
+    },
+    {
+      "错误序号": 372,
+      "错误行号": 15531,
+      "正确的配置": "ssh user <*> service-type <*>",
+      "错误的配置": "ssh user <*> service-type <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第15531行被重复，冗余语句"
+    },
+    {
+      "错误序号": 373,
+      "错误行号": 15312,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval 30  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第15312行被重复，冗余语句"
+    },
+    {
+      "错误序号": 374,
+      "错误行号": 35641,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35641行被重复，冗余语句"
+    },
+    {
+      "错误序号": 375,
+      "错误行号": 1237,
+      "正确的配置": "vpn-target <*> import-extcommunity",
+      "错误的配置": "vpn-target <*> import-extcommunity  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1237行被重复，冗余语句"
+    },
+    {
+      "错误序号": 376,
+      "错误行号": 36573,
+      "正确的配置": "ip route-static <IPV4> <IPV4> NULL0 preference 180 description <DESCRIPTION>",
+      "错误的配置": "ip route-static <IPV4> <IPV4> NULL0 preference 180 description <DESCRIPTION>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第36573行被重复，冗余语句"
+    },
+    {
+      "错误序号": 377,
+      "错误行号": 35991,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35991行被重复，冗余语句"
+    },
+    {
+      "错误序号": 378,
+      "错误行号": 25013,
+      "正确的配置": "cu-mode",
+      "错误的配置": "cu-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25013行被重复，冗余语句"
+    },
+    {
+      "错误序号": 379,
+      "错误行号": 6391,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6391行被重复，冗余语句"
+    },
+    {
+      "错误序号": 380,
+      "错误行号": 40237,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40237行被重复，冗余语句"
+    },
+    {
+      "错误序号": 381,
+      "错误行号": 8867,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8867行被重复，冗余语句"
+    },
+    {
+      "错误序号": 382,
+      "错误行号": 21885,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第21885行被重复，冗余语句"
+    },
+    {
+      "错误序号": 383,
+      "错误行号": 2637,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2637行被重复，冗余语句"
+    },
+    {
+      "错误序号": 384,
+      "错误行号": 17422,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> import  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17422行被重复，冗余语句"
+    },
+    {
+      "错误序号": 385,
+      "错误行号": 18603,
+      "正确的配置": "snmp-agent acl 2578",
+      "错误的配置": "snmp-agent acl 2578  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第18603行被重复，冗余语句"
+    },
+    {
+      "错误序号": 386,
+      "错误行号": 13795,
+      "正确的配置": "peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13795行被重复，冗余语句"
+    },
+    {
+      "错误序号": 387,
+      "错误行号": 36835,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第36835行被重复，冗余语句"
+    },
+    {
+      "错误序号": 388,
+      "错误行号": 895,
+      "正确的配置": "ssh client peer <*> assign rsa-key <*>",
+      "错误的配置": "ssh client peer <*> assign rsa-key <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第895行被重复，冗余语句"
+    },
+    {
+      "错误序号": 389,
+      "错误行号": 23370,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23370行被重复，冗余语句"
+    },
+    {
+      "错误序号": 390,
+      "错误行号": 10001,
+      "正确的配置": "dap-server ip pool <*>",
+      "错误的配置": "dap-server ip pool <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10001行被重复，冗余语句"
+    },
+    {
+      "错误序号": 391,
+      "错误行号": 5994,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5994行被重复，冗余语句"
+    },
+    {
+      "错误序号": 392,
+      "错误行号": 8607,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8607行被重复，冗余语句"
+    },
+    {
+      "错误序号": 393,
+      "错误行号": 10921,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10921行被重复，冗余语句"
+    },
+    {
+      "错误序号": 394,
+      "错误行号": 38958,
+      "正确的配置": "e-trunk <*>",
+      "错误的配置": "e-trunk <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38958行被重复，冗余语句"
+    },
+    {
+      "错误序号": 395,
+      "错误行号": 1739,
+      "正确的配置": "port-speed 100GE",
+      "错误的配置": "port-speed 100GE  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1739行被重复，冗余语句"
+    },
+    {
+      "错误序号": 396,
+      "错误行号": 13658,
+      "正确的配置": "carrier down-hold-time <*>",
+      "错误的配置": "carrier down-hold-time <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13658行被重复，冗余语句"
+    },
+    {
+      "错误序号": 397,
+      "错误行号": 12111,
+      "正确的配置": "qos rate-limit-mode car inbound",
+      "错误的配置": "qos rate-limit-mode car inbound  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第12111行被重复，冗余语句"
+    },
+    {
+      "错误序号": 398,
+      "错误行号": 40209,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40209行被重复，冗余语句"
+    },
+    {
+      "错误序号": 399,
+      "错误行号": 29531,
+      "正确的配置": "domain <*>",
+      "错误的配置": "domain <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第29531行被重复，冗余语句"
+    },
+    {
+      "错误序号": 400,
+      "错误行号": 165,
+      "正确的配置": "timer end-x update-delay 60000",
+      "错误的配置": "timer end-x update-delay 60000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第165行被重复，冗余语句"
+    },
+    {
+      "错误序号": 401,
+      "错误行号": 14509,
+      "正确的配置": "bestroute nexthop-resolved tunnel",
+      "错误的配置": "bestroute nexthop-resolved tunnel  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14509行被重复，冗余语句"
+    },
+    {
+      "错误序号": 402,
+      "错误行号": 23380,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23380行被重复，冗余语句"
+    },
+    {
+      "错误序号": 403,
+      "错误行号": 25745,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25745行被重复，冗余语句"
+    },
+    {
+      "错误序号": 404,
+      "错误行号": 32480,
+      "正确的配置": "ip-pool <*>",
+      "错误的配置": "ip-pool <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第32480行被重复，冗余语句"
+    },
+    {
+      "错误序号": 405,
+      "错误行号": 19831,
+      "正确的配置": "local-user <*> user-group manage-ug",
+      "错误的配置": "local-user <*> user-group manage-ug  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第19831行被重复，冗余语句"
+    },
+    {
+      "错误序号": 406,
+      "错误行号": 40965,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40965行被重复，冗余语句"
+    },
+    {
+      "错误序号": 407,
+      "错误行号": 27683,
+      "正确的配置": "isis cost <*>",
+      "错误的配置": "isis cost <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27683行被重复，冗余语句"
+    },
+    {
+      "错误序号": 408,
+      "错误行号": 19496,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第19496行被重复，冗余语句"
+    },
+    {
+      "错误序号": 409,
+      "错误行号": 17951,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "undo shutdown  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17951行被重复，冗余语句"
+    },
+    {
+      "错误序号": 410,
+      "错误行号": 25501,
+      "正确的配置": "mac-address <*>",
+      "错误的配置": "mac-address <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25501行被重复，冗余语句"
+    },
+    {
+      "错误序号": 411,
+      "错误行号": 15192,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第15192行被重复，冗余语句"
+    },
+    {
+      "错误序号": 412,
+      "错误行号": 6133,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6133行被重复，冗余语句"
+    },
+    {
+      "错误序号": 413,
+      "错误行号": 15525,
+      "正确的配置": "ssh user <*> service-type <*>",
+      "错误的配置": "ssh user <*> service-type <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第15525行被重复，冗余语句"
+    },
+    {
+      "错误序号": 414,
+      "错误行号": 41433,
+      "正确的配置": "stelnet server enable",
+      "错误的配置": "stelnet server enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41433行被重复，冗余语句"
+    },
+    {
+      "错误序号": 415,
+      "错误行号": 19929,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第19929行被重复，冗余语句"
+    },
+    {
+      "错误序号": 416,
+      "错误行号": 6373,
+      "正确的配置": "group <*> <*>",
+      "错误的配置": "group <*> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6373行被重复，冗余语句"
+    },
+    {
+      "错误序号": 417,
+      "错误行号": 4293,
+      "正确的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4293行被重复，冗余语句"
+    },
+    {
+      "错误序号": 418,
+      "错误行号": 1722,
+      "正确的配置": "ssh user <*>",
+      "错误的配置": "ssh user <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1722行被重复，冗余语句"
+    },
+    {
+      "错误序号": 419,
+      "错误行号": 27165,
+      "正确的配置": "timer es-recovery 90",
+      "错误的配置": "timer es-recovery 90  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27165行被重复，冗余语句"
+    },
+    {
+      "错误序号": 420,
+      "错误行号": 20852,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第20852行被重复，冗余语句"
+    },
+    {
+      "错误序号": 421,
+      "错误行号": 14124,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14124行被重复，冗余语句"
+    },
+    {
+      "错误序号": 422,
+      "错误行号": 6900,
+      "正确的配置": "min-rx-interval 100",
+      "错误的配置": "min-rx-interval 100  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6900行被重复，冗余语句"
+    },
+    {
+      "错误序号": 423,
+      "错误行号": 30490,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第30490行被重复，冗余语句"
+    },
+    {
+      "错误序号": 424,
+      "错误行号": 32952,
+      "正确的配置": "ospf cost 1000",
+      "错误的配置": "ospf cost 1000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第32952行被重复，冗余语句"
+    },
+    {
+      "错误序号": 425,
+      "错误行号": 29960,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第29960行被重复，冗余语句"
+    },
+    {
+      "错误序号": 426,
+      "错误行号": 42075,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第42075行被重复，冗余语句"
+    },
+    {
+      "错误序号": 427,
+      "错误行号": 25104,
+      "正确的配置": "peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25104行被重复，冗余语句"
+    },
+    {
+      "错误序号": 428,
+      "错误行号": 41600,
+      "正确的配置": "carrier up-hold-time <*>",
+      "错误的配置": "carrier up-hold-time <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41600行被重复，冗余语句"
+    },
+    {
+      "错误序号": 429,
+      "错误行号": 13950,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13950行被重复，冗余语句"
+    },
+    {
+      "错误序号": 430,
+      "错误行号": 26079,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 25 outbound  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26079行被重复，冗余语句"
+    },
+    {
+      "错误序号": 431,
+      "错误行号": 894,
+      "正确的配置": "ssh client peer <IPV4> assign ecc-key <IPV4>",
+      "错误的配置": "ssh client peer <IPV4> assign ecc-key <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第894行被重复，冗余语句"
+    },
+    {
+      "错误序号": 432,
+      "错误行号": 33639,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第33639行被重复，冗余语句"
+    },
+    {
+      "错误序号": 433,
+      "错误行号": 36881,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第36881行被重复，冗余语句"
+    },
+    {
+      "错误序号": 434,
+      "错误行号": 40476,
+      "正确的配置": "ipv6 address <*>",
+      "错误的配置": "ipv6 address <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40476行被重复，冗余语句"
+    },
+    {
+      "错误序号": 435,
+      "错误行号": 35494,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35494行被重复，冗余语句"
+    },
+    {
+      "错误序号": 436,
+      "错误行号": 24933,
+      "正确的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第24933行被重复，冗余语句"
+    },
+    {
+      "错误序号": 437,
+      "错误行号": 42207,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> deny  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第42207行被重复，冗余语句"
+    },
+    {
+      "错误序号": 438,
+      "错误行号": 8498,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8498行被重复，冗余语句"
+    },
+    {
+      "错误序号": 439,
+      "错误行号": 30795,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第30795行被重复，冗余语句"
+    },
+    {
+      "错误序号": 440,
+      "错误行号": 13726,
+      "正确的配置": "ipv6 bfd all-interfaces enable",
+      "错误的配置": "ipv6 bfd all-interfaces enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13726行被重复，冗余语句"
+    },
+    {
+      "错误序号": 441,
+      "错误行号": 7724,
+      "正确的配置": "ssh user <*> sftp-directory <*>",
+      "错误的配置": "ssh user <*> sftp-directory <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7724行被重复，冗余语句"
+    },
+    {
+      "错误序号": 442,
+      "错误行号": 5764,
+      "正确的配置": "ipv6 address <*>",
+      "错误的配置": "ipv6 address <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5764行被重复，冗余语句"
+    },
+    {
+      "错误序号": 443,
+      "错误行号": 7590,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7590行被重复，冗余语句"
+    },
+    {
+      "错误序号": 444,
+      "错误行号": 37818,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第37818行被重复，冗余语句"
+    },
+    {
+      "错误序号": 445,
+      "错误行号": 3545,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3545行被重复，冗余语句"
+    },
+    {
+      "错误序号": 446,
+      "错误行号": 33933,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第33933行被重复，冗余语句"
+    },
+    {
+      "错误序号": 447,
+      "错误行号": 41286,
+      "正确的配置": "interface <INTERFACE> mode l2",
+      "错误的配置": "interface <INTERFACE> mode l2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41286行被重复，冗余语句"
+    },
+    {
+      "错误序号": 448,
+      "错误行号": 12407,
+      "正确的配置": "ip pool <*> bas <*>",
+      "错误的配置": "ip pool <*> bas <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第12407行被重复，冗余语句"
+    },
+    {
+      "错误序号": 449,
+      "错误行号": 12068,
+      "正确的配置": "duplex full",
+      "错误的配置": "duplex full  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第12068行被重复，冗余语句"
+    },
+    {
+      "错误序号": 450,
+      "错误行号": 28108,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28108行被重复，冗余语句"
+    },
+    {
+      "错误序号": 451,
+      "错误行号": 40937,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40937行被重复，冗余语句"
+    },
+    {
+      "错误序号": 452,
+      "错误行号": 1396,
+      "正确的配置": "ptp enable",
+      "错误的配置": "ptp enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1396行被重复，冗余语句"
+    },
+    {
+      "错误序号": 453,
+      "错误行号": 14597,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14597行被重复，冗余语句"
+    },
+    {
+      "错误序号": 454,
+      "错误行号": 24742,
+      "正确的配置": "isis peer hold-max-cost timer <*>",
+      "错误的配置": "isis peer hold-max-cost timer <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第24742行被重复，冗余语句"
+    },
+    {
+      "错误序号": 455,
+      "错误行号": 28675,
+      "正确的配置": "import-route <*>",
+      "错误的配置": "import-route <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28675行被重复，冗余语句"
+    },
+    {
+      "错误序号": 456,
+      "错误行号": 5033,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5033行被重复，冗余语句"
+    },
+    {
+      "错误序号": 457,
+      "错误行号": 11723,
+      "正确的配置": "ipv6 prefix <*> dynamic",
+      "错误的配置": "ipv6 prefix <*> dynamic  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第11723行被重复，冗余语句"
+    },
+    {
+      "错误序号": 458,
+      "错误行号": 117,
+      "正确的配置": "user-vlan <*> <*> qinq <*>",
+      "错误的配置": "user-vlan <*> <*> qinq <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第117行被重复，冗余语句"
+    },
+    {
+      "错误序号": 459,
+      "错误行号": 8930,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8930行被重复，冗余语句"
+    },
+    {
+      "错误序号": 460,
+      "错误行号": 14566,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14566行被重复，冗余语句"
+    },
+    {
+      "错误序号": 461,
+      "错误行号": 31815,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31815行被重复，冗余语句"
+    },
+    {
+      "错误序号": 462,
+      "错误行号": 764,
+      "正确的配置": "cfm enable",
+      "错误的配置": "cfm enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第764行被重复，冗余语句"
+    },
+    {
+      "错误序号": 463,
+      "错误行号": 14071,
+      "正确的配置": "accounting-scheme <*>",
+      "错误的配置": "accounting-scheme <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14071行被重复，冗余语句"
+    },
+    {
+      "错误序号": 464,
+      "错误行号": 33985,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第33985行被重复，冗余语句"
+    },
+    {
+      "错误序号": 465,
+      "错误行号": 12976,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第12976行被重复，冗余语句"
+    },
+    {
+      "错误序号": 466,
+      "错误行号": 41177,
+      "正确的配置": "peer <*> ebgp-max-hop <*>",
+      "错误的配置": "peer <*> ebgp-max-hop <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41177行被重复，冗余语句"
+    },
+    {
+      "错误序号": 467,
+      "错误行号": 7685,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7685行被重复，冗余语句"
+    },
+    {
+      "错误序号": 468,
+      "错误行号": 16429,
+      "正确的配置": "ipv4-family vpnv4",
+      "错误的配置": "ipv4-family vpnv4  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第16429行被重复，冗余语句"
+    },
+    {
+      "错误序号": 469,
+      "错误行号": 40297,
+      "正确的配置": "peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40297行被重复，冗余语句"
+    },
+    {
+      "错误序号": 470,
+      "错误行号": 19075,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第19075行被重复，冗余语句"
+    },
+    {
+      "错误序号": 471,
+      "错误行号": 6034,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6034行被重复，冗余语句"
+    },
+    {
+      "错误序号": 472,
+      "错误行号": 33581,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第33581行被重复，冗余语句"
+    },
+    {
+      "错误序号": 473,
+      "错误行号": 23822,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23822行被重复，冗余语句"
+    },
+    {
+      "错误序号": 474,
+      "错误行号": 22694,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22694行被重复，冗余语句"
+    },
+    {
+      "错误序号": 475,
+      "错误行号": 36319,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第36319行被重复，冗余语句"
+    },
+    {
+      "错误序号": 476,
+      "错误行号": 18876,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第18876行被重复，冗余语句"
+    },
+    {
+      "错误序号": 477,
+      "错误行号": 25526,
+      "正确的配置": "isis ipv6 cost <*>",
+      "错误的配置": "isis ipv6 cost <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25526行被重复，冗余语句"
+    },
+    {
+      "错误序号": 478,
+      "错误行号": 29522,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第29522行被重复，冗余语句"
+    },
+    {
+      "错误序号": 479,
+      "错误行号": 28061,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28061行被重复，冗余语句"
+    },
+    {
+      "错误序号": 480,
+      "错误行号": 6498,
+      "正确的配置": "ssh user <*> authentication-type <*>",
+      "错误的配置": "ssh user <*> authentication-type <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6498行被重复，冗余语句"
+    },
+    {
+      "错误序号": 481,
+      "错误行号": 7501,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7501行被重复，冗余语句"
+    },
+    {
+      "错误序号": 482,
+      "错误行号": 17522,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> import  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17522行被重复，冗余语句"
+    },
+    {
+      "错误序号": 483,
+      "错误行号": 2388,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2388行被重复，冗余语句"
+    },
+    {
+      "错误序号": 484,
+      "错误行号": 26715,
+      "正确的配置": "network <IPV4> <IPV4>",
+      "错误的配置": "network <IPV4> <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26715行被重复，冗余语句"
+    },
+    {
+      "错误序号": 485,
+      "错误行号": 15010,
+      "正确的配置": "ti-lfa level-2",
+      "错误的配置": "ti-lfa level-2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第15010行被重复，冗余语句"
+    },
+    {
+      "错误序号": 486,
+      "错误行号": 23388,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23388行被重复，冗余语句"
+    },
+    {
+      "错误序号": 487,
+      "错误行号": 9033,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9033行被重复，冗余语句"
+    },
+    {
+      "错误序号": 488,
+      "错误行号": 3433,
+      "正确的配置": "authentication-scheme <*>",
+      "错误的配置": "authentication-scheme <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3433行被重复，冗余语句"
+    },
+    {
+      "错误序号": 489,
+      "错误行号": 31150,
+      "正确的配置": "tcp connect port 6666",
+      "错误的配置": "tcp connect port 6666  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31150行被重复，冗余语句"
+    },
+    {
+      "错误序号": 490,
+      "错误行号": 1627,
+      "正确的配置": "qos-profile <*> inbound pe-vid <*> ce-vid <*> identifier none",
+      "错误的配置": "qos-profile <*> inbound pe-vid <*> ce-vid <*> identifier none  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1627行被重复，冗余语句"
+    },
+    {
+      "错误序号": 491,
+      "错误行号": 13142,
+      "正确的配置": "encapsulation dot1q vid <*> to <*>",
+      "错误的配置": "encapsulation dot1q vid <*> to <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13142行被重复，冗余语句"
+    },
+    {
+      "错误序号": 492,
+      "错误行号": 40370,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40370行被重复，冗余语句"
+    },
+    {
+      "错误序号": 493,
+      "错误行号": 40417,
+      "正确的配置": "arp broadcast enable",
+      "错误的配置": "arp broadcast enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40417行被重复，冗余语句"
+    },
+    {
+      "错误序号": 494,
+      "错误行号": 16791,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第16791行被重复，冗余语句"
+    },
+    {
+      "错误序号": 495,
+      "错误行号": 28150,
+      "正确的配置": "carrier down-hold-time <*>",
+      "错误的配置": "carrier down-hold-time <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28150行被重复，冗余语句"
+    },
+    {
+      "错误序号": 496,
+      "错误行号": 40514,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40514行被重复，冗余语句"
+    },
+    {
+      "错误序号": 497,
+      "错误行号": 7003,
+      "正确的配置": "snetconf server enable",
+      "错误的配置": "snetconf server enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7003行被重复，冗余语句"
+    },
+    {
+      "错误序号": 498,
+      "错误行号": 9393,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9393行被重复，冗余语句"
+    },
+    {
+      "错误序号": 499,
+      "错误行号": 11402,
+      "正确的配置": "isis cost <*>",
+      "错误的配置": "isis cost <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第11402行被重复，冗余语句"
+    },
+    {
+      "错误序号": 500,
+      "错误行号": 35417,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35417行被重复，冗余语句"
+    },
+    {
+      "错误序号": 501,
+      "错误行号": 37658,
+      "正确的配置": "ssh user <*>",
+      "错误的配置": "ssh user <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第37658行被重复，冗余语句"
+    },
+    {
+      "错误序号": 502,
+      "错误行号": 25709,
+      "正确的配置": "carrier up-hold-time <*>",
+      "错误的配置": "carrier up-hold-time <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25709行被重复，冗余语句"
+    },
+    {
+      "错误序号": 503,
+      "错误行号": 3018,
+      "正确的配置": "flexe-groupnum <*>",
+      "错误的配置": "flexe-groupnum <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3018行被重复，冗余语句"
+    },
+    {
+      "错误序号": 504,
+      "错误行号": 2443,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2443行被重复，冗余语句"
+    },
+    {
+      "错误序号": 505,
+      "错误行号": 37,
+      "正确的配置": "port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70 outbound  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第37行被重复，冗余语句"
+    },
+    {
+      "错误序号": 506,
+      "错误行号": 41377,
+      "正确的配置": "isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41377行被重复，冗余语句"
+    },
+    {
+      "错误序号": 507,
+      "错误行号": 25146,
+      "正确的配置": "peer <*> connect-interface <*>",
+      "错误的配置": "peer <*> connect-interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25146行被重复，冗余语句"
+    },
+    {
+      "错误序号": 508,
+      "错误行号": 23605,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23605行被重复，冗余语句"
+    },
+    {
+      "错误序号": 509,
+      "错误行号": 37661,
+      "正确的配置": "ssh user <*> sftp-directory <*>",
+      "错误的配置": "ssh user <*> sftp-directory <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第37661行被重复，冗余语句"
+    },
+    {
+      "错误序号": 510,
+      "错误行号": 37443,
+      "正确的配置": "test-session <*> sender-ip <IPV4> reflector-ip <IPV4> sender-port <*> reflector-port <*>",
+      "错误的配置": "test-session <*> sender-ip <IPV4> reflector-ip <IPV4> sender-port <*> reflector-port <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第37443行被重复，冗余语句"
+    },
+    {
+      "错误序号": 511,
+      "错误行号": 22471,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22471行被重复，冗余语句"
+    },
+    {
+      "错误序号": 512,
+      "错误行号": 13441,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13441行被重复，冗余语句"
+    },
+    {
+      "错误序号": 513,
+      "错误行号": 38421,
+      "正确的配置": "route-distinguisher <*>",
+      "错误的配置": "route-distinguisher <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38421行被重复，冗余语句"
+    },
+    {
+      "错误序号": 514,
+      "错误行号": 28082,
+      "正确的配置": "peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28082行被重复，冗余语句"
+    },
+    {
+      "错误序号": 515,
+      "错误行号": 28587,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 800  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28587行被重复，冗余语句"
+    },
+    {
+      "错误序号": 516,
+      "错误行号": 7066,
+      "正确的配置": "ipv6 mtu 9178",
+      "错误的配置": "ipv6 mtu 9178  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7066行被重复，冗余语句"
+    },
+    {
+      "错误序号": 517,
+      "错误行号": 2116,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2116行被重复，冗余语句"
+    },
+    {
+      "错误序号": 518,
+      "错误行号": 30080,
+      "正确的配置": "lsa-originate-interval intelligent-timer 500 50 100",
+      "错误的配置": "lsa-originate-interval intelligent-timer 500 50 100  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第30080行被重复，冗余语句"
+    },
+    {
+      "错误序号": 519,
+      "错误行号": 15051,
+      "正确的配置": "ssh client peer <*> assign rsa-key <*>",
+      "错误的配置": "ssh client peer <*> assign rsa-key <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第15051行被重复，冗余语句"
+    },
+    {
+      "错误序号": 520,
+      "错误行号": 11086,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第11086行被重复，冗余语句"
+    },
+    {
+      "错误序号": 521,
+      "错误行号": 22357,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22357行被重复，冗余语句"
+    },
+    {
+      "错误序号": 522,
+      "错误行号": 31158,
+      "正确的配置": "bridge-domain <*>",
+      "错误的配置": "bridge-domain <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31158行被重复，冗余语句"
+    },
+    {
+      "错误序号": 523,
+      "错误行号": 31953,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31953行被重复，冗余语句"
+    },
+    {
+      "错误序号": 524,
+      "错误行号": 13210,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13210行被重复，冗余语句"
+    },
+    {
+      "错误序号": 525,
+      "错误行号": 36567,
+      "正确的配置": "ip route-static <IPV4> <IPV4> NULL0 preference 180 description <DESCRIPTION>",
+      "错误的配置": "ip route-static <IPV4> <IPV4> NULL0 preference 180 description <DESCRIPTION>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第36567行被重复，冗余语句"
+    },
+    {
+      "错误序号": 526,
+      "错误行号": 22128,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22128行被重复，冗余语句"
+    },
+    {
+      "错误序号": 527,
+      "错误行号": 22780,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22780行被重复，冗余语句"
+    },
+    {
+      "错误序号": 528,
+      "错误行号": 9697,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9697行被重复，冗余语句"
+    },
+    {
+      "错误序号": 529,
+      "错误行号": 970,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第970行被重复，冗余语句"
+    },
+    {
+      "错误序号": 530,
+      "错误行号": 29415,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第29415行被重复，冗余语句"
+    },
+    {
+      "错误序号": 531,
+      "错误行号": 5971,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5971行被重复，冗余语句"
+    },
+    {
+      "错误序号": 532,
+      "错误行号": 18282,
+      "正确的配置": "isis timer ldp-sync hold-max-cost 60",
+      "错误的配置": "isis timer ldp-sync hold-max-cost 60  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第18282行被重复，冗余语句"
+    },
+    {
+      "错误序号": 533,
+      "错误行号": 39236,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第39236行被重复，冗余语句"
+    },
+    {
+      "错误序号": 534,
+      "错误行号": 768,
+      "正确的配置": "rule <*> permit <*> <*> user-group <*> <*> eq <*>",
+      "错误的配置": "rule <*> permit <*> <*> user-group <*> <*> eq <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第768行被重复，冗余语句"
+    },
+    {
+      "错误序号": 535,
+      "错误行号": 14651,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14651行被重复，冗余语句"
+    },
+    {
+      "错误序号": 536,
+      "错误行号": 22571,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22571行被重复，冗余语句"
+    },
+    {
+      "错误序号": 537,
+      "错误行号": 11571,
+      "正确的配置": "bestroute nexthop-priority ipv6",
+      "错误的配置": "bestroute nexthop-priority ipv6  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第11571行被重复，冗余语句"
+    },
+    {
+      "错误序号": 538,
+      "错误行号": 14522,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14522行被重复，冗余语句"
+    },
+    {
+      "错误序号": 539,
+      "错误行号": 30359,
+      "正确的配置": "arp broadcast enable",
+      "错误的配置": "arp broadcast enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第30359行被重复，冗余语句"
+    },
+    {
+      "错误序号": 540,
+      "错误行号": 6732,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> export  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6732行被重复，冗余语句"
+    },
+    {
+      "错误序号": 541,
+      "错误行号": 4144,
+      "正确的配置": "undo synchronization",
+      "错误的配置": "undo synchronization  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4144行被重复，冗余语句"
+    },
+    {
+      "错误序号": 542,
+      "错误行号": 26227,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26227行被重复，冗余语句"
+    },
+    {
+      "错误序号": 543,
+      "错误行号": 39349,
+      "正确的配置": "local-user <*> service-type telnet ssh",
+      "错误的配置": "local-user <*> service-type telnet ssh  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第39349行被重复，冗余语句"
+    },
+    {
+      "错误序号": 544,
+      "错误行号": 40428,
+      "正确的配置": "network-entity <*>",
+      "错误的配置": "network-entity <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40428行被重复，冗余语句"
+    },
+    {
+      "错误序号": 545,
+      "错误行号": 25531,
+      "正确的配置": "mpls ldp",
+      "错误的配置": "mpls ldp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25531行被重复，冗余语句"
+    },
+    {
+      "错误序号": 546,
+      "错误行号": 33143,
+      "正确的配置": "hwtacacs-server template js.admin.tacacs",
+      "错误的配置": "hwtacacs-server template js.admin.tacacs  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第33143行被重复，冗余语句"
+    },
+    {
+      "错误序号": 547,
+      "错误行号": 36014,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第36014行被重复，冗余语句"
+    },
+    {
+      "错误序号": 548,
+      "错误行号": 38850,
+      "正确的配置": "lsa-arrival-interval intelligent-timer 50 50 50",
+      "错误的配置": "lsa-arrival-interval intelligent-timer 50 50 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38850行被重复，冗余语句"
+    },
+    {
+      "错误序号": 549,
+      "错误行号": 26415,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26415行被重复，冗余语句"
+    },
+    {
+      "错误序号": 550,
+      "错误行号": 21609,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第21609行被重复，冗余语句"
+    },
+    {
+      "错误序号": 551,
+      "错误行号": 5968,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5968行被重复，冗余语句"
+    },
+    {
+      "错误序号": 552,
+      "错误行号": 9167,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9167行被重复，冗余语句"
+    },
+    {
+      "错误序号": 553,
+      "错误行号": 40288,
+      "正确的配置": "peer <*> advertise-large-community",
+      "错误的配置": "peer <*> advertise-large-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40288行被重复，冗余语句"
+    },
+    {
+      "错误序号": 554,
+      "错误行号": 10187,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user <*> state block fail-times 3 interval 5  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10187行被重复，冗余语句"
+    },
+    {
+      "错误序号": 555,
+      "错误行号": 36080,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第36080行被重复，冗余语句"
+    },
+    {
+      "错误序号": 556,
+      "错误行号": 10369,
+      "正确的配置": "peer <*> tracking delay 30",
+      "错误的配置": "peer <*> tracking delay 30  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10369行被重复，冗余语句"
+    },
+    {
+      "错误序号": 557,
+      "错误行号": 18944,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第18944行被重复，冗余语句"
+    },
+    {
+      "错误序号": 558,
+      "错误行号": 20132,
+      "正确的配置": "set-overload on-startup send-sa-bit 120",
+      "错误的配置": "set-overload on-startup send-sa-bit 120  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第20132行被重复，冗余语句"
+    },
+    {
+      "错误序号": 559,
+      "错误行号": 2965,
+      "正确的配置": "authentication-scheme <*>",
+      "错误的配置": "authentication-scheme <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2965行被重复，冗余语句"
+    },
+    {
+      "错误序号": 560,
+      "错误行号": 10249,
+      "正确的配置": "spf-schedule-interval intelligent-timer 50 50 50",
+      "错误的配置": "spf-schedule-interval intelligent-timer 50 50 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10249行被重复，冗余语句"
+    },
+    {
+      "错误序号": 561,
+      "错误行号": 18543,
+      "正确的配置": "trust 8021p",
+      "错误的配置": "trust 8021p  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第18543行被重复，冗余语句"
+    },
+    {
+      "错误序号": 562,
+      "错误行号": 38374,
+      "正确的配置": "segment-routing ipv6 locator <*>",
+      "错误的配置": "segment-routing ipv6 locator <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38374行被重复，冗余语句"
+    },
+    {
+      "错误序号": 563,
+      "错误行号": 32058,
+      "正确的配置": "peer <*> advertise encap-type srv6 advertise-srv6-locator",
+      "错误的配置": "peer <*> advertise encap-type srv6 advertise-srv6-locator  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第32058行被重复，冗余语句"
+    },
+    {
+      "错误序号": 564,
+      "错误行号": 10138,
+      "正确的配置": "network <IPV4> <IPV4>",
+      "错误的配置": "network <IPV4> <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10138行被重复，冗余语句"
+    },
+    {
+      "错误序号": 565,
+      "错误行号": 18671,
+      "正确的配置": "maximum load-balancing <*>",
+      "错误的配置": "maximum load-balancing <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第18671行被重复，冗余语句"
+    },
+    {
+      "错误序号": 566,
+      "错误行号": 21640,
+      "正确的配置": "segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routing ipv6 traffic-engineer best-effort evpn  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第21640行被重复，冗余语句"
+    },
+    {
+      "错误序号": 567,
+      "错误行号": 13488,
+      "正确的配置": "peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13488行被重复，冗余语句"
+    },
+    {
+      "错误序号": 568,
+      "错误行号": 9908,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9908行被重复，冗余语句"
+    },
+    {
+      "错误序号": 569,
+      "错误行号": 40655,
+      "正确的配置": "vlan-type dot1q <*>",
+      "错误的配置": "vlan-type dot1q <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40655行被重复，冗余语句"
+    },
+    {
+      "错误序号": 570,
+      "错误行号": 15893,
+      "正确的配置": "peer <*> ebgp-max-hop <*>",
+      "错误的配置": "peer <*> ebgp-max-hop <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第15893行被重复，冗余语句"
+    },
+    {
+      "错误序号": 571,
+      "错误行号": 7392,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7392行被重复，冗余语句"
+    },
+    {
+      "错误序号": 572,
+      "错误行号": 42079,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第42079行被重复，冗余语句"
+    },
+    {
+      "错误序号": 573,
+      "错误行号": 11567,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第11567行被重复，冗余语句"
+    },
+    {
+      "错误序号": 574,
+      "错误行号": 24629,
+      "正确的配置": "ssh user <*> authentication-type <*>",
+      "错误的配置": "ssh user <*> authentication-type <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第24629行被重复，冗余语句"
+    },
+    {
+      "错误序号": 575,
+      "错误行号": 17785,
+      "正确的配置": "ip vpn-instance <*>",
+      "错误的配置": "ip vpn-instance <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17785行被重复，冗余语句"
+    },
+    {
+      "错误序号": 576,
+      "错误行号": 33309,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第33309行被重复，冗余语句"
+    },
+    {
+      "错误序号": 577,
+      "错误行号": 36142,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第36142行被重复，冗余语句"
+    },
+    {
+      "错误序号": 578,
+      "错误行号": 27952,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27952行被重复，冗余语句"
+    },
+    {
+      "错误序号": 579,
+      "错误行号": 23418,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23418行被重复，冗余语句"
+    },
+    {
+      "错误序号": 580,
+      "错误行号": 31731,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> export  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31731行被重复，冗余语句"
+    },
+    {
+      "错误序号": 581,
+      "错误行号": 28971,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address <IPV4> <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28971行被重复，冗余语句"
+    },
+    {
+      "错误序号": 582,
+      "错误行号": 38087,
+      "正确的配置": "ipv6 address auto link-local",
+      "错误的配置": "ipv6 address auto link-local  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38087行被重复，冗余语句"
+    },
+    {
+      "错误序号": 583,
+      "错误行号": 28583,
+      "正确的配置": "ipv6 address <*>",
+      "错误的配置": "ipv6 address <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28583行被重复，冗余语句"
+    },
+    {
+      "错误序号": 584,
+      "错误行号": 12686,
+      "正确的配置": "routing-table rib-only",
+      "错误的配置": "routing-table rib-only  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第12686行被重复，冗余语句"
+    },
+    {
+      "错误序号": 585,
+      "错误行号": 9984,
+      "正确的配置": "isis peer hold-max-cost timer <*>",
+      "错误的配置": "isis peer hold-max-cost timer <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9984行被重复，冗余语句"
+    },
+    {
+      "错误序号": 586,
+      "错误行号": 28641,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28641行被重复，冗余语句"
+    },
+    {
+      "错误序号": 587,
+      "错误行号": 3057,
+      "正确的配置": "vpn-target <*> export-extcommunity",
+      "错误的配置": "vpn-target <*> export-extcommunity  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3057行被重复，冗余语句"
+    },
+    {
+      "错误序号": 588,
+      "错误行号": 20332,
+      "正确的配置": "port-speed 100GE",
+      "错误的配置": "port-speed 100GE  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第20332行被重复，冗余语句"
+    },
+    {
+      "错误序号": 589,
+      "错误行号": 9464,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9464行被重复，冗余语句"
+    },
+    {
+      "错误序号": 590,
+      "错误行号": 18055,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第18055行被重复，冗余语句"
+    },
+    {
+      "错误序号": 591,
+      "错误行号": 7964,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "undo shutdown  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7964行被重复，冗余语句"
+    },
+    {
+      "错误序号": 592,
+      "错误行号": 34438,
+      "正确的配置": "nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 0  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第34438行被重复，冗余语句"
+    },
+    {
+      "错误序号": 593,
+      "错误行号": 5611,
+      "正确的配置": "ipv6 address <*>",
+      "错误的配置": "ipv6 address <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5611行被重复，冗余语句"
+    },
+    {
+      "错误序号": 594,
+      "错误行号": 16942,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第16942行被重复，冗余语句"
+    },
+    {
+      "错误序号": 595,
+      "错误行号": 18216,
+      "正确的配置": "ssh server-source all-interface",
+      "错误的配置": "ssh server-source all-interface  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第18216行被重复，冗余语句"
+    },
+    {
+      "错误序号": 596,
+      "错误行号": 23300,
+      "正确的配置": "undo dcn mode vlan",
+      "错误的配置": "undo dcn mode vlan  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23300行被重复，冗余语句"
+    },
+    {
+      "错误序号": 597,
+      "错误行号": 8364,
+      "正确的配置": "stelnet ipv4 server enable",
+      "错误的配置": "stelnet ipv4 server enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8364行被重复，冗余语句"
+    },
+    {
+      "错误序号": 598,
+      "错误行号": 4840,
+      "正确的配置": "ssh <*> publickey <*>",
+      "错误的配置": "ssh <*> publickey <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4840行被重复，冗余语句"
+    },
+    {
+      "错误序号": 599,
+      "错误行号": 40982,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40982行被重复，冗余语句"
+    },
+    {
+      "错误序号": 600,
+      "错误行号": 39417,
+      "正确的配置": "cusp controller",
+      "错误的配置": "cusp controller  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第39417行被重复，冗余语句"
+    },
+    {
+      "错误序号": 601,
+      "错误行号": 22376,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22376行被重复，冗余语句"
+    },
+    {
+      "错误序号": 602,
+      "错误行号": 14897,
+      "正确的配置": "esi <*>",
+      "错误的配置": "esi <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14897行被重复，冗余语句"
+    },
+    {
+      "错误序号": 603,
+      "错误行号": 39980,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第39980行被重复，冗余语句"
+    },
+    {
+      "错误序号": 604,
+      "错误行号": 35184,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35184行被重复，冗余语句"
+    },
+    {
+      "错误序号": 605,
+      "错误行号": 6781,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6781行被重复，冗余语句"
+    },
+    {
+      "错误序号": 606,
+      "错误行号": 34644,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第34644行被重复，冗余语句"
+    },
+    {
+      "错误序号": 607,
+      "错误行号": 23872,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23872行被重复，冗余语句"
+    },
+    {
+      "错误序号": 608,
+      "错误行号": 11271,
+      "正确的配置": "local-user <*> service-type telnet ssh",
+      "错误的配置": "local-user <*> service-type telnet ssh  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第11271行被重复，冗余语句"
+    },
+    {
+      "错误序号": 609,
+      "错误行号": 2541,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2541行被重复，冗余语句"
+    },
+    {
+      "错误序号": 610,
+      "错误行号": 30312,
+      "正确的配置": "control-flap",
+      "错误的配置": "control-flap  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第30312行被重复，冗余语句"
+    },
+    {
+      "错误序号": 611,
+      "错误行号": 14881,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14881行被重复，冗余语句"
+    },
+    {
+      "错误序号": 612,
+      "错误行号": 1022,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1022行被重复，冗余语句"
+    },
+    {
+      "错误序号": 613,
+      "错误行号": 39001,
+      "正确的配置": "peer <*> connect-interface <*>",
+      "错误的配置": "peer <*> connect-interface <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第39001行被重复，冗余语句"
+    },
+    {
+      "错误序号": 614,
+      "错误行号": 33778,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user <*> state block fail-times 3 interval 5  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第33778行被重复，冗余语句"
+    },
+    {
+      "错误序号": 615,
+      "错误行号": 8375,
+      "正确的配置": "ssh user <*> authentication-type <*>",
+      "错误的配置": "ssh user <*> authentication-type <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8375行被重复，冗余语句"
+    },
+    {
+      "错误序号": 616,
+      "错误行号": 34527,
+      "正确的配置": "local-user <*> service-type ssh",
+      "错误的配置": "local-user <*> service-type ssh  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第34527行被重复，冗余语句"
+    },
+    {
+      "错误序号": 617,
+      "错误行号": 12035,
+      "正确的配置": "peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第12035行被重复，冗余语句"
+    },
+    {
+      "错误序号": 618,
+      "错误行号": 6069,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6069行被重复，冗余语句"
+    },
+    {
+      "错误序号": 619,
+      "错误行号": 35707,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35707行被重复，冗余语句"
+    },
+    {
+      "错误序号": 620,
+      "错误行号": 25490,
+      "正确的配置": "ipv6 route-static <IPV6> 128 <*> <IPV6> bfd enable description <*>",
+      "错误的配置": "ipv6 route-static <IPV6> 128 <*> <IPV6> bfd enable description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25490行被重复，冗余语句"
+    },
+    {
+      "错误序号": 621,
+      "错误行号": 8346,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8346行被重复，冗余语句"
+    },
+    {
+      "错误序号": 622,
+      "错误行号": 23398,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第23398行被重复，冗余语句"
+    },
+    {
+      "错误序号": 623,
+      "错误行号": 11548,
+      "正确的配置": "trust 8021p",
+      "错误的配置": "trust 8021p  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第11548行被重复，冗余语句"
+    },
+    {
+      "错误序号": 624,
+      "错误行号": 16232,
+      "正确的配置": "bfd all-interfaces min-tx-interval 30 min-rx-interval 30",
+      "错误的配置": "bfd all-interfaces min-tx-interval 30 min-rx-interval 30  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第16232行被重复，冗余语句"
+    },
+    {
+      "错误序号": 625,
+      "错误行号": 31635,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address <IPV4> <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31635行被重复，冗余语句"
+    },
+    {
+      "错误序号": 626,
+      "错误行号": 32716,
+      "正确的配置": "ipv6 address <*>",
+      "错误的配置": "ipv6 address <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第32716行被重复，冗余语句"
+    },
+    {
+      "错误序号": 627,
+      "错误行号": 22383,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22383行被重复，冗余语句"
+    },
+    {
+      "错误序号": 628,
+      "错误行号": 26645,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26645行被重复，冗余语句"
+    },
+    {
+      "错误序号": 629,
+      "错误行号": 5721,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "undo shutdown  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5721行被重复，冗余语句"
+    },
+    {
+      "错误序号": 630,
+      "错误行号": 12724,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第12724行被重复，冗余语句"
+    },
+    {
+      "错误序号": 631,
+      "错误行号": 20312,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 25 outbound  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第20312行被重复，冗余语句"
+    },
+    {
+      "错误序号": 632,
+      "错误行号": 40006,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "peer <*> reflect-client  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40006行被重复，冗余语句"
+    },
+    {
+      "错误序号": 633,
+      "错误行号": 14360,
+      "正确的配置": "user-group <*>",
+      "错误的配置": "user-group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第14360行被重复，冗余语句"
+    },
+    {
+      "错误序号": 634,
+      "错误行号": 30158,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> permit source <IPV4> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第30158行被重复，冗余语句"
+    },
+    {
+      "错误序号": 635,
+      "错误行号": 30982,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第30982行被重复，冗余语句"
+    },
+    {
+      "错误序号": 636,
+      "错误行号": 20711,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第20711行被重复，冗余语句"
+    },
+    {
+      "错误序号": 637,
+      "错误行号": 31501,
+      "正确的配置": "test-session <*> local-ip <IPV4> remote-ip <IPV4> local-port <*> remote-port <*> description <*>",
+      "错误的配置": "test-session <*> local-ip <IPV4> remote-ip <IPV4> local-port <*> remote-port <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31501行被重复，冗余语句"
+    },
+    {
+      "错误序号": 638,
+      "错误行号": 27367,
+      "正确的配置": "router-id filter",
+      "错误的配置": "router-id filter  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第27367行被重复，冗余语句"
+    },
+    {
+      "错误序号": 639,
+      "错误行号": 34020,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第34020行被重复，冗余语句"
+    },
+    {
+      "错误序号": 640,
+      "错误行号": 7019,
+      "正确的配置": "ssh user <*> authentication-type <*>",
+      "错误的配置": "ssh user <*> authentication-type <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7019行被重复，冗余语句"
+    },
+    {
+      "错误序号": 641,
+      "错误行号": 32037,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第32037行被重复，冗余语句"
+    },
+    {
+      "错误序号": 642,
+      "错误行号": 2319,
+      "正确的配置": "ip ipv6-prefix <*> index <*> permit <IPV6> <*>",
+      "错误的配置": "ip ipv6-prefix <*> index <*> permit <IPV6> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2319行被重复，冗余语句"
+    },
+    {
+      "错误序号": 643,
+      "错误行号": 40076,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40076行被重复，冗余语句"
+    },
+    {
+      "错误序号": 644,
+      "错误行号": 13977,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第13977行被重复，冗余语句"
+    },
+    {
+      "错误序号": 645,
+      "错误行号": 6125,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6125行被重复，冗余语句"
+    },
+    {
+      "错误序号": 646,
+      "错误行号": 20374,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval 30  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第20374行被重复，冗余语句"
+    },
+    {
+      "错误序号": 647,
+      "错误行号": 10765,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第10765行被重复，冗余语句"
+    },
+    {
+      "错误序号": 648,
+      "错误行号": 33789,
+      "正确的配置": "carrier up-hold-time <*>",
+      "错误的配置": "carrier up-hold-time <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第33789行被重复，冗余语句"
+    },
+    {
+      "错误序号": 649,
+      "错误行号": 28078,
+      "正确的配置": "peer <*> advertise encap-type srv6",
+      "错误的配置": "peer <*> advertise encap-type srv6  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第28078行被重复，冗余语句"
+    },
+    {
+      "错误序号": 650,
+      "错误行号": 38490,
+      "正确的配置": "advertise l2vpn evpn",
+      "错误的配置": "advertise l2vpn evpn  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第38490行被重复，冗余语句"
+    },
+    {
+      "错误序号": 651,
+      "错误行号": 32033,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第32033行被重复，冗余语句"
+    },
+    {
+      "错误序号": 652,
+      "错误行号": 11258,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user <*> state block fail-times 3 interval 5  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第11258行被重复，冗余语句"
+    },
+    {
+      "错误序号": 653,
+      "错误行号": 40922,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-community  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第40922行被重复，冗余语句"
+    },
+    {
+      "错误序号": 654,
+      "错误行号": 39484,
+      "正确的配置": "ipv6 traffic-eng <*>",
+      "错误的配置": "ipv6 traffic-eng <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第39484行被重复，冗余语句"
+    },
+    {
+      "错误序号": 655,
+      "错误行号": 22726,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第22726行被重复，冗余语句"
+    },
+    {
+      "错误序号": 656,
+      "错误行号": 36994,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第36994行被重复，冗余语句"
+    },
+    {
+      "错误序号": 657,
+      "错误行号": 17131,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第17131行被重复，冗余语句"
+    },
+    {
+      "错误序号": 658,
+      "错误行号": 11279,
+      "正确的配置": "user-password password-force-change disable",
+      "错误的配置": "user-password password-force-change disable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第11279行被重复，冗余语句"
+    },
+    {
+      "错误序号": 659,
+      "错误行号": 25071,
+      "正确的配置": "user-vlan <*> <*> qinq <*>",
+      "错误的配置": "user-vlan <*> <*> qinq <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25071行被重复，冗余语句"
+    },
+    {
+      "错误序号": 660,
+      "错误行号": 6567,
+      "正确的配置": "export route-policy <*> evpn",
+      "错误的配置": "export route-policy <*> evpn  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6567行被重复，冗余语句"
+    },
+    {
+      "错误序号": 661,
+      "错误行号": 11089,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第11089行被重复，冗余语句"
+    },
+    {
+      "错误序号": 662,
+      "错误行号": 33688,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第33688行被重复，冗余语句"
+    },
+    {
+      "错误序号": 663,
+      "错误行号": 25029,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "undo shutdown  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第25029行被重复，冗余语句"
+    },
+    {
+      "错误序号": 664,
+      "错误行号": 6855,
+      "正确的配置": "group <*> <*>",
+      "错误的配置": "group <*> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6855行被重复，冗余语句"
+    },
+    {
+      "错误序号": 665,
+      "错误行号": 34840,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第34840行被重复，冗余语句"
+    },
+    {
+      "错误序号": 666,
+      "错误行号": 1811,
+      "正确的配置": "mac-address <*>",
+      "错误的配置": "mac-address <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1811行被重复，冗余语句"
+    },
+    {
+      "错误序号": 667,
+      "错误行号": 31489,
+      "正确的配置": "test-session <*> bind interface <INTERFACE>",
+      "错误的配置": "test-session <*> bind interface <INTERFACE>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第31489行被重复，冗余语句"
+    },
+    {
+      "错误序号": 668,
+      "错误行号": 41586,
+      "正确的配置": "peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第41586行被重复，冗余语句"
+    },
+    {
+      "错误序号": 669,
+      "错误行号": 26230,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第26230行被重复，冗余语句"
+    },
+    {
+      "错误序号": 670,
+      "错误行号": 35614,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第35614行被重复，冗余语句"
+    },
+    {
+      "错误序号": 671,
+      "错误行号": 649,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "peer <*> as-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第649行被重复，冗余语句"
+    },
+    {
+      "错误序号": 672,
+      "错误行号": 3839,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3839行被重复，冗余语句"
+    }
+  ]
+}

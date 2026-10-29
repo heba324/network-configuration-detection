@@ -1,0 +1,655 @@
+{
+  "vendor": "ruijie",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "REDUNDANT_STATEMENT",
+  "错误类型别名": [
+    "REDUNDANT_STATEMENT"
+  ],
+  "错误类型描述": "冗余/重复的配置语句",
+  "实际模板占比": "6.25%",
+  "数据集调整占比": "5.00%",
+  "错误数量": 80,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 1557,
+      "正确的配置": "snmp-server enable traps ospf state-change",
+      "错误的配置": "snmp-server enable traps ospf state-change  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1557行被重复，冗余语句"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 2486,
+      "正确的配置": "class CMAP-<*>",
+      "错误的配置": "class CMAP-<*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2486行被重复，冗余语句"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 3195,
+      "正确的配置": "max-lsa <*>",
+      "错误的配置": "max-lsa <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3195行被重复，冗余语句"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 1544,
+      "正确的配置": "ip helper-address <*>",
+      "错误的配置": "ip helper-address <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1544行被重复，冗余语句"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 1082,
+      "正确的配置": "snmp-server contact NetAdmin-<*>",
+      "错误的配置": "snmp-server contact NetAdmin-<*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1082行被重复，冗余语句"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 3762,
+      "正确的配置": "switchport mode trunk",
+      "错误的配置": "switchport mode trunk  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3762行被重复，冗余语句"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 2383,
+      "正确的配置": "set community <*>:<*> additive",
+      "错误的配置": "set community <*>:<*> additive  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2383行被重复，冗余语句"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 4153,
+      "正确的配置": "network <*> <*> area <*>",
+      "错误的配置": "network <*> <*> area <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4153行被重复，冗余语句"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 550,
+      "正确的配置": "ip dhcp snooping trust",
+      "错误的配置": "ip dhcp snooping trust  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第550行被重复，冗余语句"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 3382,
+      "正确的配置": "deny ip <*> <*> any",
+      "错误的配置": "deny ip <*> <*> any  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3382行被重复，冗余语句"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 623,
+      "正确的配置": "exit",
+      "错误的配置": "exit  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第623行被重复，冗余语句"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 717,
+      "正确的配置": "neighbor <*> route-map ISP-OUT-<*> out",
+      "错误的配置": "neighbor <*> route-map ISP-OUT-<*> out  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第717行被重复，冗余语句"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 215,
+      "正确的配置": "set ip precedence <*>",
+      "错误的配置": "set ip precedence <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第215行被重复，冗余语句"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 4135,
+      "正确的配置": "ip community-list expanded COM-LIST-<*> permit _2279795731:.*",
+      "错误的配置": "ip community-list expanded COM-LIST-<*> permit _2279795731:.*  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4135行被重复，冗余语句"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 1111,
+      "正确的配置": "ip access-list extended FW-POLICY-<*>",
+      "错误的配置": "ip access-list extended FW-POLICY-<*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1111行被重复，冗余语句"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 2963,
+      "正确的配置": "passive-interface Vlan <*>",
+      "错误的配置": "passive-interface Vlan <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2963行被重复，冗余语句"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 1228,
+      "正确的配置": "ip sla <*>",
+      "错误的配置": "ip sla <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1228行被重复，冗余语句"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 3485,
+      "正确的配置": "class-map match-any CMAP-<*>",
+      "错误的配置": "class-map match-any CMAP-<*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3485行被重复，冗余语句"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 3773,
+      "正确的配置": "max-lsa <*>",
+      "错误的配置": "max-lsa <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3773行被重复，冗余语句"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 846,
+      "正确的配置": "router-id <*>",
+      "错误的配置": "router-id <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第846行被重复，冗余语句"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 3729,
+      "正确的配置": "neighbor <*> route-map SET-ATTRIBUTES-<*> in",
+      "错误的配置": "neighbor <*> route-map SET-ATTRIBUTES-<*> in  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3729行被重复，冗余语句"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 3458,
+      "正确的配置": "class class-default",
+      "错误的配置": "class class-default  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3458行被重复，冗余语句"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 4231,
+      "正确的配置": "neighbor IBGP-PEERS-<*> update-source Loopback <*>",
+      "错误的配置": "neighbor IBGP-PEERS-<*> update-source Loopback <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4231行被重复，冗余语句"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 3906,
+      "正确的配置": "address ipv4 <*>",
+      "错误的配置": "address ipv4 <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3906行被重复，冗余语句"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 2224,
+      "正确的配置": "match ip dscp ef",
+      "错误的配置": "match ip dscp ef  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2224行被重复，冗余语句"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 2700,
+      "正确的配置": "ip dhcp snooping",
+      "错误的配置": "ip dhcp snooping  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2700行被重复，冗余语句"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 1467,
+      "正确的配置": "network <*> <*> area <*>",
+      "错误的配置": "network <*> <*> area <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1467行被重复，冗余语句"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 3410,
+      "正确的配置": "interface GigabitEthernet <*>",
+      "错误的配置": "interface GigabitEthernet <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3410行被重复，冗余语句"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 2161,
+      "正确的配置": "match community COM-LIST-<*>",
+      "错误的配置": "match community COM-LIST-<*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2161行被重复，冗余语句"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 732,
+      "正确的配置": "router bgp <*>",
+      "错误的配置": "router bgp <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第732行被重复，冗余语句"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 3020,
+      "正确的配置": "address-family ipv4",
+      "错误的配置": "address-family ipv4  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3020行被重复，冗余语句"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 2248,
+      "正确的配置": "router ospf <*>",
+      "错误的配置": "router ospf <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2248行被重复，冗余语句"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 3180,
+      "正确的配置": "router ospf <*>",
+      "错误的配置": "router ospf <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3180行被重复，冗余语句"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 1568,
+      "正确的配置": "class-map match-any CMAP-<*>",
+      "错误的配置": "class-map match-any CMAP-<*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1568行被重复，冗余语句"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 1945,
+      "正确的配置": "logging host <*> transport udp port <*>",
+      "错误的配置": "logging host <*> transport udp port <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1945行被重复，冗余语句"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 3970,
+      "正确的配置": "set ip dscp af41",
+      "错误的配置": "set ip dscp af41  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3970行被重复，冗余语句"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 1723,
+      "正确的配置": "address-family ipv4",
+      "错误的配置": "address-family ipv4  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1723行被重复，冗余语句"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 2528,
+      "正确的配置": "set as-path prepend <*> <*>",
+      "错误的配置": "set as-path prepend <*> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2528行被重复，冗余语句"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 2947,
+      "正确的配置": "address-family ipv4",
+      "错误的配置": "address-family ipv4  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2947行被重复，冗余语句"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 2244,
+      "正确的配置": "exit",
+      "错误的配置": "exit  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2244行被重复，冗余语句"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 2169,
+      "正确的配置": "set weight <*>",
+      "错误的配置": "set weight <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2169行被重复，冗余语句"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 1703,
+      "正确的配置": "access-list <*> permit <*> <*>",
+      "错误的配置": "access-list <*> permit <*> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1703行被重复，冗余语句"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 3454,
+      "正确的配置": "class CMAP-<*>",
+      "错误的配置": "class CMAP-<*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3454行被重复，冗余语句"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 1221,
+      "正确的配置": "class CMAP-<*>",
+      "错误的配置": "class CMAP-<*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1221行被重复，冗余语句"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 3489,
+      "正确的配置": "class CMAP-<*>",
+      "错误的配置": "class CMAP-<*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3489行被重复，冗余语句"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 2877,
+      "正确的配置": "class CMAP-<*>",
+      "错误的配置": "class CMAP-<*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2877行被重复，冗余语句"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 3829,
+      "正确的配置": "ip dhcp snooping limit rate <*>",
+      "错误的配置": "ip dhcp snooping limit rate <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3829行被重复，冗余语句"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 2140,
+      "正确的配置": "class CMAP-<*>",
+      "错误的配置": "class CMAP-<*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2140行被重复，冗余语句"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 230,
+      "正确的配置": "auto-cost reference-bandwidth <*>",
+      "错误的配置": "auto-cost reference-bandwidth <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第230行被重复，冗余语句"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 133,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第133行被重复，冗余语句"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 2689,
+      "正确的配置": "router-id <*>",
+      "错误的配置": "router-id <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2689行被重复，冗余语句"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 4243,
+      "正确的配置": "interface GigabitEthernet <*>",
+      "错误的配置": "interface GigabitEthernet <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4243行被重复，冗余语句"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 257,
+      "正确的配置": "ip dhcp snooping trust",
+      "错误的配置": "ip dhcp snooping trust  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第257行被重复，冗余语句"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 1060,
+      "正确的配置": "mac address-table static <*> vlan <*> interface GigabitEthernet <*>",
+      "错误的配置": "mac address-table static <*> vlan <*> interface GigabitEthernet <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1060行被重复，冗余语句"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 231,
+      "正确的配置": "log-adjacency-changes detail",
+      "错误的配置": "log-adjacency-changes detail  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第231行被重复，冗余语句"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 1889,
+      "正确的配置": "passive-interface Vlan <*>",
+      "错误的配置": "passive-interface Vlan <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1889行被重复，冗余语句"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 3253,
+      "正确的配置": "network <*> <*> area <*>",
+      "错误的配置": "network <*> <*> area <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3253行被重复，冗余语句"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 1126,
+      "正确的配置": "ip community-list expanded COM-LIST-<*> permit _1023684083:.*",
+      "错误的配置": "ip community-list expanded COM-LIST-<*> permit _1023684083:.*  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1126行被重复，冗余语句"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 2020,
+      "正确的配置": "match ip dscp ef",
+      "错误的配置": "match ip dscp ef  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2020行被重复，冗余语句"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 1176,
+      "正确的配置": "deny ip <*> <*> any",
+      "错误的配置": "deny ip <*> <*> any  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1176行被重复，冗余语句"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 3594,
+      "正确的配置": "exit",
+      "错误的配置": "exit  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3594行被重复，冗余语句"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 2052,
+      "正确的配置": "neighbor <*> prefix-list OUT-FILTER-<*> out",
+      "错误的配置": "neighbor <*> prefix-list OUT-FILTER-<*> out  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2052行被重复，冗余语句"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 3080,
+      "正确的配置": "snmp-server enable traps bgp",
+      "错误的配置": "snmp-server enable traps bgp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3080行被重复，冗余语句"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 1685,
+      "正确的配置": "network <*> <*> area <*>",
+      "错误的配置": "network <*> <*> area <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1685行被重复，冗余语句"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 2119,
+      "正确的配置": "switchport port-security",
+      "错误的配置": "switchport port-security  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2119行被重复，冗余语句"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 309,
+      "正确的配置": "policy-map PMAP-MARKING-<*>",
+      "错误的配置": "policy-map PMAP-MARKING-<*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第309行被重复，冗余语句"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 4045,
+      "正确的配置": "exit",
+      "错误的配置": "exit  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4045行被重复，冗余语句"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 993,
+      "正确的配置": "policy-map PMAP-MARKING-<*>",
+      "错误的配置": "policy-map PMAP-MARKING-<*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第993行被重复，冗余语句"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 2303,
+      "正确的配置": "permit tcp <*> <*> any eq <*>",
+      "错误的配置": "permit tcp <*> <*> any eq <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2303行被重复，冗余语句"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 3450,
+      "正确的配置": "exit",
+      "错误的配置": "exit  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3450行被重复，冗余语句"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 4103,
+      "正确的配置": "access-list <*> permit host <*>",
+      "错误的配置": "access-list <*> permit host <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4103行被重复，冗余语句"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 2160,
+      "正确的配置": "route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> permit <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2160行被重复，冗余语句"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 3172,
+      "正确的配置": "ip pim sparse-mode",
+      "错误的配置": "ip pim sparse-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3172行被重复，冗余语句"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 1922,
+      "正确的配置": "set community <*>:<*> additive",
+      "错误的配置": "set community <*>:<*> additive  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1922行被重复，冗余语句"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 3492,
+      "正确的配置": "set ip dscp af41",
+      "错误的配置": "set ip dscp af41  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3492行被重复，冗余语句"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 3114,
+      "正确的配置": "snmp-server group SecureGroup-<*> v3 priv",
+      "错误的配置": "snmp-server group SecureGroup-<*> v3 priv  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3114行被重复，冗余语句"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 687,
+      "正确的配置": "router-id <*>",
+      "错误的配置": "router-id <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第687行被重复，冗余语句"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 1635,
+      "正确的配置": "deny ip <*> <*> any",
+      "错误的配置": "deny ip <*> <*> any  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1635行被重复，冗余语句"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 3414,
+      "正确的配置": "switchport port-security violation shutdown",
+      "错误的配置": "switchport port-security violation shutdown  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3414行被重复，冗余语句"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 3418,
+      "正确的配置": "no cdp enable",
+      "错误的配置": "no cdp enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3418行被重复，冗余语句"
+    }
+  ]
+}

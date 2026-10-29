@@ -1,0 +1,5391 @@
+{
+  "vendor": "hw",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "PARAM_TYPE_MISMATCH",
+  "错误类型别名": [
+    "PARAM_TYPE_MISMATCH"
+  ],
+  "错误类型描述": "参数类型不匹配",
+  "实际模板占比": "38.91%",
+  "数据集调整占比": "42.00%",
+  "错误数量": 672,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 29017,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis enable 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 4443,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 18239,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::3",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 3885,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis enable 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 27225,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 31368,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::6 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 31029,
+      "正确的配置": "network <IPV4> <IPV4>",
+      "错误的配置": "network 2001:db8::7 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 7737,
+      "正确的配置": "path-mtu 9000",
+      "错误的配置": "path-mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 15690,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 10.255.8.1 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 25306,
+      "正确的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 278,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 19296,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::12",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 30372,
+      "正确的配置": "bfd all-interfaces min-tx-interval 500 min-rx-interval 500 detect-multiplier 4",
+      "错误的配置": "bfd all-interfaces min-tx-interval -1 min-rx-interval 500 detect-multiplier 4",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 32967,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::14",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 13209,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> permit source 2001:db8::15 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 15510,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::16 <*> greater-equal <*> less-equal <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 18748,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 9946,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 9775,
+      "正确的配置": "peer <*> tracking delay 30",
+      "错误的配置": "peer 999999 tracking delay 30",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 11346,
+      "正确的配置": "trap-threshold crc-error high-threshold 100 low-threshold 10 interval-second 10",
+      "错误的配置": "trap-threshold crc-error high-threshold -1 low-threshold 10 interval-second 10",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 5387,
+      "正确的配置": "remark dscp 5",
+      "错误的配置": "remark dscp 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 42437,
+      "正确的配置": "port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 7962,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 24085,
+      "正确的配置": "ip ipv6-prefix <*> index <*> permit <IPV6> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ipv6-prefix <*> index <*> permit 10.255.23.1 <*> greater-equal <*> less-equal <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 12506,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 10.255.24.1 end-op",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 5765,
+      "正确的配置": "ipv6 mtu 9178",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 15933,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 14461,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::28",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 22196,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::29",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 7114,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 24995,
+      "正确的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 27133,
+      "正确的配置": "peer <*> tracking delay 30",
+      "错误的配置": "peer 999999 tracking delay 30",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 34866,
+      "正确的配置": "timer spf 1 50 50",
+      "错误的配置": "timer spf -1 50 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 32608,
+      "正确的配置": "nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 31453,
+      "正确的配置": "ti-lfa level-2",
+      "错误的配置": "ti-lfa level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 29988,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::36 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 7691,
+      "正确的配置": "interface <INTERFACE> mode l2",
+      "错误的配置": "interface 999999 mode l2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 29882,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::38 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 28162,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis enable 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 39333,
+      "正确的配置": "ospf 701 router-id <IPV4> vpn-instance CTVPN-CTC-NMAN",
+      "错误的配置": "ospf 701 router-id 2001:db8::40 vpn-instance CTVPN-CTC-NMAN",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 29769,
+      "正确的配置": "mtu 9178",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 12556,
+      "正确的配置": "ti-lfa level-2",
+      "错误的配置": "ti-lfa level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 33113,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::43 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 31275,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::44 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 38010,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::45",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 17803,
+      "正确的配置": "ip route-static <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static 2001:db8::46 <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 29596,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::47",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 42536,
+      "正确的配置": "timer lsp-max-age 65535",
+      "错误的配置": "timer lsp-max-age -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 28989,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 42397,
+      "正确的配置": "peer-ipv6 <IPV6> source-ipv6 <IPV6>",
+      "错误的配置": "peer-ipv6 10.255.49.1 source-ipv6 <IPV6>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 5779,
+      "正确的配置": "min-rx-interval 100",
+      "错误的配置": "min-rx-interval -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 26127,
+      "正确的配置": "ip route-static bfd <*> <IPV4> local-address <IPV4> min-tx-interval 100 min-rx-interval 100",
+      "错误的配置": "ip route-static bfd <*> 2001:db8::52 local-address <IPV4> min-tx-interval 100 min-rx-interval 100",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 14905,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::53 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 8262,
+      "正确的配置": "user-interface vty 0 <*>",
+      "错误的配置": "user-interface vty 0 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 11796,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 12521,
+      "正确的配置": "binding-sid <IPV6>",
+      "错误的配置": "binding-sid 10.255.55.1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 15027,
+      "正确的配置": "is-level level-2",
+      "错误的配置": "is-level level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 17387,
+      "正确的配置": "nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 41828,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix 10.255.58.1 <*> static 12 args 16",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 41839,
+      "正确的配置": "protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误的配置": "protocol-tunnel vni <*> source 2001:db8::60 destination <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 18498,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::61",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 9980,
+      "正确的配置": "isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 25122,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::63 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 42417,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 4700,
+      "正确的配置": "idle-timeout 0 0",
+      "错误的配置": "idle-timeout -1 0",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 35240,
+      "正确的配置": "peer <IPV4> sa-cache-maximum 1000000000",
+      "错误的配置": "peer 2001:db8::66 sa-cache-maximum 1000000000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 24208,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::67 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 38002,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::68 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 4621,
+      "正确的配置": "ipv6 route-static <IPV6> <*> NULL0 preference 180 tag 901 description <DESCRIPTION>",
+      "错误的配置": "ipv6 route-static 10.255.68.1 <*> NULL0 preference 180 tag 901 description <DESCRIPTION>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 31370,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::70 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 21390,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 13152,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::72 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 15010,
+      "正确的配置": "ti-lfa level-2",
+      "错误的配置": "ti-lfa level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 20156,
+      "正确的配置": "info-center source default channel 2 log level warning",
+      "错误的配置": "info-center source default channel 999999 log level warning",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 15752,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 888,
+      "正确的配置": "area <IPV4>",
+      "错误的配置": "area 2001:db8::76",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 15991,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 14042,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::78 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 19774,
+      "正确的配置": "network <IPV4> <IPV4>",
+      "错误的配置": "network 2001:db8::79 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 41354,
+      "正确的配置": "area <IPV4>",
+      "错误的配置": "area 2001:db8::80",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 38288,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 866,
+      "正确的配置": "ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30",
+      "错误的配置": "ipv6 bfd all-interfaces min-tx-interval -1 min-rx-interval 30",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 20539,
+      "正确的配置": "protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误的配置": "protocol-tunnel vni <*> source 2001:db8::83 destination <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 5863,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::84",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 5490,
+      "正确的配置": "nexthop recursive-lookup non-critical-event delay 5",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 33775,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 33126,
+      "正确的配置": "bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 8161,
+      "正确的配置": "priority 90",
+      "错误的配置": "priority 999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 37462,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 10.255.88.1 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 16240,
+      "正确的配置": "traffic-eng level-2",
+      "错误的配置": "traffic-eng level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 11799,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 27003,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::92",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 24363,
+      "正确的配置": "bfd all-interfaces min-tx-interval 30 min-rx-interval 30",
+      "错误的配置": "bfd all-interfaces min-tx-interval -1 min-rx-interval 30",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 1251,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix 10.255.93.1 <*> static 12 args 16",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 10019,
+      "正确的配置": "rule <*> description <DESCRIPTION>",
+      "错误的配置": "rule 999999 description <DESCRIPTION>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 36388,
+      "正确的配置": "peer <*> tracking delay 30",
+      "错误的配置": "peer 999999 tracking delay 30",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 1774,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::97 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 19859,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::98",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 39293,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 10.255.98.1 end-op",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 24741,
+      "正确的配置": "isis timer ldp-sync hold-max-cost 60",
+      "错误的配置": "isis timer ldp-sync hold-max-cost 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 15623,
+      "正确的配置": "test-session <*> sender-ip <IPV4> reflector-ip <IPV4> sender-port <*> reflector-port 33435 padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ip 2001:db8::101 reflector-ip <IPV4> sender-port <*> reflector-port 33435 padding 44 description <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 25981,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::102",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 26111,
+      "正确的配置": "te bandwidth dynamic bc0 100",
+      "错误的配置": "te bandwidth dynamic bc0 -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 171,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 10.255.103.1 end-op",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 30042,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::105 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 7835,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::106",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 37231,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::107 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 15553,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 15671,
+      "正确的配置": "test-session <*> bind interface <INTERFACE>",
+      "错误的配置": "test-session 999999 bind interface <INTERFACE>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 37533,
+      "正确的配置": "network <IPV4> <IPV4>",
+      "错误的配置": "network 2001:db8::110 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 39038,
+      "正确的配置": "es track bfd <DEVICE>",
+      "错误的配置": "es track bfd 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 27306,
+      "正确的配置": "lsa-originate-interval intelligent-timer 500 50 100",
+      "错误的配置": "lsa-originate-interval intelligent-timer -1 50 100",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 19244,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::113 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 23935,
+      "正确的配置": "import-route ospf 705 route-policy rpFromospf705",
+      "错误的配置": "import-route ospf 70000 route-policy rpFromospf705",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 26908,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 10.255.114.1 end-op",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 27235,
+      "正确的配置": "rule <*> description <DESCRIPTION>",
+      "错误的配置": "rule 999999 description <DESCRIPTION>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 42435,
+      "正确的配置": "port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 39414,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::118",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 988,
+      "正确的配置": "te bandwidth dynamic bc0 100",
+      "错误的配置": "te bandwidth dynamic bc0 -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 38796,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> permit source 2001:db8::120 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 28239,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 15668,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 10.255.121.1 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 27622,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 7963,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::124",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 34431,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::125 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 38880,
+      "正确的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 33048,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> permit source 2001:db8::127 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 15701,
+      "正确的配置": "test-session <*> local-ip <IPV4> remote-ip <IPV4> local-port <*> remote-port <*> description <*>",
+      "错误的配置": "test-session <*> local-ip 2001:db8::128 remote-ip <IPV4> local-port <*> remote-port <*> description <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 6984,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::129",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 39321,
+      "正确的配置": "import-route ospf 703 route-policy <*>",
+      "错误的配置": "import-route ospf 703 route-policy 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 18030,
+      "正确的配置": "ip route-static bfd <*> <IPV4> min-tx-interval 100 min-rx-interval 100",
+      "错误的配置": "ip route-static bfd <*> 2001:db8::131 min-tx-interval 100 min-rx-interval 100",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 17812,
+      "正确的配置": "min-rx-interval 100",
+      "错误的配置": "min-rx-interval -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 30375,
+      "正确的配置": "lsa-arrival-interval intelligent-timer 50 50 50",
+      "错误的配置": "lsa-arrival-interval intelligent-timer -1 50 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 29977,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::134 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 29640,
+      "正确的配置": "test-session <*> bind interface <INTERFACE>",
+      "错误的配置": "test-session 999999 bind interface <INTERFACE>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 21134,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*>",
+      "错误的配置": "ip route-static vpn-instance <*> 2001:db8::136 <IPV4> <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 31289,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::137 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 28969,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::138",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 11841,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::139",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 5391,
+      "正确的配置": "ipv6 route-static bfd <*> <IPV6> local-address <IPV6> min-tx-interval 100 min-rx-interval 100",
+      "错误的配置": "ipv6 route-static bfd <*> 10.255.139.1 local-address <IPV6> min-tx-interval 100 min-rx-interval 100",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 23256,
+      "正确的配置": "lsa-originate-interval intelligent-timer 500 50 100",
+      "错误的配置": "lsa-originate-interval intelligent-timer -1 50 100",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 34559,
+      "正确的配置": "port-queue af1 wfq weight 25 outbound",
+      "错误的配置": "port-queue af1 wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 18193,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::143 <*> greater-equal <*> less-equal <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 4118,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 25652,
+      "正确的配置": "acl 2577 inbound",
+      "错误的配置": "acl 999999 inbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 39440,
+      "正确的配置": "port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 32642,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 41397,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::148 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 11404,
+      "正确的配置": "isis timer ldp-sync hold-max-cost 60",
+      "错误的配置": "isis timer ldp-sync hold-max-cost 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 16154,
+      "正确的配置": "mtu 9178",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 32550,
+      "正确的配置": "isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 41624,
+      "正确的配置": "ssh client peer <IPV4> assign ecc-key <IPV4>",
+      "错误的配置": "ssh client peer 2001:db8::152 assign ecc-key <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 37965,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::153 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 25754,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::154 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 11234,
+      "正确的配置": "service-location 2",
+      "错误的配置": "service-location 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 30843,
+      "正确的配置": "active <*> slot <*> card 0 port <*>",
+      "错误的配置": "active 999999 slot <*> card 0 port <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 37826,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::157 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 3074,
+      "正确的配置": "network <IPV6> <*>",
+      "错误的配置": "network 10.255.157.1 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 16052,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 18599,
+      "正确的配置": "ssh server acl 2577",
+      "错误的配置": "ssh server acl 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 41675,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 15033,
+      "正确的配置": "avoid-microloop frr-protected rib-update-delay 5000",
+      "错误的配置": "avoid-microloop frr-protected rib-update-delay 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 8418,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::163 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 164,
+      "错误行号": 27652,
+      "正确的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 165,
+      "错误行号": 21164,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 166,
+      "错误行号": 23265,
+      "正确的配置": "radius-server authentication <IPV4> 1812 weight 50",
+      "错误的配置": "radius-server authentication 2001:db8::166 1812 weight 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 167,
+      "错误行号": 22975,
+      "正确的配置": "port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 168,
+      "错误行号": 42405,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 26135,
+      "正确的配置": "ip route-static <IPV4> <IPV4> NULL0 preference 180 tag 901 description <DESCRIPTION>",
+      "错误的配置": "ip route-static 2001:db8::169 <IPV4> NULL0 preference 180 tag 901 description <DESCRIPTION>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 39085,
+      "正确的配置": "service-location 6",
+      "错误的配置": "service-location 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 171,
+      "错误行号": 11927,
+      "正确的配置": "ipv6 avoid-microloop segment-routing rib-update-delay 10000",
+      "错误的配置": "ipv6 avoid-microloop segment-routing rib-update-delay 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 38291,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 173,
+      "错误行号": 3919,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::173 <*> greater-equal <*> less-equal <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 35026,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::174 <*> greater-equal <*> less-equal <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 27158,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 18499,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> permit source 2001:db8::176 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 177,
+      "错误行号": 24246,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::177 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 10081,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::178 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 179,
+      "错误行号": 38412,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::179",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 180,
+      "错误行号": 21363,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 181,
+      "错误行号": 34931,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::181 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 182,
+      "错误行号": 25494,
+      "正确的配置": "ipv6 route-static vpn-instance <*> <IPV6> 128 <*> <IPV6> bfd enable description <*>",
+      "错误的配置": "ipv6 route-static vpn-instance <*> 10.255.181.1 128 <*> <IPV6> bfd enable description <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 183,
+      "错误行号": 5693,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 184,
+      "错误行号": 760,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::184 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 185,
+      "错误行号": 10222,
+      "正确的配置": "port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queue be wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 22296,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::186 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 187,
+      "错误行号": 37565,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 188,
+      "错误行号": 42430,
+      "正确的配置": "port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queue be wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 189,
+      "错误行号": 15135,
+      "正确的配置": "preference 130 255 255",
+      "错误的配置": "preference 999999 255 255",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 11125,
+      "正确的配置": "port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queue be wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 191,
+      "错误行号": 34430,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::191",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 192,
+      "错误行号": 34325,
+      "正确的配置": "bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 193,
+      "错误行号": 22320,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::193 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 2743,
+      "正确的配置": "te ipv6-router-id <IPV6>",
+      "错误的配置": "te ipv6-router-id 10.255.193.1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 195,
+      "错误行号": 34314,
+      "正确的配置": "ip route-static <IPV4> <IPV4> <IPV4> track bfd-session <*>",
+      "错误的配置": "ip route-static 2001:db8::195 <IPV4> <IPV4> track bfd-session <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 8149,
+      "正确的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue af4 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 31131,
+      "正确的配置": "isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 23020,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 10.255.197.1 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 25277,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 200,
+      "错误行号": 11114,
+      "正确的配置": "network <IPV4> 20 subnet length 26 lock",
+      "错误的配置": "network 2001:db8::200 20 subnet length 26 lock",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 201,
+      "错误行号": 26029,
+      "正确的配置": "nat reverse-session-limit total 4096",
+      "错误的配置": "nat reverse-session-limit total 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 202,
+      "错误行号": 5092,
+      "正确的配置": "peer <IPV6> group pgToRR-v6",
+      "错误的配置": "peer 10.255.201.1 group pgToRR-v6",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 18004,
+      "正确的配置": "interface <INTERFACE> mode l2",
+      "错误的配置": "interface 999999 mode l2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 37637,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 28866,
+      "正确的配置": "port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queue be wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 206,
+      "错误行号": 34905,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::206",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 207,
+      "错误行号": 18273,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 29591,
+      "正确的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 18790,
+      "正确的配置": "set save-configuration interval 1440 cpu-limit 60",
+      "错误的配置": "set save-configuration interval -1 cpu-limit 60",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 210,
+      "错误行号": 32898,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 211,
+      "错误行号": 29690,
+      "正确的配置": "idle-timeout 5 0",
+      "错误的配置": "idle-timeout -1 0",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 22259,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 24483,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 214,
+      "错误行号": 18479,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 37569,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 3791,
+      "正确的配置": "port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 217,
+      "错误行号": 21201,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::217 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 30863,
+      "正确的配置": "area <IPV4>",
+      "错误的配置": "area 2001:db8::218",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 4112,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::219",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 23999,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 38717,
+      "正确的配置": "nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 222,
+      "错误行号": 37818,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::222 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 30859,
+      "正确的配置": "spf-schedule-interval intelligent-timer 50 50 50",
+      "错误的配置": "spf-schedule-interval intelligent-timer -1 50 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 24374,
+      "正确的配置": "timer lsp-refresh 32768",
+      "错误的配置": "timer lsp-refresh -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 225,
+      "错误行号": 16543,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::225",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 226,
+      "错误行号": 27113,
+      "正确的配置": "authorization-cmd 5 local hwtacacs",
+      "错误的配置": "authorization-cmd 999999 local hwtacacs",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 15123,
+      "正确的配置": "info-center loghost <IPV4>",
+      "错误的配置": "info-center loghost 2001:db8::227",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 37798,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::228",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 2902,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::229",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 8413,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::230 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 231,
+      "错误行号": 22895,
+      "正确的配置": "user-max-session 4",
+      "错误的配置": "user-max-session 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 232,
+      "错误行号": 11736,
+      "正确的配置": "protocol sftp ip-address <IPV4>",
+      "错误的配置": "protocol sftp ip-address 2001:db8::232",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 18277,
+      "正确的配置": "isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 234,
+      "错误行号": 23080,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::234",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 22785,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 17970,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 18357,
+      "正确的配置": "spf-schedule-interval intelligent-timer 50 50 50",
+      "错误的配置": "spf-schedule-interval intelligent-timer -1 50 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 32832,
+      "正确的配置": "ipv6 route-static vpn-instance <*> <IPV6> 128 <*> <IPV6> bfd enable description <*>",
+      "错误的配置": "ipv6 route-static vpn-instance <*> 10.255.237.1 128 <*> <IPV6> bfd enable description <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 239,
+      "错误行号": 25848,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::239 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 240,
+      "错误行号": 18294,
+      "正确的配置": "acl 2577 inbound",
+      "错误的配置": "acl 999999 inbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 241,
+      "错误行号": 12062,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::241",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 242,
+      "错误行号": 16149,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::242",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 38803,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::243",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 42261,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::244",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 31629,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 39089,
+      "正确的配置": "preference 20 200 200",
+      "错误的配置": "preference 999999 200 200",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 247,
+      "错误行号": 40558,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 4583,
+      "正确的配置": "loop-free-alternate level-1",
+      "错误的配置": "loop-free-alternate level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 249,
+      "错误行号": 10097,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 12290,
+      "正确的配置": "ospf dr-priority 100",
+      "错误的配置": "ospf dr-priority 999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 33177,
+      "正确的配置": "lease 0 <*> <*>",
+      "错误的配置": "lease 0 999999 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 24248,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::252 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 253,
+      "错误行号": 24417,
+      "正确的配置": "port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queue be wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 254,
+      "错误行号": 15001,
+      "正确的配置": "ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30 frr-binding",
+      "错误的配置": "ipv6 bfd all-interfaces min-tx-interval -1 min-rx-interval 30 frr-binding",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 255,
+      "错误行号": 19438,
+      "正确的配置": "bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 256,
+      "错误行号": 29886,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::256 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 257,
+      "错误行号": 30998,
+      "正确的配置": "port-queue af3 wfq weight 30 outbound",
+      "错误的配置": "port-queue af3 wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 258,
+      "错误行号": 21373,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::258 <*> greater-equal <*> less-equal <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 259,
+      "错误行号": 38884,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::259",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 260,
+      "错误行号": 25697,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::260",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 261,
+      "错误行号": 6844,
+      "正确的配置": "private-4-byte-as enable",
+      "错误的配置": "private-0-byte-as enable",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 262,
+      "错误行号": 3456,
+      "正确的配置": "bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 263,
+      "错误行号": 16855,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::263",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 264,
+      "错误行号": 445,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::264",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 265,
+      "错误行号": 18337,
+      "正确的配置": "ti-lfa level-2",
+      "错误的配置": "ti-lfa level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 266,
+      "错误行号": 28347,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 267,
+      "错误行号": 4516,
+      "正确的配置": "ipv6 preference 105",
+      "错误的配置": "ipv6 preference 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 268,
+      "错误行号": 5827,
+      "正确的配置": "ipv6 avoid-microloop segment-routing rib-update-delay 10000",
+      "错误的配置": "ipv6 avoid-microloop segment-routing rib-update-delay 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 269,
+      "错误行号": 34925,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 270,
+      "错误行号": 33083,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::270 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 271,
+      "错误行号": 26924,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix 10.255.20.1 <*> static 12 args 16",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 272,
+      "错误行号": 22302,
+      "正确的配置": "port-queue af3 wfq weight 30 outbound",
+      "错误的配置": "port-queue af3 wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 273,
+      "错误行号": 37888,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::273 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 274,
+      "错误行号": 42433,
+      "正确的配置": "port-queue af3 wfq weight 25 outbound",
+      "错误的配置": "port-queue af3 wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 275,
+      "错误行号": 12648,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::275 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 276,
+      "错误行号": 1340,
+      "正确的配置": "test-session <*> bind interface <INTERFACE>",
+      "错误的配置": "test-session 999999 bind interface <INTERFACE>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 277,
+      "错误行号": 29846,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::277 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 278,
+      "错误行号": 21466,
+      "正确的配置": "nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 279,
+      "错误行号": 29568,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 280,
+      "错误行号": 33024,
+      "正确的配置": "ti-lfa level-2",
+      "错误的配置": "ti-lfa level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 281,
+      "错误行号": 36573,
+      "正确的配置": "ip route-static <IPV4> <IPV4> NULL0 preference 180 description <DESCRIPTION>",
+      "错误的配置": "ip route-static 2001:db8::281 <IPV4> NULL0 preference 180 description <DESCRIPTION>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 282,
+      "错误行号": 39246,
+      "正确的配置": "domain identifier <IPV4>",
+      "错误的配置": "domain identifier 2001:db8::282",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 283,
+      "错误行号": 31575,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::283 <*> greater-equal <*> less-equal <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 284,
+      "错误行号": 36563,
+      "正确的配置": "ip route-static <IPV4> <IPV4> NULL0 preference 180 description <DESCRIPTION>",
+      "错误的配置": "ip route-static 2001:db8::284 <IPV4> NULL0 preference 180 description <DESCRIPTION>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 285,
+      "错误行号": 5946,
+      "正确的配置": "router-id <IPV4>",
+      "错误的配置": "router-id 2001:db8::285",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 286,
+      "错误行号": 37991,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::286 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 287,
+      "错误行号": 11582,
+      "正确的配置": "peer <*> tracking delay 30",
+      "错误的配置": "peer 999999 tracking delay 30",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 288,
+      "错误行号": 15512,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::288 <*> greater-equal <*> less-equal <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 289,
+      "错误行号": 37337,
+      "正确的配置": "preference 130 255 255",
+      "错误的配置": "preference 999999 255 255",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 290,
+      "错误行号": 36575,
+      "正确的配置": "ip route-static <IPV4> <IPV4> NULL0 preference 180 description <DESCRIPTION>",
+      "错误的配置": "ip route-static 2001:db8::290 <IPV4> NULL0 preference 180 description <DESCRIPTION>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 291,
+      "错误行号": 32963,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::291",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 292,
+      "错误行号": 5596,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::292",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 293,
+      "错误行号": 14446,
+      "正确的配置": "static-user <IPV4> <IPV4> gateway <IPV4> vpn-instance 64660100 interface <INTERFACE> up-backup-interface <INTERFACE> vlan <*> domain-name nms detect",
+      "错误的配置": "static-user 2001:db8::293 <IPV4> gateway <IPV4> vpn-instance 64660100 interface <INTERFACE> up-backup-interface <INTERFACE> vlan <*> domain-name nms detect",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 294,
+      "错误行号": 26937,
+      "正确的配置": "srv6-te policy <*> endpoint <IPV6> color <*>",
+      "错误的配置": "srv6-te policy <*> endpoint 10.255.43.1 color <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 295,
+      "错误行号": 16127,
+      "正确的配置": "hwtacacs-server authentication <IPV4> vpn-instance CTVPN193-JS secondary",
+      "错误的配置": "hwtacacs-server authentication 2001:db8::295 vpn-instance CTVPN193-JS secondary",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 296,
+      "错误行号": 38348,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::296 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 297,
+      "错误行号": 35010,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::297 <*> greater-equal <*> less-equal <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 298,
+      "错误行号": 13778,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 299,
+      "错误行号": 8735,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 300,
+      "错误行号": 17447,
+      "正确的配置": "isis timer ldp-sync hold-max-cost 60",
+      "错误的配置": "isis timer ldp-sync hold-max-cost 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 301,
+      "错误行号": 894,
+      "正确的配置": "ssh client peer <IPV4> assign ecc-key <IPV4>",
+      "错误的配置": "ssh client peer 2001:db8::301 assign ecc-key <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 302,
+      "错误行号": 20191,
+      "正确的配置": "ospf 704 router-id <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误的配置": "ospf 704 router-id 2001:db8::302 vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 303,
+      "错误行号": 970,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::303",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 304,
+      "错误行号": 34911,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::304 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 305,
+      "错误行号": 11922,
+      "正确的配置": "ipv6 metric-delay advertisement enable level-2",
+      "错误的配置": "ipv6 metric-delay advertisement enable level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 306,
+      "错误行号": 8012,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 307,
+      "错误行号": 20540,
+      "正确的配置": "protocol-tunnel track nqa counter 8 recovery-count 1 interval 1 timeout 1 udp-port 65000 plr 5 10",
+      "错误的配置": "protocol-tunnel track nqa counter 70000 recovery-count 1 interval 1 timeout 1 udp-port 65000 plr 5 10",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 308,
+      "错误行号": 32688,
+      "正确的配置": "ssh client peer <IPV4> assign ecc-key <IPV4>",
+      "错误的配置": "ssh client peer 2001:db8::308 assign ecc-key <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 309,
+      "错误行号": 25838,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::309 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 310,
+      "错误行号": 38962,
+      "正确的配置": "timer es-recovery 90",
+      "错误的配置": "timer es-recovery -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 311,
+      "错误行号": 30882,
+      "正确的配置": "echo-timeout count 13",
+      "错误的配置": "echo-timeout count -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 312,
+      "错误行号": 27639,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::312",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 313,
+      "错误行号": 8347,
+      "正确的配置": "rule <*> description <DESCRIPTION>",
+      "错误的配置": "rule 999999 description <DESCRIPTION>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 314,
+      "错误行号": 19220,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::314 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 315,
+      "错误行号": 32700,
+      "正确的配置": "is-name <DEVICE>",
+      "错误的配置": "is-name 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 316,
+      "错误行号": 24253,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::316 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 317,
+      "错误行号": 30005,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::317 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 318,
+      "错误行号": 27304,
+      "正确的配置": "bfd all-interfaces min-tx-interval 500 min-rx-interval 500 detect-multiplier 4",
+      "错误的配置": "bfd all-interfaces min-tx-interval -1 min-rx-interval 500 detect-multiplier 4",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 319,
+      "错误行号": 3092,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::319",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 320,
+      "错误行号": 30020,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::320 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 321,
+      "错误行号": 30171,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 322,
+      "错误行号": 1636,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::322 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 323,
+      "错误行号": 31342,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::323 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 324,
+      "错误行号": 29156,
+      "正确的配置": "ospf 703 router-id <IPV4>",
+      "错误的配置": "ospf 703 router-id 2001:db8::324",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 325,
+      "错误行号": 38698,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 326,
+      "错误行号": 24205,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 327,
+      "错误行号": 31287,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::327 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 328,
+      "错误行号": 42508,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::328",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 329,
+      "错误行号": 11428,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::329",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 330,
+      "错误行号": 29117,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::330 <*> greater-equal <*> less-equal <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 331,
+      "错误行号": 34592,
+      "正确的配置": "preference 20 200 200",
+      "错误的配置": "preference 999999 200 200",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 332,
+      "错误行号": 19375,
+      "正确的配置": "acl 2577 inbound",
+      "错误的配置": "acl 999999 inbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 333,
+      "错误行号": 40658,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::333 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 334,
+      "错误行号": 19374,
+      "正确的配置": "user-interface vty 0 <*>",
+      "错误的配置": "user-interface vty 0 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 335,
+      "错误行号": 31757,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 336,
+      "错误行号": 22235,
+      "正确的配置": "preference 130 255 255",
+      "错误的配置": "preference 999999 255 255",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 337,
+      "错误行号": 25844,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::337 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 338,
+      "错误行号": 884,
+      "正确的配置": "bfd all-interfaces min-tx-interval 500 min-rx-interval 500 detect-multiplier 4",
+      "错误的配置": "bfd all-interfaces min-tx-interval -1 min-rx-interval 500 detect-multiplier 4",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 339,
+      "错误行号": 31380,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::339 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 340,
+      "错误行号": 15885,
+      "正确的配置": "mpls mtu 9000",
+      "错误的配置": "mpls mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 341,
+      "错误行号": 16392,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::341 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 342,
+      "错误行号": 15705,
+      "正确的配置": "test-session <*> local-ip <IPV4> remote-ip <IPV4> local-port 6402 remote-port 45700",
+      "错误的配置": "test-session <*> local-ip 2001:db8::342 remote-ip <IPV4> local-port 6402 remote-port 45700",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 343,
+      "错误行号": 37525,
+      "正确的配置": "test-session <*> local-ip <IPV4> remote-ip <IPV4> local-port <*> remote-port <*> description <*>",
+      "错误的配置": "test-session <*> local-ip 2001:db8::343 remote-ip <IPV4> local-port <*> remote-port <*> description <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 344,
+      "错误行号": 8345,
+      "正确的配置": "rule <*> description <DESCRIPTION>",
+      "错误的配置": "rule 999999 description <DESCRIPTION>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 345,
+      "错误行号": 26020,
+      "正确的配置": "ssh server acl 2577",
+      "错误的配置": "ssh server acl 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 346,
+      "错误行号": 31319,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::346 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 347,
+      "错误行号": 38759,
+      "正确的配置": "deploy weight 100",
+      "错误的配置": "deploy weight 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 348,
+      "错误行号": 25147,
+      "正确的配置": "peer <*> tracking delay 30",
+      "错误的配置": "peer 999999 tracking delay 30",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 349,
+      "错误行号": 39238,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::349 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 350,
+      "错误行号": 41197,
+      "正确的配置": "peer <*> tracking delay 30",
+      "错误的配置": "peer 999999 tracking delay 30",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 351,
+      "错误行号": 32727,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::351 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 352,
+      "错误行号": 37878,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::352 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 353,
+      "错误行号": 16078,
+      "正确的配置": "ip-warning-threshold 100",
+      "错误的配置": "ip-warning-threshold -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 354,
+      "错误行号": 29870,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::354 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 355,
+      "错误行号": 11313,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 356,
+      "错误行号": 25841,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::356 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 357,
+      "错误行号": 4826,
+      "正确的配置": "bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 358,
+      "错误行号": 16041,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 359,
+      "错误行号": 32572,
+      "正确的配置": "area <IPV4>",
+      "错误的配置": "area 2001:db8::359",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 360,
+      "错误行号": 34564,
+      "正确的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 361,
+      "错误行号": 394,
+      "正确的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 362,
+      "错误行号": 13765,
+      "正确的配置": "network <IPV4> <*> subnet length <*>",
+      "错误的配置": "network 2001:db8::362 <*> subnet length <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 363,
+      "错误行号": 15620,
+      "正确的配置": "test-session <*> sender-ip <IPV4> reflector-ip <IPV4> sender-port <*> reflector-port 33435 padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ip 2001:db8::363 reflector-ip <IPV4> sender-port <*> reflector-port 33435 padding 44 description <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 364,
+      "错误行号": 32554,
+      "正确的配置": "isis timer ldp-sync hold-max-cost 60",
+      "错误的配置": "isis timer ldp-sync hold-max-cost 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 365,
+      "错误行号": 30396,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis enable 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 366,
+      "错误行号": 11668,
+      "正确的配置": "peer <*> tracking delay 30",
+      "错误的配置": "peer 999999 tracking delay 30",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 367,
+      "错误行号": 19805,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::367",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 368,
+      "错误行号": 32764,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::368 <*> greater-equal <*> less-equal <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 369,
+      "错误行号": 8029,
+      "正确的配置": "timer es-recovery 90",
+      "错误的配置": "timer es-recovery -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 370,
+      "错误行号": 15232,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::370 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 371,
+      "错误行号": 14943,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::371",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 372,
+      "错误行号": 2296,
+      "正确的配置": "mpls mtu 9000",
+      "错误的配置": "mpls mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 373,
+      "错误行号": 21258,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::373 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 374,
+      "错误行号": 7793,
+      "正确的配置": "test-session <*> local-ip <IPV4> remote-ip <IPV4> local-port 6402 remote-port 45700",
+      "错误的配置": "test-session <*> local-ip 2001:db8::374 remote-ip <IPV4> local-port 6402 remote-port 45700",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 375,
+      "错误行号": 4741,
+      "正确的配置": "encapsulation source-address <IPV6>",
+      "错误的配置": "encapsulation source-address 10.255.124.1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 376,
+      "错误行号": 38057,
+      "正确的配置": "port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 377,
+      "错误行号": 38151,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 378,
+      "错误行号": 32692,
+      "正确的配置": "isis 800",
+      "错误的配置": "isis 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 379,
+      "错误行号": 32970,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::379 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 380,
+      "错误行号": 17808,
+      "正确的配置": "bfd <*> bind peer-ip <IPV4> source-ip <IPV4>",
+      "错误的配置": "bfd <*> bind peer-ip 2001:db8::380 source-ip <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 381,
+      "错误行号": 35303,
+      "正确的配置": "timer lsp-max-age 65535",
+      "错误的配置": "timer lsp-max-age -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 382,
+      "错误行号": 23107,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 383,
+      "错误行号": 19913,
+      "正确的配置": "ipv6 mtu 1600",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 384,
+      "错误行号": 25796,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::384 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 385,
+      "错误行号": 13666,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 386,
+      "错误行号": 29908,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::386 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 387,
+      "错误行号": 1801,
+      "正确的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 388,
+      "错误行号": 28273,
+      "正确的配置": "router-id <IPV4>",
+      "错误的配置": "router-id 2001:db8::388",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 389,
+      "错误行号": 1761,
+      "正确的配置": "te bandwidth dynamic bc0 100",
+      "错误的配置": "te bandwidth dynamic bc0 -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 390,
+      "错误行号": 13242,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::390 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 391,
+      "错误行号": 22976,
+      "正确的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 392,
+      "错误行号": 29812,
+      "正确的配置": "port-queue af3 wfq weight 30 outbound",
+      "错误的配置": "port-queue af3 wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 393,
+      "错误行号": 13520,
+      "正确的配置": "port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queue be wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 394,
+      "错误行号": 29974,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::394 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 395,
+      "错误行号": 37391,
+      "正确的配置": "ospf cost 1000",
+      "错误的配置": "ospf cost 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 396,
+      "错误行号": 18456,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::396 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 397,
+      "错误行号": 13566,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::397",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 398,
+      "错误行号": 29676,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 399,
+      "错误行号": 31281,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::399 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 400,
+      "错误行号": 16285,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 401,
+      "错误行号": 28357,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::401",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 402,
+      "错误行号": 19087,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::402",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 403,
+      "错误行号": 21617,
+      "正确的配置": "bfd all-interfaces min-tx-interval 30 min-rx-interval 30 frr-binding",
+      "错误的配置": "bfd all-interfaces min-tx-interval -1 min-rx-interval 30 frr-binding",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 404,
+      "错误行号": 24993,
+      "正确的配置": "port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 405,
+      "错误行号": 38146,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 406,
+      "错误行号": 2355,
+      "正确的配置": "domain identifier <IPV4>",
+      "错误的配置": "domain identifier 2001:db8::406",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 407,
+      "错误行号": 38001,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::407 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 408,
+      "错误行号": 16219,
+      "正确的配置": "mtu 9178",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 409,
+      "错误行号": 33050,
+      "正确的配置": "rule <*> description <DESCRIPTION>",
+      "错误的配置": "rule 999999 description <DESCRIPTION>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 410,
+      "错误行号": 15221,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::410 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 411,
+      "错误行号": 36,
+      "正确的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue af4 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 412,
+      "错误行号": 31391,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::412 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 413,
+      "错误行号": 6551,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::413 <*> greater-equal <*> less-equal <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 414,
+      "错误行号": 15193,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::414 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 415,
+      "错误行号": 38841,
+      "正确的配置": "capacity dynamic-upmng-instance up-num 3",
+      "错误的配置": "capacity dynamic-upmng-instance up-num 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 416,
+      "错误行号": 24103,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::416",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 417,
+      "错误行号": 5893,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 418,
+      "错误行号": 17975,
+      "正确的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 419,
+      "错误行号": 36574,
+      "正确的配置": "ip route-static <IPV4> <IPV4> NULL0 preference 180 tag 901 description <DESCRIPTION>",
+      "错误的配置": "ip route-static 2001:db8::419 <IPV4> NULL0 preference 180 tag 901 description <DESCRIPTION>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 420,
+      "错误行号": 37495,
+      "正确的配置": "test-session <*> bind interface <INTERFACE>",
+      "错误的配置": "test-session 999999 bind interface <INTERFACE>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 421,
+      "错误行号": 37915,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::421 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 422,
+      "错误行号": 15228,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::422 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 423,
+      "错误行号": 8410,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::423 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 424,
+      "错误行号": 1638,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::424 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 425,
+      "错误行号": 21013,
+      "正确的配置": "idle-timeout 0 0",
+      "错误的配置": "idle-timeout -1 0",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 426,
+      "错误行号": 31083,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::426",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 427,
+      "错误行号": 29944,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::427 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 428,
+      "错误行号": 21369,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::428 <*> greater-equal <*> less-equal <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 429,
+      "错误行号": 25124,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::429 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 430,
+      "错误行号": 31770,
+      "正确的配置": "nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 431,
+      "错误行号": 16899,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 432,
+      "错误行号": 32505,
+      "正确的配置": "encapsulation source-address <IPV6>",
+      "错误的配置": "encapsulation source-address 10.255.181.1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 433,
+      "错误行号": 7902,
+      "正确的配置": "peer <IPV4> route-update-interval 5",
+      "错误的配置": "peer 2001:db8::433 route-update-interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 434,
+      "错误行号": 22,
+      "正确的配置": "isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 435,
+      "错误行号": 13244,
+      "正确的配置": "ipv6 mtu 9178",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 436,
+      "错误行号": 995,
+      "正确的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 437,
+      "错误行号": 7906,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::437",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 438,
+      "错误行号": 41678,
+      "正确的配置": "router-id <IPV4>",
+      "错误的配置": "router-id 2001:db8::438",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 439,
+      "错误行号": 28646,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 440,
+      "错误行号": 40427,
+      "正确的配置": "bfd all-interfaces min-tx-interval 30 min-rx-interval 30",
+      "错误的配置": "bfd all-interfaces min-tx-interval -1 min-rx-interval 30",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 441,
+      "错误行号": 21020,
+      "正确的配置": "authorization-cmd 2 hwtacacs local",
+      "错误的配置": "authorization-cmd 999999 hwtacacs local",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 442,
+      "错误行号": 30854,
+      "正确的配置": "ospf 703 router-id <IPV4>",
+      "错误的配置": "ospf 703 router-id 2001:db8::442",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 443,
+      "错误行号": 953,
+      "正确的配置": "dot1x-template 1",
+      "错误的配置": "dot1x-template 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 444,
+      "错误行号": 21066,
+      "正确的配置": "source-address <IPV4>",
+      "错误的配置": "source-address 2001:db8::444",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 445,
+      "错误行号": 35205,
+      "正确的配置": "port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 446,
+      "错误行号": 6987,
+      "正确的配置": "ip address <IPV4> <IPV4> sub",
+      "错误的配置": "ip address 2001:db8::446 <IPV4> sub",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 447,
+      "错误行号": 15143,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::447 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 448,
+      "错误行号": 15037,
+      "正确的配置": "timer lsp-max-age 65535",
+      "错误的配置": "timer lsp-max-age -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 449,
+      "错误行号": 34287,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::449 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 450,
+      "错误行号": 20990,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix 10.255.199.1 <*> static 12 args 16",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 451,
+      "错误行号": 28963,
+      "正确的配置": "router-id <IPV4>",
+      "错误的配置": "router-id 2001:db8::451",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 452,
+      "错误行号": 41671,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 453,
+      "错误行号": 25463,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::453",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 454,
+      "错误行号": 20664,
+      "正确的配置": "protocol sftp ip-address <IPV4>",
+      "错误的配置": "protocol sftp ip-address 2001:db8::454",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 455,
+      "错误行号": 5078,
+      "正确的配置": "nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 456,
+      "错误行号": 28181,
+      "正确的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue af4 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 457,
+      "错误行号": 25443,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 458,
+      "错误行号": 25827,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::458 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 459,
+      "错误行号": 7130,
+      "正确的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue af4 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 460,
+      "错误行号": 21450,
+      "正确的配置": "mtu 9178",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 461,
+      "错误行号": 38559,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::461 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 462,
+      "错误行号": 11315,
+      "正确的配置": "isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 463,
+      "错误行号": 21721,
+      "正确的配置": "preference 20 200 200",
+      "错误的配置": "preference 999999 200 200",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 464,
+      "错误行号": 37506,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44",
+      "错误的配置": "test-session <*> sender-ipv6 10.255.213.1 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 465,
+      "错误行号": 24980,
+      "正确的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 466,
+      "错误行号": 40489,
+      "正确的配置": "port-queue be wfq weight 5 outbound",
+      "错误的配置": "port-queue be wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 467,
+      "错误行号": 4243,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 10.255.216.1 end-op",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 468,
+      "错误行号": 19873,
+      "正确的配置": "authorization-cmd 2 hwtacacs local",
+      "错误的配置": "authorization-cmd 999999 hwtacacs local",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 469,
+      "错误行号": 25397,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::469",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 470,
+      "错误行号": 35143,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 471,
+      "错误行号": 21189,
+      "正确的配置": "ip route-static default-preference 1",
+      "错误的配置": "ip route-static default-preference 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 472,
+      "错误行号": 22109,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 10.255.221.1 end-op",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 473,
+      "错误行号": 23159,
+      "正确的配置": "port-range 4096",
+      "错误的配置": "port-range 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 474,
+      "错误行号": 6521,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 475,
+      "错误行号": 15687,
+      "正确的配置": "test-session <*> bind interface <INTERFACE>",
+      "错误的配置": "test-session 999999 bind interface <INTERFACE>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 476,
+      "错误行号": 12518,
+      "正确的配置": "index <*> sid ipv6 <IPV6>",
+      "错误的配置": "index <*> sid ipv6 10.255.225.1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 477,
+      "错误行号": 26136,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static vpn-instance <*> 2001:db8::477 <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 478,
+      "错误行号": 19098,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 479,
+      "错误行号": 24088,
+      "正确的配置": "ip ipv6-prefix <*> index <*> permit <IPV6> <*>",
+      "错误的配置": "ip ipv6-prefix <*> index <*> permit 10.255.228.1 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 480,
+      "错误行号": 35159,
+      "正确的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 481,
+      "错误行号": 7745,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix 10.255.230.1 <*> static 12 args 16",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 482,
+      "错误行号": 15021,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::482",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 483,
+      "错误行号": 1344,
+      "正确的配置": "test start-continual test-session <*> period 1000",
+      "错误的配置": "test start-continual test-session 999999 period 1000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 484,
+      "错误行号": 32975,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 485,
+      "错误行号": 31002,
+      "正确的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 486,
+      "错误行号": 37559,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 487,
+      "错误行号": 14146,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::487 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 488,
+      "错误行号": 21627,
+      "正确的配置": "timer lsp-max-age 65535",
+      "错误的配置": "timer lsp-max-age -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 489,
+      "错误行号": 42598,
+      "正确的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 490,
+      "错误行号": 29996,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::490 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 491,
+      "错误行号": 28209,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 492,
+      "错误行号": 37986,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::492 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 493,
+      "错误行号": 41843,
+      "正确的配置": "preference 20 200 200",
+      "错误的配置": "preference 999999 200 200",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 494,
+      "错误行号": 25807,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::494 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 495,
+      "错误行号": 11388,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 496,
+      "错误行号": 29169,
+      "正确的配置": "network <IPV4> <IPV4>",
+      "错误的配置": "network 2001:db8::496 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 497,
+      "错误行号": 27249,
+      "正确的配置": "network <IPV4> <IPV4>",
+      "错误的配置": "network 2001:db8::497 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 498,
+      "错误行号": 16865,
+      "正确的配置": "ntp-service unicast-server <IPV4> vpn-instance CTVPN193-JS preference",
+      "错误的配置": "ntp-service unicast-server 2001:db8::498 vpn-instance CTVPN193-JS preference",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 499,
+      "错误行号": 28863,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::499",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 500,
+      "错误行号": 18252,
+      "正确的配置": "ip route-static <IPV4> <IPV4> NULL0 preference 180 description <DESCRIPTION>",
+      "错误的配置": "ip route-static 2001:db8::500 <IPV4> NULL0 preference 180 description <DESCRIPTION>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 501,
+      "错误行号": 3798,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::501",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 502,
+      "错误行号": 21385,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::502 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 503,
+      "错误行号": 37439,
+      "正确的配置": "test-session <*> sender-ip <IPV4> reflector-ip <IPV4> sender-port <*> reflector-port 33435 padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ip 2001:db8::503 reflector-ip <IPV4> sender-port <*> reflector-port 33435 padding 44 description <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 504,
+      "错误行号": 33087,
+      "正确的配置": "rule <*> description <DESCRIPTION>",
+      "错误的配置": "rule 999999 description <DESCRIPTION>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 505,
+      "错误行号": 8685,
+      "正确的配置": "ip ipv6-prefix <*> index <*> permit <IPV6> <*>",
+      "错误的配置": "ip ipv6-prefix <*> index <*> permit 10.255.4.1 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 506,
+      "错误行号": 33428,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::506",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 507,
+      "错误行号": 12154,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::507 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 508,
+      "错误行号": 407,
+      "正确的配置": "ssh server acl 2577",
+      "错误的配置": "ssh server acl 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 509,
+      "错误行号": 29638,
+      "正确的配置": "test-session <*> sender-ip <IPV4> reflector-ip <IPV4> sender-port <*> reflector-port <*>",
+      "错误的配置": "test-session <*> sender-ip 2001:db8::509 reflector-ip <IPV4> sender-port <*> reflector-port <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 510,
+      "错误行号": 20121,
+      "正确的配置": "bfd all-interfaces min-tx-interval 30 min-rx-interval 30 frr-binding",
+      "错误的配置": "bfd all-interfaces min-tx-interval -1 min-rx-interval 30 frr-binding",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 511,
+      "错误行号": 15303,
+      "正确的配置": "ssh server acl 2577",
+      "错误的配置": "ssh server acl 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 512,
+      "错误行号": 1088,
+      "正确的配置": "!one by running the ne-ip X.X.X.X <MASK> command after the device being online.",
+      "错误的配置": "!one by running the ne-ip X.X.X.X 0 command after the device being online.",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 513,
+      "错误行号": 1230,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::513",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 514,
+      "错误行号": 16839,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 515,
+      "错误行号": 27012,
+      "正确的配置": "info-center source default channel 2 log level warning",
+      "错误的配置": "info-center source default channel 999999 log level warning",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 516,
+      "错误行号": 38845,
+      "正确的配置": "bfd all-interfaces min-tx-interval 500 min-rx-interval 500 detect-multiplier 4",
+      "错误的配置": "bfd all-interfaces min-tx-interval -1 min-rx-interval 500 detect-multiplier 4",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 517,
+      "错误行号": 24092,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::517 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 518,
+      "错误行号": 14306,
+      "正确的配置": "ip-warning-threshold 95",
+      "错误的配置": "ip-warning-threshold -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 519,
+      "错误行号": 9645,
+      "正确的配置": "peer pgToSDN-v6 timer keepalive 30 hold 90",
+      "错误的配置": "peer pgToSDN-v6 timer keepalive -1 hold 90",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 520,
+      "错误行号": 75,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::520",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 521,
+      "错误行号": 15056,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 522,
+      "错误行号": 29608,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::522",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 523,
+      "错误行号": 4586,
+      "正确的配置": "ti-lfa level-2",
+      "错误的配置": "ti-lfa level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 524,
+      "错误行号": 34955,
+      "正确的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue af4 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 525,
+      "错误行号": 16526,
+      "正确的配置": "port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 526,
+      "错误行号": 15780,
+      "正确的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 527,
+      "错误行号": 25909,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::527",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 528,
+      "错误行号": 33066,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::528 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 529,
+      "错误行号": 33836,
+      "正确的配置": "excluded-ipv6-prefix <IPV6>/64 <IPV6>/64",
+      "错误的配置": "excluded-ipv6-prefix 10.255.28.1/64 <IPV6>/64",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 530,
+      "错误行号": 39299,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 10.255.29.1 end-op",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 531,
+      "错误行号": 33843,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 532,
+      "错误行号": 11126,
+      "正确的配置": "port-queue af1 wfq weight 25 outbound",
+      "错误的配置": "port-queue af1 wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 533,
+      "错误行号": 4478,
+      "正确的配置": "ssh client peer <IPV4> assign ecc-key <IPV4>",
+      "错误的配置": "ssh client peer 2001:db8::533 assign ecc-key <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 534,
+      "错误行号": 12574,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 10.255.33.1 end-op",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 535,
+      "错误行号": 26902,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 10.255.34.1 end-op",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 536,
+      "错误行号": 3007,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::536 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 537,
+      "错误行号": 25811,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::537 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 538,
+      "错误行号": 29111,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::538 <*> greater-equal <*> less-equal <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 539,
+      "错误行号": 26762,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix 10.255.38.1 <*> static 12 args 16",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 540,
+      "错误行号": 38582,
+      "正确的配置": "peer <IPV4> soo <*>",
+      "错误的配置": "peer 2001:db8::540 soo <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 541,
+      "错误行号": 20132,
+      "正确的配置": "set-overload on-startup send-sa-bit 120",
+      "错误的配置": "set-overload on-startup send-sa-bit 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 542,
+      "错误行号": 15612,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::542 <*> greater-equal <*> less-equal <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 543,
+      "错误行号": 8409,
+      "正确的配置": "rule <*> description <DESCRIPTION>",
+      "错误的配置": "rule 999999 description <DESCRIPTION>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 544,
+      "错误行号": 8043,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 545,
+      "错误行号": 16,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 546,
+      "错误行号": 37571,
+      "正确的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue af4 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 547,
+      "错误行号": 33179,
+      "正确的配置": "option force-reply 3 6 125",
+      "错误的配置": "option force-reply 999999 6 125",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 548,
+      "错误行号": 10057,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 549,
+      "错误行号": 37869,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::549 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 550,
+      "错误行号": 25522,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis enable 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 551,
+      "错误行号": 30412,
+      "正确的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 552,
+      "错误行号": 9977,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis enable 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 553,
+      "错误行号": 20333,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::553",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 554,
+      "错误行号": 29991,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::554 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 555,
+      "错误行号": 15315,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::555 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 556,
+      "错误行号": 42191,
+      "正确的配置": "ti-lfa level-2",
+      "错误的配置": "ti-lfa level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 557,
+      "错误行号": 21062,
+      "正确的配置": "e-trunk track bfd-session session-name <DEVICE>",
+      "错误的配置": "e-trunk track bfd-session session-name 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 558,
+      "错误行号": 35015,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permit 2001:db8::558 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 559,
+      "错误行号": 30053,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::559 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 560,
+      "错误行号": 23267,
+      "正确的配置": "radius-server retransmit 2 timeout 3",
+      "错误的配置": "radius-server retransmit -1 timeout 3",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 561,
+      "错误行号": 25298,
+      "正确的配置": "te bandwidth dynamic bc0 100",
+      "错误的配置": "te bandwidth dynamic bc0 -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 562,
+      "错误行号": 18421,
+      "正确的配置": "area <IPV4>",
+      "错误的配置": "area 2001:db8::562",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 563,
+      "错误行号": 26824,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 564,
+      "错误行号": 38144,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::564",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 565,
+      "错误行号": 4290,
+      "正确的配置": "port-queue af3 wfq weight 30 outbound",
+      "错误的配置": "port-queue af3 wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 566,
+      "错误行号": 3062,
+      "正确的配置": "nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 567,
+      "错误行号": 6945,
+      "正确的配置": "rule <*> description <DESCRIPTION>",
+      "错误的配置": "rule 999999 description <DESCRIPTION>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 568,
+      "错误行号": 20244,
+      "正确的配置": "ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30",
+      "错误的配置": "ipv6 bfd all-interfaces min-tx-interval -1 min-rx-interval 30",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 569,
+      "错误行号": 41735,
+      "正确的配置": "ospf dr-priority 0",
+      "错误的配置": "ospf dr-priority 999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 570,
+      "错误行号": 26765,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 10.255.69.1 end-op",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 571,
+      "错误行号": 38804,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 572,
+      "错误行号": 40560,
+      "正确的配置": "isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 573,
+      "错误行号": 36593,
+      "正确的配置": "flexe config-mode card 1 timeslot",
+      "错误的配置": "flexe config-mode card 999999 timeslot",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 574,
+      "错误行号": 15689,
+      "正确的配置": "test-session <*> bind interface <INTERFACE>",
+      "错误的配置": "test-session 999999 bind interface <INTERFACE>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 575,
+      "错误行号": 18029,
+      "正确的配置": "ip route-static bfd <*> <IPV4> min-tx-interval 100 min-rx-interval 100 detect-multiplier 5",
+      "错误的配置": "ip route-static bfd <*> 2001:db8::575 min-tx-interval 100 min-rx-interval 100 detect-multiplier 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 576,
+      "错误行号": 25546,
+      "正确的配置": "protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误的配置": "protocol-tunnel vni <*> source 2001:db8::576 destination <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 577,
+      "错误行号": 13238,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 578,
+      "错误行号": 24649,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::578 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 579,
+      "错误行号": 21625,
+      "正确的配置": "timer spf 1 50 50",
+      "错误的配置": "timer spf -1 50 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 580,
+      "错误行号": 29707,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 581,
+      "错误行号": 20379,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 582,
+      "错误行号": 37984,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::582 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 583,
+      "错误行号": 16170,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 584,
+      "错误行号": 15956,
+      "正确的配置": "te bandwidth dynamic bc0 100",
+      "错误的配置": "te bandwidth dynamic bc0 -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 585,
+      "错误行号": 993,
+      "正确的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue af4 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 586,
+      "错误行号": 22313,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::586 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 587,
+      "错误行号": 31386,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::587 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 588,
+      "错误行号": 15197,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::588 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 589,
+      "错误行号": 27040,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::589 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 590,
+      "错误行号": 41221,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 591,
+      "错误行号": 4088,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::591",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 592,
+      "错误行号": 11324,
+      "正确的配置": "te bandwidth dynamic bc0 100",
+      "错误的配置": "te bandwidth dynamic bc0 -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 593,
+      "错误行号": 37351,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> permit source 2001:db8::593 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 594,
+      "错误行号": 25117,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::594 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 595,
+      "错误行号": 949,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::595",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 596,
+      "错误行号": 23151,
+      "正确的配置": "preference 20 200 200",
+      "错误的配置": "preference 999999 200 200",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 597,
+      "错误行号": 15347,
+      "正确的配置": "excluded-ip-address <IPV4> <IPV4>",
+      "错误的配置": "excluded-ip-address 2001:db8::597 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 598,
+      "错误行号": 4868,
+      "正确的配置": "es track bfd <DEVICE>",
+      "错误的配置": "es track bfd 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 599,
+      "错误行号": 29942,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::599 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 600,
+      "错误行号": 13787,
+      "正确的配置": "bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 601,
+      "错误行号": 1508,
+      "正确的配置": "ssh client peer <IPV4> assign ecc-key <IPV4>",
+      "错误的配置": "ssh client peer 2001:db8::601 assign ecc-key <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 602,
+      "错误行号": 19906,
+      "正确的配置": "mtu 1600",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 603,
+      "错误行号": 41875,
+      "正确的配置": "ip ipv6-prefix <*> index <*> permit <IPV6> <*>",
+      "错误的配置": "ip ipv6-prefix <*> index <*> permit 10.255.102.1 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 604,
+      "错误行号": 37619,
+      "正确的配置": "te bandwidth dynamic bc0 100",
+      "错误的配置": "te bandwidth dynamic bc0 -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 605,
+      "错误行号": 41355,
+      "正确的配置": "network <IPV4> <IPV4>",
+      "错误的配置": "network 2001:db8::605 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 606,
+      "错误行号": 39074,
+      "正确的配置": "ip route-static <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static 2001:db8::606 <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 607,
+      "错误行号": 37832,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::607 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 608,
+      "错误行号": 170,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix 10.255.107.1 <*> static 12 args 16",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 609,
+      "错误行号": 15195,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::609 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 610,
+      "错误行号": 6974,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 611,
+      "错误行号": 467,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 612,
+      "错误行号": 25759,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::612 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 613,
+      "错误行号": 1075,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::613",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 614,
+      "错误行号": 34264,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 615,
+      "错误行号": 25692,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::615 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 616,
+      "错误行号": 24994,
+      "正确的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 617,
+      "错误行号": 25553,
+      "正确的配置": "network <IPV4> <IPV4>",
+      "错误的配置": "network 2001:db8::617 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 618,
+      "错误行号": 9604,
+      "正确的配置": "peer <*> tracking delay 30",
+      "错误的配置": "peer 999999 tracking delay 30",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 619,
+      "错误行号": 34989,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 620,
+      "错误行号": 33017,
+      "正确的配置": "timer spf 1 50 50",
+      "错误的配置": "timer spf -1 50 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 621,
+      "错误行号": 1663,
+      "正确的配置": "active <*> slot <*> card 0 port <*>",
+      "错误的配置": "active 999999 slot <*> card 0 port <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 622,
+      "错误行号": 37455,
+      "正确的配置": "test-session <*> bind interface <INTERFACE>",
+      "错误的配置": "test-session 999999 bind interface <INTERFACE>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 623,
+      "错误行号": 12220,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::623",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 624,
+      "错误行号": 24682,
+      "正确的配置": "test-session <*> local-ip <IPV4> remote-ip <IPV4> local-port 6402 remote-port 45700",
+      "错误的配置": "test-session <*> local-ip 2001:db8::624 remote-ip <IPV4> local-port 6402 remote-port 45700",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 625,
+      "错误行号": 18027,
+      "正确的配置": "authorization-cmd 3 hwtacacs local",
+      "错误的配置": "authorization-cmd 999999 hwtacacs local",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 626,
+      "错误行号": 28151,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 627,
+      "错误行号": 40459,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::627",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 628,
+      "错误行号": 8045,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 629,
+      "错误行号": 31489,
+      "正确的配置": "test-session <*> bind interface <INTERFACE>",
+      "错误的配置": "test-session 999999 bind interface <INTERFACE>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 630,
+      "错误行号": 40724,
+      "正确的配置": "port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 631,
+      "错误行号": 25768,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::631 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 632,
+      "错误行号": 41366,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 633,
+      "错误行号": 11728,
+      "正确的配置": "service-location 3",
+      "错误的配置": "service-location 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 634,
+      "错误行号": 1191,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::634",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 635,
+      "错误行号": 30021,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::635 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 636,
+      "错误行号": 26926,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix 10.255.135.1 <*> static 12 args 16",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 637,
+      "错误行号": 24912,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::637",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 638,
+      "错误行号": 17959,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 639,
+      "错误行号": 22846,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::639",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 640,
+      "错误行号": 4100,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::640 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 641,
+      "错误行号": 37864,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::641 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 642,
+      "错误行号": 20213,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 10.255.141.1 end-op",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 643,
+      "错误行号": 21361,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 2001:db8::643 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 644,
+      "错误行号": 14975,
+      "正确的配置": "bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 645,
+      "错误行号": 37943,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address 2001:db8::645 <*> destination user-group <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 646,
+      "错误行号": 15047,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::646",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 647,
+      "错误行号": 30347,
+      "正确的配置": "peer <IPV4> soo <*>",
+      "错误的配置": "peer 2001:db8::647 soo <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 648,
+      "错误行号": 19838,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-user 999999 state block fail-times 3 interval 5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 649,
+      "错误行号": 27109,
+      "正确的配置": "authorization-cmd 0 hwtacacs local",
+      "错误的配置": "authorization-cmd 999999 hwtacacs local",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 650,
+      "错误行号": 11391,
+      "正确的配置": "set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 651,
+      "错误行号": 41411,
+      "正确的配置": "nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 652,
+      "错误行号": 17973,
+      "正确的配置": "port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 653,
+      "错误行号": 1350,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::653",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 654,
+      "错误行号": 8761,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 655,
+      "错误行号": 18628,
+      "正确的配置": "lsa-arrival-interval intelligent-timer 50 50 50",
+      "错误的配置": "lsa-arrival-interval intelligent-timer -1 50 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 656,
+      "错误行号": 22182,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::656 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 657,
+      "错误行号": 22232,
+      "正确的配置": "timer es-recovery 90",
+      "错误的配置": "timer es-recovery -1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 658,
+      "错误行号": 27676,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 659,
+      "错误行号": 7794,
+      "正确的配置": "test-session <*> local-ipv6 <IPV6> remote-ipv6 <IPV6> local-port <*> remote-port <*>",
+      "错误的配置": "test-session <*> local-ipv6 10.255.158.1 remote-ipv6 <IPV6> local-port <*> remote-port <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 660,
+      "错误行号": 12511,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix 10.255.159.1 <*> static 12 args 16",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 661,
+      "错误行号": 31375,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::661 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 662,
+      "错误行号": 29136,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance <*> source 2001:db8::662 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 663,
+      "错误行号": 25784,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address 2001:db8::663 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 664,
+      "错误行号": 7034,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "description 2001:db8::664",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 665,
+      "错误行号": 28224,
+      "正确的配置": "network <IPV4> <IPV4>",
+      "错误的配置": "network 2001:db8::665 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 666,
+      "错误行号": 26036,
+      "正确的配置": "ssh client peer <IPV4> assign ecc-key <IPV4>",
+      "错误的配置": "ssh client peer 2001:db8::666 assign ecc-key <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 667,
+      "错误行号": 15111,
+      "正确的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 70000 outbound",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 668,
+      "错误行号": 15254,
+      "正确的配置": "bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 669,
+      "错误行号": 16237,
+      "正确的配置": "is-name <DEVICE>",
+      "错误的配置": "is-name 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 670,
+      "错误行号": 21338,
+      "正确的配置": "ipv6 mtu 9178",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 671,
+      "错误行号": 37586,
+      "正确的配置": "network <IPV4> <IPV4>",
+      "错误的配置": "network 2001:db8::671 <IPV4>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 672,
+      "错误行号": 24905,
+      "正确的配置": "service-location 6",
+      "错误的配置": "service-location 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    }
+  ]
+}

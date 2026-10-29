@@ -1,0 +1,2959 @@
+{
+  "vendor": "fiber",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "REDUNDANT_STATEMENT",
+  "错误类型别名": [
+    "REDUNDANT_STATEMENT"
+  ],
+  "错误类型描述": "冗余/重复的配置语句",
+  "实际模板占比": "21.56%",
+  "数据集调整占比": "23.00%",
+  "错误数量": 368,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 3774,
+      "正确的配置": "interface eth-10gi 0/5/0/3.854",
+      "错误的配置": "interface eth-10gi 0/5/0/3.854  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3774行被重复，冗余语句"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 4903,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4903行被重复，冗余语句"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 6302,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6302行被重复，冗余语句"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 4919,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4919行被重复，冗余语句"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 3546,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3546行被重复，冗余语句"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 19,
+      "正确的配置": "route-target import <PORT>",
+      "错误的配置": "route-target import <PORT>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第19行被重复，冗余语句"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 6861,
+      "正确的配置": "system name HEXT-GZ-3F-R8K3-SM-E029",
+      "错误的配置": "system name HEXT-GZ-3F-R8K3-SM-E029  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6861行被重复，冗余语句"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 1660,
+      "正确的配置": "interface eth-10gi 0/1/0/41",
+      "错误的配置": "interface eth-10gi 0/1/0/41  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1660行被重复，冗余语句"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 4053,
+      "正确的配置": "system name EBYW-KM-1E3C-O8H3-PJ-B026",
+      "错误的配置": "system name EBYW-KM-1E3C-O8H3-PJ-B026  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4053行被重复，冗余语句"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 802,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第802行被重复，冗余语句"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 2169,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2169行被重复，冗余语句"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 8424,
+      "正确的配置": "lag mode lacp",
+      "错误的配置": "lag mode lacp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8424行被重复，冗余语句"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 5390,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf FHNMVPN  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5390行被重复，冗余语句"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 1595,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1595行被重复，冗余语句"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 5998,
+      "正确的配置": "interface eth-10gi 0/1/0/5",
+      "错误的配置": "interface eth-10gi 0/1/0/5  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5998行被重复，冗余语句"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 8777,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8777行被重复，冗余语句"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 2704,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2704行被重复，冗余语句"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 8418,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8418行被重复，冗余语句"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 3233,
+      "正确的配置": "network point-to-point",
+      "错误的配置": "network point-to-point  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3233行被重复，冗余语句"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 8979,
+      "正确的配置": "segment-routing sr-prefer",
+      "错误的配置": "segment-routing sr-prefer  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8979行被重复，冗余语句"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 5961,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5961行被重复，冗余语句"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 475,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第475行被重复，冗余语句"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 282,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第282行被重复，冗余语句"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 1127,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf FHNMVPN  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1127行被重复，冗余语句"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 2446,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2446行被重复，冗余语句"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 4350,
+      "正确的配置": "interface loopback 0",
+      "错误的配置": "interface loopback 0  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4350行被重复，冗余语句"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 5340,
+      "正确的配置": "interface lag 1",
+      "错误的配置": "interface lag 1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5340行被重复，冗余语句"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 3899,
+      "正确的配置": "interface lag 2",
+      "错误的配置": "interface lag 2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3899行被重复，冗余语句"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 401,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第401行被重复，冗余语句"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 69,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第69行被重复，冗余语句"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 871,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第871行被重复，冗余语句"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 389,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第389行被重复，冗余语句"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 3059,
+      "正确的配置": "lag add interface eth-10gi 0/2/0/2",
+      "错误的配置": "lag add interface eth-10gi 0/2/0/2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3059行被重复，冗余语句"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 8101,
+      "正确的配置": "encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8101行被重复，冗余语句"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 2562,
+      "正确的配置": "interface eth-10gi 0/2/0/2",
+      "错误的配置": "interface eth-10gi 0/2/0/2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2562行被重复，冗余语句"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 3344,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3344行被重复，冗余语句"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 4482,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4482行被重复，冗余语句"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 1751,
+      "正确的配置": "interface eth-100gi 0/10/0/4",
+      "错误的配置": "interface eth-100gi 0/10/0/4  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1751行被重复，冗余语句"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 4518,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4518行被重复，冗余语句"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 7158,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 1 down-weight 100  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7158行被重复，冗余语句"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 8194,
+      "正确的配置": "telnetd service start",
+      "错误的配置": "telnetd service start  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8194行被重复，冗余语句"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 5632,
+      "正确的配置": "ipv6 address auto link-local",
+      "错误的配置": "ipv6 address auto link-local  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5632行被重复，冗余语句"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 1887,
+      "正确的配置": "acl basic SmartMAN_SNMP",
+      "错误的配置": "acl basic SmartMAN_SNMP  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1887行被重复，冗余语句"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 6661,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 1 down-weight 100  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6661行被重复，冗余语句"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 3945,
+      "正确的配置": "capability ti-lfa node-protecting",
+      "错误的配置": "capability ti-lfa node-protecting  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3945行被重复，冗余语句"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 9114,
+      "正确的配置": "ftp service start",
+      "错误的配置": "ftp service start  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9114行被重复，冗余语句"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 300,
+      "正确的配置": "ipv6 address auto link-local",
+      "错误的配置": "ipv6 address auto link-local  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第300行被重复，冗余语句"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 2581,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2581行被重复，冗余语句"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 8988,
+      "正确的配置": "fanctrl chassis 0 runmode auto",
+      "错误的配置": "fanctrl chassis 0 runmode auto  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8988行被重复，冗余语句"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 4169,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4169行被重复，冗余语句"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 4288,
+      "正确的配置": "lag add interface eth-10gi 0/2/0/3",
+      "错误的配置": "lag add interface eth-10gi 0/2/0/3  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4288行被重复，冗余语句"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 6615,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6615行被重复，冗余语句"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 7786,
+      "正确的配置": "lag add interface eth-10gi 0/1/1/1",
+      "错误的配置": "lag add interface eth-10gi 0/1/1/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7786行被重复，冗余语句"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 5878,
+      "正确的配置": "segment-routing mpls",
+      "错误的配置": "segment-routing mpls  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5878行被重复，冗余语句"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 7076,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7076行被重复，冗余语句"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 8350,
+      "正确的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193",
+      "错误的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8350行被重复，冗余语句"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 2893,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2893行被重复，冗余语句"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 8956,
+      "正确的配置": "lag mode lacp",
+      "错误的配置": "lag mode lacp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8956行被重复，冗余语句"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 3240,
+      "正确的配置": "prefix-sid index 145 no-php",
+      "错误的配置": "prefix-sid index 145 no-php  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3240行被重复，冗余语句"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 3657,
+      "正确的配置": "spf-interval level-2 10",
+      "错误的配置": "spf-interval level-2 10  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3657行被重复，冗余语句"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 370,
+      "正确的配置": "interface dcn-serial 0/1/0/7",
+      "错误的配置": "interface dcn-serial 0/1/0/7  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第370行被重复，冗余语句"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 7052,
+      "正确的配置": "snmp-agent acl SNMP",
+      "错误的配置": "snmp-agent acl SNMP  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7052行被重复，冗余语句"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 8086,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8086行被重复，冗余语句"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 6790,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6790行被重复，冗余语句"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 7680,
+      "正确的配置": "dynamic hostname HEXT-NH-2F-R8K3-SM-E022",
+      "错误的配置": "dynamic hostname HEXT-NH-2F-R8K3-SM-E022  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7680行被重复，冗余语句"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 1755,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1755行被重复，冗余语句"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 7780,
+      "正确的配置": "lag add interface eth-100gi 0/10/0/1",
+      "错误的配置": "lag add interface eth-100gi 0/10/0/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7780行被重复，冗余语句"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 6730,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6730行被重复，冗余语句"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 5412,
+      "正确的配置": "prefix-sid index 10205 no-php",
+      "错误的配置": "prefix-sid index 10205 no-php  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5412行被重复，冗余语句"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 5555,
+      "正确的配置": "interface eth-10gi 0/1/0/3.852",
+      "错误的配置": "interface eth-10gi 0/1/0/3.852  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5555行被重复，冗余语句"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 8536,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8536行被重复，冗余语句"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 9038,
+      "正确的配置": "bgp router-id <IPV4>",
+      "错误的配置": "bgp router-id <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9038行被重复，冗余语句"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 3218,
+      "正确的配置": "lag mac-address 6666-A669-6878",
+      "错误的配置": "lag mac-address 6666-A669-6878  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3218行被重复，冗余语句"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 1079,
+      "正确的配置": "interface eth-10gi 0/4/0/2.895",
+      "错误的配置": "interface eth-10gi 0/4/0/2.895  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1079行被重复，冗余语句"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 2063,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2063行被重复，冗余语句"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 9072,
+      "正确的配置": "interface lag 2",
+      "错误的配置": "interface lag 2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9072行被重复，冗余语句"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 7662,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7662行被重复，冗余语句"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 3030,
+      "正确的配置": "interface dcn-tunnel 0/3/0/3",
+      "错误的配置": "interface dcn-tunnel 0/3/0/3  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3030行被重复，冗余语句"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 9174,
+      "正确的配置": "lag mode lacp",
+      "错误的配置": "lag mode lacp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9174行被重复，冗余语句"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 1585,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1585行被重复，冗余语句"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 6454,
+      "正确的配置": "router ospf 65534 vrf CTVPN193",
+      "错误的配置": "router ospf 65534 vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6454行被重复，冗余语句"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 5712,
+      "正确的配置": "interface eth-10gi 0/5/0/5.851",
+      "错误的配置": "interface eth-10gi 0/5/0/5.851  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5712行被重复，冗余语句"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 2476,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2476行被重复，冗余语句"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 8605,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8605行被重复，冗余语句"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 5236,
+      "正确的配置": "segment-routing mpls",
+      "错误的配置": "segment-routing mpls  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5236行被重复，冗余语句"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 6603,
+      "正确的配置": "lag mode lacp",
+      "错误的配置": "lag mode lacp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6603行被重复，冗余语句"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 2170,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2170行被重复，冗余语句"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 5640,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5640行被重复，冗余语句"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 1851,
+      "正确的配置": "track-route wireless_OMC",
+      "错误的配置": "track-route wireless_OMC  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1851行被重复，冗余语句"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 8143,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8143行被重复，冗余语句"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 1412,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1412行被重复，冗余语句"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 1746,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1746行被重复，冗余语句"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 379,
+      "正确的配置": "encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第379行被重复，冗余语句"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 6892,
+      "正确的配置": "dynamic hostname HEXT-GZ-3F-R8K3-SM-E030",
+      "错误的配置": "dynamic hostname HEXT-GZ-3F-R8K3-SM-E030  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6892行被重复，冗余语句"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 6116,
+      "正确的配置": "segment-routing mpls",
+      "错误的配置": "segment-routing mpls  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6116行被重复，冗余语句"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 7648,
+      "正确的配置": "telnetd service start",
+      "错误的配置": "telnetd service start  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7648行被重复，冗余语句"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 3864,
+      "正确的配置": "sshd service start",
+      "错误的配置": "sshd service start  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3864行被重复，冗余语句"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 2012,
+      "正确的配置": "vrf 4G_RAN",
+      "错误的配置": "vrf 4G_RAN  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2012行被重复，冗余语句"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 7407,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7407行被重复，冗余语句"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 7852,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/1",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7852行被重复，冗余语句"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 6988,
+      "正确的配置": "snmp-agent community fiberhomeRW default HZprivate@123",
+      "错误的配置": "snmp-agent community fiberhomeRW default HZprivate@123  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6988行被重复，冗余语句"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 4194,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4194行被重复，冗余语句"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 1095,
+      "正确的配置": "interface eth-10gi 0/5/0/3.895",
+      "错误的配置": "interface eth-10gi 0/5/0/3.895  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1095行被重复，冗余语句"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 474,
+      "正确的配置": "interface dcn-tunnel 0/1/0/5",
+      "错误的配置": "interface dcn-tunnel 0/1/0/5  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第474行被重复，冗余语句"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 4452,
+      "正确的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193",
+      "错误的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4452行被重复，冗余语句"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 7342,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7342行被重复，冗余语句"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 378,
+      "正确的配置": "ip address unnumbered interface loopback 1020",
+      "错误的配置": "ip address unnumbered interface loopback 1020  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第378行被重复，冗余语句"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 5077,
+      "正确的配置": "lag mac-address 5555-E556-5666",
+      "错误的配置": "lag mac-address 5555-E556-5666  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5077行被重复，冗余语句"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 6936,
+      "正确的配置": "snmp-agent group fiberhomeRW v2c fiberhomeRW",
+      "错误的配置": "snmp-agent group fiberhomeRW v2c fiberhomeRW  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6936行被重复，冗余语句"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 8376,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8376行被重复，冗余语句"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 8885,
+      "正确的配置": "capability frr",
+      "错误的配置": "capability frr  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8885行被重复，冗余语句"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 8503,
+      "正确的配置": "system-id 0002-2002-0302",
+      "错误的配置": "system-id 0002-2002-0302  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8503行被重复，冗余语句"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 655,
+      "正确的配置": "address-family vpnv6 unicast",
+      "错误的配置": "address-family vpnv6 unicast  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第655行被重复，冗余语句"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 6665,
+      "正确的配置": "lag mac-address 8888-988C-898A",
+      "错误的配置": "lag mac-address 8888-988C-898A  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6665行被重复，冗余语句"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 1271,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1271行被重复，冗余语句"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 7097,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/1",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7097行被重复，冗余语句"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 7398,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7398行被重复，冗余语句"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 8299,
+      "正确的配置": "interface lag 2",
+      "错误的配置": "interface lag 2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8299行被重复，冗余语句"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 2128,
+      "正确的配置": "vrf 4G_RAN",
+      "错误的配置": "vrf 4G_RAN  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2128行被重复，冗余语句"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 526,
+      "正确的配置": "ip address unnumbered interface loopback 1023",
+      "错误的配置": "ip address unnumbered interface loopback 1023  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第526行被重复，冗余语句"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 318,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/1",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第318行被重复，冗余语句"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 1834,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1834行被重复，冗余语句"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 9219,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf FHNMVPN  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9219行被重复，冗余语句"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 5658,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer 10 level-2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5658行被重复，冗余语句"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 1780,
+      "正确的配置": "interface lag 4",
+      "错误的配置": "interface lag 4  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1780行被重复，冗余语句"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 2474,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2474行被重复，冗余语句"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 1654,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1654行被重复，冗余语句"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 8866,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8866行被重复，冗余语句"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 5856,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5856行被重复，冗余语句"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 4175,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4175行被重复，冗余语句"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 6,
+      "正确的配置": "vrf 4G_RAN",
+      "错误的配置": "vrf 4G_RAN  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6行被重复，冗余语句"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 6549,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/2",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6549行被重复，冗余语句"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 2608,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2608行被重复，冗余语句"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 8450,
+      "正确的配置": "dynamic hostname HEXT-RX-3F-R8K3-SM-E033",
+      "错误的配置": "dynamic hostname HEXT-RX-3F-R8K3-SM-E033  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8450行被重复，冗余语句"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 1227,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1227行被重复，冗余语句"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 113,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第113行被重复，冗余语句"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 7465,
+      "正确的配置": "interface lag 3",
+      "错误的配置": "interface lag 3  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7465行被重复，冗余语句"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 2124,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 1 down-weight 100  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2124行被重复，冗余语句"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 4522,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4522行被重复，冗余语句"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 8585,
+      "正确的配置": "lag add interface eth-100gi 0/8/0/1",
+      "错误的配置": "lag add interface eth-100gi 0/8/0/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8585行被重复，冗余语句"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 9125,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9125行被重复，冗余语句"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 4823,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4823行被重复，冗余语句"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 808,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第808行被重复，冗余语句"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 5524,
+      "正确的配置": "ipv6 address auto link-local",
+      "错误的配置": "ipv6 address auto link-local  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5524行被重复，冗余语句"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 7470,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 1 down-weight 100  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7470行被重复，冗余语句"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 688,
+      "正确的配置": "redistribute connected",
+      "错误的配置": "redistribute connected  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第688行被重复，冗余语句"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 3592,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3592行被重复，冗余语句"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 9191,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9191行被重复，冗余语句"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 3127,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3127行被重复，冗余语句"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 6726,
+      "正确的配置": "lag mode lacp",
+      "错误的配置": "lag mode lacp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6726行被重复，冗余语句"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 637,
+      "正确的配置": "segment-routing mpls",
+      "错误的配置": "segment-routing mpls  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第637行被重复，冗余语句"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 4444,
+      "正确的配置": "sshd service start",
+      "错误的配置": "sshd service start  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4444行被重复，冗余语句"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 5781,
+      "正确的配置": "interface lag 1",
+      "错误的配置": "interface lag 1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5781行被重复，冗余语句"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 4423,
+      "正确的配置": "bfd detected min-rx-interval 10 min-tx-interval 10",
+      "错误的配置": "bfd detected min-rx-interval 10 min-tx-interval 10  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4423行被重复，冗余语句"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 8995,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/1",
+      "错误的配置": "lag add interface eth-100gi 0/3/0/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8995行被重复，冗余语句"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 6122,
+      "正确的配置": "bgp router-id <IPV4>",
+      "错误的配置": "bgp router-id <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6122行被重复，冗余语句"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 6647,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6647行被重复，冗余语句"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 6577,
+      "正确的配置": "telnetd service start",
+      "错误的配置": "telnetd service start  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6577行被重复，冗余语句"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 4337,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4337行被重复，冗余语句"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 7807,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7807行被重复，冗余语句"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 663,
+      "正确的配置": "neighbor <IPV4>",
+      "错误的配置": "neighbor <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第663行被重复，冗余语句"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 4889,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4889行被重复，冗余语句"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 1182,
+      "正确的配置": "ipv4-prefix MAR seq 1000 deny any",
+      "错误的配置": "ipv4-prefix MAR seq 1000 deny any  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1182行被重复，冗余语句"
+    },
+    {
+      "错误序号": 164,
+      "错误行号": 6888,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/3",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/3  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6888行被重复，冗余语句"
+    },
+    {
+      "错误序号": 165,
+      "错误行号": 8897,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8897行被重复，冗余语句"
+    },
+    {
+      "错误序号": 166,
+      "错误行号": 2156,
+      "正确的配置": "ftp service start",
+      "错误的配置": "ftp service start  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2156行被重复，冗余语句"
+    },
+    {
+      "错误序号": 167,
+      "错误行号": 424,
+      "正确的配置": "interface dcn-serial 0/5/0/4",
+      "错误的配置": "interface dcn-serial 0/5/0/4  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第424行被重复，冗余语句"
+    },
+    {
+      "错误序号": 168,
+      "错误行号": 1883,
+      "正确的配置": "rule 1 permit source <IPV4> fragme-type non_fragment",
+      "错误的配置": "rule 1 permit source <IPV4> fragme-type non_fragment  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1883行被重复，冗余语句"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 6693,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6693行被重复，冗余语句"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 5452,
+      "正确的配置": "prefix-sid index 10203 no-php",
+      "错误的配置": "prefix-sid index 10203 no-php  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5452行被重复，冗余语句"
+    },
+    {
+      "错误序号": 171,
+      "错误行号": 2416,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2416行被重复，冗余语句"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 2625,
+      "正确的配置": "interface eth-100gi 0/3/0/2",
+      "错误的配置": "interface eth-100gi 0/3/0/2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2625行被重复，冗余语句"
+    },
+    {
+      "错误序号": 173,
+      "错误行号": 4637,
+      "正确的配置": "dynamic hostname wuqiao_MER_2",
+      "错误的配置": "dynamic hostname wuqiao_MER_2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4637行被重复，冗余语句"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 8392,
+      "正确的配置": "segment-routing mpls",
+      "错误的配置": "segment-routing mpls  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8392行被重复，冗余语句"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 5936,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer 10 level-2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5936行被重复，冗余语句"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 8715,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/3",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/3  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8715行被重复，冗余语句"
+    },
+    {
+      "错误序号": 177,
+      "错误行号": 6633,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6633行被重复，冗余语句"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 4822,
+      "正确的配置": "interface eth-10gi 0/1/0/5.843",
+      "错误的配置": "interface eth-10gi 0/1/0/5.843  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4822行被重复，冗余语句"
+    },
+    {
+      "错误序号": 179,
+      "错误行号": 7271,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7271行被重复，冗余语句"
+    },
+    {
+      "错误序号": 180,
+      "错误行号": 3714,
+      "正确的配置": "system-id 0000-8002-0303",
+      "错误的配置": "system-id 0000-8002-0303  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3714行被重复，冗余语句"
+    },
+    {
+      "错误序号": 181,
+      "错误行号": 1874,
+      "正确的配置": "snmp-agent service start",
+      "错误的配置": "snmp-agent service start  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1874行被重复，冗余语句"
+    },
+    {
+      "错误序号": 182,
+      "错误行号": 2842,
+      "正确的配置": "interface eth-10gi 0/2/0/36",
+      "错误的配置": "interface eth-10gi 0/2/0/36  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2842行被重复，冗余语句"
+    },
+    {
+      "错误序号": 183,
+      "错误行号": 5895,
+      "正确的配置": "sshd service start",
+      "错误的配置": "sshd service start  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5895行被重复，冗余语句"
+    },
+    {
+      "错误序号": 184,
+      "错误行号": 4550,
+      "正确的配置": "dynamic hostname wuqiao_MER_1",
+      "错误的配置": "dynamic hostname wuqiao_MER_1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4550行被重复，冗余语句"
+    },
+    {
+      "错误序号": 185,
+      "错误行号": 9147,
+      "正确的配置": "system-id 0000-7002-0302",
+      "错误的配置": "system-id 0000-7002-0302  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9147行被重复，冗余语句"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 6653,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/2",
+      "错误的配置": "lag add interface eth-100gi 0/3/0/2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6653行被重复，冗余语句"
+    },
+    {
+      "错误序号": 187,
+      "错误行号": 7135,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7135行被重复，冗余语句"
+    },
+    {
+      "错误序号": 188,
+      "错误行号": 7469,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7469行被重复，冗余语句"
+    },
+    {
+      "错误序号": 189,
+      "错误行号": 4552,
+      "正确的配置": "spf-interval level-2 10",
+      "错误的配置": "spf-interval level-2 10  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4552行被重复，冗余语句"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 7734,
+      "正确的配置": "snmp-agent access fiberhomeRW v2c exact _all_ _all_ _all_",
+      "错误的配置": "snmp-agent access fiberhomeRW v2c exact _all_ _all_ _all_  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7734行被重复，冗余语句"
+    },
+    {
+      "错误序号": 191,
+      "错误行号": 9008,
+      "正确的配置": "lag mode lacp",
+      "错误的配置": "lag mode lacp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9008行被重复，冗余语句"
+    },
+    {
+      "错误序号": 192,
+      "错误行号": 2021,
+      "正确的配置": "redistribute connected",
+      "错误的配置": "redistribute connected  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2021行被重复，冗余语句"
+    },
+    {
+      "错误序号": 193,
+      "错误行号": 9193,
+      "正确的配置": "interface lag 4",
+      "错误的配置": "interface lag 4  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9193行被重复，冗余语句"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 9007,
+      "正确的配置": "lag mac-address 6666-B669-6767",
+      "错误的配置": "lag mac-address 6666-B669-6767  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9007行被重复，冗余语句"
+    },
+    {
+      "错误序号": 195,
+      "错误行号": 5048,
+      "正确的配置": "interface eth-100gi 0/6/0/3",
+      "错误的配置": "interface eth-100gi 0/6/0/3  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5048行被重复，冗余语句"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 8488,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 1 down-weight 100  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8488行被重复，冗余语句"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 3856,
+      "正确的配置": "spf-interval level-2 50",
+      "错误的配置": "spf-interval level-2 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3856行被重复，冗余语句"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 9014,
+      "正确的配置": "interface lag 4",
+      "错误的配置": "interface lag 4  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9014行被重复，冗余语句"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 1808,
+      "正确的配置": "encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1808行被重复，冗余语句"
+    },
+    {
+      "错误序号": 200,
+      "错误行号": 4997,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4997行被重复，冗余语句"
+    },
+    {
+      "错误序号": 201,
+      "错误行号": 5023,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5023行被重复，冗余语句"
+    },
+    {
+      "错误序号": 202,
+      "错误行号": 4244,
+      "正确的配置": "spf-interval level-2 50",
+      "错误的配置": "spf-interval level-2 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4244行被重复，冗余语句"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 3902,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/3",
+      "错误的配置": "lag add interface eth-100gi 0/3/0/3  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3902行被重复，冗余语句"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 7530,
+      "正确的配置": "prefix-sid index 265 no-php",
+      "错误的配置": "prefix-sid index 265 no-php  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7530行被重复，冗余语句"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 2821,
+      "正确的配置": "interface eth-10gi 0/2/0/33",
+      "错误的配置": "interface eth-10gi 0/2/0/33  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2821行被重复，冗余语句"
+    },
+    {
+      "错误序号": 206,
+      "错误行号": 6373,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6373行被重复，冗余语句"
+    },
+    {
+      "错误序号": 207,
+      "错误行号": 4745,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/1",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4745行被重复，冗余语句"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 1618,
+      "正确的配置": "interface eth-10gi 0/1/0/35",
+      "错误的配置": "interface eth-10gi 0/1/0/35  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1618行被重复，冗余语句"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 8584,
+      "正确的配置": "lag mode lacp",
+      "错误的配置": "lag mode lacp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8584行被重复，冗余语句"
+    },
+    {
+      "错误序号": 210,
+      "错误行号": 8934,
+      "正确的配置": "segment-routing sr-prefer",
+      "错误的配置": "segment-routing sr-prefer  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8934行被重复，冗余语句"
+    },
+    {
+      "错误序号": 211,
+      "错误行号": 6702,
+      "正确的配置": "interface lag 1",
+      "错误的配置": "interface lag 1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6702行被重复，冗余语句"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 329,
+      "正确的配置": "interface mgmt 0/0/0/0",
+      "错误的配置": "interface mgmt 0/0/0/0  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第329行被重复，冗余语句"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 8757,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8757行被重复，冗余语句"
+    },
+    {
+      "错误序号": 214,
+      "错误行号": 4490,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4490行被重复，冗余语句"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 6865,
+      "正确的配置": "lag mac-address 3335-B334-3634",
+      "错误的配置": "lag mac-address 3335-B334-3634  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6865行被重复，冗余语句"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 4979,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4979行被重复，冗余语句"
+    },
+    {
+      "错误序号": 217,
+      "错误行号": 993,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第993行被重复，冗余语句"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 3625,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3625行被重复，冗余语句"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 3825,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3825行被重复，冗余语句"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 6575,
+      "正确的配置": "interface dcn-tunnel 0/1/0/1",
+      "错误的配置": "interface dcn-tunnel 0/1/0/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6575行被重复，冗余语句"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 6524,
+      "正确的配置": "interface lag 1",
+      "错误的配置": "interface lag 1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6524行被重复，冗余语句"
+    },
+    {
+      "错误序号": 222,
+      "错误行号": 7017,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7017行被重复，冗余语句"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 2516,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2516行被重复，冗余语句"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 5446,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/1",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5446行被重复，冗余语句"
+    },
+    {
+      "错误序号": 225,
+      "错误行号": 7216,
+      "正确的配置": "snmp-agent access fiberhomeRO v2c exact _all_ _none_ _all_",
+      "错误的配置": "snmp-agent access fiberhomeRO v2c exact _all_ _none_ _all_  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7216行被重复，冗余语句"
+    },
+    {
+      "错误序号": 226,
+      "错误行号": 3525,
+      "正确的配置": "interface eth-10gi 0/5/0/2.1843",
+      "错误的配置": "interface eth-10gi 0/5/0/2.1843  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3525行被重复，冗余语句"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 7726,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 1 down-weight 100  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7726行被重复，冗余语句"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 1873,
+      "正确的配置": "snmp-agent access fiberhomeRW v2c exact _all_ _all_ _all_",
+      "错误的配置": "snmp-agent access fiberhomeRW v2c exact _all_ _all_ _all_  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1873行被重复，冗余语句"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 4064,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4064行被重复，冗余语句"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 7723,
+      "正确的配置": "lag mode lacp",
+      "错误的配置": "lag mode lacp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7723行被重复，冗余语句"
+    },
+    {
+      "错误序号": 231,
+      "错误行号": 9206,
+      "正确的配置": "dynamic hostname HEXT-XX-3F-R8K3-SM-E010",
+      "错误的配置": "dynamic hostname HEXT-XX-3F-R8K3-SM-E010  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9206行被重复，冗余语句"
+    },
+    {
+      "错误序号": 232,
+      "错误行号": 3903,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3903行被重复，冗余语句"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 5074,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5074行被重复，冗余语句"
+    },
+    {
+      "错误序号": 234,
+      "错误行号": 3877,
+      "正确的配置": "if-match ipv4 address ipv4-prefix MAR",
+      "错误的配置": "if-match ipv4 address ipv4-prefix MAR  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3877行被重复，冗余语句"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 8573,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8573行被重复，冗余语句"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 6127,
+      "正确的配置": "remote-as 64522",
+      "错误的配置": "remote-as 64522  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6127行被重复，冗余语句"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 3538,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3538行被重复，冗余语句"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 4161,
+      "正确的配置": "ipv6 address auto link-local",
+      "错误的配置": "ipv6 address auto link-local  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4161行被重复，冗余语句"
+    },
+    {
+      "错误序号": 239,
+      "错误行号": 8155,
+      "正确的配置": "user router password %&%&bNeOyR89bVqF9Qgf8qgRgw==%&%&",
+      "错误的配置": "user router password %&%&bNeOyR89bVqF9Qgf8qgRgw==%&%&  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8155行被重复，冗余语句"
+    },
+    {
+      "错误序号": 240,
+      "错误行号": 5592,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5592行被重复，冗余语句"
+    },
+    {
+      "错误序号": 241,
+      "错误行号": 3005,
+      "正确的配置": "spf-interval level-1 10",
+      "错误的配置": "spf-interval level-1 10  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3005行被重复，冗余语句"
+    },
+    {
+      "错误序号": 242,
+      "错误行号": 1620,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1620行被重复，冗余语句"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 9002,
+      "正确的配置": "lag mode lacp",
+      "错误的配置": "lag mode lacp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9002行被重复，冗余语句"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 3125,
+      "正确的配置": "lag mode lacp",
+      "错误的配置": "lag mode lacp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3125行被重复，冗余语句"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 5123,
+      "正确的配置": "interface dcn-tunnel 0/3/1/3",
+      "错误的配置": "interface dcn-tunnel 0/3/1/3  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5123行被重复，冗余语句"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 7589,
+      "正确的配置": "prefix-sid index 271 no-php",
+      "错误的配置": "prefix-sid index 271 no-php  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7589行被重复，冗余语句"
+    },
+    {
+      "错误序号": 247,
+      "错误行号": 8245,
+      "正确的配置": "track-route 500",
+      "错误的配置": "track-route 500  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8245行被重复，冗余语句"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 8308,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/1",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8308行被重复，冗余语句"
+    },
+    {
+      "错误序号": 249,
+      "错误行号": 3640,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3640行被重复，冗余语句"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 7883,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/1",
+      "错误的配置": "lag add interface eth-100gi 0/3/0/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7883行被重复，冗余语句"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 3002,
+      "正确的配置": "capability ti-lfa node-protecting",
+      "错误的配置": "capability ti-lfa node-protecting  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3002行被重复，冗余语句"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 2853,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2853行被重复，冗余语句"
+    },
+    {
+      "错误序号": 253,
+      "错误行号": 1681,
+      "正确的配置": "interface eth-10gi 0/1/0/44",
+      "错误的配置": "interface eth-10gi 0/1/0/44  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1681行被重复，冗余语句"
+    },
+    {
+      "错误序号": 254,
+      "错误行号": 3473,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding 4G_RAN  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3473行被重复，冗余语句"
+    },
+    {
+      "错误序号": 255,
+      "错误行号": 5344,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5344行被重复，冗余语句"
+    },
+    {
+      "错误序号": 256,
+      "错误行号": 2279,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2279行被重复，冗余语句"
+    },
+    {
+      "错误序号": 257,
+      "错误行号": 1983,
+      "正确的配置": "route-policy MCR-OUT-BGPVPN-MCR1 out",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR1 out  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1983行被重复，冗余语句"
+    },
+    {
+      "错误序号": 258,
+      "错误行号": 2573,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2573行被重复，冗余语句"
+    },
+    {
+      "错误序号": 259,
+      "错误行号": 9144,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9144行被重复，冗余语句"
+    },
+    {
+      "错误序号": 260,
+      "错误行号": 1994,
+      "正确的配置": "next-hop-self",
+      "错误的配置": "next-hop-self  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1994行被重复，冗余语句"
+    },
+    {
+      "错误序号": 261,
+      "错误行号": 450,
+      "正确的配置": "ip address unnumbered interface loopback 1020",
+      "错误的配置": "ip address unnumbered interface loopback 1020  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第450行被重复，冗余语句"
+    },
+    {
+      "错误序号": 262,
+      "错误行号": 2417,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf FHNMVPN  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2417行被重复，冗余语句"
+    },
+    {
+      "错误序号": 263,
+      "错误行号": 5853,
+      "正确的配置": "lag mode lacp",
+      "错误的配置": "lag mode lacp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5853行被重复，冗余语句"
+    },
+    {
+      "错误序号": 264,
+      "错误行号": 6121,
+      "正确的配置": "router bgp 64522",
+      "错误的配置": "router bgp 64522  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6121行被重复，冗余语句"
+    },
+    {
+      "错误序号": 265,
+      "错误行号": 8019,
+      "正确的配置": "lag mac-address 3333-9337-3435",
+      "错误的配置": "lag mac-address 3333-9337-3435  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8019行被重复，冗余语句"
+    },
+    {
+      "错误序号": 266,
+      "错误行号": 6662,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6662行被重复，冗余语句"
+    },
+    {
+      "错误序号": 267,
+      "错误行号": 4043,
+      "正确的配置": "segment-routing sr-prefer",
+      "错误的配置": "segment-routing sr-prefer  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4043行被重复，冗余语句"
+    },
+    {
+      "错误序号": 268,
+      "错误行号": 1043,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1043行被重复，冗余语句"
+    },
+    {
+      "错误序号": 269,
+      "错误行号": 2471,
+      "正确的配置": "interface eth-10gi 0/1/1/7",
+      "错误的配置": "interface eth-10gi 0/1/1/7  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2471行被重复，冗余语句"
+    },
+    {
+      "错误序号": 270,
+      "错误行号": 4932,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4932行被重复，冗余语句"
+    },
+    {
+      "错误序号": 271,
+      "错误行号": 8861,
+      "正确的配置": "lag mac-address 6668-8667-6967",
+      "错误的配置": "lag mac-address 6668-8667-6967  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8861行被重复，冗余语句"
+    },
+    {
+      "错误序号": 272,
+      "错误行号": 6338,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6338行被重复，冗余语句"
+    },
+    {
+      "错误序号": 273,
+      "错误行号": 6169,
+      "正确的配置": "interface lag 2",
+      "错误的配置": "interface lag 2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6169行被重复，冗余语句"
+    },
+    {
+      "错误序号": 274,
+      "错误行号": 1125,
+      "正确的配置": "sshd service start",
+      "错误的配置": "sshd service start  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1125行被重复，冗余语句"
+    },
+    {
+      "错误序号": 275,
+      "错误行号": 6849,
+      "正确的配置": "router ospf 65534 vrf CTVPN193",
+      "错误的配置": "router ospf 65534 vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6849行被重复，冗余语句"
+    },
+    {
+      "错误序号": 276,
+      "错误行号": 5458,
+      "正确的配置": "segment-routing sr-prefer",
+      "错误的配置": "segment-routing sr-prefer  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5458行被重复，冗余语句"
+    },
+    {
+      "错误序号": 277,
+      "错误行号": 874,
+      "正确的配置": "vlan-type dot1q 895",
+      "错误的配置": "vlan-type dot1q 895  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第874行被重复，冗余语句"
+    },
+    {
+      "错误序号": 278,
+      "错误行号": 7846,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/2",
+      "错误的配置": "lag add interface eth-100gi 0/3/0/2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7846行被重复，冗余语句"
+    },
+    {
+      "错误序号": 279,
+      "错误行号": 1425,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1425行被重复，冗余语句"
+    },
+    {
+      "错误序号": 280,
+      "错误行号": 7658,
+      "正确的配置": "interface lag 1",
+      "错误的配置": "interface lag 1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7658行被重复，冗余语句"
+    },
+    {
+      "错误序号": 281,
+      "错误行号": 7051,
+      "正确的配置": "snmp-agent trapsink ipv4 <IPV4> HZprivate@123 167",
+      "错误的配置": "snmp-agent trapsink ipv4 <IPV4> HZprivate@123 167  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7051行被重复，冗余语句"
+    },
+    {
+      "错误序号": 282,
+      "错误行号": 2040,
+      "正确的配置": "additional-paths install",
+      "错误的配置": "additional-paths install  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2040行被重复，冗余语句"
+    },
+    {
+      "错误序号": 283,
+      "错误行号": 8212,
+      "正确的配置": "route-policy SET_DEF_ROUTE_v4 permit node 10",
+      "错误的配置": "route-policy SET_DEF_ROUTE_v4 permit node 10  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8212行被重复，冗余语句"
+    },
+    {
+      "错误序号": 284,
+      "错误行号": 2597,
+      "正确的配置": "interface eth-10gi 0/2/0/7",
+      "错误的配置": "interface eth-10gi 0/2/0/7  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2597行被重复，冗余语句"
+    },
+    {
+      "错误序号": 285,
+      "错误行号": 6483,
+      "正确的配置": "interface lag 3",
+      "错误的配置": "interface lag 3  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6483行被重复，冗余语句"
+    },
+    {
+      "错误序号": 286,
+      "错误行号": 6149,
+      "正确的配置": "interface dcn-tunnel 0/3/0/2",
+      "错误的配置": "interface dcn-tunnel 0/3/0/2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6149行被重复，冗余语句"
+    },
+    {
+      "错误序号": 287,
+      "错误行号": 5240,
+      "正确的配置": "capability ti-lfa node-protecting",
+      "错误的配置": "capability ti-lfa node-protecting  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5240行被重复，冗余语句"
+    },
+    {
+      "错误序号": 288,
+      "错误行号": 1193,
+      "正确的配置": "route-target import <PORT>",
+      "错误的配置": "route-target import <PORT>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1193行被重复，冗余语句"
+    },
+    {
+      "错误序号": 289,
+      "错误行号": 814,
+      "正确的配置": "interface loopback 1020",
+      "错误的配置": "interface loopback 1020  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第814行被重复，冗余语句"
+    },
+    {
+      "错误序号": 290,
+      "错误行号": 4854,
+      "正确的配置": "vlan-type dot1q 1843",
+      "错误的配置": "vlan-type dot1q 1843  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4854行被重复，冗余语句"
+    },
+    {
+      "错误序号": 291,
+      "错误行号": 2195,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2195行被重复，冗余语句"
+    },
+    {
+      "错误序号": 292,
+      "错误行号": 4381,
+      "正确的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193",
+      "错误的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4381行被重复，冗余语句"
+    },
+    {
+      "错误序号": 293,
+      "错误行号": 5804,
+      "正确的配置": "dhcp select relay profile wireless_OMC",
+      "错误的配置": "dhcp select relay profile wireless_OMC  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5804行被重复，冗余语句"
+    },
+    {
+      "错误序号": 294,
+      "错误行号": 717,
+      "正确的配置": "interface dcn-serial 0/1/0/6",
+      "错误的配置": "interface dcn-serial 0/1/0/6  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第717行被重复，冗余语句"
+    },
+    {
+      "错误序号": 295,
+      "错误行号": 3411,
+      "正确的配置": "vlan-type dot1q 1843",
+      "错误的配置": "vlan-type dot1q 1843  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3411行被重复，冗余语句"
+    },
+    {
+      "错误序号": 296,
+      "错误行号": 4670,
+      "正确的配置": "interface loopback 1020",
+      "错误的配置": "interface loopback 1020  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4670行被重复，冗余语句"
+    },
+    {
+      "错误序号": 297,
+      "错误行号": 4625,
+      "正确的配置": "router static",
+      "错误的配置": "router static  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4625行被重复，冗余语句"
+    },
+    {
+      "错误序号": 298,
+      "错误行号": 763,
+      "正确的配置": "interface dcn-tunnel 0/1/0/5",
+      "错误的配置": "interface dcn-tunnel 0/1/0/5  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第763行被重复，冗余语句"
+    },
+    {
+      "错误序号": 299,
+      "错误行号": 2755,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2755行被重复，冗余语句"
+    },
+    {
+      "错误序号": 300,
+      "错误行号": 6541,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/1",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6541行被重复，冗余语句"
+    },
+    {
+      "错误序号": 301,
+      "错误行号": 607,
+      "正确的配置": "segment-routing global block 24000 36999",
+      "错误的配置": "segment-routing global block 24000 36999  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第607行被重复，冗余语句"
+    },
+    {
+      "错误序号": 302,
+      "错误行号": 8288,
+      "正确的配置": "system name LICX-TC-2J-V8O3-WQ-I031",
+      "错误的配置": "system name LICX-TC-2J-V8O3-WQ-I031  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8288行被重复，冗余语句"
+    },
+    {
+      "错误序号": 303,
+      "错误行号": 7958,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7958行被重复，冗余语句"
+    },
+    {
+      "错误序号": 304,
+      "错误行号": 6427,
+      "正确的配置": "mpls traffic-eng router-id <IPV4>",
+      "错误的配置": "mpls traffic-eng router-id <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6427行被重复，冗余语句"
+    },
+    {
+      "错误序号": 305,
+      "错误行号": 5918,
+      "正确的配置": "lag mac-address 8889-A88B-899A",
+      "错误的配置": "lag mac-address 8889-A88B-899A  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5918行被重复，冗余语句"
+    },
+    {
+      "错误序号": 306,
+      "错误行号": 154,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第154行被重复，冗余语句"
+    },
+    {
+      "错误序号": 307,
+      "错误行号": 7248,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/1",
+      "错误的配置": "lag add interface eth-100gi 0/3/0/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7248行被重复，冗余语句"
+    },
+    {
+      "错误序号": 308,
+      "错误行号": 3238,
+      "正确的配置": "interface loopback 0",
+      "错误的配置": "interface loopback 0  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3238行被重复，冗余语句"
+    },
+    {
+      "错误序号": 309,
+      "错误行号": 6322,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6322行被重复，冗余语句"
+    },
+    {
+      "错误序号": 310,
+      "错误行号": 2759,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2759行被重复，冗余语句"
+    },
+    {
+      "错误序号": 311,
+      "错误行号": 6561,
+      "正确的配置": "spf-interval level-1 10",
+      "错误的配置": "spf-interval level-1 10  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6561行被重复，冗余语句"
+    },
+    {
+      "错误序号": 312,
+      "错误行号": 2262,
+      "正确的配置": "vlan-type dot1q 843",
+      "错误的配置": "vlan-type dot1q 843  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2262行被重复，冗余语句"
+    },
+    {
+      "错误序号": 313,
+      "错误行号": 383,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第383行被重复，冗余语句"
+    },
+    {
+      "错误序号": 314,
+      "错误行号": 4225,
+      "正确的配置": "lag mode lacp",
+      "错误的配置": "lag mode lacp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4225行被重复，冗余语句"
+    },
+    {
+      "错误序号": 315,
+      "错误行号": 1233,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1233行被重复，冗余语句"
+    },
+    {
+      "错误序号": 316,
+      "错误行号": 5233,
+      "正确的配置": "spf-interval level-1 10",
+      "错误的配置": "spf-interval level-1 10  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5233行被重复，冗余语句"
+    },
+    {
+      "错误序号": 317,
+      "错误行号": 8538,
+      "正确的配置": "interface lag 2",
+      "错误的配置": "interface lag 2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8538行被重复，冗余语句"
+    },
+    {
+      "错误序号": 318,
+      "错误行号": 5839,
+      "正确的配置": "lag mode lacp",
+      "错误的配置": "lag mode lacp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5839行被重复，冗余语句"
+    },
+    {
+      "错误序号": 319,
+      "错误行号": 9221,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第9221行被重复，冗余语句"
+    },
+    {
+      "错误序号": 320,
+      "错误行号": 7836,
+      "正确的配置": "lag mac-address 777B-C778-7A78",
+      "错误的配置": "lag mac-address 777B-C778-7A78  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7836行被重复，冗余语句"
+    },
+    {
+      "错误序号": 321,
+      "错误行号": 4031,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer 10 level-2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4031行被重复，冗余语句"
+    },
+    {
+      "错误序号": 322,
+      "错误行号": 3662,
+      "正确的配置": "segment-routing sr-prefer",
+      "错误的配置": "segment-routing sr-prefer  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3662行被重复，冗余语句"
+    },
+    {
+      "错误序号": 323,
+      "错误行号": 1258,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1258行被重复，冗余语句"
+    },
+    {
+      "错误序号": 324,
+      "错误行号": 7703,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7703行被重复，冗余语句"
+    },
+    {
+      "错误序号": 325,
+      "错误行号": 4451,
+      "正确的配置": "system name MJHF-CV-1M2K-W850-XR-F1",
+      "错误的配置": "system name MJHF-CV-1M2K-W850-XR-F1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4451行被重复，冗余语句"
+    },
+    {
+      "错误序号": 326,
+      "错误行号": 8293,
+      "正确的配置": "lag mode lacp",
+      "错误的配置": "lag mode lacp  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8293行被重复，冗余语句"
+    },
+    {
+      "错误序号": 327,
+      "错误行号": 3571,
+      "正确的配置": "bgp router-id <IPV4>",
+      "错误的配置": "bgp router-id <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3571行被重复，冗余语句"
+    },
+    {
+      "错误序号": 328,
+      "错误行号": 1056,
+      "正确的配置": "interface lag 1",
+      "错误的配置": "interface lag 1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1056行被重复，冗余语句"
+    },
+    {
+      "错误序号": 329,
+      "错误行号": 1373,
+      "正确的配置": "interface eth-10gi 0/3/2/4",
+      "错误的配置": "interface eth-10gi 0/3/2/4  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1373行被重复，冗余语句"
+    },
+    {
+      "错误序号": 330,
+      "错误行号": 2086,
+      "正确的配置": "ipv6 address auto link-local",
+      "错误的配置": "ipv6 address auto link-local  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2086行被重复，冗余语句"
+    },
+    {
+      "错误序号": 331,
+      "错误行号": 2213,
+      "正确的配置": "lag add interface eth-10gi 0/5/0/1",
+      "错误的配置": "lag add interface eth-10gi 0/5/0/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2213行被重复，冗余语句"
+    },
+    {
+      "错误序号": 332,
+      "错误行号": 1146,
+      "正确的配置": "route-policy MCR-OUT-BGPVPN-MCR permit node 1",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR permit node 1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1146行被重复，冗余语句"
+    },
+    {
+      "错误序号": 333,
+      "错误行号": 312,
+      "正确的配置": "encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第312行被重复，冗余语句"
+    },
+    {
+      "错误序号": 334,
+      "错误行号": 3092,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf FHNMVPN  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3092行被重复，冗余语句"
+    },
+    {
+      "错误序号": 335,
+      "错误行号": 3614,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 1 down-weight 100  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3614行被重复，冗余语句"
+    },
+    {
+      "错误序号": 336,
+      "错误行号": 6123,
+      "正确的配置": "bgp cluster-id <IPV4>",
+      "错误的配置": "bgp cluster-id <IPV4>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6123行被重复，冗余语句"
+    },
+    {
+      "错误序号": 337,
+      "错误行号": 3463,
+      "正确的配置": "ipv6 address ::0AB2:7C<PORT>DB:2488/128",
+      "错误的配置": "ipv6 address ::0AB2:7C<PORT>DB:2488/128  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3463行被重复，冗余语句"
+    },
+    {
+      "错误序号": 338,
+      "错误行号": 5277,
+      "正确的配置": "interface dcn-tunnel 0/3/2/10",
+      "错误的配置": "interface dcn-tunnel 0/3/2/10  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5277行被重复，冗余语句"
+    },
+    {
+      "错误序号": 339,
+      "错误行号": 3137,
+      "正确的配置": "spf-interval level-2 50",
+      "错误的配置": "spf-interval level-2 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3137行被重复，冗余语句"
+    },
+    {
+      "错误序号": 340,
+      "错误行号": 155,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第155行被重复，冗余语句"
+    },
+    {
+      "错误序号": 341,
+      "错误行号": 7066,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer 10 level-2  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7066行被重复，冗余语句"
+    },
+    {
+      "错误序号": 342,
+      "错误行号": 3134,
+      "正确的配置": "dynamic hostname HAIXINGJIERU_MAR",
+      "错误的配置": "dynamic hostname HAIXINGJIERU_MAR  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3134行被重复，冗余语句"
+    },
+    {
+      "错误序号": 343,
+      "错误行号": 1032,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1032行被重复，冗余语句"
+    },
+    {
+      "错误序号": 344,
+      "错误行号": 5323,
+      "正确的配置": "route-target export <PORT>",
+      "错误的配置": "route-target export <PORT>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5323行被重复，冗余语句"
+    },
+    {
+      "错误序号": 345,
+      "错误行号": 82,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第82行被重复，冗余语句"
+    },
+    {
+      "错误序号": 346,
+      "错误行号": 6245,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第6245行被重复，冗余语句"
+    },
+    {
+      "错误序号": 347,
+      "错误行号": 2967,
+      "正确的配置": "ip address unnumbered interface loopback 1023",
+      "错误的配置": "ip address unnumbered interface loopback 1023  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2967行被重复，冗余语句"
+    },
+    {
+      "错误序号": 348,
+      "错误行号": 2598,
+      "正确的配置": "pm-statistics enable",
+      "错误的配置": "pm-statistics enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2598行被重复，冗余语句"
+    },
+    {
+      "错误序号": 349,
+      "错误行号": 8834,
+      "正确的配置": "snmp-agent trapsink ipv4 <IPV4> HZprivate@123 167",
+      "错误的配置": "snmp-agent trapsink ipv4 <IPV4> HZprivate@123 167  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8834行被重复，冗余语句"
+    },
+    {
+      "错误序号": 350,
+      "错误行号": 7403,
+      "正确的配置": "interface eth-10gi 0/1/1/5",
+      "错误的配置": "interface eth-10gi 0/1/1/5  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7403行被重复，冗余语句"
+    },
+    {
+      "错误序号": 351,
+      "错误行号": 5705,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5705行被重复，冗余语句"
+    },
+    {
+      "错误序号": 352,
+      "错误行号": 8059,
+      "正确的配置": "vrf 5G_RAN_VIP",
+      "错误的配置": "vrf 5G_RAN_VIP  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8059行被重复，冗余语句"
+    },
+    {
+      "错误序号": 353,
+      "错误行号": 2100,
+      "正确的配置": "lag add interface eth-100gi 0/10/0/1",
+      "错误的配置": "lag add interface eth-100gi 0/10/0/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2100行被重复，冗余语句"
+    },
+    {
+      "错误序号": 354,
+      "错误行号": 7689,
+      "正确的配置": "telnetd service start",
+      "错误的配置": "telnetd service start  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7689行被重复，冗余语句"
+    },
+    {
+      "错误序号": 355,
+      "错误行号": 1825,
+      "正确的配置": "interface dcn-tunnel 0/3/1/1",
+      "错误的配置": "interface dcn-tunnel 0/3/1/1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1825行被重复，冗余语句"
+    },
+    {
+      "错误序号": 356,
+      "错误行号": 118,
+      "正确的配置": "pdcn enable",
+      "错误的配置": "pdcn enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第118行被重复，冗余语句"
+    },
+    {
+      "错误序号": 357,
+      "错误行号": 8776,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/3",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/3  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8776行被重复，冗余语句"
+    },
+    {
+      "错误序号": 358,
+      "错误行号": 5232,
+      "正确的配置": "dynamic hostname xianxiaqn_MER_1",
+      "错误的配置": "dynamic hostname xianxiaqn_MER_1  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5232行被重复，冗余语句"
+    },
+    {
+      "错误序号": 359,
+      "错误行号": 8653,
+      "正确的配置": "lag-return-mode",
+      "错误的配置": "lag-return-mode  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第8653行被重复，冗余语句"
+    },
+    {
+      "错误序号": 360,
+      "错误行号": 2194,
+      "正确的配置": "interface eth-10gi 0/1/0/3.1843",
+      "错误的配置": "interface eth-10gi 0/1/0/3.1843  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2194行被重复，冗余语句"
+    },
+    {
+      "错误序号": 361,
+      "错误行号": 7604,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf FHNMVPN  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7604行被重复，冗余语句"
+    },
+    {
+      "错误序号": 362,
+      "错误行号": 135,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第135行被重复，冗余语句"
+    },
+    {
+      "错误序号": 363,
+      "错误行号": 1103,
+      "正确的配置": "interface loopback 0",
+      "错误的配置": "interface loopback 0  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1103行被重复，冗余语句"
+    },
+    {
+      "错误序号": 364,
+      "错误行号": 4047,
+      "正确的配置": "sshd service start",
+      "错误的配置": "sshd service start  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4047行被重复，冗余语句"
+    },
+    {
+      "错误序号": 365,
+      "错误行号": 207,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第207行被重复，冗余语句"
+    },
+    {
+      "错误序号": 366,
+      "错误行号": 1783,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/4",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/4  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1783行被重复，冗余语句"
+    },
+    {
+      "错误序号": 367,
+      "错误行号": 5154,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN193  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第5154行被重复，冗余语句"
+    },
+    {
+      "错误序号": 368,
+      "错误行号": 4052,
+      "正确的配置": "fanctrl chassis 0 runmode auto",
+      "错误的配置": "fanctrl chassis 0 runmode auto  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4052行被重复，冗余语句"
+    }
+  ]
+}

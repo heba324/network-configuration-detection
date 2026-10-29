@@ -1,0 +1,1417 @@
+interface eth-10gi 0/5/0/6.843
+ip vrf forwarding 4G_RAN
+ipv6 enable
+ipv6 address auto link-local
+ipv6 address <IPV6>/126
+ipv6 mtu 9000
+encapsulation dot1q
+vlan-type dot1q 843
+#
+interface loopback 1020
+ip vrf forwarding FHNMVPN
+ip address <IPV4>
+ipv6 enable
+ipv6 address auto link-local
+ipv6 address ::D78F:<PORT>ED:B555/128
+ipv6 address ::D78F:<PORT>ED:B555/128
+#
+acl basic SmartMAN_SSH_TELNET
+rule 1 permit source <IPV4> fragme-type non_fragment
+rule 2 permit source <IPV4> fragme-type non_fragment
+rule 1000 permit fragme-type non_fragment
+#
+track-route 4G_RAN
+route 2001:db8::1 vrf 4G_RAN
+route <IPV6> vrf 4G_RAN
+#
+address-family ipv4 unicast
+redistribute connected
+additional-paths install
+#
+interface loopback 0
+address-family ipv4 unicast
+#
+#
+interface dcn-tunnel 0/2/0/2
+ip vrf forwarding 4G_RAN
+ip address unnumbered interface loopback 1023
+vlan-type dot1q 4094
+#
+dynamic hostname yanshanxianju_MAR
+mpls traffic-eng level-2
+capability cspf
+spf-interval level-2 50
+segment-routing mpls
+ti-lfa uloop-timer 10 level-2
+segment-routign sr-prefer
+micro-loop avoidance
+#
+interface eth-10gi 0/1/0/6
+pm-statistics enable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+pdcn enble
+dcn enable
+#
+interface loopback 0
+address-family ipv4 unicast
+address-family ipv4 unicast
+prefix-sid index 145 no-php
+#
+interface eth-10gi 0/5/0/2
+pm-statistics enable
+ipv6 mtu 9000
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+pdcn disable
+dcn enable
+#
+interface eth-10gi 0/1/0/3.1843
+ip vrf forwarding 5G_RAN
+ipv6 disable
+ipv6 address auto link-local
+ipv6 address <IPV6>/125
+ipv6 mtu 9000
+encapsulation dot1q
+vlan-type dot1q 1843
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+system name HEXT-SH-2F-R8K10E-SM-E019
+set dcn-manager-addr ip-address 2001:db8::1 private CTVPN193
+#
+interface lag 1
+lag mac-address 999A-A99A-9AAA
+lag mode lacp
+lag add interface eth-100gi 999999/3/0/1
+ip address <IPV4>
+mtu 9000
+lag-return-mode
+#
+pm-statistics enable
+interface eth-10gi 0/1/1/2
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+dcn enable
+#
+interface eth-10gi 0/2/2/1
+pm-statistics enable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshodl packet-discard 100 interval-second 900
+#
+interface eth-10gi 0/1/0/31
+pm-statistics disable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+#
+prefix-sid index 151 no-php
+address-family ipv4 unicast
+interface loopback 0
+#
+interface dcn-tunnel 999999/2/0/3
+ip vrf forwarding CTVPN193
+ip address unnumbered interface loopback 1023
+vlan-type dot1q 4094
+#
+route-policy MAR_IPV6-OUT-BGPVPN-LOOP1 deny node 3
+if-match extcommunity-filter LOOP01
+#
+interface eth-10gi 0/2/0/37
+interface eth-10gi 0/2/0/37
+pm-statistics enable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+#
+local-aaa
+user router password %&%&bNeOyR89bVqF9Qgf8qgRgw==%&%&
+user HE-XT-SDNcontroller privilege 15
+user router privilege 15
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+system name IFDB-IY-1I2G-S8L3-TN-F030
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+interface eth-10gi 0/1/0/5.2000
+ip vrf forwarding 4G_RAN
+ip address <IPV4>
+mtu 9000
+encapsulation dot1q
+vlan-type dot1q 2000
+#
+system-id 999999-2002-0303
+#
+interface eth-10gi 0/5/0/4
+pm-statistics enable
+ipv6 mtu 9000
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold packet-discard 100 interval-second 900
+pdcn enable
+dcn enable
+#
+dynamic hostname botouyuanlinxiaoqu_MAR
+mpls traffic-eng level-2
+capability cspf
+spf-intervla level-2 50
+segment-routing mpls
+ti-lfa uloop-timer 10 level-2
+segment-routing sr-prefer
+micro-loop avoidance
+#
+interface eth-10gi 0/1/0/5.1843
+ip vrf forwarding 5G_RAN
+ipv6 enable
+ipv6 address auto link-local
+ipv6 address 10.255.0.1/126
+description <*>
+ipv6 mtu 9000
+encapsulation dot1q
+vlan-type dot1q 1843
+#
+interface dcn-tunnel 0/2/0/5
+ip address unnumbered interface loopback 1023
+vlan-type dot1q 4094
+#
+dynamic hostname xianxianxinyuan_MAR
+spf-interval level-2 50
+segment-routing mpls
+segment-routing sr-prefer
+ti-lfa uloop-timer 10 level-2
+#
+interface lag 3
+lag mac-address 2224-7225-2333
+lag mode lacp
+lag add interface eth-10gi 0/1/1/1
+lag add interface eth-10gi 0/1/1/1
+ip address <IPV4>
+track monitor-group 1 down-weight 100
+lag-return-mode
+#
+interface eth-10gi 0/1/0/2.852
+ip vrf forwarding 5G_OAM
+ip address <IPV4>
+mtu 9000
+encapsulation dot1q
+vlan-type dot1q 852
+#
+address-family ipv6 unicast
+vrf 5G_RAN_VIP
+route-target export <PORT>
+route-target export <PORT>
+route-target import <PORT>
+route-target import <PORT>
+rd <PORT>
+#
+dynamic hostname haixing_MER_1
+spf-interval level--1 10
+spf-interval level-2 10
+capability frr
+segment-routing mpls
+ti-lfa uloop-timer 10 level-2
+capability remote-frr
+segment-routing sr-prefer
+capability ti-lfa node-protecting
+#
+interface eth-10gi 999999/4/0/4.895
+dhcp select relay profile wireless_OMC
+dhcp relay source-ip <IPV4>
+#
+neighbor <IPV4>
+remote-as 64523
+address-family ipv4 unicast
+send community extended
+#
+route-policy MAR-OUT-BGPVPN-LOOP2 deny node 1
+#
+interface eth-10gi 0/1/0/28
+pm-statistics disable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf FHNMVPN
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+system name GDWS-MI-3E-Q8J10D-RL-D018
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+prefix-sid index 151 no-php
+address-family ipv4 unicast
+interface loopback 0
+#
+segment-routing global block 16000 99000
+router isis 11
+bfd detected min-rx-interval 10 min-tx-interval 10
+interface lag 1
+address-family ipv4 unicast
+net <*>
+#
+password cipher %&%&6i5Y75WDF1hAM95NNCwxWw==%&%&
+address-family vpnv4 unicast
+next-hop-self
+route-reflector-client
+route-policy MCR-IN-BGPVPN-MCR in
+route-policy MCR-IN-BGPVPN-MCR out
+#
+interface lag 1.4092
+ip vrf forwarding 4G_RAN
+ip address <IPV4>
+encapsulation dot1q
+vlan-type dot1q 4092
+#
+password cipher %&%&6i5Y75WDF1hAM95NNCwxWw==%&%&
+address-family vpnv4 unicast
+next-hop-self
+route-policy MCR-in-BGPVPN-MCR out
+#
+ip extcommunity-list standard LOOP1 permit rt <PORT>
+ip extcommunity-list standard LOOP2 permit rt <PORT>
+ip extcommunity-list standard LOOP2 deny rt <PORT>
+router ospf 65534 vrf CTVPN193
+router-id <IPV4>
+area <IPV4>
+interface dcn-tunnel 0/1/0/1
+#
+interface eth-10gi 0/4/0/2.895
+dhcp select relay profile wireless_OMC
+dhcp select relay profile wireless_OMC
+dhcp relay source-ip <IPV4>
+#
+interface dcn-serial 0/4/0/2
+ip vrf forwarding FHNMVPN
+ip address unnumbered interface loopback 1020
+ip address unnumbered interface loopback 1020
+encapsulation dot1q
+vlan-type dot1q 4093
+#
+interface eth-100gi 0/8/0/2
+pm-statistics enable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold packet-discard 100 interval-second 900
+trap-threshold crc-error 1 interval-second 900
+#
+interface eth-10gi 0/1/0/3
+pm-statistics enable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+dcn disable
+#
+interface lag 3
+lag mac-address 3334-7336-3434
+lag mode lacp
+ip address <IPV4>
+lag add interface eth-10gi 0/1/0/1
+track monitor-group 1 down-weight 100
+lag-return-mode
+#
+telnetd service start
+telnetd service start vrf FHNMVPN
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+system name GDWS-WVS-4E-Q8J3-RL-D008
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf FHNMVPN
+system name DZTP-WT-2B-N8G3-OI-Z041
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+interface eth-10gi 0/4/0/3
+pm-statistics enable
+ipv6 mtu 9000
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+pdcn enable
+pdcn enable
+dcn enable
+#
+interface eth-10gi 999999/5/0/4.854
+dhcp select relay profile wireless_OMC
+dhcp relay source-ip <IPV4>
+#
+interface eth-10gi 0/1/0/19
+pm-statistics enable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+#
+interface eth-10gi 0/5/0/4.854
+interface eth-10gi 0/5/0/4.854
+dhcp select relay profile wireless_OMC
+dhcp relay source-ip <IPV4>
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf FHNMVPN
+system name HEXT-GZ-3F-R8K3-SM-E030
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+interface eth-10gi 0/5/0/3.854
+ip vrf forwarding wireless_OMC
+ip address <IPV4>
+mtu 9000
+encapslation dot1q
+vlan-type dot1q 854
+#
+interface loopback 0
+address-family ipv4 unicast
+prefx-sid index 9002 no-php
+#
+neighbor <IPV4>
+remote-as 64522
+update-source <IPV4>
+address-family ipv4 unicast
+route-policy MCR-in-BGPVPN-MCR2 out
+send community extended
+#
+interface lag 1
+lag mac-address 2223-B223-2523
+lag mode lacp
+lag add interface eth-100gi 0/3/0/1
+ip address <IPV4>
+mtu 9000
+lag-return-mode
+lag-return-mode
+#
+interface lag 2
+lag mac-address 999999-9668-6887
+lag mode lacp
+lag add interface eth-100gi 0/3/0/3
+lag-return-mode
+#
+interface eth-10gi 0/3/1/4
+pm-statistics disable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+#
+interface eth-10gi 0/1/0/3
+pm-statistics enable
+ipv6 mtu 9000
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+pdcn disable
+dcn enable
+#
+dhcp ipv4
+profile wireless_OMC relay
+relay address 2001:db8::1
+#
+interface eth-10gi 0/1/0/5
+pm-statistics enable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+dcn disable
+#
+interface lag 2
+lag mac-address 1113-3113-1413
+lag moed lacp
+lag add interface eth-100gi 0/3/0/2
+lag-return-mode
+#
+interface loopback 1020
+ip vrf forwarding 4G_RAN
+ip address <IPV4>
+ipv6 enable
+ipv6 address auto link-local
+ipv6 address ::6C1B:9E<PORT>F:7E22/128
+#
+interface eth-10gi 0/2/0/7
+pm-statistics disable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+#
+dhcp relay source-ip <IPV4>
+dhcp select relay profile wireless_OMC
+interface eth-10gi 0/1/0/3.895
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+ftp service start vrf FHNMVPN
+set device type A
+system name BXVT-UB-1B2Y-L850-MG-T1
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+interfce eth-10gi 0/1/0/34
+pm-statistics enable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+#
+interface eth-10gi 0/4/0/2.852
+ip vrf forwarding 5G_OAM
+ip address <IPV4>
+mtu 9000
+encapsulation dot1q
+vlan-type dot1q 852
+#
+interface eth-10gi 0/4/0/1.851
+ip vrf forwarding 5G_OAM
+ip address <IPV4>
+mtu 9000
+encapsulation dot1q
+vlan-type dot1q 851
+#
+interface dcn-serial 0/4/0/3
+ip vrf forwardign FHNMVPN
+ip address unnumbered interface loopback 1020
+encapsulation dot1q
+vlan-type dot1q 4093
+#
+interface eth-10gi 0/2/2/7
+pm-statistics enable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshodl packet-discard 100 interval-second 900
+#
+interface lag 1
+lag mac-address 3334-A334-3444
+lag mode lacp
+lag add interface eth-100gi 0/8/0/1
+ip address <IPV4>
+mtu 9000x
+lag-return-mode
+#
+route-policy MAR-OUT-BGPVPN-LOOP1 deny node 3
+if-match extcommunity-filter LOOP01
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+system name HEXT-LX-2F-R8K3-SM-E025
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+interface lag 2
+adress-family ipv4 unicast
+bfd detected min-rx-interval 10 min-tx-interval 10
+#
+password cipher %&%&6i5Y75WDF1hAM95NNCwxWw==%&%&
+address-family vpnv4 unicast
+next-hop-self
+route-policy MCR-in-BGPVPN-MCR2 out
+#
+route-policy MCR-OUT-BGPVPN-MCR2 deny node 1
+if-match ipv4 address ipv4-prefix MCR
+set local-preference 50
+#
+interface lag 1
+lag mac-address 3334-B334-3B34
+lag mode lacp
+lag add interface eth-100gi 0/8/0/1
+ip address <IPV4>
+mtu 9000
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+telnetd service start vrf FHNMVPN
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start vrf CTVPN193
+ftp service start vrf FHNMVPN
+set device type A
+system name DZXV-UHTM-1D2B-N850-OI-V1
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+interface dcn-tunnel 0/4/0/4
+ip vrf forwarding 4G_RAN
+ip address unnumbered interface loopback 1023
+vlan-type dot1q 4094
+#
+is-type level-2
+metric-style wide level-2
+address-family ipv4 unicast
+redistribute isis 11 route-map SmartMAN_OUT metrc 10000
+redistribute isis 12 route-map SmartMAN_OUT metric 10000
+mpls traffic-eng router-id <IPV4>
+#
+track-route 4G_RAN
+route <IPV4> vrf 4G_RAN
+#
+address-family ipv4 unicast
+interface loopback 0
+prefix-sid index 61 no-php
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf FHNMVPN
+system name GDWS-VW-3E-Q8J3-RL-D023
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+route-policy MAR_IPV6-OUT-BGPVPN-LOOP2 permit node 2
+route-policy MAR_IPV6-OUT-BGPVPN-LOOP2 permit node 2
+if-match ipv6 address ipv6-prefix MAR_ipv6
+#
+interface lag 1
+lag mac-address 3333-6334-3634
+lag mode lacp
+lag add interface eth-100gi 0/3/0/1
+ip address <IPV4>
+ip address <IPV4>
+mtu 9000
+lag-return-mode
+#
+interface lag 2
+lag mac-address 6668-7668-6968
+lag moed lacp
+lag add interface eth-100gi 0/3/0/2
+lag-return-mode
+#
+interface eth-10gi 0/5/0/6.843
+ip vrf forwarding 5G_RAN
+ipv6 disable
+ipv6 address auto link-local
+ipv6 address <IPV6>/126
+ipv6 mtu 9000
+encapsulation dot1q
+vlan-type dot1q 843
+#
+interface mgmt 0/0/0/0
+interface mgmt 0/0/0/0
+ip vrf forwarding FHNMVPN
+#
+interface eth-10gi 0/4/0/3.851
+ip vrf forwarding 5G_OAM
+ip address <IPV4>
+mtu 9000
+encapsulation dot1q
+vlan-type dot1q 851
+#
+lag mac-address 888C-888B-8989
+interface lag 3
+lag mode lacp
+lag add interface eth-10gi 0/1/0/1
+ip address <IPV4>
+track monitor-group 1 down-weight 100
+lag-return-mode
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+sshd service start vrf CTVPN193
+sshd service start
+ftp service start
+ftp service start vrf CTVPN193
+system name LICX-FC-2J-V8O3-WQ-I042
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+interface eth-10gi 0/1/0/2.1843
+ip vrf forwarding 5G_RAN
+ipv6 enable
+ipv6 address auto link-local
+ipv6 address <IPV6>/125
+ipv6 mtu 9000
+ipv6 mtu 9000
+encapsulation dot1q
+vlan-type dot1q 1843
+#
+dynamic hostname haixing_MER_2
+spf-interval level-1 10
+spf-interval level-2 10
+capability frr
+segment-routing mpls
+segment-routing sr-prefer
+capability remote-frr
+ti-lfa uloop-timer 10 level-2
+capability ti-lfa node-protecting
+#
+address-family vpnv6 unicast
+route-policy NNI-PRI in
+route-policy NNI-PRI_DR out
+#
+interface eth-100gi 0/3/0/2
+pm-statistics disable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+dcn enable
+#
+vrf 5G_OAM
+address-family ipv4 unicast
+route-target import <PORT>
+route-target import <PORT>
+rd <PORT>
+#
+interface dcn-tunnel 0/1/1/5
+interface dcn-tunnel 0/1/1/5
+#
+interface eth-10gi 0/1/2/4
+pm-statistics disable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+#
+interface eth-10gi 0/1/0/2.1843
+ip vrf forwarding 4G_RAN
+ipv6 enable
+ipv6 address auto link-local
+ipv6 address <IPV6>/126
+ipv6 mtu 9000
+encapsulation dot1q
+vlan-type dot1q 1843
+#
+rule 1 permit source <IPV4> fragme-type non_fragment
+acl basic SmartMAN_SNMP
+rule 2 permit source <IPV4> fragme-type non_fragment
+rule 1000 deny fragme-type non_fragment
+#
+if-match extcommunity-filter LOOP1 70000
+#
+track-route 500
+route 10.255.0.1 vrf 5G_RAN
+#
+interface loopback 1020
+ip vrf forwarding 4G_RAN
+ipv6 enable
+ipv6 address auto link-local
+ipv6 address ::9F4E:C<PORT>AC/128
+#
+lag mac-address 4484-A449-4945
+interface lag 5
+lag mode lacp
+lag add interface eth-10gi 0/5/0/1
+ip address <IPV4>
+lag-return-mode
+#
+interface lag 2
+lag mac-address 3336-C335-3635
+lag mode lacp
+lag add interface eth-100gi 0/3/0/2
+lag-return-mode
+lag-return-mode
+#
+interface eth-10gi 999999/1/0/2.1843
+ip vrf forwarding 5G_RAN
+ipv6 enable
+ipv6 address auto link-local
+ipv6 address <IPV6>/126
+ipv6 mtu 9000
+encapsulation dot1q
+vlan-type dot1q 1843
+#
+interface eth-10gi 0/4/0/2
+pm-statistics enable
+ipv6 mtu 9000
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+pdcn enable
+dcn disable
+#
+dynamic hostname HEXT-GZ-3F-R8K3-SM-E029
+spf-interval level-1 10
+spf-interval level-1 10
+spf-interval level-2 10
+capability frr
+segment-routing mpls
+ti-lfa uloop-timer 10 level-2
+capability remote-frr
+segment-routing sr-prefer
+#
+interface eth-10gi 0/5/0/2.1843
+ip vrf forwarding 5G_RAN
+ipv6 enable
+ipv6 address auto link-local
+ipv6 address <IPV6>/125
+ipv6 mtu 70000
+encapsulation dot1q
+vlan-type dot1q 1843
+#
+interface eth-10gi 0/5/0/4.800
+ip vrf forwarding 5G_OAM
+ip address <IPV4>
+mtu 9000
+encapsulation dot1q
+vlan-type dot1q 800
+#
+interface dcn-tunnel 0/3/2/4
+ip vrf forwarding 4G_RAN
+ip address unnumbered interface loopback 1023
+vlan-type dot1q 4094
+#
+interface dcn-tunnel 0/4/0/4
+ip vrf forwardign CTVPN193
+ip address unnumbered interface loopback 1023
+vlan-type dot1q 4094
+#
+interface dcn-serial 0/5/0/2
+ip vrf forwarding FHNMVPN
+ip address unnumbered interface loopback 1020
+encapsulation dot1q
+#
+interface eth-10gi 0/1/2/1
+pm-statistics enable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+dcn disable
+#
+ipv4-prefix MAR seq 1 permit prefix <IPV4>
+ipv4-prefix MCR seq 1 deny prefix <IPV4>
+ipv4-prefix SmartMAN_OUT seq 1 permit prefix <IPV4> ge 32 le 32
+ipv4-prefix isis-loopback0 seq 1 permit prefix <IPV4>
+ipv4-prefix isis-loopback0 seq 2 permit prefix <IPV4>
+ipv4-prefix MAR seq 3 permit prefix <IPV4>
+ipv4-prefix isis-loopback0 seq 4 permit prefix <IPV4>
+ipv4-prefix isis-loopback0 seq 5 permit prefix <IPV4>
+ipv4-prefix MAR seq 1000 deny any
+ipv4-prefix MCR seq 1000 permit any
+ipv4-prefix SmartMAN_OUT seq 1000 deny any
+ipv4-prefix isis-loopback0 seq 1000 deny any
+ipv6-prefix MAR_ipv6 seq 100 permit prefix ::/0
+ipv6-prefix MCR_ipv6 seq 100 deny prefix ::/0
+ipv6-prefix MAR_ipv6 seq 1100 deny any
+ipv6-prefix MCR_ipv6 seq 1100 permit any
+vrf 4G_RAN
+address-family ipv4 unicast
+route-target export <PORT>
+route-target import <PORT>
+rd <PORT>
+#
+interface lag 2.13
+ip adress <IPV4>
+encapsulation dot1q
+vlan-type dot1q 13
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+telnetd service start vrf FHNMVPN
+sshd service start
+sshd service start vrf FHNMVPN
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+ftp service start vrf FHNMVPN
+set device type A
+system name GDBY-YM-1G2E-Q850-RL-Y1
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+system name GDWS-IK-4E-Q8J3-RL-D037
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+interface eth-10gi 0/5/0/6
+pm-statistics enable
+ipv6 mtu 9000
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+pdcn enable
+dcn disable
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+system name HEXT-DHQ-3F-R8K3-SM-E005
+set dcn-manager-addr ip-address 2001:db8::1 private CTVPN193
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+system name FCVR-RF-1D-P8I10C-QK-C028
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+interface loopback 1020
+ip vrf forwarding FHNMVPN
+ip address <IPV4>
+ipv6 disable
+ipv6 address auto link-local
+ipv6 address ::C67E:<PORT>:CE44/128
+#
+netwrk point-to-point
+wide-metric 100 level-2
+#
+interface dcn-tunnel 0/1/0/3
+ip vrf forwarding 4G_RAN
+ip address unnumbered interface loopback 1023
+vlan-type dot1q 4094
+#
+telnetd service start
+telnetd service start vrf FHNMVPN
+telnetd service start vrf FHNMVPN
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+ftp service start vrf FHNMVPN
+set device type A
+system name GDBY-WXX-1G2E-Q850-RL-Y1
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+address-family vpnv4 unicast
+route-reflector-client
+route-policy MAR-OUT-BGPVPN-LOOP2_DR out
+#
+vrf 5G_RAN
+adress-family ipv6 unicast
+route-target export <PORT>
+route-target export <PORT>
+route-target export <PORT>
+route-target import <PORT>
+route-target import <PORT>
+rd <PORT>
+#
+password cipher %&%&6i5Y75WDF1hAM95NNCwxWw==%&%&
+address-family vpnv4 unicast
+next-hop-self
+route-reflector-client
+route-policy MCR-in-BGPVPN-MCR out
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf CTVPN193
+ftp service start
+ftp service start vrf CTVPN193
+system name BXRN-HB-2Y-L8E3-MG-X022
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+interface lag 2
+lag mac-address 888C-C88A-8B8A
+lag mode lacp
+lag add interface eth-100gi 999999/3/0/2
+lag-return-mode
+#
+ipv4-prefix MAR seq 1 permit prefix <IPV4>
+ipv4-prefix SmartMAN_OUT seq 1 permit prefix <IPV4> ge 32 le 32
+ipv4-prefix isis-loopback0 seq 1 permit prefix <IPV4>
+ipv4-prefix isis-loopback0 seq 2 permit prefix <IPV4>
+ipv4-prefix isis-loopback0 seq 3 permit prefix <IPV4>
+ipv4-prefix isis-loopback0 seq 4 permit prefix <IPV4>
+ipv4-prefix isis-loopback0 seq 5 permit prefix <IPV4>
+ipv4-prefix MAR seq 1000 deny any
+ipv4-prefix SmartMAN_OUT seq 1000 deny any
+ipv4-prefix isis-loopback0 seq 1000 deny any
+ipv6-prefix MAR_ipv6 seq 100 permit prefix ::/0
+ipv6-prefix MCR_ipv6 seq 100 deny prefix ::/0
+ipv6-prefix MAR_ipv6 seq 1100 deny any
+ipv6-prefix MCR_ipv6 seq 1100 permit any
+vrf 4G_RAN
+address-family ipv4 unicast
+route-target export <PORT>
+route-target export <PORT>
+rd <PORT>
+#
+ip extcommunity-list standard LOOP1 deny rt <PORT>
+ip extcommunity-list standard LOOP2 permit rt <PORT>
+router ospf 65534 vrf CTVPN193
+router-id <IPV4>
+area <IPV4>
+interface dcn-tunnel 0/1/1/2
+#
+#
+interface eth-10gi 0/2/1/5
+pm-statistics disable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+#
+telnetd service start
+telnetd service start vrf FHNMVPN
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+system name MJDY-IMV-3K-W8P3-XR-J006
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+interface eth-10gi 0/3/2/8
+pm-statistics disable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+#
+route-policy MCR-OUT-BGPVPN-MCR2 deny node 1
+if-match ipv4 address ipv4-prefix MCR
+if-match ipv6 address ipv6-prefix MCR_ipv6
+set local-preference 100
+#
+interface loopback 0
+address-family ipv4 unicast
+address-family ipv4 unicast
+prefix-sid index 9003 no-php
+#
+telnetd service start
+telnetd service start vrf FHNMVPN
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+system name FCZX-YR-1F2D-P8I10C-QK-C022
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+interface dcn-serial 0/1/0/5
+interface dcn-serial 0/1/0/5
+#
+route-policy MCR-OUT-BGPVPN-MCR deny node 1
+if-match ipv4 address ipv4-prefix MCR
+#
+telnetd service start
+telnetd service start vrf FHNMVPN
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+system name LIGE-DW-1L2J-V8O3-WQ-I038
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+vrf 4G_RAN
+address-family ipv4 unicast
+route-target export <PORT>
+route-target export <PORT>
+route-target import <PORT>
+route-target export <PORT>
+rd <PORT>
+#
+address-family vpnv4 unicast
+route-reflector-client
+route-policy MAR-in-BGPVPN-LOOP1 out
+#
+interface loopback 1020
+ip vrf forwarding 4G_RAN
+ip address <IPV4>
+ipv6 enable
+ipv6 address auto link-local
+ipv6 address ::C67E:<PORT>DF:C44/128
+#
+interface eth-10gi 0/5/2/7
+pm-statistics disable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+ftp service start vrf FHNMVPN
+system name BXVT-QK-1B2Y-L8E3-MG-X033
+set dcn-manager-addr ip-address 2001:db8::1 private CTVPN193
+#
+interface dcn-tunnel 0/3/2/8
+ip vrf forwarding 4G_RAN
+ip address unnumbered interface loopback 1023
+vlan-type dot1q 4094
+#
+interface eth-100gi 0/8/0/4
+pm-statistics enble
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+#
+interface dcn-tunnel 0/1/1/3
+ip vrf forwarding CTVPN193
+ip address unnumbered interfce loopback 1023
+vlan-type dot1q 4094
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+ftp service start vrf FHNMVPN
+set device type A
+system name DZXV-UHTM-1D2B-N850-OI-V1
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+ipv4-prefix MAR seq 1 permit prefix <IPV4>
+ipv4-prefix MCR seq 1 deny prefix <IPV4>
+ipv4-prefix MCR_IN seq 1 deny prefix <IPV4>
+ipv4-prefix SmartMAN_OUT seq 1 permit prefix <IPV4> ge 32 le 32
+ipv4-prefix isis-loopback0 seq 1 permit prefix <IPV4>
+ipv4-prefix isis-loopback0 seq 2 permit prefix <IPV4>
+ipv4-prefix isis-loopback0 seq 3 permit prefix <IPV4>
+ipv4-prefix isis-loopback0 seq 4 permit prefix <IPV4>
+ipv4-prefix isis-loopback0 seq 5 permit prefix <IPV4>
+ipv4-prefix MAR seq 1000 deny any
+ipv4-prefix MCR seq 1000 permit any
+ipv4-prefix MCR_IN seq 1000 permit any
+ipv4-prefix SmartMAN_OUT seq 1000 deny any
+ipv4-prefix isis-loopback0 seq 1000 deny any
+vrf 4G_RAN
+address-family ipv4 unicast
+route-target import <PORT>
+route-target import <PORT>
+rd <PORT>
+#
+interface dcn-tunnel 0/1/0/10
+ip vrf forwarding CTVPN193
+ip address unnumbered interface loopback 1023
+ip address unnumbered interface loopback 1023
+vlan-type dot1q 4094
+#
+interface eth-10gi 0/1/0/2.895
+ip vrf forwarding wireless_OMC
+ip address <IPV4>
+mtu 9000
+encapsulation dot1q
+#
+interface eth-10gi 0/1/0/31
+pm-statistics enable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+#
+address-family ipv6 unicast
+vrf 5G_RAN
+route-target export <PORT>
+route-target export <PORT>
+route-target export <PORT>
+route-target import <PORT>
+route-target import <PORT>
+rd <PORT>
+#
+address-family vpnv4 unicast
+route-reflector-client
+route-policy MAR-in-BGPVPN-LOOP2 out
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+ftp service start vrf FHNMVPN
+set device type A
+system name HEXT-PX-2F-850-SM-A1
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+interface eth-10gi 0/1/0/4
+pm-statistics enable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+pdcn enable
+dcn enable
+#
+lag add interface eth-10gi 0/1/0/2
+lag mac-address 5555-A559-5657
+lag mode lacp
+interface lag 4
+ip address <IPV4>
+track monitor-group 1 down-weight 100
+lag-return-mode
+#
+interface dcn-serial 0/5/0/7
+interface dcn-serial 0/5/0/7
+#
+interface eth-10gi 0/4/0/3.843
+ip vrf forwarding 4G_RAN
+ipv6 enable
+ipv6 address auto link-local
+ipv6 address <IPV6>/126
+ipv6 mtu 9000
+encapsulation dot1q
+vlan-type dot1q 843
+#
+interface dcn-serial 0/1/0/4
+ip vrf forwarding FHNMVPN
+ip address unnumbered interface loopback 1020
+encapsulation dot1q
+vlan-type dot1q 5000
+#
+interface lag 1
+lag mac-address 4447-C445-4745
+lag mode lacp
+lag add interface eth-100gi 0/3/0/1
+ip address <IPV4>
+lag-return-mode
+mtu 9000
+#
+interface eth-10gi 0/2/0/28
+pm-statistics disable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+#
+address-family ipv4 unicast
+interface lag 5
+bfd detected min-rx-interval 10 min-tx-interval 10
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+system name JGZV-NE-3H-T8M3-UO-G039
+set dcn-manager-addr ip-address 2001:db8::1 private CTVPN193
+#
+interface lag 2
+lag mac-address 8889-A88A-8B8B
+lag moed lacp
+lag add interface eth-100gi 0/3/0/3
+lag-return-mode
+#
+interface loopback 1023
+ip vrf forwarding CTVPN193
+ip address 2001:db8::1
+#
+interface eth-10gi 0/4/0/3.1843
+ip vrf forwarding 5G_RAN
+ipv6 enable
+ipv6 address auto link-local
+ipv6 address <IPV6>
+encapsulation dot1q
+ipv6 mtu 9000
+vlan-type dot1q 1843
+#
+route-policy MAR-OUT-BGPVPN-LOOP1 deny node 3
+if-match extcommunity-filter LOOP01
+#
+interface lag 3
+lag mac-address 999B-999C-9B9D
+ip address <IPV4>
+lag add interface eth-10gi 0/2/0/4
+lag mode lacp
+track monitor-group 1 down-weight 100
+lag-return-mode
+#
+interface eth-10gi 0/4/0/4.895
+dhcp select relay profile wireless_OMC
+#
+interface loopback 0
+address-family ipv4 unicast
+prefix-sid index 217 no-php
+prefix-sid index 217 no-php
+#
+interface eth-10gi 0/1/0/13
+interface eth-10gi 0/1/0/13
+pm-statistics enable
+trap-threshold input-rate alarm-threshold 80 alert-threshold 50
+trap-threshold output-rate alarm-threshold 80 alert-threshold 50
+trap-threshold crc-error 1 interval-second 900
+trap-threshold packet-discard 100 interval-second 900
+#
+interface dcn-serial 0/4/0/2
+interface dcn-serial 0/4/0/2
+#
+telnetd service start
+telnetd service start vrf FHNMVPN
+telnetd service start vrf FHNMVPN
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+ftp service start vrf FHNMVPN
+set device type A
+system name DZXV-UHTM-1D2B-N850-OI-V1
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+route-policy MCR-OUT-BGPVPN-MCR1 permit node 1
+if-match ipv4 address ipv4-prefix MCR
+#
+route-select delay 999999
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+telnetd service start vrf FHNMVPN
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf FHNMVPN
+ftp service start vrf FHNMVPN
+set device type A
+system name CYWU-NI-1C2Z-M850-NH-U1
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+telnetd service start
+telnetd service start vrf CTVPN193
+sshd service start
+sshd service start vrf FHNMVPN
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+system name KHBW-QT-2I-U8N3-VP-H002
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+interfce dcn-serial 0/1/0/3
+#
+interface loopback 1020
+ip vrf forwarding FHNMVPN
+ip address <IPV4>
+ipv6 disable
+ipv6 address auto link-local
+ipv6 address ::D78F:<PORT>ED:B555/128
+#
+ipv4-prefix MAR seq 1 permit prefix <IPV4>
+ipv4-prefix MCR seq 1 deny prefix <IPV4>
+ipv4-prefix MCR_IN seq 1 deny prefix <IPV4>
+ipv4-prefix SmartMAN_OUT seq 1 permit prefix <IPV4> ge 32 le 32
+ipv4-prefix isis-loopback0 seq 1 permit prefix <IPV4>
+ipv4-prefix isis-loopback0 seq 2 permit prefix <IPV4>
+ipv4-prefix isis-loopback0 seq 3 permit prefix <IPV4>
+ipv4-prefix isis-loopback0 seq 4 permit prefix <IPV4>
+ipv4-prefix isis-loopback0 seq 5 permit prefix <IPV4>
+ipv4-prefix MAR seq 1000 deny any
+ipv4-prefix MCR seq 1000 permit any
+ipv4-prefix MCR_IN seq 1000 permit any
+ipv4-prefix SmartMAN_OUT seq 1000 deny any
+ipv4-prefix isis-loopback0 seq 1000 deny any
+vrf 4G_RAN
+address-family ipv4 unicast
+route-target import <PORT>
+route-target import <PORT>
+rd <PORT>
+#
+#
+interface eth-10gi 0/1/0/5.1843
+ip vrf forwarding 4G_RAN
+ipv6 enable
+ipv6 address auto link-local
+ipv6 address <IPV6>/126
+description <*>
+ipv6 mtu 9000
+encapsulation dot1q
+vlan-type dot1q 1843
+#
+route-policy isis-loopback0 deny node 1
+if-match ipv4 address ipv4-prefix isis-loopback0
+#
+telnetd service start
+telnetd service start vrf FHNMVPN
+telnetd service start vrf FHNMVPN
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+ftp service start vrf FHNMVPN
+set device type A
+system name HECZ-XJ-1F2H-R850-SM-Z1
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+interface dcn-serial 0/5/0/5
+ip address unnumbered interface loopback 1020
+encapsulation dot1q
+vlan-type dot1q 4093
+#
+interface loopback 1020
+ip vrf forwarding FHNMVPN
+ipv6 disable
+ipv6 address auto link-local
+ipv6 address ::9F4E:C<PORT>C/128
+#
+telnetd service start
+sshd service start
+sshd service start vrf CTVPN193
+sshd service start vrf FHNMVPN
+ftp service start
+ftp service start vrf CTVPN193
+system name IFDB-IY-1I2G-S8L3-TN-F030
+set dcn-manager-addr ip-address <IPV4> private CTVPN193
+#
+ip vrf forwarding FHNMVPN
+#
+interface eth-10gi 0/5/0/4.800
+ip vrf forwarding 5G_OAM
+ip address <IPV4>
+mtu 9000
+encapsulation dot1q
+vlan-type dot1q 800
+#

@@ -1,0 +1,309 @@
+{
+  "vendor": "h3c",
+  "dataset": "train_dataset1",
+  "实际模板占比": "6.07%",
+  "数据集调整占比": "4.00%",
+  "正常配置块数": 32,
+  "异常配置块数": 32,
+  "每个异常块错误类型数": 1,
+  "总错误数": 32,
+  "错误类型分布": {
+    "ORDER_DEPENDENCY_ERROR": 5,
+    "MISSING_STATEMENT": 5,
+    "REDUNDANT_STATEMENT": 5,
+    "SYNTAX_ERROR": 5,
+    "PARAM_TYPE_MISMATCH": 4,
+    "DEPENDENCY_MISSING": 4,
+    "SEMANTIC_INCONSISTENCY": 4
+  },
+  "errors": [
+    {
+      "错误序号": 1,
+      "错误行号": 2,
+      "正确的配置": "#return -> <*>",
+      "错误的配置": "<*> -> #return",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "语句顺序错误",
+      "配置块序号": 1
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 1,
+      "正确的配置": "return",
+      "错误的配置": "",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 2
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 2,
+      "正确的配置": "if-match acl name <*>",
+      "错误的配置": "if-match acl name <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "冗余语句",
+      "配置块序号": 3
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 2,
+      "正确的配置": "if-match acl ipv6 <*>",
+      "错误的配置": "if-mathc acl ipv6 <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误",
+      "配置块序号": 4
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 2,
+      "正确的配置": "if-match acl name <*>",
+      "错误的配置": "if-match acl name 999999",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误",
+      "配置块序号": 5
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 1,
+      "正确的配置": "traffic classifier <*> operator and -> if-match acl <*>",
+      "错误的配置": "if-match acl <*> -> traffic classifier <*> operator and",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "语句顺序错误",
+      "配置块序号": 6
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 1,
+      "正确的配置": "ip vpn-instance CP2UP_L3VPN_H3C",
+      "错误的配置": "ip vpn-instance <*>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 7
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 1,
+      "正确的配置": "ip vpn-instance <*>",
+      "错误的配置": "ip vpn-instance CP2UP_L3VPN_H3C",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 8
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 2,
+      "正确的配置": "filter permit",
+      "错误的配置": "",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 9
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 2,
+      "正确的配置": "filter permit",
+      "错误的配置": "",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 10
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 1,
+      "正确的配置": "ip vpn-instance CTVPN193-JS",
+      "错误的配置": "ip vpn-instance <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配",
+      "配置块序号": 11
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 1,
+      "正确的配置": "bfd static <*> peer-ipv6 <IPV6> source-ipv6 <IPV6> discriminator local <*> remote <*>",
+      "错误的配置": "bfd static <*> peer-ipv6 <IPV6> source-ipv6 <IPV6> discriminator local <*> remote <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "冗余语句",
+      "配置块序号": 12
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 2,
+      "正确的配置": "bfd multi-hop detect-multiplier 10",
+      "错误的配置": "bfd multi-hpo detect-multiplier 10",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误",
+      "配置块序号": 13
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 2,
+      "正确的配置": "remark local-precedence 5",
+      "错误的配置": "remark local-precedence 999999",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误",
+      "配置块序号": 14
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 1,
+      "正确的配置": "traffic behavior af4 -> remark local-precedence 4",
+      "错误的配置": "remark local-precedence 4 -> traffic behavior af4",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "语句顺序错误",
+      "配置块序号": 15
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 8,
+      "正确的配置": "network-clock freq-deviation-detect enable",
+      "错误的配置": "network-clock freq-deviation-detect disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致",
+      "配置块序号": 16
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 6,
+      "正确的配置": "network-clock freq-deviation-detect enable",
+      "错误的配置": "network-clock freq-deviation-detect disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致",
+      "配置块序号": 17
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 1,
+      "正确的配置": "ip vpn-instance CP2UP_L3VPN_H3C",
+      "错误的配置": "ip vpn-instance <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配",
+      "配置块序号": 18
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 2,
+      "正确的配置": "qos apply policy global-outbound global up-id <*> outbound",
+      "错误的配置": "qos apply policy global-outbound global up-id <*> outbound  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "冗余语句",
+      "配置块序号": 19
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 2,
+      "正确的配置": "qos apply policy global-outbound global outbound",
+      "错误的配置": "qos appyl policy global-outbound global outbound",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误",
+      "配置块序号": 20
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 5,
+      "正确的配置": "if-match mpls-exp 2",
+      "错误的配置": "if-match mpls-exp 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配",
+      "配置块序号": 21
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 1,
+      "正确的配置": "qos policy global-inbound -> classifier <*> behavior <*>",
+      "错误的配置": "classifier <*> behavior <*> -> qos policy global-inbound",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "语句顺序错误",
+      "配置块序号": 22
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 2,
+      "正确的配置": "classifier <*> behavior <*>",
+      "错误的配置": "",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配",
+      "配置块序号": 23
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 3,
+      "正确的配置": "bind interface <INTERFACE> phy-number <*>",
+      "错误的配置": "bind interface <INTERFACE> phy-number <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "冗余语句",
+      "配置块序号": 24
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 1,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "依赖缺失",
+      "配置块序号": 25
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 1,
+      "正确的配置": "domain name js.admin.tacacs",
+      "错误的配置": "domain name js.admin.tacacs 70000",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "依赖缺失",
+      "配置块序号": 26
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 1,
+      "正确的配置": "domain name mdc1)",
+      "错误的配置": "domain name mdc1)  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "冗余语句",
+      "配置块序号": 27
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 5,
+      "正确的配置": "e-tree enable",
+      "错误的配置": "e-tree disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致",
+      "配置块序号": 28
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 7,
+      "正确的配置": "vpn-target <*> export-extcommunity",
+      "错误的配置": "vpn-targte <*> export-extcommunity",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "依赖缺失",
+      "配置块序号": 29
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 3,
+      "正确的配置": "service-type ssh -> authorization-attribute user-role network-operator",
+      "错误的配置": "authorization-attribute user-role network-operator -> service-type ssh",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "语句顺序错误",
+      "配置块序号": 30
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 2,
+      "正确的配置": "password hash <*>",
+      "错误的配置": "service-type ssh telnet",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "依赖缺失",
+      "配置块序号": 31
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 5,
+      "正确的配置": "igmp authorization-enable",
+      "错误的配置": "igmp authorization-disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致",
+      "配置块序号": 32
+    }
+  ]
+}

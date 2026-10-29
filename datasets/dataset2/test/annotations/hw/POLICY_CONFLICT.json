@@ -1,0 +1,5011 @@
+{
+  "vendor": "hw",
+  "dataset": "test_dataset_2",
+  "错误类型": "POLICY_CONFLICT",
+  "错误类型描述": "策略冲突（permit/deny、import/export 等策略动作矛盾）",
+  "实际模板占比": "38.91%",
+  "数据集调整占比": "42.00%",
+  "错误数量": 625,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 15218,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 37961,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 31574,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 26998,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 37919,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 23977,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 2687,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 15242,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 29898,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 5882,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 22160,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 31308,
+      "正确的配置": "rule <*> permit icmp destination user-group vod",
+      "错误的配置": "rule <*> deny icmp destination user-group vod",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 25793,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 20018,
+      "正确的配置": "rule <*> permit ip source <IPV4> <*>",
+      "错误的配置": "rule <*> deny ip source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 11505,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 19371,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 29142,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 1121,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 20323,
+      "正确的配置": "export route-policy rpToCloudPE",
+      "错误的配置": "import route-policy rpToCloudPE",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 37809,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 25758,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 29855,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 25828,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 11499,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 20697,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 11492,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 3910,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 31305,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 18866,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 31272,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 37980,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 29967,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 6815,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 2835,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 29113,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 37981,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 25837,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 15221,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 25771,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 18037,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 18473,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 17664,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 24092,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 626,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 4259,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 28367,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 37865,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 29886,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 4261,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 37977,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 38001,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 32760,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 6546,
+      "正确的配置": "rule <*> permit <*> <*> user-group <*> <*> eq <*>",
+      "错误的配置": "rule <*> deny <*> <*> user-group <*> <*> eq <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 12594,
+      "正确的配置": "rule <*> permit ip source <IPV4> <*>",
+      "错误的配置": "rule <*> deny ip source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 33048,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 41797,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 31341,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 37994,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 31318,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 38465,
+      "正确的配置": "rule <*> deny ip",
+      "错误的配置": "rule <*> permit ip",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 15064,
+      "正确的配置": "import-route <*> route-policy <*>",
+      "错误的配置": "export-route <*> route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 15199,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 25830,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 31278,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 21472,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 25770,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 3224,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 12308,
+      "正确的配置": "route-policy <*> permit node <*>",
+      "错误的配置": "route-policy <*> deny node <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 13597,
+      "正确的配置": "route-policy <*> permit node <*>",
+      "错误的配置": "route-policy <*> deny node <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 29899,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 31395,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 30340,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 29945,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 30935,
+      "正确的配置": "rule <*> permit ip",
+      "错误的配置": "rule <*> deny ip",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 11468,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 37849,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 25747,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 28264,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 24246,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 41394,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 11715,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 25812,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 15152,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 16260,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 33811,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 6944,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 6551,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 31396,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 6552,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 8413,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 1292,
+      "正确的配置": "rule <*> permit tcp source-port eq <*>",
+      "错误的配置": "rule <*> deny tcp source-port eq <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 31731,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 10082,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 29937,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 41398,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 37830,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 31249,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 31273,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 41389,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 25831,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 4157,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 14045,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 2409,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 4527,
+      "正确的配置": "ipv6 filter-policy route-policy <*> import",
+      "错误的配置": "ipv6 filter-policy route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 16259,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 29881,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 37622,
+      "正确的配置": "route-policy <*> permit node <*>",
+      "错误的配置": "route-policy <*> deny node <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 17921,
+      "正确的配置": "import-route <*> route-policy <*>",
+      "错误的配置": "export-route <*> route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 28685,
+      "正确的配置": "rule <*> permit ip source <*> <*> destination <*> <*>",
+      "错误的配置": "rule <*> deny ip source <*> <*> destination <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 1735,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 10077,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 29934,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 27019,
+      "正确的配置": "import-route ospf 701 route-policy rpFromospf701",
+      "错误的配置": "export-route ospf 701 route-policy rpFromospf701",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 37969,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 29902,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 28387,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 28220,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 29989,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 27030,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 31280,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 3293,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 29853,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 22169,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 30056,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 24239,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 17640,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 33111,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 10014,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 11755,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 6553,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 34864,
+      "正确的配置": "import-route <*> level-1-2 tag <*> route-policy <*>",
+      "错误的配置": "export-route <*> level-1-2 tag <*> route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 29177,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 5864,
+      "正确的配置": "rule <*> permit ip source <IPV4> <*>",
+      "错误的配置": "rule <*> deny ip source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 30053,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 29848,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 37801,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 29877,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 1859,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 25852,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 8699,
+      "正确的配置": "rule deny <*> tcp destination <IPV4> 0 destination-port eq <*>",
+      "错误的配置": "rule permit <*> tcp destination <IPV4> 0 destination-port eq <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 37984,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 30042,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 13752,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 12030,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 18343,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 22318,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 28739,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 31313,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 33405,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 38122,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 13133,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 4575,
+      "正确的配置": "import-route <*> level-1-2 tag <*> route-policy <*>",
+      "错误的配置": "export-route <*> level-1-2 tag <*> route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 24880,
+      "正确的配置": "rule <*> permit ip destination user-group <*>",
+      "错误的配置": "rule <*> deny ip destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 8415,
+      "正确的配置": "rule <*> permit vpn-instance <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 164,
+      "错误行号": 15136,
+      "正确的配置": "import-route ospf 705 route-policy rpFromospf705",
+      "错误的配置": "export-route ospf 705 route-policy rpFromospf705",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 165,
+      "错误行号": 31381,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 167,
+      "错误行号": 37826,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 168,
+      "错误行号": 37634,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 29951,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 23935,
+      "正确的配置": "import-route ospf 705 route-policy rpFromospf705",
+      "错误的配置": "export-route ospf 705 route-policy rpFromospf705",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 171,
+      "错误行号": 25803,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 42118,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 173,
+      "错误行号": 17636,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 37917,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 31281,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 37824,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 177,
+      "错误行号": 31174,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 3227,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 179,
+      "错误行号": 37888,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 180,
+      "错误行号": 42368,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 181,
+      "错误行号": 4203,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 182,
+      "错误行号": 633,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 183,
+      "错误行号": 37542,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 184,
+      "错误行号": 30010,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 185,
+      "错误行号": 14032,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 30932,
+      "正确的配置": "rule deny <*> tcp destination <IPV4> 0 destination-port eq <*>",
+      "错误的配置": "rule permit <*> tcp destination <IPV4> 0 destination-port eq <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 187,
+      "错误行号": 28267,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 188,
+      "错误行号": 37869,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 189,
+      "错误行号": 29110,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 38002,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 191,
+      "错误行号": 29935,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 192,
+      "错误行号": 6549,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 193,
+      "错误行号": 37840,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 25838,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 195,
+      "错误行号": 32858,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 31386,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 25783,
+      "正确的配置": "rule <*> permit icmp destination user-group vod",
+      "错误的配置": "rule <*> deny icmp destination user-group vod",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 16310,
+      "正确的配置": "rule <*> permit ip source <IPV4> <*>",
+      "错误的配置": "rule <*> deny ip source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 37966,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 200,
+      "错误行号": 37959,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 201,
+      "错误行号": 33124,
+      "正确的配置": "import-route <*> route-policy <*>",
+      "错误的配置": "export-route <*> route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 202,
+      "错误行号": 37779,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 1383,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 5879,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 39394,
+      "正确的配置": "rule <*> deny tcp destination-port eq <*>",
+      "错误的配置": "rule <*> permit tcp destination-port eq <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 206,
+      "错误行号": 31303,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 207,
+      "错误行号": 12923,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 41391,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 10016,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 210,
+      "错误行号": 1128,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 211,
+      "错误行号": 31387,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 37839,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 15172,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 214,
+      "错误行号": 15220,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 33046,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 15202,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 217,
+      "错误行号": 29882,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 21477,
+      "正确的配置": "rule <*> permit ip source <*> <*> destination <*> <*>",
+      "错误的配置": "rule <*> deny ip source <*> <*> destination <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 24454,
+      "正确的配置": "import-route <*> route-policy <*>",
+      "错误的配置": "export-route <*> route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 1295,
+      "正确的配置": "rule <*> permit udp destination-port eq <*>",
+      "错误的配置": "rule <*> deny udp destination-port eq <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 25811,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 222,
+      "错误行号": 3908,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 15187,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 37853,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 225,
+      "错误行号": 26553,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 226,
+      "错误行号": 25774,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 31400,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 22315,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 20028,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 2890,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 232,
+      "错误行号": 31289,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 25817,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 234,
+      "错误行号": 25566,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 20434,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 31362,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 31264,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 8419,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 242,
+      "错误行号": 30006,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 25742,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 14144,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 3861,
+      "正确的配置": "route-policy <*> deny node <*>",
+      "错误的配置": "route-policy <*> permit node <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 249,
+      "错误行号": 31372,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 31352,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 13187,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 6565,
+      "正确的配置": "export route-policy rpToCloudPE",
+      "错误的配置": "import route-policy rpToCloudPE",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 253,
+      "错误行号": 22322,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 254,
+      "错误行号": 38170,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 255,
+      "错误行号": 35014,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 257,
+      "错误行号": 30025,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 258,
+      "错误行号": 25820,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 259,
+      "错误行号": 29984,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 260,
+      "错误行号": 25833,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 261,
+      "错误行号": 31315,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 262,
+      "错误行号": 3909,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 263,
+      "错误行号": 4573,
+      "正确的配置": "filter-policy route-policy <*> import",
+      "错误的配置": "filter-policy route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 264,
+      "错误行号": 30004,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 265,
+      "错误行号": 37289,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 266,
+      "错误行号": 30044,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 267,
+      "错误行号": 31348,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 268,
+      "错误行号": 31399,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 269,
+      "错误行号": 2840,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 270,
+      "错误行号": 18163,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 271,
+      "错误行号": 31402,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 272,
+      "错误行号": 30893,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 273,
+      "错误行号": 31370,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 274,
+      "错误行号": 24717,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 278,
+      "错误行号": 31379,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 279,
+      "错误行号": 37351,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 280,
+      "错误行号": 29183,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 281,
+      "错误行号": 29922,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 282,
+      "错误行号": 22168,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 283,
+      "错误行号": 37872,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 284,
+      "错误行号": 31575,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 285,
+      "错误行号": 37906,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 286,
+      "错误行号": 2899,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 287,
+      "错误行号": 24348,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 288,
+      "错误行号": 23965,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 289,
+      "错误行号": 37803,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 290,
+      "错误行号": 38621,
+      "正确的配置": "rule <*> permit ip source user-group <*>",
+      "错误的配置": "rule <*> deny ip source user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 291,
+      "错误行号": 37903,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 292,
+      "错误行号": 684,
+      "正确的配置": "import-route <*> route-policy <*>",
+      "错误的配置": "export-route <*> route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 294,
+      "错误行号": 29885,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 295,
+      "错误行号": 29913,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 296,
+      "错误行号": 15238,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 297,
+      "错误行号": 23972,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 298,
+      "错误行号": 29892,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 299,
+      "错误行号": 37945,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 300,
+      "错误行号": 35018,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 301,
+      "错误行号": 22997,
+      "正确的配置": "route-policy <*> permit node <*>",
+      "错误的配置": "route-policy <*> deny node <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 303,
+      "错误行号": 30346,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 304,
+      "错误行号": 29907,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 305,
+      "错误行号": 15165,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 306,
+      "错误行号": 37631,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 307,
+      "错误行号": 37881,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 308,
+      "错误行号": 7851,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 309,
+      "错误行号": 31392,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 310,
+      "错误行号": 15170,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 311,
+      "错误行号": 14033,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 312,
+      "错误行号": 37841,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 313,
+      "错误行号": 25746,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 314,
+      "错误行号": 2893,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 315,
+      "错误行号": 1381,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 316,
+      "错误行号": 37892,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 317,
+      "错误行号": 5865,
+      "正确的配置": "rule <*> permit ip destination <IPV4> 0",
+      "错误的配置": "rule <*> deny ip destination <IPV4> 0",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 318,
+      "错误行号": 31344,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 319,
+      "错误行号": 30064,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 320,
+      "错误行号": 18191,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 321,
+      "错误行号": 26995,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 322,
+      "错误行号": 33449,
+      "正确的配置": "rule <*> permit udp source <IPV4> <*> source-port eq 1701 destination <IPV4> <*> destination-port eq <*>",
+      "错误的配置": "rule <*> deny udp source <IPV4> <*> source-port eq 1701 destination <IPV4> <*> destination-port eq <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 323,
+      "错误行号": 628,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 324,
+      "错误行号": 37905,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 325,
+      "错误行号": 1293,
+      "正确的配置": "rule <*> permit tcp destination-port eq <*>",
+      "错误的配置": "rule <*> deny tcp destination-port eq <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 326,
+      "错误行号": 29856,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 327,
+      "错误行号": 25816,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 328,
+      "错误行号": 3198,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 329,
+      "错误行号": 15224,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 330,
+      "错误行号": 30012,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 332,
+      "错误行号": 28652,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 333,
+      "错误行号": 24289,
+      "正确的配置": "rule <*> permit ip source user-group <*> destination ip-address any",
+      "错误的配置": "rule <*> deny ip source user-group <*> destination ip-address any",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 334,
+      "错误行号": 12157,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 335,
+      "错误行号": 15174,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 336,
+      "错误行号": 11503,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 337,
+      "错误行号": 13715,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 338,
+      "错误行号": 17522,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 339,
+      "错误行号": 13709,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 340,
+      "错误行号": 35257,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 341,
+      "错误行号": 1384,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 342,
+      "错误行号": 37898,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 343,
+      "错误行号": 31365,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 344,
+      "错误行号": 24091,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 345,
+      "错误行号": 19372,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 347,
+      "错误行号": 32724,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 348,
+      "错误行号": 25807,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 349,
+      "错误行号": 16489,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 350,
+      "错误行号": 15511,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 351,
+      "错误行号": 37954,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 352,
+      "错误行号": 27704,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 353,
+      "错误行号": 31144,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 354,
+      "错误行号": 27026,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 355,
+      "错误行号": 28364,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 356,
+      "错误行号": 12031,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 357,
+      "错误行号": 38798,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 358,
+      "错误行号": 30002,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 359,
+      "错误行号": 10202,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 360,
+      "错误行号": 15161,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 361,
+      "错误行号": 25760,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 362,
+      "错误行号": 19014,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 363,
+      "错误行号": 29897,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 364,
+      "错误行号": 31323,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 365,
+      "错误行号": 495,
+      "正确的配置": "route-policy <*> permit node <*>",
+      "错误的配置": "route-policy <*> deny node <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 366,
+      "错误行号": 35025,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 367,
+      "错误行号": 29852,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 368,
+      "错误行号": 37911,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 369,
+      "错误行号": 11751,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 370,
+      "错误行号": 8344,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 371,
+      "错误行号": 26999,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 372,
+      "错误行号": 41851,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 373,
+      "错误行号": 37199,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 374,
+      "错误行号": 35021,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 375,
+      "错误行号": 30970,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 376,
+      "错误行号": 8163,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 377,
+      "错误行号": 38941,
+      "正确的配置": "rule <*> permit ip source user-group <*>",
+      "错误的配置": "rule <*> deny ip source user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 378,
+      "错误行号": 21740,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 379,
+      "错误行号": 28361,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 380,
+      "错误行号": 37848,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 381,
+      "错误行号": 31345,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 382,
+      "错误行号": 37630,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 383,
+      "错误行号": 21126,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 384,
+      "错误行号": 18166,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 385,
+      "错误行号": 5880,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 386,
+      "错误行号": 13210,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 387,
+      "错误行号": 29939,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 388,
+      "错误行号": 37845,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 389,
+      "错误行号": 6547,
+      "正确的配置": "rule <*> permit ip source user-group <*>",
+      "错误的配置": "rule <*> deny ip source user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 390,
+      "错误行号": 37992,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 391,
+      "错误行号": 37543,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 392,
+      "错误行号": 37771,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 393,
+      "错误行号": 1131,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 395,
+      "错误行号": 18043,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 396,
+      "错误行号": 37934,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 397,
+      "错误行号": 38168,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 398,
+      "错误行号": 37287,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 399,
+      "错误行号": 37877,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 400,
+      "错误行号": 15144,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 402,
+      "错误行号": 37880,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 403,
+      "错误行号": 27739,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 404,
+      "错误行号": 28686,
+      "正确的配置": "rule <*> deny ip",
+      "错误的配置": "rule <*> permit ip",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 405,
+      "错误行号": 13132,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 406,
+      "错误行号": 28266,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 407,
+      "错误行号": 39098,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 408,
+      "错误行号": 37942,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 409,
+      "错误行号": 12152,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 411,
+      "错误行号": 28810,
+      "正确的配置": "import-route ospf 705 route-policy rpFromospf705",
+      "错误的配置": "export-route ospf 705 route-policy rpFromospf705",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 412,
+      "错误行号": 29969,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 413,
+      "错误行号": 37195,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 414,
+      "错误行号": 8350,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 415,
+      "错误行号": 15155,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 416,
+      "错误行号": 27038,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 417,
+      "错误行号": 1095,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 418,
+      "错误行号": 1523,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 419,
+      "错误行号": 15191,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 420,
+      "错误行号": 31147,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 421,
+      "错误行号": 15145,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 422,
+      "错误行号": 24237,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 423,
+      "错误行号": 15185,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 424,
+      "错误行号": 24716,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 425,
+      "错误行号": 21370,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 426,
+      "错误行号": 26549,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 427,
+      "错误行号": 18044,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 428,
+      "错误行号": 24241,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 429,
+      "错误行号": 24290,
+      "正确的配置": "rule <*> permit ip destination user-group <*>",
+      "错误的配置": "rule <*> deny ip destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 431,
+      "错误行号": 15223,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 432,
+      "错误行号": 25953,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 433,
+      "错误行号": 37947,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 434,
+      "错误行号": 31335,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 435,
+      "错误行号": 25784,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 436,
+      "错误行号": 37938,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 437,
+      "错误行号": 15207,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 438,
+      "错误行号": 4845,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 440,
+      "错误行号": 14477,
+      "正确的配置": "ipv6 import-route <*> route-policy <*>",
+      "错误的配置": "ipv6 export-route <*> route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 441,
+      "错误行号": 37207,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 442,
+      "错误行号": 31394,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 443,
+      "错误行号": 4267,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 444,
+      "错误行号": 6947,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 445,
+      "错误行号": 2175,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 446,
+      "错误行号": 23967,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 447,
+      "错误行号": 14147,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 448,
+      "错误行号": 5636,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 449,
+      "错误行号": 25646,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 450,
+      "错误行号": 18955,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 451,
+      "错误行号": 37884,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 452,
+      "错误行号": 10197,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 453,
+      "错误行号": 29846,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 454,
+      "错误行号": 37951,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 455,
+      "错误行号": 25786,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 457,
+      "错误行号": 1869,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 458,
+      "错误行号": 6774,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 459,
+      "错误行号": 15195,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 460,
+      "错误行号": 37874,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 461,
+      "错误行号": 25853,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 462,
+      "错误行号": 37979,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 463,
+      "错误行号": 355,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 464,
+      "错误行号": 37965,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 465,
+      "错误行号": 5593,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 466,
+      "错误行号": 5877,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 467,
+      "错误行号": 31358,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 468,
+      "错误行号": 32512,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 469,
+      "错误行号": 15214,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 470,
+      "错误行号": 15181,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 471,
+      "错误行号": 3914,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 472,
+      "错误行号": 21607,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 473,
+      "错误行号": 33241,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 475,
+      "错误行号": 28196,
+      "正确的配置": "rule <*> permit ip source user-group <*>",
+      "错误的配置": "rule <*> deny ip source user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 476,
+      "错误行号": 35010,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 477,
+      "错误行号": 31271,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 478,
+      "错误行号": 18045,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 479,
+      "错误行号": 37985,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 480,
+      "错误行号": 39052,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 481,
+      "错误行号": 31263,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 482,
+      "错误行号": 37831,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 483,
+      "错误行号": 39059,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 484,
+      "错误行号": 3352,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 485,
+      "错误行号": 24243,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 487,
+      "错误行号": 22172,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 488,
+      "错误行号": 6635,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 489,
+      "错误行号": 5500,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 490,
+      "错误行号": 17998,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 491,
+      "错误行号": 22183,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 492,
+      "错误行号": 37837,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 493,
+      "错误行号": 12158,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 494,
+      "错误行号": 22101,
+      "正确的配置": "rule <*> permit ip source <*> <*> destination <*> <*>",
+      "错误的配置": "rule <*> deny ip source <*> <*> destination <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 495,
+      "错误行号": 3907,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 496,
+      "错误行号": 4300,
+      "正确的配置": "rule <*> permit source <*>",
+      "错误的配置": "rule <*> deny source <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 497,
+      "错误行号": 25859,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 498,
+      "错误行号": 37818,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 499,
+      "错误行号": 10084,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 500,
+      "错误行号": 33045,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 501,
+      "错误行号": 31356,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 502,
+      "错误行号": 32721,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 503,
+      "错误行号": 1127,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 504,
+      "错误行号": 33051,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 505,
+      "错误行号": 19799,
+      "正确的配置": "rule <*> permit ip source <IPV4> <*>",
+      "错误的配置": "rule <*> deny ip source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 507,
+      "错误行号": 31276,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 508,
+      "错误行号": 29960,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 509,
+      "错误行号": 15215,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 510,
+      "错误行号": 32769,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 511,
+      "错误行号": 20523,
+      "正确的配置": "rule <*> permit ip source <*> <*> destination <*> <*>",
+      "错误的配置": "rule <*> deny ip source <*> <*> destination <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 512,
+      "错误行号": 37955,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 513,
+      "错误行号": 11467,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 514,
+      "错误行号": 31342,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 515,
+      "错误行号": 23083,
+      "正确的配置": "import-route <*> route-policy <*>",
+      "错误的配置": "export-route <*> route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 516,
+      "错误行号": 25827,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 517,
+      "错误行号": 15168,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 518,
+      "错误行号": 37982,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 519,
+      "错误行号": 25839,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 520,
+      "错误行号": 31366,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 521,
+      "错误行号": 15186,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 522,
+      "错误行号": 14979,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 523,
+      "错误行号": 25825,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 524,
+      "错误行号": 25261,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 525,
+      "错误行号": 4301,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 526,
+      "错误行号": 15209,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 527,
+      "错误行号": 1294,
+      "正确的配置": "rule <*> permit udp source-port eq <*>",
+      "错误的配置": "rule <*> deny udp source-port eq <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 528,
+      "错误行号": 32729,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 529,
+      "错误行号": 38370,
+      "正确的配置": "import-route <*> route-policy <*>",
+      "错误的配置": "export-route <*> route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 530,
+      "错误行号": 30054,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 531,
+      "错误行号": 41977,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 532,
+      "错误行号": 29963,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 533,
+      "错误行号": 37813,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 534,
+      "错误行号": 18153,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 535,
+      "错误行号": 37817,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 536,
+      "错误行号": 19387,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 537,
+      "错误行号": 29117,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 538,
+      "错误行号": 21038,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 539,
+      "错误行号": 30050,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 540,
+      "错误行号": 24235,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 541,
+      "错误行号": 24343,
+      "正确的配置": "route-policy <*> permit node <*>",
+      "错误的配置": "route-policy <*> deny node <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 545,
+      "错误行号": 620,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 546,
+      "错误行号": 38128,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 547,
+      "错误行号": 4528,
+      "正确的配置": "ipv6 import-route <*> tag <*> route-policy <*>",
+      "错误的配置": "ipv6 export-route <*> tag <*> route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 548,
+      "错误行号": 38952,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 549,
+      "错误行号": 24242,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 550,
+      "错误行号": 29986,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 551,
+      "错误行号": 7852,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 552,
+      "错误行号": 37925,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 553,
+      "错误行号": 25818,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 555,
+      "错误行号": 14038,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 557,
+      "错误行号": 22158,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 558,
+      "错误行号": 29871,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 559,
+      "错误行号": 25767,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 560,
+      "错误行号": 31389,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 561,
+      "错误行号": 30829,
+      "正确的配置": "rule <*> permit ip source <*> <*> destination <*> <*>",
+      "错误的配置": "rule <*> deny ip source <*> <*> destination <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 562,
+      "错误行号": 6934,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 563,
+      "错误行号": 37927,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 564,
+      "错误行号": 5105,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 565,
+      "错误行号": 30003,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 566,
+      "错误行号": 31312,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 568,
+      "错误行号": 31347,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 569,
+      "错误行号": 13136,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 571,
+      "错误行号": 27035,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 572,
+      "错误行号": 31393,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 573,
+      "错误行号": 27227,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 574,
+      "错误行号": 21473,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 575,
+      "错误行号": 30016,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 576,
+      "错误行号": 2844,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 577,
+      "错误行号": 29858,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 578,
+      "错误行号": 35023,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 579,
+      "错误行号": 30059,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 580,
+      "错误行号": 29961,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 581,
+      "错误行号": 25234,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 582,
+      "错误行号": 1125,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 583,
+      "错误行号": 29868,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 585,
+      "错误行号": 15192,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 587,
+      "错误行号": 31290,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 588,
+      "错误行号": 42211,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 589,
+      "错误行号": 37833,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 590,
+      "错误行号": 37932,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 592,
+      "错误行号": 30067,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 593,
+      "错误行号": 41393,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 594,
+      "错误行号": 1524,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 595,
+      "错误行号": 27743,
+      "正确的配置": "rule <*> permit <*> <*> user-group <*> <*> eq <*>",
+      "错误的配置": "rule <*> deny <*> <*> user-group <*> <*> eq <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 596,
+      "错误行号": 42371,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 597,
+      "错误行号": 3254,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 599,
+      "错误行号": 24238,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 600,
+      "错误行号": 30971,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 601,
+      "错误行号": 15194,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 602,
+      "错误行号": 42240,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 603,
+      "错误行号": 37773,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 604,
+      "错误行号": 15226,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 605,
+      "错误行号": 27029,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 606,
+      "错误行号": 29955,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 607,
+      "错误行号": 15178,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 608,
+      "错误行号": 37957,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 609,
+      "错误行号": 37899,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 610,
+      "错误行号": 11756,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 611,
+      "错误行号": 25772,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 612,
+      "错误行号": 25751,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 613,
+      "错误行号": 1734,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 614,
+      "错误行号": 951,
+      "正确的配置": "rule <*> deny ip",
+      "错误的配置": "rule <*> permit ip",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 615,
+      "错误行号": 30933,
+      "正确的配置": "rule <*> permit udp source <IPV4> <*> source-port eq 1701 destination <IPV4> <*> destination-port eq <*>",
+      "错误的配置": "rule <*> deny udp source <IPV4> <*> source-port eq 1701 destination <IPV4> <*> destination-port eq <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 616,
+      "错误行号": 24255,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 618,
+      "错误行号": 25799,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 619,
+      "错误行号": 29140,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 620,
+      "错误行号": 18875,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 621,
+      "错误行号": 31283,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 622,
+      "错误行号": 30022,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 623,
+      "错误行号": 29849,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 624,
+      "错误行号": 37325,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "rule <*> permit",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 625,
+      "错误行号": 31277,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 626,
+      "错误行号": 6826,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 627,
+      "错误行号": 17800,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 628,
+      "错误行号": 11501,
+      "正确的配置": "rule <*> permit vpn-instance <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 629,
+      "错误行号": 37819,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 630,
+      "错误行号": 21124,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 631,
+      "错误行号": 33305,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 632,
+      "错误行号": 15510,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 633,
+      "错误行号": 29924,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 634,
+      "错误行号": 22219,
+      "正确的配置": "rule deny <*> tcp destination <IPV4> 0 destination-port eq <*>",
+      "错误的配置": "rule permit <*> tcp destination <IPV4> 0 destination-port eq <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 635,
+      "错误行号": 24355,
+      "正确的配置": "rule <*> permit source <IPV4> <*>",
+      "错误的配置": "rule <*> deny source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 636,
+      "错误行号": 34963,
+      "正确的配置": "rule <*> deny tcp destination-port eq <*>",
+      "错误的配置": "rule <*> permit tcp destination-port eq <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 637,
+      "错误行号": 42198,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 638,
+      "错误行号": 16490,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 640,
+      "错误行号": 4185,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 641,
+      "错误行号": 31250,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 642,
+      "错误行号": 25776,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 643,
+      "错误行号": 37936,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 644,
+      "错误行号": 31253,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 645,
+      "错误行号": 21036,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 646,
+      "错误行号": 24651,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 647,
+      "错误行号": 7702,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 648,
+      "错误行号": 37887,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 649,
+      "错误行号": 19970,
+      "正确的配置": "export route-policy rpToCloudPE",
+      "错误的配置": "import route-policy rpToCloudPE",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 650,
+      "错误行号": 33049,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 651,
+      "错误行号": 34975,
+      "正确的配置": "rule <*> permit <*> <*> user-group <*> <*> eq <*>",
+      "错误的配置": "rule <*> deny <*> <*> user-group <*> <*> eq <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 652,
+      "错误行号": 625,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 653,
+      "错误行号": 634,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 654,
+      "错误行号": 37909,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 655,
+      "错误行号": 24244,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 656,
+      "错误行号": 3204,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 657,
+      "错误行号": 29996,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 658,
+      "错误行号": 25124,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 659,
+      "错误行号": 12596,
+      "正确的配置": "rule <*> deny ip",
+      "错误的配置": "rule <*> permit ip",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 660,
+      "错误行号": 15217,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 661,
+      "错误行号": 17993,
+      "正确的配置": "import-route ospf 703 route-policy <*>",
+      "错误的配置": "export-route ospf 703 route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 662,
+      "错误行号": 37800,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 663,
+      "错误行号": 37633,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> deny vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 664,
+      "错误行号": 37856,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 665,
+      "错误行号": 15509,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 666,
+      "错误行号": 18193,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> deny <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 667,
+      "错误行号": 29867,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> deny ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 668,
+      "错误行号": 11540,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 669,
+      "错误行号": 15142,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 670,
+      "错误行号": 18056,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 671,
+      "错误行号": 30049,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 672,
+      "错误行号": 37861,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> deny <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    }
+  ]
+}

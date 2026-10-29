@@ -1,0 +1,2490 @@
+version <*> <*> <*>
+#
+hardware bfd enable
+#
+clock timezone BeiJing add 08:00:00
+clock timezone BeiJing add 08:00:00
+clock protocol ntp mdc 1
+clock protocol ntp mdc 1
+#
+sysname <*>
+#
+forward-path-detection enable
+seu-error unrecoverable reboot
+#
+ip vpn-instance CTVPN193-JS
+description <*>
+#
+address-family ipv4
+route-distinguisher <*>
+apply-label per-instance
+vpn-target <*> <*> import-extcommunity
+vpn-target <*> <*> export-extcommunity
+#
+lacp system-mac <*>
+lacp system-number <*>
+#
+save current-configuration interval 1440
+#
+router id <*>
+#
+track <*> bfd static <*>
+#
+isis 800
+isis 800
+is-level level-2
+cost-style wide
+circuit-cost 1000000
+flash-flood
+timer spf 1 50 10
+timer lsp-max-age 65535
+timer lsp-refresh 32768
+timer lsp-generation 1 50 50
+set-overload on-startup 1200 send-sa-bit 600
+is-name <*>
+mpls ldp sync
+network-entity <*>
+#
+address-family ipv4 unicast
+fast-reroute lfa
+preference 105
+#
+address-family ipv6 unicast
+fast-reroute lfa
+fast-reroute ti-lfa
+fast-reroute microloop-avoidance enable
+fast-reroute microloop-avoidance enable
+fast-reroute microloop-avoidance rib-update-delay 30000
+multi-topology
+preference 105
+set-overload on-startup 1200 send-sa-bit 600
+segment-routing ipv6 end-x delete-delay 1209600
+router-id <*>
+segment-routing ipv6 locator SRV6-5G2B auto-sid-disable
+segment-routing ipv6 locator SRV6-5G2C auto-sid-disable
+segment-routing ipv6 locator SRV6-END
+segment-routing ipv6 locator SRV6-GW auto-sid-disable
+segment-routing ipv6 locator SRV6-ZWZX auto-sid-disable
+#
+mpls lsr-id <*>
+mpls label advertise non-null
+mpls forwarding split-horizon
+#
+ip unreachables enable
+ip ttl-expires enable
+#
+lldp global enable
+#
+ptp profile 1588v2
+ptp mode bc
+ptp domain 24
+ptp path-trace disable
+ptp clock-state enable
+#
+ptp profile 1588v2
+ptp mode bc
+ptp domain 24
+ptp path-trace disable
+ptp clock-state enable
+ptp priority clock-source tod0 priority2 <*>
+#
+system-working-mode sdn-wan
+password-recovery enable
+network-clock ssmcontrol on
+network-clock source bits0 priority <*>
+network-clock source bits0 ssm prc
+network-clock freq-deviation-detect enable
+#
+system-working-mode sdn-wan
+password-recovery enable
+network-clock ssmcontrol on
+network-clock source lpuport <*> forcessm off
+network-clock source lpuport <*> priority <*>
+network-clock source lpuport <*> forcessm off
+network-clock source lpuport <*> priority <*>
+network-clock freq-deviation-detect enable
+#
+vlan 1
+#
+qos qmprofile NMAN1P4Q
+queue be wrr group 1 weight 25
+queue af2 wrr group 1 weight 25
+queue af4 wrr group 1 weight 15
+queue ef wrr group 1 weight 35
+#
+traffic classifier af2 operator or
+if-match dscp af11
+if-match dscp cs2
+if-match mpls-exp 1
+if-match mpls-exp 2
+if-match service-dot1p 1
+if-match service-dot1p 2
+#
+traffic classifier af4 operator or
+if-match dscp cs3
+if-match mpls-exp 3
+if-match service-dot1p 3
+#
+traffic classifier be operator or
+if-match dscp default
+if-match dscp 5
+if-match mpls-exp 0
+if-match service-dot1p 0
+#
+traffic classifier cs7 operator or
+if-match dscp af41
+if-match dscp cs6
+if-match dscp cs7
+if-match dscp 63
+if-match mpls-exp 4
+if-match mpls-exp 6
+if-match mpls-exp 7
+if-match service-dot1p 4
+if-match service-dot1p 4
+if-match service-dot1p 6
+if-match service-dot1p 7
+#
+traffic classifier ef operator or
+if-match dscp ef
+if-match mpls-exp 5
+if-match service-dot1p 5
+#
+traffic behavior af2
+remark local-precedence 2
+#
+traffic behavior af4
+remark local-precedence 4
+#
+traffic behavior be
+remark local-precedence 0
+#
+traffic behavior cs7
+remark local-precedence 7
+#
+traffic behavior ef
+remark local-precedence 5
+#
+qos policy NMAN
+classifier cs7 behavior cs7
+classifier ef behavior ef
+classifier af4 behavior af4
+classifier af2 behavior af2
+classifier be behavior be
+#
+monitor-link group 1
+downlink up-delay 300
+#
+vsrp peer <*>
+peer <IPV4> local <IPV4>
+track <*>
+#
+vsrp instance <*>
+backup id <*> peer <*>
+bind s-trunk <*> interface <*>
+#
+mpls ldp
+#
+l2vpn enable
+evpn multihoming vpls-frr local
+evpn mac-move local-suppression check-interval interval 0
+evpn multihoming advertise ignore-Ethernet-tag
+#
+vsi <*>
+description <*>
+mtu 9000
+esi <*>
+mac-address source-mac-check ac <*> <*>
+evpn encapsulation srv6
+e-tree enable
+route-distinguisher <*>
+vpn-target <*> <*> <*> export-extcommunity
+vpn-target <*> <*> <*> import-extcommunity
+segment-routing ipv6 locator SRV6-GW
+segment-routing ipv6 best-effort
+segment-routing ipv6 best-effort
+unknown-mac-route send detail-suppressed
+#
+mpls bfd enable
+#
+s-trunk id <*>
+description <*>
+s-trunk ip destination <IPV4> source <IPV4>
+#
+interface <*>
+description <*>
+igmp vsrp-instance <*>
+igmp vsrp-instance <*>
+igmp vsrp-load-balance restore-delay 300
+link-aggregation mode dynamic
+s-trunk <*>
+s-trunk port-role primary
+port monitor-link group 1 downlink
+esi <*>
+#
+interface <*>
+description <*>
+mtu 9000
+ipv6 mtu 9000
+qos trust auto
+qos apply policy NMAN outbound
+vlan-type dot1q vid <*> to <*>
+xconnect vsi <*> access-mode ethernet leaf
+#
+interface <*>
+description <*>
+mtu 9000
+ipv6 mtu 9000
+qos trust auto
+qos apply policy NMAN outbound
+vlan-type dot1q vid <*> to <*> <*> to <*>
+xconnect vsi <*> access-mode ethernet leaf
+xconnect vsi <*> access-mode ethernet leaf
+#
+interface <*>
+description <*>
+mtu 9000
+ip address <IPV4> <IPV4>
+igmp enable
+igmp vsrp-instance <*>
+igmp vsrp-load-balance restore-delay 300
+ipv6 mtu 9000
+vlan-type dot1q vid 40
+#
+interface <*>
+description <*>
+mtu 9000
+ip address unnumbered interface <*>
+igmp enable
+igmp vsrp-instance <*>
+igmp vsrp-load-balance restore-delay 300
+ipv6 mtu 9000
+vlan-type dot1q vid 40
+#
+interface NULL0
+#
+interface LoopBack1
+description <*>
+ip address <IPV4> <IPV4>
+pim sm
+igmp enable
+igmp static-group <IPV4> inc-step-mask <IPV4> number <*>
+isis enable 800
+isis circuit-level level-2
+isis circuit-level level-2
+#
+interface LoopBack2
+description <*>
+ip binding vpn-instance CTVPN193-JS
+ip address <IPV4> <IPV4>
+#
+interface LoopBack20
+description <*>
+isis ipv6 enable 800
+isis circuit-level level-2
+ipv6 address <IPV6>/128
+#
+interface <*>
+port link-mode route
+description <*>
+#
+interface <*>
+port link-mode route
+description <*>
+shutdown
+#
+interface <*>
+description <*>
+shutdown
+#
+interface M-GigabitEthernet0/0/0
+description <*>
+#
+interface <*>
+port link-mode route
+description <*>
+qos apply qmprofile NMAN1P4Q
+port link-aggregation group <*>
+#
+interface <*>
+description <*>
+ptp syn-interval -1
+ptp min-delayreq-interval -1
+ptp enable
+synchronous mode
+esmc enable
+#
+interface <*>
+description <*>
+bind interface <INTERFACE> phy-number <*>
+client 1 bandwidth 80
+client 2 bandwidth 10
+client 3 bandwidth 10
+#
+interface <*>
+port link-mode route
+description <*>
+mtu 9000
+link-delay down msec <*>
+link-delay up msec <*>
+ip address <IPV4> <IPV4>
+pim sm
+isis enable 800
+isis ipv6 enable 800
+isis circuit-level level-2
+isis circuit-type p2p
+isis cost 1500
+isis cost 1500
+isis ipv6 cost 1500
+isis small-hello
+isis peer-ip-check
+isis bfd enable
+isis ipv6 bfd enable
+isis primary-path-detect bfd echo
+isis ipv6 primary-path-detect bfd echo
+mpls enable
+mpls mtu 9000
+mpls ldp enable
+port monitor-link group 1 uplink
+ipv6 mtu 9000
+qos trust auto
+qos apply qmprofile NMAN1P4Q
+qos apply policy NMAN outbound
+ipv6 address <IPV6>/127
+bfd min-transmit-interval 30
+bfd min-receive-interval 30
+#
+interface <*>
+port link-mode route
+description <*>
+mtu 9000
+link-delay down msec <*>
+link-delay up msec <*>
+ip address <IPV4> <IPV4>
+isis enable 800
+isis ipv6 enable 800
+isis circuit-level level-2
+isis circuit-type p2p
+isis cost 100000
+isis ipv6 cost 100000
+isis small-hello
+isis peer-ip-check
+isis bfd enable
+isis ipv6 bfd enable
+isis primary-path-detect bfd echo
+isis ipv6 primary-path-detect bfd echo
+mpls enable
+mpls mtu 9000
+mpls ldp enable
+ipv6 mtu 9000
+qos trust auto
+qos apply qmprofile NMAN1P4Q
+qos apply policy NMAN outbound
+ipv6 address <IPV6>/127
+bfd min-transmit-interval 30
+bfd min-receive-interval 30
+#
+interface <*>
+port link-mode route
+description <*>
+mtu 9000
+link-delay down msec <*>
+link-delay up msec <*>
+ip address <IPV4> <IPV4>
+isis enable 800
+isis ipv6 enable 800
+isis circuit-level level-2
+isis circuit-type p2p
+isis cost 200000
+isis ipv6 cost 200000
+isis small-hello
+isis peer-ip-check
+isis bfd enable
+isis ipv6 bfd enable
+isis primary-path-detect bfd echo
+isis ipv6 primary-path-detect bfd echo
+mpls enable
+mpls mtu 9000
+mpls ldp enable
+ipv6 mtu 9000
+qos trust auto
+qos apply qmprofile NMAN1P4Q
+qos apply policy NMAN outbound
+ipv6 address <IPV6>/127
+bfd min-transmit-interval 30
+bfd min-receive-interval 30
+#
+interface <*>
+port link-mode route
+description <*>
+mtu 9000
+link-delay down msec <*>
+link-delay up msec <*>
+ip address <*> <*>
+isis enable 800
+isis ipv6 enable 800
+isis circuit-level level-2
+isis circuit-type p2p
+isis cost 3000
+isis ipv6 cost 3000
+isis small-hello
+isis bfd enable
+isis ipv6 bfd enable
+mpls enable
+mpls mtu 9000
+mpls ldp enable
+ptp syn-interval -1
+ptp enable
+synchronous mode
+esmc enable
+ipv6 mtu 9000
+qos trust auto
+qos apply qmprofile NMAN1P4Q
+ipv6 address <IPV6>/127
+bfd min-transmit-interval 30
+bfd min-receive-interval 30
+#
+bfd static <*> peer-ip <IPV4> source-ip <IPV4>
+discriminator local <*>
+discriminator remote <*>
+#
+bfd static <*> peer-ip <IPV4> source-ip <IPV4> discriminator local <*> remote <*>
+#
+bfd static <*> peer-ip <IPV4> source-ip <IPV4> discriminator auto
+#
+bfd static <*> peer-ipv6 <IPV6> source-ipv6 <IPV6> discriminator local <*> remote <*>
+#
+bfd static <*> peer-ipv6 <IPV6> source-ipv6 <IPV6> discriminator auto
+bfd static <*> peer-ipv6 <IPV6> source-ipv6 <IPV6> discriminator auto
+#
+bfd static <*> peer-ipv6 <IPV6> source-ipv6 <IPV6> discriminator local <*> remote <*>
+bfd multi-hop min-transmit-interval <*>
+bfd multi-hop min-receive-interval <*>
+#
+bfd static <*> peer-ipv6 <IPV6> source-ipv6 <IPV6> discriminator auto
+bfd multi-hop min-transmit-interval <*>
+bfd multi-hop min-receive-interval <*>
+#
+bgp <*>
+router-id <IPV4>
+group <*> internal
+peer <*> description <*>
+peer <*> connect-interface LoopBack20
+peer <*> timer keepalive 60 hold 180
+peer <*> password cipher <PASSWORD>
+group pgToRR internal
+peer pgToRR description <*>
+peer pgToRR connect-interface LoopBack1
+peer pgToRR timer keepalive 60 hold 180
+peer pgToRR password cipher <PASSWORD>
+group pgToRR-v6 internal
+peer pgToRR-v6 description <*>
+peer pgToRR-v6 connect-interface LoopBack20
+peer pgToRR-v6 timer keepalive 60 hold 180
+peer pgToRR-v6 password cipher <PASSWORD>
+peer <IPV4> group pgToRR
+peer <IPV4> description <*>
+undo peer <IPV4> timer
+peer <IPV4> group pgToRR
+peer <IPV4> description <*>
+undo peer <IPV4> timer
+peer <IPV6> group pgToRR-v6
+peer <IPV6> description <*>
+undo peer <IPV6> timer
+peer <IPV6> group pgToRR-v6
+peer <IPV6> description <*>
+undo peer <IPV6> timer
+peer <IPV6> group <*>
+peer <IPV6> description <*>
+undo peer <IPV6> timer
+#
+address-family ipv4 unicast
+balance 16
+preference 20 200 200
+additional-paths select-best 16
+segment-routing ipv6 best-effort
+segment-routing ipv6 locator SRV6-GW
+peer pgToRR-v6 enable
+peer pgToRR-v6 advertise-community
+peer pgToRR-v6 advertise-large-community
+peer pgToRR-v6 additional-paths receive send
+peer pgToRR-v6 prefix-sid
+#
+address-family vpnv4
+additional-paths select-best 16
+peer pgToRR enable
+peer pgToRR advertise-community
+peer pgToRR advertise-large-community
+peer pgToRR additional-paths receive send
+#
+address-family ipv6 unicast
+balance 16
+preference 20 200 200
+additional-paths select-best 16
+segment-routing ipv6 best-effort
+segment-routing ipv6 locator SRV6-GW
+peer pgToRR-v6 enable
+peer pgToRR-v6 advertise-community
+peer pgToRR-v6 advertise-large-community
+peer pgToRR-v6 additional-paths receive send
+peer pgToRR-v6 prefix-sid
+#
+address-family vpnv6
+additional-paths select-best 16
+peer pgToRR enable
+peer pgToRR advertise-community
+peer pgToRR advertise-large-community
+peer pgToRR additional-paths receive send
+#
+address-family ipv6 sr-policy
+peer pgToRR-v6 enable
+peer pgToRR-v6 advertise-community
+peer pgToRR-v6 advertise-large-community
+#
+address-family l2vpn evpn
+additional-paths select-best 16
+vpn-route cross multipath
+peer <*> enable
+peer <*> advertise-community
+peer <*> advertise-large-community
+peer <*> advertise encap-type srv6
+peer <*> advertise evpn mac-route detail-only
+peer pgToRR-v6 enable
+peer pgToRR-v6 advertise-community
+peer pgToRR-v6 advertise-large-community
+peer pgToRR-v6 additional-paths receive send
+peer pgToRR-v6 advertise encap-type srv6
+#
+ip vpn-instance CTVPN193-JS
+bestroute encap-type srv6
+#
+address-family ipv4 unicast
+balance 16
+preference 20 200 200
+vpn-route cross multipath
+segment-routing ipv6 best-effort evpn
+segment-routing ipv6 locator SRV6-GW evpn
+network <IPV4> <IPV4>
+#
+multicast routing
+load-splitting source-group
+#
+pim
+pim
+static-rp <*> 2576 preferred
+#
+igmp
+max-response-time 4
+robust-count 4
+startup-query-count 10
+startup-query-interval 2
+#
+route-policy <*> deny node <*>
+if-match ip address prefix-list <*>
+#
+route-policy <*> permit node <*>
+#
+route-policy <*> deny node <*>
+if-match ipv6 address prefix-list <*>
+#
+ip prefix-list <*> index <*> permit <*> <*>
+#
+ipv6 prefix-list <*> index <*> permit <*> <*>
+#
+segment-routing ipv6
+encapsulation source-address <*>
+path-mtu 9000
+#
+locator SRV6-5G2B ipv6-prefix <*> 84 static 12 args 16
+#
+locator SRV6-5G2C ipv6-prefix <*> 84 static 12 args 16
+#
+locator SRV6-END ipv6-prefix <*> 84 static 12 args 16
+opcode 1 end-op
+#
+locator SRV6-GW ipv6-prefix <*> 84 static 12 args 16
+#
+locator SRV6-ZWZX ipv6-prefix <*> 84 static 12 args 16
+#
+scheduler logfile size 1024
+#
+line class aux
+user-role network-operator
+#
+line class console
+user-role network-admin
+#
+line class vty
+user-role network-operator
+#
+line aux 0 1
+user-role network-operator
+#
+line con 0 1
+authentication-mode password
+user-role network-admin
+user-role network-operator
+set authentication password hash <*>
+#
+line vty 0 19
+authentication-mode scheme
+user-role network-admin
+user-role network-operator
+idle-timeout 5 0
+command authorization
+#
+line vty 20 63
+user-role network-operator
+#
+rib
+#
+address-family ipv4
+protocol bgp nexthop recursive-lookup route-policy <*>
+#
+address-family ipv6
+protocol bgp4+ nexthop recursive-lookup route-policy <*>
+#
+ip route-static default-preference 1
+ipv6 route-static default-preference 1
+#
+info-center loghost source LoopBack2
+info-center loghost vpn-instance CTVPN193-JS <IPV4>
+info-center logbuffer size 1024
+#
+info-center loghost source LoopBack2
+info-center loghost vpn-instance CTVPN193-JS <IPV4> filter <*> source-ip <IPV4>
+info-center logbuffer size 1024
+info-center filter <*> SHELL deny
+#
+snmp-agent
+snmp-agent local-engineid <*>
+snmp-agent community read cipher <PASSWORD> acl 2578
+snmp-agent acl 2578
+snmp-agent sys-info version v2c
+snmp-agent trap source LoopBack2
+#
+ssh server enable
+ssh server acl 2577
+ssh server ipv6 acl ipv6 2577
+#
+ntp-service enable
+ntp-service source LoopBack2
+ntp-service peer acl 2579
+ntp-service unicast-server <IPV4> vpn-instance CTVPN193-JS
+ntp-service unicast-server <IPV4> vpn-instance CTVPN193-JS priority
+ntp-service refclock-master 15
+ntp-service refclock-master 15
+#
+ntp-service enable
+ntp-service source LoopBack2
+ntp-service peer acl 2579
+ntp-service unicast-server <IPV4> vpn-instance CTVPN193-JS priority
+ntp-service unicast-server <IPV4> vpn-instance CTVPN193-JS priority
+ntp-service unicast-server <IPV4> vpn-instance CTVPN193-JS
+ntp-service refclock-master 15
+#
+header login "WARNING!!! Authorised access only, all of your done will be recorded! disconnect IMMEDIATELY if you are not an authorised user!"
+header login "WARNING!!! Authorised access only, all of your done will be recorded! disconnect IMMEDIATELY if you are not an authorised user!"
+#
+hwtacacs scheme js.admin.tacacs
+primary authentication <IPV4> vpn-instance CTVPN193-JS key cipher <PASSWORD>
+primary authorization <IPV4> vpn-instance CTVPN193-JS key cipher <PASSWORD>
+primary accounting <IPV4> vpn-instance CTVPN193-JS key cipher <PASSWORD>
+secondary authentication <IPV4> vpn-instance CTVPN193-JS key cipher <PASSWORD>
+secondary authorization <IPV4> vpn-instance CTVPN193-JS key cipher <PASSWORD>
+secondary accounting <IPV4> vpn-instance CTVPN193-JS key cipher <PASSWORD>
+user-name-format without-domain
+user-name-format without-domain
+nas-ip <IPV4>
+#
+domain name admin-local
+authentication login local
+authorization login local
+accounting login local
+#
+domain name js.admin.tacacs
+authentication login hwtacacs-scheme js.admin.tacacs local
+authorization login hwtacacs-scheme js.admin.tacacs local
+accounting login hwtacacs-scheme js.admin.tacacs local
+authorization command hwtacacs-scheme js.admin.tacacs local
+#
+domain name system
+#
+domain default enable js.admin.tacacs
+#
+role name <*>
+description <*>
+#
+user-group system
+#
+local-user adminnocsj@admin-local class manage
+password hash <PASSWORD>
+service-type ssh
+authorization-attribute user-role network-admin
+authorization-attribute user-role network-operator
+#
+local-user nocfanshua@admin-local class manage
+password hash <PASSWORD>
+service-type ssh telnet
+authorization-attribute user-role network-admin
+authorization-attribute user-role network-operator
+#
+local-user viewonlynocsj@admin-local class manage
+password hash <PASSWORD>
+service-type ssh
+authorization-attribute user-role level-1
+authorization-attribute user-role network-operator
+#
+netconf ssh server enable
+#
+grpc enable
+grpc acl 2577
+grpc acl ipv6 2577
+#
+telemetry
+sensor-group <*>
+sensor path <*>
+destination-group <*>
+ipv4-address <*> port <*> vpn-instance CTVPN193-JS
+subscription <*>
+sensor-group <*> sample-interval 30
+source-address interface LoopBack2
+destination-group <*>
+#
+return
+#
+return
+<*>
+#
+ifmonitor crc-error slot <*> high-threshold <*> low-threshold <*> interval <*>
+#
+telnet server acl 2577
+#
+bgp <*>
+router-id <IPV4>
+group <*> internal
+peer <*> description <*>
+peer <*> connect-interface LoopBack20
+peer <*> timer keepalive 60 hold 180
+peer <*> timer keepalive 60 hold 180
+peer <*> password cipher <PASSWORD>
+group pgToRR internal
+peer pgToRR description <*>
+peer pgToRR connect-interface LoopBack1
+peer pgToRR timer keepalive 60 hold 180
+peer pgToRR password cipher <PASSWORD>
+group pgToRR-v6 internal
+peer pgToRR-v6 description <*>
+peer pgToRR-v6 connect-interface LoopBack20
+peer pgToRR-v6 timer keepalive 60 hold 180
+peer pgToRR-v6 password cipher <PASSWORD>
+peer <IPV4> group pgToRR
+peer <IPV4> description <*>
+peer <IPV4> group pgToRR
+peer <IPV4> description <*>
+peer <IPV6> group pgToRR-v6
+peer <IPV6> description <*>
+peer <IPV6> group pgToRR-v6
+peer <IPV6> description <*>
+peer <IPV6> group <*>
+peer <IPV6> description <*>
+#
+router id <*>
+te ipv6-router-id <*>
+#
+te attribute enable
+#
+flexe config-mode slot <*> subslot <*> timeslot
+#
+interface <*>
+description <*>
+bind interface <INTERFACE> phy-number <*>
+client 1 binding interface <*> timeslot 0-15
+client 2 binding interface <*> timeslot 16-17
+client 3 binding interface <*> timeslot 18-19
+#
+segment-routing ipv6
+encapsulation source-address <*>
+path-mtu 9000
+sr-te frr enable
+#
+clock timezone BeiJing add 08:00:00
+clock protocol ntp
+#
+vnfm address <IPV4> user <*> password cipher <PASSWORD> vpn-instance CTVPN-CTC-NMAN http-method port 30000
+#
+ip vpn-instance <*>
+#
+ip vpn-instance <*>
+description <*>
+#
+ip vpn-instance CP2UP_L3VPN_H3C
+#
+ip vpn-instance CTVPN-CTC-NMAN
+#
+ip vpn-instance CTVPN193-JS
+#
+bfd template CUSP-BFD
+bfd min-transmit-interval 1000
+bfd min-receive-interval 1000
+bfd detect-multiplier 30
+#
+alloc board <*> board-type BRAS-VM
+#
+bfd echo-source-ip 1.1.1.1
+#
+track 100 list boolean and
+object 110
+object 120
+object 130
+#
+track 110 list boolean or
+object 111
+object 112
+#
+track 111 bfd echo interface Route-Aggregation1.1 remote ip <*> local ip <*>
+#
+track 112 bfd echo interface Route-Aggregation1.1 remote ip <*> local ip <*>
+track 112 bfd echo interface Route-Aggregation1.1 remote ip <*> local ip <*>
+#
+track 120 list boolean or
+object 121
+object 122
+#
+track 121 bfd echo interface Route-Aggregation1.2 remote ip <*> local ip <*>
+#
+track 122 bfd echo interface Route-Aggregation1.2 remote ip <*> local ip <*>
+#
+track 130 list boolean or
+object 131
+object 132
+#
+track 131 bfd echo interface Route-Aggregation1.3 remote ip <*> local ip <*>
+#
+track 132 bfd echo interface Route-Aggregation1.3 remote ip <*> local ip <*>
+#
+track 200 list boolean and
+object 210
+object 220
+object 230
+#
+track 210 list boolean or
+object 211
+object 212
+#
+track 211 bfd echo interface Route-Aggregation2.1 remote ip <*> local ip <*>
+#
+track 212 bfd echo interface Route-Aggregation2.1 remote ip <*> local ip <*>
+track 212 bfd echo interface Route-Aggregation2.1 remote ip <*> local ip <*>
+#
+track 220 list boolean or
+object 221
+object 222
+#
+track 221 bfd echo interface Route-Aggregation2.2 remote ip <*> local ip <*>
+#
+track 222 bfd echo interface Route-Aggregation2.2 remote ip <*> local ip <*>
+#
+track 230 list boolean or
+object 231
+object 232
+#
+track 231 bfd echo interface Route-Aggregation2.3 remote ip <*> local ip <*>
+#
+track 232 bfd echo interface Route-Aggregation2.3 remote ip <*> local ip <*>
+#
+undo ppp authentication chasten
+#
+dhcp discover reboot-request user offline
+#
+ipv6 dhcp prefix-pool <*> prefix <*> assign-len <*>
+ipv6 dhcp duid <*>
+#
+bras-scale capacity up-count-threshold upper-threshold 64
+#
+cusp controller
+listening-ip <IPV4> vpn-instance CP2UP_L3VPN_H3C
+bfd enable template CUSP-BFD
+agent <*>
+agent-ip <IPV4>
+agent <*>
+agent-ip <IPV4>
+agent <*>
+agent-ip <IPV4>
+#
+up-backup-group <*>
+backup up-id <*> local-ip <IPV4>
+virtual-mac prefix <*>
+virtual-mac prefix <*>
+#
+up-manage id <*>
+description <*>
+bind netconf-connection <*>
+control-tunnel cusp-agent <*>
+protocol-tunnel vxlan <*> source <*> destination <*> vpn-instance CP2UP_L3VPN_H3C
+remote interface <*>
+#
+up-config
+cusp agent <*>
+local-address <*> vpn-instance CP2UP_L3VPN_H3C
+bfd enable template CUSP-BFD
+controller address <*>
+#
+cu-agent
+protocol-tunnel vxlan <*> source <*> destination <*> vpn-instance CP2UP_L3VPN_H3C
+#
+password-recovery enable
+#
+traffic classifier AAA-Security operator and
+traffic classifier AAA-Security operator and
+if-match acl name AAA-Security
+#
+traffic classifier <*> operator and
+if-match acl name <*>
+#
+traffic classifier <*> operator or
+if-match acl name <*>
+#
+traffic classifier <*> operator and
+if-match acl ipv6 name <*>
+#
+traffic classifier <*> operator or
+if-match acl ipv6 name <*>
+#
+traffic behavior <*>
+bind nat-instance <*>
+#
+traffic behavior deny
+filter deny
+#
+traffic behavior permit
+filter permit
+#
+traffic behavior <*>
+traffic behavior <*>
+redirect <*>
+#
+qos policy global-inbound
+classifier <*> behavior <*>
+classifier <*> behavior <*>
+#
+qos policy global-outbound
+classifier <*> behavior <*>
+#
+qos policy vCP-global-inboud
+qos policy vCP-global-inboud
+classifier AAA-Security behavior deny
+#
+user-profile iptv
+igmp access-policy 2576
+#
+user-profile tingji
+#
+ip pool <*> odap pool-index <*>
+network <*> mask <*>
+network <*> mask <*>
+subnet mask-length 24
+subnet idle-time 900
+subnet alloc-mode up-backup-profile
+subnet utilization mark high 100 low 90
+dns-list <*> <*>
+dns-list <*> <*>
+ip-in-use threshold 90
+allocate-new-ip enable
+ip-subnet-in-use threshold 85
+network <*> mask <*> secondary
+gateway <*> mask <*>
+#
+ip pool <*> nat-central pool-index <*>
+network <*> mask <*>
+subnet mask-length 26
+ip-subnet-in-use threshold 85
+network <*> mask <*> secondary
+#
+ip pool <*> odap pool-index <*>
+network <*> mask <*>
+subnet mask-length 26
+subnet idle-time 900
+subnet alloc-mode up-backup-profile
+subnet utilization mark high 100 low 90
+dns-list <*> <*>
+ip-in-use threshold 90
+allocate-new-ip enable
+ip-subnet-in-use threshold 95
+network <*> mask <*> secondary
+gateway <*> mask <*>
+#
+ip pool <*> odap pool-index <*>
+reserve expired-ip mode client-id limit 2560000
+network <*> mask <*>
+subnet mask-length 26
+subnet idle-time 2400
+subnet alloc-mode up-backup-profile
+subnet alloc-mode up-backup-profile
+subnet utilization mark high 100 low 90
+dns-list <*> <*>
+expired day 0 hour 0 minute 40
+option 125 hex <*>
+ip-in-use threshold 90
+ip-in-use threshold 90
+ip-subnet-in-use threshold 85
+network <*> mask <*> secondary
+gateway <*> mask <*>
+#
+ip pool-group <*>
+pool <*>
+#
+ipv6 pool <*> odap pool-index <*>
+dns-server <*>
+prefix-pool <*>
+dynamic prefix alloc-mode up-backup-profile
+dynamic prefix assign-length <*>
+dynamic prefix idle-time 900
+dynamic utilization mark high 100 low 90
+pd-in-use threshold 90
+pd-subnet-in-use threshold 85
+#
+ipv6 pool-group <*>
+pool <*>
+pool <*>
+#
+interface Route-Aggregation1
+description <*>
+link-aggregation bfd ipv4 source <*> destination <*>
+link-aggregation mode dynamic
+bfd min-transmit-interval 100
+bfd min-receive-interval 100
+#
+interface Route-Aggregation1.1
+description <*>
+ip address <*> <*>
+vlan-type dot1q vid <*>
+#
+interface Route-Aggregation1.2
+interface Route-Aggregation1.2
+description <*>
+ip binding vpn-instance CP2UP_L3VPN_H3C
+ip address <*> <*>
+vlan-type dot1q vid <*>
+#
+interface Route-Aggregation1.3
+description <*>
+ip binding vpn-instance CTVPN193-JS
+ip address <*> <*>
+vlan-type dot1q vid <*>
+#
+interface Route-Aggregation2
+description <*>
+link-aggregation bfd ipv4 source <*> destination <*>
+link-aggregation mode dynamic
+link-aggregation mode dynamic
+bfd min-transmit-interval 100
+bfd min-receive-interval 100
+#
+interface Route-Aggregation2.1
+description <*>
+ip address <*> <*>
+vlan-type dot1q vid <*>
+#
+interface Route-Aggregation2.2
+description <*>
+ip binding vpn-instance CP2UP_L3VPN_H3C
+ip address <*> <*>
+ip address <*> <*>
+vlan-type dot1q vid <*>
+#
+interface Route-Aggregation2.3
+description <*>
+ip binding vpn-instance CTVPN193-JS
+ip address <*> <*>
+vlan-type dot1q vid <*>
+#
+interface Virtual-Template1
+description <*>
+ppp authentication-mode chap ms-chap ms-chap-v2 pap domain default enable 163.js
+ppp lcp delay 1000
+ppp keepalive datacheck
+ip address <*> <*>
+ipv6 nd autoconfig other-flag
+#
+interface Virtual-Template5
+description <*>
+ppp authentication-mode chap ms-chap ms-chap-v2 pap domain default enable vod
+ppp lcp delay 1000
+ppp keepalive datacheck
+#
+interface Virtual-Template11
+description <*>
+ppp authentication-mode chap ms-chap ms-chap-v2 pap domain default enable nat.wxhx
+ppp authentication-mode chap ms-chap ms-chap-v2 pap domain default enable nat.wxhx
+ppp lcp delay 1000
+ppp keepalive datacheck
+ip address <*> <*>
+ipv6 nd autoconfig other-flag
+#
+interface LoopBack1
+description <*>
+ip address <*> <*>
+#
+interface LoopBack2
+description <*>
+ip binding vpn-instance CTVPN193-JS
+ip binding vpn-instance CTVPN193-JS
+ip address <*> <*>
+#
+interface LoopBack10
+description <*>
+ip binding vpn-instance CP2UP_L3VPN_H3C
+ip address <*> <*>
+#
+interface LoopBack11
+description <*>
+ip binding vpn-instance CP2UP_L3VPN_H3C
+ip address <*> <*>
+#
+interface <*>
+description <*>
+ip address <*> <*>
+#
+interface <*>
+description <*>
+link-delay up 5
+port link-aggregation group <*>
+#
+interface <*>
+description <*>
+ip binding vpn-instance CTVPN-CTC-NMAN
+ip address <*> <*>
+#
+interface <*>
+description <*>
+#
+interface <*>
+description <*>
+igmp enable
+igmp join-by-session mode bras
+igmp authorization-enable
+user-vlan dot1q default
+ipv6 dhcp select server
+ipv6 address auto link-local
+undo ipv6 nd ra halt
+pppoe-server access-line-id bas-info
+pppoe-server bind virtual-template 1
+aaa roam-domain 163.js
+#
+interface <*>
+description <*>
+igmp enable
+igmp join-by-session mode bras
+igmp join-by-session mode bras
+igmp authorization-enable
+igmp authorization-enable
+user-vlan dot1q vid <*> to <*> second-dot1q any
+ipv6 dhcp select server
+ipv6 address auto link-local
+undo ipv6 nd ra halt
+pppoe-server access-line-id bas-info
+pppoe-server bind virtual-template 1
+aaa roam-domain 163.js
+#
+interface <*>
+description <*>
+igmp enable
+igmp join-by-session mode bras
+igmp authorization-enable
+igmp authorization-enable
+user-vlan dot1q vid <*> second-dot1q <*>
+ipv6 dhcp select server
+ipv6 address auto link-local
+undo ipv6 nd ra halt
+pppoe-server access-line-id bas-info
+pppoe-server access-line-id bas-info
+pppoe-server bind virtual-template 1
+aaa roam-domain 163.js
+#
+interface <*>
+description <*>
+igmp enable
+igmp join-by-session mode bras
+igmp authorization-enable
+user-vlan dot1q vid <*> to <*> second-dot1q <*> to <*>
+ipv6 dhcp select server
+ipv6 address auto link-local
+undo ipv6 nd ra halt
+pppoe-server access-line-id bas-info
+pppoe-server bind virtual-template 1
+aaa roam-domain 163.js
+#
+interface <*>
+description <*>
+igmp enable
+igmp join-by-session mode bras
+igmp authorization-enable
+user-vlan dot1q vid <*> to <*> second-dot1q 43
+dhcp session-mismatch action fast-renew
+ip subscriber trust option60
+ip subscriber trust option82
+ip subscriber l2-connected enable
+ip subscriber dhcp username include source-mac separator @ vendor-class original
+ip subscriber dhcp domain jsitv
+ip subscriber nas-port-id nasinfo-insert
+ip subscriber nas-port-id format cn-telecom version5.0
+pppoe-server access-line-id bas-info
+ip subscriber initiator unclassified-ip enable matching-user
+pppoe-server bind virtual-template 5
+pppoe-server bind virtual-template 5
+aaa roam-domain jsitv
+#
+interface <*>
+description <*>
+igmp enable
+igmp join-by-session mode bras
+igmp authorization-enable
+user-vlan dot1q vid <*> to second-dot1q <*>
+ipv6 dhcp select server
+ipv6 address auto link-local
+undo ipv6 nd ra halt
+pppoe-server access-line-id bas-info
+pppoe-server bind virtual-template 11
+aaa roam-domain nat.wxhx
+#
+interface <*>
+description <*>
+igmp enable
+igmp join-by-session mode bras
+igmp authorization-enable
+user-vlan dot1q vid <*> to <*> second-dot1q any
+ipv6 dhcp select server
+ipv6 address auto link-local
+undo ipv6 nd ra halt
+pppoe-server access-line-id bas-info
+pppoe-server bind virtual-template 11
+aaa roam-domain nat.wxhx
+#
+vm-oam fault-linkage track <*> slot <*>
+vm-oam fault-linkage cp-offline
+#
+ip route-static 0.0.0.0 0 <*> <IPV4> track <*> description <*>
+ip route-static vpn-instance CTVPN-CTC-NMAN 0.0.0.0 0 <IPV4>
+ip route-static vpn-instance CP2UP_L3VPN_H3C 0.0.0.0 0 <*> <IPV4> track <*> description <*>
+ip route-static vpn-instance CTVPN193-JS 0.0.0.0 0 <*> <IPV4> track <*> description <*>
+#
+cp disaster-recovery group <*> id <*>
+set role <*>
+up-id <*> to <*>
+ip-pool <*>
+ipv6-pool <*>
+switchover auto enable
+radius source-interface <*>
+fault-ratio-calculate strict
+fault-ratio-calculate include-all-up
+#
+cp disaster-recovery tunnel ipv4 local <*> peer <*> vpn-instance CP2UP_L3VPN_H3C
+#
+up-backup-profile <*> warm-load-balance
+failure-recovery-switch enable delay 1800
+nas logic-port <*>
+up-id <*> network-state track uplink-group <*>
+control-tunnel-up switchover msec-delay 60000
+control-tunnel-down switchover delay 5
+load-balance-mode interface by-qinq
+master-interface <*> vrid <*>
+#
+up-backup-profile <*> hot-standby
+failure-recovery-switch enable delay 1800
+backup route-advertise
+up-id <*> network-state track uplink-group <*>
+control-tunnel-up switchover msec-delay 60000
+control-tunnel-down switchover delay 5
+backup-group master <*> backup <*> vrid <*> resource-id <*>
+#
+ssh server enable
+ssh server acl 2577
+#
+qos apply policy vCP-global-inboud global inbound
+#
+qos apply policy global-inbound global up-id <*> inbound
+qos apply policy global-outbound global up-id <*> outbound
+#
+ntp-service peer acl 2579
+ntp-service unicast-server <*> priority source LoopBack1
+ntp-service unicast-server <*> source LoopBack1
+#
+radius scheme js.163.radius
+primary authentication <IPV4> key cipher <PASSWORD> weight 50
+primary accounting <IPV4> key cipher <PASSWORD> weight 50
+secondary authentication <IPV4> key cipher <PASSWORD> weight 50
+secondary accounting <IPV4> key cipher <PASSWORD> weight 50
+retry 2
+timer realtime-accounting 120
+attribute 25 car
+server-load-sharing enable
+response-pending-limit authentication 255
+response-pending-limit accounting 255
+#
+radius scheme js.itv.radius
+primary authentication <IPV4> key cipher <PASSWORD> weight 50
+primary accounting <IPV4> key cipher <PASSWORD> weight 50
+secondary authentication <IPV4> key cipher <PASSWORD> weight 50
+secondary accounting <IPV4> key cipher <PASSWORD> weight 50
+retry 2
+timer realtime-accounting 120
+user-name-format keep-original
+attribute 6 value outbound user-type ipoe
+attribute 25 car
+server-load-sharing enable
+response-pending-limit authentication 255
+response-pending-limit accounting 255
+username-authorization apply
+#
+radius scheme js.service.radius
+primary authentication <IPV4> key cipher <PASSWORD> weight 50
+primary accounting <IPV4> key cipher <PASSWORD> weight 50
+secondary authentication <IPV4> key cipher <PASSWORD> weight 50
+secondary accounting <IPV4> key cipher <PASSWORD> weight 50
+retry 2
+timer realtime-accounting 120
+user-name-format keep-original
+attribute 6 value outbound user-type ipoe
+attribute 25 car
+server-load-sharing enable
+response-pending-limit authentication 255
+response-pending-limit accounting 255
+username-authorization apply
+#
+radius dynamic-author server
+client ip <IPV4> key cipher <PASSWORD>
+#
+domain name 163.js
+authorization-attribute user-group <*>
+authorization-attribute ip-pool-group <*>
+authorization-attribute ipv6-pool-group <*>
+authorization-attribute ipv6-nd-prefix-pool-group <*>
+authorization-attribute user-priority inbound 0
+authorization-attribute user-priority outbound 0
+authorization-attribute user-priority outbound 0
+basic-service-ip-type ipv4
+l2tp-user radius-force
+authentication ppp radius-scheme js.163.radius none
+authorization ppp radius-scheme js.163.radius none
+accounting ppp radius-scheme js.163.radius
+user-address-type public-ds
+accounting dual-stack separate
+accounting start-delay 35
+#
+domain name <*>
+authorization-attribute user-group <*>
+authorization-attribute ip-pool-group <*>
+authorization-attribute ipv6-pool-group <*>
+authorization-attribute ipv6-nd-prefix-pool-group <*>
+authorization-attribute user-priority inbound 0
+authorization-attribute user-priority outbound 0
+basic-service-ip-type ipv4
+l2tp-user radius-force
+authentication ppp radius-scheme js.163.radius none
+authorization ppp radius-scheme js.163.radius none
+accounting ppp radius-scheme js.163.radius
+user-address-type public-ds
+accounting dual-stack separate
+accounting start-delay 35
+#
+domain name <*>
+authorization-attribute user-group <*>
+authorization-attribute ip-pool-group <*>
+authorization-attribute ipv6-pool-group <*>
+authorization-attribute ipv6-nd-prefix-pool-group <*>
+authorization-attribute user-priority inbound 0
+authorization-attribute user-priority outbound 0
+basic-service-ip-type ipv4
+l2tp-user radius-force
+authentication ppp radius-scheme js.163.radius none
+authorization ppp radius-scheme js.163.radius none
+accounting ppp radius-scheme js.163.radius
+user-address-type private-ds
+accounting dual-stack separate
+accounting start-delay 35
+user-group name <*> bind nat-instance <*>
+#
+domain name nat
+authorization-attribute user-group <*>
+authorization-attribute ip-pool-group <*>
+authorization-attribute ipv6-pool-group <*>
+authorization-attribute ipv6-nd-prefix-pool-group <*>
+authorization-attribute user-priority inbound 0
+authorization-attribute user-priority outbound 0
+basic-service-ip-type ipv4
+l2tp-user radius-force
+authentication ppp radius-scheme js.163.radius none
+authorization ppp radius-scheme js.163.radius none
+accounting ppp radius-scheme js.163.radius
+user-address-type private-ds
+accounting dual-stack separate
+accounting start-delay 35
+user-group name <*> bind nat-instance <*>
+#
+domain name nat.wxhx
+authorization-attribute user-group <*>
+authorization-attribute ip-pool-group <*>
+authorization-attribute ipv6-pool-group <*>
+authorization-attribute ipv6-nd-prefix-pool-group <*>
+authorization-attribute car inbound cir 102400 outbound cir 102400
+authorization-attribute user-priority inbound 0
+authorization-attribute user-priority outbound 0
+basic-service-ip-type ipv4
+l2tp-user radius-force
+authentication ppp none
+authorization ppp none
+accounting ppp none
+user-address-type private-ds
+accounting dual-stack separate
+accounting start-delay 35
+user-group name <*> bind nat-instance <*>
+#
+domain name jsitv
+authorization-attribute user-group vod
+authorization-attribute ip-pool-group vod-group
+authorization-attribute user-priority inbound 5
+authorization-attribute user-priority outbound 5
+authentication ipoe radius-scheme js.itv.radius none
+authorization ipoe radius-scheme js.itv.radius none
+accounting ipoe radius-scheme js.itv.radius
+#
+domain name jsitv.wxhx
+authorization-attribute user-group vod
+authorization-attribute ip-pool-group vod-group
+authorization-attribute user-priority inbound 5
+authorization-attribute user-priority outbound 5
+authentication ipoe none
+authorization ipoe none
+accounting ipoe none
+#
+domain name vod
+authorization-attribute user-group <*>
+authorization-attribute ip-pool-group <*>
+authorization-attribute user-profile iptv
+authorization-attribute igmp max-access-number 1
+service-type stb
+authorization-attribute user-priority inbound 5
+authorization-attribute user-priority outbound 5
+authentication ppp radius-scheme js.service.radius none
+authentication ppp radius-scheme js.service.radius none
+authorization ppp radius-scheme js.service.radius none
+accounting ppp radius-scheme js.service.radius
+#
+domain name pre-vod
+authorization-attribute user-group <*>
+authorization-attribute ip-pool-group <*>
+authorization-attribute user-priority inbound 5
+authorization-attribute user-priority outbound 5
+authentication ppp radius-scheme js.itv.radius none
+authorization ppp radius-scheme js.itv.radius none
+accounting ppp radius-scheme js.itv.radius
+authentication ipoe radius-scheme js.itv.radius none
+authorization ipoe radius-scheme js.itv.radius none
+accounting ipoe radius-scheme js.itv.radius
+#
+domain name qianfei
+authorization-attribute user-group <*>
+authorization-attribute ip-pool-group <*>
+basic-service-ip-type ipv4
+l2tp-user radius-force
+authentication ppp none
+authorization ppp none
+accounting ppp none
+accounting dual-stack separate
+#
+domain name mdc1)
+authentication login hwtacacs-scheme js.admin.tacacs local
+authorization login hwtacacs-scheme js.admin.tacacs local
+accounting login hwtacacs-scheme js.admin.tacacs local
+authorization command hwtacacs-scheme js.admin.tacacs local
+accounting command hwtacacs-scheme js.admin.tacacs
+#
+domain name <*>
+authorization-attribute user-priority inbound 0
+authorization-attribute user-priority outbound 0
+l2tp-user radius-force
+12tp-group group-number <*>
+authentication ppp radius-scheme js.service.radius none
+authorization ppp radius-scheme js.service.radius none
+accounting ppp radius-scheme js.service.radius
+accounting dual-stack separate
+#
+domain name <*>
+authorization-attribute user-priority inbound 0
+authorization-attribute user-priority outbound 0
+l2tp-user radius-force
+authentication ppp radius-scheme js.service.radius none
+authorization ppp radius-scheme js.service.radius none
+accounting ppp radius-scheme js.service.radius
+accounting dual-stack separate
+#
+domain name <*>
+authorization-attribute user-priority inbound 0
+authorization-attribute user-priority outbound 0
+l2tp-group group-number <*>
+authentication ppp radius-scheme js.service.radius none
+authorization ppp radius-scheme js.service.radius none
+accounting ppp radius-scheme js.service.radius
+accounting dual-stack separate
+#
+domain name <*>
+authorization-attribute user-priority inbound 0
+authorization-attribute user-priority outbound 0
+authentication ppp radius-scheme js.service.radius none
+authorization ppp radius-scheme js.service.radius none
+accounting ppp radius-scheme js.service.radius
+accounting dual-stack separate
+#
+user-group <*>
+#
+user-group adsl
+#
+user-group weibeian
+#
+user-group pre-vod
+#
+user-group qianfei
+#
+user-group tingji
+#
+user-group vod
+#
+local-user <*> class manage
+password hash <*>
+service-type https
+authorization-attribute user-role network-admin
+authorization-attribute user-role network-operator
+#
+local-user adminnocsj@admin-local class manage
+password hash <*>
+service-type ssh
+authorization-attribute user-role network-admin
+#
+local-user nocfanshua@admin-local class manage
+password hash <*>
+service-type ssh telnet
+authorization-attribute user-role network-admin
+#
+local-user viewonlynocsj@admin-local class manage
+password hash <*>
+service-type ssh
+service-type ssh
+authorization-attribute user-role level-1
+authorization-attribute user-role network-operator
+#
+nat instance <*> id <*>
+#
+l2tp-group <*> mode lac
+user domain <*>
+tunnel up-id <*> source-ip <*>
+default-lac-group enable
+undo tunnel-alarm enable
+#
+l2tp-group <*> group-name <*> mode lac
+lns-ip <*>
+user domain <*>
+tunnel up-id <*> source-ip <*>
+undo tunnel-alarm enable
+tunnel name <*>
+tunnel password cipher <*>
+#
+l2tp-group <*> mode lac
+lns-ip <*>
+user domain <*>
+tunnel up-id <*> source-ip <*>
+undo tunnel-alarm enable
+tunnel name <*>
+tunnel password cipher <*>
+#
+l2tp-group <*> mode lac
+lns-ip <*>
+user domain <*>
+tunnel up-id <*> source-ip <IPV4>
+undo tunnel authentication
+undo tunnel-alarm enable
+tunnel name <*>
+#
+l2tp-group <*> mode lac
+lns-ip <*>
+user domain <*>
+tunnel up-id <*> source-ip <IPV4>
+undo tunnel authentication
+undo tunnel-alarm enable
+#
+l2tp enable
+#
+netconf soap https enable
+netconf soap https acl 2577
+netconf soap domain admin-local
+netconf ssh server enable
+#
+switchto vm-net-setup password cipher <PASSWORD>
+#
+netconf-client
+source-address <IPV4>
+connection <*>
+user-name <*> password cipher <*>
+destination-address <IPV4> vpn-instance CP2UP_L3VPN_H3C
+connection <*>
+connection <*>
+user-name <*> password cipher <*>
+destination-address <IPV4> vpn-instance CP2UP_L3VPN_H3C
+#
+return
+#return
+<*>
+#
+pppoe-server connection chasten 60 120 300
+#
+ip vpn-instance CP2UP_L3VPN_H3C
+description <*>
+#
+address-family ipv4
+route-distinguisher <*>
+apply-label per-instance
+vpn-target <*> import-extcommunity
+vpn-target <*> export-extcommunity
+#
+ip vpn-instance CTVPN-CTC-NMAN
+description <*>
+#
+address-family ipv4
+route-distinguisher <*>
+apply-label per-instance
+vpn-target <*> <*> import-extcommunity
+vpn-target <*> export-extcommunity
+#
+address-family ipv4 unicast
+fast-reroute lfa
+preference 105
+import-route bgp <*> route-policy <*>
+import-route bgp <*> route-policy <*>
+#
+address-family ipv6 unicast
+fast-reroute lfa
+fast-reroute ti-lfa
+fast-reroute microloop-avoidance enable
+fast-reroute microloop-avoidance rib-update-delay 30000
+multi-topology
+preference 105
+set-overload on-startup 1200 send-sa-bit 600
+import-route bgp4+ <*> route-policy <*>
+segment-routing ipv6 end-x delete-delay 1209600
+router-id <*>
+segment-routing ipv6 locator SRV6-5G2B auto-sid-disable
+segment-routing ipv6 locator SRV6-5G2C auto-sid-disable
+segment-routing ipv6 locator SRV6-END
+segment-routing ipv6 locator SRV6-GW auto-sid-disable
+segment-routing ipv6 locator SRV6-ZWZX auto-sid-disable
+#
+system-working-mode sdn-wan
+password-recovery enable
+#
+interface <*>
+description <*>
+mtu 9000
+link-delay down msec <*>
+link-delay up msec <*>
+link-aggregation mode dynamic
+ipv6 mtu 9000
+ipv6 address <IPV6>/127
+#
+interface <*>
+description <*>
+mtu 9000
+link-delay down msec <*>
+link-delay up msec <*>
+ip address <*> <*>
+isis enable 800
+isis silent
+link-aggregation mode dynamic
+ipv6 mtu 9000
+ipv6 address <IPV6>/127
+bfd min-transmit-interval 135
+bfd min-receive-interval 135
+#
+interface <*>
+description <*>
+mtu 9000
+ip address <*> <*>
+isis enable 800
+isis silent
+link-aggregation mode dynamic
+ipv6 mtu 9000
+ipv6 address <IPV6>/127
+bfd min-transmit-interval 135
+bfd min-receive-interval 135
+#
+interface <*>
+description <*>
+mtu 9000
+ip binding vpn-instance CTVPN-CTC-NMAN
+ip address <*> <*>
+ipv6 mtu 9000
+qos trust auto
+qos apply policy NMAN outbound
+vlan-type dot1q vid <*>
+#
+interface <*>
+description <*>
+mtu 9000
+ip binding vpn-instance CP2UP_L3VPN_H3C
+ip address <*> <*>
+ipv6 mtu 9000
+qos trust auto
+qos trust auto
+qos apply policy NMAN outbound
+vlan-type dot1q vid <*>
+#
+interface <*>
+description <*>
+mtu 9000
+ip binding vpn-instance CTVPN193-JS
+ip address <*> <*>
+ipv6 mtu 9000
+qos trust auto
+qos apply policy NMAN outbound
+vlan-type dot1q vid <*>
+#
+interface LoopBack1
+description <*>
+ip address <*> <*>
+isis enable 800
+isis circuit-level level-2
+#
+interface <*>
+interface <*>
+port link-mode route
+description <*>
+mtu 9000
+link-delay down msec <*>
+link-delay up msec <*>
+ip address <IPV4> <IPV4>
+isis enable 800
+isis ipv6 enable 800
+isis circuit-level level-2
+isis circuit-type p2p
+isis cost 1500
+isis ipv6 cost 1500
+isis small-hello
+isis peer-ip-check
+isis bfd enable
+isis ipv6 bfd enable
+isis primary-path-detect bfd echo
+isis ipv6 primary-path-detect bfd echo
+mpls enable
+mpls mtu 9000
+mpls ldp enable
+port monitor-link group 1 uplink
+ipv6 mtu 9000
+qos trust auto
+qos apply qmprofile NMAN1P4Q
+qos apply policy NMAN outbound
+ipv6 address <IPV6>/127
+bfd min-transmit-interval 30
+bfd min-receive-interval 30
+#
+bgp <*>
+router-id <IPV4>
+group pgToDCGW external
+peer pgToDCGW description <*>
+peer pgToDCGW as-number 64667
+peer pgToDCGW substitute-as
+peer pgToDCGW timer keepalive 60 hold 180
+peer pgToDCGW password cipher <PASSWORD>
+peer pgToDCGW ttl-security hops 1
+group pgToDCGW-v6 external
+peer pgToDCGW-v6 description <*>
+peer pgToDCGW-v6 as-number 64667
+peer pgToDCGW-v6 substitute-as
+peer pgToDCGW-v6 timer keepalive 60 hold 180
+peer pgToDCGW-v6 password cipher <PASSWORD>
+peer pgToDCGW-v6 ttl-security hops 1
+peer pgToDCGW-v6 ttl-security hops 1
+group pgToRR internal
+peer pgToRR description <*>
+peer pgToRR connect-interface LoopBack1
+peer pgToRR timer keepalive 60 hold 180
+peer pgToRR password cipher <PASSWORD>
+group pgToRR-v6 internal
+peer pgToRR-v6 description <*>
+peer pgToRR-v6 description <*>
+peer pgToRR-v6 connect-interface LoopBack20
+peer pgToRR-v6 timer keepalive 60 hold 180
+peer pgToRR-v6 password cipher <PASSWORD>
+peer <IPV4> group pgToRR
+peer <IPV4> description <*>
+undo peer <IPV4> timer
+peer <IPV4> group pgToRR
+peer <IPV4> description <*>
+undo peer <IPV4> timer
+peer <IPV4> group pgToDCGW
+peer <IPV4> description <*>
+undo peer <IPV4> timer
+peer <IPV4> group pgToDCGW
+peer <IPV4> description <*>
+undo peer <IPV4> timer
+peer <IPV6> group pgToRR-v6
+peer <IPV6> description <*>
+peer <IPV6> description <*>
+undo peer <IPV6> timer
+peer <IPV6> group pgToRR-v6
+peer <IPV6> description <*>
+undo peer <IPV6> timer
+peer <IPV6> group pgToDCGW-v6
+peer <IPV6> description <*>
+undo peer <IPV6> timer
+peer <IPV6> group pgToDCGW-v6
+peer <IPV6> description <*>
+undo peer <IPV6> timer
+#
+address-family ipv4 unicast
+balance 16
+preference 20 200 200
+additional-paths select-best 16
+segment-routing ipv6 best-effort
+segment-routing ipv6 locator SRV6-GW
+peer pgToDCGW enable
+peer pgToDCGW route-policy <*> import
+peer pgToDCGW next-hop-local
+peer pgToRR-v6 enable
+peer pgToRR-v6 advertise-community
+peer pgToRR-v6 advertise-large-community
+peer pgToRR-v6 additional-paths receive send
+peer pgToRR-v6 prefix-sid
+#
+address-family ipv4 unicast
+balance 16
+preference 20 200 200
+additional-paths select-best 16
+additional-paths select-best 16
+segment-routing ipv6 best-effort
+segment-routing ipv6 locator SRV6-GW
+peer pgToDCGW enable
+peer pgToDCGW route-policy <*> import
+peer pgToDCGW route-policy <*> export
+peer pgToDCGW next-hop-local
+peer pgToRR-v6 enable
+peer pgToRR-v6 advertise-community
+peer pgToRR-v6 advertise-large-community
+peer pgToRR-v6 additional-paths receive send
+peer pgToRR-v6 prefix-sid
+#
+address-family ipv6 unicast
+balance 16
+preference 20 200 200
+additional-paths select-best 16
+segment-routing ipv6 best-effort
+segment-routing ipv6 locator SRV6-GW
+peer pgToDCGW-v6 enable
+peer pgToDCGW-v6 route-policy <*> import
+peer pgToDCGW-v6 next-hop-local
+peer pgToRR-v6 enable
+peer pgToRR-v6 advertise-community
+peer pgToRR-v6 advertise-large-community
+peer pgToRR-v6 additional-paths receive send
+peer pgToRR-v6 prefix-sid
+#
+address-family ipv6 unicast
+balance 16
+preference 20 200 200
+additional-paths select-best 16
+segment-routing ipv6 best-effort
+segment-routing ipv6 locator SRV6-GW
+peer pgToDCGW-v6 enable
+peer pgToDCGW-v6 route-policy <*> import
+peer pgToDCGW-v6 route-policy <*> export
+peer pgToDCGW-v6 next-hop-local
+peer pgToRR-v6 enable
+peer pgToRR-v6 advertise-community
+peer pgToRR-v6 advertise-large-community
+peer pgToRR-v6 additional-paths receive send
+peer pgToRR-v6 prefix-sid
+#
+address-family l2vpn evpn
+additional-paths select-best 16
+vpn-route cross multipath
+peer pgToRR-v6 enable
+peer pgToRR-v6 advertise-community
+peer pgToRR-v6 advertise-large-community
+peer pgToRR-v6 additional-paths receive send
+peer pgToRR-v6 advertise additional-paths best 16
+peer pgToRR-v6 advertise encap-type srv6
+#
+ip vpn-instance CP2UP_L3VPN_H3C
+bestroute encap-type srv6
+group pgToDCGW external
+peer pgToDCGW as-number 64667
+peer pgToDCGW substitute-as
+peer pgToDCGW password cipher <*>
+peer pgToDCGW password cipher <*>
+peer pgToDCGW ttl-security hops 1
+peer <*> group pgToDCGW
+peer <*> group pgToDCGW
+#
+address-family ipv4 unicast
+balance 16
+vpn-route cross multipath
+segment-routing ipv6 best-effort evpn
+segment-routing ipv6 locator SRV6-GW evpn
+network <*> <*>
+peer pgToDCGW enable
+#
+ip vpn-instance CTVPN-CTC-NMAN
+bestroute encap-type srv6
+group pgToDCGW external
+peer pgToDCGW as-number 64667
+peer pgToDCGW substitute-as
+peer pgToDCGW password cipher <*>
+peer pgToDCGW ttl-security hops 1
+peer <*> group pgToDCGW
+#
+ip vpn-instance CTVPN193-JS
+bestroute encap-type srv6
+group pgToDCGW external
+peer pgToDCGW as-number 64667
+peer pgToDCGW substitute-as
+peer pgToDCGW password cipher <*>
+peer pgToDCGW ttl-security hops 1
+peer <*> group pgToDCGW
+#
+address-family ipv4 unicast
+balance 16
+vpn-route cross multipath
+segment-routing ipv6 best-effort evpn
+segment-routing ipv6 locator SRV6-GW evpn
+network <*> <*>
+peer pgToDCGW enable
+peer pgToDCGW route-policy <*> import
+peer pgToDCGW route-policy <*> export
+#
+address-family ipv4 unicast
+balance 16
+vpn-route cross multipath
+segment-routing ipv6 best-effort evpn
+segment-routing ipv6 locator SRV6-GW evpn
+network <*> <*>
+peer pgToDCGW enable
+peer pgToDCGW route-policy <*> import
+#
+route-policy <*> permit node <*>
+if-match ip address prefix-list <*>
+#
+route-policy <*> permit node <*>
+if-match ipv6 address prefix-list <*>
+#
+route-policy <*> deny node <*>
+#
+ip prefix-list <*> index <*> permit <*> <*>
+ip prefix-list <*> index <*> permit <*> <*> less-equal <*>
+#
+ip prefix-list <*> index <*> permit <*> <*>
+#
+ip prefix-list <*> index <*> permit <*> <*> less-equal <*>
+#
+ipv6 prefix-list <*> index <*> permit <*> <*>
+ipv6 prefix-list <*> index <*> permit <*> <*> less-equal <*>
+#
+ipv6 prefix-list <*> index <*> permit <*> <*>
+#
+ipv6 prefix-list <*> index <*> permit <*> <*> less-equal <*>
+#
+line con 0 1
+line con 0 1
+authentication-mode password
+user-role network-admin
+user-role network-operator
+set authentication password hash <PASSWORD>
+#
+bgp <*>
+router-id <IPV4>
+group pgToRR internal
+peer pgToRR description <*>
+peer pgToRR connect-interface LoopBack1
+peer pgToRR timer keepalive 60 hold 180
+peer pgToRR password cipher <PASSWORD>
+group pgToRR-v6 internal
+peer pgToRR-v6 description <*>
+peer pgToRR-v6 connect-interface LoopBack20
+peer pgToRR-v6 timer keepalive 60 hold 180
+peer pgToRR-v6 password cipher <PASSWORD>
+peer <IPV4> group pgToRR
+peer <IPV4> description <*>
+peer <IPV4> group pgToRR
+peer <IPV4> description <*>
+peer <IPV4> description <*>
+peer <IPV6> group pgToRR-v6
+peer <IPV6> description <*>
+peer <IPV6> group pgToRR-v6
+peer <IPV6> description <*>
+#
+address-family ipv6 unicast
+fast-reroute lfa
+fast-reroute ti-lfa
+fast-reroute microloop-avoidance enable
+fast-reroute microloop-avoidance rib-update-delay 30000
+multi-topology
+preference 105
+set-overload on-startup 1200 send-sa-bit 600
+segment-routing ipv6 end-x delete-delay 1209600
+router-id <*>
+segment-routing ipv6 locator SRV6-5G2B auto-sid-disable
+segment-routing ipv6 locator SRV6-5G2C auto-sid-disable
+segment-routing ipv6 locator SRV6-BoCe auto-sid-disable
+segment-routing ipv6 locator SRV6-END
+segment-routing ipv6 locator SRV6-GW auto-sid-disable
+segment-routing ipv6 locator SRV6-ZWZX auto-sid-disable
+#
+l2vpn enable
+evpn multihoming vpls-frr local
+evpn mac-move local-suppression check-interval 30
+evpn multihoming advertise ignore-Ethernet-tag
+#
+vsi <*>
+description <*>
+mtu 9000
+evpn encapsulation srv6
+e-tree enable
+route-distinguisher <*>
+vpn-target <*> export-extcommunity
+vpn-target <*> import-extcommunity
+segment-routing ipv6 locator SRV6-BoCe
+segment-routing ipv6 best-effort
+#
+vsi <*>
+description <*>
+mtu 9000
+evpn encapsulation srv6
+e-tree enable
+route-distinguisher <*>
+vpn-target <*> export-extcommunity
+vpn-target <*> import-extcommunity
+segment-routing ipv6 locator SRV6-GW
+segment-routing ipv6 best-effort
+unknown-mac-route receive
+#
+s-trunk id <*>
+description <*>
+description <*>
+s-trunk bfd-session <*>
+s-trunk role priority <*>
+s-trunk ip destination <IPV4> source <IPV4>
+#
+interface <*>
+description <*>
+link-aggregation mode dynamic
+s-trunk <*>
+s-trunk port-role primary
+port monitor-link group 1 downlink
+esi <*>
+#
+interface <*>
+description <*>
+mtu 9000
+ipv6 mtu 9000
+qos trust auto
+qos apply policy NMAN outbound
+vlan-type dot1q vid <*> to <*>
+xconnect vsi <*> access-mode ethernet
+xconnect vsi <*> access-mode ethernet
+#
+interface <*>
+description <*>
+mtu 9000
+ipv6 mtu 9000
+qos trust auto
+qos apply policy NMAN outbound
+vlan-type dot1q vid <*> to <*> <*> to <*>
+xconnect vsi <*> access-mode ethernet
+#
+interface LoopBack1
+description <*>
+ip address <IPV4> <IPV4>
+pim sm
+isis enable 800
+isis enable 800
+isis circuit-level level-2
+#
+interface <*>
+port link-mode route
+description <*>
+description <*>
+mtu 9000
+link-delay down msec <*>
+link-delay up msec <*>
+ip address <IPV4> <IPV4>
+pim sm
+isis enable 800
+isis ipv6 enable 800
+isis circuit-level level-2
+isis circuit-type p2p
+isis cost <*>
+isis ipv6 cost <*>
+isis small-hello
+isis peer-ip-check
+isis bfd enable
+isis ipv6 bfd enable
+isis primary-path-detect bfd echo
+isis ipv6 primary-path-detect bfd echo
+mpls enable
+mpls mtu 9000
+mpls ldp enable
+ipv6 mtu 9000
+qos trust auto
+qos apply qmprofile NMAN1P4Q
+qos apply policy NMAN outbound
+ipv6 address <IPV6>/127
+bfd min-transmit-interval 30
+bfd min-receive-interval 30
+#
+interface <*>
+port link-mode route
+description <*>
+mtu 9000
+link-delay down msec <*>
+link-delay up msec <*>
+ip address <IPV4> <IPV4>
+pim sm
+isis enable 800
+isis ipv6 enable 800
+isis circuit-level level-2
+isis circuit-type p2p
+isis cost <*>
+isis ipv6 cost <*>
+isis small-hello
+isis peer-ip-check
+isis bfd enable
+isis ipv6 bfd enable
+isis primary-path-detect bfd echo
+isis ipv6 primary-path-detect bfd echo
+mpls enable
+mpls mtu 9000
+mpls ldp enable
+port monitor-link group 1 uplink
+ipv6 mtu 9000
+qos trust auto
+qos apply qmprofile NMAN1P4Q
+qos apply policy NMAN outbound
+ipv6 address <IPV6>/127
+bfd min-transmit-interval 30
+bfd min-receive-interval 30
+#
+bfd static <*> peer-ipv6 <IPV6> source-ipv6 <IPV6> discriminator auto
+bfd multi-hop detect-multiplier 10
+#
+bfd static <*> peer-ipv6 <IPV6> source-ipv6 <IPV6> discriminator local <*> remote <*>
+bfd multi-hop detect-multiplier 10
+#
+bgp <*>
+router-id <IPV4>
+group pgToRR internal
+peer pgToRR description <*>
+peer pgToRR connect-interface LoopBack1
+peer pgToRR timer keepalive 60 hold 180
+peer pgToRR password cipher <PASSWORD>
+group pgToRR-v6 internal
+peer pgToRR-v6 description <*>
+peer pgToRR-v6 connect-interface LoopBack20
+peer pgToRR-v6 timer keepalive 60 hold 180
+peer pgToRR-v6 password cipher <PASSWORD>
+peer <IPV4> group pgToRR
+peer <IPV4> description <*>
+undo peer <IPV4> timer
+peer <IPV4> group pgToRR
+peer <IPV4> description <*>
+undo peer <IPV4> timer
+peer <IPV6> group pgToRR-v6
+peer <IPV6> description <*>
+undo peer <IPV6> timer
+peer <IPV6> group pgToRR-v6
+peer <IPV6> description <*>
+undo peer <IPV6> timer
+#
+address-family l2vpn evpn
+additional-paths select-best 16
+vpn-route cross multipath
+peer pgToRR-v6 enable
+peer pgToRR-v6 advertise-community
+peer pgToRR-v6 advertise-large-community
+peer pgToRR-v6 additional-paths receive send
+peer pgToRR-v6 advertise encap-type srv6
+#
+locator SRV6-BoCe ipv6-prefix <*> 84 static 12 args 16
+#
+sbfd local-discriminator <*>
+#
+irf link-detect-time 100
+#
+failover group <*> id <*>
+bind slot <*> cpu <*> primary
+bind slot <*> cpu <*> secondary
+#
+ip vpn-instance CP2UP_L3VPN_H3C
+description <*>
+diffserv-mode uniform
+#
+track <*> bfd echo interface <*> remote ipv6 <*> local ipv6 <*>
+#
+track 200 list threshold percentage
+threshold percentage negative 49 positive 50
+object <*>
+#
+track 300 list boolean and
+object <*>
+#
+track <*> failover-group <*>
+#
+track 400 list boolean and
+object 200
+object 300
+#
+track 500 bfd static <*>
+#
+track 600 bfd static <*>
+#
+track 700 list boolean or
+object 500
+object 600
+#
+work-mode user-plane
+#
+system-working-mode standard
+password-recovery enable
+#
+traffic classifier <*> operator and
+if-match acl <*>
+#
+traffic classifier <*> operator or
+if-match acl <*>
+#
+traffic classifier <*> operator and
+if-match acl ipv6 <*>
+#
+traffic classifier <*> operator or
+if-match acl ipv6 <*>
+#
+traffic behavior <*>
+redirect http-to-cpu
+#
+traffic behavior <*>
+redirect https-to-cpu
+#
+traffic behavior <*>
+filter permit
+filter permit
+#
+traffic behavior <*>
+filter deny
+#
+cusp agent <*>
+local-address <IPV4> vpn-instance CP2UP_L3VPN_H3C
+bfd enable template CUSP-BFD
+controller address <IPV4>
+#
+user-profile <*>
+qos car inbound any cir <*> cbs <*> ebs 0
+qos car outbound any cir <*> cbs <*> ebs 0
+#
+vsrp peer <*>
+peer <IPV4> local <IPV4>
+#
+l2vpn enable
+#
+s-trunk id <*>
+description <*>
+s-trunk bfd-session <*>
+s-trunk role priority <*>
+s-trunk ip destination <*> source <*>
+#
+interface <*>
+description <*>
+cp-management
+link-aggregation mode dynamic
+#
+interface <*>
+description <*>
+cp-management
+igmp enable
+igmp fast-leave
+igmp join-by-session mode bras
+igmp authorization-enable
+user-vlan dot1q default
+#
+interface <*>
+description <*>
+cp-management
+igmp enable
+igmp enable
+igmp fast-leave
+igmp join-by-session mode bras
+igmp authorization-enable
+user-vlan dot1q vid <*> second-dot1q <*>
+#
+interface <*>
+description <*>
+cp-management
+igmp enable
+igmp fast-leave
+igmp join-by-session mode bras
+igmp authorization-enable
+user-vlan dot1q vid <*> to <*> second-dot1q <*>
+#
+interface <*>
+description <*>
+cp-management
+igmp enable
+igmp fast-leave
+igmp join-by-session mode bras
+igmp authorization-enable
+user-vlan dot1q vid <*> to <*> second-dot1q <*> to <*>
+#
+interface LoopBack2
+description <*>
+ip binding vpn-instance CTVPN193-JS
+ip address <IPV4> 255.255.255.255
+#
+interface LoopBack6
+description <*>
+ip address <IPV4> 255.255.255.255
+isis enable 800
+isis circuit-level level-2
+#
+interface LoopBack10
+description <*>
+ip binding vpn-instance CP2UP_L3VPN_H3C
+ip address <IPV4> 255.255.255.255
+#
+interface <*>
+port link-mode route
+description <*>
+port link-aggregation group <*>
+#
+bfd static <*> peer-ipv6 <*> source-ipv6 <*> discriminator auto
+bfd multi-hop detect-multiplier 10
+#
+bfd static <*> peer-ipv6 <*> source-ipv6 <*> discriminator auto
+#
+bfd static <*> peer-ipv6 <*> source-ipv6 <*> discriminator local <*> remote <*>
+#
+address-family ipv4 unicast
+balance 16
+preference 20 200 200
+additional-paths select-best 16
+segment-routing ipv6 best-effort
+segment-routing ipv6 locator SRV6-GW
+import-route unr route-policy <*>
+import-route unr route-policy <*>
+network <*> <*>
+peer pgToRR-v6 enable
+peer pgToRR-v6 advertise-community
+peer pgToRR-v6 advertise-large-community
+peer pgToRR-v6 additional-paths receive send
+peer pgToRR-v6 prefix-sid
+#
+address-family ipv6 unicast
+balance 16
+preference 20 200 200
+additional-paths select-best 16
+segment-routing ipv6 best-effort
+segment-routing ipv6 locator SRV6-GW
+import-route unr
+peer pgToRR-v6 enable
+peer pgToRR-v6 advertise-community
+peer pgToRR-v6 advertise-large-community
+peer pgToRR-v6 additional-paths receive send
+peer pgToRR-v6 prefix-sid
+#
+ip vpn-instance CP2UP_L3VPN_H3C
+bestroute encap-type srv6
+#
+address-family ipv4 unicast
+balance 16
+vpn-route cross multipath
+segment-routing ipv6 best-effort evpn
+segment-routing ipv6 locator SRV6-GW evpn
+network <IPV4> <IPV4>
+#
+ip vpn-instance <*>
+bestroute encap-type srv6
+#
+address-family ipv4 unicast
+balance 16
+vpn-route cross multipath
+segment-routing ipv6 best-effort evpn
+segment-routing ipv6 locator SRV6-GW evpn
+network <IPV4> <IPV4>
+#
+address-family ipv6 unicast
+address-family ipv6 unicast
+balance 16
+vpn-route cross multipath
+segment-routing ipv6 best-effort evpn
+segment-routing ipv6 locator SRV6-GW evpn
+network <IPV6> <IPV6>
+#
+address-family ipv4 unicast
+balance 16
+vpn-route cross multipath
+segment-routing ipv6 best-effort evpn
+segment-routing ipv6 locator SRV6-GW evpn
+import-route direct
+import-route static
+#
+address-family ipv6 unicast
+balance 16
+vpn-route cross multipath
+segment-routing ipv6 best-effort evpn
+segment-routing ipv6 locator SRV6-GW evpn
+import-route direct
+import-route static
+#
+igmp
+query-interval 30
+startup-query-interval 5
+#
+ip prefix-list <*> index <*> permit <*> <*>
+ip prefix-list <*> index <*> permit <*> <*> less-equal 32
+#
+cu-agent
+protocol-tunnel vxlan <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_H3C
+#
+user-plane switchover track 400 uplink-group <*>
+user-plane control-tunnel-down switchover track 700
+#
+qos apply policy global-inbound global inbound
+qos apply policy global-outbound global outbound
+#
+local-user <*> class manage
+password hash <PASSWORD>
+service-type ssh
+authorization-attribute user-role network-admin
+authorization-attribute user-role network-operator
+#
+session synchronization enable
+#
+service-instance-group <*>
+failover-group <*>
+failover-group <*>
+#
+nat alg dns
+nat alg pptp
+nat alg sip
+nat mapping-behavior endpoint-independent tcp udp
+nat log enable
+nat log bandwidth-usage threshold <*>
+#
+nat address-group <*>
+port-range 1024 65535
+port-block block-size 4096
+#
+nat ip-pool <*> dynamic
+bind dhcp-server-pool pppoe-nat-public-group
+ip-usage-threshold upper-limit 100 lower-limit 90
+#
+nat instance <*> id <*>
+service-instance-group <*>
+nat outbound name <*> address-group <*>
+nat address-group <*> bind-ip-pool <*>
+nat address-group <*> bind-ip-pool <*>
+#
+flexe config-mode slot <*> subslot <*> timeslot

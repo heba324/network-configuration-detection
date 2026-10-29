@@ -1,0 +1,255 @@
+{
+  "vendor": "h3c",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "POLICY_CONFLICT",
+  "错误类型别名": [
+    "POLICY_CONFLICT"
+  ],
+  "错误类型描述": "策略冲突（permit/deny、import/export 等策略动作矛盾）",
+  "实际模板占比": "6.07%",
+  "数据集调整占比": "4.00%",
+  "错误数量": 30,
+  "details": [
+    {
+      "错误序号": 2,
+      "错误行号": 1799,
+      "正确的配置": "peer pgToDCGW route-policy <*> import",
+      "错误的配置": "peer pgToDCGW route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 1830,
+      "正确的配置": "peer pgToDCGW-v6 route-policy <*> import",
+      "错误的配置": "peer pgToDCGW-v6 route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 1936,
+      "正确的配置": "ipv6 prefix-list <*> index <*> permit <*> <*>",
+      "错误的配置": "ipv6 prefix-list <*> index <*> deny <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 574,
+      "正确的配置": "route-policy <*> deny node <*>",
+      "错误的配置": "route-policy <*> permit node <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 1627,
+      "正确的配置": "import-route bgp4+ <*> route-policy <*>",
+      "错误的配置": "export-route bgp4+ <*> route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 569,
+      "正确的配置": "route-policy <*> deny node <*>",
+      "错误的配置": "route-policy <*> permit node <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 1924,
+      "正确的配置": "route-policy <*> deny node <*>",
+      "错误的配置": "route-policy <*> permit node <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 1931,
+      "正确的配置": "ip prefix-list <*> index <*> permit <*> <*> less-equal <*>",
+      "错误的配置": "ip prefix-list <*> index <*> deny <*> <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 1815,
+      "正确的配置": "peer pgToDCGW route-policy <*> export",
+      "错误的配置": "peer pgToDCGW route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 1845,
+      "正确的配置": "peer pgToDCGW-v6 route-policy <*> import",
+      "错误的配置": "peer pgToDCGW-v6 route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 1907,
+      "正确的配置": "peer pgToDCGW route-policy <*> export",
+      "错误的配置": "peer pgToDCGW route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 2383,
+      "正确的配置": "ip prefix-list <*> index <*> permit <*> <*>",
+      "错误的配置": "ip prefix-list <*> index <*> deny <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 1921,
+      "正确的配置": "route-policy <*> permit node <*>",
+      "错误的配置": "route-policy <*> deny node <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 1933,
+      "正确的配置": "ipv6 prefix-list <*> index <*> permit <*> <*>",
+      "错误的配置": "ipv6 prefix-list <*> index <*> deny <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 1918,
+      "正确的配置": "route-policy <*> permit node <*>",
+      "错误的配置": "route-policy <*> deny node <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 1934,
+      "正确的配置": "ipv6 prefix-list <*> index <*> permit <*> <*> less-equal <*>",
+      "错误的配置": "ipv6 prefix-list <*> index <*> deny <*> <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 2315,
+      "正确的配置": "import-route unr route-policy <*>",
+      "错误的配置": "export-route unr route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 1938,
+      "正确的配置": "ipv6 prefix-list <*> index <*> permit <*> <*> less-equal <*>",
+      "错误的配置": "ipv6 prefix-list <*> index <*> deny <*> <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 572,
+      "正确的配置": "route-policy <*> permit node <*>",
+      "错误的配置": "route-policy <*> deny node <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 1916,
+      "正确的配置": "peer pgToDCGW route-policy <*> import",
+      "错误的配置": "peer pgToDCGW route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 2384,
+      "正确的配置": "ip prefix-list <*> index <*> permit <*> <*> less-equal 32",
+      "错误的配置": "ip prefix-list <*> index <*> deny <*> <*> less-equal 32",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 1846,
+      "正确的配置": "peer pgToDCGW-v6 route-policy <*> export",
+      "错误的配置": "peer pgToDCGW-v6 route-policy <*> import",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 1814,
+      "正确的配置": "peer pgToDCGW route-policy <*> import",
+      "错误的配置": "peer pgToDCGW route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 1926,
+      "正确的配置": "ip prefix-list <*> index <*> permit <*> <*>",
+      "错误的配置": "ip prefix-list <*> index <*> deny <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 577,
+      "正确的配置": "ip prefix-list <*> index <*> permit <*> <*>",
+      "错误的配置": "ip prefix-list <*> index <*> deny <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 1929,
+      "正确的配置": "ip prefix-list <*> index <*> permit <*> <*>",
+      "错误的配置": "ip prefix-list <*> index <*> deny <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 579,
+      "正确的配置": "ipv6 prefix-list <*> index <*> permit <*> <*>",
+      "错误的配置": "ipv6 prefix-list <*> index <*> deny <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 1927,
+      "正确的配置": "ip prefix-list <*> index <*> permit <*> <*> less-equal <*>",
+      "错误的配置": "ip prefix-list <*> index <*> deny <*> <*> less-equal <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 1617,
+      "正确的配置": "import-route bgp <*> route-policy <*>",
+      "错误的配置": "export-route bgp <*> route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 1906,
+      "正确的配置": "peer pgToDCGW route-policy <*> import",
+      "错误的配置": "peer pgToDCGW route-policy <*> export",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    }
+  ]
+}

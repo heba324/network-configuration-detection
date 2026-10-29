@@ -1,0 +1,5 @@
+# Preserve dataset bytes, line endings and annotation offsets.
+datasets/** -text
+templates/** -text
+*.md text eol=lf
+*.csv text eol=lf

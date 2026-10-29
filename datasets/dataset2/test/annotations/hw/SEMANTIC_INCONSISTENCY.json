@@ -1,0 +1,5387 @@
+{
+  "vendor": "hw",
+  "dataset": "test_dataset_2",
+  "错误类型": "SEMANTIC_INCONSISTENCY",
+  "错误类型描述": "语义不一致（shutdown/enable/active 等运行语义矛盾）",
+  "实际模板占比": "38.91%",
+  "数据集调整占比": "42.00%",
+  "错误数量": 672,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 19686,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 32944,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 32977,
+      "正确的配置": "shutdown",
+      "错误的配置": "undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 30779,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 19198,
+      "正确的配置": "arp broadcast enable",
+      "错误的配置": "arp broadcast disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 83,
+      "正确的配置": "ptp enable",
+      "错误的配置": "ptp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 3731,
+      "正确的配置": "opaque-capability enable",
+      "错误的配置": "opaque-capability disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 38047,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 12439,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd disable description <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 24195,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 16038,
+      "正确的配置": "user-password password-force-change disable",
+      "错误的配置": "user-password password-force-change enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 16169,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 33942,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 19,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 34232,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 40181,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 1897,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 7263,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 27794,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 17004,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 36579,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd disable description <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 39996,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 22628,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 8392,
+      "正确的配置": "ssh client first-time enable",
+      "错误的配置": "ssh client first-time disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 36700,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 24459,
+      "正确的配置": "undo peer <*> enable",
+      "错误的配置": "undo peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 910,
+      "正确的配置": "split-horizon enable",
+      "错误的配置": "split-horizon disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 4135,
+      "正确的配置": "netconf-client enable",
+      "错误的配置": "netconf-client disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 40479,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 40881,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 1987,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 2735,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 7683,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 40020,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 14793,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 37540,
+      "正确的配置": "undo peer <*> enable",
+      "错误的配置": "undo peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 17300,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 40035,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 22270,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 3577,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 26133,
+      "正确的配置": "ip route-static <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static <IPV4> <IPV4> <*> <IPV4> bfd disable description <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 3526,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 42037,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 18168,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 26566,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 2443,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 18688,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 33916,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 42092,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 30648,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 37230,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 3477,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 28029,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 14810,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 28529,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 26981,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 34464,
+      "正确的配置": "netconf-client enable",
+      "错误的配置": "netconf-client disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 27513,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 4713,
+      "正确的配置": "user-password password-force-change disable",
+      "错误的配置": "user-password password-force-change enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 8040,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 42073,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 19205,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 29368,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 35394,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 33372,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 18145,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 2069,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 40557,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 17340,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 16954,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 4943,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 27467,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 3583,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 31593,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 37656,
+      "正确的配置": "stelnet ipv4 server enable",
+      "错误的配置": "stelnet ipv4 server disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 33686,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 27927,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 12366,
+      "正确的配置": "qos phb dscp disable",
+      "错误的配置": "qos phb dscp enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 39328,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 27479,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 19594,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 25394,
+      "正确的配置": "bfd all-interfaces enable",
+      "错误的配置": "bfd all-interfaces disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 20876,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 3270,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 23532,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 20770,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 36826,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 30756,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 23200,
+      "正确的配置": "ipv6 metric-delay advertisement enable level-1-2",
+      "错误的配置": "ipv6 metric-delay advertisement disable level-1-2",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 3157,
+      "正确的配置": "undo peer <*> enable",
+      "错误的配置": "undo peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 22653,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 641,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 25680,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 909,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 30449,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 15903,
+      "正确的配置": "undo enable snmp trap physical-updown",
+      "错误的配置": "undo disable snmp trap physical-updown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 28738,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 6537,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 28025,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 39900,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 9972,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 32413,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 7154,
+      "正确的配置": "advertise ebgp enable",
+      "错误的配置": "advertise ebgp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 33974,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 39505,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 39876,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 26556,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 41970,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 32991,
+      "正确的配置": "peer <*> bfd enable",
+      "错误的配置": "peer <*> bfd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 35142,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 39822,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 17924,
+      "正确的配置": "undo peer <*> enable",
+      "错误的配置": "undo peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 1421,
+      "正确的配置": "statistic enable mode single",
+      "错误的配置": "statistic disable mode single",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 23063,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 42162,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 42047,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 32305,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 3799,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 28094,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 20179,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 3308,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 6716,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 27893,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 12221,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 11152,
+      "正确的配置": "ssh client first-time enable",
+      "错误的配置": "ssh client first-time disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 37655,
+      "正确的配置": "snetconf server enable",
+      "错误的配置": "snetconf server disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 5472,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 3020,
+      "正确的配置": "ssh client first-time enable",
+      "错误的配置": "ssh client first-time disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 34164,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 8472,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 14546,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 27481,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 17274,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 7160,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 5286,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 2170,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 26658,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 40343,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 40127,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 34572,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 13826,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 2157,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 31014,
+      "正确的配置": "qos phb dscp disable",
+      "错误的配置": "qos phb dscp enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 2400,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 38844,
+      "正确的配置": "bfd all-interfaces enable",
+      "错误的配置": "bfd all-interfaces disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 11776,
+      "正确的配置": "arp-proxy enable",
+      "错误的配置": "arp-proxy disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 22554,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 40371,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 31817,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 2956,
+      "正确的配置": "shutdown",
+      "错误的配置": "undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 22442,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 23361,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 17771,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 24735,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 26480,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 17176,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 18735,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 6729,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 33062,
+      "正确的配置": "shutdown",
+      "错误的配置": "undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 21597,
+      "正确的配置": "virtual-system enable",
+      "错误的配置": "virtual-system disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 13400,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 26053,
+      "正确的配置": "multicast authorization-enable",
+      "错误的配置": "multicast authorization-disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 598,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 164,
+      "错误行号": 18888,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 165,
+      "错误行号": 19114,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 166,
+      "错误行号": 4155,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 167,
+      "错误行号": 2728,
+      "正确的配置": "permit hot-standby up-group master-up-id <*> slave-up-id <*>",
+      "错误的配置": "permit hot-active up-group master-up-id <*> slave-up-id <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 168,
+      "错误行号": 32099,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 42158,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 41260,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 171,
+      "错误行号": 7608,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 41863,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 173,
+      "错误行号": 19654,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 36679,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 33710,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 5195,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 177,
+      "错误行号": 33318,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 2013,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 179,
+      "错误行号": 30576,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 180,
+      "错误行号": 12739,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 181,
+      "错误行号": 42134,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 182,
+      "错误行号": 2521,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 183,
+      "错误行号": 18883,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 184,
+      "错误行号": 27907,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 185,
+      "错误行号": 39065,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 18093,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 187,
+      "错误行号": 2979,
+      "正确的配置": "statistic enable mode single",
+      "错误的配置": "statistic disable mode single",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 188,
+      "错误行号": 20658,
+      "正确的配置": "statistics enable",
+      "错误的配置": "statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 189,
+      "错误行号": 16265,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 31764,
+      "正确的配置": "qos phb dscp disable",
+      "错误的配置": "qos phb dscp enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 191,
+      "错误行号": 3544,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 192,
+      "错误行号": 7281,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 193,
+      "错误行号": 4387,
+      "正确的配置": "multicast authorization-enable",
+      "错误的配置": "multicast authorization-disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 4894,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 195,
+      "错误行号": 26447,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 20746,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 2274,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 39136,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 30469,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 200,
+      "错误行号": 2587,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 201,
+      "错误行号": 26136,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd disable description <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 202,
+      "错误行号": 3276,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 41466,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 4953,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 31129,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 206,
+      "错误行号": 33510,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 207,
+      "错误行号": 5207,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 40195,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 31199,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 210,
+      "错误行号": 32615,
+      "正确的配置": "stelnet server enable",
+      "错误的配置": "stelnet server disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 211,
+      "错误行号": 30500,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 34930,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 12751,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 214,
+      "错误行号": 40405,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 31871,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 28975,
+      "正确的配置": "arp broadcast enable",
+      "错误的配置": "arp broadcast disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 217,
+      "错误行号": 39732,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 28581,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 12301,
+      "正确的配置": "segment-routing ipv6 locator <*> auto-sid-disable",
+      "错误的配置": "segment-routing ipv6 locator <*> auto-sid-enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 8493,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 2517,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 222,
+      "错误行号": 7626,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 16613,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 17376,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 225,
+      "错误行号": 27632,
+      "正确的配置": "qos phb disable",
+      "错误的配置": "qos phb enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 226,
+      "错误行号": 33881,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 23740,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 34334,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 23341,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 27556,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 231,
+      "错误行号": 33316,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 232,
+      "错误行号": 42107,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 5308,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 234,
+      "错误行号": 20637,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 36655,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 6665,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 12292,
+      "正确的配置": "ipv6 enable topology ipv6",
+      "错误的配置": "ipv6 disable topology ipv6",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 4663,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 239,
+      "错误行号": 36721,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 240,
+      "错误行号": 14628,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 241,
+      "错误行号": 38138,
+      "正确的配置": "flexe enable port <*>",
+      "错误的配置": "flexe disable port <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 242,
+      "错误行号": 30799,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 17040,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 28092,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 20722,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 26462,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 247,
+      "错误行号": 30721,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 32045,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 249,
+      "错误行号": 23640,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 32273,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 28400,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 39792,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 253,
+      "错误行号": 38086,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 254,
+      "错误行号": 4113,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 255,
+      "错误行号": 39780,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 256,
+      "错误行号": 1566,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 257,
+      "错误行号": 40812,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 258,
+      "错误行号": 27591,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 259,
+      "错误行号": 32349,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 260,
+      "错误行号": 18819,
+      "正确的配置": "ssh client first-time enable",
+      "错误的配置": "ssh client first-time disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 261,
+      "错误行号": 29706,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 262,
+      "错误行号": 4214,
+      "正确的配置": "opaque-capability enable",
+      "错误的配置": "opaque-capability disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 263,
+      "错误行号": 27303,
+      "正确的配置": "bfd all-interfaces enable",
+      "错误的配置": "bfd all-interfaces disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 264,
+      "错误行号": 34170,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 265,
+      "错误行号": 19461,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 266,
+      "错误行号": 40137,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 267,
+      "错误行号": 26279,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 268,
+      "错误行号": 2285,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 269,
+      "错误行号": 14688,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 270,
+      "错误行号": 17520,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 271,
+      "错误行号": 1981,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 272,
+      "错误行号": 17088,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 273,
+      "错误行号": 7164,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 274,
+      "错误行号": 3401,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 275,
+      "错误行号": 2617,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 276,
+      "错误行号": 5511,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 277,
+      "错误行号": 34030,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 278,
+      "错误行号": 2336,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 279,
+      "错误行号": 39702,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 280,
+      "错误行号": 12007,
+      "正确的配置": "ipv6 enable topology ipv6",
+      "错误的配置": "ipv6 disable topology ipv6",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 281,
+      "错误行号": 36769,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 282,
+      "错误行号": 20162,
+      "正确的配置": "statistics enable",
+      "错误的配置": "statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 283,
+      "错误行号": 544,
+      "正确的配置": "stelnet server enable",
+      "错误的配置": "stelnet server disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 284,
+      "错误行号": 24462,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 285,
+      "错误行号": 4971,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 286,
+      "错误行号": 19470,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 287,
+      "错误行号": 36607,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 288,
+      "错误行号": 14192,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "undo undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 289,
+      "错误行号": 34692,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 290,
+      "错误行号": 3926,
+      "正确的配置": "statistic enable mode single",
+      "错误的配置": "statistic disable mode single",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 291,
+      "错误行号": 32075,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 292,
+      "错误行号": 41019,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 293,
+      "错误行号": 26508,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 294,
+      "错误行号": 34328,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 295,
+      "错误行号": 1032,
+      "正确的配置": "shutdown",
+      "错误的配置": "undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 296,
+      "错误行号": 13370,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 297,
+      "错误行号": 13406,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 298,
+      "错误行号": 33907,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 299,
+      "错误行号": 36856,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 300,
+      "错误行号": 37129,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 301,
+      "错误行号": 19511,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 302,
+      "错误行号": 39633,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 303,
+      "错误行号": 2181,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 304,
+      "错误行号": 40514,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 305,
+      "错误行号": 26066,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 306,
+      "错误行号": 32285,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 307,
+      "错误行号": 3066,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 308,
+      "错误行号": 32121,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 309,
+      "错误行号": 28802,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 310,
+      "错误行号": 23458,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 311,
+      "错误行号": 41968,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 312,
+      "错误行号": 3830,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 313,
+      "错误行号": 13444,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 314,
+      "错误行号": 2101,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 315,
+      "错误行号": 37057,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 316,
+      "错误行号": 34654,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 317,
+      "错误行号": 26384,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 318,
+      "错误行号": 39657,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 319,
+      "错误行号": 12856,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 320,
+      "错误行号": 14131,
+      "正确的配置": "clock synchronization enable",
+      "错误的配置": "clock synchronization disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 321,
+      "错误行号": 20294,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 322,
+      "错误行号": 26691,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 323,
+      "错误行号": 16640,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 324,
+      "错误行号": 13789,
+      "正确的配置": "undo peer <*> enable",
+      "错误的配置": "undo peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 325,
+      "错误行号": 14562,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 326,
+      "错误行号": 26879,
+      "正确的配置": "statistic enable mode single",
+      "错误的配置": "statistic disable mode single",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 327,
+      "错误行号": 40426,
+      "正确的配置": "bfd all-interfaces enable",
+      "错误的配置": "bfd all-interfaces disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 328,
+      "错误行号": 17264,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 329,
+      "错误行号": 1965,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 330,
+      "错误行号": 38381,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 331,
+      "错误行号": 19446,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 332,
+      "错误行号": 27887,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 333,
+      "错误行号": 31881,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 334,
+      "错误行号": 37562,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 335,
+      "错误行号": 33698,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 336,
+      "错误行号": 16814,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 337,
+      "错误行号": 38968,
+      "正确的配置": "bfd all-interfaces enable",
+      "错误的配置": "bfd all-interfaces disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 338,
+      "错误行号": 41995,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 339,
+      "错误行号": 42045,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 340,
+      "错误行号": 23528,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 341,
+      "错误行号": 2045,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 342,
+      "错误行号": 19646,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 343,
+      "错误行号": 38895,
+      "正确的配置": "multicast authorization-enable",
+      "错误的配置": "multicast authorization-disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 344,
+      "错误行号": 5204,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 345,
+      "错误行号": 32129,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 346,
+      "错误行号": 21943,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 347,
+      "错误行号": 13714,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 348,
+      "错误行号": 17034,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 349,
+      "错误行号": 19057,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 350,
+      "错误行号": 20756,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 351,
+      "错误行号": 27945,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 352,
+      "错误行号": 26527,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 353,
+      "错误行号": 12230,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 354,
+      "错误行号": 31973,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 355,
+      "错误行号": 29235,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 356,
+      "错误行号": 30244,
+      "正确的配置": "ssh client first-time enable",
+      "错误的配置": "ssh client first-time disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 357,
+      "错误行号": 26249,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 358,
+      "错误行号": 42096,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 359,
+      "错误行号": 39300,
+      "正确的配置": "srv6-te-policy <*> enable",
+      "错误的配置": "srv6-te-policy <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 360,
+      "错误行号": 17162,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 361,
+      "错误行号": 27357,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd disable description <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 362,
+      "错误行号": 30644,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 363,
+      "错误行号": 2143,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 364,
+      "错误行号": 22757,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 365,
+      "错误行号": 13472,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 366,
+      "错误行号": 5538,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 367,
+      "错误行号": 28566,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 368,
+      "错误行号": 14196,
+      "正确的配置": "clock synchronization enable",
+      "错误的配置": "clock synchronization disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 369,
+      "错误行号": 3212,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 370,
+      "错误行号": 15321,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 371,
+      "错误行号": 5696,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 372,
+      "错误行号": 30979,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 373,
+      "错误行号": 29250,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 374,
+      "错误行号": 30716,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 375,
+      "错误行号": 1309,
+      "正确的配置": "qos phb dscp disable",
+      "错误的配置": "qos phb dscp enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 376,
+      "错误行号": 14724,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 377,
+      "错误行号": 29284,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 378,
+      "错误行号": 17514,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 379,
+      "错误行号": 21883,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 380,
+      "错误行号": 40125,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 381,
+      "错误行号": 30590,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 382,
+      "错误行号": 21071,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 383,
+      "错误行号": 41979,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 384,
+      "错误行号": 20738,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 385,
+      "错误行号": 7554,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 386,
+      "错误行号": 16184,
+      "正确的配置": "isis ipv6 bfd enable",
+      "错误的配置": "isis ipv6 bfd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 387,
+      "错误行号": 39834,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 388,
+      "错误行号": 8088,
+      "正确的配置": "ssh server compatible-ssh1x enable",
+      "错误的配置": "ssh server compatible-ssh1x disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 389,
+      "错误行号": 31785,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 390,
+      "错误行号": 34139,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 391,
+      "错误行号": 29417,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 392,
+      "错误行号": 25472,
+      "正确的配置": "arp-proxy inter-sub-vlan-proxy enable",
+      "错误的配置": "arp-proxy inter-sub-vlan-proxy disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 393,
+      "错误行号": 14680,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 394,
+      "错误行号": 21880,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 395,
+      "错误行号": 19497,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 396,
+      "错误行号": 34000,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 397,
+      "错误行号": 18922,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 398,
+      "错误行号": 28377,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 399,
+      "错误行号": 3341,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 400,
+      "错误行号": 40692,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 401,
+      "错误行号": 28107,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 402,
+      "错误行号": 37108,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 403,
+      "错误行号": 17114,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 404,
+      "错误行号": 8484,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 405,
+      "错误行号": 2221,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 406,
+      "错误行号": 3604,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 407,
+      "错误行号": 18924,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 408,
+      "错误行号": 40047,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 409,
+      "错误行号": 14648,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 410,
+      "错误行号": 23344,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 411,
+      "错误行号": 5397,
+      "正确的配置": "ipv6 route-static vpn-instance <*> <IPV6> 128 <*> <IPV6> bfd enable description <*>",
+      "错误的配置": "ipv6 route-static vpn-instance <*> <IPV6> 128 <*> <IPV6> bfd disable description <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 412,
+      "错误行号": 24949,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 413,
+      "错误行号": 29501,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 414,
+      "错误行号": 19186,
+      "正确的配置": "peer <*> request-sa-enable",
+      "错误的配置": "peer <*> request-sa-disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 415,
+      "错误行号": 4987,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 416,
+      "错误行号": 22411,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 417,
+      "错误行号": 14779,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 418,
+      "错误行号": 31634,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 419,
+      "错误行号": 32714,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 420,
+      "错误行号": 18185,
+      "正确的配置": "etree enable",
+      "错误的配置": "etree disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 421,
+      "错误行号": 41025,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 422,
+      "错误行号": 24461,
+      "正确的配置": "undo peer <*> enable",
+      "错误的配置": "undo peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 423,
+      "错误行号": 16366,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 424,
+      "错误行号": 27587,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 425,
+      "错误行号": 41962,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 426,
+      "错误行号": 1138,
+      "正确的配置": "stelnet ipv4 server enable",
+      "错误的配置": "stelnet ipv4 server disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 427,
+      "错误行号": 5283,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 428,
+      "错误行号": 35219,
+      "正确的配置": "statistic enable mode single",
+      "错误的配置": "statistic disable mode single",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 429,
+      "错误行号": 32015,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 430,
+      "错误行号": 18861,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 431,
+      "错误行号": 5150,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 432,
+      "错误行号": 37111,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 433,
+      "错误行号": 21339,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 434,
+      "错误行号": 18879,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 435,
+      "错误行号": 3327,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 436,
+      "错误行号": 4945,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 437,
+      "错误行号": 34096,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 438,
+      "错误行号": 18915,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 439,
+      "错误行号": 5345,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 440,
+      "错误行号": 33276,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 441,
+      "错误行号": 25998,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd disable description <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 442,
+      "错误行号": 19088,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 443,
+      "错误行号": 20814,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 444,
+      "错误行号": 653,
+      "正确的配置": "user-password password-force-change disable",
+      "错误的配置": "user-password password-force-change enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 445,
+      "错误行号": 34268,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 446,
+      "错误行号": 15722,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 447,
+      "错误行号": 28001,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 448,
+      "错误行号": 24734,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 449,
+      "错误行号": 5061,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 450,
+      "错误行号": 13951,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 451,
+      "错误行号": 37146,
+      "正确的配置": "ipv6 bfd all-interfaces enable",
+      "错误的配置": "ipv6 bfd all-interfaces disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 452,
+      "错误行号": 19131,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 453,
+      "错误行号": 40506,
+      "正确的配置": "shutdown",
+      "错误的配置": "undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 454,
+      "错误行号": 26300,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 455,
+      "错误行号": 27951,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 456,
+      "错误行号": 42148,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 457,
+      "错误行号": 29528,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 458,
+      "错误行号": 31795,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 459,
+      "错误行号": 19623,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 460,
+      "错误行号": 22656,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 461,
+      "错误行号": 30588,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 462,
+      "错误行号": 2240,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 463,
+      "错误行号": 5014,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 464,
+      "错误行号": 19013,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 465,
+      "错误行号": 18077,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 466,
+      "错误行号": 18360,
+      "正确的配置": "opaque-capability enable",
+      "错误的配置": "opaque-capability disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 467,
+      "错误行号": 6782,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 468,
+      "错误行号": 39618,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 469,
+      "错误行号": 23414,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 470,
+      "错误行号": 33889,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 471,
+      "错误行号": 23101,
+      "正确的配置": "user-password password-force-change disable",
+      "错误的配置": "user-password password-force-change enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 472,
+      "错误行号": 38496,
+      "正确的配置": "snmp-agent community complexity-check disable",
+      "错误的配置": "snmp-agent community complexity-check enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 473,
+      "错误行号": 31965,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 474,
+      "错误行号": 14812,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 475,
+      "错误行号": 6814,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 476,
+      "错误行号": 2579,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 477,
+      "错误行号": 41301,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 478,
+      "错误行号": 17805,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd disable description <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 479,
+      "错误行号": 38549,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 480,
+      "错误行号": 23397,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 481,
+      "错误行号": 5216,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 482,
+      "错误行号": 10152,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 483,
+      "错误行号": 3363,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 484,
+      "错误行号": 33071,
+      "正确的配置": "arp broadcast enable",
+      "错误的配置": "arp broadcast disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 485,
+      "错误行号": 6525,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 486,
+      "错误行号": 16506,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 487,
+      "错误行号": 6588,
+      "正确的配置": "user-password password-force-change disable",
+      "错误的配置": "user-password password-force-change enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 488,
+      "错误行号": 14152,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 489,
+      "错误行号": 7557,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 490,
+      "错误行号": 9518,
+      "正确的配置": "peer <*> bfd enable",
+      "错误的配置": "peer <*> bfd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 491,
+      "错误行号": 17028,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 492,
+      "错误行号": 6678,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 493,
+      "错误行号": 17052,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 494,
+      "错误行号": 38900,
+      "正确的配置": "shutdown",
+      "错误的配置": "undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 495,
+      "错误行号": 33744,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 496,
+      "错误行号": 18918,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 497,
+      "错误行号": 39105,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 498,
+      "错误行号": 2031,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 499,
+      "错误行号": 63,
+      "正确的配置": "srv6-te-policy <*> enable",
+      "错误的配置": "srv6-te-policy <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 500,
+      "错误行号": 24611,
+      "正确的配置": "sftp ipv4 server enable",
+      "错误的配置": "sftp ipv4 server disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 501,
+      "错误行号": 16418,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 502,
+      "错误行号": 33868,
+      "正确的配置": "segment-routing ipv6 locator <*> auto-sid-disable",
+      "错误的配置": "segment-routing ipv6 locator <*> auto-sid-enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 503,
+      "错误行号": 39564,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 504,
+      "错误行号": 24803,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 505,
+      "错误行号": 39582,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 506,
+      "错误行号": 29260,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 507,
+      "错误行号": 15744,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 508,
+      "错误行号": 18920,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 509,
+      "错误行号": 40711,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 510,
+      "错误行号": 2573,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 511,
+      "错误行号": 21841,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 512,
+      "错误行号": 7569,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 513,
+      "错误行号": 4235,
+      "正确的配置": "peer <*> bfd enable",
+      "错误的配置": "peer <*> bfd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 514,
+      "错误行号": 17657,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 515,
+      "错误行号": 39864,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 516,
+      "错误行号": 2473,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 517,
+      "错误行号": 17018,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 518,
+      "错误行号": 34611,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 519,
+      "错误行号": 6657,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 520,
+      "错误行号": 741,
+      "正确的配置": "statistic enable mode single",
+      "错误的配置": "statistic disable mode single",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 521,
+      "错误行号": 29383,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 522,
+      "错误行号": 17542,
+      "正确的配置": "ipv6 bfd all-interfaces enable",
+      "错误的配置": "ipv6 bfd all-interfaces disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 523,
+      "错误行号": 41987,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 524,
+      "错误行号": 33546,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 525,
+      "错误行号": 41309,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 526,
+      "错误行号": 12651,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 527,
+      "错误行号": 16766,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 528,
+      "错误行号": 8594,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 529,
+      "错误行号": 34250,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 530,
+      "错误行号": 3379,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 531,
+      "错误行号": 7926,
+      "正确的配置": "user-password password-force-change disable",
+      "错误的配置": "user-password password-force-change enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 532,
+      "错误行号": 33255,
+      "正确的配置": "traffic-statistics enable",
+      "错误的配置": "traffic-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 533,
+      "错误行号": 4914,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 534,
+      "错误行号": 24130,
+      "正确的配置": "server enable",
+      "错误的配置": "server disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 535,
+      "错误行号": 14002,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 536,
+      "错误行号": 18109,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 537,
+      "错误行号": 42164,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 538,
+      "错误行号": 19642,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 539,
+      "错误行号": 1396,
+      "正确的配置": "ptp enable",
+      "错误的配置": "ptp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 540,
+      "错误行号": 16737,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 541,
+      "错误行号": 28881,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 542,
+      "错误行号": 38980,
+      "正确的配置": "sftp ipv4 server enable",
+      "错误的配置": "sftp ipv4 server disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 543,
+      "错误行号": 29340,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 544,
+      "错误行号": 12748,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 545,
+      "错误行号": 30862,
+      "正确的配置": "opaque-capability enable",
+      "错误的配置": "opaque-capability disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 546,
+      "错误行号": 6643,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 547,
+      "错误行号": 13007,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 548,
+      "错误行号": 6645,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 549,
+      "错误行号": 5051,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 550,
+      "错误行号": 33398,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 551,
+      "错误行号": 33154,
+      "正确的配置": "set base-subhealth detect-interval 1 statistic-interval 30 threshold 50 enable",
+      "错误的配置": "set base-subhealth detect-interval 1 statistic-interval 30 threshold 50 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 552,
+      "错误行号": 32644,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 553,
+      "错误行号": 4989,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 554,
+      "错误行号": 584,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 555,
+      "错误行号": 28352,
+      "正确的配置": "ssh client first-time enable",
+      "错误的配置": "ssh client first-time disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 556,
+      "错误行号": 3333,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 557,
+      "错误行号": 40854,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 558,
+      "错误行号": 5936,
+      "正确的配置": "srv6-te-policy bfd seamless enable",
+      "错误的配置": "srv6-te-policy bfd seamless disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 559,
+      "错误行号": 42453,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 560,
+      "错误行号": 40701,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 561,
+      "错误行号": 27517,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 562,
+      "错误行号": 13969,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 563,
+      "错误行号": 42128,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 564,
+      "错误行号": 13480,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 565,
+      "错误行号": 40998,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 566,
+      "错误行号": 33834,
+      "正确的配置": "permit hot-standby up-group master-up-id <*> slave-up-id <*>",
+      "错误的配置": "permit hot-active up-group master-up-id <*> slave-up-id <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 567,
+      "错误行号": 12543,
+      "正确的配置": "ipv6 bfd all-interfaces enable",
+      "错误的配置": "ipv6 bfd all-interfaces disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 568,
+      "错误行号": 33396,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 569,
+      "错误行号": 4307,
+      "正确的配置": "shutdown",
+      "错误的配置": "undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 570,
+      "错误行号": 36772,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 571,
+      "错误行号": 38012,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 572,
+      "错误行号": 14493,
+      "正确的配置": "igmp enable",
+      "错误的配置": "igmp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 573,
+      "错误行号": 41997,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 574,
+      "错误行号": 32227,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 575,
+      "错误行号": 30397,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 576,
+      "错误行号": 36919,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 577,
+      "错误行号": 3056,
+      "正确的配置": "etree enable",
+      "错误的配置": "etree disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 578,
+      "错误行号": 14572,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 579,
+      "错误行号": 40173,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 580,
+      "错误行号": 1983,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 581,
+      "错误行号": 37131,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 582,
+      "错误行号": 41688,
+      "正确的配置": "peer <*> egress-engineering srv6 locator <*>",
+      "错误的配置": "peer <*> ingress-engineering srv6 locator <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 583,
+      "错误行号": 25918,
+      "正确的配置": "statistic enable mode single",
+      "错误的配置": "statistic disable mode single",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 584,
+      "错误行号": 36703,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 585,
+      "错误行号": 22718,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 586,
+      "错误行号": 23872,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 587,
+      "错误行号": 12362,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 588,
+      "错误行号": 32167,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 589,
+      "错误行号": 41966,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 590,
+      "错误行号": 36958,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 591,
+      "错误行号": 40083,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 592,
+      "错误行号": 8529,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 593,
+      "错误行号": 31895,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 594,
+      "错误行号": 39708,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 595,
+      "错误行号": 30114,
+      "正确的配置": "undo enable snmp trap updown",
+      "错误的配置": "undo disable snmp trap updown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 596,
+      "错误行号": 39470,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 597,
+      "错误行号": 22625,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 598,
+      "错误行号": 27905,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 599,
+      "错误行号": 34157,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 600,
+      "错误行号": 26191,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 601,
+      "错误行号": 6673,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 602,
+      "错误行号": 32077,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 603,
+      "错误行号": 40389,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 604,
+      "错误行号": 15259,
+      "正确的配置": "undo peer <*> enable",
+      "错误的配置": "undo peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 605,
+      "错误行号": 2225,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 606,
+      "错误行号": 34058,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 607,
+      "错误行号": 6625,
+      "正确的配置": "isis bfd enable",
+      "错误的配置": "isis bfd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 608,
+      "错误行号": 3626,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 609,
+      "错误行号": 4645,
+      "正确的配置": "user-password password-force-change disable",
+      "错误的配置": "user-password password-force-change enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 610,
+      "错误行号": 20446,
+      "正确的配置": "qos phb dscp disable",
+      "错误的配置": "qos phb dscp enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 611,
+      "错误行号": 25315,
+      "正确的配置": "snetconf server enable",
+      "错误的配置": "snetconf server disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 612,
+      "错误行号": 6495,
+      "正确的配置": "sftp server enable",
+      "错误的配置": "sftp server disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 613,
+      "错误行号": 12696,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 614,
+      "错误行号": 3529,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 615,
+      "错误行号": 12005,
+      "正确的配置": "qos phb dscp disable",
+      "错误的配置": "qos phb dscp enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 616,
+      "错误行号": 23191,
+      "正确的配置": "shutdown",
+      "错误的配置": "undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 617,
+      "错误行号": 29324,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 618,
+      "错误行号": 26875,
+      "正确的配置": "undo pcp enable",
+      "错误的配置": "undo pcp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 619,
+      "错误行号": 40229,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 620,
+      "错误行号": 31903,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 621,
+      "错误行号": 41568,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 622,
+      "错误行号": 33885,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 623,
+      "错误行号": 24364,
+      "正确的配置": "bgp-ls enable <*>",
+      "错误的配置": "bgp-ls disable <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 624,
+      "错误行号": 3258,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 625,
+      "错误行号": 23552,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 626,
+      "错误行号": 4311,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 627,
+      "错误行号": 30632,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 628,
+      "错误行号": 1259,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 629,
+      "错误行号": 2183,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 630,
+      "错误行号": 37048,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 631,
+      "错误行号": 31897,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 632,
+      "错误行号": 26933,
+      "正确的配置": "traffic-statistics enable",
+      "错误的配置": "traffic-statistics disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 633,
+      "错误行号": 18590,
+      "正确的配置": "stelnet server enable",
+      "错误的配置": "stelnet server disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 634,
+      "错误行号": 6663,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 635,
+      "错误行号": 40163,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 636,
+      "错误行号": 15872,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 637,
+      "错误行号": 7145,
+      "正确的配置": "peer <*> bfd enable",
+      "错误的配置": "peer <*> bfd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 638,
+      "错误行号": 19533,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 639,
+      "错误行号": 22117,
+      "正确的配置": "bfd all-interfaces enable",
+      "错误的配置": "bfd all-interfaces disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 640,
+      "错误行号": 24502,
+      "正确的配置": "flexe enable port <*>",
+      "错误的配置": "flexe disable port <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 641,
+      "错误行号": 34605,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 642,
+      "错误行号": 29096,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 643,
+      "错误行号": 34034,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 644,
+      "错误行号": 37084,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 645,
+      "错误行号": 20812,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 646,
+      "错误行号": 37541,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 647,
+      "错误行号": 31867,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 648,
+      "错误行号": 17638,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 649,
+      "错误行号": 23608,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 650,
+      "错误行号": 22480,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 651,
+      "错误行号": 21776,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 652,
+      "错误行号": 14592,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 653,
+      "错误行号": 34702,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 654,
+      "错误行号": 40333,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 655,
+      "错误行号": 17138,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 656,
+      "错误行号": 40251,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 657,
+      "错误行号": 19767,
+      "正确的配置": "igmp enable",
+      "错误的配置": "igmp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 658,
+      "错误行号": 34246,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 659,
+      "错误行号": 32311,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 660,
+      "错误行号": 14983,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 661,
+      "错误行号": 24811,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 662,
+      "错误行号": 25430,
+      "正确的配置": "netconf-client enable",
+      "错误的配置": "netconf-client disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 663,
+      "错误行号": 5730,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 664,
+      "错误行号": 8487,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 665,
+      "错误行号": 33938,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 666,
+      "错误行号": 34072,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 667,
+      "错误行号": 23291,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 668,
+      "错误行号": 38675,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 669,
+      "错误行号": 29400,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 670,
+      "错误行号": 6639,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 671,
+      "错误行号": 16084,
+      "正确的配置": "sftp server enable",
+      "错误的配置": "sftp server disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 672,
+      "错误行号": 15873,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    }
+  ]
+}

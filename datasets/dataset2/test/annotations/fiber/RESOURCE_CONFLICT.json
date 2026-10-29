@@ -1,0 +1,2011 @@
+{
+  "vendor": "fiber",
+  "dataset": "test_dataset_2",
+  "错误类型": "RESOURCE_CONFLICT",
+  "错误类型描述": "资源冲突（真实资源值重复分配）",
+  "实际模板占比": "21.56%",
+  "数据集调整占比": "23.00%",
+  "错误数量": 250,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 2036,
+      "正确的配置": "vrf wireless_OMC",
+      "错误的配置": "vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 8856,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 550,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 2003,
+      "正确的配置": "route-policy MAR-OUT-BGPVPN-LOOP1 out",
+      "错误的配置": "route-policy SmartMAN_OUT out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 SmartMAN_OUT）"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 3768,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 338,
+      "正确的配置": "vlan-type dot1q 4093",
+      "错误的配置": "vlan-type dot1q 800",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 800）"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 674,
+      "正确的配置": "route-policy NNI-BAK in",
+      "错误的配置": "route-policy MAR_IPV6-OUT-BGPVPN-LOOP2 in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MAR_IPV6-OUT-BGPVPN-LOOP2）"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 9110,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 670,
+      "正确的配置": "route-policy NNI-BAK in",
+      "错误的配置": "route-policy SET_DEF_ROUTE_v4 in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 SET_DEF_ROUTE_v4）"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 5430,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 6750,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 5622,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 8055,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 3752,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 276,
+      "正确的配置": "ipv6 address <IPV6>/125",
+      "错误的配置": "ipv6 address F3E:5511/125",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 F3E:5511）"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 3582,
+      "正确的配置": "ftp service start vrf FHNMVPN",
+      "错误的配置": "ftp service start vrf 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 5252,
+      "正确的配置": "router ospf 65534 vrf CTVPN193",
+      "错误的配置": "router ospf 65534 vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 7916,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 350,
+      "正确的配置": "vlan-type dot1q 4093",
+      "错误的配置": "vlan-type dot1q 13",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 13）"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 4563,
+      "正确的配置": "route-policy MCR-OUT-BGPVPN-MCR out",
+      "错误的配置": "route-policy MAR_IPV6-OUT-BGPVPN-LOOP3 out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MAR_IPV6-OUT-BGPVPN-LOOP3）"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 2152,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 3798,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 428,
+      "正确的配置": "vlan-type dot1q 4093",
+      "错误的配置": "vlan-type dot1q 11",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 11）"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 652,
+      "正确的配置": "route-policy NNI-PRI in",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MCR-OUT-BGPVPN-MCR）"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 5146,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 1000",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 1000）"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 6830,
+      "正确的配置": "redistribute isis 1000 route-map isis-loopback0 metric 10000",
+      "错误的配置": "redistribute isis 1000 route-map SmartMAN_OUT metric 10000",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 SmartMAN_OUT）"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 7760,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 3470,
+      "正确的配置": "vlan-type dot1q 851",
+      "错误的配置": "vlan-type dot1q 12",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 12）"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 5897,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 6635,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 386,
+      "正确的配置": "vlan-type dot1q 4093",
+      "错误的配置": "vlan-type dot1q 895",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 895）"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 2067,
+      "正确的配置": "route-policy MCR-OUT-BGPVPN-MCR1 permit node 1",
+      "错误的配置": "route-policy NNI-PRI permit node 1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 NNI-PRI）"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 6155,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 4630,
+      "正确的配置": "vrf wireless_OMC",
+      "错误的配置": "vrf 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 257,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 3688,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 7176,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 260,
+      "正确的配置": "ipv6 address <IPV6>/125",
+      "错误的配置": "ipv6 address BA:8422/125",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 BA:8422）"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 5211,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 843",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 843）"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 8408,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 266,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 467,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 851",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 851）"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 5515,
+      "正确的配置": "ftp service start vrf FHNMVPN",
+      "错误的配置": "ftp service start vrf 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 3791,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 1127,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 5312,
+      "正确的配置": "ipv4-prefix isis-loopback0 seq 4 permit prefix <IPV4>",
+      "错误的配置": "ipv4-prefix MAR_ipv6 seq 4 permit prefix <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MAR_ipv6）"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 2302,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding CTVPN193",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193）"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 6446,
+      "正确的配置": "route-policy MAR-OUT-BGPVPN-LOOP2 out",
+      "错误的配置": "route-policy MAR_IPV6-OUT-BGPVPN-LOOP2 out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MAR_IPV6-OUT-BGPVPN-LOOP2）"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 6093,
+      "正确的配置": "route ::/0 nh-vrf 5G_RAN_VIP null 0",
+      "错误的配置": "route ::/0 nh-vrf FHNMVPN null 0",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 3151,
+      "正确的配置": "ftp service start vrf FHNMVPN",
+      "错误的配置": "ftp service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 569,
+      "正确的配置": "acl basic SmartMAN_SNMP",
+      "错误的配置": "acl SNMP SmartMAN_SNMP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 SNMP）"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 8199,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 877,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding CTVPN193",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193）"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 1863,
+      "正确的配置": "route <IPV4> vrf 5G_RAN",
+      "错误的配置": "route <IPV4> vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 8202,
+      "正确的配置": "ftp service start vrf FHNMVPN",
+      "错误的配置": "ftp service start vrf wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 3812,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 5570,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 1860,
+      "正确的配置": "route <IPV4> vrf 5G_OAM",
+      "错误的配置": "route <IPV4> vrf CTVPN193",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193）"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 1190,
+      "正确的配置": "vrf 4G_RAN",
+      "错误的配置": "vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 751,
+      "正确的配置": "router ospf 65534 vrf CTVPN193",
+      "错误的配置": "router ospf 65534 vrf wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 5669,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 7987,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 6695,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 5776,
+      "正确的配置": "ipv6 address <IPV6>",
+      "错误的配置": "ipv6 address 9F4E:C",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 9F4E:C）"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 5134,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 31,
+      "正确的配置": "vrf CTVPN193",
+      "错误的配置": "vrf wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 980,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 4826,
+      "正确的配置": "ipv6 address <IPV6>/125",
+      "错误的配置": "ipv6 address F3E:6511/125",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 F3E:6511）"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 1843,
+      "正确的配置": "vrf 5G_RAN",
+      "错误的配置": "vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 3517,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 9166,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 3231,
+      "正确的配置": "route <IPV4> vrf 5G_OAM",
+      "错误的配置": "route <IPV4> vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 3380,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 8736,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 4519,
+      "正确的配置": "route <IPV4> nh-vrf 4G_RAN null 0",
+      "错误的配置": "route <IPV4> nh-vrf FHNMVPN null 0",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 4661,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 686,
+      "正确的配置": "vrf 5G_OAM",
+      "错误的配置": "vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 2349,
+      "正确的配置": "ipv6 address <IPV6>",
+      "错误的配置": "ipv6 address FE:E066",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FE:E066）"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 5474,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 241,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 3144,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 3325,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 9163,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 5831,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 5328,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 5697,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 2426,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 3772,
+      "正确的配置": "vlan-type dot1q 852",
+      "错误的配置": "vlan-type dot1q 1843",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 1843）"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 1181,
+      "正确的配置": "ipv4-prefix isis-loopback0 seq 5 permit prefix <IPV4>",
+      "错误的配置": "ipv4-prefix MAR_ipv6 seq 5 permit prefix <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MAR_ipv6）"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 5166,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 851",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 851）"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 3115,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 6157,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 8520,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 909,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 8284,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 4111,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 3449,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 3761,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 3466,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 5826,
+      "正确的配置": "telnetd service start vrf FHNMVPN",
+      "错误的配置": "telnetd service start vrf wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 292,
+      "正确的配置": "ipv6 address <IPV6>/125",
+      "错误的配置": "ipv6 address BA:8422/125",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 BA:8422）"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 4657,
+      "正确的配置": "route-policy MCR-IN-BGPVPN-MCR in",
+      "错误的配置": "route-policy MAR_IPV6-OUT-BGPVPN-LOOP1 in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MAR_IPV6-OUT-BGPVPN-LOOP1）"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 1168,
+      "正确的配置": "route-policy SmartMAN_OUT permit node 1",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR permit node 1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MCR-OUT-BGPVPN-MCR）"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 487,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 13",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 13）"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 6450,
+      "正确的配置": "route-policy MAR_IPV6-OUT-BGPVPN-LOOP2 out",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR1_ipv6 out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MCR-OUT-BGPVPN-MCR1_ipv6）"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 7559,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 3765,
+      "正确的配置": "vlan-type dot1q 851",
+      "错误的配置": "vlan-type dot1q 895",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 895）"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 1143,
+      "正确的配置": "route-policy MAR_IPV6-OUT-BGPVPN-LOOP1 permit node 2",
+      "错误的配置": "route-policy SmartMAN_OUT permit node 2",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 SmartMAN_OUT）"
+    },
+    {
+      "错误序号": 165,
+      "错误行号": 5528,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding CTVPN193",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193）"
+    },
+    {
+      "错误序号": 167,
+      "错误行号": 3876,
+      "正确的配置": "route-policy MAR-OUT-BGPVPN-LOOP2 permit node 2",
+      "错误的配置": "route-policy MAR_IPV6-OUT-BGPVPN-LOOP2 permit node 2",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MAR_IPV6-OUT-BGPVPN-LOOP2）"
+    },
+    {
+      "错误序号": 168,
+      "错误行号": 5553,
+      "正确的配置": "vlan-type dot1q 851",
+      "错误的配置": "vlan-type dot1q 1000",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 1000）"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 7076,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 4515,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 854",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 854）"
+    },
+    {
+      "错误序号": 171,
+      "错误行号": 510,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 8623,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 173,
+      "错误行号": 1848,
+      "正确的配置": "vrf wireless_OMC",
+      "错误的配置": "vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 4145,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 517,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 13",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 13）"
+    },
+    {
+      "错误序号": 177,
+      "错误行号": 2198,
+      "正确的配置": "ipv6 address <IPV6>/125",
+      "错误的配置": "ipv6 address 8E3D:B/125",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 8E3D:B）"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 8237,
+      "正确的配置": "vrf 5G_RAN",
+      "错误的配置": "vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 180,
+      "错误行号": 7496,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 4093",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4093）"
+    },
+    {
+      "错误序号": 183,
+      "错误行号": 282,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 185,
+      "错误行号": 462,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 852",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 852）"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 4711,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 187,
+      "错误行号": 5899,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 188,
+      "错误行号": 2162,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 189,
+      "错误行号": 1202,
+      "正确的配置": "vrf 5G_RAN",
+      "错误的配置": "vrf CTVPN193",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193）"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 54,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 192,
+      "错误行号": 2346,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 3473,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 195,
+      "错误行号": 3915,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 1843",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 1843）"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 6087,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 1010,
+      "正确的配置": "ipv6 address <IPV6>/125",
+      "错误的配置": "ipv6 address DB:2488/125",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 DB:2488）"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 2306,
+      "正确的配置": "vlan-type dot1q 852",
+      "错误的配置": "vlan-type dot1q 4092",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4092）"
+    },
+    {
+      "错误序号": 200,
+      "错误行号": 3194,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 202,
+      "错误行号": 5301,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf CTVPN193",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193）"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 5666,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 9165,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 5124,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 207,
+      "错误行号": 1801,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 2419,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 1213,
+      "正确的配置": "vrf wireless_OMC",
+      "错误的配置": "vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 210,
+      "错误行号": 4379,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 211,
+      "错误行号": 4377,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 356,
+      "正确的配置": "vlan-type dot1q 4093",
+      "错误的配置": "vlan-type dot1q 11",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 11）"
+    },
+    {
+      "错误序号": 214,
+      "错误行号": 2322,
+      "正确的配置": "vlan-type dot1q 843",
+      "错误的配置": "vlan-type dot1q 4092",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4092）"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 5954,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 1840,
+      "正确的配置": "route <IPV4> nh-vrf 5G_OAM null 0",
+      "错误的配置": "route <IPV4> nh-vrf 5G_RAN_VIP null 0",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 1051,
+      "正确的配置": "ipv6 address <IPV6>/125",
+      "错误的配置": "ipv6 address F3E:6511/125",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 F3E:6511）"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 5717,
+      "正确的配置": "vlan-type dot1q 851",
+      "错误的配置": "vlan-type dot1q 10",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 10）"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 4666,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 2031,
+      "正确的配置": "network ::/0 route-policy SET_DEF_ROUTE_v6",
+      "错误的配置": "network ::/0 route-policy SET_DEF_ROUTE_v4",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 SET_DEF_ROUTE_v4）"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 3782,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 422,
+      "正确的配置": "vlan-type dot1q 4093",
+      "错误的配置": "vlan-type dot1q 2000",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2000）"
+    },
+    {
+      "错误序号": 225,
+      "错误行号": 7561,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 4311,
+      "正确的配置": "route-policy MAR-OUT-BGPVPN-LOOP1 out",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR1_ipv6 out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MCR-OUT-BGPVPN-MCR1_ipv6）"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 3779,
+      "正确的配置": "vlan-type dot1q 854",
+      "错误的配置": "vlan-type dot1q 4093",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4093）"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 542,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 11",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 11）"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 3118,
+      "正确的配置": "ipv6 address <IPV6>",
+      "错误的配置": "ipv6 address E:6278",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E:6278）"
+    },
+    {
+      "错误序号": 231,
+      "错误行号": 446,
+      "正确的配置": "vlan-type dot1q 4093",
+      "错误的配置": "vlan-type dot1q 1000",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 1000）"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 2024,
+      "正确的配置": "vrf 5G_RAN",
+      "错误的配置": "vrf CTVPN193",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193）"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 6813,
+      "正确的配置": "redistribute isis 11 route-map SmartMAN_OUT metric 10000",
+      "错误的配置": "redistribute isis 11 route-map isis-loopback0 metric 10000",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 isis-loopback0）"
+    },
+    {
+      "错误序号": 239,
+      "错误行号": 3576,
+      "正确的配置": "telnetd service start vrf FHNMVPN",
+      "错误的配置": "telnetd service start vrf wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 240,
+      "错误行号": 2084,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 241,
+      "错误行号": 7494,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 3514,
+      "正确的配置": "vlan-type dot1q 854",
+      "错误的配置": "vlan-type dot1q 1843",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 1843）"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 6849,
+      "正确的配置": "router ospf 65534 vrf CTVPN193",
+      "错误的配置": "router ospf 65534 vrf wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 247,
+      "错误行号": 5511,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 273,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 2371,
+      "正确的配置": "vlan-type dot1q 1843",
+      "错误的配置": "vlan-type dot1q 10",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 10）"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 3520,
+      "正确的配置": "ipv6 address <IPV6>",
+      "错误的配置": "ipv6 address DF:C44",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 DF:C44）"
+    },
+    {
+      "错误序号": 253,
+      "错误行号": 3925,
+      "正确的配置": "snmp-agent acl SNMP",
+      "错误的配置": "snmp-agent acl basic",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 basic）"
+    },
+    {
+      "错误序号": 257,
+      "错误行号": 4152,
+      "正确的配置": "ftp service start vrf FHNMVPN",
+      "错误的配置": "ftp service start vrf wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 258,
+      "错误行号": 4194,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 259,
+      "错误行号": 3862,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 260,
+      "错误行号": 1176,
+      "正确的配置": "ipv4-prefix SmartMAN_OUT seq 1 permit prefix <IPV4> ge 32 le 32",
+      "错误的配置": "ipv4-prefix MAR_ipv6 seq 1 permit prefix <IPV4> ge 32 le 32",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MAR_ipv6）"
+    },
+    {
+      "错误序号": 261,
+      "错误行号": 5461,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 262,
+      "错误行号": 3269,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 263,
+      "错误行号": 1826,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 264,
+      "错误行号": 8620,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 265,
+      "错误行号": 4533,
+      "正确的配置": "acl basic SNMP",
+      "错误的配置": "acl SNMP SNMP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 SNMP）"
+    },
+    {
+      "错误序号": 266,
+      "错误行号": 6224,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 267,
+      "错误行号": 918,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding CTVPN193",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193）"
+    },
+    {
+      "错误序号": 268,
+      "错误行号": 6517,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 270,
+      "错误行号": 7818,
+      "正确的配置": "ipv4-prefix isis-loopback0 seq 2 permit prefix <IPV4>",
+      "错误的配置": "ipv4-prefix MCR_IN seq 2 permit prefix <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MCR_IN）"
+    },
+    {
+      "错误序号": 271,
+      "错误行号": 4149,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 273,
+      "错误行号": 3637,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 843",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 843）"
+    },
+    {
+      "错误序号": 274,
+      "错误行号": 1026,
+      "正确的配置": "ipv6 address <IPV6>/125",
+      "错误的配置": "ipv6 address ED:B555/125",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ED:B555）"
+    },
+    {
+      "错误序号": 275,
+      "错误行号": 7481,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 1843",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 1843）"
+    },
+    {
+      "错误序号": 277,
+      "错误行号": 247,
+      "正确的配置": "vlan-type dot1q 843",
+      "错误的配置": "vlan-type dot1q 11",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 11）"
+    },
+    {
+      "错误序号": 278,
+      "错误行号": 3195,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 281,
+      "错误行号": 6410,
+      "正确的配置": "vlan-type dot1q 12",
+      "错误的配置": "vlan-type dot1q 851",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 851）"
+    },
+    {
+      "错误序号": 282,
+      "错误行号": 457,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 854",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 854）"
+    },
+    {
+      "错误序号": 283,
+      "错误行号": 4842,
+      "正确的配置": "ipv6 address <IPV6>/125",
+      "错误的配置": "ipv6 address 9F4E:C/125",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 9F4E:C）"
+    },
+    {
+      "错误序号": 284,
+      "错误行号": 3795,
+      "正确的配置": "vlan-type dot1q 851",
+      "错误的配置": "vlan-type dot1q 20",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 20）"
+    },
+    {
+      "错误序号": 285,
+      "错误行号": 3620,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 287,
+      "错误行号": 5724,
+      "正确的配置": "vlan-type dot1q 852",
+      "错误的配置": "vlan-type dot1q 13",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 13）"
+    },
+    {
+      "错误序号": 292,
+      "错误行号": 492,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 4093",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4093）"
+    },
+    {
+      "错误序号": 294,
+      "错误行号": 6858,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 295,
+      "错误行号": 5560,
+      "正确的配置": "vlan-type dot1q 852",
+      "错误的配置": "vlan-type dot1q 4092",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4092）"
+    },
+    {
+      "错误序号": 296,
+      "错误行号": 5710,
+      "正确的配置": "vlan-type dot1q 843",
+      "错误的配置": "vlan-type dot1q 851",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 851）"
+    },
+    {
+      "错误序号": 297,
+      "错误行号": 4458,
+      "正确的配置": "ipv4-prefix MCR seq 1 deny prefix <IPV4>",
+      "错误的配置": "ipv4-prefix MCR_ipv6 seq 1 deny prefix <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MCR_ipv6）"
+    },
+    {
+      "错误序号": 298,
+      "错误行号": 4780,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding CTVPN193",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193）"
+    },
+    {
+      "错误序号": 299,
+      "错误行号": 4584,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 302,
+      "错误行号": 971,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 303,
+      "错误行号": 5734,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding CTVPN193",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193）"
+    },
+    {
+      "错误序号": 305,
+      "错误行号": 500,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 308,
+      "错误行号": 3383,
+      "正确的配置": "ipv6 address <IPV6>/125",
+      "错误的配置": "ipv6 address 6C1B:9E/125",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 6C1B:9E）"
+    },
+    {
+      "错误序号": 310,
+      "错误行号": 6079,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 4092",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4092）"
+    },
+    {
+      "错误序号": 312,
+      "错误行号": 47,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 314,
+      "错误行号": 4705,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 315,
+      "错误行号": 815,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 316,
+      "错误行号": 5956,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 317,
+      "错误行号": 398,
+      "正确的配置": "vlan-type dot1q 4093",
+      "错误的配置": "vlan-type dot1q 800",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 800）"
+    },
+    {
+      "错误序号": 318,
+      "错误行号": 7816,
+      "正确的配置": "ipv4-prefix SmartMAN_OUT seq 1 permit prefix <IPV4> ge 32 le 32",
+      "错误的配置": "ipv4-prefix MCR_IN seq 1 permit prefix <IPV4> ge 32 le 32",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MCR_IN）"
+    },
+    {
+      "错误序号": 319,
+      "错误行号": 8088,
+      "正确的配置": "ipv6 address <IPV6>/126",
+      "错误的配置": "ipv6 address A05F:D/126",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 A05F:D）"
+    },
+    {
+      "错误序号": 320,
+      "错误行号": 2195,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 321,
+      "错误行号": 1029,
+      "正确的配置": "vlan-type dot1q 843",
+      "错误的配置": "vlan-type dot1q 895",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 895）"
+    },
+    {
+      "错误序号": 322,
+      "错误行号": 4321,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 324,
+      "错误行号": 8618,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 326,
+      "错误行号": 5199,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 328,
+      "错误行号": 8195,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 329,
+      "错误行号": 7489,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 330,
+      "错误行号": 4658,
+      "正确的配置": "route-policy MCR-OUT-BGPVPN-MCR out",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR2 out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MCR-OUT-BGPVPN-MCR2）"
+    },
+    {
+      "错误序号": 332,
+      "错误行号": 4255,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 333,
+      "错误行号": 6907,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 334,
+      "错误行号": 1850,
+      "正确的配置": "route <IPV4> nh-vrf wireless_OMC null 0",
+      "错误的配置": "route <IPV4> nh-vrf CTVPN193 null 0",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193）"
+    },
+    {
+      "错误序号": 336,
+      "错误行号": 3271,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 337,
+      "错误行号": 3459,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 338,
+      "错误行号": 7693,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 340,
+      "错误行号": 335,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding CTVPN193",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193）"
+    },
+    {
+      "错误序号": 341,
+      "错误行号": 5141,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 11",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 11）"
+    },
+    {
+      "错误序号": 342,
+      "错误行号": 4839,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 344,
+      "错误行号": 3647,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 851",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 851）"
+    },
+    {
+      "错误序号": 345,
+      "错误行号": 5171,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 852",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 852）"
+    },
+    {
+      "错误序号": 348,
+      "错误行号": 8741,
+      "正确的配置": "ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 352,
+      "错误行号": 6959,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 353,
+      "错误行号": 3109,
+      "正确的配置": "ipv6 address <IPV6>/126",
+      "错误的配置": "ipv6 address B6:FB99/126",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 B6:FB99）"
+    },
+    {
+      "错误序号": 354,
+      "错误行号": 6957,
+      "正确的配置": "telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf 5G_RAN_VIP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN_VIP）"
+    },
+    {
+      "错误序号": 355,
+      "错误行号": 5773,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 356,
+      "错误行号": 6518,
+      "正确的配置": "sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf 5G_OAM",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_OAM）"
+    },
+    {
+      "错误序号": 357,
+      "错误行号": 9057,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf 5G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 5G_RAN）"
+    },
+    {
+      "错误序号": 358,
+      "错误行号": 5509,
+      "正确的配置": "telnetd service start vrf FHNMVPN",
+      "错误的配置": "telnetd service start vrf CTVPN193",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193）"
+    },
+    {
+      "错误序号": 359,
+      "错误行号": 4207,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding wireless_OMC",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 wireless_OMC）"
+    },
+    {
+      "错误序号": 360,
+      "错误行号": 1042,
+      "正确的配置": "ipv6 address <IPV6>/125",
+      "错误的配置": "ipv6 address 823A:F4FF:FE/125",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 823A:F4FF:FE）"
+    },
+    {
+      "错误序号": 361,
+      "错误行号": 3685,
+      "正确的配置": "sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf 4G_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4G_RAN）"
+    },
+    {
+      "错误序号": 362,
+      "错误行号": 1161,
+      "正确的配置": "route-policy MCR-OUT-BGPVPN-MCR2_ipv6 permit node 2",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR permit node 2",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 MCR-OUT-BGPVPN-MCR）"
+    },
+    {
+      "错误序号": 364,
+      "错误行号": 8275,
+      "正确的配置": "vrf 5G_RAN",
+      "错误的配置": "vrf FHNMVPN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 FHNMVPN）"
+    },
+    {
+      "错误序号": 365,
+      "错误行号": 279,
+      "正确的配置": "vlan-type dot1q 843",
+      "错误的配置": "vlan-type dot1q 800",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 800）"
+    },
+    {
+      "错误序号": 366,
+      "错误行号": 5539,
+      "正确的配置": "vlan-type dot1q 852",
+      "错误的配置": "vlan-type dot1q 12",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 12）"
+    }
+  ]
+}

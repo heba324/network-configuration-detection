@@ -1,0 +1,5392 @@
+{
+  "vendor": "hw",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "ORDER_ERROR",
+  "错误类型别名": [
+    "ORDER_DEPENDENCY_ERROR",
+    "ORDER_ERROR"
+  ],
+  "错误类型描述": "配置语句顺序依赖错误",
+  "实际模板占比": "38.91%",
+  "数据集调整占比": "42.00%",
+  "错误数量": 672,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 20386,
+      "正确的配置": "isis cost <*> -> isis small-hello",
+      "错误的配置": "isis small-hello -> isis cost <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 41270,
+      "正确的配置": "traffic behavior <*> -> nat bind instance <*>",
+      "错误的配置": "nat bind instance <*> -> traffic behavior <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 38393,
+      "正确的配置": "timer end-x update-delay 60000 -> encapsulation source-address <IPV6>",
+      "错误的配置": "encapsulation source-address <IPV6> -> timer end-x update-delay 60000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 11777,
+      "正确的配置": "ip netstream inbound -> ipv6 netstream inbound",
+      "错误的配置": "ipv6 netstream inbound -> ip netstream inbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 40700,
+      "正确的配置": "description <DESCRIPTION> -> undo shutdown",
+      "错误的配置": "undo shutdown -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 29038,
+      "正确的配置": "vlan-type dot1q <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> vlan-type dot1q <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 29573,
+      "正确的配置": "isis circuit-type p2p -> isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-2 -> isis circuit-type p2p",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 28750,
+      "正确的配置": "dns primary-ip <IPV4> -> user-group <*>",
+      "错误的配置": "user-group <*> -> dns primary-ip <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 19810,
+      "正确的配置": "network <IPV4> <IPV4> -> bestroute nexthop-priority ipv6",
+      "错误的配置": "bestroute nexthop-priority ipv6 -> network <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 34281,
+      "正确的配置": "mtu 9000 -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 18393,
+      "正确的配置": "mtu 9000 -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 42589,
+      "正确的配置": "ipv6 enable -> port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queue be wfq weight 50 outbound -> ipv6 enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 27188,
+      "正确的配置": "client-option82 basinfo-insert cn-telecom -> arp-trigger",
+      "错误的配置": "arp-trigger -> client-option82 basinfo-insert cn-telecom",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 40538,
+      "正确的配置": "bridge-domain <*> -> evpn binding vpn-instance <*>",
+      "错误的配置": "evpn binding vpn-instance <*> -> bridge-domain <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 12011,
+      "正确的配置": "ipv6 bfd all-interfaces enable -> ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30",
+      "错误的配置": "ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30 -> ipv6 bfd all-interfaces enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 28679,
+      "正确的配置": "advertise l2vpn evpn -> segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routing ipv6 traffic-engineer best-effort evpn -> advertise l2vpn evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 2901,
+      "正确的配置": "interface <*> -> undo dcn",
+      "错误的配置": "undo dcn -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 24535,
+      "正确的配置": "encapsulation dot1q vid <*> to <*> -> evpn e-tree-leaf",
+      "错误的配置": "evpn e-tree-leaf -> encapsulation dot1q vid <*> to <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 4598,
+      "正确的配置": "ssh user <*> -> ssh user <*> service-type <*>",
+      "错误的配置": "ssh user <*> service-type <*> -> ssh user <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 23916,
+      "正确的配置": "description <DESCRIPTION> -> undo shutdown",
+      "错误的配置": "undo shutdown -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 15607,
+      "正确的配置": "etree enable -> vpn-target <*> export-extcommunity",
+      "错误的配置": "vpn-target <*> export-extcommunity -> etree enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 15778,
+      "正确的配置": "port-queue ef wfq weight 70 outbound -> port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound -> port-queue ef wfq weight 70 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 42483,
+      "正确的配置": "ipv6 mtu 9000 -> mac-address <*>",
+      "错误的配置": "mac-address <*> -> ipv6 mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 41361,
+      "正确的配置": "carrier up-hold-time <*> -> carrier down-hold-time <*>",
+      "错误的配置": "carrier down-hold-time <*> -> carrier up-hold-time <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 7702,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> -> ip <*> <*> index <*> permit <*>",
+      "错误的配置": "ip <*> <*> index <*> permit <*> -> ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 19375,
+      "正确的配置": "acl 2577 inbound -> authentication-mode <*>",
+      "错误的配置": "authentication-mode <*> -> acl 2577 inbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 18364,
+      "正确的配置": "interface <INTERFACE> mode l2 -> statistic enable mode single",
+      "错误的配置": "statistic enable mode single -> interface <INTERFACE> mode l2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 27640,
+      "正确的配置": "undo shutdown -> te link administrative group <*>",
+      "错误的配置": "te link administrative group <*> -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 42183,
+      "正确的配置": "ipv6 traffic-eng <*> -> segment-routing ipv6 locator <*>",
+      "错误的配置": "segment-routing ipv6 locator <*> -> ipv6 traffic-eng <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 35153,
+      "正确的配置": "port-queue be wfq weight 50 outbound -> port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 25 outbound -> port-queue be wfq weight 50 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 25252,
+      "正确的配置": "ipv6-family vpn-instance <*> -> bestroute nexthop-priority ipv6",
+      "错误的配置": "bestroute nexthop-priority ipv6 -> ipv6-family vpn-instance <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 22922,
+      "正确的配置": "undo dcn -> phy-number <*>",
+      "错误的配置": "phy-number <*> -> undo dcn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 38629,
+      "正确的配置": "preference 130 255 255 -> maximum load-balancing <*>",
+      "错误的配置": "maximum load-balancing <*> -> preference 130 255 255",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 20162,
+      "正确的配置": "statistics enable -> classifier <*> behavior <*> precedence <*>",
+      "错误的配置": "classifier <*> behavior <*> precedence <*> -> statistics enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 17971,
+      "正确的配置": "port-queue af3 wfq weight 30 outbound -> port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound -> port-queue af3 wfq weight 30 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 24720,
+      "正确的配置": "interface <*> -> carrier down-hold-time <*>",
+      "错误的配置": "carrier down-hold-time <*> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 8334,
+      "正确的配置": "route-distinguisher <*> -> vpn-target <*> export-extcommunity evpn",
+      "错误的配置": "vpn-target <*> export-extcommunity evpn -> route-distinguisher <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 24037,
+      "正确的配置": "radius-server source interface <*> -> priority 80",
+      "错误的配置": "priority 80 -> radius-server source interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 1837,
+      "正确的配置": "statistic enable mode single -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> statistic enable mode single",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 683,
+      "正确的配置": "import-route <*> -> nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 0 -> import-route <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 3005,
+      "正确的配置": "undo shutdown -> ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address <IPV4> <IPV4> -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 12136,
+      "正确的配置": "ip binding vpn-instance <*> -> ospf cost 1000",
+      "错误的配置": "ospf cost 1000 -> ip binding vpn-instance <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 24377,
+      "正确的配置": "loop-free-alternate level-2 -> ti-lfa level-2",
+      "错误的配置": "ti-lfa level-2 -> loop-free-alternate level-2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 3144,
+      "正确的配置": "ssh server acl 2577 -> ssh authorization-type default <*>",
+      "错误的配置": "ssh authorization-type default <*> -> ssh server acl 2577",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 21513,
+      "正确的配置": "ipv4-family vpn-instance <*> -> segment-routing ipv6 locator <*> evpn",
+      "错误的配置": "segment-routing ipv6 locator <*> evpn -> ipv4-family vpn-instance <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 11519,
+      "正确的配置": "switch-mode auto -> priority 90",
+      "错误的配置": "priority 90 -> switch-mode auto",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 2716,
+      "正确的配置": "isis peer hold-max-cost timer <*> -> te bandwidth max-reservable-bandwidth dynamic 100",
+      "错误的配置": "te bandwidth max-reservable-bandwidth dynamic 100 -> isis peer hold-max-cost timer <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 21109,
+      "正确的配置": "advertise l2vpn evpn -> segment-routing ipv6 locator <*> evpn",
+      "错误的配置": "segment-routing ipv6 locator <*> evpn -> advertise l2vpn evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 21339,
+      "正确的配置": "statistic enable -> pim sm",
+      "错误的配置": "pim sm -> statistic enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 4097,
+      "正确的配置": "mtu 9000 -> undo shutdown",
+      "错误的配置": "undo shutdown -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 38692,
+      "正确的配置": "mtu 9000 -> undo shutdown",
+      "错误的配置": "undo shutdown -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 16550,
+      "正确的配置": "mtu 9000 -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 27609,
+      "正确的配置": "network <IPV4> <IPV4> -> import-route <*>",
+      "错误的配置": "import-route <*> -> network <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 38149,
+      "正确的配置": "ip address <IPV4> <IPV4> -> ipv6 address <*>",
+      "错误的配置": "ipv6 address <*> -> ip address <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 4226,
+      "正确的配置": "description <DESCRIPTION> -> ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance <*> -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 35049,
+      "正确的配置": "ip-pool <*> -> user-group <*>",
+      "错误的配置": "user-group <*> -> ip-pool <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 15462,
+      "正确的配置": "isis ipv6 enable 800 -> isis circuit-type p2p",
+      "错误的配置": "isis circuit-type p2p -> isis ipv6 enable 800",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 4027,
+      "正确的配置": "vpn-target <*> export-extcommunity -> vpn-target <*> import-extcommunity",
+      "错误的配置": "vpn-target <*> import-extcommunity -> vpn-target <*> export-extcommunity",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 7002,
+      "正确的配置": "sftp server enable -> stelnet ipv4 server enable",
+      "错误的配置": "stelnet ipv4 server enable -> sftp server enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 29162,
+      "正确的配置": "lsa-arrival-interval intelligent-timer 50 50 50 -> area <IPV4>",
+      "错误的配置": "area <IPV4> -> lsa-arrival-interval intelligent-timer 50 50 50",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 13253,
+      "正确的配置": "ip address <IPV4> <IPV4> -> statistic enable",
+      "错误的配置": "statistic enable -> ip address <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 25546,
+      "正确的配置": "protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW -> remote interface <INTERFACE>",
+      "错误的配置": "remote interface <INTERFACE> -> protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 34321,
+      "正确的配置": "undo synchronization -> import-route <*>",
+      "错误的配置": "import-route <*> -> undo synchronization",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 21029,
+      "正确的配置": "nexthop recursive-lookup non-critical-event delay 5 -> advertise l2vpn evpn",
+      "错误的配置": "advertise l2vpn evpn -> nexthop recursive-lookup non-critical-event delay 5",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 38035,
+      "正确的配置": "radius-server group <*> -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> radius-server group <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 42404,
+      "正确的配置": "carrier down-hold-time <*> -> undo shutdown",
+      "错误的配置": "undo shutdown -> carrier down-hold-time <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 24515,
+      "正确的配置": "maximum load-balancing <*> -> bestroute nexthop-priority ipv6",
+      "错误的配置": "bestroute nexthop-priority ipv6 -> maximum load-balancing <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 21564,
+      "正确的配置": "mpls ldp -> port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 25 outbound -> mpls ldp",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 26115,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound -> port-queue af3 wfq weight 30 outbound",
+      "错误的配置": "port-queue af3 wfq weight 30 outbound -> port-queue af2 wfq weight 25 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 31217,
+      "正确的配置": "evpn e-tree-leaf -> qos-profile <*> inbound identifier none",
+      "错误的配置": "qos-profile <*> inbound identifier none -> evpn e-tree-leaf",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 19066,
+      "正确的配置": "ip vpn-instance <*> -> route-distinguisher <*>",
+      "错误的配置": "route-distinguisher <*> -> ip vpn-instance <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 24599,
+      "正确的配置": "user-max-session 4 -> ip-warning-threshold 95",
+      "错误的配置": "ip-warning-threshold 95 -> user-max-session 4",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 21616,
+      "正确的配置": "bfd all-interfaces enable -> bfd all-interfaces min-tx-interval 30 min-rx-interval 30 frr-binding",
+      "错误的配置": "bfd all-interfaces min-tx-interval 30 min-rx-interval 30 frr-binding -> bfd all-interfaces enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 1239,
+      "正确的配置": "segment-routing ipv6 -> path-mtu 9000",
+      "错误的配置": "path-mtu 9000 -> segment-routing ipv6",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 15762,
+      "正确的配置": "pim sm -> isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 800 -> pim sm",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 23007,
+      "正确的配置": "description <DESCRIPTION> -> rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*> -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 3113,
+      "正确的配置": "advertise l2vpn evpn -> segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routing ipv6 traffic-engineer best-effort evpn -> advertise l2vpn evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 19350,
+      "正确的配置": "protocol-tunnel track nqa counter 8 recovery-count 1 interval 1 timeout 1 udp-port 65000 plr 5 10 -> remote up-board <*>",
+      "错误的配置": "remote up-board <*> -> protocol-tunnel track nqa counter 8 recovery-count 1 interval 1 timeout 1 udp-port 65000 plr 5 10",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 21078,
+      "正确的配置": "mtu 9000 -> undo shutdown",
+      "错误的配置": "undo shutdown -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 23158,
+      "正确的配置": "nat instance <*> id <*> -> nat address-group <*> group-id <*> bind-ip-pool <*>",
+      "错误的配置": "nat address-group <*> group-id <*> bind-ip-pool <*> -> nat instance <*> id <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 33805,
+      "正确的配置": "ipv4-family unicast -> preference 130 255 255",
+      "错误的配置": "preference 130 255 255 -> ipv4-family unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 11767,
+      "正确的配置": "set flow-stat interval 30 -> control-flap",
+      "错误的配置": "control-flap -> set flow-stat interval 30",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 21363,
+      "正确的配置": "ipv6 mtu 9000 -> undo dcn mode vlan",
+      "错误的配置": "undo dcn mode vlan -> ipv6 mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 11867,
+      "正确的配置": "port-queue ef wfq weight 70 outbound -> port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound -> port-queue ef wfq weight 70 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 39023,
+      "正确的配置": "user-group <*> -> dhcp reboot-request user offline",
+      "错误的配置": "dhcp reboot-request user offline -> user-group <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 31556,
+      "正确的配置": "domain <*> -> authentication-scheme <*>",
+      "错误的配置": "authentication-scheme <*> -> domain <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 41480,
+      "正确的配置": "undo shutdown -> ipv6 enable",
+      "错误的配置": "ipv6 enable -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 18726,
+      "正确的配置": "undo shutdown -> ipv6 enable",
+      "错误的配置": "ipv6 enable -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 14465,
+      "正确的配置": "ipv6 enable topology ipv6 -> ipv6 preference 105",
+      "错误的配置": "ipv6 preference 105 -> ipv6 enable topology ipv6",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 29098,
+      "正确的配置": "ipv6 address <*> -> isis enable 800",
+      "错误的配置": "isis enable 800 -> ipv6 address <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 31693,
+      "正确的配置": "interface <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 14364,
+      "正确的配置": "trust upstream <*> -> user-priority upstream <*>",
+      "错误的配置": "user-priority upstream <*> -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 33121,
+      "正确的配置": "undo synchronization -> network <IPV4> <IPV4>",
+      "错误的配置": "network <IPV4> <IPV4> -> undo synchronization",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 30383,
+      "正确的配置": "interface <*> -> mtu 9000",
+      "错误的配置": "mtu 9000 -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 11131,
+      "正确的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound -> port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound -> port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 21560,
+      "正确的配置": "isis ipv6 cost <*> -> mpls",
+      "错误的配置": "mpls -> isis ipv6 cost <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 19203,
+      "正确的配置": "bestroute nexthop-resolved tunnel -> peer <*> capability-advertise add-path both",
+      "错误的配置": "peer <*> capability-advertise add-path both -> bestroute nexthop-resolved tunnel",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 21390,
+      "正确的配置": "isis ipv6 enable 800 -> isis circuit-type p2p",
+      "错误的配置": "isis circuit-type p2p -> isis ipv6 enable 800",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 18437,
+      "正确的配置": "ipv6 frr -> ti-lfa level-2",
+      "错误的配置": "ti-lfa level-2 -> ipv6 frr",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 41559,
+      "正确的配置": "bestroute add-path path-number 16 -> segment-routing ipv6 locator <*>",
+      "错误的配置": "segment-routing ipv6 locator <*> -> bestroute add-path path-number 16",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 17921,
+      "正确的配置": "import-route <*> route-policy <*> -> maximum load-balancing <*>",
+      "错误的配置": "maximum load-balancing <*> -> import-route <*> route-policy <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 5530,
+      "正确的配置": "trust upstream <*> -> qos-profile <*> inbound identifier none",
+      "错误的配置": "qos-profile <*> inbound identifier none -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 25361,
+      "正确的配置": "undo ssh ipv6 server-source all-interface -> ssh authorization-type default <*>",
+      "错误的配置": "ssh authorization-type default <*> -> undo ssh ipv6 server-source all-interface",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 7862,
+      "正确的配置": "bfd <*> bind peer-ipv6 <IPV6> source-ipv6 <IPV6> track-interface interface <INTERFACE> -> discriminator local <*>",
+      "错误的配置": "discriminator local <*> -> bfd <*> bind peer-ipv6 <IPV6> source-ipv6 <IPV6> track-interface interface <INTERFACE>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 8279,
+      "正确的配置": "statistic enable mode single -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> statistic enable mode single",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 14388,
+      "正确的配置": "cu up-backup-profile <*> <*> -> virtual-mac number 2 per-interface",
+      "错误的配置": "virtual-mac number 2 per-interface -> cu up-backup-profile <*> <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 22226,
+      "正确的配置": "mac-address <*> -> e-trunk <*>",
+      "错误的配置": "e-trunk <*> -> mac-address <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 7113,
+      "正确的配置": "ipv6 address <*> -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> ipv6 address <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 6925,
+      "正确的配置": "network <IPV4> <IPV4> -> maximum load-balancing <*>",
+      "错误的配置": "maximum load-balancing <*> -> network <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 15775,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound -> port-queue af3 wfq weight 30 outbound",
+      "错误的配置": "port-queue af3 wfq weight 30 outbound -> port-queue af2 wfq weight 25 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 23264,
+      "正确的配置": "radius-server group <*> -> radius-server authentication <IPV4> 1812 weight 50",
+      "错误的配置": "radius-server authentication <IPV4> 1812 weight 50 -> radius-server group <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 29027,
+      "正确的配置": "undo dcn -> port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 25 outbound -> undo dcn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 21738,
+      "正确的配置": "segment-routing ipv6 traffic-engineer best-effort evpn -> peer <*> enable",
+      "错误的配置": "peer <*> enable -> segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 21261,
+      "正确的配置": "arp broadcast enable -> qos-profile <*> inbound pe-vid <*> ce-vid <*> identifier none",
+      "错误的配置": "qos-profile <*> inbound pe-vid <*> ce-vid <*> identifier none -> arp broadcast enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 11965,
+      "正确的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound -> port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound -> port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 24952,
+      "正确的配置": "up <*> -> bind netconf-connection <*>",
+      "错误的配置": "bind netconf-connection <*> -> up <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 16224,
+      "正确的配置": "ip address <IPV4> <IPV4> -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> ip address <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 11348,
+      "正确的配置": "undo shutdown -> undo dcn mode vlan",
+      "错误的配置": "undo dcn mode vlan -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 38960,
+      "正确的配置": "es track bfd <DEVICE> -> timer es-recovery 90",
+      "错误的配置": "timer es-recovery 90 -> es track bfd <DEVICE>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 24968,
+      "正确的配置": "control-flap -> ipv6 enable",
+      "错误的配置": "ipv6 enable -> control-flap",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 37298,
+      "正确的配置": "encapsulation dot1q vid <*> -> bridge-domain <*>",
+      "错误的配置": "bridge-domain <*> -> encapsulation dot1q vid <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 16502,
+      "正确的配置": "description <DESCRIPTION> -> control-flap",
+      "错误的配置": "control-flap -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 30150,
+      "正确的配置": "arp broadcast enable -> traffic-policy <*> outbound",
+      "错误的配置": "traffic-policy <*> outbound -> arp broadcast enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 18224,
+      "正确的配置": "vlan-extend private enable -> local-remote vpws-frr enable",
+      "错误的配置": "local-remote vpws-frr enable -> vlan-extend private enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 12362,
+      "正确的配置": "statistic enable -> pim sm",
+      "错误的配置": "pim sm -> statistic enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 30886,
+      "正确的配置": "ipv4-family unicast -> undo synchronization",
+      "错误的配置": "undo synchronization -> ipv4-family unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 3045,
+      "正确的配置": "ipv6 import-route <*> tag <*> route-policy <*> -> ti-lfa level-2",
+      "错误的配置": "ti-lfa level-2 -> ipv6 import-route <*> tag <*> route-policy <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 1077,
+      "正确的配置": "ipv6 address auto link-local -> statistic enable",
+      "错误的配置": "statistic enable -> ipv6 address auto link-local",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 16856,
+      "正确的配置": "statistic enable mode single -> bridge-domain <*>",
+      "错误的配置": "bridge-domain <*> -> statistic enable mode single",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 24804,
+      "正确的配置": "ip address <IPV4> <IPV4> -> ipv6 address <*>",
+      "错误的配置": "ipv6 address <*> -> ip address <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 594,
+      "正确的配置": "description <DESCRIPTION> -> control-flap",
+      "错误的配置": "control-flap -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 38919,
+      "正确的配置": "sftp server enable -> snetconf server enable",
+      "错误的配置": "snetconf server enable -> sftp server enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 770,
+      "正确的配置": "interface <*> -> statistic enable",
+      "错误的配置": "statistic enable -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 25196,
+      "正确的配置": "ipv6 enable -> statistic enable",
+      "错误的配置": "statistic enable -> ipv6 enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 20108,
+      "正确的配置": "undo shutdown -> phy-number <*>",
+      "错误的配置": "phy-number <*> -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 39528,
+      "正确的配置": "isis peer hold-max-cost timer <*> -> port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queue be wfq weight 50 outbound -> isis peer hold-max-cost timer <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 37793,
+      "正确的配置": "sbfd -> reflector discriminator <IPV4>",
+      "错误的配置": "reflector discriminator <IPV4> -> sbfd",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 34570,
+      "正确的配置": "link-state-family unicast -> domain identifier <IPV4>",
+      "错误的配置": "domain identifier <IPV4> -> link-state-family unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 35420,
+      "正确的配置": "ipv4-family unicast -> nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 0 -> ipv4-family unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 5612,
+      "正确的配置": "ipv6 mtu 9000 -> isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 800 -> ipv6 mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 21778,
+      "正确的配置": "ipv6 address <*> -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> ipv6 address <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 19961,
+      "正确的配置": "duplex auto -> ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address <IPV4> <IPV4> -> duplex auto",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 27668,
+      "正确的配置": "mtu 9000 -> set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval 30 -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 25690,
+      "正确的配置": "ip binding vpn-instance <*> -> ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address <IPV4> <IPV4> -> ip binding vpn-instance <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 30394,
+      "正确的配置": "ipv6 mtu 9000 -> isis enable 800",
+      "错误的配置": "isis enable 800 -> ipv6 mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 38264,
+      "正确的配置": "ssh ipv6 server-source all-interface -> ssh authorization-type default <*>",
+      "错误的配置": "ssh authorization-type default <*> -> ssh ipv6 server-source all-interface",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 18592,
+      "正确的配置": "sftp server default-directory cfcard: -> ssh user <*> authentication-type <*>",
+      "错误的配置": "ssh user <*> authentication-type <*> -> sftp server default-directory cfcard:",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 34783,
+      "正确的配置": "share-mode -> classifier <*> behavior <*> precedence <*>",
+      "错误的配置": "classifier <*> behavior <*> precedence <*> -> share-mode",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 27383,
+      "正确的配置": "peer <*> route-policy <*> import -> peer <IPV4> soo <*>",
+      "错误的配置": "peer <IPV4> soo <*> -> peer <*> route-policy <*> import",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 26815,
+      "正确的配置": "isis circuit-level level-2 -> isis ipv6 cost <*>",
+      "错误的配置": "isis ipv6 cost <*> -> isis circuit-level level-2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 26700,
+      "正确的配置": "vpn-target <*> export-extcommunity -> vpn-target <*> export-extcommunity evpn",
+      "错误的配置": "vpn-target <*> export-extcommunity evpn -> vpn-target <*> export-extcommunity",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 41619,
+      "正确的配置": "undo ssh ipv6 server-source all-interface -> ssh server acl 2577",
+      "错误的配置": "ssh server acl 2577 -> undo ssh ipv6 server-source all-interface",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 26066,
+      "正确的配置": "undo shutdown -> undo dcn",
+      "错误的配置": "undo dcn -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 42259,
+      "正确的配置": "interface <INTERFACE> mode l2 -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> interface <INTERFACE> mode l2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 42480,
+      "正确的配置": "mtu 9000 -> ipv6 enable",
+      "错误的配置": "ipv6 enable -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 32950,
+      "正确的配置": "ip binding vpn-instance <*> -> ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address <IPV4> <IPV4> -> ip binding vpn-instance <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 37406,
+      "正确的配置": "ipv6 address <*> -> ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000 -> ipv6 address <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 11306,
+      "正确的配置": "control-flap -> ipv6 enable",
+      "错误的配置": "ipv6 enable -> control-flap",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 22098,
+      "正确的配置": "acl number <*> -> rule <*> permit <*> <*> user-group <*> <*> eq <*>",
+      "错误的配置": "rule <*> permit <*> <*> user-group <*> <*> eq <*> -> acl number <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 42423,
+      "正确的配置": "isis timer ldp-sync hold-max-cost 60 -> mpls",
+      "错误的配置": "mpls -> isis timer ldp-sync hold-max-cost 60",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 38759,
+      "正确的配置": "deploy weight 100 -> member up-backup-group <*>",
+      "错误的配置": "member up-backup-group <*> -> deploy weight 100",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 15918,
+      "正确的配置": "bridge-domain <*> -> evpn e-tree-leaf",
+      "错误的配置": "evpn e-tree-leaf -> bridge-domain <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 20041,
+      "正确的配置": "stelnet server enable -> ssh server compatible-ssh1x enable",
+      "错误的配置": "ssh server compatible-ssh1x enable -> stelnet server enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 164,
+      "错误行号": 30317,
+      "正确的配置": "trust upstream <*> -> isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 800 -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 165,
+      "错误行号": 3156,
+      "正确的配置": "segment-routing ipv6 locator <*> -> segment-routing ipv6 best-effort",
+      "错误的配置": "segment-routing ipv6 best-effort -> segment-routing ipv6 locator <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 166,
+      "错误行号": 19093,
+      "正确的配置": "ipv6 address <*> -> pim sm",
+      "错误的配置": "pim sm -> ipv6 address <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 167,
+      "错误行号": 5731,
+      "正确的配置": "isis circuit-type p2p -> isis peer hold-max-cost timer <*>",
+      "错误的配置": "isis peer hold-max-cost timer <*> -> isis circuit-type p2p",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 168,
+      "错误行号": 29705,
+      "正确的配置": "trust upstream <*> -> isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 800 -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 24933,
+      "正确的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound -> port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound -> port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 1550,
+      "正确的配置": "import-route <*> -> bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 16 -> import-route <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 171,
+      "错误行号": 14920,
+      "正确的配置": "monitor-group <*> -> monitor enable",
+      "错误的配置": "monitor enable -> monitor-group <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 24831,
+      "正确的配置": "ssh server-source all-interface -> ssh server acl 2577",
+      "错误的配置": "ssh server acl 2577 -> ssh server-source all-interface",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 173,
+      "错误行号": 15921,
+      "正确的配置": "trust 8021p -> qos-profile <*> inbound identifier none",
+      "错误的配置": "qos-profile <*> inbound identifier none -> trust 8021p",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 29029,
+      "正确的配置": "port-queue af1 wfq weight 25 outbound -> port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound -> port-queue af1 wfq weight 25 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 22866,
+      "正确的配置": "disaster-recovery group <*> -> dap-server ipv6-pool <*>",
+      "错误的配置": "dap-server ipv6-pool <*> -> disaster-recovery group <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 12313,
+      "正确的配置": "description <DESCRIPTION> -> ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance <*> -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 177,
+      "错误行号": 19765,
+      "正确的配置": "user-vlan <*> qinq <*> <*> -> pim sm",
+      "错误的配置": "pim sm -> user-vlan <*> qinq <*> <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 28579,
+      "正确的配置": "description <DESCRIPTION> -> ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address <IPV4> <IPV4> -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 179,
+      "错误行号": 10227,
+      "正确的配置": "port-queue ef wfq weight 70 outbound -> port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound -> port-queue ef wfq weight 70 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 180,
+      "错误行号": 23216,
+      "正确的配置": "info-center log-severity bymodule-alias ssh SSH_USER_LOGOUT severity warning -> info-center source default channel 2 log level warning",
+      "错误的配置": "info-center source default channel 2 log level warning -> info-center log-severity bymodule-alias ssh SSH_USER_LOGOUT severity warning",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 181,
+      "错误行号": 27379,
+      "正确的配置": "advertise l2vpn evpn -> segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routing ipv6 traffic-engineer best-effort evpn -> advertise l2vpn evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 182,
+      "错误行号": 15330,
+      "正确的配置": "te bandwidth max-reservable-bandwidth dynamic 100 -> mpls ldp",
+      "错误的配置": "mpls ldp -> te bandwidth max-reservable-bandwidth dynamic 100",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 183,
+      "错误行号": 3109,
+      "正确的配置": "preference 20 200 200 -> maximum load-balancing <*>",
+      "错误的配置": "maximum load-balancing <*> -> preference 20 200 200",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 184,
+      "错误行号": 28233,
+      "正确的配置": "ipv6 mtu 9000 -> track monitor-location-group cgn",
+      "错误的配置": "track monitor-location-group cgn -> ipv6 mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 185,
+      "错误行号": 8733,
+      "正确的配置": "carrier up-hold-time <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> carrier up-hold-time <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 32665,
+      "正确的配置": "mpls ldp -> network-slice <*>",
+      "错误的配置": "network-slice <*> -> mpls ldp",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 187,
+      "错误行号": 21457,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound -> port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound -> port-queue af2 wfq weight 25 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 188,
+      "错误行号": 33029,
+      "正确的配置": "statistic enable -> igmp enable",
+      "错误的配置": "igmp enable -> statistic enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 189,
+      "错误行号": 38210,
+      "正确的配置": "ntp-service ipv6 server source-interface all disable -> ntp-service unicast-server <IPV4> vpn-instance CTVPN193-JS preference",
+      "错误的配置": "ntp-service unicast-server <IPV4> vpn-instance CTVPN193-JS preference -> ntp-service ipv6 server source-interface all disable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 20165,
+      "正确的配置": "interface <*> -> carrier up-hold-time <*>",
+      "错误的配置": "carrier up-hold-time <*> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 191,
+      "错误行号": 22933,
+      "正确的配置": "security-key simple 00E0FC0000000000 -> e-trunk track bfd-session session-name <DEVICE>",
+      "错误的配置": "e-trunk track bfd-session session-name <DEVICE> -> security-key simple 00E0FC0000000000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 192,
+      "错误行号": 2763,
+      "正确的配置": "authorization-cmd 2 hwtacacs local -> authorization-cmd 3 hwtacacs local",
+      "错误的配置": "authorization-cmd 3 hwtacacs local -> authorization-cmd 2 hwtacacs local",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 193,
+      "错误行号": 18410,
+      "正确的配置": "ospf 705 router-id <IPV4> vpn-instance CTVPN193-JS -> bfd all-interfaces enable",
+      "错误的配置": "bfd all-interfaces enable -> ospf 705 router-id <IPV4> vpn-instance CTVPN193-JS",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 27244,
+      "正确的配置": "lsa-originate-interval intelligent-timer 500 50 100 -> opaque-capability enable",
+      "错误的配置": "opaque-capability enable -> lsa-originate-interval intelligent-timer 500 50 100",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 195,
+      "错误行号": 19271,
+      "正确的配置": "peer <*> route-update-interval 0 -> peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*> -> peer <*> route-update-interval 0",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 16018,
+      "正确的配置": "accounting-scheme <*> -> hwtacacs-server js.admin.tacacs",
+      "错误的配置": "hwtacacs-server js.admin.tacacs -> accounting-scheme <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 17719,
+      "正确的配置": "undo shutdown -> ipv6 enable",
+      "错误的配置": "ipv6 enable -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 40571,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound -> port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound -> port-queue af2 wfq weight 25 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 339,
+      "正确的配置": "bridge-domain <*> -> evpn e-tree-leaf",
+      "错误的配置": "evpn e-tree-leaf -> bridge-domain <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 200,
+      "错误行号": 14957,
+      "正确的配置": "vpn-instance <*> -> dap-server pool <*>",
+      "错误的配置": "dap-server pool <*> -> vpn-instance <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 201,
+      "错误行号": 29603,
+      "正确的配置": "vrrp6 vrid <*> virtual-ip <IPV6> link-local -> vrrp6 vrid <*> virtual-ip <IPV6>",
+      "错误的配置": "vrrp6 vrid <*> virtual-ip <IPV6> -> vrrp6 vrid <*> virtual-ip <IPV6> link-local",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 202,
+      "错误行号": 26119,
+      "正确的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound -> port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound -> port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 23944,
+      "正确的配置": "timer end-x update-delay 30000 -> path-mtu 9000",
+      "错误的配置": "path-mtu 9000 -> timer end-x update-delay 30000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 24417,
+      "正确的配置": "port-queue be wfq weight 50 outbound -> port-queue af1 wfq weight 25 outbound",
+      "错误的配置": "port-queue af1 wfq weight 25 outbound -> port-queue be wfq weight 50 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 20300,
+      "正确的配置": "isis ldp-sync -> mpls",
+      "错误的配置": "mpls -> isis ldp-sync",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 206,
+      "错误行号": 27747,
+      "正确的配置": "subnet warning-exhaust -> network <IPV4> <*> subnet length <*>",
+      "错误的配置": "network <IPV4> <*> subnet length <*> -> subnet warning-exhaust",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 207,
+      "错误行号": 1233,
+      "正确的配置": "apply-label per-instance -> vpn-target <*> import-extcommunity evpn",
+      "错误的配置": "vpn-target <*> import-extcommunity evpn -> apply-label per-instance",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 4816,
+      "正确的配置": "interface <*> -> e-trunk <*>",
+      "错误的配置": "e-trunk <*> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 19432,
+      "正确的配置": "reflector cluster-id <IPV4> -> preference 20 200 200",
+      "错误的配置": "preference 20 200 200 -> reflector cluster-id <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 210,
+      "错误行号": 31686,
+      "正确的配置": "ssh server acl 2577 -> ssh authorization-type default <*>",
+      "错误的配置": "ssh authorization-type default <*> -> ssh server acl 2577",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 211,
+      "错误行号": 41914,
+      "正确的配置": "mtu 9000 -> bridge-domain <*>",
+      "错误的配置": "bridge-domain <*> -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 20713,
+      "正确的配置": "qos-profile <*> -> bum-suppression cir 100000 cbs 18700000 inbound",
+      "错误的配置": "bum-suppression cir 100000 cbs 18700000 inbound -> qos-profile <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 789,
+      "正确的配置": "dap-server ip-pool <*> -> dap-server ipv6-pool <*>",
+      "错误的配置": "dap-server ipv6-pool <*> -> dap-server ip-pool <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 214,
+      "错误行号": 42254,
+      "正确的配置": "dap-server ip pool <*> -> subnet warning-exhaust",
+      "错误的配置": "subnet warning-exhaust -> dap-server ip pool <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 24579,
+      "正确的配置": "bind netconf-connection <*> -> protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误的配置": "protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW -> bind netconf-connection <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 11531,
+      "正确的配置": "nexthop recursive-lookup non-critical-event delay 0 -> advertise l2vpn evpn",
+      "错误的配置": "advertise l2vpn evpn -> nexthop recursive-lookup non-critical-event delay 0",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 217,
+      "错误行号": 11123,
+      "正确的配置": "lacp timeout fast -> port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queue be wfq weight 50 outbound -> lacp timeout fast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 13767,
+      "正确的配置": "interface <*> -> carrier up-hold-time <*>",
+      "错误的配置": "carrier up-hold-time <*> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 24602,
+      "正确的配置": "qos rate-limit-mode car inbound -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> qos rate-limit-mode car inbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 40557,
+      "正确的配置": "isis enable 800 -> isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-2 -> isis enable 800",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 16032,
+      "正确的配置": "ipv6 avoid-microloop segment-routing rib-update-delay 10000 -> ipv6 frr",
+      "错误的配置": "ipv6 frr -> ipv6 avoid-microloop segment-routing rib-update-delay 10000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 222,
+      "错误行号": 38883,
+      "正确的配置": "statistic enable -> traffic-policy <*> <*> link-layer",
+      "错误的配置": "traffic-policy <*> <*> link-layer -> statistic enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 65,
+      "正确的配置": "ipv4-family vpn-instance <*> -> maximum load-balancing <*>",
+      "错误的配置": "maximum load-balancing <*> -> ipv4-family vpn-instance <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 41630,
+      "正确的配置": "bestroute nexthop-priority ipv6 -> segment-routing ipv6 locator <*> evpn",
+      "错误的配置": "segment-routing ipv6 locator <*> evpn -> bestroute nexthop-priority ipv6",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 225,
+      "错误行号": 2290,
+      "正确的配置": "isis cost <*> -> isis ipv6 bfd enable",
+      "错误的配置": "isis ipv6 bfd enable -> isis cost <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 226,
+      "错误行号": 38292,
+      "正确的配置": "control-flap -> ipv6 address <*>",
+      "错误的配置": "ipv6 address <*> -> control-flap",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 30279,
+      "正确的配置": "mpls -> port-queue af1 wfq weight 25 outbound",
+      "错误的配置": "port-queue af1 wfq weight 25 outbound -> mpls",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 1493,
+      "正确的配置": "up <*> <*> -> dap-server ip-pool <*>",
+      "错误的配置": "dap-server ip-pool <*> -> up <*> <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 35198,
+      "正确的配置": "mpls -> mpls ldp",
+      "错误的配置": "mpls ldp -> mpls",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 4178,
+      "正确的配置": "bestroute nexthop-priority ipv6 -> segment-routing ipv6 locator <*> evpn",
+      "错误的配置": "segment-routing ipv6 locator <*> evpn -> bestroute nexthop-priority ipv6",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 231,
+      "错误行号": 37241,
+      "正确的配置": "isis peer hold-max-cost timer <*> -> undo dcn",
+      "错误的配置": "undo dcn -> isis peer hold-max-cost timer <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 232,
+      "错误行号": 30116,
+      "正确的配置": "ipv6 address auto link-local -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> ipv6 address auto link-local",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 38716,
+      "正确的配置": "nexthop recursive-lookup <*> <*> -> nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 0 -> nexthop recursive-lookup <*> <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 234,
+      "错误行号": 7042,
+      "正确的配置": "ipv6 enable -> mode lacp-static",
+      "错误的配置": "mode lacp-static -> ipv6 enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 5083,
+      "正确的配置": "peer <*> advertise-community -> peer <*> capability-advertise add-path both",
+      "错误的配置": "peer <*> capability-advertise add-path both -> peer <*> advertise-community",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 12394,
+      "正确的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound -> port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound -> port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 30370,
+      "正确的配置": "description <DESCRIPTION> -> spf-schedule-interval intelligent-timer 50 50 50",
+      "错误的配置": "spf-schedule-interval intelligent-timer 50 50 50 -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 14150,
+      "正确的配置": "port-speed 100GE -> undo shutdown",
+      "错误的配置": "undo shutdown -> port-speed 100GE",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 239,
+      "错误行号": 11428,
+      "正确的配置": "description <DESCRIPTION> -> ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address <IPV4> <IPV4> -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 240,
+      "错误行号": 30267,
+      "正确的配置": "isis enable 800 -> isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-2 -> isis enable 800",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 241,
+      "错误行号": 11312,
+      "正确的配置": "isis enable 800 -> isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-2 -> isis enable 800",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 242,
+      "错误行号": 24103,
+      "正确的配置": "description <DESCRIPTION> -> undo dcn",
+      "错误的配置": "undo dcn -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 24334,
+      "正确的配置": "maximum load-balancing <*> -> bestroute nexthop-priority ipv6",
+      "错误的配置": "bestroute nexthop-priority ipv6 -> maximum load-balancing <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 15989,
+      "正确的配置": "carrier up-hold-time <*> -> carrier down-hold-time <*>",
+      "错误的配置": "carrier down-hold-time <*> -> carrier up-hold-time <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 20251,
+      "正确的配置": "ipv6 avoid-microloop segment-routing rib-update-delay 10000 -> ti-lfa level-2",
+      "错误的配置": "ti-lfa level-2 -> ipv6 avoid-microloop segment-routing rib-update-delay 10000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 30398,
+      "正确的配置": "isis circuit-type p2p -> isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-2 -> isis circuit-type p2p",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 247,
+      "错误行号": 11970,
+      "正确的配置": "interface <*> -> ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance <*> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 18368,
+      "正确的配置": "bridge-domain <*> -> qos-profile <*> inbound identifier none",
+      "错误的配置": "qos-profile <*> inbound identifier none -> bridge-domain <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 249,
+      "错误行号": 5077,
+      "正确的配置": "policy vpn-target -> nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 0 -> policy vpn-target",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 18286,
+      "正确的配置": "mpls -> te bandwidth max-reservable-bandwidth dynamic 100",
+      "错误的配置": "te bandwidth max-reservable-bandwidth dynamic 100 -> mpls",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 41918,
+      "正确的配置": "trust upstream <*> -> qos-profile <*> inbound identifier none",
+      "错误的配置": "qos-profile <*> inbound identifier none -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 41304,
+      "正确的配置": "ipv6 enable -> ipv6 address <*>",
+      "错误的配置": "ipv6 address <*> -> ipv6 enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 253,
+      "错误行号": 41274,
+      "正确的配置": "subnet warning-threshold <*> -> network <IPV4> <*> subnet length <*>",
+      "错误的配置": "network <IPV4> <*> subnet length <*> -> subnet warning-threshold <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 254,
+      "错误行号": 17778,
+      "正确的配置": "bandwidth 1000 -> clock synchronization enable",
+      "错误的配置": "clock synchronization enable -> bandwidth 1000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 255,
+      "错误行号": 16431,
+      "正确的配置": "nexthop recursive-lookup <*> <*> -> nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 0 -> nexthop recursive-lookup <*> <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 256,
+      "错误行号": 19267,
+      "正确的配置": "bestroute add-path path-number 16 -> peer <*> esad-route-compatible",
+      "错误的配置": "peer <*> esad-route-compatible -> bestroute add-path path-number 16",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 257,
+      "错误行号": 20426,
+      "正确的配置": "ssh server-source all-interface -> ssh authorization-type default <*>",
+      "错误的配置": "ssh authorization-type default <*> -> ssh server-source all-interface",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 258,
+      "错误行号": 31599,
+      "正确的配置": "isis small-hello -> mpls",
+      "错误的配置": "mpls -> isis small-hello",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 259,
+      "错误行号": 29006,
+      "正确的配置": "mtu 9000 -> set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval 30 -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 260,
+      "错误行号": 14332,
+      "正确的配置": "interface <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 261,
+      "错误行号": 40434,
+      "正确的配置": "timer spf 1 50 50 -> timer lsp-refresh 32768",
+      "错误的配置": "timer lsp-refresh 32768 -> timer spf 1 50 50",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 262,
+      "错误行号": 14077,
+      "正确的配置": "qos rate-limit-mode car outbound -> user-priority upstream <*>",
+      "错误的配置": "user-priority upstream <*> -> qos rate-limit-mode car outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 263,
+      "错误行号": 5605,
+      "正确的配置": "description <DESCRIPTION> -> set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval 30 -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 264,
+      "错误行号": 28669,
+      "正确的配置": "trust upstream <*> -> qos-profile <*> inbound identifier none",
+      "错误的配置": "qos-profile <*> inbound identifier none -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 265,
+      "错误行号": 39434,
+      "正确的配置": "undo dcn -> port-queue af1 wfq weight 25 outbound",
+      "错误的配置": "port-queue af1 wfq weight 25 outbound -> undo dcn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 266,
+      "错误行号": 24216,
+      "正确的配置": "isis circuit-level level-2 -> isis cost <*>",
+      "错误的配置": "isis cost <*> -> isis circuit-level level-2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 267,
+      "错误行号": 12449,
+      "正确的配置": "undo shutdown -> set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval 30 -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 268,
+      "错误行号": 4627,
+      "正确的配置": "step <*> -> rule <*> permit ip source <IPV4> <*>",
+      "错误的配置": "rule <*> permit ip source <IPV4> <*> -> step <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 269,
+      "错误行号": 25669,
+      "正确的配置": "description <DESCRIPTION> -> ipv6 enable",
+      "错误的配置": "ipv6 enable -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 270,
+      "错误行号": 31706,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound -> port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70 outbound -> port-queue af2 wfq weight 25 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 271,
+      "错误行号": 26027,
+      "正确的配置": "nat outbound <*> address-group <*> -> nat reverse-session-limit total 4096",
+      "错误的配置": "nat reverse-session-limit total 4096 -> nat outbound <*> address-group <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 272,
+      "错误行号": 16207,
+      "正确的配置": "isis ipv6 bfd enable -> isis peer hold-max-cost timer <*>",
+      "错误的配置": "isis peer hold-max-cost timer <*> -> isis ipv6 bfd enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 273,
+      "错误行号": 16252,
+      "正确的配置": "network <IPV6> <*> -> maximum load-balancing <*>",
+      "错误的配置": "maximum load-balancing <*> -> network <IPV6> <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 274,
+      "错误行号": 33106,
+      "正确的配置": "acl number <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> acl number <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 275,
+      "错误行号": 27199,
+      "正确的配置": "info-center source default channel 2 log level warning -> info-center loghost source LoopBack2",
+      "错误的配置": "info-center loghost source LoopBack2 -> info-center source default channel 2 log level warning",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 276,
+      "错误行号": 1424,
+      "正确的配置": "bridge-domain <*> -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> bridge-domain <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 277,
+      "错误行号": 30860,
+      "正确的配置": "lsa-originate-interval intelligent-timer 500 50 100 -> lsa-arrival-interval intelligent-timer 50 50 50",
+      "错误的配置": "lsa-arrival-interval intelligent-timer 50 50 50 -> lsa-originate-interval intelligent-timer 500 50 100",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 278,
+      "错误行号": 38526,
+      "正确的配置": "vlan-type dot1q <*> -> ipv6 enable",
+      "错误的配置": "ipv6 enable -> vlan-type dot1q <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 279,
+      "错误行号": 23164,
+      "正确的配置": "nat reverse-session-limit total 4096 -> undo pcp enable",
+      "错误的配置": "undo pcp enable -> nat reverse-session-limit total 4096",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 280,
+      "错误行号": 4367,
+      "正确的配置": "isis ldp-sync -> mpls",
+      "错误的配置": "mpls -> isis ldp-sync",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 281,
+      "错误行号": 14490,
+      "正确的配置": "statistic enable -> pim sm",
+      "错误的配置": "pim sm -> statistic enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 282,
+      "错误行号": 19881,
+      "正确的配置": "aaa -> user-password password-force-change disable",
+      "错误的配置": "user-password password-force-change disable -> aaa",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 283,
+      "错误行号": 38116,
+      "正确的配置": "bestroute nexthop-priority ipv6 -> segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routing ipv6 traffic-engineer best-effort evpn -> bestroute nexthop-priority ipv6",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 284,
+      "错误行号": 17629,
+      "正确的配置": "nexthop recursive-lookup <*> <*> -> advertise l2vpn evpn",
+      "错误的配置": "advertise l2vpn evpn -> nexthop recursive-lookup <*> <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 285,
+      "错误行号": 25266,
+      "正确的配置": "bridge-domain <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> bridge-domain <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 286,
+      "错误行号": 12289,
+      "正确的配置": "ospf cost 1000 -> ospf dr-priority 100",
+      "错误的配置": "ospf dr-priority 100 -> ospf cost 1000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 287,
+      "错误行号": 39090,
+      "正确的配置": "maximum load-balancing <*> -> bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 16 -> maximum load-balancing <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 288,
+      "错误行号": 20371,
+      "正确的配置": "mtu 9000 -> set flow-stat interval 30",
+      "错误的配置": "set flow-stat interval 30 -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 289,
+      "错误行号": 35162,
+      "正确的配置": "bgp <*> -> peer <*> connect-interface <*>",
+      "错误的配置": "peer <*> connect-interface <*> -> bgp <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 290,
+      "错误行号": 35193,
+      "正确的配置": "isis ipv6 cost <*> -> isis ldp-sync",
+      "错误的配置": "isis ldp-sync -> isis ipv6 cost <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 291,
+      "错误行号": 38538,
+      "正确的配置": "dhcp reboot-request user offline -> multicast-profile <*>",
+      "错误的配置": "multicast-profile <*> -> dhcp reboot-request user offline",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 292,
+      "错误行号": 17879,
+      "正确的配置": "undo ssh ipv6 server-source all-interface -> ssh authorization-type default <*>",
+      "错误的配置": "ssh authorization-type default <*> -> undo ssh ipv6 server-source all-interface",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 293,
+      "错误行号": 16177,
+      "正确的配置": "isis ipv6 enable 800 -> isis ipv6 cost <*>",
+      "错误的配置": "isis ipv6 cost <*> -> isis ipv6 enable 800",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 294,
+      "错误行号": 41774,
+      "正确的配置": "bfd <*> bind peer-ip <IPV4> source-ip <IPV4> track-interface interface <INTERFACE> -> discriminator remote <*>",
+      "错误的配置": "discriminator remote <*> -> bfd <*> bind peer-ip <IPV4> source-ip <IPV4> track-interface interface <INTERFACE>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 295,
+      "错误行号": 40626,
+      "正确的配置": "description <DESCRIPTION> -> encapsulation qinq vid <*> ce-vid <*>",
+      "错误的配置": "encapsulation qinq vid <*> ce-vid <*> -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 296,
+      "错误行号": 1832,
+      "正确的配置": "evpn binding vpn-instance <*> -> umr forward enable",
+      "错误的配置": "umr forward enable -> evpn binding vpn-instance <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 297,
+      "错误行号": 16892,
+      "正确的配置": "e-trunk <*> -> es track bfd <DEVICE>",
+      "错误的配置": "es track bfd <DEVICE> -> e-trunk <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 298,
+      "错误行号": 5745,
+      "正确的配置": "bfd all-interfaces enable -> opaque-capability enable",
+      "错误的配置": "opaque-capability enable -> bfd all-interfaces enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 299,
+      "错误行号": 17763,
+      "正确的配置": "rule <*> permit ip source <*> <*> destination <*> <*> -> rule <*> permit ip destination user-group <*>",
+      "错误的配置": "rule <*> permit ip destination user-group <*> -> rule <*> permit ip source <*> <*> destination <*> <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 300,
+      "错误行号": 14265,
+      "正确的配置": "authentication-scheme <*> -> accounting-scheme <*>",
+      "错误的配置": "accounting-scheme <*> -> authentication-scheme <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 301,
+      "错误行号": 24437,
+      "正确的配置": "interface <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 302,
+      "错误行号": 37388,
+      "正确的配置": "ipv6 enable -> ospfv3 <*> area <IPV4>",
+      "错误的配置": "ospfv3 <*> area <IPV4> -> ipv6 enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 303,
+      "错误行号": 24319,
+      "正确的配置": "trust upstream <*> -> port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queue be wfq weight 50 outbound -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 304,
+      "错误行号": 13690,
+      "正确的配置": "mtu 9000 -> undo shutdown",
+      "错误的配置": "undo shutdown -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 305,
+      "错误行号": 1618,
+      "正确的配置": "description <DESCRIPTION> -> ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance <*> -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 306,
+      "错误行号": 19166,
+      "正确的配置": "e-trunk <*> -> timer revert delay 300",
+      "错误的配置": "timer revert delay 300 -> e-trunk <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 307,
+      "错误行号": 13554,
+      "正确的配置": "maximum load-balancing <*> -> nexthop recursive-lookup <*> <*>",
+      "错误的配置": "nexthop recursive-lookup <*> <*> -> maximum load-balancing <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 308,
+      "错误行号": 22897,
+      "正确的配置": "ip-warning-threshold 100 -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> ip-warning-threshold 100",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 309,
+      "错误行号": 24832,
+      "正确的配置": "undo ssh ipv6 server-source all-interface -> ssh authorization-type default <*>",
+      "错误的配置": "ssh authorization-type default <*> -> undo ssh ipv6 server-source all-interface",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 310,
+      "错误行号": 38330,
+      "正确的配置": "info-center log-severity bymodule-alias cli CMDRECORD severity warning -> info-center log-severity bymodule-alias ssh SSH_USER_LOGIN severity warning",
+      "错误的配置": "info-center log-severity bymodule-alias ssh SSH_USER_LOGIN severity warning -> info-center log-severity bymodule-alias cli CMDRECORD severity warning",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 311,
+      "错误行号": 37338,
+      "正确的配置": "import-route ospf 704 route-policy rpFromospf704 -> peer <*> enable",
+      "错误的配置": "peer <*> enable -> import-route ospf 704 route-policy rpFromospf704",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 312,
+      "错误行号": 5407,
+      "正确的配置": "segment-routing ipv6 -> sr-te frr enable",
+      "错误的配置": "sr-te frr enable -> segment-routing ipv6",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 313,
+      "错误行号": 35142,
+      "正确的配置": "isis enable 800 -> isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-2 -> isis enable 800",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 314,
+      "错误行号": 16911,
+      "正确的配置": "reflector cluster-id <IPV4> -> undo policy vpn-target",
+      "错误的配置": "undo policy vpn-target -> reflector cluster-id <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 315,
+      "错误行号": 42237,
+      "正确的配置": "segment-routing ipv6 locator <*> evpn -> peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> import -> segment-routing ipv6 locator <*> evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 316,
+      "错误行号": 28229,
+      "正确的配置": "interface <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 317,
+      "错误行号": 40741,
+      "正确的配置": "peer <*> capability-advertise add-path both -> peer <*> advertise-large-community",
+      "错误的配置": "peer <*> advertise-large-community -> peer <*> capability-advertise add-path both",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 318,
+      "错误行号": 5703,
+      "正确的配置": "mpls -> te link administrative group <*>",
+      "错误的配置": "te link administrative group <*> -> mpls",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 319,
+      "错误行号": 38602,
+      "正确的配置": "description <DESCRIPTION> -> undo shutdown",
+      "错误的配置": "undo shutdown -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 320,
+      "错误行号": 4042,
+      "正确的配置": "statistics-task <*> -> binding instance-type interface instance <INTERFACE>",
+      "错误的配置": "binding instance-type interface instance <INTERFACE> -> statistics-task <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 321,
+      "错误行号": 20376,
+      "正确的配置": "ipv6 enable -> ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000 -> ipv6 enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 322,
+      "错误行号": 5755,
+      "正确的配置": "interface <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 323,
+      "错误行号": 23296,
+      "正确的配置": "isis peer hold-max-cost timer <*> -> mpls",
+      "错误的配置": "mpls -> isis peer hold-max-cost timer <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 324,
+      "错误行号": 37401,
+      "正确的配置": "undo shutdown -> control-flap",
+      "错误的配置": "control-flap -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 325,
+      "错误行号": 1054,
+      "正确的配置": "ip-warning-threshold 95 -> user-priority upstream <*>",
+      "错误的配置": "user-priority upstream <*> -> ip-warning-threshold 95",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 326,
+      "错误行号": 4661,
+      "正确的配置": "undo synchronization -> undo peer <*> enable",
+      "错误的配置": "undo peer <*> enable -> undo synchronization",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 327,
+      "错误行号": 11797,
+      "正确的配置": "description <DESCRIPTION> -> undo shutdown",
+      "错误的配置": "undo shutdown -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 328,
+      "错误行号": 11145,
+      "正确的配置": "bind netconf-connection <*> -> control-tunnel cusp-agent <*>",
+      "错误的配置": "control-tunnel cusp-agent <*> -> bind netconf-connection <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 329,
+      "错误行号": 12393,
+      "正确的配置": "port-queue af3 wfq weight 30 outbound -> port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound -> port-queue af3 wfq weight 30 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 330,
+      "错误行号": 15092,
+      "正确的配置": "ipv6 mtu 9000 -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> ipv6 mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 331,
+      "错误行号": 18454,
+      "正确的配置": "interface <*> -> ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address <IPV4> <IPV4> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 332,
+      "错误行号": 5422,
+      "正确的配置": "interface <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 333,
+      "错误行号": 34924,
+      "正确的配置": "carrier down-hold-time <*> -> mtu 9000",
+      "错误的配置": "mtu 9000 -> carrier down-hold-time <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 334,
+      "错误行号": 19812,
+      "正确的配置": "maximum load-balancing <*> -> advertise l2vpn evpn",
+      "错误的配置": "advertise l2vpn evpn -> maximum load-balancing <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 335,
+      "错误行号": 8273,
+      "正确的配置": "vpn-target <*> export-extcommunity evpn -> vpn-target <*> import-extcommunity",
+      "错误的配置": "vpn-target <*> import-extcommunity -> vpn-target <*> export-extcommunity evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 336,
+      "错误行号": 27674,
+      "正确的配置": "ip address <IPV4> <IPV4> -> ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000 -> ip address <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 337,
+      "错误行号": 6566,
+      "正确的配置": "apply-label per-instance -> vpn-target <*> export-extcommunity",
+      "错误的配置": "vpn-target <*> export-extcommunity -> apply-label per-instance",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 338,
+      "错误行号": 41331,
+      "正确的配置": "segment-routing ipv6 locator <*> evpn -> segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routing ipv6 traffic-engineer best-effort evpn -> segment-routing ipv6 locator <*> evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 339,
+      "错误行号": 3881,
+      "正确的配置": "ip address <IPV4> <IPV4> -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> ip address <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 340,
+      "错误行号": 21386,
+      "正确的配置": "ipv6 address <*> -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> ipv6 address <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 341,
+      "错误行号": 33279,
+      "正确的配置": "ipv6 mtu 9000 -> mpls",
+      "错误的配置": "mpls -> ipv6 mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 342,
+      "错误行号": 29232,
+      "正确的配置": "reflector cluster-id <IPV4> -> bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 16 -> reflector cluster-id <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 343,
+      "错误行号": 29122,
+      "正确的配置": "description <DESCRIPTION> -> ipv6 enable",
+      "错误的配置": "ipv6 enable -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 344,
+      "错误行号": 25370,
+      "正确的配置": "timer end-x update-delay 30000 -> encapsulation source-address <IPV6>",
+      "错误的配置": "encapsulation source-address <IPV6> -> timer end-x update-delay 30000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 345,
+      "错误行号": 11952,
+      "正确的配置": "isis ipv6 cost <*> -> isis cost <*>",
+      "错误的配置": "isis cost <*> -> isis ipv6 cost <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 346,
+      "错误行号": 15574,
+      "正确的配置": "lsa-originate-interval intelligent-timer 500 50 100 -> lsa-arrival-interval intelligent-timer 50 50 50",
+      "错误的配置": "lsa-arrival-interval intelligent-timer 50 50 50 -> lsa-originate-interval intelligent-timer 500 50 100",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 347,
+      "错误行号": 304,
+      "正确的配置": "ip vpn-instance <*> -> ipv4-family",
+      "错误的配置": "ipv4-family -> ip vpn-instance <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 348,
+      "错误行号": 24973,
+      "正确的配置": "trust upstream <*> -> port-queue af1 wfq weight 25 outbound",
+      "错误的配置": "port-queue af1 wfq weight 25 outbound -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 349,
+      "错误行号": 42380,
+      "正确的配置": "mtu 9178 -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> mtu 9178",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 350,
+      "错误行号": 25980,
+      "正确的配置": "interface <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 351,
+      "错误行号": 27012,
+      "正确的配置": "info-center source default channel 2 log level warning -> info-center loghost <IPV4> vpn-instance CTVPN193_JS source-ip <IPV4>",
+      "错误的配置": "info-center loghost <IPV4> vpn-instance CTVPN193_JS source-ip <IPV4> -> info-center source default channel 2 log level warning",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 352,
+      "错误行号": 22954,
+      "正确的配置": "ip-pool <*> -> l2tp-user radius-force",
+      "错误的配置": "l2tp-user radius-force -> ip-pool <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 353,
+      "错误行号": 444,
+      "正确的配置": "interface <*> -> ipv6 address <*>",
+      "错误的配置": "ipv6 address <*> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 354,
+      "错误行号": 12494,
+      "正确的配置": "shutdown -> bas",
+      "错误的配置": "bas -> shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 355,
+      "错误行号": 5832,
+      "正确的配置": "nqa twamp-light -> sender",
+      "错误的配置": "sender -> nqa twamp-light",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 356,
+      "错误行号": 15331,
+      "正确的配置": "te bandwidth dynamic bc0 100 -> port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queue be wfq weight 50 outbound -> te bandwidth dynamic bc0 100",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 357,
+      "错误行号": 4875,
+      "正确的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound -> port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound -> port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 358,
+      "错误行号": 9974,
+      "正确的配置": "ipv6 address <*> -> isis enable 800",
+      "错误的配置": "isis enable 800 -> ipv6 address <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 359,
+      "错误行号": 26838,
+      "正确的配置": "l2tp-user radius-force -> user-basic-service-ip-type ipv4",
+      "错误的配置": "user-basic-service-ip-type ipv4 -> l2tp-user radius-force",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 360,
+      "错误行号": 18482,
+      "正确的配置": "ip address <IPV4> <IPV4> -> statistic enable",
+      "错误的配置": "statistic enable -> ip address <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 361,
+      "错误行号": 39533,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound -> port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound -> port-queue af2 wfq weight 25 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 362,
+      "错误行号": 30126,
+      "正确的配置": "authentication-mode <*> -> idle-timeout 0 0",
+      "错误的配置": "idle-timeout 0 0 -> authentication-mode <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 363,
+      "错误行号": 11912,
+      "正确的配置": "interface <*> -> shutdown",
+      "错误的配置": "shutdown -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 364,
+      "错误行号": 41789,
+      "正确的配置": "trust upstream <*> -> pim sm",
+      "错误的配置": "pim sm -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 365,
+      "错误行号": 2286,
+      "正确的配置": "isis ipv6 enable 800 -> isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-2 -> isis ipv6 enable 800",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 366,
+      "错误行号": 24018,
+      "正确的配置": "mpls -> te bandwidth dynamic bc0 100",
+      "错误的配置": "te bandwidth dynamic bc0 100 -> mpls",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 367,
+      "错误行号": 24163,
+      "正确的配置": "interface <*> -> carrier up-hold-time <*>",
+      "错误的配置": "carrier up-hold-time <*> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 368,
+      "错误行号": 13662,
+      "正确的配置": "set flow-stat interval 30 -> ipv6 enable",
+      "错误的配置": "ipv6 enable -> set flow-stat interval 30",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 369,
+      "错误行号": 39145,
+      "正确的配置": "port-queue be wfq weight 50 outbound -> port-queue af1 wfq weight 25 outbound",
+      "错误的配置": "port-queue af1 wfq weight 25 outbound -> port-queue be wfq weight 50 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 370,
+      "错误行号": 12416,
+      "正确的配置": "radius-server group <*> -> ip-pool <*>",
+      "错误的配置": "ip-pool <*> -> radius-server group <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 371,
+      "错误行号": 4074,
+      "正确的配置": "maximum load-balancing <*> -> segment-routing ipv6 best-effort",
+      "错误的配置": "segment-routing ipv6 best-effort -> maximum load-balancing <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 372,
+      "错误行号": 38200,
+      "正确的配置": "peer <*> advertise add-path path-number <*> -> peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefix-sid -> peer <*> advertise add-path path-number <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 373,
+      "错误行号": 24872,
+      "正确的配置": "ssh server-source all-interface -> ssh authorization-type default <*>",
+      "错误的配置": "ssh authorization-type default <*> -> ssh server-source all-interface",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 374,
+      "错误行号": 6930,
+      "正确的配置": "advertise l2vpn evpn -> peer <*> enable",
+      "错误的配置": "peer <*> enable -> advertise l2vpn evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 375,
+      "错误行号": 21637,
+      "正确的配置": "bestroute nexthop-priority ipv6 -> segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routing ipv6 traffic-engineer best-effort evpn -> bestroute nexthop-priority ipv6",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 376,
+      "错误行号": 22330,
+      "正确的配置": "routing-table rib-only -> maximum load-balancing <*>",
+      "错误的配置": "maximum load-balancing <*> -> routing-table rib-only",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 377,
+      "错误行号": 24012,
+      "正确的配置": "isis circuit-level level-2 -> isis cost <*>",
+      "错误的配置": "isis cost <*> -> isis circuit-level level-2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 378,
+      "错误行号": 42536,
+      "正确的配置": "timer lsp-max-age 65535 -> frr",
+      "错误的配置": "frr -> timer lsp-max-age 65535",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 379,
+      "错误行号": 27712,
+      "正确的配置": "user-vlan <*> <*> qinq <*> <*> -> user-vlan <*> <*> qinq <*>",
+      "错误的配置": "user-vlan <*> <*> qinq <*> -> user-vlan <*> <*> qinq <*> <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 380,
+      "错误行号": 20243,
+      "正确的配置": "ipv6 bfd all-interfaces enable -> ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30",
+      "错误的配置": "ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30 -> ipv6 bfd all-interfaces enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 381,
+      "错误行号": 22806,
+      "正确的配置": "undo dcn -> undo dcn mode vlan",
+      "错误的配置": "undo dcn mode vlan -> undo dcn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 382,
+      "错误行号": 31703,
+      "正确的配置": "timer es-recovery 90 -> port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queue be wfq weight 50 outbound -> timer es-recovery 90",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 383,
+      "错误行号": 7040,
+      "正确的配置": "mtu 9000 -> ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000 -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 384,
+      "错误行号": 16472,
+      "正确的配置": "mpls ldp -> port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 25 outbound -> mpls ldp",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 385,
+      "错误行号": 11858,
+      "正确的配置": "mpls -> undo dcn",
+      "错误的配置": "undo dcn -> mpls",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 386,
+      "错误行号": 18329,
+      "正确的配置": "preference 105 -> traffic-eng level-2",
+      "错误的配置": "traffic-eng level-2 -> preference 105",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 387,
+      "错误行号": 33094,
+      "正确的配置": "undo dcn -> undo dcn mode vlan",
+      "错误的配置": "undo dcn mode vlan -> undo dcn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 388,
+      "错误行号": 37615,
+      "正确的配置": "trust upstream <*> -> mpls",
+      "错误的配置": "mpls -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 389,
+      "错误行号": 4468,
+      "正确的配置": "mtu 9000 -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 390,
+      "错误行号": 8183,
+      "正确的配置": "policy vpn-target -> bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 16 -> policy vpn-target",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 391,
+      "错误行号": 495,
+      "正确的配置": "route-policy <*> permit node <*> -> apply local-preference <*>",
+      "错误的配置": "apply local-preference <*> -> route-policy <*> permit node <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 392,
+      "错误行号": 19347,
+      "正确的配置": "bind netconf-connection <*> -> protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误的配置": "protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW -> bind netconf-connection <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 393,
+      "错误行号": 25682,
+      "正确的配置": "pim sm -> remote-backup-profile <*>",
+      "错误的配置": "remote-backup-profile <*> -> pim sm",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 394,
+      "错误行号": 42470,
+      "正确的配置": "import-route <*> -> maximum load-balancing <*>",
+      "错误的配置": "maximum load-balancing <*> -> import-route <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 395,
+      "错误行号": 38787,
+      "正确的配置": "undo shutdown -> ipv6 enable",
+      "错误的配置": "ipv6 enable -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 396,
+      "错误行号": 24949,
+      "正确的配置": "undo shutdown -> eth-trunk <*>",
+      "错误的配置": "eth-trunk <*> -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 397,
+      "错误行号": 3036,
+      "正确的配置": "ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30 frr-binding -> ipv6 metric-delay advertisement enable level-2",
+      "错误的配置": "ipv6 metric-delay advertisement enable level-2 -> ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30 frr-binding",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 398,
+      "错误行号": 13684,
+      "正确的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound -> port-queue cs6 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs6 pq shaping shaping-percentage 20 outbound -> port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 399,
+      "错误行号": 971,
+      "正确的配置": "undo shutdown -> control-flap",
+      "错误的配置": "control-flap -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 400,
+      "错误行号": 29561,
+      "正确的配置": "description <DESCRIPTION> -> undo shutdown",
+      "错误的配置": "undo shutdown -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 401,
+      "错误行号": 15869,
+      "正确的配置": "ip address <IPV4> <IPV4> -> ipv6 address <*>",
+      "错误的配置": "ipv6 address <*> -> ip address <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 402,
+      "错误行号": 35301,
+      "正确的配置": "preference 105 -> timer spf 1 50 50",
+      "错误的配置": "timer spf 1 50 50 -> preference 105",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 403,
+      "错误行号": 30421,
+      "正确的配置": "clock synchronization enable -> ptp announce-drop enable",
+      "错误的配置": "ptp announce-drop enable -> clock synchronization enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 404,
+      "错误行号": 27681,
+      "正确的配置": "isis circuit-level level-2 -> isis ldp-sync",
+      "错误的配置": "isis ldp-sync -> isis circuit-level level-2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 405,
+      "错误行号": 38576,
+      "正确的配置": "bestroute nexthop-priority ipv6 -> segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routing ipv6 traffic-engineer best-effort evpn -> bestroute nexthop-priority ipv6",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 406,
+      "错误行号": 38220,
+      "正确的配置": "user-vlan <*> qinq <*> -> multicast copy by-session",
+      "错误的配置": "multicast copy by-session -> user-vlan <*> qinq <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 407,
+      "错误行号": 35135,
+      "正确的配置": "undo shutdown -> ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address <IPV4> <IPV4> -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 408,
+      "错误行号": 25949,
+      "正确的配置": "advertise l2vpn evpn -> segment-routing ipv6 locator <*> evpn",
+      "错误的配置": "segment-routing ipv6 locator <*> evpn -> advertise l2vpn evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 409,
+      "错误行号": 25009,
+      "正确的配置": "user-vlan <*> qinq <*> <*> -> pim sm",
+      "错误的配置": "pim sm -> user-vlan <*> qinq <*> <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 410,
+      "错误行号": 19403,
+      "正确的配置": "interface <*> -> duplex auto",
+      "错误的配置": "duplex auto -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 411,
+      "错误行号": 31591,
+      "正确的配置": "trust upstream <*> -> pim sm",
+      "错误的配置": "pim sm -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 412,
+      "错误行号": 7820,
+      "正确的配置": "isis circuit-level level-2 -> isis cost <*>",
+      "错误的配置": "isis cost <*> -> isis circuit-level level-2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 413,
+      "错误行号": 41350,
+      "正确的配置": "lsa-arrival-interval intelligent-timer 50 50 50 -> vpn-instance-capability simple",
+      "错误的配置": "vpn-instance-capability simple -> lsa-arrival-interval intelligent-timer 50 50 50",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 414,
+      "错误行号": 14438,
+      "正确的配置": "radius-server source interface <*> -> nas logic-sysname <*>",
+      "错误的配置": "nas logic-sysname <*> -> radius-server source interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 415,
+      "错误行号": 38995,
+      "正确的配置": "bgp <*> -> graceful-restart",
+      "错误的配置": "graceful-restart -> bgp <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 416,
+      "错误行号": 5775,
+      "正确的配置": "bfd <*> bind peer-ip <IPV4> interface <INTERFACE> source-ip <IPV4> -> min-tx-interval 100",
+      "错误的配置": "min-tx-interval 100 -> bfd <*> bind peer-ip <IPV4> interface <INTERFACE> source-ip <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 417,
+      "错误行号": 24140,
+      "正确的配置": "ip vpn-instance <*> -> ipv4-family",
+      "错误的配置": "ipv4-family -> ip vpn-instance <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 418,
+      "错误行号": 35394,
+      "正确的配置": "ipv6 enable -> ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000 -> ipv6 enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 419,
+      "错误行号": 37730,
+      "正确的配置": "te link administrative group <*> -> te bandwidth dynamic bc0 100",
+      "错误的配置": "te bandwidth dynamic bc0 100 -> te link administrative group <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 420,
+      "错误行号": 7124,
+      "正确的配置": "mpls -> mpls ldp",
+      "错误的配置": "mpls ldp -> mpls",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 421,
+      "错误行号": 41742,
+      "正确的配置": "ip-trigger -> default-user-name-template jsitv",
+      "错误的配置": "default-user-name-template jsitv -> ip-trigger",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 422,
+      "错误行号": 41785,
+      "正确的配置": "ipv6 enable -> ipv6 mtu 9178",
+      "错误的配置": "ipv6 mtu 9178 -> ipv6 enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 423,
+      "错误行号": 14472,
+      "正确的配置": "ipv6 metric-delay advertisement enable level-2 -> segment-routing ipv6 locator <*>",
+      "错误的配置": "segment-routing ipv6 locator <*> -> ipv6 metric-delay advertisement enable level-2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 424,
+      "错误行号": 27158,
+      "正确的配置": "ipv6 mtu 9000 -> track monitor-group leaf-to-spine trigger-down-weight <*>",
+      "错误的配置": "track monitor-group leaf-to-spine trigger-down-weight <*> -> ipv6 mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 425,
+      "错误行号": 12424,
+      "正确的配置": "trust upstream <*> -> user-priority upstream <*>",
+      "错误的配置": "user-priority upstream <*> -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 426,
+      "错误行号": 13243,
+      "正确的配置": "ipv6 address <*> -> ipv6 mtu 9178",
+      "错误的配置": "ipv6 mtu 9178 -> ipv6 address <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 427,
+      "错误行号": 26823,
+      "正确的配置": "port-queue af1 wfq weight 25 outbound -> port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 25 outbound -> port-queue af1 wfq weight 25 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 428,
+      "错误行号": 11736,
+      "正确的配置": "protocol sftp ip-address <IPV4> -> username ftpuser password <*>",
+      "错误的配置": "username ftpuser password <*> -> protocol sftp ip-address <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 429,
+      "错误行号": 25246,
+      "正确的配置": "route-select delay 100 -> segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routing ipv6 traffic-engineer best-effort evpn -> route-select delay 100",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 430,
+      "错误行号": 18529,
+      "正确的配置": "ipv6 enable -> ipv6 address <*>",
+      "错误的配置": "ipv6 address <*> -> ipv6 enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 431,
+      "错误行号": 15711,
+      "正确的配置": "ipv6 address auto link-local -> ipv6 nd autoconfig other-flag",
+      "错误的配置": "ipv6 nd autoconfig other-flag -> ipv6 address auto link-local",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 432,
+      "错误行号": 25732,
+      "正确的配置": "e-trunk <*> -> es track bfd <DEVICE>",
+      "错误的配置": "es track bfd <DEVICE> -> e-trunk <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 433,
+      "错误行号": 39092,
+      "正确的配置": "segment-routing ipv6 locator <*> -> segment-routing ipv6 best-effort",
+      "错误的配置": "segment-routing ipv6 best-effort -> segment-routing ipv6 locator <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 434,
+      "错误行号": 37539,
+      "正确的配置": "segment-routing ipv6 best-effort -> peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy <*> import -> segment-routing ipv6 best-effort",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 435,
+      "错误行号": 42457,
+      "正确的配置": "carrier down-hold-time <*> -> undo shutdown",
+      "错误的配置": "undo shutdown -> carrier down-hold-time <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 436,
+      "错误行号": 1886,
+      "正确的配置": "undo policy vpn-target -> bestroute nexthop-resolved tunnel",
+      "错误的配置": "bestroute nexthop-resolved tunnel -> undo policy vpn-target",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 437,
+      "错误行号": 20007,
+      "正确的配置": "info-center log-severity bymodule-alias ssh SSH_USER_LOGOUT severity warning -> info-center loghost source LoopBack2",
+      "错误的配置": "info-center loghost source LoopBack2 -> info-center log-severity bymodule-alias ssh SSH_USER_LOGOUT severity warning",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 438,
+      "错误行号": 31016,
+      "正确的配置": "ipv4-family vpn-instance <*> -> nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 0 -> ipv4-family vpn-instance <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 439,
+      "错误行号": 19227,
+      "正确的配置": "statistic enable -> user-vlan <*> <*> qinq <*>",
+      "错误的配置": "user-vlan <*> <*> qinq <*> -> statistic enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 440,
+      "错误行号": 37209,
+      "正确的配置": "service-location 5 -> location slot <*> engine <*>",
+      "错误的配置": "location slot <*> engine <*> -> service-location 5",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 441,
+      "错误行号": 40461,
+      "正确的配置": "bridge-domain <*> -> trust 8021p",
+      "错误的配置": "trust 8021p -> bridge-domain <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 442,
+      "错误行号": 37638,
+      "正确的配置": "description <DESCRIPTION> -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 443,
+      "错误行号": 24057,
+      "正确的配置": "interface <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 444,
+      "错误行号": 17441,
+      "正确的配置": "isis circuit-type p2p -> isis ipv6 cost <*>",
+      "错误的配置": "isis ipv6 cost <*> -> isis circuit-type p2p",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 445,
+      "错误行号": 16184,
+      "正确的配置": "isis ipv6 bfd enable -> mpls",
+      "错误的配置": "mpls -> isis ipv6 bfd enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 446,
+      "错误行号": 16172,
+      "正确的配置": "ipv6 enable -> ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000 -> ipv6 enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 447,
+      "错误行号": 28747,
+      "正确的配置": "prefix-assign-mode unshared -> ip-pool <*>",
+      "错误的配置": "ip-pool <*> -> prefix-assign-mode unshared",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 448,
+      "错误行号": 32700,
+      "正确的配置": "is-name <DEVICE> -> timer spf 1 50 50",
+      "错误的配置": "timer spf 1 50 50 -> is-name <DEVICE>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 449,
+      "错误行号": 7055,
+      "正确的配置": "igmp enable -> cu-mode",
+      "错误的配置": "cu-mode -> igmp enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 450,
+      "错误行号": 34838,
+      "正确的配置": "description <DESCRIPTION> -> ipv6 enable",
+      "错误的配置": "ipv6 enable -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 451,
+      "错误行号": 156,
+      "正确的配置": "trust upstream <*> -> trust 8021p",
+      "错误的配置": "trust 8021p -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 452,
+      "错误行号": 19743,
+      "正确的配置": "peer <*> route-update-interval 0 -> peer <*> advertise-large-community",
+      "错误的配置": "peer <*> advertise-large-community -> peer <*> route-update-interval 0",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 453,
+      "错误行号": 1211,
+      "正确的配置": "statistic enable -> cu-mode",
+      "错误的配置": "cu-mode -> statistic enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 454,
+      "错误行号": 32475,
+      "正确的配置": "domain <*> -> authentication-scheme <*>",
+      "错误的配置": "authentication-scheme <*> -> domain <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 455,
+      "错误行号": 20535,
+      "正确的配置": "up <*> -> control-tunnel cusp-agent <*>",
+      "错误的配置": "control-tunnel cusp-agent <*> -> up <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 456,
+      "错误行号": 14023,
+      "正确的配置": "protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW -> protocol-tunnel track nqa counter 8 recovery-count 1 interval 1 timeout 1 udp-port 65000",
+      "错误的配置": "protocol-tunnel track nqa counter 8 recovery-count 1 interval 1 timeout 1 udp-port 65000 -> protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 457,
+      "错误行号": 15841,
+      "正确的配置": "preference 130 255 255 -> import-route ospf 701 route-policy rpFromospf701",
+      "错误的配置": "import-route ospf 701 route-policy rpFromospf701 -> preference 130 255 255",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 458,
+      "错误行号": 31141,
+      "正确的配置": "acl number <*> -> step <*>",
+      "错误的配置": "step <*> -> acl number <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 459,
+      "错误行号": 40506,
+      "正确的配置": "shutdown -> undo dcn mode vlan",
+      "错误的配置": "undo dcn mode vlan -> shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 460,
+      "错误行号": 24158,
+      "正确的配置": "access-type layer2-subscriber default-domain pre-authentication <*> authentication <*> -> vpn-instance <*>",
+      "错误的配置": "vpn-instance <*> -> access-type layer2-subscriber default-domain pre-authentication <*> authentication <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 461,
+      "错误行号": 13782,
+      "正确的配置": "undo synchronization -> routing-table rib-only",
+      "错误的配置": "routing-table rib-only -> undo synchronization",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 462,
+      "错误行号": 31116,
+      "正确的配置": "carrier down-hold-time <*> -> mtu 9000",
+      "错误的配置": "mtu 9000 -> carrier down-hold-time <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 463,
+      "错误行号": 21144,
+      "正确的配置": "undo pcp enable -> nat filter mode full-cone",
+      "错误的配置": "nat filter mode full-cone -> undo pcp enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 464,
+      "错误行号": 28272,
+      "正确的配置": "bgp <*> -> router-id <IPV4>",
+      "错误的配置": "router-id <IPV4> -> bgp <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 465,
+      "错误行号": 31021,
+      "正确的配置": "segment-routing ipv6 locator <*> evpn -> segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routing ipv6 traffic-engineer best-effort evpn -> segment-routing ipv6 locator <*> evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 466,
+      "错误行号": 40649,
+      "正确的配置": "dap-server ip pool <*> -> subnet warning-threshold <*>",
+      "错误的配置": "subnet warning-threshold <*> -> dap-server ip pool <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 467,
+      "错误行号": 22236,
+      "正确的配置": "import-route ospf 705 route-policy rpFromospf705 -> maximum load-balancing <*>",
+      "错误的配置": "maximum load-balancing <*> -> import-route ospf 705 route-policy rpFromospf705",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 468,
+      "错误行号": 15001,
+      "正确的配置": "ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30 frr-binding -> ipv6 metric-delay advertisement enable level-2",
+      "错误的配置": "ipv6 metric-delay advertisement enable level-2 -> ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30 frr-binding",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 469,
+      "错误行号": 37152,
+      "正确的配置": "loop-free-alternate level-1 -> ti-lfa level-1",
+      "错误的配置": "ti-lfa level-1 -> loop-free-alternate level-1",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 470,
+      "错误行号": 38675,
+      "正确的配置": "undo shutdown -> phy-number <*>",
+      "错误的配置": "phy-number <*> -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 471,
+      "错误行号": 34559,
+      "正确的配置": "port-queue af1 wfq weight 25 outbound -> port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 25 outbound -> port-queue af1 wfq weight 25 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 472,
+      "错误行号": 19434,
+      "正确的配置": "routing-table rib-only route-policy rpribonly-v6 -> maximum load-balancing <*>",
+      "错误的配置": "maximum load-balancing <*> -> routing-table rib-only route-policy rpribonly-v6",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 473,
+      "错误行号": 28920,
+      "正确的配置": "clock synchronization enable -> clock priority <*>",
+      "错误的配置": "clock priority <*> -> clock synchronization enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 474,
+      "错误行号": 24035,
+      "正确的配置": "dap-server ip-pool <*> -> dap-server ipv6-pool <*>",
+      "错误的配置": "dap-server ipv6-pool <*> -> dap-server ip-pool <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 475,
+      "错误行号": 24374,
+      "正确的配置": "timer lsp-refresh 32768 -> frr",
+      "错误的配置": "frr -> timer lsp-refresh 32768",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 476,
+      "错误行号": 19783,
+      "正确的配置": "speed auto -> undo shutdown",
+      "错误的配置": "undo shutdown -> speed auto",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 477,
+      "错误行号": 28821,
+      "正确的配置": "test start-continual test-session <*> -> test-session <*> local-ipv6 <IPV6> remote-ipv6 <IPV6> local-port <*> remote-port <*>",
+      "错误的配置": "test-session <*> local-ipv6 <IPV6> remote-ipv6 <IPV6> local-port <*> remote-port <*> -> test start-continual test-session <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 478,
+      "错误行号": 32575,
+      "正确的配置": "interface <*> -> ipv6 address auto link-local",
+      "错误的配置": "ipv6 address auto link-local -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 479,
+      "错误行号": 18018,
+      "正确的配置": "statistic enable mode single -> encapsulation dot1q vid <*> to <*>",
+      "错误的配置": "encapsulation dot1q vid <*> to <*> -> statistic enable mode single",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 480,
+      "错误行号": 5857,
+      "正确的配置": "dap-server ip pool <*> -> network <IPV4> <*> subnet length <*>",
+      "错误的配置": "network <IPV4> <*> subnet length <*> -> dap-server ip pool <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 481,
+      "错误行号": 4273,
+      "正确的配置": "undo shutdown -> ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000 -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 482,
+      "错误行号": 15871,
+      "正确的配置": "ipv6 mtu 9000 -> isis circuit-type p2p",
+      "错误的配置": "isis circuit-type p2p -> ipv6 mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 483,
+      "错误行号": 6883,
+      "正确的配置": "authentication-scheme <*> -> accounting-scheme <*>",
+      "错误的配置": "accounting-scheme <*> -> authentication-scheme <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 484,
+      "错误行号": 22849,
+      "正确的配置": "bridge-domain <*> -> evpn e-tree-leaf",
+      "错误的配置": "evpn e-tree-leaf -> bridge-domain <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 485,
+      "错误行号": 21824,
+      "正确的配置": "ipv6 mtu 9000 -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> ipv6 mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 486,
+      "错误行号": 862,
+      "正确的配置": "ipv6 preference 105 -> ipv6 advertise link attributes",
+      "错误的配置": "ipv6 advertise link attributes -> ipv6 preference 105",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 487,
+      "错误行号": 11546,
+      "正确的配置": "bridge-domain <*> -> trust 8021p",
+      "错误的配置": "trust 8021p -> bridge-domain <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 488,
+      "错误行号": 24923,
+      "正确的配置": "isis circuit-type p2p -> isis cost <*>",
+      "错误的配置": "isis cost <*> -> isis circuit-type p2p",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 489,
+      "错误行号": 27647,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound -> port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70 outbound -> port-queue af2 wfq weight 25 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 490,
+      "错误行号": 2718,
+      "正确的配置": "te link administrative group <*> -> mpls ldp",
+      "错误的配置": "mpls ldp -> te link administrative group <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 491,
+      "错误行号": 33146,
+      "正确的配置": "hwtacacs-server authorization <IPV4> vpn-instance CTVPN193-JS -> hwtacacs-server accounting <IPV4> vpn-instance CTVPN193-JS secondary",
+      "错误的配置": "hwtacacs-server accounting <IPV4> vpn-instance CTVPN193-JS secondary -> hwtacacs-server authorization <IPV4> vpn-instance CTVPN193-JS",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 492,
+      "错误行号": 34369,
+      "正确的配置": "mpls ldp -> port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queue af2 wfq weight 25 outbound -> mpls ldp",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 493,
+      "错误行号": 15570,
+      "正确的配置": "bfd all-interfaces enable -> bfd all-interfaces min-tx-interval 500 min-rx-interval 500 detect-multiplier 4",
+      "错误的配置": "bfd all-interfaces min-tx-interval 500 min-rx-interval 500 detect-multiplier 4 -> bfd all-interfaces enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 494,
+      "错误行号": 24450,
+      "正确的配置": "ipv4-family unicast -> undo synchronization",
+      "错误的配置": "undo synchronization -> ipv4-family unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 495,
+      "错误行号": 34462,
+      "正确的配置": "up <*> -> bind netconf-connection <*>",
+      "错误的配置": "bind netconf-connection <*> -> up <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 496,
+      "错误行号": 39157,
+      "正确的配置": "undo enable snmp trap updown -> rewrite pop double",
+      "错误的配置": "rewrite pop double -> undo enable snmp trap updown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 497,
+      "错误行号": 38872,
+      "正确的配置": "undo shutdown -> port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queue be wfq weight 50 outbound -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 498,
+      "错误行号": 34857,
+      "正确的配置": "bfd all-interfaces enable -> network-entity <*>",
+      "错误的配置": "network-entity <*> -> bfd all-interfaces enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 499,
+      "错误行号": 13077,
+      "正确的配置": "bgp <*> -> graceful-restart peer-reset",
+      "错误的配置": "graceful-restart peer-reset -> bgp <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 500,
+      "错误行号": 24299,
+      "正确的配置": "sender -> responder",
+      "错误的配置": "responder -> sender",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 501,
+      "错误行号": 19941,
+      "正确的配置": "trust upstream <*> -> isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 800 -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 502,
+      "错误行号": 6979,
+      "正确的配置": "undo telnet ipv6 server enable -> undo telnet ipv6 server-source all-interface",
+      "错误的配置": "undo telnet ipv6 server-source all-interface -> undo telnet ipv6 server enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 503,
+      "错误行号": 38353,
+      "正确的配置": "isis ipv6 enable 800 -> isis ipv6 cost <*>",
+      "错误的配置": "isis ipv6 cost <*> -> isis ipv6 enable 800",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 504,
+      "错误行号": 12641,
+      "正确的配置": "carrier up-hold-time <*> -> carrier down-hold-time <*>",
+      "错误的配置": "carrier down-hold-time <*> -> carrier up-hold-time <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 505,
+      "错误行号": 37302,
+      "正确的配置": "evpn e-tree-leaf -> qos-profile <*> inbound identifier none",
+      "错误的配置": "qos-profile <*> inbound identifier none -> evpn e-tree-leaf",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 506,
+      "错误行号": 8155,
+      "正确的配置": "up <*> <*> -> dap-server ip-pool <*>",
+      "错误的配置": "dap-server ip-pool <*> -> up <*> <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 507,
+      "错误行号": 16277,
+      "正确的配置": "ip route-static <IPV4> <IPV4> <IPV4> -> ip route-static vpn-instance <*> <IPV4> <IPV4> <*>",
+      "错误的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> -> ip route-static <IPV4> <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 508,
+      "错误行号": 19124,
+      "正确的配置": "peer <*> esad-route-compatible -> peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*> -> peer <*> esad-route-compatible",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 509,
+      "错误行号": 23035,
+      "正确的配置": "interface <*> -> statistic enable",
+      "错误的配置": "statistic enable -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 510,
+      "错误行号": 15324,
+      "正确的配置": "isis ipv6 cost <*> -> isis peer hold-max-cost timer <*>",
+      "错误的配置": "isis peer hold-max-cost timer <*> -> isis ipv6 cost <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 511,
+      "错误行号": 15137,
+      "正确的配置": "maximum load-balancing <*> -> peer <*> enable",
+      "错误的配置": "peer <*> enable -> maximum load-balancing <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 512,
+      "错误行号": 19912,
+      "正确的配置": "ipv6 address <*> -> statistic enable",
+      "错误的配置": "statistic enable -> ipv6 address <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 513,
+      "错误行号": 23141,
+      "正确的配置": "interface <*> -> mode lacp-static",
+      "错误的配置": "mode lacp-static -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 514,
+      "错误行号": 21547,
+      "正确的配置": "description <DESCRIPTION> -> control-flap",
+      "错误的配置": "control-flap -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 515,
+      "错误行号": 11577,
+      "正确的配置": "router-id <IPV4> -> graceful-restart peer-reset",
+      "错误的配置": "graceful-restart peer-reset -> router-id <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 516,
+      "错误行号": 8760,
+      "正确的配置": "interface <INTERFACE> mode l2 -> encapsulation dot1q vid <*> to <*>",
+      "错误的配置": "encapsulation dot1q vid <*> to <*> -> interface <INTERFACE> mode l2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 517,
+      "错误行号": 34593,
+      "正确的配置": "maximum load-balancing <*> -> bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 16 -> maximum load-balancing <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 518,
+      "错误行号": 22275,
+      "正确的配置": "peer <*> capability-advertise add-path both -> peer <*> advertise-large-community",
+      "错误的配置": "peer <*> advertise-large-community -> peer <*> capability-advertise add-path both",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 519,
+      "错误行号": 15760,
+      "正确的配置": "ipv6 mtu 9000 -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> ipv6 mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 520,
+      "错误行号": 23061,
+      "正确的配置": "segment-routing ipv6 locator <*> evpn -> peer <*> enable",
+      "错误的配置": "peer <*> enable -> segment-routing ipv6 locator <*> evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 521,
+      "错误行号": 42262,
+      "正确的配置": "statistic enable mode single -> bridge-domain <*>",
+      "错误的配置": "bridge-domain <*> -> statistic enable mode single",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 522,
+      "错误行号": 27677,
+      "正确的配置": "trust upstream <*> -> isis circuit-type p2p",
+      "错误的配置": "isis circuit-type p2p -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 523,
+      "错误行号": 21536,
+      "正确的配置": "timer lsp-max-age 65535 -> timer lsp-refresh 32768",
+      "错误的配置": "timer lsp-refresh 32768 -> timer lsp-max-age 65535",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 524,
+      "错误行号": 12188,
+      "正确的配置": "policy vpn-target -> peer <*> advertise encap-type srv6",
+      "错误的配置": "peer <*> advertise encap-type srv6 -> policy vpn-target",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 525,
+      "错误行号": 3414,
+      "正确的配置": "peer <*> advertise encap-type srv6 -> peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-community -> peer <*> advertise encap-type srv6",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 526,
+      "错误行号": 13754,
+      "正确的配置": "bridge-domain <*> -> traffic-policy <*> <*> link-layer",
+      "错误的配置": "traffic-policy <*> <*> link-layer -> bridge-domain <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 527,
+      "错误行号": 17941,
+      "正确的配置": "encapsulation source-address <IPV6> -> opcode <IPV6> end-op",
+      "错误的配置": "opcode <IPV6> end-op -> encapsulation source-address <IPV6>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 528,
+      "错误行号": 40541,
+      "正确的配置": "umr originate detail-suppressed -> esi <*>",
+      "错误的配置": "esi <*> -> umr originate detail-suppressed",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 529,
+      "错误行号": 28902,
+      "正确的配置": "isis ipv6 enable 800 -> isis circuit-level level-2",
+      "错误的配置": "isis circuit-level level-2 -> isis ipv6 enable 800",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 530,
+      "错误行号": 24363,
+      "正确的配置": "bfd all-interfaces min-tx-interval 30 min-rx-interval 30 -> network-entity <*>",
+      "错误的配置": "network-entity <*> -> bfd all-interfaces min-tx-interval 30 min-rx-interval 30",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 531,
+      "错误行号": 5472,
+      "正确的配置": "ipv6 enable -> ipv6 address <*>",
+      "错误的配置": "ipv6 address <*> -> ipv6 enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 532,
+      "错误行号": 13725,
+      "正确的配置": "ipv6 advertise link attributes -> ipv6 bfd all-interfaces enable",
+      "错误的配置": "ipv6 bfd all-interfaces enable -> ipv6 advertise link attributes",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 533,
+      "错误行号": 25987,
+      "正确的配置": "multicast copy by-session -> multicast authorization-enable",
+      "错误的配置": "multicast authorization-enable -> multicast copy by-session",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 534,
+      "错误行号": 249,
+      "正确的配置": "vpn-instance <*> -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> vpn-instance <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 535,
+      "错误行号": 11420,
+      "正确的配置": "bestroute nexthop-priority ipv6 -> segment-routing ipv6 locator <*> evpn",
+      "错误的配置": "segment-routing ipv6 locator <*> evpn -> bestroute nexthop-priority ipv6",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 536,
+      "错误行号": 15751,
+      "正确的配置": "carrier down-hold-time <*> -> undo shutdown",
+      "错误的配置": "undo shutdown -> carrier down-hold-time <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 537,
+      "错误行号": 16540,
+      "正确的配置": "interface <*> -> vlan-type dot1q <*>",
+      "错误的配置": "vlan-type dot1q <*> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 538,
+      "错误行号": 20227,
+      "正确的配置": "peer <*> route-update-interval 0 -> peer <*> capability-advertise add-path both",
+      "错误的配置": "peer <*> capability-advertise add-path both -> peer <*> route-update-interval 0",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 539,
+      "错误行号": 6807,
+      "正确的配置": "maximum load-balancing <*> -> bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 16 -> maximum load-balancing <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 540,
+      "错误行号": 16009,
+      "正确的配置": "mpls -> mpls mtu 9000",
+      "错误的配置": "mpls mtu 9000 -> mpls",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 541,
+      "错误行号": 7060,
+      "正确的配置": "interface <*> -> mtu 9178",
+      "错误的配置": "mtu 9178 -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 542,
+      "错误行号": 27351,
+      "正确的配置": "slaac-unshare-only -> prefix-unshared length initial 58 extend 58",
+      "错误的配置": "prefix-unshared length initial 58 extend 58 -> slaac-unshare-only",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 543,
+      "错误行号": 10127,
+      "正确的配置": "description <DESCRIPTION> -> undo dcn mode vlan",
+      "错误的配置": "undo dcn mode vlan -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 544,
+      "错误行号": 20122,
+      "正确的配置": "bgp-ls enable <*> -> avoid-microloop frr-protected rib-update-delay 5000",
+      "错误的配置": "avoid-microloop frr-protected rib-update-delay 5000 -> bgp-ls enable <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 545,
+      "错误行号": 32807,
+      "正确的配置": "carrier down-hold-time <*> -> undo dcn",
+      "错误的配置": "undo dcn -> carrier down-hold-time <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 546,
+      "错误行号": 25305,
+      "正确的配置": "port-queue ef wfq weight 70 outbound -> port-queue cs7 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue cs7 pq shaping shaping-percentage 20 outbound -> port-queue ef wfq weight 70 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 547,
+      "错误行号": 11903,
+      "正确的配置": "ssh client first-time enable -> ssh client peer <*> assign rsa-key <*>",
+      "错误的配置": "ssh client peer <*> assign rsa-key <*> -> ssh client first-time enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 548,
+      "错误行号": 18259,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <INTERFACE> <IPV4> preference <*> track bfd-session <*> description <*> -> ip route-static vpn-instance <*> <IPV4> <IPV4> <*>",
+      "错误的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> -> ip route-static vpn-instance <*> <IPV4> <IPV4> <INTERFACE> <IPV4> preference <*> track bfd-session <*> description <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 549,
+      "错误行号": 29661,
+      "正确的配置": "avoid-microloop frr-protected rib-update-delay 5000 -> is-name <DEVICE>",
+      "错误的配置": "is-name <DEVICE> -> avoid-microloop frr-protected rib-update-delay 5000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 550,
+      "错误行号": 13566,
+      "正确的配置": "description <DESCRIPTION> -> shutdown",
+      "错误的配置": "shutdown -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 551,
+      "错误行号": 30851,
+      "正确的配置": "service-location 1 -> location slot <*> engine <*> backup slot <*> engine <*>",
+      "错误的配置": "location slot <*> engine <*> backup slot <*> engine <*> -> service-location 1",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 552,
+      "错误行号": 1777,
+      "正确的配置": "te link administrative group <*> -> qos phb disable",
+      "错误的配置": "qos phb disable -> te link administrative group <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 553,
+      "错误行号": 12087,
+      "正确的配置": "ip-pool <*> -> user-group <*>",
+      "错误的配置": "user-group <*> -> ip-pool <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 554,
+      "错误行号": 20497,
+      "正确的配置": "bestroute nexthop-priority ipv6 -> segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routing ipv6 traffic-engineer best-effort evpn -> bestroute nexthop-priority ipv6",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 555,
+      "错误行号": 19719,
+      "正确的配置": "trust upstream <*> -> user-priority upstream <*>",
+      "错误的配置": "user-priority upstream <*> -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 556,
+      "错误行号": 11706,
+      "正确的配置": "dap-server ip-pool <*> -> radius-server source interface <*>",
+      "错误的配置": "radius-server source interface <*> -> dap-server ip-pool <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 557,
+      "错误行号": 6952,
+      "正确的配置": "authentication-method <*> -> service-identify-policy jsitv",
+      "错误的配置": "service-identify-policy jsitv -> authentication-method <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 558,
+      "错误行号": 1511,
+      "正确的配置": "ipv4-family unicast -> network <IPV4> <IPV4>",
+      "错误的配置": "network <IPV4> <IPV4> -> ipv4-family unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 559,
+      "错误行号": 576,
+      "正确的配置": "network <IPV6> <*> -> peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy <*> export -> network <IPV6> <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 560,
+      "错误行号": 941,
+      "正确的配置": "http-hostcar enable -> qos rate-limit-mode car inbound",
+      "错误的配置": "qos rate-limit-mode car inbound -> http-hostcar enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 561,
+      "错误行号": 21822,
+      "正确的配置": "ip address <IPV4> <IPV4> -> ipv6 address <*>",
+      "错误的配置": "ipv6 address <*> -> ip address <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 562,
+      "错误行号": 32968,
+      "正确的配置": "shutdown -> ipv6 enable",
+      "错误的配置": "ipv6 enable -> shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 563,
+      "错误行号": 17430,
+      "正确的配置": "mtu 9000 -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 564,
+      "错误行号": 30985,
+      "正确的配置": "ipv6 mtu 9000 -> isis enable 800",
+      "错误的配置": "isis enable 800 -> ipv6 mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 565,
+      "错误行号": 17539,
+      "正确的配置": "ipv6 preference 105 -> ipv6 advertise link attributes",
+      "错误的配置": "ipv6 advertise link attributes -> ipv6 preference 105",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 566,
+      "错误行号": 21096,
+      "正确的配置": "isis peer hold-max-cost timer <*> -> te bandwidth max-reservable-bandwidth dynamic 100",
+      "错误的配置": "te bandwidth max-reservable-bandwidth dynamic 100 -> isis peer hold-max-cost timer <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 567,
+      "错误行号": 17950,
+      "正确的配置": "interface <*> -> undo dcn",
+      "错误的配置": "undo dcn -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 568,
+      "错误行号": 28160,
+      "正确的配置": "trust upstream <*> -> isis enable 800",
+      "错误的配置": "isis enable 800 -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 569,
+      "错误行号": 34303,
+      "正确的配置": "te link administrative group <*> -> mpls ldp",
+      "错误的配置": "mpls ldp -> te link administrative group <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 570,
+      "错误行号": 7049,
+      "正确的配置": "interface <*> -> statistic enable",
+      "错误的配置": "statistic enable -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 571,
+      "错误行号": 35072,
+      "正确的配置": "info-center log-severity bymodule-alias cli CMDRECORD severity warning -> info-center log-severity bymodule-alias ssh SSH_USER_LOGOUT severity warning",
+      "错误的配置": "info-center log-severity bymodule-alias ssh SSH_USER_LOGOUT severity warning -> info-center log-severity bymodule-alias cli CMDRECORD severity warning",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 572,
+      "错误行号": 18375,
+      "正确的配置": "carrier down-hold-time <*> -> undo dcn mode vlan",
+      "错误的配置": "undo dcn mode vlan -> carrier down-hold-time <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 573,
+      "错误行号": 21,
+      "正确的配置": "isis circuit-type p2p -> isis cost <*>",
+      "错误的配置": "isis cost <*> -> isis circuit-type p2p",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 574,
+      "错误行号": 27324,
+      "正确的配置": "undo dcn -> undo dcn mode vlan",
+      "错误的配置": "undo dcn mode vlan -> undo dcn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 575,
+      "错误行号": 11991,
+      "正确的配置": "ipv6 address auto link-local -> user-vlan <*> qinq <*> <*>",
+      "错误的配置": "user-vlan <*> qinq <*> <*> -> ipv6 address auto link-local",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 576,
+      "错误行号": 16229,
+      "正确的配置": "is-level level-2 -> bfd all-interfaces enable",
+      "错误的配置": "bfd all-interfaces enable -> is-level level-2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 577,
+      "错误行号": 38340,
+      "正确的配置": "carrier up-hold-time <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> carrier up-hold-time <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 578,
+      "错误行号": 34919,
+      "正确的配置": "rule <*> permit source-mac <*> -> rule <*> permit destination-mac <*>",
+      "错误的配置": "rule <*> permit destination-mac <*> -> rule <*> permit source-mac <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 579,
+      "错误行号": 8060,
+      "正确的配置": "description <DESCRIPTION> -> router-id <IPV4>",
+      "错误的配置": "router-id <IPV4> -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 580,
+      "错误行号": 24186,
+      "正确的配置": "segment-routing ipv6 locator <*> evpn -> segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routing ipv6 traffic-engineer best-effort evpn -> segment-routing ipv6 locator <*> evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 581,
+      "错误行号": 40524,
+      "正确的配置": "te metric <*> -> port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queue be wfq weight 50 outbound -> te metric <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 582,
+      "错误行号": 15902,
+      "正确的配置": "interface <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 583,
+      "错误行号": 25935,
+      "正确的配置": "peer <*> advertise-community -> peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*> -> peer <*> advertise-community",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 584,
+      "错误行号": 18672,
+      "正确的配置": "bestroute add-path path-number 16 -> segment-routing ipv6 locator <*>",
+      "错误的配置": "segment-routing ipv6 locator <*> -> bestroute add-path path-number 16",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 585,
+      "错误行号": 14895,
+      "正确的配置": "lacp system-id <*> -> esi <*>",
+      "错误的配置": "esi <*> -> lacp system-id <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 586,
+      "错误行号": 25035,
+      "正确的配置": "trust upstream <*> -> isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enable 800 -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 587,
+      "错误行号": 20643,
+      "正确的配置": "te metric <*> -> te bandwidth max-reservable-bandwidth dynamic 100",
+      "错误的配置": "te bandwidth max-reservable-bandwidth dynamic 100 -> te metric <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 588,
+      "错误行号": 32707,
+      "正确的配置": "frr -> ti-lfa level-2",
+      "错误的配置": "ti-lfa level-2 -> frr",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 589,
+      "错误行号": 12499,
+      "正确的配置": "sr-te frr enable -> path-mtu 9000",
+      "错误的配置": "path-mtu 9000 -> sr-te frr enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 590,
+      "错误行号": 7770,
+      "正确的配置": "acl number <*> -> rule <*> deny",
+      "错误的配置": "rule <*> deny -> acl number <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 591,
+      "错误行号": 31579,
+      "正确的配置": "interface <*> -> mtu 9000",
+      "错误的配置": "mtu 9000 -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 592,
+      "错误行号": 23996,
+      "正确的配置": "interface <*> -> carrier up-hold-time <*>",
+      "错误的配置": "carrier up-hold-time <*> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 593,
+      "错误行号": 41288,
+      "正确的配置": "description <DESCRIPTION> -> statistic enable mode single",
+      "错误的配置": "statistic enable mode single -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 594,
+      "错误行号": 25508,
+      "正确的配置": "port-speed 100GE -> mtu 9000",
+      "错误的配置": "mtu 9000 -> port-speed 100GE",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 595,
+      "错误行号": 31619,
+      "正确的配置": "radius-server retransmit 2 timeout 3 -> radius-attribute include <*>",
+      "错误的配置": "radius-attribute include <*> -> radius-server retransmit 2 timeout 3",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 596,
+      "错误行号": 30131,
+      "正确的配置": "mode lacp-static -> e-trunk <*>",
+      "错误的配置": "e-trunk <*> -> mode lacp-static",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 597,
+      "错误行号": 17396,
+      "正确的配置": "preference 20 200 200 -> maximum load-balancing <*>",
+      "错误的配置": "maximum load-balancing <*> -> preference 20 200 200",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 598,
+      "错误行号": 31568,
+      "正确的配置": "description <DESCRIPTION> -> undo shutdown",
+      "错误的配置": "undo shutdown -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 599,
+      "错误行号": 12455,
+      "正确的配置": "ipv6 mtu 9000 -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> ipv6 mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 600,
+      "错误行号": 38145,
+      "正确的配置": "undo shutdown -> control-flap",
+      "错误的配置": "control-flap -> undo shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 601,
+      "错误行号": 16851,
+      "正确的配置": "FTP server-source all-interface -> undo FTP ipv6 server-source all-interface",
+      "错误的配置": "undo FTP ipv6 server-source all-interface -> FTP server-source all-interface",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 602,
+      "错误行号": 3779,
+      "正确的配置": "interface <*> -> mtu 9178",
+      "错误的配置": "mtu 9178 -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 603,
+      "错误行号": 21213,
+      "正确的配置": "router-id <IPV4> -> graceful-restart peer-reset",
+      "错误的配置": "graceful-restart peer-reset -> router-id <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 604,
+      "错误行号": 18730,
+      "正确的配置": "ip address <IPV4> <IPV4> -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> ip address <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 605,
+      "错误行号": 39242,
+      "正确的配置": "dot1q termination vid <*> -> arp broadcast enable",
+      "错误的配置": "arp broadcast enable -> dot1q termination vid <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 606,
+      "错误行号": 41400,
+      "正确的配置": "ipv4-family vpn-instance <*> -> nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 0 -> ipv4-family vpn-instance <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 607,
+      "错误行号": 39322,
+      "正确的配置": "maximum load-balancing <*> -> nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthop recursive-lookup non-critical-event delay 0 -> maximum load-balancing <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 608,
+      "错误行号": 2947,
+      "正确的配置": "pim sm -> igmp prompt-leave",
+      "错误的配置": "igmp prompt-leave -> pim sm",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 609,
+      "错误行号": 6868,
+      "正确的配置": "ipv6 enable -> statistic enable",
+      "错误的配置": "statistic enable -> ipv6 enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 610,
+      "错误行号": 5537,
+      "正确的配置": "ipv6 address auto link-local -> user-vlan <*> <*> qinq <*> <*>",
+      "错误的配置": "user-vlan <*> <*> qinq <*> <*> -> ipv6 address auto link-local",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 611,
+      "错误行号": 8028,
+      "正确的配置": "esi <*> -> timer es-recovery 90",
+      "错误的配置": "timer es-recovery 90 -> esi <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 612,
+      "错误行号": 27238,
+      "正确的配置": "ospf 701 router-id <IPV4> vpn-instance CTVPN-CTC-NMAN -> bfd all-interfaces enable",
+      "错误的配置": "bfd all-interfaces enable -> ospf 701 router-id <IPV4> vpn-instance CTVPN-CTC-NMAN",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 613,
+      "错误行号": 32502,
+      "正确的配置": "sr-te frr enable -> timer end-x update-delay 60000",
+      "错误的配置": "timer end-x update-delay 60000 -> sr-te frr enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 614,
+      "错误行号": 20361,
+      "正确的配置": "bind netconf-connection <*> -> control-tunnel cusp-agent <*>",
+      "错误的配置": "control-tunnel cusp-agent <*> -> bind netconf-connection <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 615,
+      "错误行号": 1734,
+      "正确的配置": "rule <*> permit source <IPV4> <*> -> rule <*> deny",
+      "错误的配置": "rule <*> deny -> rule <*> permit source <IPV4> <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 616,
+      "错误行号": 34361,
+      "正确的配置": "isis ipv6 enable 800 -> isis circuit-type p2p",
+      "错误的配置": "isis circuit-type p2p -> isis ipv6 enable 800",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 617,
+      "错误行号": 42232,
+      "正确的配置": "preference 20 200 200 -> network <IPV4> <IPV4>",
+      "错误的配置": "network <IPV4> <IPV4> -> preference 20 200 200",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 618,
+      "错误行号": 21624,
+      "正确的配置": "preference 105 -> timer spf 1 50 50",
+      "错误的配置": "timer spf 1 50 50 -> preference 105",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 619,
+      "错误行号": 25094,
+      "正确的配置": "l2vpn-family evpn -> bestroute add-path path-number 16",
+      "错误的配置": "bestroute add-path path-number 16 -> l2vpn-family evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 620,
+      "错误行号": 31430,
+      "正确的配置": "bridge-domain <*> -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> bridge-domain <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 621,
+      "错误行号": 31766,
+      "正确的配置": "ipv6-family vpnv6 -> undo policy vpn-target",
+      "错误的配置": "undo policy vpn-target -> ipv6-family vpnv6",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 622,
+      "错误行号": 24114,
+      "正确的配置": "radius-server group <*> -> ipv6-pool <*>",
+      "错误的配置": "ipv6-pool <*> -> radius-server group <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 623,
+      "错误行号": 24307,
+      "正确的配置": "interface <*> -> mtu 9000",
+      "错误的配置": "mtu 9000 -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 624,
+      "错误行号": 25529,
+      "正确的配置": "isis peer hold-max-cost timer <*> -> undo dcn",
+      "错误的配置": "undo dcn -> isis peer hold-max-cost timer <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 625,
+      "错误行号": 34262,
+      "正确的配置": "ip address <IPV4> <IPV4> -> ipv6 address <*>",
+      "错误的配置": "ipv6 address <*> -> ip address <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 626,
+      "错误行号": 18493,
+      "正确的配置": "ip netstream inbound -> qos phb dscp disable",
+      "错误的配置": "qos phb dscp disable -> ip netstream inbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 627,
+      "错误行号": 4305,
+      "正确的配置": "mtu 9178 -> shutdown",
+      "错误的配置": "shutdown -> mtu 9178",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 628,
+      "错误行号": 38351,
+      "正确的配置": "trust upstream <*> -> isis circuit-type p2p",
+      "错误的配置": "isis circuit-type p2p -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 629,
+      "错误行号": 17823,
+      "正确的配置": "description <DESCRIPTION> -> eth-trunk <*>",
+      "错误的配置": "eth-trunk <*> -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 630,
+      "错误行号": 29548,
+      "正确的配置": "prefix-assign-mode unshared -> ip-pool <*>",
+      "错误的配置": "ip-pool <*> -> prefix-assign-mode unshared",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 631,
+      "错误行号": 19946,
+      "正确的配置": "isis ipv6 cost <*> -> isis cost <*>",
+      "错误的配置": "isis cost <*> -> isis ipv6 cost <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 632,
+      "错误行号": 24782,
+      "正确的配置": "info-center log-severity bymodule-alias ssh SSH_USER_LOGIN severity warning -> info-center loghost source LoopBack1",
+      "错误的配置": "info-center loghost source LoopBack1 -> info-center log-severity bymodule-alias ssh SSH_USER_LOGIN severity warning",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 633,
+      "错误行号": 4731,
+      "正确的配置": "interface <*> -> undo dcn",
+      "错误的配置": "undo dcn -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 634,
+      "错误行号": 34961,
+      "正确的配置": "acl ipv6 number 3162 -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> acl ipv6 number 3162",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 635,
+      "错误行号": 4355,
+      "正确的配置": "control-flap -> ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address <IPV4> <IPV4> -> control-flap",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 636,
+      "错误行号": 13170,
+      "正确的配置": "apply-label per-instance -> vpn-target <*> export-extcommunity evpn",
+      "错误的配置": "vpn-target <*> export-extcommunity evpn -> apply-label per-instance",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 637,
+      "错误行号": 26110,
+      "正确的配置": "te bandwidth max-reservable-bandwidth dynamic 100 -> port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queue be wfq weight 50 outbound -> te bandwidth max-reservable-bandwidth dynamic 100",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 638,
+      "错误行号": 5084,
+      "正确的配置": "peer <*> esad-route-compatible -> peer <*> route-update-interval 0",
+      "错误的配置": "peer <*> route-update-interval 0 -> peer <*> esad-route-compatible",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 639,
+      "错误行号": 1148,
+      "正确的配置": "ssh server-source all-interface -> undo ssh ipv6 server-source all-interface",
+      "错误的配置": "undo ssh ipv6 server-source all-interface -> ssh server-source all-interface",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 640,
+      "错误行号": 38682,
+      "正确的配置": "ip-pool <*> -> user-group <*>",
+      "错误的配置": "user-group <*> -> ip-pool <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 641,
+      "错误行号": 38555,
+      "正确的配置": "share-mode -> classifier <*> behavior <*> precedence <*>",
+      "错误的配置": "classifier <*> behavior <*> precedence <*> -> share-mode",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 642,
+      "错误行号": 26985,
+      "正确的配置": "isis cost <*> -> isis small-hello",
+      "错误的配置": "isis small-hello -> isis cost <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 643,
+      "错误行号": 41307,
+      "正确的配置": "ipv6 mtu 9000 -> trust upstream <*>",
+      "错误的配置": "trust upstream <*> -> ipv6 mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 644,
+      "错误行号": 5771,
+      "正确的配置": "isis 800 -> ipv6 netstream inbound",
+      "错误的配置": "ipv6 netstream inbound -> isis 800",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 645,
+      "错误行号": 5684,
+      "正确的配置": "carrier down-hold-time <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> carrier down-hold-time <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 646,
+      "错误行号": 816,
+      "正确的配置": "stelnet server enable -> ssh server compatible-ssh1x enable",
+      "错误的配置": "ssh server compatible-ssh1x enable -> stelnet server enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 647,
+      "错误行号": 2787,
+      "正确的配置": "peer <*> capability-advertise add-path both -> peer <*> advertise add-path path-number <*>",
+      "错误的配置": "peer <*> advertise add-path path-number <*> -> peer <*> capability-advertise add-path both",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 648,
+      "错误行号": 4603,
+      "正确的配置": "ssh server-source all-interface -> ssh authorization-type default <*>",
+      "错误的配置": "ssh authorization-type default <*> -> ssh server-source all-interface",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 649,
+      "错误行号": 15998,
+      "正确的配置": "ipv6 address <*> -> isis enable 800",
+      "错误的配置": "isis enable 800 -> ipv6 address <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 650,
+      "错误行号": 15027,
+      "正确的配置": "is-level level-2 -> cost-style wide",
+      "错误的配置": "cost-style wide -> is-level level-2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 651,
+      "错误行号": 8046,
+      "正确的配置": "isis circuit-type p2p -> isis peer hold-max-cost timer <*>",
+      "错误的配置": "isis peer hold-max-cost timer <*> -> isis circuit-type p2p",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 652,
+      "错误行号": 35054,
+      "正确的配置": "trust upstream <*> -> user-priority downstream <*>",
+      "错误的配置": "user-priority downstream <*> -> trust upstream <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 653,
+      "错误行号": 20078,
+      "正确的配置": "undo dcn mode vlan -> port-queue af1 wfq weight 25 outbound",
+      "错误的配置": "port-queue af1 wfq weight 25 outbound -> undo dcn mode vlan",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 654,
+      "错误行号": 33257,
+      "正确的配置": "route-distinguisher <*> -> vpn-target <*> export-extcommunity",
+      "错误的配置": "vpn-target <*> export-extcommunity -> route-distinguisher <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 655,
+      "错误行号": 5890,
+      "正确的配置": "mtu 9000 -> ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000 -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 656,
+      "错误行号": 38704,
+      "正确的配置": "ipv6 address auto link-local -> pim sm",
+      "错误的配置": "pim sm -> ipv6 address auto link-local",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 657,
+      "错误行号": 24201,
+      "正确的配置": "carrier down-hold-time <*> -> undo shutdown",
+      "错误的配置": "undo shutdown -> carrier down-hold-time <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 658,
+      "错误行号": 30926,
+      "正确的配置": "advertise l2vpn evpn -> segment-routing ipv6 locator <*> evpn",
+      "错误的配置": "segment-routing ipv6 locator <*> evpn -> advertise l2vpn evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 659,
+      "错误行号": 26780,
+      "正确的配置": "radius-server group <*> -> ip-warning-threshold 90",
+      "错误的配置": "ip-warning-threshold 90 -> radius-server group <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 660,
+      "错误行号": 37710,
+      "正确的配置": "carrier down-hold-time <*> -> description <DESCRIPTION>",
+      "错误的配置": "description <DESCRIPTION> -> carrier down-hold-time <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 661,
+      "错误行号": 29106,
+      "正确的配置": "isis cost <*> -> isis ldp-sync",
+      "错误的配置": "isis ldp-sync -> isis cost <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 662,
+      "错误行号": 34325,
+      "正确的配置": "bestroute add-path path-number 16 -> segment-routing ipv6 locator <*>",
+      "错误的配置": "segment-routing ipv6 locator <*> -> bestroute add-path path-number 16",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 663,
+      "错误行号": 40529,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound -> port-queue ef wfq weight 70 outbound",
+      "错误的配置": "port-queue ef wfq weight 70 outbound -> port-queue af2 wfq weight 25 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 664,
+      "错误行号": 4519,
+      "正确的配置": "ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30 frr-binding -> ipv6 metric-delay advertisement enable level-2",
+      "错误的配置": "ipv6 metric-delay advertisement enable level-2 -> ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30 frr-binding",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 665,
+      "错误行号": 4391,
+      "正确的配置": "maximum load-balancing <*> -> bestroute nexthop-priority ipv6",
+      "错误的配置": "bestroute nexthop-priority ipv6 -> maximum load-balancing <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 666,
+      "错误行号": 22828,
+      "正确的配置": "control-tunnel cusp-agent <*> -> protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误的配置": "protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW -> control-tunnel cusp-agent <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 667,
+      "错误行号": 27205,
+      "正确的配置": "description <DESCRIPTION> -> rewrite pop double",
+      "错误的配置": "rewrite pop double -> description <DESCRIPTION>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 668,
+      "错误行号": 12097,
+      "正确的配置": "interface <*> -> mode lacp-static",
+      "错误的配置": "mode lacp-static -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 669,
+      "错误行号": 329,
+      "正确的配置": "vpn-target <*> export-extcommunity evpn -> vpn-target <*> import-extcommunity evpn",
+      "错误的配置": "vpn-target <*> import-extcommunity evpn -> vpn-target <*> export-extcommunity evpn",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 670,
+      "错误行号": 24323,
+      "正确的配置": "port-queue af3 wfq weight 30 outbound -> port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound -> port-queue af3 wfq weight 30 outbound",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 671,
+      "错误行号": 25032,
+      "正确的配置": "ipv6 enable -> ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000 -> ipv6 enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 672,
+      "错误行号": 22244,
+      "正确的配置": "info-center log-severity bymodule-alias cli CMDRECORD severity warning -> info-center log-severity bymodule-alias cli LOGIN severity warning",
+      "错误的配置": "info-center log-severity bymodule-alias cli LOGIN severity warning -> info-center log-severity bymodule-alias cli CMDRECORD severity warning",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    }
+  ]
+}

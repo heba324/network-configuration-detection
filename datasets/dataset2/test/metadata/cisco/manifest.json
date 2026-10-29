@@ -1,0 +1,18 @@
+{
+  "vendor": "cisco",
+  "dataset": "test_dataset_2",
+  "实际模板占比": "15.20%",
+  "数据集调整占比": "16.00%",
+  "每种错误类型数量": 256,
+  "错误类型列表": [
+    "MISSING_STATEMENT",
+    "REDUNDANT_STATEMENT",
+    "SYNTAX_ERROR",
+    "PARAM_TYPE_MISMATCH",
+    "ORDER_DEPENDENCY_ERROR",
+    "DEPENDENCY_MISSING",
+    "POLICY_CONFLICT",
+    "RESOURCE_CONFLICT",
+    "SEMANTIC_INCONSISTENCY"
+  ]
+}

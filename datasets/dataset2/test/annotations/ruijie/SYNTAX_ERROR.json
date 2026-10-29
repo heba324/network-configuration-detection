@@ -1,0 +1,651 @@
+{
+  "vendor": "ruijie",
+  "dataset": "test_dataset_2",
+  "错误类型": "SYNTAX_ERROR",
+  "错误类型描述": "语法/拼写错误",
+  "实际模板占比": "6.25%",
+  "数据集调整占比": "5.00%",
+  "错误数量": 80,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 3607,
+      "正确的配置": "access-list <*> deny host <*>",
+      "错误的配置": "access-lits <*> deny host <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 1696,
+      "正确的配置": "permit tcp <*> <*> any eq <*>",
+      "错误的配置": "permt tcp <*> <*> any eq <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 1289,
+      "正确的配置": "ip access-group FW-POLICY-<*> in",
+      "错误的配置": "ip access-gropu FW-POLICY-<*> in",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 253,
+      "正确的配置": "ip dhcp snooping",
+      "错误的配置": "ip dhpc snooping",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 4057,
+      "正确的配置": "spanning-tree portfast",
+      "错误的配置": "spanning-tree portfast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 3462,
+      "正确的配置": "snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv des PrivPass123",
+      "错误的配置": "snmp-servre user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv des PrivPass123",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 2426,
+      "正确的配置": "class CMAP-<*>",
+      "错误的配置": "class CMAP-<*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 3398,
+      "正确的配置": "set community <*>:<*> additive",
+      "错误的配置": "set comunity <*>:<*> additive",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 4052,
+      "正确的配置": "switchport port-security maximum <*>",
+      "错误的配置": "switchpotr port-security maximum <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 3881,
+      "正确的配置": "snmp-server enable traps snmp",
+      "错误的配置": "snmp-server enble traps snmp",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 2691,
+      "正确的配置": "default-information originate metric <*>",
+      "错误的配置": "default-information originate metrc <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 3917,
+      "正确的配置": "exit",
+      "错误的配置": "exti",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 2051,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefx-list IN-FILTER-<*> in",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 2070,
+      "正确的配置": "class-map match-any CMAP-<*>",
+      "错误的配置": "class-mpa match-any CMAP-<*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 2617,
+      "正确的配置": "snmp-server enable traps config",
+      "错误的配置": "snmp-server enble traps config",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 4214,
+      "正确的配置": "ip pim rp-address <*> RP-ACL-<*>",
+      "错误的配置": "ip pim rp-adress <*> RP-ACL-<*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 1637,
+      "正确的配置": "permit ip any any",
+      "错误的配置": "permt ip any any",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 973,
+      "正确的配置": "line vty <*> <*>",
+      "错误的配置": "lien vty <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 312,
+      "正确的配置": "class CMAP-<*>",
+      "错误的配置": "class CMAP-<*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 4083,
+      "正确的配置": "access-list <*> permit host <*>",
+      "错误的配置": "access-list <*> permt host <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 1241,
+      "正确的配置": "switchport port-security violation protect",
+      "错误的配置": "switchpotr port-security violation protect",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 16,
+      "正确的配置": "match ip dscp af41",
+      "错误的配置": "mathc ip dscp af41",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 2491,
+      "正确的配置": "snmp-server group SecureGroup-<*> v3 priv",
+      "错误的配置": "snmp-servre group SecureGroup-<*> v3 priv",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 854,
+      "正确的配置": "passive-interface Vlan <*>",
+      "错误的配置": "pasive-interface Vlan <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 2,
+      "正确的配置": "address-family ipv4",
+      "错误的配置": "adress-family ipv4",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 2897,
+      "正确的配置": "neighbor IBGP-PEERS-<*> update-source Loopback <*>",
+      "错误的配置": "neighbro IBGP-PEERS-<*> update-source Loopback <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 2099,
+      "正确的配置": "switchport port-security violation protect",
+      "错误的配置": "switchpotr port-security violation protect",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 179,
+      "正确的配置": "router bgp <*>",
+      "错误的配置": "routr bgp <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 2697,
+      "正确的配置": "passive-interface Vlan <*>",
+      "错误的配置": "passive-interfce Vlan <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 243,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefx-list IN-FILTER-<*> in",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 1770,
+      "正确的配置": "deny ip <*> <*> any",
+      "错误的配置": "deyn ip <*> <*> any",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 1111,
+      "正确的配置": "ip access-list extended FW-POLICY-<*>",
+      "错误的配置": "ip access-lits extended FW-POLICY-<*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 4042,
+      "正确的配置": "deny icmp <*> <*> any",
+      "错误的配置": "deyn icmp <*> <*> any",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 4195,
+      "正确的配置": "line vty <*> <*>",
+      "错误的配置": "lien vty <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 1072,
+      "正确的配置": "match ip address prefix-list CRITICAL-PREFIX-<*>",
+      "错误的配置": "match ip address prefx-list CRITICAL-PREFIX-<*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 1700,
+      "正确的配置": "ip access-group FW-POLICY-<*> out",
+      "错误的配置": "ip access-gropu FW-POLICY-<*> out",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 247,
+      "正确的配置": "ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>",
+      "错误的配置": "ip prefix-list OUT-FILTER-<*> seq <*> permt <*>/<*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 581,
+      "正确的配置": "neighbor <*> route-map ISP-OUT-<*> out",
+      "错误的配置": "neighbro <*> route-map ISP-OUT-<*> out",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 2190,
+      "正确的配置": "set ip precedence <*>",
+      "错误的配置": "set ip precedenec <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 4279,
+      "正确的配置": "neighbor <*> prefix-list OUT-FILTER-<*> out",
+      "错误的配置": "neighbor <*> prefx-list OUT-FILTER-<*> out",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 847,
+      "正确的配置": "log-adjacency-changes detail",
+      "错误的配置": "log-adjacency-changse detail",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 4104,
+      "正确的配置": "access-list <*> deny <*> <*>",
+      "错误的配置": "access-lits <*> deny <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 550,
+      "正确的配置": "ip dhcp snooping trust",
+      "错误的配置": "ip dhpc snooping trust",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 3253,
+      "正确的配置": "network <*> <*> area <*>",
+      "错误的配置": "netwrk <*> <*> area <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 1508,
+      "正确的配置": "router isis <*>",
+      "错误的配置": "routr isis <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 1908,
+      "正确的配置": "deny icmp <*> <*> any",
+      "错误的配置": "deyn icmp <*> <*> any",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 2121,
+      "正确的配置": "switchport port-security violation protect",
+      "错误的配置": "switchpotr port-security violation protect",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 3786,
+      "正确的配置": "exit",
+      "错误的配置": "exti",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 3265,
+      "正确的配置": "ip community-list expanded COM-LIST-<*> permit _787321999:.*",
+      "错误的配置": "ip community-list expanded COM-LIST-<*> permt _787321999:.*",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 739,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误的配置": "ip prefx-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 1901,
+      "正确的配置": "interface Vlan <*>",
+      "错误的配置": "interfce Vlan <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 311,
+      "正确的配置": "set ip dscp ef",
+      "错误的配置": "set ip dspc ef",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 2212,
+      "正确的配置": "switchport mode access",
+      "错误的配置": "switchpotr mode access",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 3364,
+      "正确的配置": "exit-address-family",
+      "错误的配置": "exit-adress-family",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 4207,
+      "正确的配置": "set ip dscp ef",
+      "错误的配置": "set ip dspc ef",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 4124,
+      "正确的配置": "network <*>",
+      "错误的配置": "netwrk <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 3520,
+      "正确的配置": "permit tcp <*> <*> any eq <*>",
+      "错误的配置": "permt tcp <*> <*> any eq <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 893,
+      "正确的配置": "interface Vlan <*>",
+      "错误的配置": "interfce Vlan <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 1937,
+      "正确的配置": "snmp-server host <*> traps version <*> priv SnmpUser-<*>",
+      "错误的配置": "snmp-servre host <*> traps version <*> priv SnmpUser-<*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 845,
+      "正确的配置": "router ospf <*>",
+      "错误的配置": "routr ospf <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 2653,
+      "正确的配置": "interface GigabitEthernet <*>",
+      "错误的配置": "interfce GigabitEthernet <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 657,
+      "正确的配置": "router bgp <*>",
+      "错误的配置": "routr bgp <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 1315,
+      "正确的配置": "neighbor <*> activate",
+      "错误的配置": "neighbro <*> activate",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 1448,
+      "正确的配置": "exit",
+      "错误的配置": "exti",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 3660,
+      "正确的配置": "match ip address prefix-list CRITICAL-PREFIX-<*>",
+      "错误的配置": "match ip address prefx-list CRITICAL-PREFIX-<*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 2701,
+      "正确的配置": "ip dhcp snooping vlan <*>,<*>",
+      "错误的配置": "ip dhpc snooping vlan <*>,<*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 3016,
+      "正确的配置": "passive-interface Vlan <*>",
+      "错误的配置": "passive-interfce Vlan <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 2461,
+      "正确的配置": "no cdp enable",
+      "错误的配置": "no cdp enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 2582,
+      "正确的配置": "neighbor <*> update-source Loopback <*>",
+      "错误的配置": "neighbro <*> update-source Loopback <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 2124,
+      "正确的配置": "no cdp enable",
+      "错误的配置": "no cdp enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 3193,
+      "正确的配置": "router-id <*>",
+      "错误的配置": "routr-id <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 2034,
+      "正确的配置": "interface Vlan <*>",
+      "错误的配置": "interfce Vlan <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 3901,
+      "正确的配置": "exit",
+      "错误的配置": "exti",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 2054,
+      "正确的配置": "exit",
+      "错误的配置": "exti",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 882,
+      "正确的配置": "snmp-server enable traps snmp",
+      "错误的配置": "snmp-server enble traps snmp",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 2455,
+      "正确的配置": "switchport mode access",
+      "错误的配置": "switchpotr mode access",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 3275,
+      "正确的配置": "network <*> <*> area <*>",
+      "错误的配置": "netwrk <*> <*> area <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 3343,
+      "正确的配置": "snmp-server contact NetAdmin-<*>",
+      "错误的配置": "snmp-servre contact NetAdmin-<*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 822,
+      "正确的配置": "neighbor IBGP-PEERS-<*> activate",
+      "错误的配置": "neighbro IBGP-PEERS-<*> activate",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 3119,
+      "正确的配置": "snmp-server enable traps vrrp",
+      "错误的配置": "snmp-server enble traps vrrp",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    }
+  ]
+}

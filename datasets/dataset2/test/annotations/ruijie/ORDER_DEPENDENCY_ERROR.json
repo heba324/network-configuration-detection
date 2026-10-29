@@ -1,0 +1,651 @@
+{
+  "vendor": "ruijie",
+  "dataset": "test_dataset_2",
+  "错误类型": "ORDER_DEPENDENCY_ERROR",
+  "错误类型描述": "配置语句顺序依赖错误",
+  "实际模板占比": "6.25%",
+  "数据集调整占比": "5.00%",
+  "错误数量": 80,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 3009,
+      "正确的配置": "router ospf <*> -> auto-cost reference-bandwidth <*>",
+      "错误的配置": "auto-cost reference-bandwidth <*> -> router ospf <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 3559,
+      "正确的配置": "ip access-list extended PBR-ACL-<*> -> permit tcp any any eq <*>",
+      "错误的配置": "permit tcp any any eq <*> -> ip access-list extended PBR-ACL-<*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 275,
+      "正确的配置": "deny tcp <*> <*> any eq <*> -> deny udp <*> <*> any eq <*>",
+      "错误的配置": "deny udp <*> <*> any eq <*> -> deny tcp <*> <*> any eq <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 1906,
+      "正确的配置": "permit ip <*> <*> any -> deny udp <*> <*> any eq <*>",
+      "错误的配置": "deny udp <*> <*> any eq <*> -> permit ip <*> <*> any",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 3888,
+      "正确的配置": "permit ip any any -> exit",
+      "错误的配置": "exit -> permit ip any any",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 266,
+      "正确的配置": "metric-style wide -> interface GigabitEthernet <*>",
+      "错误的配置": "interface GigabitEthernet <*> -> metric-style wide",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 1416,
+      "正确的配置": "neighbor <*> send-community both -> exit",
+      "错误的配置": "exit -> neighbor <*> send-community both",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 3632,
+      "正确的配置": "ip community-list expanded COM-LIST-<*> permit _4111020668:.* -> route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> permit <*> -> ip community-list expanded COM-LIST-<*> permit _4111020668:.*",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 3817,
+      "正确的配置": "dns-server <*> <*> -> lease <*> <*> <*>",
+      "错误的配置": "lease <*> <*> <*> -> dns-server <*> <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 3284,
+      "正确的配置": "router-id <*> -> auto-cost reference-bandwidth <*>",
+      "错误的配置": "auto-cost reference-bandwidth <*> -> router-id <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 806,
+      "正确的配置": "exit-address-family -> route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> permit <*> -> exit-address-family",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 1325,
+      "正确的配置": "ip community-list expanded COM-LIST-<*> permit _3335036145:.* -> route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> permit <*> -> ip community-list expanded COM-LIST-<*> permit _3335036145:.*",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 2278,
+      "正确的配置": "router ospf <*> -> default-information originate metric <*>",
+      "错误的配置": "default-information originate metric <*> -> router ospf <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 4018,
+      "正确的配置": "neighbor <*> send-community standard -> exit",
+      "错误的配置": "exit -> neighbor <*> send-community standard",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 4291,
+      "正确的配置": "key <*> <*>-<*> -> aaa group server tacacs+ TAC-GROUP-<*>",
+      "错误的配置": "aaa group server tacacs+ TAC-GROUP-<*> -> key <*> <*>-<*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 1864,
+      "正确的配置": "address ipv4 <*> -> key <*> <*>-<*>",
+      "错误的配置": "key <*> <*>-<*> -> address ipv4 <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 3139,
+      "正确的配置": "switchport port-security maximum <*> -> spanning-tree portfast",
+      "错误的配置": "spanning-tree portfast -> switchport port-security maximum <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 3222,
+      "正确的配置": "ip community-list standard COM-LIST-<*> permit <*>:<*> -> set community <*>:<*> additive",
+      "错误的配置": "set community <*>:<*> additive -> ip community-list standard COM-LIST-<*> permit <*>:<*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 3780,
+      "正确的配置": "ip access-list extended FW-POLICY-<*> -> deny ip <*> <*> any",
+      "错误的配置": "deny ip <*> <*> any -> ip access-list extended FW-POLICY-<*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 3204,
+      "正确的配置": "router ospf <*> -> default-information originate metric <*>",
+      "错误的配置": "default-information originate metric <*> -> router ospf <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 3614,
+      "正确的配置": "router-id <*> -> auto-cost reference-bandwidth <*>",
+      "错误的配置": "auto-cost reference-bandwidth <*> -> router-id <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 3765,
+      "正确的配置": "interface range GigabitEthernet <*> -> no shutdown",
+      "错误的配置": "no shutdown -> interface range GigabitEthernet <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 3529,
+      "正确的配置": "address-family ipv4 -> neighbor <*> prefix-list OUT-FILTER-<*> out",
+      "错误的配置": "neighbor <*> prefix-list OUT-FILTER-<*> out -> address-family ipv4",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 508,
+      "正确的配置": "neighbor <*> password <*> <*> -> neighbor <*> route-map ISP-IN-<*> in",
+      "错误的配置": "neighbor <*> route-map ISP-IN-<*> in -> neighbor <*> password <*> <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 2309,
+      "正确的配置": "exit -> interface Vlan <*>",
+      "错误的配置": "interface Vlan <*> -> exit",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 1914,
+      "正确的配置": "router bgp <*> -> address-family ipv4",
+      "错误的配置": "address-family ipv4 -> router bgp <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 1035,
+      "正确的配置": "auto-cost reference-bandwidth <*> -> max-lsa <*>",
+      "错误的配置": "max-lsa <*> -> auto-cost reference-bandwidth <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 3893,
+      "正确的配置": "router bgp <*> -> neighbor <*> route-map SET-ATTRIBUTES-<*> in",
+      "错误的配置": "neighbor <*> route-map SET-ATTRIBUTES-<*> in -> router bgp <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 168,
+      "正确的配置": "max-lsa <*> -> default-information originate metric <*>",
+      "错误的配置": "default-information originate metric <*> -> max-lsa <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 670,
+      "正确的配置": "snmp-server contact NetAdmin-<*> -> snmp-server host <*> traps version <*> priv SnmpUser-<*>",
+      "错误的配置": "snmp-server host <*> traps version <*> priv SnmpUser-<*> -> snmp-server contact NetAdmin-<*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 876,
+      "正确的配置": "snmp-server group SecureGroup-<*> v3 priv -> snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv des PrivPass123",
+      "错误的配置": "snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv des PrivPass123 -> snmp-server group SecureGroup-<*> v3 priv",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 1727,
+      "正确的配置": "exit -> ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>",
+      "错误的配置": "ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*> -> exit",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 1607,
+      "正确的配置": "interface GigabitEthernet <*> -> isis metric <*>",
+      "错误的配置": "isis metric <*> -> interface GigabitEthernet <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 1842,
+      "正确的配置": "snmp-server contact NetAdmin-<*> -> snmp-server enable traps snmp",
+      "错误的配置": "snmp-server enable traps snmp -> snmp-server contact NetAdmin-<*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 294,
+      "正确的配置": "interface GigabitEthernet <*> -> switchport port-security",
+      "错误的配置": "switchport port-security -> interface GigabitEthernet <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 1897,
+      "正确的配置": "route-map PBR-MAP-<*> permit <*> -> match ip address PBR-ACL-<*>",
+      "错误的配置": "match ip address PBR-ACL-<*> -> route-map PBR-MAP-<*> permit <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 3346,
+      "正确的配置": "snmp-server enable traps config -> snmp-server enable traps vrrp",
+      "错误的配置": "snmp-server enable traps vrrp -> snmp-server enable traps config",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 379,
+      "正确的配置": "snmp-server host <*> traps version <*> priv SnmpUser-<*> -> snmp-server enable traps snmp",
+      "错误的配置": "snmp-server enable traps snmp -> snmp-server host <*> traps version <*> priv SnmpUser-<*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 1010,
+      "正确的配置": "snmp-server group SecureGroup-<*> v3 priv -> snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv aes <*> PrivPass123",
+      "错误的配置": "snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv aes <*> PrivPass123 -> snmp-server group SecureGroup-<*> v3 priv",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 380,
+      "正确的配置": "snmp-server enable traps config -> snmp-server enable traps bgp",
+      "错误的配置": "snmp-server enable traps bgp -> snmp-server enable traps config",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 669,
+      "正确的配置": "snmp-server location DataCenter-<*>-Rack-<*> -> snmp-server enable traps vrrp",
+      "错误的配置": "snmp-server enable traps vrrp -> snmp-server location DataCenter-<*>-Rack-<*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 3298,
+      "正确的配置": "snmp-server location DataCenter-<*>-Rack-<*> -> snmp-server contact NetAdmin-<*>",
+      "错误的配置": "snmp-server contact NetAdmin-<*> -> snmp-server location DataCenter-<*>-Rack-<*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 1562,
+      "正确的配置": "log-adjacency-changes -> exit",
+      "错误的配置": "exit -> log-adjacency-changes",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 2950,
+      "正确的配置": "neighbor IBGP-PEERS-<*> send-community both -> exit-address-family",
+      "错误的配置": "exit-address-family -> neighbor IBGP-PEERS-<*> send-community both",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 1785,
+      "正确的配置": "exit -> ip access-group FW-POLICY-<*> in",
+      "错误的配置": "ip access-group FW-POLICY-<*> in -> exit",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 1048,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in -> exit-address-family",
+      "错误的配置": "exit-address-family -> neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 199,
+      "正确的配置": "ip nat inside source list <*> interface GigabitEthernet <*> overload -> ip nat pool NAT-POOL-<*> <*> <*> netmask <*>",
+      "错误的配置": "ip nat pool NAT-POOL-<*> <*> <*> netmask <*> -> ip nat inside source list <*> interface GigabitEthernet <*> overload",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 3468,
+      "正确的配置": "snmp-server enable traps config -> snmp-server enable traps vrrp",
+      "错误的配置": "snmp-server enable traps vrrp -> snmp-server enable traps config",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 1647,
+      "正确的配置": "set ip dscp ef -> set ip precedence <*>",
+      "错误的配置": "set ip precedence <*> -> set ip dscp ef",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 1612,
+      "正确的配置": "neighbor IBGP-PEERS-<*> peer-group -> neighbor IBGP-PEERS-<*> update-source Loopback <*>",
+      "错误的配置": "neighbor IBGP-PEERS-<*> update-source Loopback <*> -> neighbor IBGP-PEERS-<*> peer-group",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 807,
+      "正确的配置": "exit -> ip community-list expanded COM-LIST-<*> permit _2156565018:.*",
+      "错误的配置": "ip community-list expanded COM-LIST-<*> permit _2156565018:.* -> exit",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 4236,
+      "正确的配置": "neighbor IBGP-PEERS-<*> activate -> exit-address-family",
+      "错误的配置": "exit-address-family -> neighbor IBGP-PEERS-<*> activate",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 1576,
+      "正确的配置": "set ip dscp af41 -> set ip dscp ef",
+      "错误的配置": "set ip dscp ef -> set ip dscp af41",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 4259,
+      "正确的配置": "bgp router-id <*> -> address-family ipv4",
+      "错误的配置": "address-family ipv4 -> bgp router-id <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 2183,
+      "正确的配置": "class-map match-any CMAP-<*> -> exit",
+      "错误的配置": "exit -> class-map match-any CMAP-<*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 1916,
+      "正确的配置": "neighbor <*> send-community extended -> ip community-list expanded COM-LIST-<*> permit _2389351864:.*",
+      "错误的配置": "ip community-list expanded COM-LIST-<*> permit _2389351864:.* -> neighbor <*> send-community extended",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 3301,
+      "正确的配置": "snmp-server enable traps config -> snmp-server enable traps vrrp",
+      "错误的配置": "snmp-server enable traps vrrp -> snmp-server enable traps config",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 2097,
+      "正确的配置": "switchport port-security -> switchport port-security violation protect",
+      "错误的配置": "switchport port-security violation protect -> switchport port-security",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 3553,
+      "正确的配置": "access-list <*> deny host <*> -> access-class <*> in",
+      "错误的配置": "access-class <*> in -> access-list <*> deny host <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 1735,
+      "正确的配置": "log-adjacency-changes detail -> default-information originate metric <*>",
+      "错误的配置": "default-information originate metric <*> -> log-adjacency-changes detail",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 2194,
+      "正确的配置": "neighbor <*> send-community extended -> exit-address-family",
+      "错误的配置": "exit-address-family -> neighbor <*> send-community extended",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 1123,
+      "正确的配置": "neighbor <*> send-community standard -> ip community-list expanded COM-LIST-<*> permit _1023684083:.*",
+      "错误的配置": "ip community-list expanded COM-LIST-<*> permit _1023684083:.* -> neighbor <*> send-community standard",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 3218,
+      "正确的配置": "address-family ipv4 -> exit-address-family",
+      "错误的配置": "exit-address-family -> address-family ipv4",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 3554,
+      "正确的配置": "access-list <*> deny any log -> transport input ssh",
+      "错误的配置": "transport input ssh -> access-list <*> deny any log",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 3575,
+      "正确的配置": "set as-path prepend <*> <*> -> set metric <*>",
+      "错误的配置": "set metric <*> -> set as-path prepend <*> <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 1620,
+      "正确的配置": "neighbor IBGP-PEERS-<*> send-community both -> exit-address-family",
+      "错误的配置": "exit-address-family -> neighbor IBGP-PEERS-<*> send-community both",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 797,
+      "正确的配置": "switchport port-security maximum <*> -> switchport port-security violation shutdown",
+      "错误的配置": "switchport port-security violation shutdown -> switchport port-security maximum <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 227,
+      "正确的配置": "router ospf <*> -> auto-cost reference-bandwidth <*>",
+      "错误的配置": "auto-cost reference-bandwidth <*> -> router ospf <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 512,
+      "正确的配置": "neighbor <*> route-map ISP-OUT-<*> out -> exit-address-family",
+      "错误的配置": "exit-address-family -> neighbor <*> route-map ISP-OUT-<*> out",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 3316,
+      "正确的配置": "default-information originate metric <*> -> max-lsa <*>",
+      "错误的配置": "max-lsa <*> -> default-information originate metric <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 4071,
+      "正确的配置": "ip access-list extended FW-POLICY-<*> -> permit tcp <*> <*> any eq <*>",
+      "错误的配置": "permit tcp <*> <*> any eq <*> -> ip access-list extended FW-POLICY-<*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 1012,
+      "正确的配置": "snmp-server location DataCenter-<*>-Rack-<*> -> snmp-server enable traps vrrp",
+      "错误的配置": "snmp-server enable traps vrrp -> snmp-server location DataCenter-<*>-Rack-<*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 3690,
+      "正确的配置": "permit ip any any -> exit",
+      "错误的配置": "exit -> permit ip any any",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 2491,
+      "正确的配置": "snmp-server group SecureGroup-<*> v3 priv -> snmp-server location DataCenter-<*>-Rack-<*>",
+      "错误的配置": "snmp-server location DataCenter-<*>-Rack-<*> -> snmp-server group SecureGroup-<*> v3 priv",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 2051,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in -> exit-address-family",
+      "错误的配置": "exit-address-family -> neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 76,
+      "正确的配置": "auto-cost reference-bandwidth <*> -> max-lsa <*>",
+      "错误的配置": "max-lsa <*> -> auto-cost reference-bandwidth <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 799,
+      "正确的配置": "switchport port-security mac-address sticky -> switchport port-security mac-address sticky <*>",
+      "错误的配置": "switchport port-security mac-address sticky <*> -> switchport port-security mac-address sticky",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 4299,
+      "正确的配置": "ip access-list extended FW-POLICY-<*> -> permit tcp <*> <*> any eq <*>",
+      "错误的配置": "permit tcp <*> <*> any eq <*> -> ip access-list extended FW-POLICY-<*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 3743,
+      "正确的配置": "log-adjacency-changes -> exit",
+      "错误的配置": "exit -> log-adjacency-changes",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 2620,
+      "正确的配置": "address-family ipv4 -> neighbor <*> send-community both",
+      "错误的配置": "neighbor <*> send-community both -> address-family ipv4",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    }
+  ]
+}

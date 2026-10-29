@@ -1,0 +1,5387 @@
+{
+  "vendor": "hw",
+  "dataset": "test_dataset_2",
+  "错误类型": "SYNTAX_ERROR",
+  "错误类型描述": "语法/拼写错误",
+  "实际模板占比": "38.91%",
+  "数据集调整占比": "42.00%",
+  "错误数量": 672,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 25685,
+      "正确的配置": "trust 8021p",
+      "错误的配置": "truts 8021p",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 8025,
+      "正确的配置": "e-trunk <*>",
+      "错误的配置": "e-trukn <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 19411,
+      "正确的配置": "preference 20 200 200",
+      "错误的配置": "preferenec 20 200 200",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 39977,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 15721,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 29966,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permt <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 39074,
+      "正确的配置": "ip route-static <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static <IPV4> <IPV4> <*> <IPV4> bfd enble description <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 38767,
+      "正确的配置": "undo dcn",
+      "错误的配置": "unod dcn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 1894,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 42383,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 18621,
+      "正确的配置": "default-route-advertise",
+      "错误的配置": "default-route-adverties",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 2071,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 12549,
+      "正确的配置": "segment-routing ipv6 locator <*> auto-sid-disable",
+      "错误的配置": "segment-routign ipv6 locator <*> auto-sid-disable",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 19025,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 21559,
+      "正确的配置": "isis circuit-level level-2",
+      "错误的配置": "issi circuit-level level-2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 23690,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 24494,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-usre <*> state block fail-times 3 interval 5",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 433,
+      "正确的配置": "vpn frr",
+      "错误的配置": "vpn frrx",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 12623,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 9943,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-usre <*> state block fail-times 3 interval 5",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 39457,
+      "正确的配置": "maximum load-balancing <*>",
+      "错误的配置": "maximmu load-balancing <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 27986,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 4918,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 9851,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 2183,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 6434,
+      "正确的配置": "peer <*> connect-interface <*>",
+      "错误的配置": "peer <*> connect-interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 36920,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 14948,
+      "正确的配置": "port-queue af1 wfq weight 25 outbound",
+      "错误的配置": "port-queeu af1 wfq weight 25 outbound",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 26288,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 29332,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 31681,
+      "正确的配置": "ssh user <*> service-type <*>",
+      "错误的配置": "ssh user <*> servce-type <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 23760,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 10904,
+      "正确的配置": "group <*> <*>",
+      "错误的配置": "gropu <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 25855,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-adress <IPV4> <*> destination user-group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 21749,
+      "正确的配置": "local-user <*> level <*>",
+      "错误的配置": "local-usre <*> level <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 22617,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefx-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 39547,
+      "正确的配置": "bridge-domain <*>",
+      "错误的配置": "bridge-domani <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 41489,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enble 800",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 5988,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 3698,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 10785,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 10905,
+      "正确的配置": "peer <*> connect-interface <*>",
+      "错误的配置": "peer <*> connect-interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 3512,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefx-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 5747,
+      "正确的配置": "import-route <*> route-policy <*>",
+      "错误的配置": "import-rouet <*> route-policy <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 18948,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 30927,
+      "正确的配置": "segment-routing ipv6 locator <*> evpn",
+      "错误的配置": "segment-routign ipv6 locator <*> evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 29611,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip adress <IPV4> <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 33890,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 42249,
+      "正确的配置": "trust upstream <*>",
+      "错误的配置": "truts upstream <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 30847,
+      "正确的配置": "subnet warning-threshold <*>",
+      "错误的配置": "subnte warning-threshold <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 28936,
+      "正确的配置": "vlan-extend redirect enable",
+      "错误的配置": "vlan-extend redirect enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 19018,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 14980,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "pere <*> route-policy <*> export",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 35726,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 7950,
+      "正确的配置": "ssh user <*>",
+      "错误的配置": "ssh usre <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 24058,
+      "正确的配置": "carrier up-hold-time <*>",
+      "错误的配置": "carrer up-hold-time <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 30018,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-adress <IPV4> <*> destination user-group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 7738,
+      "正确的配置": "encapsulation source-address <IPV6>",
+      "错误的配置": "encapsulation source-adress <IPV6>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 19724,
+      "正确的配置": "ntp-service unicast-server <IPV4> vpn-instance CTVPN193-JS",
+      "错误的配置": "ntp-servce unicast-server <IPV4> vpn-instance CTVPN193-JS",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 41266,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 33953,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 36688,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 21519,
+      "正确的配置": "return",
+      "错误的配置": "retunr",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 3220,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 15327,
+      "正确的配置": "mpls",
+      "错误的配置": "mpsl",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 27605,
+      "正确的配置": "user-vlan <*> <*> qinq <*>",
+      "错误的配置": "user-vlna <*> <*> qinq <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 41711,
+      "正确的配置": "peer <*> tracking delay 30",
+      "错误的配置": "pere <*> tracking delay 30",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 3855,
+      "正确的配置": "user-vlan <*> <*> qinq <*>",
+      "错误的配置": "user-vlna <*> <*> qinq <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 548,
+      "正确的配置": "ssh user <*>",
+      "错误的配置": "ssh usre <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 14202,
+      "正确的配置": "user-vlan <*> <*> qinq <*> <*>",
+      "错误的配置": "user-vlna <*> <*> qinq <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 21004,
+      "正确的配置": "srv6-te policy <*> endpoint <IPV6> color <*>",
+      "错误的配置": "srv6-et policy <*> endpoint <IPV6> color <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 14685,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 9547,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 17756,
+      "正确的配置": "vpn-target <*> import-extcommunity",
+      "错误的配置": "vpn-targte <*> import-extcommunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 20179,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis enble 800",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 22871,
+      "正确的配置": "web-auth-server source interface <*>",
+      "错误的配置": "web-auth-server source interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 8401,
+      "正确的配置": "cu-mode",
+      "错误的配置": "cu-moed",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 551,
+      "正确的配置": "ssh user <*>",
+      "错误的配置": "ssh usre <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 34689,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 30067,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-adress <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 12210,
+      "正确的配置": "peer <*> advertise-large-community",
+      "错误的配置": "peer <*> advertise-large-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 9020,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 26551,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 37058,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 16002,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enble 800",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 34892,
+      "正确的配置": "sftp server enable",
+      "错误的配置": "sftp server enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 38913,
+      "正确的配置": "subscription <*>",
+      "错误的配置": "subscriptino <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 24722,
+      "正确的配置": "carrier down-hold-time <*>",
+      "错误的配置": "carrer down-hold-time <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 5083,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 27740,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "ruel <*> deny",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 2994,
+      "正确的配置": "qos-profile <*> outbound pe-vid <*> ce-vid <*> identifier none",
+      "错误的配置": "qos-profiel <*> outbound pe-vid <*> ce-vid <*> identifier none",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 30460,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 1349,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 32089,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 5478,
+      "正确的配置": "vrrp6 vrid <*> virtual-ip <IPV6> link-local",
+      "错误的配置": "vrr6p vrid <*> virtual-ip <IPV6> link-local",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 21851,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 40085,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 29977,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-adress <IPV4> <*> destination user-group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 39931,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 28236,
+      "正确的配置": "backup track monitor-location-group cgn",
+      "错误的配置": "backpu track monitor-location-group cgn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 29189,
+      "正确的配置": "aaa",
+      "错误的配置": "aaax",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 20183,
+      "正确的配置": "isis ipv6 cost <*>",
+      "错误的配置": "issi ipv6 cost <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 8045,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enble 800",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 28282,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 1504,
+      "正确的配置": "prefix <*> subnet length <*>",
+      "错误的配置": "prefx <*> subnet length <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 22643,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 11928,
+      "正确的配置": "ipv6 frr",
+      "错误的配置": "ip6v frr",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 32111,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 25279,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "undo shutdwn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 6196,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 30492,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 7403,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 16922,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 30421,
+      "正确的配置": "clock synchronization enable",
+      "错误的配置": "clock synchronization enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 40976,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 27964,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 36487,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 5538,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 27642,
+      "正确的配置": "te link administrative group <*>",
+      "错误的配置": "te likn administrative group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 21654,
+      "正确的配置": "service-location 6",
+      "错误的配置": "servce-location 6",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 23670,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 15401,
+      "正确的配置": "undo telnet server enable",
+      "错误的配置": "undo telnet server enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 23234,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 11657,
+      "正确的配置": "group <*> <*>",
+      "错误的配置": "gropu <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 5370,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 35604,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 7964,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "undo shutdwn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 36928,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 35569,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 13466,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 24375,
+      "正确的配置": "set-overload on-startup send-sa-bit 120",
+      "错误的配置": "set-overloda on-startup send-sa-bit 120",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 24499,
+      "正确的配置": "local-user <*> level <*>",
+      "错误的配置": "local-usre <*> level <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 10268,
+      "正确的配置": "group <*> <*>",
+      "错误的配置": "gropu <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 16443,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 7203,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 10178,
+      "正确的配置": "local-user <*> level <*>",
+      "错误的配置": "local-usre <*> level <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 17792,
+      "正确的配置": "ipv6-family vpn-instance <*>",
+      "错误的配置": "ipv6-famiyl vpn-instance <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 13706,
+      "正确的配置": "segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routign ipv6 traffic-engineer best-effort evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 12045,
+      "正确的配置": "ip-warning-threshold 95",
+      "错误的配置": "ip-warning-threshodl 95",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 41931,
+      "正确的配置": "ssh user <*>",
+      "错误的配置": "ssh usre <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 10607,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 5303,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 12313,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 34464,
+      "正确的配置": "netconf-client enable",
+      "错误的配置": "netconf-client enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 32364,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 39268,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcoed <IPV6> end-op",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 40332,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 31345,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permt <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 39322,
+      "正确的配置": "maximum load-balancing <*>",
+      "错误的配置": "maximmu load-balancing <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 22540,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 22053,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 10482,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 30692,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 4826,
+      "正确的配置": "bestroute add-path path-number 16",
+      "错误的配置": "bestrouet add-path path-number 16",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 32716,
+      "正确的配置": "ipv6 address <*>",
+      "错误的配置": "ipv6 adress <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 30860,
+      "正确的配置": "lsa-originate-interval intelligent-timer 500 50 100",
+      "错误的配置": "lsa-originate-intervla intelligent-timer 500 50 100",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 21107,
+      "正确的配置": "maximum load-balancing <*>",
+      "错误的配置": "maximmu load-balancing <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 19122,
+      "正确的配置": "peer <*> advertise arp",
+      "错误的配置": "pere <*> advertise arp",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 41143,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 3953,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 24562,
+      "正确的配置": "local-user <*> level <*>",
+      "错误的配置": "local-usre <*> level <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 35392,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 9000x",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 5227,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefx-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 164,
+      "错误行号": 21663,
+      "正确的配置": "bestroute add-path path-number 16",
+      "错误的配置": "bestrouet add-path path-number 16",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 165,
+      "错误行号": 32219,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 166,
+      "错误行号": 31558,
+      "正确的配置": "accounting-scheme <*>",
+      "错误的配置": "accounting-scheem <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 167,
+      "错误行号": 2649,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 168,
+      "错误行号": 4003,
+      "正确的配置": "encapsulation qinq-termination",
+      "错误的配置": "encapslation qinq-termination",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 25769,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permt ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 20004,
+      "正确的配置": "info-center log-severity bymodule-alias cli CMDRECORD severity warning",
+      "错误的配置": "info-centre log-severity bymodule-alias cli CMDRECORD severity warning",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 171,
+      "错误行号": 5395,
+      "正确的配置": "ipv6 route-static <IPV6> <*> <*> <IPV6> description <*>",
+      "错误的配置": "ipv6 route-static <IPV6> <*> <*> <IPV6> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 6338,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 173,
+      "错误行号": 41338,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip adress <IPV4> <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 35374,
+      "正确的配置": "peer <*> tracking delay 30",
+      "错误的配置": "pere <*> tracking delay 30",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 26844,
+      "正确的配置": "user-priority downstream <*>",
+      "错误的配置": "user-prority downstream <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 32283,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 177,
+      "错误行号": 40388,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 38586,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 179,
+      "错误行号": 2896,
+      "正确的配置": "tunnel-policy <*>",
+      "错误的配置": "tunnel-poliyc <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 180,
+      "错误行号": 31399,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-adress <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 181,
+      "错误行号": 39817,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 182,
+      "错误行号": 13078,
+      "正确的配置": "router-id <IPV4>",
+      "错误的配置": "routr-id <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 183,
+      "错误行号": 22430,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 184,
+      "错误行号": 42103,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 185,
+      "错误行号": 33205,
+      "正确的配置": "stelnet server enable",
+      "错误的配置": "stelnet server enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 34970,
+      "正确的配置": "acl name <*> advance",
+      "错误的配置": "acl naem <*> advance",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 187,
+      "错误行号": 10475,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 188,
+      "错误行号": 4359,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ip6v mtu 9000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 189,
+      "错误行号": 31455,
+      "正确的配置": "dap-server ip pool <*>",
+      "错误的配置": "dap-servre ip pool <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 7249,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 191,
+      "错误行号": 23933,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-famiyl vpn-instance <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 192,
+      "错误行号": 5947,
+      "正确的配置": "graceful-restart",
+      "错误的配置": "graceful-restatr",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 193,
+      "错误行号": 35197,
+      "正确的配置": "isis peer hold-max-cost timer <*>",
+      "错误的配置": "issi peer hold-max-cost timer <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 11976,
+      "正确的配置": "arp broadcast enable",
+      "错误的配置": "arp broadcast enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 195,
+      "错误行号": 2760,
+      "正确的配置": "authorization-mode hwtacacs local",
+      "错误的配置": "authorization-moed hwtacacs local",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 17213,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 30560,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 30669,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 36494,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 200,
+      "错误行号": 36407,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 201,
+      "错误行号": 42438,
+      "正确的配置": "network-slice <*> flex-channel <*>",
+      "错误的配置": "netwrk-slice <*> flex-channel <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 202,
+      "错误行号": 10992,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 25422,
+      "正确的配置": "ssh server acl 2577",
+      "错误的配置": "ssh servre acl 2577",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 26064,
+      "正确的配置": "carrier down-hold-time <*>",
+      "错误的配置": "carrer down-hold-time <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 19696,
+      "正确的配置": "if-match ip-prefix <*>",
+      "错误的配置": "if-match ip-prefx <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 206,
+      "错误行号": 27053,
+      "正确的配置": "ssh user <*>",
+      "错误的配置": "ssh usre <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 207,
+      "错误行号": 28544,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 23595,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 41612,
+      "正确的配置": "ssh user <*> authentication-type <*>",
+      "错误的配置": "ssh usre <*> authentication-type <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 210,
+      "错误行号": 3682,
+      "正确的配置": "peer <*> capability-advertise add-path both",
+      "错误的配置": "pere <*> capability-advertise add-path both",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 211,
+      "错误行号": 23345,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 4656,
+      "正确的配置": "local-user <*> service-type telnet ssh",
+      "错误的配置": "local-user <*> servce-type telnet ssh",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 22987,
+      "正确的配置": "vpn-target <*> import-extcommunity",
+      "错误的配置": "vpn-targte <*> import-extcommunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 214,
+      "错误行号": 6626,
+      "正确的配置": "isis ipv6 bfd enable",
+      "错误的配置": "isis ipv6 bfd enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 38857,
+      "正确的配置": "authentication-scheme <*>",
+      "错误的配置": "authentication-scheem <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 26990,
+      "正确的配置": "mpls",
+      "错误的配置": "mpsl",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 217,
+      "错误行号": 19790,
+      "正确的配置": "phy-number <*>",
+      "错误的配置": "phy-numbre <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 17504,
+      "正确的配置": "peer <*> advertise add-path path-number <*>",
+      "错误的配置": "pere <*> advertise add-path path-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 41952,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 10443,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 23257,
+      "正确的配置": "lsa-arrival-interval intelligent-timer 50 50 50",
+      "错误的配置": "lsa-arrival-intervla intelligent-timer 50 50 50",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 222,
+      "错误行号": 5742,
+      "正确的配置": "ospf 703 router-id <IPV4>",
+      "错误的配置": "ospf 703 routr-id <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 40557,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis enble 800",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 9822,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 225,
+      "错误行号": 24408,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 226,
+      "错误行号": 21650,
+      "正确的配置": "subnet warning-threshold <*>",
+      "错误的配置": "subnte warning-threshold <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 27385,
+      "正确的配置": "peer <IPV4> soo <*>",
+      "错误的配置": "pere <IPV4> soo <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 9004,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 41406,
+      "正确的配置": "segment-routing ipv6 locator <*> evpn",
+      "错误的配置": "segment-routign ipv6 locator <*> evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 5973,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 231,
+      "错误行号": 21603,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl numbre <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 232,
+      "错误行号": 38927,
+      "正确的配置": "ssh user <*> authentication-type <*>",
+      "错误的配置": "ssh usre <*> authentication-type <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 26320,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefx-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 234,
+      "错误行号": 22897,
+      "正确的配置": "ip-warning-threshold 100",
+      "错误的配置": "ip-warning-threshodl 100",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 8929,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 36652,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 6550,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permt <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 29569,
+      "正确的配置": "trust upstream <*>",
+      "错误的配置": "truts upstream <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 239,
+      "错误行号": 35473,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 240,
+      "错误行号": 25277,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 9000x",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 241,
+      "错误行号": 1312,
+      "正确的配置": "authentication-scheme <*>",
+      "错误的配置": "authentication-scheem <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 242,
+      "错误行号": 25330,
+      "正确的配置": "ssh server-source -i <*>",
+      "错误的配置": "ssh server-sourec -i <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 21551,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 12539,
+      "正确的配置": "ipv6 enable topology ipv6",
+      "错误的配置": "ipv6 enble topology ipv6",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 14879,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 23815,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 247,
+      "错误行号": 33930,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 13342,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 249,
+      "错误行号": 15749,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 9569,
+      "正确的配置": "peer <*> connect-interface <*>",
+      "错误的配置": "peer <*> connect-interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 10743,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 5429,
+      "正确的配置": "trust upstream <*>",
+      "错误的配置": "truts upstream <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 253,
+      "错误行号": 20626,
+      "正确的配置": "user-vlan <*> qinq <*> <*>",
+      "错误的配置": "user-vlna <*> qinq <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 254,
+      "错误行号": 7088,
+      "正确的配置": "peer <*> tracking delay 30",
+      "错误的配置": "pere <*> tracking delay 30",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 255,
+      "错误行号": 35417,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 256,
+      "错误行号": 37563,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip adress <IPV4> <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 257,
+      "错误行号": 36661,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 258,
+      "错误行号": 2658,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 259,
+      "错误行号": 23487,
+      "正确的配置": "evpn e-tree-leaf",
+      "错误的配置": "evnp e-tree-leaf",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 260,
+      "错误行号": 9142,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 261,
+      "错误行号": 41566,
+      "正确的配置": "peer <*> capability-advertise add-path both",
+      "错误的配置": "pere <*> capability-advertise add-path both",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 262,
+      "错误行号": 26322,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 263,
+      "错误行号": 10698,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 264,
+      "错误行号": 11233,
+      "正确的配置": "service-location 1",
+      "错误的配置": "servce-location 1",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 265,
+      "错误行号": 12580,
+      "正确的配置": "interface <INTERFACE> mode l2",
+      "错误的配置": "interfce <INTERFACE> mode l2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 266,
+      "错误行号": 11470,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permt <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 267,
+      "错误行号": 30555,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 268,
+      "错误行号": 3098,
+      "正确的配置": "vpn-target <*> import-extcommunity evpn",
+      "错误的配置": "vpn-targte <*> import-extcommunity evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 269,
+      "错误行号": 28694,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 270,
+      "错误行号": 25452,
+      "正确的配置": "local-user <*> service-type ssh",
+      "错误的配置": "local-user <*> servce-type ssh",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 271,
+      "错误行号": 16530,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-famiyl vpn-instance <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 272,
+      "错误行号": 31009,
+      "正确的配置": "bridge-domain <*>",
+      "错误的配置": "bridge-domani <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 273,
+      "错误行号": 42496,
+      "正确的配置": "ip route-static bfd <*> <IPV4> local-address <IPV4> min-tx-interval 100 min-rx-interval 100",
+      "错误的配置": "ip route-static bfd <*> <IPV4> local-adress <IPV4> min-tx-interval 100 min-rx-interval 100",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 274,
+      "错误行号": 19850,
+      "正确的配置": "ssh client peer <IPV4> assign ecc-key <IPV4>",
+      "错误的配置": "ssh clietn peer <IPV4> assign ecc-key <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 275,
+      "错误行号": 31346,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-adress <IPV4> <*> destination user-group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 276,
+      "错误行号": 16282,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 277,
+      "错误行号": 37153,
+      "正确的配置": "loop-free-alternate level-2",
+      "错误的配置": "loop-free-alternaet level-2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 278,
+      "错误行号": 16642,
+      "正确的配置": "peer <*> capability-advertise add-path both",
+      "错误的配置": "pere <*> capability-advertise add-path both",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 279,
+      "错误行号": 21594,
+      "正确的配置": "lsa-originate-interval intelligent-timer 500 50 100",
+      "错误的配置": "lsa-originate-intervla intelligent-timer 500 50 100",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 280,
+      "错误行号": 32723,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permt vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 281,
+      "错误行号": 13474,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 282,
+      "错误行号": 25706,
+      "正确的配置": "network <IPV4> <*> subnet length <*>",
+      "错误的配置": "netwrk <IPV4> <*> subnet length <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 283,
+      "错误行号": 39736,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 284,
+      "错误行号": 30746,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 285,
+      "错误行号": 32215,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 286,
+      "错误行号": 19622,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 287,
+      "错误行号": 26660,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefx-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 288,
+      "错误行号": 35082,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 289,
+      "错误行号": 36722,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 290,
+      "错误行号": 29255,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 291,
+      "错误行号": 11218,
+      "正确的配置": "vpn frr",
+      "错误的配置": "vpn frrx",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 292,
+      "错误行号": 13873,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 293,
+      "错误行号": 42081,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 294,
+      "错误行号": 9624,
+      "正确的配置": "peer <*> connect-interface <*>",
+      "错误的配置": "peer <*> connect-interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 295,
+      "错误行号": 17362,
+      "正确的配置": "maximum load-balancing <*>",
+      "错误的配置": "maximmu load-balancing <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 296,
+      "错误行号": 3670,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefx-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 297,
+      "错误行号": 33544,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 298,
+      "错误行号": 25941,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 299,
+      "错误行号": 38603,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "undo shutdwn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 300,
+      "错误行号": 7189,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 301,
+      "错误行号": 35959,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 302,
+      "错误行号": 8719,
+      "正确的配置": "remote-backup-profile <*>",
+      "错误的配置": "remote-backup-profiel <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 303,
+      "错误行号": 19859,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 304,
+      "错误行号": 5914,
+      "正确的配置": "statistic enable",
+      "错误的配置": "statistic enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 305,
+      "错误行号": 11095,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 306,
+      "错误行号": 18993,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 307,
+      "错误行号": 31372,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permt ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 308,
+      "错误行号": 35792,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 309,
+      "错误行号": 10244,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 310,
+      "错误行号": 30542,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 311,
+      "错误行号": 6431,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 312,
+      "错误行号": 15435,
+      "正确的配置": "default-route imported",
+      "错误的配置": "default-rouet imported",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 313,
+      "错误行号": 31497,
+      "正确的配置": "test-session <*> bind interface <INTERFACE>",
+      "错误的配置": "test-session <*> bind interfce <INTERFACE>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 314,
+      "错误行号": 24393,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 315,
+      "错误行号": 1921,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 316,
+      "错误行号": 28988,
+      "正确的配置": "local-user <*> level <*>",
+      "错误的配置": "local-usre <*> level <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 317,
+      "错误行号": 3743,
+      "正确的配置": "vpn-target <*> import-extcommunity",
+      "错误的配置": "vpn-targte <*> import-extcommunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 318,
+      "错误行号": 27692,
+      "正确的配置": "user-vlan <*> qinq <*> <*>",
+      "错误的配置": "user-vlna <*> qinq <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 319,
+      "错误行号": 35017,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permt <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 320,
+      "错误行号": 26141,
+      "正确的配置": "undo synchronization",
+      "错误的配置": "unod synchronization",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 321,
+      "错误行号": 16407,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefx <IPV6> <*> static 12 args 16",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 322,
+      "错误行号": 26963,
+      "正确的配置": "undo dcn",
+      "错误的配置": "unod dcn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 323,
+      "错误行号": 5749,
+      "正确的配置": "area <IPV4>",
+      "错误的配置": "arae <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 324,
+      "错误行号": 26204,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 325,
+      "错误行号": 15612,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permt <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 326,
+      "错误行号": 2021,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 327,
+      "错误行号": 22236,
+      "正确的配置": "import-route ospf 705 route-policy rpFromospf705",
+      "错误的配置": "import-rouet ospf 705 route-policy rpFromospf705",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 328,
+      "错误行号": 6940,
+      "正确的配置": "rule <*> description <DESCRIPTION>",
+      "错误的配置": "rule <*> descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 329,
+      "错误行号": 23387,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 330,
+      "错误行号": 10149,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 331,
+      "错误行号": 9571,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 332,
+      "错误行号": 2698,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "undo shutdwn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 333,
+      "错误行号": 19988,
+      "正确的配置": "local-user <*> level <*>",
+      "错误的配置": "local-usre <*> level <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 334,
+      "错误行号": 32972,
+      "正确的配置": "undo dcn",
+      "错误的配置": "unod dcn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 335,
+      "错误行号": 9649,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 336,
+      "错误行号": 32729,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permt vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 337,
+      "错误行号": 31325,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-adress <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 338,
+      "错误行号": 374,
+      "正确的配置": "trust upstream <*>",
+      "错误的配置": "truts upstream <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 339,
+      "错误行号": 5581,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 340,
+      "错误行号": 1368,
+      "正确的配置": "timer lsp-max-age 65535",
+      "错误的配置": "timre lsp-max-age 65535",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 341,
+      "错误行号": 17788,
+      "正确的配置": "apply-label per-instance",
+      "错误的配置": "apply-lable per-instance",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 342,
+      "错误行号": 14986,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "pere <*> route-policy <*> export",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 343,
+      "错误行号": 10387,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 344,
+      "错误行号": 38191,
+      "正确的配置": "nexthop recursive-lookup non-critical-event delay 0",
+      "错误的配置": "nexthpo recursive-lookup non-critical-event delay 0",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 345,
+      "错误行号": 42374,
+      "正确的配置": "rule <*> deny",
+      "错误的配置": "ruel <*> deny",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 346,
+      "错误行号": 36743,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 347,
+      "错误行号": 29559,
+      "正确的配置": "carrier down-hold-time <*>",
+      "错误的配置": "carrer down-hold-time <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 348,
+      "错误行号": 7759,
+      "正确的配置": "network <IPV6> <*>",
+      "错误的配置": "netwrk <IPV6> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 349,
+      "错误行号": 20079,
+      "正确的配置": "port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queeu be wfq weight 50 outbound",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 350,
+      "错误行号": 16537,
+      "正确的配置": "segment-routing ipv6 traffic-engineer best-effort evpn",
+      "错误的配置": "segment-routign ipv6 traffic-engineer best-effort evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 351,
+      "错误行号": 20987,
+      "正确的配置": "timer end-x update-delay 30000",
+      "错误的配置": "timre end-x update-delay 30000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 352,
+      "错误行号": 8526,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 353,
+      "错误行号": 3373,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 354,
+      "错误行号": 16594,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 355,
+      "错误行号": 29331,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 356,
+      "错误行号": 31915,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 357,
+      "错误行号": 4429,
+      "正确的配置": "advertise l2vpn evpn",
+      "错误的配置": "adverties l2vpn evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 358,
+      "错误行号": 7736,
+      "正确的配置": "timer end-x update-delay 60000",
+      "错误的配置": "timre end-x update-delay 60000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 359,
+      "错误行号": 34859,
+      "正确的配置": "network-entity <*>",
+      "错误的配置": "netwrk-entity <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 360,
+      "错误行号": 41528,
+      "正确的配置": "ipv6 preference 105",
+      "错误的配置": "ip6v preference 105",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 361,
+      "错误行号": 37302,
+      "正确的配置": "evpn e-tree-leaf",
+      "错误的配置": "evnp e-tree-leaf",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 362,
+      "错误行号": 1179,
+      "正确的配置": "user-vlan <*> <*> qinq <*>",
+      "错误的配置": "user-vlna <*> <*> qinq <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 363,
+      "错误行号": 35924,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 364,
+      "错误行号": 40039,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 365,
+      "错误行号": 16824,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 366,
+      "错误行号": 9968,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 367,
+      "错误行号": 20306,
+      "正确的配置": "te bandwidth max-reservable-bandwidth dynamic 100",
+      "错误的配置": "te bandwidht max-reservable-bandwidth dynamic 100",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 368,
+      "错误行号": 29974,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permt <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 369,
+      "错误行号": 110,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permt <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 370,
+      "错误行号": 24625,
+      "正确的配置": "ssh user <*> authentication-type <*>",
+      "错误的配置": "ssh usre <*> authentication-type <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 371,
+      "错误行号": 16733,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefx-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 372,
+      "错误行号": 39752,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 373,
+      "错误行号": 29110,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*>",
+      "错误的配置": "ip ip-prefx <*> index <*> permit <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 374,
+      "错误行号": 13016,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 375,
+      "错误行号": 6031,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 376,
+      "错误行号": 36456,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 377,
+      "错误行号": 25188,
+      "正确的配置": "ssh server acl 2577",
+      "错误的配置": "ssh servre acl 2577",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 378,
+      "错误行号": 4783,
+      "正确的配置": "peer <*> tracking delay 30",
+      "错误的配置": "pere <*> tracking delay 30",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 379,
+      "错误行号": 36630,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 380,
+      "错误行号": 37864,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-adress <IPV4> <*> destination user-group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 381,
+      "错误行号": 35413,
+      "正确的配置": "segment-routing ipv6 locator <*> evpn",
+      "错误的配置": "segment-routign ipv6 locator <*> evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 382,
+      "错误行号": 38575,
+      "正确的配置": "maximum load-balancing <*>",
+      "错误的配置": "maximmu load-balancing <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 383,
+      "错误行号": 1465,
+      "正确的配置": "segment-routing ipv6 locator <*>",
+      "错误的配置": "segment-routign ipv6 locator <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 384,
+      "错误行号": 27270,
+      "正确的配置": "pim sm",
+      "错误的配置": "pim smx",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 385,
+      "错误行号": 32801,
+      "正确的配置": "advertise l2vpn evpn",
+      "错误的配置": "adverties l2vpn evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 386,
+      "错误行号": 3087,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 387,
+      "错误行号": 27014,
+      "正确的配置": "info-center loghost <IPV4> vpn-instance CTVPN193_JS source-ip <IPV4>",
+      "错误的配置": "info-centre loghost <IPV4> vpn-instance CTVPN193_JS source-ip <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 388,
+      "错误行号": 26095,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 389,
+      "错误行号": 17626,
+      "正确的配置": "default-route imported",
+      "错误的配置": "default-rouet imported",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 390,
+      "错误行号": 1166,
+      "正确的配置": "user-vlan <*> qinq <*>",
+      "错误的配置": "user-vlna <*> qinq <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 391,
+      "错误行号": 24938,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-famiyl vpn-instance <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 392,
+      "错误行号": 4775,
+      "正确的配置": "peer <*> connect-interface <*>",
+      "错误的配置": "peer <*> connect-interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 393,
+      "错误行号": 24027,
+      "正确的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queeu af4 pq shaping shaping-percentage 20 outbound",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 394,
+      "错误行号": 16770,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 395,
+      "错误行号": 7259,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 396,
+      "错误行号": 40498,
+      "正确的配置": "dap-server ip pool <*>",
+      "错误的配置": "dap-servre ip pool <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 397,
+      "错误行号": 23195,
+      "正确的配置": "ipv6 preference 105",
+      "错误的配置": "ip6v preference 105",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 398,
+      "错误行号": 9297,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 399,
+      "错误行号": 3143,
+      "正确的配置": "ssh ipv6 server-source all-interface",
+      "错误的配置": "ssh ipv6 server-source all-interfce",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 400,
+      "错误行号": 24588,
+      "正确的配置": "activate module huawei-ip",
+      "错误的配置": "activaet module huawei-ip",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 401,
+      "错误行号": 37991,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-adress <IPV4> <*> destination user-group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 402,
+      "错误行号": 23607,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 403,
+      "错误行号": 12166,
+      "正确的配置": "undo dcn",
+      "错误的配置": "unod dcn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 404,
+      "错误行号": 32408,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 405,
+      "错误行号": 33406,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 406,
+      "错误行号": 12686,
+      "正确的配置": "routing-table rib-only",
+      "错误的配置": "routing-tabel rib-only",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 407,
+      "错误行号": 9391,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 408,
+      "错误行号": 4452,
+      "正确的配置": "spf-schedule-interval intelligent-timer 50 50 50",
+      "错误的配置": "spf-schedule-intervla intelligent-timer 50 50 50",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 409,
+      "错误行号": 31952,
+      "正确的配置": "peer <*> advertise-large-community",
+      "错误的配置": "peer <*> advertise-large-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 410,
+      "错误行号": 2608,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 411,
+      "错误行号": 20461,
+      "正确的配置": "peer <*> esad-route-compatible",
+      "错误的配置": "pere <*> esad-route-compatible",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 412,
+      "错误行号": 13997,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 413,
+      "错误行号": 3105,
+      "正确的配置": "vpn-target <*> import-extcommunity",
+      "错误的配置": "vpn-targte <*> import-extcommunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 414,
+      "错误行号": 13858,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 415,
+      "错误行号": 2964,
+      "正确的配置": "domain <*>",
+      "错误的配置": "domani <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 416,
+      "错误行号": 22017,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 417,
+      "错误行号": 21638,
+      "正确的配置": "advertise l2vpn evpn",
+      "错误的配置": "adverties l2vpn evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 418,
+      "错误行号": 35925,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 419,
+      "错误行号": 27819,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 420,
+      "错误行号": 37795,
+      "正确的配置": "destination ipv6 <IPV6> remote-discriminator <*>",
+      "错误的配置": "destinatino ipv6 <IPV6> remote-discriminator <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 421,
+      "错误行号": 33041,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permt vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 422,
+      "错误行号": 17600,
+      "正确的配置": "accounting-scheme <*>",
+      "错误的配置": "accounting-scheem <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 423,
+      "错误行号": 2584,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 424,
+      "错误行号": 13283,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 425,
+      "错误行号": 19934,
+      "正确的配置": "undo shutdown",
+      "错误的配置": "undo shutdwn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 426,
+      "错误行号": 24929,
+      "正确的配置": "port-queue be wfq weight 50 outbound",
+      "错误的配置": "port-queeu be wfq weight 50 outbound",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 427,
+      "错误行号": 3376,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 428,
+      "错误行号": 23152,
+      "正确的配置": "maximum load-balancing <*>",
+      "错误的配置": "maximmu load-balancing <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 429,
+      "错误行号": 19021,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "pere <*> route-policy <*> export",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 430,
+      "错误行号": 8703,
+      "正确的配置": "bridge-domain <*>",
+      "错误的配置": "bridge-domani <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 431,
+      "错误行号": 25719,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ip6v mtu 9000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 432,
+      "错误行号": 30508,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 433,
+      "错误行号": 27936,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 434,
+      "错误行号": 30690,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 435,
+      "错误行号": 26997,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permt vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 436,
+      "错误行号": 23639,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 437,
+      "错误行号": 12984,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefx-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 438,
+      "错误行号": 34612,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 439,
+      "错误行号": 34698,
+      "正确的配置": "peer <*> advertise add-path path-number <*>",
+      "错误的配置": "pere <*> advertise add-path path-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 440,
+      "错误行号": 25670,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 441,
+      "错误行号": 36180,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 442,
+      "错误行号": 18567,
+      "正确的配置": "undo peer <*> enable",
+      "错误的配置": "undo peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 443,
+      "错误行号": 5820,
+      "正确的配置": "ipv6 bfd all-interfaces enable",
+      "错误的配置": "ipv6 bfd all-interfaces enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 444,
+      "错误行号": 29647,
+      "正确的配置": "test start-continual test-session <*>",
+      "错误的配置": "tets start-continual test-session <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 445,
+      "错误行号": 5559,
+      "正确的配置": "local-user <*> level <*>",
+      "错误的配置": "local-usre <*> level <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 446,
+      "错误行号": 30064,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permt ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 447,
+      "错误行号": 41935,
+      "正确的配置": "ssh user <*> authentication-type <*>",
+      "错误的配置": "ssh usre <*> authentication-type <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 448,
+      "错误行号": 12552,
+      "正确的配置": "ipv6 frr",
+      "错误的配置": "ip6v frr",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 449,
+      "错误行号": 37956,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permt <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 450,
+      "错误行号": 20482,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 451,
+      "错误行号": 22409,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 452,
+      "错误行号": 5644,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 453,
+      "错误行号": 22856,
+      "正确的配置": "mpls bfd min-tx-interval 50 min-rx-interval 50",
+      "错误的配置": "mpsl bfd min-tx-interval 50 min-rx-interval 50",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 454,
+      "错误行号": 20616,
+      "正确的配置": "user-vlan <*> <*> qinq <*>",
+      "错误的配置": "user-vlna <*> <*> qinq <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 455,
+      "错误行号": 21377,
+      "正确的配置": "carrier up-hold-time <*>",
+      "错误的配置": "carrer up-hold-time <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 456,
+      "错误行号": 31134,
+      "正确的配置": "isis small-hello",
+      "错误的配置": "issi small-hello",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 457,
+      "错误行号": 41947,
+      "正确的配置": "link-state-family unicast",
+      "错误的配置": "link-state-famiyl unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 458,
+      "错误行号": 29760,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 459,
+      "错误行号": 11552,
+      "正确的配置": "bmp-session vpn-instance CTVPN193-JS <IPV4>",
+      "错误的配置": "bmp-sessino vpn-instance CTVPN193-JS <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 460,
+      "错误行号": 30988,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 enble 800",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 461,
+      "错误行号": 24533,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 9000x",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 462,
+      "错误行号": 31226,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 463,
+      "错误行号": 2998,
+      "正确的配置": "ip ipv6-prefix <*> index <*> permit <IPV6> <*>",
+      "错误的配置": "ip ipv6-prefix <*> index <*> permt <IPV6> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 464,
+      "错误行号": 24608,
+      "正确的配置": "stelnet server enable",
+      "错误的配置": "stelnet server enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 465,
+      "错误行号": 30370,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 466,
+      "错误行号": 19114,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 467,
+      "错误行号": 4039,
+      "正确的配置": "username ftpuser password <*>",
+      "错误的配置": "usernaem ftpuser password <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 468,
+      "错误行号": 5282,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefx-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 469,
+      "错误行号": 28362,
+      "正确的配置": "rule <*> description <DESCRIPTION>",
+      "错误的配置": "rule <*> descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 470,
+      "错误行号": 25379,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefx <IPV6> <*> static 12 args 16",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 471,
+      "错误行号": 35774,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 472,
+      "错误行号": 11073,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 473,
+      "错误行号": 2214,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 474,
+      "错误行号": 9911,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 475,
+      "错误行号": 42285,
+      "正确的配置": "peer <*> connect-interface <*>",
+      "错误的配置": "peer <*> connect-interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 476,
+      "错误行号": 30588,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 477,
+      "错误行号": 2465,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 478,
+      "错误行号": 8826,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 479,
+      "错误行号": 4752,
+      "正确的配置": "srv6-te-policy locator SRV6-END",
+      "错误的配置": "srv6-te-poliyc locator SRV6-END",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 480,
+      "错误行号": 16423,
+      "正确的配置": "e-trunk <*>",
+      "错误的配置": "e-trukn <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 481,
+      "错误行号": 25596,
+      "正确的配置": "undo ssh ipv6 server-source all-interface",
+      "错误的配置": "undo ssh ipv6 server-source all-interfce",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 482,
+      "错误行号": 25298,
+      "正确的配置": "te bandwidth dynamic bc0 100",
+      "错误的配置": "te bandwidht dynamic bc0 100",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 483,
+      "错误行号": 26730,
+      "正确的配置": "remote-backup-profile <*>",
+      "错误的配置": "remote-backup-profiel <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 484,
+      "错误行号": 39523,
+      "正确的配置": "isis circuit-level level-2",
+      "错误的配置": "issi circuit-level level-2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 485,
+      "错误行号": 2297,
+      "正确的配置": "te link administrative group <*>",
+      "错误的配置": "te likn administrative group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 486,
+      "错误行号": 42109,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 487,
+      "错误行号": 10644,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 488,
+      "错误行号": 31413,
+      "正确的配置": "ssh user <*> service-type snetconf stelnet",
+      "错误的配置": "ssh user <*> servce-type snetconf stelnet",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 489,
+      "错误行号": 25923,
+      "正确的配置": "trust 8021p",
+      "错误的配置": "truts 8021p",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 490,
+      "错误行号": 26001,
+      "正确的配置": "network <IPV4> <IPV4>",
+      "错误的配置": "netwrk <IPV4> <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 491,
+      "错误行号": 30991,
+      "正确的配置": "isis ipv6 cost <*>",
+      "错误的配置": "issi ipv6 cost <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 492,
+      "错误行号": 5407,
+      "正确的配置": "segment-routing ipv6",
+      "错误的配置": "segment-routign ipv6",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 493,
+      "错误行号": 39965,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 494,
+      "错误行号": 9577,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 495,
+      "错误行号": 36853,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 496,
+      "错误行号": 25641,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permt vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 497,
+      "错误行号": 27806,
+      "正确的配置": "peer <*> advertise encap-type srv6 advertise-srv6-locator",
+      "错误的配置": "pere <*> advertise encap-type srv6 advertise-srv6-locator",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 498,
+      "错误行号": 21938,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 499,
+      "错误行号": 19419,
+      "正确的配置": "undo peer <*> enable",
+      "错误的配置": "undo peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 500,
+      "错误行号": 17335,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 501,
+      "错误行号": 7923,
+      "正确的配置": "priority 90",
+      "错误的配置": "prority 90",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 502,
+      "错误行号": 1869,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "pere <*> route-policy <*> export",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 503,
+      "错误行号": 12933,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 504,
+      "错误行号": 34804,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 505,
+      "错误行号": 36079,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 506,
+      "错误行号": 27022,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 507,
+      "错误行号": 39123,
+      "正确的配置": "vpn-target <*> import-extcommunity evpn",
+      "错误的配置": "vpn-targte <*> import-extcommunity evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 508,
+      "错误行号": 8233,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-usre <*> state block fail-times 3 interval 5",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 509,
+      "错误行号": 18201,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 510,
+      "错误行号": 18099,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 511,
+      "错误行号": 31160,
+      "正确的配置": "evpn e-tree-leaf",
+      "错误的配置": "evnp e-tree-leaf",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 512,
+      "错误行号": 14907,
+      "正确的配置": "ospf cost 1000",
+      "错误的配置": "osfp cost 1000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 513,
+      "错误行号": 42589,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 514,
+      "错误行号": 19896,
+      "正确的配置": "local-user <*> user-group manage-ug",
+      "错误的配置": "local-usre <*> user-group manage-ug",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 515,
+      "错误行号": 34254,
+      "正确的配置": "carrier up-hold-time <*>",
+      "错误的配置": "carrer up-hold-time <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 516,
+      "错误行号": 13904,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 517,
+      "错误行号": 8578,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 518,
+      "错误行号": 9449,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 519,
+      "错误行号": 5218,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefx-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 520,
+      "错误行号": 31568,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 521,
+      "错误行号": 11984,
+      "正确的配置": "web-auth-server source interface <*>",
+      "错误的配置": "web-auth-server source interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 522,
+      "错误行号": 31077,
+      "正确的配置": "advertise l2vpn evpn",
+      "错误的配置": "adverties l2vpn evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 523,
+      "错误行号": 6174,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 524,
+      "错误行号": 22301,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queeu af2 wfq weight 25 outbound",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 525,
+      "错误行号": 24231,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 526,
+      "错误行号": 4584,
+      "正确的配置": "loop-free-alternate level-2",
+      "错误的配置": "loop-free-alternaet level-2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 527,
+      "错误行号": 38276,
+      "正确的配置": "vpn-target <*> import-extcommunity evpn",
+      "错误的配置": "vpn-targte <*> import-extcommunity evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 528,
+      "错误行号": 37732,
+      "正确的配置": "te bandwidth dynamic bc0 100",
+      "错误的配置": "te bandwidht dynamic bc0 100",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 529,
+      "错误行号": 20244,
+      "正确的配置": "ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30",
+      "错误的配置": "ip6v bfd all-interfaces min-tx-interval 30 min-rx-interval 30",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 530,
+      "错误行号": 20905,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 531,
+      "错误行号": 10911,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 532,
+      "错误行号": 12091,
+      "正确的配置": "trust upstream <*>",
+      "错误的配置": "truts upstream <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 533,
+      "错误行号": 25253,
+      "正确的配置": "preference 20 200 200",
+      "错误的配置": "preferenec 20 200 200",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 534,
+      "错误行号": 35490,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 535,
+      "错误行号": 15589,
+      "正确的配置": "advertise l2vpn evpn",
+      "错误的配置": "adverties l2vpn evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 536,
+      "错误行号": 8494,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 537,
+      "错误行号": 13957,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 538,
+      "错误行号": 9655,
+      "正确的配置": "peer <*> tracking delay 30",
+      "错误的配置": "pere <*> tracking delay 30",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 539,
+      "错误行号": 16474,
+      "正确的配置": "port-queue af1 wfq weight 25 outbound",
+      "错误的配置": "port-queeu af1 wfq weight 25 outbound",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 540,
+      "错误行号": 34457,
+      "正确的配置": "route-distinguisher <*>",
+      "错误的配置": "route-distinguishre <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 541,
+      "错误行号": 1896,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 542,
+      "错误行号": 25209,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip bindign vpn-instance <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 543,
+      "错误行号": 38566,
+      "正确的配置": "pim sm",
+      "错误的配置": "pim smx",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 544,
+      "错误行号": 39857,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 545,
+      "错误行号": 25780,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permt <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 546,
+      "错误行号": 32607,
+      "正确的配置": "maximum load-balancing <*>",
+      "错误的配置": "maximmu load-balancing <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 547,
+      "错误行号": 38392,
+      "正确的配置": "sr-te frr enable",
+      "错误的配置": "sr-te frr enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 548,
+      "错误行号": 9058,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 549,
+      "错误行号": 42594,
+      "正确的配置": "port-queue af2 wfq weight 25 outbound",
+      "错误的配置": "port-queeu af2 wfq weight 25 outbound",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 550,
+      "错误行号": 6071,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 551,
+      "错误行号": 4645,
+      "正确的配置": "user-password password-force-change disable",
+      "错误的配置": "user-passwodr password-force-change disable",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 552,
+      "错误行号": 21580,
+      "正确的配置": "segment-routing ipv6 locator <*> evpn",
+      "错误的配置": "segment-routign ipv6 locator <*> evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 553,
+      "错误行号": 27814,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 554,
+      "错误行号": 33414,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 555,
+      "错误行号": 36606,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 556,
+      "错误行号": 28689,
+      "正确的配置": "policy vpn-target",
+      "错误的配置": "poliyc vpn-target",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 557,
+      "错误行号": 28589,
+      "正确的配置": "isis circuit-level level-2",
+      "错误的配置": "issi circuit-level level-2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 558,
+      "错误行号": 40029,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 559,
+      "错误行号": 5198,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 560,
+      "错误行号": 8766,
+      "正确的配置": "trust 8021p",
+      "错误的配置": "truts 8021p",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 561,
+      "错误行号": 22114,
+      "正确的配置": "srv6-te policy <*> endpoint <IPV6> color <*>",
+      "错误的配置": "srv6-et policy <*> endpoint <IPV6> color <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 562,
+      "错误行号": 5225,
+      "正确的配置": "peer <*> capability-advertise add-path both",
+      "错误的配置": "pere <*> capability-advertise add-path both",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 563,
+      "错误行号": 31416,
+      "正确的配置": "ssh user <*> service-type <*>",
+      "错误的配置": "ssh user <*> servce-type <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 564,
+      "错误行号": 32492,
+      "正确的配置": "interface <INTERFACE> mode l2",
+      "错误的配置": "interfce <INTERFACE> mode l2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 565,
+      "错误行号": 36054,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 566,
+      "错误行号": 24009,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis enble 800",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 567,
+      "错误行号": 8964,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 568,
+      "错误行号": 38368,
+      "正确的配置": "preference 20 200 200",
+      "错误的配置": "preferenec 20 200 200",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 569,
+      "错误行号": 40905,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 570,
+      "错误行号": 12662,
+      "正确的配置": "port-queue af4 pq shaping shaping-percentage 20 outbound",
+      "错误的配置": "port-queeu af4 pq shaping shaping-percentage 20 outbound",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 571,
+      "错误行号": 9010,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 572,
+      "错误行号": 30207,
+      "正确的配置": "ssh authorization-type default <*>",
+      "错误的配置": "ssh authorization-tyep default <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 573,
+      "错误行号": 35078,
+      "正确的配置": "info-center loghost <IPV4> vpn-instance CTVPN193-JS source-ip <IPV4> local-time",
+      "错误的配置": "info-centre loghost <IPV4> vpn-instance CTVPN193-JS source-ip <IPV4> local-time",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 574,
+      "错误行号": 3900,
+      "正确的配置": "dap-server ip-pool <*>",
+      "错误的配置": "dap-servre ip-pool <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 575,
+      "错误行号": 8679,
+      "正确的配置": "apply-label per-instance",
+      "错误的配置": "apply-lable per-instance",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 576,
+      "错误行号": 36103,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 577,
+      "错误行号": 10617,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 578,
+      "错误行号": 21205,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permt vpn-instance <*> source <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 579,
+      "错误行号": 11402,
+      "正确的配置": "isis cost <*>",
+      "错误的配置": "issi cost <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 580,
+      "错误行号": 11212,
+      "正确的配置": "vpn-target <*> export-extcommunity evpn",
+      "错误的配置": "vpn-targte <*> export-extcommunity evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 581,
+      "错误行号": 22504,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 582,
+      "错误行号": 15674,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 583,
+      "错误行号": 24122,
+      "正确的配置": "trust upstream <*>",
+      "错误的配置": "truts upstream <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 584,
+      "错误行号": 36155,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 585,
+      "错误行号": 19783,
+      "正确的配置": "speed auto",
+      "错误的配置": "spede auto",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 586,
+      "错误行号": 5554,
+      "正确的配置": "traffic-policy <*> <*> link-layer",
+      "错误的配置": "traffic-poliyc <*> <*> link-layer",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 587,
+      "错误行号": 17406,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "pere <*> route-policy <*> import",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 588,
+      "错误行号": 13638,
+      "正确的配置": "local-user <*> state block fail-times 3 interval 5",
+      "错误的配置": "local-usre <*> state block fail-times 3 interval 5",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 589,
+      "错误行号": 38335,
+      "正确的配置": "info-center loghost source LoopBack1",
+      "错误的配置": "info-centre loghost source LoopBack1",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 590,
+      "错误行号": 19106,
+      "正确的配置": "isis peer hold-max-cost timer <*>",
+      "错误的配置": "issi peer hold-max-cost timer <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 591,
+      "错误行号": 8755,
+      "正确的配置": "local-source-address ipv4 <IPV4>",
+      "错误的配置": "local-source-adress ipv4 <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 592,
+      "错误行号": 37117,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 593,
+      "错误行号": 6547,
+      "正确的配置": "rule <*> permit ip source user-group <*>",
+      "错误的配置": "rule <*> permt ip source user-group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 594,
+      "错误行号": 35058,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 595,
+      "错误行号": 11694,
+      "正确的配置": "shutdown",
+      "错误的配置": "shutdwn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 596,
+      "错误行号": 41170,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 597,
+      "错误行号": 40410,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 598,
+      "错误行号": 10694,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 599,
+      "错误行号": 11879,
+      "正确的配置": "qos-profile <*> inbound identifier none",
+      "错误的配置": "qos-profiel <*> inbound identifier none",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 600,
+      "错误行号": 42112,
+      "正确的配置": "peer <*> reflect-client",
+      "错误的配置": "pere <*> reflect-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 601,
+      "错误行号": 23546,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 602,
+      "错误行号": 39261,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefx <IPV6> <*> static 12 args 16",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 603,
+      "错误行号": 2910,
+      "正确的配置": "peer <*> bfd min-tx-interval <*> min-rx-interval <*> detect-multiplier <*>",
+      "错误的配置": "pere <*> bfd min-tx-interval <*> min-rx-interval <*> detect-multiplier <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 604,
+      "错误行号": 2033,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 605,
+      "错误行号": 5722,
+      "正确的配置": "eth-trunk <*>",
+      "错误的配置": "eth-trukn <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 606,
+      "错误行号": 3223,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 607,
+      "错误行号": 40155,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 608,
+      "错误行号": 18414,
+      "正确的配置": "bfd all-interfaces min-tx-interval 500 min-rx-interval 500 detect-multiplier 4",
+      "错误的配置": "bfd all-interfacse min-tx-interval 500 min-rx-interval 500 detect-multiplier 4",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 609,
+      "错误行号": 14657,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 610,
+      "错误行号": 39848,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 611,
+      "错误行号": 29111,
+      "正确的配置": "ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ip-prefix <*> index <*> permt <IPV4> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 612,
+      "错误行号": 2158,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 613,
+      "错误行号": 34732,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefx-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 614,
+      "错误行号": 37962,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group <*> destination ip-adress <IPV4> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 615,
+      "错误行号": 20194,
+      "正确的配置": "bfd all-interfaces min-tx-interval 500 min-rx-interval 500 detect-multiplier 4",
+      "错误的配置": "bfd all-interfacse min-tx-interval 500 min-rx-interval 500 detect-multiplier 4",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 616,
+      "错误行号": 21055,
+      "正确的配置": "user-vlan <*> qinq <*> <*>",
+      "错误的配置": "user-vlna <*> qinq <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 617,
+      "错误行号": 33699,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 618,
+      "错误行号": 17025,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 619,
+      "错误行号": 28353,
+      "正确的配置": "ssh client peer <*> assign rsa-key <*>",
+      "错误的配置": "ssh clietn peer <*> assign rsa-key <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 620,
+      "错误行号": 20740,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 621,
+      "错误行号": 31674,
+      "正确的配置": "ssh user <*> service-type snetconf stelnet",
+      "错误的配置": "ssh user <*> servce-type snetconf stelnet",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 622,
+      "错误行号": 5147,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 623,
+      "错误行号": 4219,
+      "正确的配置": "user-interface vty 5 <*>",
+      "错误的配置": "user-interfce vty 5 <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 624,
+      "错误行号": 10948,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 625,
+      "错误行号": 30681,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 626,
+      "错误行号": 29039,
+      "正确的配置": "description <DESCRIPTION>",
+      "错误的配置": "descrption <DESCRIPTION>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 627,
+      "错误行号": 33788,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 628,
+      "错误行号": 32396,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 629,
+      "错误行号": 14172,
+      "正确的配置": "statistics-cycle 5",
+      "错误的配置": "statistics-cycel 5",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 630,
+      "错误行号": 23714,
+      "正确的配置": "peer <*> advertise-community",
+      "错误的配置": "peer <*> advertise-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 631,
+      "错误行号": 42217,
+      "正确的配置": "eth-trunk <*>",
+      "错误的配置": "eth-trukn <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 632,
+      "错误行号": 9974,
+      "正确的配置": "ipv6 address <*>",
+      "错误的配置": "ipv6 adress <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 633,
+      "错误行号": 21818,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 634,
+      "错误行号": 22281,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 635,
+      "错误行号": 24073,
+      "正确的配置": "route-distinguisher <*>",
+      "错误的配置": "route-distinguishre <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 636,
+      "错误行号": 27851,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 637,
+      "错误行号": 9123,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 638,
+      "错误行号": 25891,
+      "正确的配置": "ipv6 route-static vpn-instance 2B_RAN <IPV6> 0 <INTERFACE> <IPV6> track bfd-session <*>",
+      "错误的配置": "ipv6 route-static vpn-instance 2B_RAN <IPV6> 0 <interfce> <IPV6> track bfd-session <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 639,
+      "错误行号": 35898,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 640,
+      "错误行号": 39122,
+      "正确的配置": "vpn-target <*> import-extcommunity",
+      "错误的配置": "vpn-targte <*> import-extcommunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 641,
+      "错误行号": 7424,
+      "正确的配置": "peer <*> advertise-ext-community",
+      "错误的配置": "peer <*> advertise-ext-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 642,
+      "错误行号": 22268,
+      "正确的配置": "peer <*> advertise encap-type srv6 advertise-srv6-locator",
+      "错误的配置": "pere <*> advertise encap-type srv6 advertise-srv6-locator",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 643,
+      "错误行号": 16810,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefx-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 644,
+      "错误行号": 32542,
+      "正确的配置": "control-flap",
+      "错误的配置": "control-flpa",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 645,
+      "错误行号": 8570,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 646,
+      "错误行号": 18623,
+      "正确的配置": "bfd all-interfaces min-tx-interval 500 min-rx-interval 500 detect-multiplier 4",
+      "错误的配置": "bfd all-interfacse min-tx-interval 500 min-rx-interval 500 detect-multiplier 4",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 647,
+      "错误行号": 31390,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permt ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 648,
+      "错误行号": 17224,
+      "正确的配置": "peer <*> advertise arp",
+      "错误的配置": "pere <*> advertise arp",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 649,
+      "错误行号": 9786,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 650,
+      "错误行号": 6778,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 651,
+      "错误行号": 3567,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefx-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 652,
+      "错误行号": 20232,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 653,
+      "错误行号": 26821,
+      "正确的配置": "undo dcn",
+      "错误的配置": "unod dcn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 654,
+      "错误行号": 29219,
+      "正确的配置": "ssh user <*> authentication-type <*>",
+      "错误的配置": "ssh usre <*> authentication-type <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 655,
+      "错误行号": 17247,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 656,
+      "错误行号": 11055,
+      "正确的配置": "peer <*> as-number <*>",
+      "错误的配置": "pere <*> as-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 657,
+      "错误行号": 22819,
+      "正确的配置": "authentication-mode <*>",
+      "错误的配置": "authentication-moed <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 658,
+      "错误行号": 40215,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 659,
+      "错误行号": 21828,
+      "正确的配置": "up <*> <*>",
+      "错误的配置": "up <*> <*>x",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 660,
+      "错误行号": 13190,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 661,
+      "错误行号": 11031,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 662,
+      "错误行号": 34748,
+      "正确的配置": "ssh user <*> authentication-type <*>",
+      "错误的配置": "ssh usre <*> authentication-type <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 663,
+      "错误行号": 35882,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 664,
+      "错误行号": 32566,
+      "正确的配置": "bfd all-interfaces enable",
+      "错误的配置": "bfd all-interfaces enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 665,
+      "错误行号": 34782,
+      "正确的配置": "traffic policy <*>",
+      "错误的配置": "traffci policy <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 666,
+      "错误行号": 21529,
+      "正确的配置": "bfd all-interfaces min-tx-interval 30 min-rx-interval 30 frr-binding",
+      "错误的配置": "bfd all-interfacse min-tx-interval 30 min-rx-interval 30 frr-binding",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 667,
+      "错误行号": 34688,
+      "正确的配置": "peer <*> prefix-sid",
+      "错误的配置": "peer <*> prefx-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 668,
+      "错误行号": 1672,
+      "正确的配置": "vpn-target <*> export-extcommunity evpn",
+      "错误的配置": "vpn-targte <*> export-extcommunity evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 669,
+      "错误行号": 6322,
+      "正确的配置": "peer <*> description <*>",
+      "错误的配置": "peer <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 670,
+      "错误行号": 27472,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "pere <*> group <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 671,
+      "错误行号": 35262,
+      "正确的配置": "ssh user <*>",
+      "错误的配置": "ssh usre <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 672,
+      "错误行号": 31923,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    }
+  ]
+}

@@ -1,0 +1,767 @@
+{
+  "vendor": "zte",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "POLICY_CONFLICT",
+  "错误类型别名": [
+    "POLICY_CONFLICT"
+  ],
+  "错误类型描述": "策略冲突（permit/deny、import/export 等策略动作矛盾）",
+  "实际模板占比": "12.04%",
+  "数据集调整占比": "10.00%",
+  "错误数量": 94,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 3842,
+      "正确的配置": "neighbor pgToDCGW-CTVPN-CTC-NMAN route-map rpFromDCGW-CTVPN-CTC-NMAN in",
+      "错误的配置": "neighbor pgToDCGW-CTVPN-CTC-NMAN route-map rpFromDCGW-CTVPN-CTC-NMAN out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 1764,
+      "正确的配置": "rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 5503,
+      "正确的配置": "neighbor <*> route-map rpToCR-HLWZX-Export out",
+      "错误的配置": "neighbor <*> route-map rpToCR-HLWZX-import out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 5236,
+      "正确的配置": "ip prefix-list 2576 seq 50 permit 239.252.151.0 24",
+      "错误的配置": "ip prefix-list 2576 seq 50 deny 239.252.151.0 24",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 2159,
+      "正确的配置": "route-target import <*>",
+      "错误的配置": "route-target export <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 4928,
+      "正确的配置": "ip prefix-list 2576 seq 30 permit 239.49.0.0 21",
+      "错误的配置": "ip prefix-list 2576 seq 30 deny 239.49.0.0 21",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 1737,
+      "正确的配置": "route-target import 4134:161201",
+      "错误的配置": "route-target export 4134:161201",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 5441,
+      "正确的配置": "neighbor <*> route-map rpToCR-HLWZX-BackHole out",
+      "错误的配置": "neighbor <*> route-map rpToCR-HLWZX-BackHole in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 1724,
+      "正确的配置": "ip prefix-list ipMulticastGroup seq 50 permit <IPV4> 21 le 32",
+      "错误的配置": "ip prefix-list ipMulticastGroup seq 50 deny <IPV4> 21 le 32",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 2207,
+      "正确的配置": "route-target export <*>",
+      "错误的配置": "route-target import <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 1306,
+      "正确的配置": "neighbor pgToCloudPE-v6 route-map rpFromCloudPE-V6 in",
+      "错误的配置": "neighbor pgToCloudPE-v6 route-map rpFromCloudPE-V6 out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 1770,
+      "正确的配置": "rule 1000 deny any",
+      "错误的配置": "rule 1000 permit any",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 2216,
+      "正确的配置": "route-target import <*>",
+      "错误的配置": "route-target export <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 1722,
+      "正确的配置": "ip prefix-list ipMulticastGroup seq 30 permit <IPV4> 21 le 32",
+      "错误的配置": "ip prefix-list ipMulticastGroup seq 30 deny <IPV4> 21 le 32",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 4926,
+      "正确的配置": "ip prefix-list 2576 seq 10 permit 239.252.148.0 24",
+      "错误的配置": "ip prefix-list 2576 seq 10 deny 239.252.148.0 24",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 1795,
+      "正确的配置": "rule <*> permit <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 5235,
+      "正确的配置": "ip prefix-list 2576 seq 40 permit 238.1.32.0 21",
+      "错误的配置": "ip prefix-list 2576 seq 40 deny 238.1.32.0 21",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 4931,
+      "正确的配置": "ipv6 prefix-list ipFormRR seq <*> permit <*>",
+      "错误的配置": "ipv6 prefix-list ipFormRR seq <*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 5826,
+      "正确的配置": "ip prefix-list ipDenyCGN seq <*> permit <*> <*> le <*>",
+      "错误的配置": "ip prefix-list ipDenyCGN seq <*> deny <*> <*> le <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 1718,
+      "正确的配置": "ipv6 prefix-list ipTrackSpine seq 10 permit <IPV6>/128",
+      "错误的配置": "ipv6 prefix-list ipTrackSpine seq 10 deny <IPV6>/128",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 3823,
+      "正确的配置": "neighbor pgToDCGW-CP2UP-L3VPN-ZTE route-map rpFromDCGW-CP2UP-L3VPN-ZTE in",
+      "错误的配置": "neighbor pgToDCGW-CP2UP-L3VPN-ZTE route-map rpFromDCGW-CP2UP-L3VPN-ZTE out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 3800,
+      "正确的配置": "neighbor pgToDCGW-v6 route-map rpFromNMAN-vUP out",
+      "错误的配置": "neighbor pgToDCGW-v6 route-map rpFromNMAN-vUP in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 5440,
+      "正确的配置": "neighbor <*> route-map rpFromCR-HLWZX-BackHole in",
+      "错误的配置": "neighbor <*> route-map rpFromCR-HLWZX-BackHole out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 5518,
+      "正确的配置": "neighbor <*> route-map rpFromCR-HLWZX-Export-V6 in",
+      "错误的配置": "neighbor <*> route-map rpFromCR-HLWZX-import-V6 in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 1796,
+      "正确的配置": "rule 1000 deny any",
+      "错误的配置": "rule 1000 permit any",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 12,
+      "正确的配置": "rule 20 deny d4c1.c89a.7700 0000.0000.00ff any",
+      "错误的配置": "rule 20 permit d4c1.c89a.7700 0000.0000.00ff any",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 1721,
+      "正确的配置": "ip prefix-list ipMulticastGroup seq 20 permit <IPV4> 24 le 32",
+      "错误的配置": "ip prefix-list ipMulticastGroup seq 20 deny <IPV4> 24 le 32",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 4930,
+      "正确的配置": "ip prefix-list 2576 seq 50 permit 238.1.32.0 21",
+      "错误的配置": "ip prefix-list 2576 seq 50 deny 238.1.32.0 21",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 5895,
+      "正确的配置": "dynamic source rule-id <*> ipv4-list <*> permit pool <*>",
+      "错误的配置": "dynamic source rule-id <*> ipv4-list <*> deny pool <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 5492,
+      "正确的配置": "neighbor <*> route-map rpFromCR-HLWZX-Export in",
+      "错误的配置": "neighbor <*> route-map rpFromCR-HLWZX-import in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 1785,
+      "正确的配置": "rule 10000 deny any",
+      "错误的配置": "rule 10000 permit any",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 2133,
+      "正确的配置": "route-target import <*>",
+      "错误的配置": "route-target export <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 2196,
+      "正确的配置": "route-target export <*>",
+      "错误的配置": "route-target import <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 1711,
+      "正确的配置": "ip prefix-list 2576 seq 20 permit <IPV4> 21",
+      "错误的配置": "ip prefix-list 2576 seq 20 deny <IPV4> 21",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 1736,
+      "正确的配置": "route-target import 4134:161200",
+      "错误的配置": "route-target export 4134:161200",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 1755,
+      "正确的配置": "rule 1000 deny any",
+      "错误的配置": "rule 1000 permit any",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 1793,
+      "正确的配置": "rule <*> permit <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 2193,
+      "正确的配置": "route-target import <*>",
+      "错误的配置": "route-target export <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 333,
+      "正确的配置": "ipv6 prefix-list ipTrackSpine seq <*> permit <*>",
+      "错误的配置": "ipv6 prefix-list ipTrackSpine seq <*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 1313,
+      "正确的配置": "neighbor pgToRR-v6 route-map rpToRR out",
+      "错误的配置": "neighbor pgToRR-v6 route-map rpToRR in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 2182,
+      "正确的配置": "route-target export <*>",
+      "错误的配置": "route-target import <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 1774,
+      "正确的配置": "rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 3757,
+      "正确的配置": "neighbor pgToDCGW route-map rpFromDCGW-public in",
+      "错误的配置": "neighbor pgToDCGW route-map rpFromDCGW-public out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 5519,
+      "正确的配置": "neighbor <*> route-map rpToCR-HLWZX-Export-V6 out",
+      "错误的配置": "neighbor <*> route-map rpToCR-HLWZX-import-V6 out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 1713,
+      "正确的配置": "ip prefix-list 2576 seq 40 permit <IPV4> 21",
+      "错误的配置": "ip prefix-list 2576 seq 40 deny <IPV4> 21",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 1716,
+      "正确的配置": "ipv6 prefix-list ipFormRR seq 10 permit <IPV6>/128",
+      "错误的配置": "ipv6 prefix-list ipFormRR seq 10 deny <IPV6>/128",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 1738,
+      "正确的配置": "route-target export 4134:161200",
+      "错误的配置": "route-target import 4134:161200",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 1763,
+      "正确的配置": "rule <*> permit <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 8,
+      "正确的配置": "rule 10 deny d4c1.c89a.7700 0000.0000.00ff any",
+      "错误的配置": "rule 10 permit d4c1.c89a.7700 0000.0000.00ff any",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 1781,
+      "正确的配置": "rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 5343,
+      "正确的配置": "neighbor pgToCR route-map rpToCR out",
+      "错误的配置": "neighbor pgToCR route-map rpToCR in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 4927,
+      "正确的配置": "ip prefix-list 2576 seq 20 permit 224.0.0.0 23",
+      "错误的配置": "ip prefix-list 2576 seq 20 deny 224.0.0.0 23",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 5401,
+      "正确的配置": "neighbor pgToCR-V6 route-map rpFromCR-V6 in",
+      "错误的配置": "neighbor pgToCR-V6 route-map rpFromCR-V6 out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 5234,
+      "正确的配置": "ip prefix-list 2576 seq 30 permit 239.49.8.0 22",
+      "错误的配置": "ip prefix-list 2576 seq 30 deny 239.49.8.0 22",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 5450,
+      "正确的配置": "neighbor <*> route-map rpFromCR-HLWZX-BackHole in",
+      "错误的配置": "neighbor <*> route-map rpFromCR-HLWZX-BackHole out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 1269,
+      "正确的配置": "neighbor pgToNJ-Border-Leaf-v6 route-map rpToNJ-BorderLeaf-EVPN out",
+      "错误的配置": "neighbor pgToNJ-Border-Leaf-v6 route-map rpToNJ-BorderLeaf-EVPN in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 2134,
+      "正确的配置": "route-target export <*>",
+      "错误的配置": "route-target import <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 1758,
+      "正确的配置": "rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 2206,
+      "正确的配置": "route-target import <*>",
+      "错误的配置": "route-target export <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 3806,
+      "正确的配置": "neighbor pgToRR-v6 route-map rpToRR out",
+      "错误的配置": "neighbor pgToRR-v6 route-map rpToRR in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 1776,
+      "正确的配置": "rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 1784,
+      "正确的配置": "rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 2149,
+      "正确的配置": "route-target import <*>",
+      "错误的配置": "route-target export <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 2194,
+      "正确的配置": "route-target export <*>",
+      "错误的配置": "route-target import <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 1769,
+      "正确的配置": "rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 1778,
+      "正确的配置": "rule <*> permit <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 4915,
+      "正确的配置": "rule 1000 permit any any",
+      "错误的配置": "rule 1000 deny any any",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 2160,
+      "正确的配置": "route-target export <*>",
+      "错误的配置": "route-target import <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 2221,
+      "正确的配置": "route-target export <*>",
+      "错误的配置": "route-target import <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 11,
+      "正确的配置": "rule 10 deny 0000.5e00.0000 0000.0000.ffff any",
+      "错误的配置": "rule 10 permit 0000.5e00.0000 0000.0000.ffff any",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 2195,
+      "正确的配置": "route-target import <*>",
+      "错误的配置": "route-target export <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 332,
+      "正确的配置": "ip prefix-list 2576 seq 50 permit 239.252.151.0 24",
+      "错误的配置": "ip prefix-list 2576 seq 50 deny 239.252.151.0 24",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 1717,
+      "正确的配置": "ipv6 prefix-list ipTrackSpine seq 5 permit <IPV6>/128",
+      "错误的配置": "ipv6 prefix-list ipTrackSpine seq 5 deny <IPV6>/128",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 1720,
+      "正确的配置": "ip prefix-list ipMulticastGroup seq 10 permit <IPV4> 23 le 32",
+      "错误的配置": "ip prefix-list ipMulticastGroup seq 10 deny <IPV4> 23 le 32",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 2171,
+      "正确的配置": "route-target export <*>",
+      "错误的配置": "route-target import <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 1714,
+      "正确的配置": "ip prefix-list 2576 seq 50 permit <IPV4> 24",
+      "错误的配置": "ip prefix-list 2576 seq 50 deny <IPV4> 24",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 1782,
+      "正确的配置": "rule <*> permit <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 1812,
+      "正确的配置": "rule <*> permit <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 3758,
+      "正确的配置": "neighbor pgToDCGW route-map rpToDCGW-public out",
+      "错误的配置": "neighbor pgToDCGW route-map rpToDCGW-public in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 1807,
+      "正确的配置": "rule 3000 deny any",
+      "错误的配置": "rule 3000 permit any",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 5809,
+      "正确的配置": "route-map rpToRR-DenyCGN deny 10",
+      "错误的配置": "route-map rpToRR-DenyCGN permit 10",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 3863,
+      "正确的配置": "neighbor pgToDCGW-CTVPN193-JS route-map rpFromDCGW-CTVPN193-JS in",
+      "错误的配置": "neighbor pgToDCGW-CTVPN193-JS route-map rpFromDCGW-CTVPN193-JS out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 1268,
+      "正确的配置": "neighbor pgToNJ-Border-Leaf-v6 route-map rpFromNJ-BorderLeaf-EVPN in",
+      "错误的配置": "neighbor pgToNJ-Border-Leaf-v6 route-map rpFromNJ-BorderLeaf-EVPN out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 1816,
+      "正确的配置": "rule 1000 deny ipv6 any any",
+      "错误的配置": "rule 1000 permit ipv6 any any",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 4929,
+      "正确的配置": "ip prefix-list 2576 seq 40 permit 239.49.8.0 22",
+      "错误的配置": "ip prefix-list 2576 seq 40 deny 239.49.8.0 22",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 1779,
+      "正确的配置": "rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 2170,
+      "正确的配置": "route-target import <*>",
+      "错误的配置": "route-target export <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 1766,
+      "正确的配置": "rule 1000 deny any",
+      "错误的配置": "rule 1000 permit any",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 4919,
+      "正确的配置": "rule 20 deny d4c1.c89a.7700 0000.0000.00ff any",
+      "错误的配置": "rule 20 permit d4c1.c89a.7700 0000.0000.00ff any",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 1280,
+      "正确的配置": "neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 route-map rpToNJ-JS-ASBR-SRV6-PE out",
+      "错误的配置": "neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 route-map rpToNJ-JS-ASBR-SRV6-PE in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 1806,
+      "正确的配置": "rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 3843,
+      "正确的配置": "neighbor pgToDCGW-CTVPN-CTC-NMAN route-map rpToDCGW-CTVPN-CTC-NMAN out",
+      "错误的配置": "neighbor pgToDCGW-CTVPN-CTC-NMAN route-map rpToDCGW-CTVPN-CTC-NMAN in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 1765,
+      "正确的配置": "rule <*> permit <IPV4> <IPV4>",
+      "错误的配置": "rule <*> deny <IPV4> <IPV4>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 4914,
+      "正确的配置": "rule 20 deny link-protocol 34825 any 0180.c200.0002 0000.0000.0000",
+      "错误的配置": "rule 20 permit link-protocol 34825 any 0180.c200.0002 0000.0000.0000",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    }
+  ]
+}

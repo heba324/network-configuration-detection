@@ -1,0 +1,1383 @@
+{
+  "vendor": "cisco",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "SEMANTIC_INCONSISTENCY",
+  "错误类型别名": [
+    "SEMANTIC_INCONSISTENCY"
+  ],
+  "错误类型描述": "语义不一致（shutdown/enable/active 等运行语义矛盾）",
+  "实际模板占比": "15.20%",
+  "数据集调整占比": "16.00%",
+  "错误数量": 171,
+  "details": [
+    {
+      "错误序号": 3,
+      "错误行号": 4113,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 7209,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 4421,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 432,
+      "正确的配置": "port state slave-only",
+      "错误的配置": "port state master-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 3580,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 1340,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 7753,
+      "正确的配置": "fpd auto-upgrade enable",
+      "错误的配置": "fpd auto-upgrade disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 7604,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 1388,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 7590,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 1147,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 5184,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 3839,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 1356,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 3813,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 804,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 5405,
+      "正确的配置": "bundle id 1 mode active",
+      "错误的配置": "bundle id 1 mode standby",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 2204,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 7349,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 517,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 539,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 1364,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 7934,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 3587,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 7617,
+      "正确的配置": "fpd auto-upgrade enable",
+      "错误的配置": "fpd auto-upgrade disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 4069,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 4037,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 7399,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 5713,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 2902,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 5212,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 3473,
+      "正确的配置": "domain lookup disable",
+      "错误的配置": "domain lookup enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 7512,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 2038,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 1608,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 5471,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 3546,
+      "正确的配置": "domain lookup disable",
+      "错误的配置": "domain lookup enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 5859,
+      "正确的配置": "lacp mode active",
+      "错误的配置": "lacp mode standby",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 1332,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 3520,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 4062,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 1194,
+      "正确的配置": "mtu-ignore enable",
+      "错误的配置": "mtu-ignore disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 1875,
+      "正确的配置": "port state master-only",
+      "错误的配置": "port state slave-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 7415,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 1028,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 7177,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 8015,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 7597,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 7486,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 3944,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 2714,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 2054,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 1159,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 8132,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 1544,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 7641,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 6450,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 2786,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 4211,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 7392,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 2023,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 3677,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 2030,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 3161,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 2284,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 165,
+      "正确的配置": "fpd auto-upgrade enable",
+      "错误的配置": "fpd auto-upgrade disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 3619,
+      "正确的配置": "domain lookup disable",
+      "错误的配置": "domain lookup enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 8243,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 7631,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 5038,
+      "正确的配置": "mtu-ignore enable",
+      "错误的配置": "mtu-ignore disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 5648,
+      "正确的配置": "fpd auto-upgrade enable",
+      "错误的配置": "fpd auto-upgrade disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 8308,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 5393,
+      "正确的配置": "bundle id 4 mode active",
+      "错误的配置": "bundle id 4 mode standby",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 7817,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 7849,
+      "正确的配置": "port state master-only",
+      "错误的配置": "port state slave-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 7565,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 5175,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 7955,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 7195,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 3183,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 1036,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 4120,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 3466,
+      "正确的配置": "logging console disable",
+      "错误的配置": "logging console enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 2626,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 1857,
+      "正确的配置": "port state master-only",
+      "错误的配置": "port state slave-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 7583,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 1318,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 1512,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 7991,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 2062,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 4233,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 5363,
+      "正确的配置": "fpd auto-upgrade enable",
+      "错误的配置": "fpd auto-upgrade disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 2220,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 7298,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 3788,
+      "正确的配置": "logging console disable",
+      "错误的配置": "logging console enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 3975,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 4465,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 7930,
+      "正确的配置": "ipv4 access-group 100 ingress",
+      "错误的配置": "ipv4 access-group 100 egress",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 3636,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 2642,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 4055,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 2909,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 1576,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 5167,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 1348,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 3887,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 215,
+      "正确的配置": "hw-module profile qos hqos-enable",
+      "错误的配置": "hw-module profile qos hqos-disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 8125,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 7863,
+      "正确的配置": "shutdown",
+      "错误的配置": "undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 8388,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 7455,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 3148,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 7505,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 7385,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 167,
+      "错误行号": 7951,
+      "正确的配置": "shutdown",
+      "错误的配置": "undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 7305,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 5894,
+      "正确的配置": "ipv4 access-group iACL ingress",
+      "错误的配置": "ipv4 access-group iACL egress",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 171,
+      "错误行号": 3819,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 4146,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 7284,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 180,
+      "错误行号": 4354,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 181,
+      "错误行号": 2331,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 182,
+      "错误行号": 8071,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 183,
+      "错误行号": 5219,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 181,
+      "正确的配置": "service active",
+      "错误的配置": "service standby",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 189,
+      "错误行号": 3436,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 7462,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 367,
+      "正确的配置": "shutdown",
+      "错误的配置": "undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 195,
+      "错误行号": 2236,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 7319,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 2106,
+      "正确的配置": "shutdown",
+      "错误的配置": "undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 3539,
+      "正确的配置": "logging console disable",
+      "错误的配置": "logging console enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 3612,
+      "正确的配置": "logging console disable",
+      "错误的配置": "logging console enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 202,
+      "错误行号": 7216,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 1633,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 6467,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 207,
+      "错误行号": 7962,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 4023,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 8381,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 211,
+      "错误行号": 2780,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 4394,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 5600,
+      "正确的配置": "fpd auto-upgrade enable",
+      "错误的配置": "fpd auto-upgrade disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 214,
+      "错误行号": 3392,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 7291,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 7022,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 217,
+      "错误行号": 2192,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 8064,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 5383,
+      "正确的配置": "lacp mode active",
+      "错误的配置": "lacp mode standby",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 3659,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 7576,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 3571,
+      "正确的配置": "shutdown",
+      "错误的配置": "undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 3190,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 7433,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 5708,
+      "正确的配置": "port state master-only",
+      "错误的配置": "port state slave-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 231,
+      "错误行号": 2016,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 184,
+      "正确的配置": "active",
+      "错误的配置": "standby",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 3327,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 3443,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 3702,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 3461,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 240,
+      "错误行号": 3134,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 241,
+      "错误行号": 7812,
+      "正确的配置": "shutdown",
+      "错误的配置": "undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 7202,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 977,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 7670,
+      "正确的配置": "fpd auto-upgrade enable",
+      "错误的配置": "fpd auto-upgrade disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 7972,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 247,
+      "错误行号": 3709,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 8111,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 2955,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 253,
+      "错误行号": 3155,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 256,
+      "错误行号": 1926,
+      "正确的配置": "ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    }
+  ]
+}

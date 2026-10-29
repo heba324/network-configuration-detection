@@ -1,0 +1,95 @@
+{
+  "vendor": "h3c",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "DEPENDENCY_MISSING",
+  "错误类型别名": [
+    "DEPENDENCY_MISSING"
+  ],
+  "错误类型描述": "引用了未定义的依赖对象",
+  "实际模板占比": "6.07%",
+  "数据集调整占比": "4.00%",
+  "错误数量": 10,
+  "details": [
+    {
+      "错误序号": 3,
+      "错误行号": 1627,
+      "正确的配置": "import-route bgp4+ <*> route-policy <*>",
+      "错误的配置": "import-route bgp4+-BACKUP <*> route-policy <*>",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: bgp4+-BACKUP"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 1897,
+      "正确的配置": "peer <*> group pgToDCGW",
+      "错误的配置": "peer <*> group pgToDCGW-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: pgToDCGW-EDGE"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 1814,
+      "正确的配置": "peer pgToDCGW route-policy <*> import",
+      "错误的配置": "peer pgToDCGW route-policy RP_CORE_DR import",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: RP_CORE_DR"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 1888,
+      "正确的配置": "peer <*> group pgToDCGW",
+      "错误的配置": "peer <*> group pgToDCGW-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: pgToDCGW-EDGE"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 1845,
+      "正确的配置": "peer pgToDCGW-v6 route-policy <*> import",
+      "错误的配置": "peer pgToDCGW-v6 route-policy RP_CORE-EDGE import",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: RP_CORE-EDGE"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 2138,
+      "正确的配置": "peer <IPV6> group pgToRR-v6",
+      "错误的配置": "peer <IPV6> group pgToRR-v7053",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: pgToRR-v7053"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 1767,
+      "正确的配置": "peer <IPV4> group pgToRR",
+      "错误的配置": "peer <IPV4> group pgToRR-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: pgToRR-BACKUP"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 476,
+      "正确的配置": "peer <IPV4> group pgToRR",
+      "错误的配置": "peer <IPV4> group pgToRR_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: pgToRR_DR"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 1773,
+      "正确的配置": "peer <IPV4> group pgToDCGW",
+      "错误的配置": "peer <IPV4> group pgToDCGW-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: pgToDCGW-EDGE"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 1617,
+      "正确的配置": "import-route bgp <*> route-policy <*>",
+      "错误的配置": "import-route bgp-BACKUP <*> route-policy <*>",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: bgp-BACKUP"
+    }
+  ]
+}

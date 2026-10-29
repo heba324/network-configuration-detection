@@ -1,0 +1,2059 @@
+{
+  "vendor": "cisco",
+  "dataset": "test_dataset_2",
+  "错误类型": "SYNTAX_ERROR",
+  "错误类型描述": "语法/拼写错误",
+  "实际模板占比": "15.20%",
+  "数据集调整占比": "16.00%",
+  "错误数量": 256,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 3564,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 7194,
+      "正确的配置": "passive",
+      "错误的配置": "pasive",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 7578,
+      "正确的配置": "metric 1000 level 2",
+      "错误的配置": "metrc 1000 level 2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 8402,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "netwrk <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 7616,
+      "正确的配置": "snmp-server trap-source Loopback0",
+      "错误的配置": "snmp-servre trap-source Loopback0",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 2346,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-poliyc rp_RRC_VPN_IN in",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 7636,
+      "正确的配置": "interface preconfigure <*>",
+      "错误的配置": "interfce preconfigure <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 4250,
+      "正确的配置": "redistribute isis 99 level-2 metric 10000 route-policy rp_RING_TO_CORE",
+      "错误的配置": "redistrbute isis 99 level-2 metric 10000 route-policy rp_RING_TO_CORE",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 6517,
+      "正确的配置": "remote-as 64585.101",
+      "错误的配置": "remote-sa 64585.101",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 5592,
+      "正确的配置": "snmp-server traps snmp authentication",
+      "错误的配置": "snmp-servre traps snmp authentication",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 176,
+      "正确的配置": "frequency synchronization",
+      "错误的配置": "frequncy synchronization",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 2910,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "adress-family ipv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 7755,
+      "正确的配置": "authentication-key 1 md5 encrypted <PASSWORD>",
+      "错误的配置": "authentication-kye 1 md5 encrypted <PASSWORD>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 5808,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 7408,
+      "正确的配置": "<IPV4> Null0",
+      "错误的配置": "<IP4V> Null0",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 6087,
+      "正确的配置": "<IPV4>,",
+      "错误的配置": "<IP4V>,",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 5567,
+      "正确的配置": "address-family ipv6 unicast",
+      "错误的配置": "adress-family ipv6 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 5257,
+      "正确的配置": "rd <PORT>",
+      "错误的配置": "rd <POTR>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 861,
+      "正确的配置": "snmp-server traps config",
+      "错误的配置": "snmp-servre traps config",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 3181,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 8387,
+      "正确的配置": "passive",
+      "错误的配置": "pasive",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 4444,
+      "正确的配置": "authenticate",
+      "错误的配置": "authenticaet",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 2114,
+      "正确的配置": "route-policy TO_MARRing5_VPN_OUT",
+      "错误的配置": "route-poliyc TO_MARRing5_VPN_OUT",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 4896,
+      "正确的配置": "ssh server rate-limit 600",
+      "错误的配置": "ssh servre rate-limit 600",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 6111,
+      "正确的配置": "<IPV4>",
+      "错误的配置": "<IP4V>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 255,
+      "正确的配置": "match mpls experimental topmost 5",
+      "错误的配置": "mathc mpls experimental topmost 5",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 3535,
+      "正确的配置": "ssh server vrf default",
+      "错误的配置": "ssh servre vrf default",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 4196,
+      "正确的配置": "ipv4 address <IPV4> <IPV4>",
+      "错误的配置": "ipv4 adress <IPV4> <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 5656,
+      "正确的配置": "update-calendar",
+      "错误的配置": "update-calendra",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 5271,
+      "正确的配置": "network <IPV6> route-policy rp_Set_Core_Routes",
+      "错误的配置": "netwrk <IPV6> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 3530,
+      "正确的配置": "prefix-sid index 791",
+      "错误的配置": "prefx-sid index 791",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 4264,
+      "正确的配置": "address-family vpnv4 unicast",
+      "错误的配置": "adress-family vpnv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 6162,
+      "正确的配置": "prefix-set ps_SmartMAN_AUTO_ONLINE_IN",
+      "错误的配置": "prefx-set ps_SmartMAN_AUTO_ONLINE_IN",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 2179,
+      "正确的配置": "vrf 4G_OAM",
+      "错误的配置": "vrf 4G_OMA",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 3590,
+      "正确的配置": "prefix-sid index 790",
+      "错误的配置": "prefx-sid index 790",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 4177,
+      "正确的配置": "snmp-server traps snmp authentication",
+      "错误的配置": "snmp-servre traps snmp authentication",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 1712,
+      "正确的配置": "address-family vpnv4 unicast",
+      "错误的配置": "adress-family vpnv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 361,
+      "正确的配置": "random-detect 6400 kbytes 8000 kbytes",
+      "错误的配置": "random-detetc 6400 kbytes 8000 kbytes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 5383,
+      "正确的配置": "lacp mode active",
+      "错误的配置": "lapc mode active",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 6252,
+      "正确的配置": "end-policy",
+      "错误的配置": "end-poliyc",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 3656,
+      "正确的配置": "prefix-sid index 780",
+      "错误的配置": "prefx-sid index 780",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 1133,
+      "正确的配置": "metric 100000",
+      "错误的配置": "metrc 100000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 446,
+      "正确的配置": "prefix-set ps_RING_RA_ROUTE",
+      "错误的配置": "prefx-set ps_RING_RA_ROUTE",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 7410,
+      "正确的配置": "<IPV4> Null0",
+      "错误的配置": "<IP4V> Null0",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 1710,
+      "正确的配置": "password encrypted <PASSWORD>",
+      "错误的配置": "passwodr encrypted <PASSWORD>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 7050,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 1829,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 4232,
+      "正确的配置": "router isis 1000",
+      "错误的配置": "routr isis 1000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 3998,
+      "正确的配置": "vrf 4G_RAN",
+      "错误的配置": "vrf 4G_RNA",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 2852,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "netwrk <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 2108,
+      "正确的配置": "dampening 1 250 950 1",
+      "错误的配置": "dampenign 1 250 950 1",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 6243,
+      "正确的配置": "if destination in ps_4G_RAN_Summary then",
+      "错误的配置": "if destinatino in ps_4G_RAN_Summary then",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 1635,
+      "正确的配置": "metric 100 level 2",
+      "错误的配置": "metrc 100 level 2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 559,
+      "正确的配置": "address-family vpnv4 unicast",
+      "错误的配置": "adress-family vpnv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 3375,
+      "正确的配置": "<IPV4> <IPV4>",
+      "错误的配置": "<IP4V> <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 4702,
+      "正确的配置": "segment-routing",
+      "错误的配置": "segment-routign",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 7386,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "adress-family ipv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 3588,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "adress-family ipv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 5229,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "netwrk <IPV4> route-policy rp_Set_Default_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 5213,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "adress-family ipv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 4057,
+      "正确的配置": "metric 1000 level 2",
+      "错误的配置": "metrc 1000 level 2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 1503,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "adress-family ipv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 8297,
+      "正确的配置": "end-policy",
+      "错误的配置": "end-poliyc",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 2503,
+      "正确的配置": "rd <PORT>",
+      "错误的配置": "rd <POTR>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 8435,
+      "正确的配置": "interface <*> proxy profile autoonline",
+      "错误的配置": "interfce <*> proxy profile autoonline",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 3369,
+      "正确的配置": "<IPV4> <IPV4>",
+      "错误的配置": "<IP4V> <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 5722,
+      "正确的配置": "metric 100 level 2",
+      "错误的配置": "metrc 100 level 2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 4330,
+      "正确的配置": "network ::/0 route-policy rp_Set_Default_Routes",
+      "错误的配置": "netwrk ::/0 route-policy rp_Set_Default_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 993,
+      "正确的配置": "network <IPV6> route-policy rp_Set_Core_Routes",
+      "错误的配置": "netwrk <IPV6> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 6143,
+      "正确的配置": "end-set",
+      "错误的配置": "end-ste",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 7801,
+      "正确的配置": "identity mac-address router",
+      "错误的配置": "identity mac-adress router",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 6971,
+      "正确的配置": "neighbor <IPV6>",
+      "错误的配置": "neighbro <IPV6>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 5965,
+      "正确的配置": "<IPV4>,",
+      "错误的配置": "<IP4V>,",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 3378,
+      "正确的配置": "vrf 3G_RAN",
+      "错误的配置": "vrf 3G_RNA",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 3358,
+      "正确的配置": "maximum-paths ibgp 2",
+      "错误的配置": "maximum-patsh ibgp 2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 6315,
+      "正确的配置": "pass",
+      "错误的配置": "pass",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 4102,
+      "正确的配置": "interface <*> proxy profile autoonline",
+      "错误的配置": "interfce <*> proxy profile autoonline",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 5700,
+      "正确的配置": "interface HundredGigE0/0/0/5 relay profile ztp",
+      "错误的配置": "interfce HundredGigE0/0/0/5 relay profile ztp",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 1845,
+      "正确的配置": "interface <*> proxy profile autoonline",
+      "错误的配置": "interfce <*> proxy profile autoonline",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 1491,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "adress-family ipv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 7107,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 8110,
+      "正确的配置": "passive",
+      "错误的配置": "pasive",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 4516,
+      "正确的配置": "metric 1000 level 2",
+      "错误的配置": "metrc 1000 level 2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 4312,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 70,
+      "正确的配置": "ptp",
+      "错误的配置": "ptpx",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 1136,
+      "正确的配置": "redistribute isis 1000 level-2 metric 10000 route-policy rp_NMS_TO_RING",
+      "错误的配置": "redistribute isis 1000 level-2 metrc 10000 route-policy rp_NMS_TO_RING",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 1109,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "adress-family ipv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 6308,
+      "正确的配置": "pass",
+      "错误的配置": "pass",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 3117,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 2875,
+      "正确的配置": "snmp-server traps syslog",
+      "错误的配置": "snmp-servre traps syslog",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 6274,
+      "正确的配置": "if destination in pl_5GC_MGMN_v4_in then",
+      "错误的配置": "if destinatino in pl_5GC_MGMN_v4_in then",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 5705,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 9000x",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 920,
+      "正确的配置": "pass",
+      "错误的配置": "pass",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 7707,
+      "正确的配置": "snmp-server traps snmp authentication",
+      "错误的配置": "snmp-servre traps snmp authentication",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 4309,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "netwrk <IPV4> route-policy rp_Set_Default_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 6256,
+      "正确的配置": "pass",
+      "错误的配置": "pass",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 4610,
+      "正确的配置": "update-source Loopback0",
+      "错误的配置": "update-sourec Loopback0",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 1939,
+      "正确的配置": "load-interval 30",
+      "错误的配置": "load-intervla 30",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 5773,
+      "正确的配置": "ipv4 access-list test_4g_5g",
+      "错误的配置": "ip4v access-list test_4g_5g",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 7480,
+      "正确的配置": "<IPV4> Null0",
+      "错误的配置": "<IP4V> Null0",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 1726,
+      "正确的配置": "address-family vpnv4 unicast",
+      "错误的配置": "adress-family vpnv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 6757,
+      "正确的配置": "bfd fast-detect",
+      "错误的配置": "bfd fast-detetc",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 7734,
+      "正确的配置": "snmp-server community SdqdspDC@2020 RO",
+      "错误的配置": "snmp-server comunity SdqdspDC@2020 RO",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 7856,
+      "正确的配置": "dampening 1 250 950 1",
+      "错误的配置": "dampenign 1 250 950 1",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 3831,
+      "正确的配置": "redistribute isis 1 level-2 metric 10000 route-policy rp_RING_TO_CORE",
+      "错误的配置": "redistribute isis 1 level-2 metrc 10000 route-policy rp_RING_TO_CORE",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 43,
+      "正确的配置": "address-family ipv4 <IPV4> port 8896",
+      "错误的配置": "adress-family ipv4 <IPV4> port 8896",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 7558,
+      "正确的配置": "interface <*> proxy profile autoonline",
+      "错误的配置": "interfce <*> proxy profile autoonline",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 5407,
+      "正确的配置": "prefix-set pl_QD_5GC",
+      "错误的配置": "prefx-set pl_QD_5GC",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 3923,
+      "正确的配置": "interface <*> proxy profile autoonline",
+      "错误的配置": "interfce <*> proxy profile autoonline",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 4693,
+      "正确的配置": "address-family ipv6 unicast",
+      "错误的配置": "adress-family ipv6 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 3160,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 3763,
+      "正确的配置": "local-priority 10",
+      "错误的配置": "local-prority 10",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 4696,
+      "正确的配置": "network ::/0 route-policy rp_Set_Default_Routes",
+      "错误的配置": "netwrk ::/0 route-policy rp_Set_Default_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 5083,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 6371,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "adress-family ipv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 4945,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 8024,
+      "正确的配置": "vrf GPRS_Gn_C",
+      "错误的配置": "vrf GPRS_GnC_",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 5924,
+      "正确的配置": "<IPV4>,",
+      "错误的配置": "<IP4V>,",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 6360,
+      "正确的配置": "endif",
+      "错误的配置": "endfi",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 5070,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 3889,
+      "正确的配置": "metric 100 level 2",
+      "错误的配置": "metrc 100 level 2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 6984,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "adress-family ipv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 616,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "netwrk <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 344,
+      "正确的配置": "shape average percent 80",
+      "错误的配置": "shaep average percent 80",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 7001,
+      "正确的配置": "type udp jitter",
+      "错误的配置": "tyep udp jitter",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 4837,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 3185,
+      "正确的配置": "metric 1000 level 2",
+      "错误的配置": "metrc 1000 level 2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 6232,
+      "正确的配置": "pass",
+      "错误的配置": "pass",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 5586,
+      "正确的配置": "snmp-server community SdqdspDC@2020 RO",
+      "错误的配置": "snmp-server comunity SdqdspDC@2020 RO",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 4381,
+      "正确的配置": "interface <*> proxy profile autoonline",
+      "错误的配置": "interfce <*> proxy profile autoonline",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 1892,
+      "正确的配置": "domain 24",
+      "错误的配置": "domani 24",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 3218,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 4630,
+      "正确的配置": "neighbor <IPV4>",
+      "错误的配置": "neighbro <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 3507,
+      "正确的配置": "authenticate",
+      "错误的配置": "authenticaet",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 4422,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "adress-family ipv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 7971,
+      "正确的配置": "passive",
+      "错误的配置": "pasive",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 7674,
+      "正确的配置": "trusted-key 1",
+      "错误的配置": "trusted-kye 1",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 7564,
+      "正确的配置": "passive",
+      "错误的配置": "pasive",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 7681,
+      "正确的配置": "router isis 100",
+      "错误的配置": "routr isis 100",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 5457,
+      "正确的配置": "if destination in pl_YT_5G_RAN then",
+      "错误的配置": "if destinatino in pl_YT_5G_RAN then",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 2742,
+      "正确的配置": "interface <*> proxy profile autoonline",
+      "错误的配置": "interfce <*> proxy profile autoonline",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 7669,
+      "正确的配置": "snmp-server trap-source Loopback0",
+      "错误的配置": "snmp-servre trap-source Loopback0",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 2003,
+      "正确的配置": "aggregate-address <IPV6>/104 route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV6>/104 route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 6451,
+      "正确的配置": "net <*>",
+      "错误的配置": "net <*>x",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 1836,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 7907,
+      "正确的配置": "maximum-paths ibgp 2",
+      "错误的配置": "maximum-patsh ibgp 2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 3804,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 2561,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 2542,
+      "正确的配置": "vrf 4G_RAN",
+      "错误的配置": "vrf 4G_RNA",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 8181,
+      "正确的配置": "ipv4 address <IPV4> <IPV4>",
+      "错误的配置": "ipv4 adress <IPV4> <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 4582,
+      "正确的配置": "update-source Loopback0",
+      "错误的配置": "update-sourec Loopback0",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 502,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "adress-family ipv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 1591,
+      "正确的配置": "router isis 10",
+      "错误的配置": "routr isis 10",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 3546,
+      "正确的配置": "domain lookup disable",
+      "错误的配置": "domani lookup disable",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 1894,
+      "正确的配置": "identity mac-address 3333.3333.3333",
+      "错误的配置": "identity mac-adress 3333.3333.3333",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 1431,
+      "正确的配置": "pass",
+      "错误的配置": "pass",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 4526,
+      "正确的配置": "max-lsp-lifetime 65535",
+      "错误的配置": "max-lsp-lifetiem 65535",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 3667,
+      "正确的配置": "metric-style wide",
+      "错误的配置": "metrc-style wide",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 7758,
+      "正确的配置": "peer <IPV4>",
+      "错误的配置": "pere <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 4550,
+      "正确的配置": "redistribute bgp 64585 metric-type 1 route-policy rp_IPRAN_NMS_TO_RING",
+      "错误的配置": "redistribute bgp 64585 metrc-type 1 route-policy rp_IPRAN_NMS_TO_RING",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 6081,
+      "正确的配置": "<IPV4>,",
+      "错误的配置": "<IP4V>,",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 3925,
+      "正确的配置": "interface <*> proxy profile autoonline",
+      "错误的配置": "interfce <*> proxy profile autoonline",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 8194,
+      "正确的配置": "<IPV4> Bundle-Ether1.2956 <IPV4>",
+      "错误的配置": "<IP4V> Bundle-Ether1.2956 <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 164,
+      "错误行号": 7420,
+      "正确的配置": "router static",
+      "错误的配置": "routr static",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 165,
+      "错误行号": 7081,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "netwrk <IPV4> route-policy rp_Set_Default_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 166,
+      "错误行号": 8091,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "netwrk <IPV4> route-policy rp_Set_Default_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 167,
+      "错误行号": 3252,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 168,
+      "错误行号": 5488,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "adress-family ipv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 3651,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 7481,
+      "正确的配置": "<IPV4> Null0",
+      "错误的配置": "<IP4V> Null0",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 171,
+      "错误行号": 8067,
+      "正确的配置": "prefix-sid index 143",
+      "错误的配置": "prefx-sid index 143",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 7387,
+      "正确的配置": "metric 100 level 2",
+      "错误的配置": "metrc 100 level 2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 173,
+      "错误行号": 2477,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 6804,
+      "正确的配置": "address-family ipv6 unicast",
+      "错误的配置": "adress-family ipv6 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 3110,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 4785,
+      "正确的配置": "router-id <IPV4>",
+      "错误的配置": "routr-id <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 177,
+      "错误行号": 4106,
+      "正确的配置": "interface <*> proxy profile autoonline",
+      "错误的配置": "interfce <*> proxy profile autoonline",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 6063,
+      "正确的配置": "<IPV4>,",
+      "错误的配置": "<IP4V>,",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 179,
+      "错误行号": 6861,
+      "正确的配置": "ipv6 address <IPV6>",
+      "错误的配置": "ipv6 adress <IPV6>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 180,
+      "错误行号": 3592,
+      "正确的配置": "vrf 4G_OAM",
+      "错误的配置": "vrf 4G_OMA",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 181,
+      "错误行号": 3570,
+      "正确的配置": "interface preconfigure <*>",
+      "错误的配置": "interfce preconfigure <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 182,
+      "错误行号": 5709,
+      "正确的配置": "local-priority 1",
+      "错误的配置": "local-prority 1",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 183,
+      "错误行号": 2439,
+      "正确的配置": "rd <PORT>",
+      "错误的配置": "rd <POTR>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 184,
+      "错误行号": 5375,
+      "正确的配置": "multipath include location 0/3/CPU0",
+      "错误的配置": "multipaht include location 0/3/CPU0",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 185,
+      "错误行号": 5848,
+      "正确的配置": "encapsulation dot1q 2001",
+      "错误的配置": "encapslation dot1q 2001",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 2487,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 187,
+      "错误行号": 4091,
+      "正确的配置": "interface <*> proxy profile autoonline",
+      "错误的配置": "interfce <*> proxy profile autoonline",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 188,
+      "错误行号": 6892,
+      "正确的配置": "prefix-set pl_CU_5G_RAN_VIP_out",
+      "错误的配置": "prefx-set pl_CU_5G_RAN_VIP_out",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 189,
+      "错误行号": 759,
+      "正确的配置": "snmp-server traps snmp",
+      "错误的配置": "snmp-servre traps snmp",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 3236,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 191,
+      "错误行号": 3279,
+      "正确的配置": "vrf 4G_RAN",
+      "错误的配置": "vrf 4G_RNA",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 192,
+      "错误行号": 7779,
+      "正确的配置": "carrier-delay up 2000 down 0",
+      "错误的配置": "carrer-delay up 2000 down 0",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 193,
+      "错误行号": 5803,
+      "正确的配置": "description <*>",
+      "错误的配置": "descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 7487,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "adress-family ipv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 195,
+      "错误行号": 6830,
+      "正确的配置": "vrf SmartMAN_AUTO_ONLINE",
+      "错误的配置": "vrf SmartMAN_AUTO_ONLIEN",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 2245,
+      "正确的配置": "metric 100000",
+      "错误的配置": "metrc 100000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 2571,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 7891,
+      "正确的配置": "redistribute connected",
+      "错误的配置": "redistrbute connected",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 4097,
+      "正确的配置": "interface <*> proxy profile autoonline",
+      "错误的配置": "interfce <*> proxy profile autoonline",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 200,
+      "错误行号": 8400,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "netwrk <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 201,
+      "错误行号": 2371,
+      "正确的配置": "route-policy TO_MARRing12_VPN_OUT out",
+      "错误的配置": "route-poliyc TO_MARRing12_VPN_OUT out",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 202,
+      "错误行号": 7985,
+      "正确的配置": "address-family vpnv4 unicast",
+      "错误的配置": "adress-family vpnv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 2984,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 5985,
+      "正确的配置": "<IPV6>,",
+      "错误的配置": "<IP6V>,",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 356,
+      "正确的配置": "bandwidth remaining percent 20",
+      "错误的配置": "bandwidht remaining percent 20",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 206,
+      "错误行号": 6635,
+      "正确的配置": "password encrypted <PASSWORD>",
+      "错误的配置": "passwodr encrypted <PASSWORD>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 207,
+      "错误行号": 5904,
+      "正确的配置": "prefix-set pl_5G_RAN_in",
+      "错误的配置": "prefx-set pl_5G_RAN_in",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 1241,
+      "正确的配置": "rd <PORT>",
+      "错误的配置": "rd <POTR>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 2376,
+      "正确的配置": "route-policy TO_MARRing12_VPN_OUT out",
+      "错误的配置": "route-poliyc TO_MARRing12_VPN_OUT out",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 210,
+      "错误行号": 224,
+      "正确的配置": "match precedence 1",
+      "错误的配置": "mathc precedence 1",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 211,
+      "错误行号": 7168,
+      "正确的配置": "router bgp 64585",
+      "错误的配置": "routr bgp 64585",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 3382,
+      "正确的配置": "<IPV4> <IPV4>",
+      "错误的配置": "<IP4V> <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 2270,
+      "正确的配置": "distribute link-state instance-id 1014 level 2",
+      "错误的配置": "distribuet link-state instance-id 1014 level 2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 214,
+      "错误行号": 4092,
+      "正确的配置": "interface <*> proxy profile autoonline",
+      "错误的配置": "interfce <*> proxy profile autoonline",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 4572,
+      "正确的配置": "route-policy rp_RRC3_VPN_OUT out",
+      "错误的配置": "route-poliyc rp_RRC3_VPN_OUT out",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 1602,
+      "正确的配置": "spf-interval maximum-wait 1000 initial-wait 5 secondary-wait 10 level 2",
+      "错误的配置": "spf-intervla maximum-wait 1000 initial-wait 5 secondary-wait 10 level 2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 217,
+      "错误行号": 5546,
+      "正确的配置": "password encrypted <PASSWORD>",
+      "错误的配置": "passwodr encrypted <PASSWORD>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 5982,
+      "正确的配置": "prefix-set pl_5G_RAN_out",
+      "错误的配置": "prefx-set pl_5G_RAN_out",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 53,
+      "正确的配置": "sensor-path <*>",
+      "错误的配置": "sensor-paht <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 5150,
+      "正确的配置": "bgp router-id <IPV4>",
+      "错误的配置": "bgp routr-id <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 6708,
+      "正确的配置": "route-policy rp_default_v4_out out",
+      "错误的配置": "route-poliyc rp_default_v4_out out",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 222,
+      "错误行号": 2553,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 6288,
+      "正确的配置": "pass",
+      "错误的配置": "pass",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 7692,
+      "正确的配置": "tcp path-mtu-discovery",
+      "错误的配置": "tcp path-mtu-discoveyr",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 225,
+      "错误行号": 6925,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "adress-family ipv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 226,
+      "错误行号": 4842,
+      "正确的配置": "address-family ipv4 unicast",
+      "错误的配置": "adress-family ipv4 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 5640,
+      "正确的配置": "snmp-server traps snmp authentication",
+      "错误的配置": "snmp-servre traps snmp authentication",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 3693,
+      "正确的配置": "telnet vrf default ipv4 server max-servers 10",
+      "错误的配置": "telnte vrf default ipv4 server max-servers 10",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 2939,
+      "正确的配置": "rd <PORT>",
+      "错误的配置": "rd <POTR>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 8130,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 231,
+      "错误行号": 2139,
+      "正确的配置": "end-policy",
+      "错误的配置": "end-poliyc",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 232,
+      "错误行号": 5932,
+      "正确的配置": "<IPV4>,",
+      "错误的配置": "<IP4V>,",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 5755,
+      "正确的配置": "import route-target",
+      "错误的配置": "impotr route-target",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 234,
+      "错误行号": 2432,
+      "正确的配置": "neighbor <IPV4>",
+      "错误的配置": "neighbro <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 3094,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 8120,
+      "正确的配置": "metric 100 level 2",
+      "错误的配置": "metrc 100 level 2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 258,
+      "正确的配置": "class-map match-any CM_6",
+      "错误的配置": "class-mpa match-any CM_6",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 2231,
+      "正确的配置": "router-id Loopback0",
+      "错误的配置": "routr-id Loopback0",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 239,
+      "错误行号": 4078,
+      "正确的配置": "interface <*> proxy profile autoonline",
+      "错误的配置": "interfce <*> proxy profile autoonline",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 240,
+      "错误行号": 7446,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "netwrk <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 241,
+      "错误行号": 7538,
+      "正确的配置": "interface <*> proxy profile autoonline",
+      "错误的配置": "interfce <*> proxy profile autoonline",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 242,
+      "错误行号": 3241,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 2610,
+      "正确的配置": "interface <*> proxy profile autoonline",
+      "错误的配置": "interfce <*> proxy profile autoonline",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 5102,
+      "正确的配置": "load-interval 30",
+      "错误的配置": "load-intervla 30",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 8018,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 317,
+      "正确的配置": "set traffic-class 2",
+      "错误的配置": "set traffic-class 2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 247,
+      "错误行号": 7150,
+      "正确的配置": "password encrypted <PASSWORD>",
+      "错误的配置": "passwodr encrypted <PASSWORD>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 4450,
+      "正确的配置": "update-calendar",
+      "错误的配置": "update-calendra",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 249,
+      "错误行号": 4848,
+      "正确的配置": "aggregate-address <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "aggregate-adress <IPV4> route-policy rp_Set_Core_Routes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 71,
+      "正确的配置": "clock",
+      "错误的配置": "clokc",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 3474,
+      "正确的配置": "telnet vrf default ipv4 server max-servers 10",
+      "错误的配置": "telnte vrf default ipv4 server max-servers 10",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 2163,
+      "正确的配置": "if extcommunity rt matches-any <PORT> then",
+      "错误的配置": "if extcommuniyt rt matches-any <PORT> then",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 253,
+      "错误行号": 4911,
+      "正确的配置": "log adjacency changes",
+      "错误的配置": "log adjacenyc changes",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 254,
+      "错误行号": 2035,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 255,
+      "错误行号": 1874,
+      "正确的配置": "transport ethernet",
+      "错误的配置": "transpotr ethernet",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 256,
+      "错误行号": 6750,
+      "正确的配置": "address-family ipv6 unicast",
+      "错误的配置": "adress-family ipv6 unicast",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    }
+  ]
+}

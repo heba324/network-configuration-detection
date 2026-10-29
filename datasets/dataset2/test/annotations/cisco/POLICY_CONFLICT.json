@@ -1,0 +1,267 @@
+{
+  "vendor": "cisco",
+  "dataset": "test_dataset_2",
+  "错误类型": "POLICY_CONFLICT",
+  "错误类型描述": "策略冲突（permit/deny、import/export 等策略动作矛盾）",
+  "实际模板占比": "15.20%",
+  "数据集调整占比": "16.00%",
+  "错误数量": 32,
+  "details": [
+    {
+      "错误序号": 6,
+      "错误行号": 2346,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_RRC_VPN_IN out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 120,
+      "正确的配置": "import route-target",
+      "错误的配置": "export route-target",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 6497,
+      "正确的配置": "route-policy rp_SmartMAN_OUT out",
+      "错误的配置": "route-policy rp_SmartMAN_OUT in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 4586,
+      "正确的配置": "route-policy rp_RRC4_VPN_OUT out",
+      "错误的配置": "route-policy rp_RRC4_VPN_OUT in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 6648,
+      "正确的配置": "route-policy rp_5GC_RAN_in in",
+      "错误的配置": "route-policy rp_5GC_RAN_in out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 6795,
+      "正确的配置": "route-policy rp_default_v6_out out",
+      "错误的配置": "route-policy rp_default_v6_out in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 5764,
+      "正确的配置": "import route-target",
+      "错误的配置": "export route-target",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 1645,
+      "正确的配置": "route-policy TO_MARRing1_VPN_OUT out",
+      "错误的配置": "route-policy TO_MARRing1_VPN_OUT in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 6946,
+      "正确的配置": "route-policy rp_CT_5G_RAN_in in",
+      "错误的配置": "route-policy rp_CT_5G_RAN_in out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 6638,
+      "正确的配置": "route-policy rp_default_v6_out out",
+      "错误的配置": "route-policy rp_default_v6_out in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 5568,
+      "正确的配置": "route-policy rp_LY_5G_RAN_in in",
+      "错误的配置": "route-policy rp_LY_5G_RAN_in out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 6688,
+      "正确的配置": "route-policy rp_5GC_5GC_WAP_in in",
+      "错误的配置": "route-policy rp_5GC_5GC_WAP_in out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 1685,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_RRC_VPN_IN out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 1664,
+      "正确的配置": "route-policy TO_MARRing3_VPN_OUT out",
+      "错误的配置": "route-policy TO_MARRing3_VPN_OUT in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 2341,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_RRC_VPN_IN out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 4619,
+      "正确的配置": "route-policy rp_RRC7_VPN_OUT out",
+      "错误的配置": "route-policy rp_RRC7_VPN_OUT in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 164,
+      "错误行号": 4814,
+      "正确的配置": "route-policy rp_RRC6_VPN_OUT out",
+      "错误的配置": "route-policy rp_RRC6_VPN_OUT in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 4570,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_RRC_VPN_IN out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 180,
+      "错误行号": 4605,
+      "正确的配置": "route-policy rp_RRC5_VPN_OUT out",
+      "错误的配置": "route-policy rp_RRC5_VPN_OUT in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 182,
+      "错误行号": 2348,
+      "正确的配置": "route-policy TO_MARRing5_VPN_OUT out",
+      "错误的配置": "route-policy TO_MARRing5_VPN_OUT in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 184,
+      "错误行号": 6978,
+      "正确的配置": "route-policy rp_CT_5G_RAN_VIP_in in",
+      "错误的配置": "route-policy rp_CT_5G_RAN_VIP_in out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 6491,
+      "正确的配置": "route-policy rp_SmartMAN_OUT out",
+      "错误的配置": "route-policy rp_SmartMAN_OUT in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 4575,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_RRC_VPN_IN out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 6627,
+      "正确的配置": "route-policy rp_default_v6_out out",
+      "错误的配置": "route-policy rp_default_v6_out in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 4803,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_RRC_VPN_IN out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 4612,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_RRC_VPN_IN out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 225,
+      "错误行号": 5548,
+      "正确的配置": "route-policy rp_WF_5G_RAN_in in",
+      "错误的配置": "route-policy rp_WF_5G_RAN_in out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 5538,
+      "正确的配置": "route-policy rp_YT_5G_RAN_in in",
+      "错误的配置": "route-policy rp_YT_5G_RAN_in out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 2343,
+      "正确的配置": "route-policy TO_MARRing5_VPN_OUT out",
+      "错误的配置": "route-policy TO_MARRing5_VPN_OUT in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 1729,
+      "正确的配置": "route-policy TO_MARRing9_VPN_OUT out",
+      "错误的配置": "route-policy TO_MARRing9_VPN_OUT in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 4572,
+      "正确的配置": "route-policy rp_RRC3_VPN_OUT out",
+      "错误的配置": "route-policy rp_RRC3_VPN_OUT in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 7918,
+      "正确的配置": "route-policy rp_5G_RAN_in in",
+      "错误的配置": "route-policy rp_5G_RAN_in out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    }
+  ]
+}

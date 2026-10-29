@@ -1,0 +1,2955 @@
+{
+  "vendor": "fiber",
+  "dataset": "test_dataset_2",
+  "错误类型": "PARAM_TYPE_MISMATCH",
+  "错误类型描述": "参数类型不匹配",
+  "实际模板占比": "21.56%",
+  "数据集调整占比": "23.00%",
+  "错误数量": 368,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 2816,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 2504,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 2754,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 4224,
+      "正确的配置": "lag mac-address 2292-2223-2323",
+      "错误的配置": "lag mac-address 999999-2223-2323",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 2718,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 4359,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 4013,
+      "正确的配置": "snmp-agent trapsink ipv4 <IPV4> HZprivate@123 167",
+      "错误的配置": "snmp-agent trapsink ipv4 2001:db8::7 HZprivate@123 167",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 4208,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::8",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 422,
+      "正确的配置": "vlan-type dot1q 4093",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 6543,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 999999 down-weight 100",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 7148,
+      "正确的配置": "lag mac-address 2224-5224-2524",
+      "错误的配置": "lag mac-address 999999-5224-2524",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 1371,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 5649,
+      "正确的配置": "interface loopback 0",
+      "错误的配置": "interface loopback 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 2702,
+      "正确的配置": "interface eth-10gi 0/2/0/16",
+      "错误的配置": "interface eth-10gi 999999/2/0/16",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 1907,
+      "正确的配置": "interface lag 2.1000",
+      "错误的配置": "interface lag 999999.1000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 2083,
+      "正确的配置": "interface loopback 1020",
+      "错误的配置": "interface loopback 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 874,
+      "正确的配置": "vlan-type dot1q 895",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 8185,
+      "正确的配置": "update-source <IPV4>",
+      "错误的配置": "update-source 2001:db8::18",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 6318,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 4477,
+      "正确的配置": "interface eth-10gi 0/1/1/1",
+      "错误的配置": "interface eth-10gi 999999/1/1/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 9120,
+      "正确的配置": "lag mac-address 7777-E778-7A78",
+      "错误的配置": "lag mac-address 999999-E778-7A78",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 6338,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 1103,
+      "正确的配置": "interface loopback 0",
+      "错误的配置": "interface loopback 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 2832,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 2601,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 5708,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 5491,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::27",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 1751,
+      "正确的配置": "interface eth-100gi 0/10/0/4",
+      "错误的配置": "interface eth-100gi 999999/10/0/4",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 4836,
+      "正确的配置": "vlan-type dot1q 895",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 3379,
+      "正确的配置": "interface eth-10gi 0/5/0/6.843",
+      "错误的配置": "interface eth-10gi 999999/5/0/6.843",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 2699,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 1241,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 1699,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 8045,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 2629,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 4503,
+      "正确的配置": "lag add interface eth-10gi 0/2/0/48",
+      "错误的配置": "lag add interface eth-10gi 999999/2/0/48",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 5731,
+      "正确的配置": "vlan-type dot1q 854",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 6229,
+      "正确的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193",
+      "错误的配置": "set dcn-manager-addr ip-address 2001:db8::38 private CTVPN193",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 1017,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::39",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 5611,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 1271,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 8590,
+      "正确的配置": "interface lag 2",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 2679,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 922,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 8874,
+      "正确的配置": "interface lag 3",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 597,
+      "正确的配置": "user router privilege 15",
+      "错误的配置": "user router privilege 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 6797,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::47",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 1693,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 7490,
+      "正确的配置": "ip address unnumbered interface loopback 1023",
+      "错误的配置": "ip address unnumbered interface loopback 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 8625,
+      "正确的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193",
+      "错误的配置": "set dcn-manager-addr ip-address 2001:db8::50 private CTVPN193",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 28,
+      "正确的配置": "route-target import <PORT>",
+      "错误的配置": "route-target import 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 8861,
+      "正确的配置": "lag mac-address 6668-8667-6967",
+      "错误的配置": "lag mac-address 999999-8667-6967",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 8262,
+      "正确的配置": "snmp-agent trap source interface loopback 0",
+      "错误的配置": "snmp-agent trap source interface loopback 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 1662,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 2975,
+      "正确的配置": "snmp-agent community fiberhomeRW default HZprivate@123",
+      "错误的配置": "snmp-agent community fiberhomeRW default HZprivate@999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 5548,
+      "正确的配置": "interface eth-10gi 0/1/0/3.851",
+      "错误的配置": "interface eth-10gi 999999/1/0/3.851",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 3470,
+      "正确的配置": "vlan-type dot1q 851",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 8707,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/2",
+      "错误的配置": "lag add interface eth-10gi 999999/1/0/2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 5010,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 7343,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 999999 down-weight 100",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 2924,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 2359,
+      "正确的配置": "ipv6 address <IPV6>",
+      "错误的配置": "ipv6 address 10.255.61.1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 4233,
+      "正确的配置": "lag add interface eth-10gi 0/5/0/1",
+      "错误的配置": "lag add interface eth-10gi 999999/5/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 2452,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 999,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 5875,
+      "正确的配置": "spf-interval level-1 10",
+      "错误的配置": "spf-interval level--1 10",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 7721,
+      "正确的配置": "interface lag 3",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 992,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 3460,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::69",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 7121,
+      "正确的配置": "spf-interval level-1 10",
+      "错误的配置": "spf-interval level--1 10",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 5990,
+      "正确的配置": "interface eth-10gi 0/1/0/4",
+      "错误的配置": "interface eth-10gi 999999/1/0/4",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 6162,
+      "正确的配置": "lag mac-address 888C-8889-8B89",
+      "错误的配置": "lag mac-address 888C-999999-8B89",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 2817,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 5121,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 7969,
+      "正确的配置": "rule 1000 deny fragme-type non_fragment",
+      "错误的配置": "rule 999999 deny fragme-type non_fragment",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 394,
+      "正确的配置": "interface dcn-serial 0/4/0/3",
+      "错误的配置": "interface dcn-serial 999999/4/0/3",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 8230,
+      "正确的配置": "lag mac-address 888A-188B-8989",
+      "错误的配置": "lag mac-address 888A-188B-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 7999,
+      "正确的配置": "lag add interface eth-100gi 0/8/0/1",
+      "错误的配置": "lag add interface eth-100gi 999999/8/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 2476,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 26,
+      "正确的配置": "route-target export <PORT>",
+      "错误的配置": "route-target export 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 4165,
+      "正确的配置": "lag mac-address 1181-4112-1212",
+      "错误的配置": "lag mac-address 999999-4112-1212",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 7114,
+      "正确的配置": "system-id 0003-8002-0302",
+      "错误的配置": "system-id 999999-8002-0302",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 9075,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/2",
+      "错误的配置": "lag add interface eth-100gi 999999/3/0/2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 1206,
+      "正确的配置": "rd <PORT>",
+      "错误的配置": "rd 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 1178,
+      "正确的配置": "ipv4-prefix isis-loopback0 seq 2 permit prefix <IPV4>",
+      "错误的配置": "ipv4-prefix isis-loopback0 seq 2 permit prefix 2001:db8::85",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 7259,
+      "正确的配置": "interface lag 3",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 2262,
+      "正确的配置": "vlan-type dot1q 843",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 1373,
+      "正确的配置": "interface eth-10gi 0/3/2/4",
+      "错误的配置": "interface eth-10gi 999999/3/2/4",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 3534,
+      "正确的配置": "interface lag 1",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 8010,
+      "正确的配置": "interface lag 3",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 852,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 2751,
+      "正确的配置": "interface eth-10gi 0/2/0/23",
+      "错误的配置": "interface eth-10gi 999999/2/0/23",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 7125,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 1198,
+      "正确的配置": "route-target export <PORT>",
+      "错误的配置": "route-target export 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 6295,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 8166,
+      "正确的配置": "dhcp relay source-ip <IPV4>",
+      "错误的配置": "dhcp relay source-ip 2001:db8::96",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 1447,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 6333,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 7923,
+      "正确的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193",
+      "错误的配置": "set dcn-manager-addr ip-address 2001:db8::99 private CTVPN193",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 2748,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 8325,
+      "正确的配置": "system-id 0003-0002-0302",
+      "错误的配置": "system-id 999999-0002-0302",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 888,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 2381,
+      "正确的配置": "lag mac-address 22B2-3227-2723",
+      "错误的配置": "lag mac-address 22B2-999999-2723",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 2285,
+      "正确的配置": "interface eth-10gi 0/4/0/2.843",
+      "错误的配置": "interface eth-10gi 999999/4/0/2.843",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 4800,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 1298,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 575,
+      "正确的配置": "rule 2 permit source <IPV4> fragme-type non_fragment",
+      "错误的配置": "rule 2 permit source 2001:db8::107 fragme-type non_fragment",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 2573,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 6867,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/1",
+      "错误的配置": "lag add interface eth-100gi 999999/3/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 2532,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 1506,
+      "正确的配置": "interface eth-10gi 0/1/0/19",
+      "错误的配置": "interface eth-10gi 999999/1/0/19",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 244,
+      "正确的配置": "ipv6 address <IPV6>/125",
+      "错误的配置": "ipv6 address 10.255.111.1/125",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 9011,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 999999 down-weight 100",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 3121,
+      "正确的配置": "vlan-type dot1q 1843",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 191,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 2814,
+      "正确的配置": "interface eth-10gi 0/2/0/32",
+      "错误的配置": "interface eth-10gi 999999/2/0/32",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 279,
+      "正确的配置": "vlan-type dot1q 843",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 1382,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 4975,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 3507,
+      "正确的配置": "vlan-type dot1q 852",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 1795,
+      "正确的配置": "interface lag 2.11",
+      "错误的配置": "interface lag 999999.11",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 3707,
+      "正确的配置": "lag mac-address 6666-E669-6779",
+      "错误的配置": "lag mac-address 999999-E669-6779",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 9037,
+      "正确的配置": "router bgp 64522",
+      "错误的配置": "router bgp 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 4020,
+      "正确的配置": "system-id 0001-0038-0303",
+      "错误的配置": "system-id 999999-0038-0303",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 1115,
+      "正确的配置": "bgp router-id <IPV4>",
+      "错误的配置": "bgp router-id 2001:db8::125",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 5325,
+      "正确的配置": "rd <PORT>",
+      "错误的配置": "rd 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 3891,
+      "正确的配置": "interface lag 1",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 1425,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 1165,
+      "正确的配置": "route-policy SET_DEF_ROUTE_v6 permit node 10",
+      "错误的配置": "route-policy SET_DEF_ROUTE_v6 permit node 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 8668,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 2595,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 3565,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 890,
+      "正确的配置": "vlan-type dot1q 895",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 8030,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::134",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 3598,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/1",
+      "错误的配置": "lag add interface eth-100gi 999999/3/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 1301,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 3587,
+      "正确的配置": "interface eth-100gi 0/3/0/3",
+      "错误的配置": "interface eth-100gi 999999/3/0/3",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 7699,
+      "正确的配置": "interface eth-100gi 0/10/0/1",
+      "错误的配置": "interface eth-100gi 999999/10/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 2249,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::139",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 9128,
+      "正确的配置": "lag mac-address 7777-E779-7A79",
+      "错误的配置": "lag mac-address 999999-E779-7A79",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 8724,
+      "正确的配置": "prefix-sid index 73 no-php",
+      "错误的配置": "prefix-sid index 999999 no-php",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 7850,
+      "正确的配置": "lag mac-address 777B-C77A-7878",
+      "错误的配置": "lag mac-address 777B-C77A-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 2734,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 8912,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/2",
+      "错误的配置": "lag add interface eth-100gi 999999/3/0/2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 7469,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::145",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 7667,
+      "正确的配置": "lag mac-address 1113-1113-1413",
+      "错误的配置": "lag mac-address 999999-1113-1413",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 1219,
+      "正确的配置": "interface loopback 1020",
+      "错误的配置": "interface loopback 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 3208,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 643,
+      "正确的配置": "router bgp 64523",
+      "错误的配置": "router bgp 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 4961,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 2201,
+      "正确的配置": "vlan-type dot1q 1843",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 3613,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::152",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 8507,
+      "正确的配置": "spf-interval level-2 10",
+      "错误的配置": "spf-interval level--1 10",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 7816,
+      "正确的配置": "ipv4-prefix SmartMAN_OUT seq 1 permit prefix <IPV4> ge 32 le 32",
+      "错误的配置": "ipv4-prefix SmartMAN_OUT seq 1 permit prefix 2001:db8::154 ge 32 le 32",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 6532,
+      "正确的配置": "interface lag 2",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 8446,
+      "正确的配置": "snmp-agent trap source interface loopback 0",
+      "错误的配置": "snmp-agent trap source interface loopback 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 342,
+      "正确的配置": "ip address unnumbered interface loopback 1020",
+      "错误的配置": "ip address unnumbered interface loopback 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 99,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 206,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 8078,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 7621,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::161",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 7044,
+      "正确的配置": "snmp-agent community fiberhomeRO default HZpublic@123",
+      "错误的配置": "snmp-agent community fiberhomeRO default HZpublic@999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 4552,
+      "正确的配置": "spf-interval level-2 10",
+      "错误的配置": "spf-interval level--1 10",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 164,
+      "错误行号": 2478,
+      "正确的配置": "interface eth-10gi 0/1/1/8",
+      "错误的配置": "interface eth-10gi 999999/1/1/8",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 165,
+      "错误行号": 7658,
+      "正确的配置": "interface lag 1",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 166,
+      "错误行号": 7580,
+      "正确的配置": "lag mac-address 888C-C88B-8999",
+      "错误的配置": "lag mac-address 888C-C88B-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 167,
+      "错误行号": 524,
+      "正确的配置": "interface dcn-tunnel 0/5/0/3",
+      "错误的配置": "interface dcn-tunnel 999999/5/0/3",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 168,
+      "错误行号": 7685,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 8923,
+      "正确的配置": "interface loopback 0",
+      "错误的配置": "interface loopback 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 6048,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 171,
+      "错误行号": 2351,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 6126,
+      "正确的配置": "neighbor <IPV4>",
+      "错误的配置": "neighbor 2001:db8::172",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 173,
+      "错误行号": 3849,
+      "正确的配置": "dhcp relay source-ip <IPV4>",
+      "错误的配置": "dhcp relay source-ip 2001:db8::173",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 1099,
+      "正确的配置": "interface eth-10gi 0/5/0/4.895",
+      "错误的配置": "interface eth-10gi 999999/5/0/4.895",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 8806,
+      "正确的配置": "lag mac-address 6668-7667-6967",
+      "错误的配置": "lag mac-address 999999-7667-6967",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 5213,
+      "正确的配置": "snmp-agent community fiberhomeRW default HZprivate@123",
+      "错误的配置": "snmp-agent community fiberhomeRW default HZprivate@999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 177,
+      "错误行号": 5027,
+      "正确的配置": "interface eth-10gi 0/5/2/9",
+      "错误的配置": "interface eth-10gi 999999/5/2/9",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 1157,
+      "正确的配置": "route-policy MCR-OUT-BGPVPN-MCR2 permit node 1",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR2 permit node 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 179,
+      "错误行号": 3498,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 180,
+      "错误行号": 1800,
+      "正确的配置": "interface lag 1.4092",
+      "错误的配置": "interface lag 999999.4092",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 181,
+      "错误行号": 7656,
+      "正确的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193",
+      "错误的配置": "set dcn-manager-addr ip-address 2001:db8::181 private CTVPN193",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 182,
+      "错误行号": 4155,
+      "正确的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193",
+      "错误的配置": "set dcn-manager-addr ip-address 2001:db8::182 private CTVPN193",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 183,
+      "错误行号": 3931,
+      "正确的配置": "system-id 0000-0038-0303",
+      "错误的配置": "system-id 999999-0038-0303",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 184,
+      "错误行号": 9064,
+      "正确的配置": "interface lag 1",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 185,
+      "错误行号": 5441,
+      "正确的配置": "ipv6 address ::C67E:<PORT>:CE44/128",
+      "错误的配置": "ipv6 address ::C67E:70000:CE44/128",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 1784,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::186",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 187,
+      "错误行号": 5889,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 188,
+      "错误行号": 3981,
+      "正确的配置": "set local-preference 100",
+      "错误的配置": "set local-preference 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 189,
+      "错误行号": 4541,
+      "正确的配置": "spf-interval level-1 10",
+      "错误的配置": "spf-interval level--1 10",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 3442,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 191,
+      "错误行号": 3096,
+      "正确的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193",
+      "错误的配置": "set dcn-manager-addr ip-address 2001:db8::191 private CTVPN193",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 192,
+      "错误行号": 4125,
+      "正确的配置": "router isis 11",
+      "错误的配置": "router isis 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 193,
+      "错误行号": 4027,
+      "正确的配置": "spf-interval level-1 10",
+      "错误的配置": "spf-interval level--1 10",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 661,
+      "正确的配置": "initial-delay-time 180",
+      "错误的配置": "initial-delay-time 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 195,
+      "错误行号": 2684,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 6123,
+      "正确的配置": "bgp cluster-id <IPV4>",
+      "错误的配置": "bgp cluster-id 2001:db8::196",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 8486,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/1",
+      "错误的配置": "lag add interface eth-10gi 999999/1/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 5974,
+      "正确的配置": "interface eth-10gi 0/1/0/2",
+      "错误的配置": "interface eth-10gi 999999/1/0/2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 5351,
+      "正确的配置": "lag add interface eth-100gi 0/10/0/1",
+      "错误的配置": "lag add interface eth-100gi 999999/10/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 200,
+      "错误行号": 1064,
+      "正确的配置": "lag mac-address 6666-6668-6B67",
+      "错误的配置": "lag mac-address 999999-6668-6B67",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 201,
+      "错误行号": 135,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 202,
+      "错误行号": 8839,
+      "正确的配置": "system-id 0002-1002-0302",
+      "错误的配置": "system-id 999999-1002-0302",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 8827,
+      "正确的配置": "snmp-agent community fiberhomeRW default HZprivate@123",
+      "错误的配置": "snmp-agent community fiberhomeRW default HZprivate@999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 2401,
+      "正确的配置": "prefix-sid index 6602 no-php",
+      "错误的配置": "prefix-sid index 999999 no-php",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 1574,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 206,
+      "错误行号": 7369,
+      "正确的配置": "spf-interval level-1 10",
+      "错误的配置": "spf-interval level--1 10",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 207,
+      "错误行号": 1489,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 19,
+      "正确的配置": "route-target import <PORT>",
+      "错误的配置": "route-target import 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 8803,
+      "正确的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193",
+      "错误的配置": "set dcn-manager-addr ip-address 2001:db8::209 private CTVPN193",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 210,
+      "错误行号": 7506,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 211,
+      "错误行号": 4411,
+      "正确的配置": "snmp-agent trapsink ipv4 <IPV4> HZprivate@123 167",
+      "错误的配置": "snmp-agent trapsink ipv4 2001:db8::211 HZprivate@123 167",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 9026,
+      "正确的配置": "prefix-sid index 37 no-php",
+      "错误的配置": "prefix-sid index 999999 no-php",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 5259,
+      "正确的配置": "interface dcn-tunnel 0/3/1/2",
+      "错误的配置": "interface dcn-tunnel 999999/3/1/2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 214,
+      "错误行号": 3807,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 1307,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 5539,
+      "正确的配置": "vlan-type dot1q 852",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 217,
+      "错误行号": 7171,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 4693,
+      "正确的配置": "prefix-sid index 10803 no-php",
+      "错误的配置": "prefix-sid index 999999 no-php",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 6488,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 999999 down-weight 100",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 162,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 7445,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 222,
+      "错误行号": 2092,
+      "正确的配置": "lag add interface eth-100gi 0/8/0/1",
+      "错误的配置": "lag add interface eth-100gi 999999/8/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 5527,
+      "正确的配置": "interface eth-10gi 0/1/0/2.851",
+      "错误的配置": "interface eth-10gi 999999/1/0/2.851",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 3942,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 225,
+      "错误行号": 8366,
+      "正确的配置": "interface lag 2",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 226,
+      "错误行号": 8299,
+      "正确的配置": "interface lag 2",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 8350,
+      "正确的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193",
+      "错误的配置": "set dcn-manager-addr ip-address 2001:db8::227 private CTVPN193",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 5341,
+      "正确的配置": "lag mac-address 5556-5556-5666",
+      "错误的配置": "lag mac-address 999999-5556-5666",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 3676,
+      "正确的配置": "interface dcn-tunnel 0/2/0/5",
+      "错误的配置": "interface dcn-tunnel 999999/2/0/5",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 8585,
+      "正确的配置": "lag add interface eth-100gi 0/8/0/1",
+      "错误的配置": "lag add interface eth-100gi 999999/8/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 231,
+      "错误行号": 1746,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 232,
+      "错误行号": 7462,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/2",
+      "错误的配置": "lag add interface eth-100gi 999999/3/0/2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 7202,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 999999 down-weight 100",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 234,
+      "错误行号": 9049,
+      "正确的配置": "update-source <IPV4>",
+      "错误的配置": "update-source 2001:db8::234",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 3481,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::235",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 6051,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 2852,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 1932,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 239,
+      "错误行号": 4457,
+      "正确的配置": "ipv4-prefix MAR seq 1 permit prefix <IPV4>",
+      "错误的配置": "ipv4-prefix MAR seq 1 permit prefix 2001:db8::239",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 240,
+      "错误行号": 7846,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/2",
+      "错误的配置": "lag add interface eth-100gi 999999/3/0/2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 241,
+      "错误行号": 8813,
+      "正确的配置": "interface lag 2",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 242,
+      "错误行号": 1672,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 168,
+      "正确的配置": "interface eth-10gi 0/5/0/1",
+      "错误的配置": "interface eth-10gi 999999/5/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 7050,
+      "正确的配置": "snmp-agent trapsink ipv4 <IPV4> HZprivate@123 167",
+      "错误的配置": "snmp-agent trapsink ipv4 2001:db8::244 HZprivate@123 167",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 2383,
+      "正确的配置": "lag add interface eth-10gi 0/5/0/1",
+      "错误的配置": "lag add interface eth-10gi 999999/5/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 1698,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 247,
+      "错误行号": 8746,
+      "正确的配置": "lag mac-address 3334-5334-3B34",
+      "错误的配置": "lag mac-address 999999-5334-3B34",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 8011,
+      "正确的配置": "lag mac-address 3334-7336-3434",
+      "错误的配置": "lag mac-address 999999-7336-3434",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 249,
+      "错误行号": 4024,
+      "正确的配置": "prefix-sid index 175 no-php",
+      "错误的配置": "prefix-sid index 999999 no-php",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 4622,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::250",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 6930,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 999999 down-weight 100",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 3022,
+      "正确的配置": "ip extcommunity-list standard LOOP1 permit rt <PORT>",
+      "错误的配置": "ip extcommunity-list standard LOOP1 permit rt 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 253,
+      "错误行号": 1420,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 254,
+      "错误行号": 6885,
+      "正确的配置": "interface lag 5",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 255,
+      "错误行号": 1406,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 256,
+      "错误行号": 5638,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/1",
+      "错误的配置": "lag add interface eth-10gi 999999/1/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 257,
+      "错误行号": 1228,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 258,
+      "错误行号": 6358,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 259,
+      "错误行号": 1706,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 260,
+      "错误行号": 281,
+      "正确的配置": "interface eth-10gi 0/4/0/2.895",
+      "错误的配置": "interface eth-10gi 999999/4/0/2.895",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 261,
+      "错误行号": 8246,
+      "正确的配置": "route <IPV4> vrf 5G_RAN",
+      "错误的配置": "route 2001:db8::261 vrf 5G_RAN",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 262,
+      "错误行号": 781,
+      "正确的配置": "interface dcn-tunnel 0/5/0/2",
+      "错误的配置": "interface dcn-tunnel 999999/5/0/2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 263,
+      "错误行号": 4352,
+      "正确的配置": "prefix-sid index 187 no-php",
+      "错误的配置": "prefix-sid index 999999 no-php",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 264,
+      "错误行号": 4486,
+      "正确的配置": "lag mac-address 1117-1112-1222",
+      "错误的配置": "lag mac-address 999999-1112-1222",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 265,
+      "错误行号": 5564,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::265",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 266,
+      "错误行号": 1719,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 267,
+      "错误行号": 6212,
+      "正确的配置": "router bgp 64522",
+      "错误的配置": "router bgp 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 268,
+      "错误行号": 4729,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 269,
+      "错误行号": 3722,
+      "正确的配置": "spf-interval level-2 10",
+      "错误的配置": "spf-interval level--1 10",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 270,
+      "错误行号": 382,
+      "正确的配置": "interface dcn-serial 0/4/0/1",
+      "错误的配置": "interface dcn-serial 999999/4/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 271,
+      "错误行号": 6267,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 272,
+      "错误行号": 7026,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 273,
+      "错误行号": 1093,
+      "正确的配置": "dhcp relay source-ip <IPV4>",
+      "错误的配置": "dhcp relay source-ip 2001:db8::273",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 274,
+      "错误行号": 199,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 275,
+      "错误行号": 1702,
+      "正确的配置": "interface eth-10gi 0/1/0/47",
+      "错误的配置": "interface eth-10gi 999999/1/0/47",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 276,
+      "错误行号": 7980,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 277,
+      "错误行号": 4369,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 278,
+      "错误行号": 8699,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/1",
+      "错误的配置": "lag add interface eth-10gi 999999/1/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 279,
+      "错误行号": 4817,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::279",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 280,
+      "错误行号": 2555,
+      "正确的配置": "interface eth-10gi 0/2/0/1",
+      "错误的配置": "interface eth-10gi 999999/2/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 281,
+      "错误行号": 5178,
+      "正确的配置": "interface dcn-tunnel 0/3/2/4",
+      "错误的配置": "interface dcn-tunnel 999999/3/2/4",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 282,
+      "错误行号": 2525,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 283,
+      "错误行号": 4301,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 284,
+      "错误行号": 6711,
+      "正确的配置": "lag mac-address 0000-2002-0302",
+      "错误的配置": "lag mac-address 999999-2002-0302",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 285,
+      "错误行号": 7716,
+      "正确的配置": "lag mac-address 6667-B668-7667",
+      "错误的配置": "lag mac-address 999999-B668-7667",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 286,
+      "错误行号": 1756,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 287,
+      "错误行号": 3356,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 288,
+      "错误行号": 1045,
+      "正确的配置": "vlan-type dot1q 1843",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 289,
+      "错误行号": 6293,
+      "正确的配置": "interface eth-10gi 0/2/1/9",
+      "错误的配置": "interface eth-10gi 999999/2/1/9",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 290,
+      "错误行号": 4866,
+      "正确的配置": "lag add interface eth-10gi 0/5/0/1",
+      "错误的配置": "lag add interface eth-10gi 999999/5/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 291,
+      "错误行号": 8139,
+      "正确的配置": "lag mac-address 4477-A445-4545",
+      "错误的配置": "lag mac-address 999999-A445-4545",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 292,
+      "错误行号": 2958,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 293,
+      "错误行号": 374,
+      "正确的配置": "vlan-type dot1q 4093",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 294,
+      "错误行号": 8910,
+      "正确的配置": "lag mac-address 0004-1002-0302",
+      "错误的配置": "lag mac-address 999999-1002-0302",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 295,
+      "错误行号": 7997,
+      "正确的配置": "lag mac-address 3334-3334-3B34",
+      "错误的配置": "lag mac-address 999999-3334-3B34",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 296,
+      "错误行号": 5776,
+      "正确的配置": "ipv6 address <IPV6>",
+      "错误的配置": "ipv6 address 10.255.45.1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 297,
+      "错误行号": 2882,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 298,
+      "错误行号": 8997,
+      "正确的配置": "mtu 9000",
+      "错误的配置": "mtu 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 299,
+      "错误行号": 3060,
+      "正确的配置": "lag add interface eth-10gi 0/2/0/48",
+      "错误的配置": "lag add interface eth-10gi 999999/2/0/48",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 300,
+      "错误行号": 2531,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 301,
+      "错误行号": 4404,
+      "正确的配置": "snmp-agent community fiberhomeRW default HZprivate@123",
+      "错误的配置": "snmp-agent community fiberhomeRW default HZprivate@999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 302,
+      "错误行号": 3166,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/1",
+      "错误的配置": "lag add interface eth-10gi 999999/1/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 303,
+      "错误行号": 5324,
+      "正确的配置": "route-target import <PORT>",
+      "错误的配置": "route-target import 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 304,
+      "错误行号": 5943,
+      "正确的配置": "spf-interval level-2 10",
+      "错误的配置": "spf-interval level--1 10",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 305,
+      "错误行号": 1690,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 306,
+      "错误行号": 3667,
+      "正确的配置": "spf-interval level-2 10",
+      "错误的配置": "spf-interval level--1 10",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 307,
+      "错误行号": 2861,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 308,
+      "错误行号": 1175,
+      "正确的配置": "ipv4-prefix MCR seq 1 deny prefix <IPV4>",
+      "错误的配置": "ipv4-prefix MCR seq 1 deny prefix 2001:db8::308",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 309,
+      "错误行号": 6703,
+      "正确的配置": "lag mac-address 0000-2001-0301",
+      "错误的配置": "lag mac-address 999999-2001-0301",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 310,
+      "错误行号": 6121,
+      "正确的配置": "router bgp 64522",
+      "错误的配置": "router bgp 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 311,
+      "错误行号": 4294,
+      "正确的配置": "prefix-sid index 181 no-php",
+      "错误的配置": "prefix-sid index 999999 no-php",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 312,
+      "错误行号": 2926,
+      "正确的配置": "interface eth-10gi 0/2/0/48",
+      "错误的配置": "interface eth-10gi 999999/2/0/48",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 313,
+      "错误行号": 2069,
+      "正确的配置": "set local-preference 50",
+      "错误的配置": "set local-preference 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 314,
+      "错误行号": 3830,
+      "正确的配置": "lag mac-address 5585-6556-5656",
+      "错误的配置": "lag mac-address 999999-6556-5656",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 315,
+      "错误行号": 2777,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 316,
+      "错误行号": 4461,
+      "正确的配置": "ipv4-prefix isis-loopback0 seq 1 permit prefix <IPV4>",
+      "错误的配置": "ipv4-prefix isis-loopback0 seq 1 permit prefix 2001:db8::316",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 317,
+      "错误行号": 6816,
+      "正确的配置": "mpls traffic-eng router-id <IPV4>",
+      "错误的配置": "mpls traffic-eng router-id 2001:db8::317",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 318,
+      "错误行号": 5744,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::318",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 319,
+      "错误行号": 5841,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::319",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 320,
+      "错误行号": 1813,
+      "正确的配置": "monitor-group 1",
+      "错误的配置": "monitor-group 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 321,
+      "错误行号": 6875,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/2",
+      "错误的配置": "lag add interface eth-100gi 999999/3/0/2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 322,
+      "错误行号": 8305,
+      "正确的配置": "interface lag 3",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 323,
+      "错误行号": 8683,
+      "正确的配置": "lag mac-address 5556-6556-5D56",
+      "错误的配置": "lag mac-address 999999-6556-5D56",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 324,
+      "错误行号": 2912,
+      "正确的配置": "interface eth-10gi 0/2/0/46",
+      "错误的配置": "interface eth-10gi 999999/2/0/46",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 325,
+      "错误行号": 8310,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 999999 down-weight 100",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 326,
+      "错误行号": 7888,
+      "正确的配置": "interface lag 2",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 327,
+      "错误行号": 8031,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 999999 down-weight 100",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 328,
+      "错误行号": 2485,
+      "正确的配置": "interface eth-10gi 0/1/1/9",
+      "错误的配置": "interface eth-10gi 999999/1/1/9",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 329,
+      "错误行号": 5023,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 330,
+      "错误行号": 3570,
+      "正确的配置": "router bgp 64523",
+      "错误的配置": "router bgp 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 331,
+      "错误行号": 8329,
+      "正确的配置": "spf-interval level-2 10",
+      "错误的配置": "spf-interval level--1 10",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 332,
+      "错误行号": 1776,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::332",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 333,
+      "错误行号": 8402,
+      "正确的配置": "interface dcn-tunnel 0/1/1/1",
+      "错误的配置": "interface dcn-tunnel 999999/1/1/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 334,
+      "错误行号": 8604,
+      "正确的配置": "interface loopback 0",
+      "错误的配置": "interface loopback 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 335,
+      "错误行号": 4400,
+      "正确的配置": "lag add interface eth-10gi 0/5/0/1",
+      "错误的配置": "lag add interface eth-10gi 999999/5/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 336,
+      "错误行号": 2219,
+      "正确的配置": "dhcp relay source-ip <IPV4>",
+      "错误的配置": "dhcp relay source-ip 2001:db8::336",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 337,
+      "错误行号": 7739,
+      "正确的配置": "snmp-agent trap source interface loopback 0",
+      "错误的配置": "snmp-agent trap source interface loopback 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 338,
+      "错误行号": 1663,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 339,
+      "错误行号": 6194,
+      "正确的配置": "snmp-agent trapsink ipv4 <IPV4> HZprivate@123 167",
+      "错误的配置": "snmp-agent trapsink ipv4 2001:db8::339 HZprivate@123 167",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 340,
+      "错误行号": 7024,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/1",
+      "错误的配置": "lag add interface eth-100gi 999999/3/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 341,
+      "错误行号": 5126,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 342,
+      "错误行号": 6832,
+      "正确的配置": "router isis 13",
+      "错误的配置": "router isis 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 343,
+      "错误行号": 4555,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer -1 level-2",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 344,
+      "错误行号": 5816,
+      "正确的配置": "mpls traffic-eng level-2",
+      "错误的配置": "mpls traffic-eng level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 345,
+      "错误行号": 5911,
+      "正确的配置": "interface lag 2",
+      "错误的配置": "interface lag 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 346,
+      "错误行号": 2536,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 347,
+      "错误行号": 8756,
+      "正确的配置": "lag add interface eth-100gi 0/10/0/1",
+      "错误的配置": "lag add interface eth-100gi 999999/10/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 348,
+      "错误行号": 4136,
+      "正确的配置": "mpls traffic-eng level-2",
+      "错误的配置": "mpls traffic-eng level-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 349,
+      "错误行号": 276,
+      "正确的配置": "ipv6 address <IPV6>/125",
+      "错误的配置": "ipv6 address 10.255.98.1/125",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 350,
+      "错误行号": 3051,
+      "正确的配置": "lag mac-address 2223-6224-2525",
+      "错误的配置": "lag mac-address 999999-6224-2525",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 351,
+      "错误行号": 4264,
+      "正确的配置": "lag mac-address 0001-9001-0211",
+      "错误的配置": "lag mac-address 999999-9001-0211",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 352,
+      "错误行号": 8131,
+      "正确的配置": "interface eth-10gi 0/1/0/6.2000",
+      "错误的配置": "interface eth-10gi 999999/1/0/6.2000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 353,
+      "错误行号": 7156,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/1",
+      "错误的配置": "lag add interface eth-10gi 999999/1/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 354,
+      "错误行号": 6569,
+      "正确的配置": "ip extcommunity-list standard LOOP1 permit rt <PORT>",
+      "错误的配置": "ip extcommunity-list standard LOOP1 permit rt 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 355,
+      "错误行号": 4927,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 356,
+      "错误行号": 6084,
+      "正确的配置": "vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 357,
+      "错误行号": 4266,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/1",
+      "错误的配置": "lag add interface eth-100gi 999999/3/0/1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 358,
+      "错误行号": 5002,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold -1 alert-threshold 50",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 359,
+      "错误行号": 8,
+      "正确的配置": "route-target export <PORT>",
+      "错误的配置": "route-target export 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 360,
+      "错误行号": 6418,
+      "正确的配置": "interface loopback 0",
+      "错误的配置": "interface loopback 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 361,
+      "错误行号": 8700,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::361",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 362,
+      "错误行号": 4929,
+      "正确的配置": "interface eth-10gi 0/5/1/4",
+      "错误的配置": "interface eth-10gi 999999/5/1/4",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 363,
+      "错误行号": 2355,
+      "正确的配置": "interface eth-10gi 0/4/0/2.1843",
+      "错误的配置": "interface eth-10gi 999999/4/0/2.1843",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 364,
+      "错误行号": 5546,
+      "正确的配置": "vlan-type dot1q 854",
+      "错误的配置": "vlan-type dot1q 5000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 365,
+      "错误行号": 3338,
+      "正确的配置": "ip address <IPV4>",
+      "错误的配置": "ip address 2001:db8::365",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 366,
+      "错误行号": 2527,
+      "正确的配置": "interface eth-10gi 0/1/2/6",
+      "错误的配置": "interface eth-10gi 999999/1/2/6",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 367,
+      "错误行号": 8652,
+      "正确的配置": "track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 999999 down-weight 100",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 368,
+      "错误行号": 2839,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error -1 interval-second 900",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    }
+  ]
+}

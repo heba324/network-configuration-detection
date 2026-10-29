@@ -1,0 +1,947 @@
+{
+  "vendor": "fiber",
+  "dataset": "test_dataset_2",
+  "错误类型": "DEPENDENCY_MISSING",
+  "错误类型描述": "引用了未定义的依赖对象",
+  "实际模板占比": "21.56%",
+  "数据集调整占比": "23.00%",
+  "错误数量": 117,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 4158,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN-EDGE"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 3625,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7194",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7194"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 1999,
+      "正确的配置": "route-policy MCR-OUT-BGPVPN-MCR2_ipv6 out",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR2_ipv6_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: MCR-OUT-BGPVPN-MCR2_ipv6_DR"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 455,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7202",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7202"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 4111,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN_EDGE"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 1032,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: wireless_OMC_DR"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 5134,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7208",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7208"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 3821,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN-CORE"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 3745,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN_EDGE"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 8628,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN-BACKUP"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 6082,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7217",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7217"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 2195,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN_DR"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 4207,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN_DR"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 3115,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN_EDGE"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 5556,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding 4G_RAN_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 4G_RAN_EDGE"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 6840,
+      "正确的配置": "route-policy MAR-OUT-BGPVPN-LOOP3 out",
+      "错误的配置": "route-policy MAR-OUT-BGPVPN-LOOP3_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: MAR-OUT-BGPVPN-LOOP3_DR"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 5676,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN-BACKUP"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 485,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7247",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7247"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 530,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7253",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7253"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 250,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: wireless_OMC-CORE"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 1039,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN_DR"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 4214,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN-EDGE"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 389,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN-CORE"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 4651,
+      "正确的配置": "route-policy MCR-OUT-BGPVPN-MCR out",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: MCR-OUT-BGPVPN-MCR_DR"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 3337,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN-EDGE"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 5690,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: wireless_OMC_DR"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 4832,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: wireless_OMC-EDGE"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 3226,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7282",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7282"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 550,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7287",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7287"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 495,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7291",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7291"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 6844,
+      "正确的配置": "route-policy MAR_IPV6-OUT-BGPVPN-LOOP3 out",
+      "错误的配置": "route-policy MAR_IPV6-OUT-BGPVPN-LOOP3_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: MAR_IPV6-OUT-BGPVPN-LOOP3_DR"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 359,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN-BACKUP"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 8132,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: wireless_OMC-EDGE"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 2286,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN_DR"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 5743,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding 4G_RAN-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 4G_RAN-CORE"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 3373,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: wireless_OMC-CORE"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 4568,
+      "正确的配置": "route-policy MCR-OUT-BGPVPN-MCR out",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: MCR-OUT-BGPVPN-MCR_DR"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 257,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN_DR"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 282,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: wireless_OMC_DR"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 4816,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: wireless_OMC-CORE"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 437,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN-BACKUP"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 5734,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN-EDGE"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 2426,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN_EDGE"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 2961,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7343",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7343"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 3913,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7345",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7345"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 5563,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: wireless_OMC_DR"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 5328,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN-CORE"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 449,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN-BACKUP"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 1801,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7353",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7353"
+    },
+    {
+      "错误序号": 165,
+      "错误行号": 656,
+      "正确的配置": "route-policy NNI-PRI in",
+      "错误的配置": "route-policy NNI-PRI_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: NNI-PRI_DR"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 5139,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7361",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7361"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 1983,
+      "正确的配置": "route-policy MCR-OUT-BGPVPN-MCR1 out",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR1_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: MCR-OUT-BGPVPN-MCR1_DR"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 4671,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN-CORE"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 4650,
+      "正确的配置": "route-policy MCR-IN-BGPVPN-MCR in",
+      "错误的配置": "route-policy MCR-IN-BGPVPN-MCR_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: MCR-IN-BGPVPN-MCR_DR"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 4311,
+      "正确的配置": "route-policy MAR-OUT-BGPVPN-LOOP1 out",
+      "错误的配置": "route-policy MAR-OUT-BGPVPN-LOOP1_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: MAR-OUT-BGPVPN-LOOP1_DR"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 5124,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7368",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7368"
+    },
+    {
+      "错误序号": 181,
+      "错误行号": 6087,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7373",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7373"
+    },
+    {
+      "错误序号": 185,
+      "错误行号": 2265,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding 4G_RAN_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 4G_RAN_DR"
+    },
+    {
+      "错误序号": 191,
+      "错误行号": 2956,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7383",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7383"
+    },
+    {
+      "错误序号": 193,
+      "错误行号": 7489,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7385",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7385"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 1220,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN_EDGE"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 460,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7388",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7388"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 4780,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN-BACKUP"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 2966,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7391",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7391"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 5114,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7400",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7400"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 330,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN_DR"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 4848,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN-EDGE"
+    },
+    {
+      "错误序号": 217,
+      "错误行号": 657,
+      "正确的配置": "route-policy NNI-PRI out",
+      "错误的配置": "route-policy NNI-PRI_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: NNI-PRI_DR"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 5549,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding 4G_RAN_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 4G_RAN_EDGE"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 54,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7413",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7413"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 5764,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN_EDGE"
+    },
+    {
+      "错误序号": 226,
+      "错误行号": 3752,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN-EDGE"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 545,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7419",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7419"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 861,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN-BACKUP"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 674,
+      "正确的配置": "route-policy NNI-BAK in",
+      "错误的配置": "route-policy NNI-BAK_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: NNI-BAK_DR"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 3782,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN_DR"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 8085,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN-BACKUP"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 4057,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN-EDGE"
+    },
+    {
+      "错误序号": 253,
+      "错误行号": 4593,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: wireless_OMC-BACKUP"
+    },
+    {
+      "错误序号": 254,
+      "错误行号": 671,
+      "正确的配置": "route-policy NNI-BAK out",
+      "错误的配置": "route-policy NNI-BAK_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: NNI-BAK_DR"
+    },
+    {
+      "错误序号": 255,
+      "错误行号": 3517,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN_DR"
+    },
+    {
+      "错误序号": 256,
+      "错误行号": 652,
+      "正确的配置": "route-policy NNI-PRI in",
+      "错误的配置": "route-policy NNI-PRI_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: NNI-PRI_DR"
+    },
+    {
+      "错误序号": 257,
+      "错误行号": 5129,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7449",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7449"
+    },
+    {
+      "错误序号": 259,
+      "错误行号": 3775,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: wireless_OMC_EDGE"
+    },
+    {
+      "错误序号": 261,
+      "错误行号": 5179,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7453",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7453"
+    },
+    {
+      "错误序号": 262,
+      "错误行号": 4563,
+      "正确的配置": "route-policy MCR-OUT-BGPVPN-MCR out",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: MCR-OUT-BGPVPN-MCR_DR"
+    },
+    {
+      "错误序号": 263,
+      "错误行号": 7479,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7455",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7455"
+    },
+    {
+      "错误序号": 265,
+      "错误行号": 5750,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding 4G_RAN_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 4G_RAN_DR"
+    },
+    {
+      "错误序号": 266,
+      "错误行号": 2325,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding 4G_RAN-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 4G_RAN-EDGE"
+    },
+    {
+      "错误序号": 277,
+      "错误行号": 3405,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN-CORE"
+    },
+    {
+      "错误序号": 281,
+      "错误行号": 520,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7473",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7473"
+    },
+    {
+      "错误序号": 282,
+      "错误行号": 3396,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN-CORE"
+    },
+    {
+      "错误序号": 285,
+      "错误行号": 347,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN_DR"
+    },
+    {
+      "错误序号": 286,
+      "错误行号": 3380,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN-EDGE"
+    },
+    {
+      "错误序号": 287,
+      "错误行号": 47,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN-CORE"
+    },
+    {
+      "错误序号": 288,
+      "错误行号": 7499,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7480",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7480"
+    },
+    {
+      "错误序号": 298,
+      "错误行号": 9051,
+      "正确的配置": "route-policy MCR-OUT-BGPVPN-MCR2 out",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR2_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: MCR-OUT-BGPVPN-MCR2_DR"
+    },
+    {
+      "错误序号": 306,
+      "错误行号": 6077,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7498",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7498"
+    },
+    {
+      "错误序号": 309,
+      "错误行号": 2003,
+      "正确的配置": "route-policy MAR-OUT-BGPVPN-LOOP1 out",
+      "错误的配置": "route-policy MAR-OUT-BGPVPN-LOOP1_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: MAR-OUT-BGPVPN-LOOP1_DR"
+    },
+    {
+      "错误序号": 311,
+      "错误行号": 7504,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7503",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7503"
+    },
+    {
+      "错误序号": 315,
+      "错误行号": 2031,
+      "正确的配置": "network ::/0 route-policy SET_DEF_ROUTE_v6",
+      "错误的配置": "network ::/0 route-policy SET_DEF_ROUTE_v7320",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: SET_DEF_ROUTE_v7320"
+    },
+    {
+      "错误序号": 316,
+      "错误行号": 980,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN-EDGE"
+    },
+    {
+      "错误序号": 317,
+      "错误行号": 510,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7509",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7509"
+    },
+    {
+      "错误序号": 319,
+      "错误行号": 1995,
+      "正确的配置": "route-policy MCR-OUT-BGPVPN-MCR2 out",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR2_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: MCR-OUT-BGPVPN-MCR2_DR"
+    },
+    {
+      "错误序号": 320,
+      "错误行号": 3466,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding 4G_RAN_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 4G_RAN_DR"
+    },
+    {
+      "错误序号": 321,
+      "错误行号": 2272,
+      "正确的配置": "ip vrf forwarding 4G_RAN",
+      "错误的配置": "ip vrf forwarding 4G_RAN-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 4G_RAN-EDGE"
+    },
+    {
+      "错误序号": 325,
+      "错误行号": 670,
+      "正确的配置": "route-policy NNI-BAK in",
+      "错误的配置": "route-policy NNI-BAK_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: NNI-BAK_DR"
+    },
+    {
+      "错误序号": 329,
+      "错误行号": 341,
+      "正确的配置": "ip vrf forwarding FHNMVPN",
+      "错误的配置": "ip vrf forwarding FHNMVPN_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: FHNMVPN_EDGE"
+    },
+    {
+      "错误序号": 335,
+      "错误行号": 298,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN_DR"
+    },
+    {
+      "错误序号": 338,
+      "错误行号": 886,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: wireless_OMC-BACKUP"
+    },
+    {
+      "错误序号": 344,
+      "错误行号": 5164,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7536",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7536"
+    },
+    {
+      "错误序号": 348,
+      "错误行号": 8095,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN-BACKUP"
+    },
+    {
+      "错误序号": 353,
+      "错误行号": 475,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7545",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7545"
+    },
+    {
+      "错误序号": 357,
+      "错误行号": 678,
+      "正确的配置": "route-policy NNI-BAK in",
+      "错误的配置": "route-policy NNI-BAK_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: NNI-BAK_DR"
+    },
+    {
+      "错误序号": 361,
+      "错误行号": 1016,
+      "正确的配置": "ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: wireless_OMC-EDGE"
+    },
+    {
+      "错误序号": 363,
+      "错误行号": 241,
+      "正确的配置": "ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 5G_RAN-BACKUP"
+    },
+    {
+      "错误序号": 365,
+      "错误行号": 5119,
+      "正确的配置": "ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN7557",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN7557"
+    }
+  ]
+}

@@ -1,0 +1,3527 @@
+{
+  "vendor": "hw",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "RESOURCE_CONFLICT",
+  "错误类型别名": [
+    "RESOURCE_CONFLICT"
+  ],
+  "错误类型描述": "资源冲突（真实资源值重复分配）",
+  "实际模板占比": "38.91%",
+  "数据集调整占比": "42.00%",
+  "错误数量": 439,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 29056,
+      "正确的配置": "user-group <*>",
+      "错误的配置": "user-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 8168,
+      "正确的配置": "radius-server group <*>",
+      "错误的配置": "radius-server group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 26768,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6>/60 <*> static 12 args 16",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/60）"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 42198,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance CTVPN-CTC-NMAN source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 37924,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 25875,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance CTVPN193_JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193_JS）"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 15144,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group cgn destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 31570,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance 2B_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 37197,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance CTVPN193_JS source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193_JS）"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 17379,
+      "正确的配置": "track monitor-location-group cgn",
+      "错误的配置": "track monitor-location-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 4845,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group cgn destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 6598,
+      "正确的配置": "local-user <*> user-group manage-ug",
+      "错误的配置": "local-user <*> user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 42397,
+      "正确的配置": "peer-ipv6 <IPV6> source-ipv6 <IPV6>",
+      "错误的配置": "peer-ipv6 08:00:00 source-ipv6 <IPV6>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 27036,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 37996,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group pre-wlan-nat destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 14037,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 31258,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group pre-wlan-nat destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 42372,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance 64660100 source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 64660100）"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 777,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance CTVPN193_JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193_JS）"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 31371,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group cgn destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 37287,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance E07-TSXC-HWUP1-1301-LeaseLine source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-TSXC-HWUP1-1301-LeaseLine）"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 684,
+      "正确的配置": "import-route <*> route-policy <*>",
+      "错误的配置": "import-route <*> route-policy rpFromospf701",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf701）"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 12614,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 29923,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 1620,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193-JS）"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 37819,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group manage-ug destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 15702,
+      "正确的配置": "test-session <*> local-ipv6 <IPV6> remote-ipv6 <IPV6> local-port <*> remote-port <*> description <*>",
+      "错误的配置": "test-session <*> local-ipv6 08:00:00 remote-ipv6 <IPV6> local-port <*> remote-port <*> description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 1331,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 3722,
+      "正确的配置": "ospf 703 router-id <IPV4>",
+      "错误的配置": "ospf 703 router-id filter",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 filter）"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 31358,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 27383,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy rpToCloudPE import",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCloudPE）"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 22875,
+      "正确的配置": "ospf 705 router-id <IPV4> vpn-instance CTVPN193-JS",
+      "错误的配置": "ospf 705 router-id filter vpn-instance CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 filter）"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 37623,
+      "正确的配置": "if-match ipv6 address prefix-list <*>",
+      "错误的配置": "if-match ipv6 address prefix-list <IPV6>/60",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/60）"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 41325,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance CTVPN-CTC-NMAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 38939,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 2578",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2578）"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 3300,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpToCloudPE export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCloudPE）"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 38843,
+      "正确的配置": "ospf 701 router-id <IPV4> vpn-instance CTVPN-CTC-NMAN",
+      "错误的配置": "ospf 701 router-id filter vpn-instance CTVPN-CTC-NMAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 filter）"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 23965,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance CTVPN193_JS source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193_JS）"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 6908,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 2578",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2578）"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 18559,
+      "正确的配置": "user-group <*> bind nat instance <*>",
+      "错误的配置": "user-group vod bind nat instance <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 6815,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy rpFromospf701 import",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf701）"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 39264,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 37522,
+      "正确的配置": "test-session <*> local-ipv6 <IPV6> remote-ipv6 <IPV6> local-port <*> remote-port <*> description <*>",
+      "错误的配置": "test-session <*> local-ipv6 08:00:00 remote-ipv6 <IPV6> local-port <*> remote-port <*> description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 37831,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 25464,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193-JS）"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 31488,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 12474,
+      "正确的配置": "ntp-service unicast-server <IPV4> vpn-instance CTVPN193-JS preference",
+      "错误的配置": "ntp-service unicast-server <IPV4> vpn-instance 64660100 preference",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 64660100）"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 2906,
+      "正确的配置": "vpn-instance <*>",
+      "错误的配置": "vpn-instance CTVPN193_JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193_JS）"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 24346,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 2578",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2578）"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 20521,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 3162",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3162）"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 18056,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpribonly-v6 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpribonly-v6）"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 30013,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group pre-wlan-nat destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 39059,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf705 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 39413,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number name",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 name）"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 21609,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance 2B_RAN source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 11784,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance CTVPN-CTC-NMAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 24508,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance E07-TSXC-HWUP1-1301-LeaseLine",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-TSXC-HWUP1-1301-LeaseLine）"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 38411,
+      "正确的配置": "ip vpn-instance <*>",
+      "错误的配置": "ip vpn-instance CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193-JS）"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 20267,
+      "正确的配置": "local-user <*> user-group manage-ug",
+      "错误的配置": "local-user <*> user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 23907,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance 64660100",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 64660100）"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 39392,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 2577",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2577）"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 6635,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf704 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf704）"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 29926,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group manage-ug destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 37527,
+      "正确的配置": "test-session <*> local-ipv6 <IPV6> remote-ipv6 <IPV6> local-port <*> remote-port <*>",
+      "错误的配置": "test-session <*> local-ipv6 08:00:00 remote-ipv6 <IPV6> local-port <*> remote-port <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 21167,
+      "正确的配置": "local-user <*> user-group manage-ug",
+      "错误的配置": "local-user <*> user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 38265,
+      "正确的配置": "ssh server acl 2577",
+      "错误的配置": "ssh server acl 3161",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3161）"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 3091,
+      "正确的配置": "ip vpn-instance <*>",
+      "错误的配置": "ip vpn-instance 64660100",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 64660100）"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 22182,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 34574,
+      "正确的配置": "ip vpn-instance <*>",
+      "错误的配置": "ip vpn-instance CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193-JS）"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 20000,
+      "正确的配置": "ntp-service source-interface LoopBack2 vpn-instance CTVPN193-JS",
+      "错误的配置": "ntp-service source-interface LoopBack2 vpn-instance E07-TSXC-HWUP1-1301-LeaseLine",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-TSXC-HWUP1-1301-LeaseLine）"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 38184,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpribonly-v6 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpribonly-v6）"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 37944,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 16280,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*>",
+      "错误的配置": "ip route-static vpn-instance CTVPN-CTC-NMAN <IPV4> <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 15226,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 39098,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpribonly-v6 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpribonly-v6）"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 2798,
+      "正确的配置": "ip vpn-instance <*>",
+      "错误的配置": "ip vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 37829,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group cgn destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 30028,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 28449,
+      "正确的配置": "vpn-instance <*>",
+      "错误的配置": "vpn-instance CTVPN-CTC-NMAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 1523,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy rpToCloudPE import",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCloudPE）"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 28763,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance 2B_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 31262,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group cgn destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 18038,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 35078,
+      "正确的配置": "info-center loghost <IPV4> vpn-instance CTVPN193-JS source-ip <IPV4> local-time",
+      "错误的配置": "info-center loghost <IPV4> vpn-instance CP2UP_L3VPN_HW source-ip <IPV4> local-time",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 39263,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6>/64 <*> static 12 args 16",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/64）"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 34973,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number name",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 name）"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 21213,
+      "正确的配置": "router-id <IPV4>",
+      "错误的配置": "router-id filter",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 filter）"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 1329,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 16127,
+      "正确的配置": "hwtacacs-server authentication <IPV4> vpn-instance CTVPN193-JS secondary",
+      "错误的配置": "hwtacacs-server authentication <IPV4> vpn-instance 64660100 secondary",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 64660100）"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 6941,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance CP2UP_L3VPN_HW source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 18294,
+      "正确的配置": "acl 2577 inbound",
+      "错误的配置": "acl 3161 inbound",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3161）"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 15730,
+      "正确的配置": "bfd <*> bind peer-ipv6 <IPV6> interface <INTERFACE> source-ipv6 <IPV6>",
+      "错误的配置": "bfd <*> bind peer-ipv6 08:00:00 interface <INTERFACE> source-ipv6 <IPV6>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 30002,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 8248,
+      "正确的配置": "route-policy <*> permit node <*>",
+      "错误的配置": "route-policy rpFromospf705 permit node <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 26898,
+      "正确的配置": "encapsulation source-address <IPV6>",
+      "错误的配置": "encapsulation source-address 08:00:00",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 39259,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6>/64 <*> static 12 args 16",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/64）"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 30027,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 25114,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number name",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 name）"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 25490,
+      "正确的配置": "ipv6 route-static <IPV6> 128 <*> <IPV6> bfd enable description <*>",
+      "错误的配置": "ipv6 route-static 08:00:00 128 <*> <IPV6> bfd enable description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 27016,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 30047,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group cgn destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 15194,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 37886,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 28450,
+      "正确的配置": "user-group <*>",
+      "错误的配置": "user-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 36590,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*>",
+      "错误的配置": "ip route-static vpn-instance CTVPN193-JS <IPV4> <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193-JS）"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 41620,
+      "正确的配置": "ssh server acl 2577",
+      "错误的配置": "ssh server acl 3161",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3161）"
+    },
+    {
+      "错误序号": 164,
+      "错误行号": 15160,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 165,
+      "错误行号": 26917,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 166,
+      "错误行号": 21507,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance CTVPN193_JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193_JS）"
+    },
+    {
+      "错误序号": 168,
+      "错误行号": 31313,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 30015,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group manage-ug destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 30070,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 17705,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance 64660100",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 64660100）"
+    },
+    {
+      "错误序号": 173,
+      "错误行号": 37795,
+      "正确的配置": "destination ipv6 <IPV6> remote-discriminator <*>",
+      "错误的配置": "destination ipv6 08:00:00 remote-discriminator <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 2667,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance CTVPN-CTC-NMAN source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 18034,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 6015",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 6015）"
+    },
+    {
+      "错误序号": 177,
+      "错误行号": 35163,
+      "正确的配置": "router-id <IPV4>",
+      "错误的配置": "router-id filter",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 filter）"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 8113,
+      "正确的配置": "ssh server acl 2577",
+      "错误的配置": "ssh server acl 3161",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3161）"
+    },
+    {
+      "错误序号": 179,
+      "错误行号": 37832,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 181,
+      "错误行号": 32472,
+      "正确的配置": "route-policy <*> permit node <*>",
+      "错误的配置": "route-policy rpToCloudPE permit node <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCloudPE）"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 15240,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 187,
+      "错误行号": 24241,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 188,
+      "错误行号": 27287,
+      "正确的配置": "evpn vpn-instance <*> bd-mode",
+      "错误的配置": "evpn vpn-instance CTVPN-CTC-NMAN bd-mode",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 189,
+      "错误行号": 32849,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number name",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 name）"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 26918,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6>/64 <*> static 12 args 16",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/64）"
+    },
+    {
+      "错误序号": 192,
+      "错误行号": 7748,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 193,
+      "错误行号": 29978,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group manage-ug destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 22178,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group cgn destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 620,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy rpToCloudPE import",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCloudPE）"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 3774,
+      "正确的配置": "telnet server acl 2577",
+      "错误的配置": "telnet server acl name",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 name）"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 2596,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf701 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf701）"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 37500,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 201,
+      "错误行号": 26761,
+      "正确的配置": "encapsulation source-address <IPV6>",
+      "错误的配置": "encapsulation source-address 08:00:00",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 14044,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group pre-wlan-nat destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 41822,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6>/60 <*> static 12 args 16",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/60）"
+    },
+    {
+      "错误序号": 206,
+      "错误行号": 33399,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpToCloudPE export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCloudPE）"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 31298,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 26999,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance CTVPN-CTC-NMAN source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 25832,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 15171,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group manage-ug destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 15145,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 15214,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 21706,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 12502,
+      "正确的配置": "encapsulation source-address <IPV6>",
+      "错误的配置": "encapsulation source-address 08:00:00",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 222,
+      "错误行号": 42137,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf705 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 22250,
+      "正确的配置": "info-center loghost <IPV4> vpn-instance CTVPN193-JS source-ip <IPV4>",
+      "错误的配置": "info-center loghost <IPV4> vpn-instance CP2UP_L3VPN_HW source-ip <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 18045,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 226,
+      "错误行号": 24161,
+      "正确的配置": "vpn-instance <*>",
+      "错误的配置": "vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 3440,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance 2B_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 37993,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 3045,
+      "正确的配置": "ipv6 import-route <*> tag <*> route-policy <*>",
+      "错误的配置": "ipv6 import-route <*> tag <*> route-policy rpFromospf704",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf704）"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 5896,
+      "正确的配置": "track monitor-location-group cgn",
+      "错误的配置": "track monitor-location-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 231,
+      "错误行号": 27039,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group pre-wlan-nat destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 37977,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 234,
+      "错误行号": 21251,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance 2B_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 31502,
+      "正确的配置": "test-session <*> local-ipv6 <IPV6> remote-ipv6 <IPV6> local-port <*> remote-port <*> description <*>",
+      "错误的配置": "test-session <*> local-ipv6 08:00:00 remote-ipv6 <IPV6> local-port <*> remote-port <*> description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 37933,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 1859,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy rpFromospf705 import",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 14146,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance E07-TSXC-HWUP1-1301-LeaseLine source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-TSXC-HWUP1-1301-LeaseLine）"
+    },
+    {
+      "错误序号": 239,
+      "错误行号": 15157,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group pre-wlan-nat destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 242,
+      "错误行号": 14328,
+      "正确的配置": "evpn binding vpn-instance <*>",
+      "错误的配置": "evpn binding vpn-instance 64660100",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 64660100）"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 14501,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number name",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 name）"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 25124,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance CTVPN-CTC-NMAN source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 25758,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group manage-ug destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 22173,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 25785,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 254,
+      "错误行号": 41471,
+      "正确的配置": "route-policy <*> permit node <*>",
+      "错误的配置": "route-policy rpFromospf704 permit node <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf704）"
+    },
+    {
+      "错误序号": 255,
+      "错误行号": 29934,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group pre-wlan-nat destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 256,
+      "错误行号": 37812,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 258,
+      "错误行号": 15136,
+      "正确的配置": "import-route ospf 705 route-policy rpFromospf705",
+      "错误的配置": "import-route ospf 705 route-policy rpFromospf701",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf701）"
+    },
+    {
+      "错误序号": 259,
+      "错误行号": 29921,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 260,
+      "错误行号": 27026,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 264,
+      "错误行号": 5897,
+      "正确的配置": "backup track monitor-location-group cgn",
+      "错误的配置": "backup track monitor-location-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 266,
+      "错误行号": 32790,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance E07-TSXC-HWUP1-1301-LeaseLine",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-TSXC-HWUP1-1301-LeaseLine）"
+    },
+    {
+      "错误序号": 267,
+      "错误行号": 26931,
+      "正确的配置": "index <*> sid ipv6 <IPV6>",
+      "错误的配置": "index <*> sid ipv6 08:00:00",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 269,
+      "错误行号": 5497,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf704 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf704）"
+    },
+    {
+      "错误序号": 270,
+      "错误行号": 15022,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance 64660100",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 64660100）"
+    },
+    {
+      "错误序号": 271,
+      "错误行号": 13570,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance CTVPN193_JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193_JS）"
+    },
+    {
+      "错误序号": 273,
+      "错误行号": 720,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6>/60 <*> static 12 args 16",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/60）"
+    },
+    {
+      "错误序号": 274,
+      "错误行号": 13716,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf704 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf704）"
+    },
+    {
+      "错误序号": 275,
+      "错误行号": 32997,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 276,
+      "错误行号": 20698,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpToCloudPE export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCloudPE）"
+    },
+    {
+      "错误序号": 279,
+      "错误行号": 42241,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf704 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf704）"
+    },
+    {
+      "错误序号": 280,
+      "错误行号": 27327,
+      "正确的配置": "vpn-instance <*>",
+      "错误的配置": "vpn-instance E07-TSXC-HWUP1-1301-LeaseLine",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-TSXC-HWUP1-1301-LeaseLine）"
+    },
+    {
+      "错误序号": 281,
+      "错误行号": 19809,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193-JS）"
+    },
+    {
+      "错误序号": 282,
+      "错误行号": 39390,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf705 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 283,
+      "错误行号": 10248,
+      "正确的配置": "import-route <*> route-policy <*>",
+      "错误的配置": "import-route <*> route-policy rpFromospf701",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf701）"
+    },
+    {
+      "错误序号": 286,
+      "错误行号": 15622,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 287,
+      "错误行号": 15208,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 289,
+      "错误行号": 37877,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group manage-ug destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 290,
+      "错误行号": 29876,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group cgn destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 291,
+      "错误行号": 4749,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 292,
+      "错误行号": 18862,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf705 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 293,
+      "错误行号": 15700,
+      "正确的配置": "test-session <*> local-ipv6 <IPV6> remote-ipv6 <IPV6> local-port <*> remote-port <*> description <*>",
+      "错误的配置": "test-session <*> local-ipv6 08:00:00 remote-ipv6 <IPV6> local-port <*> remote-port <*> description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 297,
+      "错误行号": 17773,
+      "正确的配置": "bfd <*> bind peer-ipv6 <IPV6> source-ipv6 <IPV6> track-interface interface <INTERFACE>",
+      "错误的配置": "bfd <*> bind peer-ipv6 08:00:00 source-ipv6 <IPV6> track-interface interface <INTERFACE>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 299,
+      "错误行号": 25827,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 300,
+      "错误行号": 28374,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpribonly-v6 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpribonly-v6）"
+    },
+    {
+      "错误序号": 301,
+      "错误行号": 30045,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group manage-ug destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 302,
+      "错误行号": 37542,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy rpFromospf705 import",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 303,
+      "错误行号": 27658,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static vpn-instance CP2UP_L3VPN_HW <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 304,
+      "错误行号": 37859,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 305,
+      "错误行号": 15632,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 306,
+      "错误行号": 39309,
+      "正确的配置": "user-group <*>",
+      "错误的配置": "user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 310,
+      "错误行号": 39368,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 311,
+      "错误行号": 1731,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 2578",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2578）"
+    },
+    {
+      "错误序号": 312,
+      "错误行号": 30970,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance 64660100 source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 64660100）"
+    },
+    {
+      "错误序号": 313,
+      "错误行号": 5413,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 314,
+      "错误行号": 33097,
+      "正确的配置": "ipv6-family vpn-instance <*>",
+      "错误的配置": "ipv6-family vpn-instance CTVPN-CTC-NMAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 315,
+      "错误行号": 42090,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpribonly-v6 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpribonly-v6）"
+    },
+    {
+      "错误序号": 316,
+      "错误行号": 21000,
+      "正确的配置": "srv6-te policy <*> endpoint <IPV6> color <*>",
+      "错误的配置": "srv6-te policy <*> endpoint 08:00:00 color <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 317,
+      "错误行号": 25767,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 320,
+      "错误行号": 33041,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance CTVPN193_JS source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193_JS）"
+    },
+    {
+      "错误序号": 321,
+      "错误行号": 15652,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 322,
+      "错误行号": 7785,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy rpFromospf705 import",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 324,
+      "错误行号": 768,
+      "正确的配置": "rule <*> permit <*> <*> user-group <*> <*> eq <*>",
+      "错误的配置": "rule <*> permit <*> <*> user-group vod <*> eq <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 327,
+      "错误行号": 1865,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf705 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 328,
+      "错误行号": 12606,
+      "正确的配置": "encapsulation source-address <IPV6>",
+      "错误的配置": "encapsulation source-address 08:00:00",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 329,
+      "错误行号": 29773,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance E07-TSXC-HWUP1-1301-LeaseLine",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-TSXC-HWUP1-1301-LeaseLine）"
+    },
+    {
+      "错误序号": 330,
+      "错误行号": 16130,
+      "正确的配置": "hwtacacs-server accounting <IPV4> vpn-instance CTVPN193-JS",
+      "错误的配置": "hwtacacs-server accounting <IPV4> vpn-instance E07-TSXC-HWUP1-1301-LeaseLine",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-TSXC-HWUP1-1301-LeaseLine）"
+    },
+    {
+      "错误序号": 331,
+      "错误行号": 41753,
+      "正确的配置": "local-user <*> user-group manage-ug",
+      "错误的配置": "local-user <*> user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 334,
+      "错误行号": 5928,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6>/64 <*> static 12 args 16",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/64）"
+    },
+    {
+      "错误序号": 335,
+      "错误行号": 11759,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance CTVPN-CTC-NMAN source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 337,
+      "错误行号": 41146,
+      "正确的配置": "ip vpn-instance <*>",
+      "错误的配置": "ip vpn-instance CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193-JS）"
+    },
+    {
+      "错误序号": 339,
+      "错误行号": 15670,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 340,
+      "错误行号": 25975,
+      "正确的配置": "peer <IPV4> sa-policy import acl <*>",
+      "错误的配置": "peer <IPV4> sa-policy import acl 3161",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3161）"
+    },
+    {
+      "错误序号": 343,
+      "错误行号": 38734,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 344,
+      "错误行号": 15220,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 346,
+      "错误行号": 37951,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 348,
+      "错误行号": 10173,
+      "正确的配置": "local-user <*> user-group manage-ug",
+      "错误的配置": "local-user <*> user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 349,
+      "错误行号": 10243,
+      "正确的配置": "ospf 703 router-id <IPV4>",
+      "错误的配置": "ospf 703 router-id filter",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 filter）"
+    },
+    {
+      "错误序号": 350,
+      "错误行号": 31289,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 351,
+      "错误行号": 5517,
+      "正确的配置": "route-policy <*> deny node <*>",
+      "错误的配置": "route-policy rpToCloudPE deny node <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCloudPE）"
+    },
+    {
+      "错误序号": 352,
+      "错误行号": 26927,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 353,
+      "错误行号": 26993,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 2578",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2578）"
+    },
+    {
+      "错误序号": 354,
+      "错误行号": 31288,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group cgn destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 356,
+      "错误行号": 32962,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 6015",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 6015）"
+    },
+    {
+      "错误序号": 357,
+      "错误行号": 167,
+      "正确的配置": "encapsulation source-address <IPV6>",
+      "错误的配置": "encapsulation source-address 08:00:00",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 358,
+      "错误行号": 28194,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 3161",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3161）"
+    },
+    {
+      "错误序号": 360,
+      "错误行号": 21125,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance 2B_RAN source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 361,
+      "错误行号": 30044,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 362,
+      "错误行号": 24340,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy rpFromospf705 import",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 363,
+      "错误行号": 31279,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 365,
+      "错误行号": 34341,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193-JS）"
+    },
+    {
+      "错误序号": 366,
+      "错误行号": 29896,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group cgn destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 370,
+      "错误行号": 11124,
+      "正确的配置": "backup track monitor-location-group cgn",
+      "错误的配置": "backup track monitor-location-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 372,
+      "错误行号": 26904,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 373,
+      "错误行号": 25604,
+      "正确的配置": "info-center loghost <IPV4> vpn-instance CTVPN193-JS",
+      "错误的配置": "info-center loghost <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 375,
+      "错误行号": 18619,
+      "正确的配置": "ospf 701 router-id <IPV4> vpn-instance CTVPN-CTC-NMAN",
+      "错误的配置": "ospf 701 router-id filter vpn-instance CTVPN-CTC-NMAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 filter）"
+    },
+    {
+      "错误序号": 377,
+      "错误行号": 14030,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 2578",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2578）"
+    },
+    {
+      "错误序号": 378,
+      "错误行号": 15859,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance E07-TSXC-HWUP1-1301-LeaseLine",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-TSXC-HWUP1-1301-LeaseLine）"
+    },
+    {
+      "错误序号": 379,
+      "错误行号": 16252,
+      "正确的配置": "network <IPV6> <*>",
+      "错误的配置": "network 08:00:00 <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 381,
+      "错误行号": 41950,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpToCloudPE export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCloudPE）"
+    },
+    {
+      "错误序号": 382,
+      "错误行号": 25848,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group cgn destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 383,
+      "错误行号": 15213,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group pre-wlan-nat destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 384,
+      "错误行号": 17880,
+      "正确的配置": "ssh server acl 2577",
+      "错误的配置": "ssh server acl 2578",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2578）"
+    },
+    {
+      "错误序号": 385,
+      "错误行号": 31348,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 386,
+      "错误行号": 3861,
+      "正确的配置": "route-policy <*> deny node <*>",
+      "错误的配置": "route-policy rpToCloudPE deny node <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCloudPE）"
+    },
+    {
+      "错误序号": 387,
+      "错误行号": 41821,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 389,
+      "错误行号": 29788,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance 64660100",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 64660100）"
+    },
+    {
+      "错误序号": 390,
+      "错误行号": 37482,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 391,
+      "错误行号": 20325,
+      "正确的配置": "export route-policy <*> evpn",
+      "错误的配置": "export route-policy rpToCloudPE evpn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCloudPE）"
+    },
+    {
+      "错误序号": 392,
+      "错误行号": 34345,
+      "正确的配置": "rule <*> permit tcp source user-group <*> source-port eq <*> destination ip-address <IPV4> <IPV4>",
+      "错误的配置": "rule <*> permit tcp source user-group vod source-port eq <*> destination ip-address <IPV4> <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 393,
+      "错误行号": 37999,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 395,
+      "错误行号": 18059,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpribonly-v6 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpribonly-v6）"
+    },
+    {
+      "错误序号": 396,
+      "错误行号": 37881,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 397,
+      "错误行号": 21193,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 2577",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2577）"
+    },
+    {
+      "错误序号": 400,
+      "错误行号": 29942,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 402,
+      "错误行号": 660,
+      "正确的配置": "local-user <*> user-group manage-ug",
+      "错误的配置": "local-user <*> user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 404,
+      "错误行号": 20532,
+      "正确的配置": "info-center loghost <IPV4> vpn-instance CTVPN193-JS source-ip <IPV4>",
+      "错误的配置": "info-center loghost <IPV4> vpn-instance 2B_RAN source-ip <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 405,
+      "错误行号": 24581,
+      "正确的配置": "protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误的配置": "protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance 64660100",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 64660100）"
+    },
+    {
+      "错误序号": 406,
+      "错误行号": 289,
+      "正确的配置": "local-user <*> user-group manage-ug",
+      "错误的配置": "local-user <*> user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 409,
+      "错误行号": 31367,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group manage-ug destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 411,
+      "错误行号": 5090,
+      "正确的配置": "peer <IPV6> group pgToRR-v6",
+      "错误的配置": "peer 08:00:00 group pgToRR-v6",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 412,
+      "错误行号": 37906,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 413,
+      "错误行号": 20028,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf701 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf701）"
+    },
+    {
+      "错误序号": 416,
+      "错误行号": 29971,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 417,
+      "错误行号": 16308,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number name",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 name）"
+    },
+    {
+      "错误序号": 419,
+      "错误行号": 25839,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 421,
+      "错误行号": 30125,
+      "正确的配置": "acl 2577 inbound",
+      "错误的配置": "acl 6015 inbound",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 6015）"
+    },
+    {
+      "错误序号": 422,
+      "错误行号": 31260,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group cgn destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 423,
+      "错误行号": 29891,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 424,
+      "错误行号": 34344,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 3161",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3161）"
+    },
+    {
+      "错误序号": 425,
+      "错误行号": 15704,
+      "正确的配置": "test-session <*> local-ipv6 <IPV6> remote-ipv6 <IPV6> local-port <*> remote-port <*> description <*>",
+      "错误的配置": "test-session <*> local-ipv6 08:00:00 remote-ipv6 <IPV6> local-port <*> remote-port <*> description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 428,
+      "错误行号": 30016,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 431,
+      "错误行号": 41344,
+      "正确的配置": "ospf 705 router-id <IPV4> vpn-instance CTVPN193-JS",
+      "错误的配置": "ospf 705 router-id filter vpn-instance CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 filter）"
+    },
+    {
+      "错误序号": 432,
+      "错误行号": 14224,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance CTVPN193_JS source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193_JS）"
+    },
+    {
+      "错误序号": 433,
+      "错误行号": 4573,
+      "正确的配置": "filter-policy route-policy <*> import",
+      "错误的配置": "filter-policy route-policy rpFromospf701 import",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf701）"
+    },
+    {
+      "错误序号": 434,
+      "错误行号": 169,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 435,
+      "错误行号": 8344,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance CTVPN193-JS source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193-JS）"
+    },
+    {
+      "错误序号": 436,
+      "错误行号": 3227,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpToCloudPE export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCloudPE）"
+    },
+    {
+      "错误序号": 437,
+      "错误行号": 2662,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 2578",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2578）"
+    },
+    {
+      "错误序号": 438,
+      "错误行号": 31464,
+      "正确的配置": "local-user <*> user-group manage-ug",
+      "错误的配置": "local-user <*> user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 440,
+      "错误行号": 28203,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <INTERFACE> <IPV4> track bfd-session <*> description <*>",
+      "错误的配置": "ip route-static vpn-instance CTVPN-CTC-NMAN <IPV4> <IPV4> <INTERFACE> <IPV4> track bfd-session <*> description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 442,
+      "错误行号": 2409,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf705 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 443,
+      "错误行号": 4000,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 444,
+      "错误行号": 38749,
+      "正确的配置": "test-session <*> local-ipv6 <IPV6> remote-ipv6 <IPV6> local-port <*> remote-port <*> description <*>",
+      "错误的配置": "test-session <*> local-ipv6 08:00:00 remote-ipv6 <IPV6> local-port <*> remote-port <*> description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 447,
+      "错误行号": 34986,
+      "正确的配置": "local-user <*> user-group manage-ug",
+      "错误的配置": "local-user <*> user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 449,
+      "错误行号": 42227,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193-JS）"
+    },
+    {
+      "错误序号": 450,
+      "错误行号": 37797,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 3162",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3162）"
+    },
+    {
+      "错误序号": 451,
+      "错误行号": 27099,
+      "正确的配置": "ssh server acl 2577",
+      "错误的配置": "ssh server acl 6015",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 6015）"
+    },
+    {
+      "错误序号": 452,
+      "错误行号": 25854,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 453,
+      "错误行号": 664,
+      "正确的配置": "local-user <*> user-group manage-ug",
+      "错误的配置": "local-user <*> user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 455,
+      "错误行号": 4377,
+      "正确的配置": "ip ipv6-prefix <*> index <*> permit <IPV6> <*>",
+      "错误的配置": "ip ipv6-prefix <IPV6>/60 index <*> permit <IPV6> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/60）"
+    },
+    {
+      "错误序号": 457,
+      "错误行号": 19371,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy rpFromospf705 import",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 458,
+      "错误行号": 5113,
+      "正确的配置": "vpn-instance <*>",
+      "错误的配置": "vpn-instance 2B_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 462,
+      "错误行号": 721,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 463,
+      "错误行号": 39256,
+      "正确的配置": "encapsulation source-address <IPV6>",
+      "错误的配置": "encapsulation source-address 08:00:00",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 464,
+      "错误行号": 15654,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 465,
+      "错误行号": 1460,
+      "正确的配置": "evpn vpn-instance <*> bd-mode",
+      "错误的配置": "evpn vpn-instance 2B_RAN bd-mode",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 468,
+      "错误行号": 25768,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 469,
+      "错误行号": 10204,
+      "正确的配置": "rule <*> permit vpn-instance <*>",
+      "错误的配置": "rule <*> permit vpn-instance E07-TSXC-HWUP1-1301-LeaseLine",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-TSXC-HWUP1-1301-LeaseLine）"
+    },
+    {
+      "错误序号": 470,
+      "错误行号": 37450,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 473,
+      "错误行号": 11252,
+      "正确的配置": "local-user <*> user-group manage-ug",
+      "错误的配置": "local-user <*> user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 476,
+      "错误行号": 24792,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 477,
+      "错误行号": 5631,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number name",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 name）"
+    },
+    {
+      "错误序号": 478,
+      "错误行号": 20208,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6>/64 <*> static 12 args 16",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/64）"
+    },
+    {
+      "错误序号": 479,
+      "错误行号": 37934,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group pre-wlan-nat destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 484,
+      "错误行号": 26901,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6>/64 <*> static 12 args 16",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/64）"
+    },
+    {
+      "错误序号": 486,
+      "错误行号": 38214,
+      "正确的配置": "ntp-service source-interface LoopBack2 vpn-instance CTVPN193-JS",
+      "错误的配置": "ntp-service source-interface LoopBack2 vpn-instance E07-TSXC-HWUP1-1301-LeaseLine",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-TSXC-HWUP1-1301-LeaseLine）"
+    },
+    {
+      "错误序号": 487,
+      "错误行号": 37502,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 488,
+      "错误行号": 912,
+      "正确的配置": "evpn binding vpn-instance <*>",
+      "错误的配置": "evpn binding vpn-instance CTVPN193_JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193_JS）"
+    },
+    {
+      "错误序号": 489,
+      "错误行号": 18872,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf704 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf704）"
+    },
+    {
+      "错误序号": 490,
+      "错误行号": 25261,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpribonly-v6 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpribonly-v6）"
+    },
+    {
+      "错误序号": 491,
+      "错误行号": 23948,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 492,
+      "错误行号": 18869,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf705 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 493,
+      "错误行号": 29603,
+      "正确的配置": "vrrp6 vrid <*> virtual-ip <IPV6> link-local",
+      "错误的配置": "vrrp6 vrid <*> virtual-ip 08:00:00 link-local",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 494,
+      "错误行号": 29183,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy rpFromospf704 import",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf704）"
+    },
+    {
+      "错误序号": 495,
+      "错误行号": 1592,
+      "正确的配置": "user-group <*>",
+      "错误的配置": "user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 496,
+      "错误行号": 11746,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*>",
+      "错误的配置": "ip route-static vpn-instance CTVPN-CTC-NMAN <IPV4> <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 498,
+      "错误行号": 25991,
+      "正确的配置": "rule <*> permit <*> <*> user-group <*> <*> eq <*>",
+      "错误的配置": "rule <*> permit <*> <*> user-group cgn <*> eq <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 500,
+      "错误行号": 22111,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 502,
+      "错误行号": 38436,
+      "正确的配置": "ip vpn-instance <*>",
+      "错误的配置": "ip vpn-instance CTVPN193_JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193_JS）"
+    },
+    {
+      "错误序号": 503,
+      "错误行号": 21513,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance CTVPN-CTC-NMAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 505,
+      "错误行号": 12503,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6>/60 <*> static 12 args 16",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/60）"
+    },
+    {
+      "错误序号": 507,
+      "错误行号": 42083,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf705 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 508,
+      "错误行号": 22308,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 3161",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3161）"
+    },
+    {
+      "错误序号": 509,
+      "错误行号": 12320,
+      "正确的配置": "acl ipv6 number 6015",
+      "错误的配置": "acl ipv6 number 2578",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2578）"
+    },
+    {
+      "错误序号": 510,
+      "错误行号": 31303,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 512,
+      "错误行号": 38597,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193-JS）"
+    },
+    {
+      "错误序号": 513,
+      "错误行号": 7741,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6>/60 <*> static 12 args 16",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/60）"
+    },
+    {
+      "错误序号": 514,
+      "错误行号": 15840,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance 2B_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 516,
+      "错误行号": 14041,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 517,
+      "错误行号": 27315,
+      "正确的配置": "acl 2577 inbound",
+      "错误的配置": "acl name inbound",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 name）"
+    },
+    {
+      "错误序号": 518,
+      "错误行号": 22175,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 519,
+      "错误行号": 25825,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 521,
+      "错误行号": 29999,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group manage-ug destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 522,
+      "错误行号": 20975,
+      "正确的配置": "radius-server group <*>",
+      "错误的配置": "radius-server group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 523,
+      "错误行号": 32603,
+      "正确的配置": "local-user <*> user-group manage-ug",
+      "错误的配置": "local-user <*> user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 524,
+      "错误行号": 35235,
+      "正确的配置": "peer <IPV4> sa-policy import acl <*>",
+      "错误的配置": "peer <IPV4> sa-policy import acl 6015",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 6015）"
+    },
+    {
+      "错误序号": 525,
+      "错误行号": 1804,
+      "正确的配置": "acl 2577 inbound",
+      "错误的配置": "acl 3162 inbound",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3162）"
+    },
+    {
+      "错误序号": 526,
+      "错误行号": 24593,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group cgn destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 528,
+      "错误行号": 31378,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 529,
+      "错误行号": 41284,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <INTERFACE> <IPV4>",
+      "错误的配置": "ip route-static vpn-instance 64660100 <IPV4> <IPV4> <INTERFACE> <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 64660100）"
+    },
+    {
+      "错误序号": 530,
+      "错误行号": 31490,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 531,
+      "错误行号": 36579,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static vpn-instance CTVPN-CTC-NMAN <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 534,
+      "错误行号": 41519,
+      "正确的配置": "ip ipv6-prefix <*> index <*> permit <IPV6> <*> greater-equal <*> less-equal <*>",
+      "错误的配置": "ip ipv6-prefix <IPV6>/64 index <*> permit <IPV6> <*> greater-equal <*> less-equal <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/64）"
+    },
+    {
+      "错误序号": 535,
+      "错误行号": 1879,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 2577",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2577）"
+    },
+    {
+      "错误序号": 536,
+      "错误行号": 22177,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 538,
+      "错误行号": 12323,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance CTVPN-CTC-NMAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 541,
+      "错误行号": 29953,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 542,
+      "错误行号": 29547,
+      "正确的配置": "radius-server group <*>",
+      "错误的配置": "radius-server group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 544,
+      "错误行号": 29856,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 548,
+      "错误行号": 19923,
+      "正确的配置": "vpn-instance <*>",
+      "错误的配置": "vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 551,
+      "错误行号": 28683,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 2578",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2578）"
+    },
+    {
+      "错误序号": 553,
+      "错误行号": 7069,
+      "正确的配置": "router-id <IPV4>",
+      "错误的配置": "router-id filter",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 filter）"
+    },
+    {
+      "错误序号": 555,
+      "错误行号": 32670,
+      "正确的配置": "ip ipv6-prefix <*> index <*> permit <IPV6> <*>",
+      "错误的配置": "ip ipv6-prefix <IPV6>/60 index <*> permit <IPV6> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/60）"
+    },
+    {
+      "错误序号": 559,
+      "错误行号": 33051,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance CTVPN-CTC-NMAN source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 562,
+      "错误行号": 18041,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 563,
+      "错误行号": 4138,
+      "正确的配置": "protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误的配置": "protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CTVPN-CTC-NMAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 564,
+      "错误行号": 29744,
+      "正确的配置": "router-id <IPV4>",
+      "错误的配置": "router-id filter",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 filter）"
+    },
+    {
+      "错误序号": 565,
+      "错误行号": 30039,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group manage-ug destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 567,
+      "错误行号": 37931,
+      "正确的配置": "rule <*> permit icmp destination user-group vod",
+      "错误的配置": "rule <*> permit icmp destination user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 568,
+      "错误行号": 4259,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance CTVPN193-JS source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193-JS）"
+    },
+    {
+      "错误序号": 569,
+      "错误行号": 41505,
+      "正确的配置": "track monitor-location-group cgn",
+      "错误的配置": "track monitor-location-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 571,
+      "错误行号": 20016,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 2577",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2577）"
+    },
+    {
+      "错误序号": 572,
+      "错误行号": 8346,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance CTVPN193_JS source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193_JS）"
+    },
+    {
+      "错误序号": 574,
+      "错误行号": 17556,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 3161",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3161）"
+    },
+    {
+      "错误序号": 575,
+      "错误行号": 8417,
+      "正确的配置": "rule <*> permit vpn-instance <*>",
+      "错误的配置": "rule <*> permit vpn-instance CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193-JS）"
+    },
+    {
+      "错误序号": 576,
+      "错误行号": 16403,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6>/64 <*> static 12 args 16",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/64）"
+    },
+    {
+      "错误序号": 577,
+      "错误行号": 3207,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf705 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 578,
+      "错误行号": 20434,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group cgn destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 580,
+      "错误行号": 13708,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy rpribonly-v6 import",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpribonly-v6）"
+    },
+    {
+      "错误序号": 582,
+      "错误行号": 37926,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 584,
+      "错误行号": 42520,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance 2B_RAN source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 586,
+      "错误行号": 23251,
+      "正确的配置": "ospf <*> vpn-instance <*>",
+      "错误的配置": "ospf <*> vpn-instance CTVPN193_JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193_JS）"
+    },
+    {
+      "错误序号": 587,
+      "错误行号": 29980,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group pre-wlan-nat destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 589,
+      "错误行号": 38738,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 590,
+      "错误行号": 39075,
+      "正确的配置": "ip route-static vpn-instance <*> <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误的配置": "ip route-static vpn-instance CP2UP_L3VPN_HW <IPV4> <IPV4> <*> <IPV4> bfd enable description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 591,
+      "错误行号": 25260,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy rpToCloudPE import",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCloudPE）"
+    },
+    {
+      "错误序号": 593,
+      "错误行号": 37995,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 595,
+      "错误行号": 31315,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group pre-wlan-nat destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 596,
+      "错误行号": 24233,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group vod",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 597,
+      "错误行号": 31659,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 598,
+      "错误行号": 33418,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf701 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf701）"
+    },
+    {
+      "错误序号": 599,
+      "错误行号": 25238,
+      "正确的配置": "ip vpn-instance <*>",
+      "错误的配置": "ip vpn-instance 64660100",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 64660100）"
+    },
+    {
+      "错误序号": 600,
+      "错误行号": 42366,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance CTVPN193_JS source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193_JS）"
+    },
+    {
+      "错误序号": 603,
+      "错误行号": 12510,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 604,
+      "错误行号": 18044,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 605,
+      "错误行号": 29904,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group manage-ug destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 606,
+      "错误行号": 31265,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 609,
+      "错误行号": 37889,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group manage-ug destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 612,
+      "错误行号": 29910,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 613,
+      "错误行号": 11511,
+      "正确的配置": "destination-group <*>",
+      "错误的配置": "destination-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 614,
+      "错误行号": 4574,
+      "正确的配置": "import-route <*> route-policy <*>",
+      "错误的配置": "import-route <*> route-policy rpFromospf704",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf704）"
+    },
+    {
+      "错误序号": 615,
+      "错误行号": 29972,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group pre-wlan-nat destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 616,
+      "错误行号": 26924,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6>/64 <*> static 12 args 16",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/64）"
+    },
+    {
+      "错误序号": 618,
+      "错误行号": 24851,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_HW）"
+    },
+    {
+      "错误序号": 619,
+      "错误行号": 3192,
+      "正确的配置": "rule <*> permit <*> <*> user-group <*> <*> eq <*>",
+      "错误的配置": "rule <*> permit <*> <*> user-group pre-wlan-nat <*> eq <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 622,
+      "错误行号": 28963,
+      "正确的配置": "router-id <IPV4>",
+      "错误的配置": "router-id filter",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 filter）"
+    },
+    {
+      "错误序号": 624,
+      "错误行号": 1150,
+      "正确的配置": "ssh server acl 2577",
+      "错误的配置": "ssh server acl 2578",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2578）"
+    },
+    {
+      "错误序号": 626,
+      "错误行号": 31366,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 627,
+      "错误行号": 18875,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpFromospf705 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf705）"
+    },
+    {
+      "错误序号": 628,
+      "错误行号": 4842,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 3161",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 3161）"
+    },
+    {
+      "错误序号": 629,
+      "错误行号": 23046,
+      "正确的配置": "ipv4-family vpn-instance <*>",
+      "错误的配置": "ipv4-family vpn-instance CTVPN-CTC-NMAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 630,
+      "错误行号": 31296,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group cgn destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 631,
+      "错误行号": 32509,
+      "正确的配置": "acl number <*>",
+      "错误的配置": "acl number 2577",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2577）"
+    },
+    {
+      "错误序号": 633,
+      "错误行号": 27301,
+      "正确的配置": "ospf 704 router-id <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误的配置": "ospf 704 router-id filter vpn-instance CP2UP_L3VPN_HW",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 filter）"
+    },
+    {
+      "错误序号": 636,
+      "错误行号": 24432,
+      "正确的配置": "ntp-service unicast-server <IPV4> vpn-instance CTVPN193-JS",
+      "错误的配置": "ntp-service unicast-server <IPV4> vpn-instance E07-TSXC-HWUP1-1301-LeaseLine",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-TSXC-HWUP1-1301-LeaseLine）"
+    },
+    {
+      "错误序号": 637,
+      "错误行号": 5934,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6>/60 <*> static 12 args 16",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/60）"
+    },
+    {
+      "错误序号": 638,
+      "错误行号": 24890,
+      "正确的配置": "user-group <*> bind nat instance <*>",
+      "错误的配置": "user-group cgn bind nat instance <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 639,
+      "错误行号": 37498,
+      "正确的配置": "test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误的配置": "test-session <*> sender-ipv6 08:00:00 reflector-ipv6 <IPV6> sender-port <*> reflector-port <*> padding 44 description <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 643,
+      "错误行号": 31275,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 644,
+      "错误行号": 23954,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 645,
+      "错误行号": 15216,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 647,
+      "错误行号": 8069,
+      "正确的配置": "ip vpn-instance <*>",
+      "错误的配置": "ip vpn-instance 2B_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 648,
+      "错误行号": 29964,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group vod destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 vod）"
+    },
+    {
+      "错误序号": 649,
+      "错误行号": 22108,
+      "正确的配置": "locator <*> ipv6-prefix <IPV6> <*> static 12 args 16",
+      "错误的配置": "locator <*> ipv6-prefix <IPV6>/60 <*> static 12 args 16",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 <IPV6>/60）"
+    },
+    {
+      "错误序号": 650,
+      "错误行号": 41732,
+      "正确的配置": "ip binding vpn-instance <*>",
+      "错误的配置": "ip binding vpn-instance CTVPN-CTC-NMAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 651,
+      "错误行号": 21196,
+      "正确的配置": "rule <*> permit ip source user-group <*>",
+      "错误的配置": "rule <*> permit ip source user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 653,
+      "错误行号": 38661,
+      "正确的配置": "ospf 705 router-id <IPV4> vpn-instance CTVPN193-JS",
+      "错误的配置": "ospf 705 router-id filter vpn-instance CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 filter）"
+    },
+    {
+      "错误序号": 654,
+      "错误行号": 18865,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy rpFromospf704 import",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromospf704）"
+    },
+    {
+      "错误序号": 657,
+      "错误行号": 29909,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 659,
+      "错误行号": 15190,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group pre-wlan-nat",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 pre-wlan-nat）"
+    },
+    {
+      "错误序号": 660,
+      "错误行号": 12508,
+      "正确的配置": "opcode <IPV6> end-op",
+      "错误的配置": "opcode 08:00:00 end-op",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 08:00:00）"
+    },
+    {
+      "错误序号": 661,
+      "错误行号": 15235,
+      "正确的配置": "rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>",
+      "错误的配置": "rule <*> permit <*> source user-group manage-ug destination ip-address <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    },
+    {
+      "错误序号": 662,
+      "错误行号": 14035,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group cgn",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 cgn）"
+    },
+    {
+      "错误序号": 665,
+      "错误行号": 3210,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy rpribonly-v6 export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpribonly-v6）"
+    },
+    {
+      "错误序号": 668,
+      "错误行号": 38795,
+      "正确的配置": "rule <*> permit vpn-instance <*> source <IPV4> <*>",
+      "错误的配置": "rule <*> permit vpn-instance 2B_RAN source <IPV4> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 669,
+      "错误行号": 31253,
+      "正确的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>",
+      "错误的配置": "rule <*> permit ip source ip-address <IPV4> <*> destination user-group manage-ug",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 manage-ug）"
+    }
+  ]
+}

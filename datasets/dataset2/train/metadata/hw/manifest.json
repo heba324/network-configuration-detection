@@ -1,0 +1,17 @@
+{
+  "vendor": "hw",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "每种错误类型数量": 672,
+  "错误类型列表": [
+    "MISSING_STATEMENT",
+    "REDUNDANT_STATEMENT",
+    "SYNTAX_ERROR",
+    "PARAM_TYPE_MISMATCH",
+    "ORDER_DEPENDENCY_ERROR",
+    "DEPENDENCY_MISSING",
+    "POLICY_CONFLICT",
+    "RESOURCE_CONFLICT",
+    "SEMANTIC_INCONSISTENCY"
+  ]
+}

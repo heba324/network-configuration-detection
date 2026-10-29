@@ -1,0 +1,123 @@
+{
+  "vendor": "ruijie",
+  "dataset": "test_dataset_2",
+  "错误类型": "DEPENDENCY_MISSING",
+  "错误类型描述": "引用了未定义的依赖对象",
+  "实际模板占比": "6.25%",
+  "数据集调整占比": "5.00%",
+  "错误数量": 14,
+  "details": [
+    {
+      "错误序号": 5,
+      "错误行号": 3530,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list PREFIX_LIST_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Prefix List: PREFIX_LIST_DR"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 1531,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list PREFIX_LIST-CORE in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Prefix List: PREFIX_LIST-CORE"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 604,
+      "正确的配置": "ip vrf VRF-CUST-A-<*>",
+      "错误的配置": "ip vrf forwarding-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: forwarding-CORE"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 3021,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list PREFIX_LIST-CORE in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Prefix List: PREFIX_LIST-CORE"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 1724,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list PREFIX_LIST_EDGE in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Prefix List: PREFIX_LIST_EDGE"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 2107,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list PREFIX_LIST_EDGE in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Prefix List: PREFIX_LIST_EDGE"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 1048,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list PREFIX_LIST-EDGE in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Prefix List: PREFIX_LIST-EDGE"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 182,
+      "正确的配置": "neighbor <*> prefix-list OUT-FILTER-<*> out",
+      "错误的配置": "neighbor <*> prefix-list PREFIX_LIST_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Prefix List: PREFIX_LIST_DR"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 979,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list PREFIX_LIST-BACKUP in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Prefix List: PREFIX_LIST-BACKUP"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 735,
+      "正确的配置": "neighbor <*> prefix-list OUT-FILTER-<*> out",
+      "错误的配置": "neighbor <*> prefix-list PREFIX_LIST_EDGE out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Prefix List: PREFIX_LIST_EDGE"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 2108,
+      "正确的配置": "neighbor <*> prefix-list OUT-FILTER-<*> out",
+      "错误的配置": "neighbor <*> prefix-list PREFIX_LIST_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Prefix List: PREFIX_LIST_DR"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 4278,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list PREFIX_LIST-EDGE in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Prefix List: PREFIX_LIST-EDGE"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 2052,
+      "正确的配置": "neighbor <*> prefix-list OUT-FILTER-<*> out",
+      "错误的配置": "neighbor <*> prefix-list PREFIX_LIST-BACKUP out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Prefix List: PREFIX_LIST-BACKUP"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 4182,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list PREFIX_LIST_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Prefix List: PREFIX_LIST_DR"
+    }
+  ]
+}

@@ -1,0 +1,651 @@
+{
+  "vendor": "ruijie",
+  "dataset": "test_dataset_2",
+  "错误类型": "PARAM_TYPE_MISMATCH",
+  "错误类型描述": "参数类型不匹配",
+  "实际模板占比": "6.25%",
+  "数据集调整占比": "5.00%",
+  "错误数量": 80,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 1356,
+      "正确的配置": "permit ip any any",
+      "错误的配置": "permit ip any any 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 877,
+      "正确的配置": "snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth sha AuthPass123 priv des PrivPass123",
+      "错误的配置": "snmp-server user SnmpUser-999999 SecureGroup-<*> v3 auth sha AuthPass123 priv des PrivPass123",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 4270,
+      "正确的配置": "permit tcp <*> <*> any eq <*>",
+      "错误的配置": "permit tcp 999999 <*> any eq <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 2269,
+      "正确的配置": "ip verify unicast source reachable-via any",
+      "错误的配置": "ip verify unicast source reachable-via any 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 704,
+      "正确的配置": "server name RAD-SRV-<*>",
+      "错误的配置": "server name RAD-SRV-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 289,
+      "正确的配置": "graceful-restart",
+      "错误的配置": "graceful-restart 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 1261,
+      "正确的配置": "permit icmp <*> <*> any",
+      "错误的配置": "permit icmp 999999 <*> any",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 1950,
+      "正确的配置": "service timestamps log datetime msec",
+      "错误的配置": "service timestamps log datetime msec 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 749,
+      "正确的配置": "neighbor <*> peer-group IBGP-PEERS-<*>",
+      "错误的配置": "neighbor 999999 peer-group IBGP-PEERS-<*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 2682,
+      "正确的配置": "username user-<*> privilege <*> password <*> <*>",
+      "错误的配置": "username user-999999 privilege <*> password <*> <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 722,
+      "正确的配置": "permit udp <*> <*> any eq <*>",
+      "错误的配置": "permit udp 999999 <*> any eq <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 747,
+      "正确的配置": "neighbor IBGP-PEERS-<*> update-source Loopback <*>",
+      "错误的配置": "neighbor IBGP-PEERS-999999 update-source Loopback <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 840,
+      "正确的配置": "ip community-list expanded COM-LIST-<*> permit _3817191468:.*",
+      "错误的配置": "ip community-list expanded COM-LIST-999999 permit _3817191468:.*",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 724,
+      "正确的配置": "deny tcp <*> <*> any eq <*>",
+      "错误的配置": "deny tcp 999999 <*> any eq <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 4269,
+      "正确的配置": "deny ip <*> <*> any",
+      "错误的配置": "deny ip 999999 <*> any",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 2394,
+      "正确的配置": "access-list <*> permit host <*>",
+      "错误的配置": "access-list 999999 permit host <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 3853,
+      "正确的配置": "network <*> <*> area <*>",
+      "错误的配置": "network 999999 <*> area <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 1007,
+      "正确的配置": "snmp-server enable traps snmp",
+      "错误的配置": "snmp-server enable traps snmp 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 889,
+      "正确的配置": "permit tcp <*> <*> any eq <*>",
+      "错误的配置": "permit tcp 999999 <*> any eq <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 2357,
+      "正确的配置": "access-list <*> deny <*> <*>",
+      "错误的配置": "access-list 999999 deny <*> <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 3251,
+      "正确的配置": "network <*> <*> area <*>",
+      "错误的配置": "network 999999 <*> area <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 3545,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list IN-FILTER-999999 seq <*> deny <*>/<*> le <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 372,
+      "正确的配置": "class class-default",
+      "错误的配置": "class class-default 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 2258,
+      "正确的配置": "address-family ipv4",
+      "错误的配置": "address-family ipv4 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 4235,
+      "正确的配置": "address-family ipv4",
+      "错误的配置": "address-family ipv4 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 4186,
+      "正确的配置": "ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>",
+      "错误的配置": "ip prefix-list OUT-FILTER-999999 seq <*> permit <*>/<*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 1467,
+      "正确的配置": "network <*> <*> area <*>",
+      "错误的配置": "network 999999 <*> area <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 797,
+      "正确的配置": "switchport port-security maximum <*>",
+      "错误的配置": "switchport port-security maximum 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 3255,
+      "正确的配置": "network <*> <*> area <*>",
+      "错误的配置": "network 999999 <*> area <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 737,
+      "正确的配置": "exit",
+      "错误的配置": "exit 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 982,
+      "正确的配置": "exit",
+      "错误的配置": "exit 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 1523,
+      "正确的配置": "address-family ipv4",
+      "错误的配置": "address-family ipv4 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 2715,
+      "正确的配置": "spanning-tree bpduguard enable",
+      "错误的配置": "spanning-tree bpduguard enable 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 126,
+      "正确的配置": "address-family ipv4",
+      "错误的配置": "address-family ipv4 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 1737,
+      "正确的配置": "default-information originate metric <*>",
+      "错误的配置": "default-information originate metric 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 652,
+      "正确的配置": "permit ip any any",
+      "错误的配置": "permit ip any any 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 2190,
+      "正确的配置": "set ip precedence <*>",
+      "错误的配置": "set ip precedence 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 3075,
+      "正确的配置": "snmp-server location DataCenter-<*>-Rack-<*>",
+      "错误的配置": "snmp-server location DataCenter-999999-Rack-<*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 123,
+      "正确的配置": "set ip precedence <*>",
+      "错误的配置": "set ip precedence 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 3478,
+      "正确的配置": "line vty <*> <*>",
+      "错误的配置": "line vty 999999 <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 2622,
+      "正确的配置": "exit-address-family",
+      "错误的配置": "exit-address-family 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 3887,
+      "正确的配置": "deny icmp <*> <*> any",
+      "错误的配置": "deny icmp 999999 <*> any",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 3183,
+      "正确的配置": "auto-cost reference-bandwidth <*>",
+      "错误的配置": "auto-cost reference-bandwidth 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 1315,
+      "正确的配置": "neighbor <*> activate",
+      "错误的配置": "neighbor 999999 activate",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 4147,
+      "正确的配置": "exit",
+      "错误的配置": "exit 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 3690,
+      "正确的配置": "permit ip any any",
+      "错误的配置": "permit ip any any 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 3841,
+      "正确的配置": "router-id <*>",
+      "错误的配置": "router-id 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 191,
+      "正确的配置": "switchport mode access",
+      "错误的配置": "switchport mode access 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 3959,
+      "正确的配置": "exit",
+      "错误的配置": "exit 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 3243,
+      "正确的配置": "class class-default",
+      "错误的配置": "class class-default 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 3101,
+      "正确的配置": "no cdp enable",
+      "错误的配置": "no cdp enable 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 432,
+      "正确的配置": "name MST-REGION-<*>",
+      "错误的配置": "name MST-REGION-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 1254,
+      "正确的配置": "snmp-server enable traps snmp",
+      "错误的配置": "snmp-server enable traps snmp 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 1350,
+      "正确的配置": "permit ip <*> <*> any",
+      "错误的配置": "permit ip 999999 <*> any",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 336,
+      "正确的配置": "ip nat inside source list <*> interface GigabitEthernet <*> overload",
+      "错误的配置": "ip nat inside source list 999999 interface GigabitEthernet <*> overload",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 775,
+      "正确的配置": "net <*>.<*>.<*>.<*>.<*>.<*>",
+      "错误的配置": "net 999999.<*>.<*>.<*>.<*>.<*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 1405,
+      "正确的配置": "max-lsa <*>",
+      "错误的配置": "max-lsa 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 1526,
+      "正确的配置": "neighbor IBGP-PEERS-<*> send-community both",
+      "错误的配置": "neighbor IBGP-PEERS-999999 send-community both",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 4171,
+      "正确的配置": "permit tcp <*> <*> any eq <*>",
+      "错误的配置": "permit tcp 999999 <*> any eq <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 837,
+      "正确的配置": "neighbor <*> send-community extended",
+      "错误的配置": "neighbor 999999 send-community extended",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 2664,
+      "正确的配置": "deny udp <*> <*> any eq <*>",
+      "错误的配置": "deny udp 999999 <*> any eq <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 699,
+      "正确的配置": "radius server RAD-SRV-<*>",
+      "错误的配置": "radius server RAD-SRV-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 1136,
+      "正确的配置": "snmp-server enable traps vrrp",
+      "错误的配置": "snmp-server enable traps vrrp 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 3657,
+      "正确的配置": "neighbor <*> route-map SET-ATTRIBUTES-<*> in",
+      "错误的配置": "neighbor 999999 route-map SET-ATTRIBUTES-<*> in",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 1668,
+      "正确的配置": "access-list <*> deny any log",
+      "错误的配置": "access-list 999999 deny any log",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 1750,
+      "正确的配置": "ip verify unicast source reachable-via rx",
+      "错误的配置": "ip verify unicast source reachable-via rx 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 1998,
+      "正确的配置": "set community <*>:<*> additive",
+      "错误的配置": "set community 999999:<*> additive",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 3047,
+      "正确的配置": "exit",
+      "错误的配置": "exit 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 118,
+      "正确的配置": "class CMAP-<*>",
+      "错误的配置": "class CMAP-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 2358,
+      "正确的配置": "access-list <*> deny any log",
+      "错误的配置": "access-list 999999 deny any log",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 3002,
+      "正确的配置": "neighbor IBGP-PEERS-<*> update-source Loopback <*>",
+      "错误的配置": "neighbor IBGP-PEERS-999999 update-source Loopback <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 3717,
+      "正确的配置": "address-family ipv4",
+      "错误的配置": "address-family ipv4 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 2911,
+      "正确的配置": "network <*> <*> area <*>",
+      "错误的配置": "network 999999 <*> area <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 2560,
+      "正确的配置": "switchport port-security mac-address sticky",
+      "错误的配置": "switchport port-security mac-address sticky 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 996,
+      "正确的配置": "class CMAP-<*>",
+      "错误的配置": "class CMAP-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 2596,
+      "正确的配置": "ip verify unicast source reachable-via rx",
+      "错误的配置": "ip verify unicast source reachable-via rx 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 3186,
+      "正确的配置": "network <*> <*> area <*>",
+      "错误的配置": "network 999999 <*> area <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 1024,
+      "正确的配置": "deny udp <*> <*> any eq <*>",
+      "错误的配置": "deny udp 999999 <*> any eq <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 4083,
+      "正确的配置": "access-list <*> permit host <*>",
+      "错误的配置": "access-list 999999 permit host <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 3945,
+      "正确的配置": "ip access-list extended FW-POLICY-<*>",
+      "错误的配置": "ip access-list extended FW-POLICY-999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配"
+    }
+  ]
+}

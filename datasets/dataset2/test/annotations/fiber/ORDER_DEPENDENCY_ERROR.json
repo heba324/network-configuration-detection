@@ -1,0 +1,2955 @@
+{
+  "vendor": "fiber",
+  "dataset": "test_dataset_2",
+  "错误类型": "ORDER_DEPENDENCY_ERROR",
+  "错误类型描述": "配置语句顺序依赖错误",
+  "实际模板占比": "21.56%",
+  "数据集调整占比": "23.00%",
+  "错误数量": 368,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 5317,
+      "正确的配置": "ipv6-prefix MAR_ipv6 seq 100 permit prefix ::/0 -> ipv6-prefix MAR_ipv6 seq 1100 deny any",
+      "错误的配置": "ipv6-prefix MAR_ipv6 seq 1100 deny any -> ipv6-prefix MAR_ipv6 seq 100 permit prefix ::/0",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 7929,
+      "正确的配置": "ip address <IPV4> -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 1747,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 3408,
+      "正确的配置": "ipv6 address <IPV6>/125 -> vlan-type dot1q 1843",
+      "错误的配置": "vlan-type dot1q 1843 -> ipv6 address <IPV6>/125",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 2079,
+      "正确的配置": "route-policy MCR-OUT-BGPVPN-MCR2_ipv6 permit node 2 -> set local-preference 100",
+      "错误的配置": "set local-preference 100 -> route-policy MCR-OUT-BGPVPN-MCR2_ipv6 permit node 2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 8707,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/2 -> track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 1 down-weight 100 -> lag add interface eth-10gi 0/1/0/2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 3264,
+      "正确的配置": "redistribute static -> additional-paths install",
+      "错误的配置": "additional-paths install -> redistribute static",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 7396,
+      "正确的配置": "pm-statistics enable -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 4749,
+      "正确的配置": "interface lag 5 -> lag add interface eth-10gi 0/5/0/1",
+      "错误的配置": "lag add interface eth-10gi 0/5/0/1 -> interface lag 5",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 1985,
+      "正确的配置": "address-family vpnv6 unicast -> route-policy MCR-OUT-BGPVPN-MCR1_ipv6 out",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR1_ipv6 out -> address-family vpnv6 unicast",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 4547,
+      "正确的配置": "segment-routing sr-prefer -> capability ti-lfa node-protecting",
+      "错误的配置": "capability ti-lfa node-protecting -> segment-routing sr-prefer",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 4811,
+      "正确的配置": "ipv6 mtu 9000 -> vlan-type dot1q 843",
+      "错误的配置": "vlan-type dot1q 843 -> ipv6 mtu 9000",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 903,
+      "正确的配置": "ip address <IPV4> -> vlan-type dot1q 895",
+      "错误的配置": "vlan-type dot1q 895 -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 5173,
+      "正确的配置": "interface dcn-tunnel 0/3/2/3 -> ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN193 -> interface dcn-tunnel 0/3/2/3",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 2801,
+      "正确的配置": "pm-statistics enable -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 1814,
+      "正确的配置": "binding interface lag 1 -> block action-type pkt-block",
+      "错误的配置": "block action-type pkt-block -> binding interface lag 1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 2242,
+      "正确的配置": "ftp service start vrf FHNMVPN -> system name MJHF-HHH-1M2K-W850-XR-F1",
+      "错误的配置": "system name MJHF-HHH-1M2K-W850-XR-F1 -> ftp service start vrf FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 7043,
+      "正确的配置": "snmp-agent community fiberhomeRW default HZprivate@123 -> snmp-agent group fiberhomeRW v2c fiberhomeRW",
+      "错误的配置": "snmp-agent group fiberhomeRW v2c fiberhomeRW -> snmp-agent community fiberhomeRW default HZprivate@123",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 4421,
+      "正确的配置": "interface lag 1 -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> interface lag 1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 5919,
+      "正确的配置": "lag mode lacp -> mtu 9000",
+      "错误的配置": "mtu 9000 -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 1760,
+      "正确的配置": "lag mode lacp -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 6280,
+      "正确的配置": "pm-statistics enable -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 7582,
+      "正确的配置": "lag add interface eth-10gi 0/1/1/1 -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag add interface eth-10gi 0/1/1/1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 2873,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 8760,
+      "正确的配置": "lag mac-address 3334-5336-3434 -> lag mode lacp",
+      "错误的配置": "lag mode lacp -> lag mac-address 3334-5336-3434",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 982,
+      "正确的配置": "ipv6 enable -> ipv6 address auto link-local",
+      "错误的配置": "ipv6 address auto link-local -> ipv6 enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 5419,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2 -> segment-routing sr-prefer",
+      "错误的配置": "segment-routing sr-prefer -> ti-lfa uloop-timer 10 level-2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 3987,
+      "正确的配置": "lag add interface eth-10gi 0/2/0/48 -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> lag add interface eth-10gi 0/2/0/48",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 4356,
+      "正确的配置": "spf-interval level-2 10 -> capability frr",
+      "错误的配置": "capability frr -> spf-interval level-2 10",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 2301,
+      "正确的配置": "interface eth-10gi 0/4/0/2.852 -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> interface eth-10gi 0/4/0/2.852",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 4567,
+      "正确的配置": "next-hop-self -> route-policy MCR-OUT-BGPVPN-MCR out",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR out -> next-hop-self",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 8322,
+      "正确的配置": "snmp-agent acl SNMP -> system-id 0003-0002-0302",
+      "错误的配置": "system-id 0003-0002-0302 -> snmp-agent acl SNMP",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 4225,
+      "正确的配置": "lag mode lacp -> lag add interface eth-10gi 0/1/0/1",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/1 -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 4244,
+      "正确的配置": "spf-interval level-2 50 -> ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer 10 level-2 -> spf-interval level-2 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 1253,
+      "正确的配置": "interface eth-10gi 0/1/0/5 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> interface eth-10gi 0/1/0/5",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 3822,
+      "正确的配置": "ipv6 enable -> ipv6 address auto link-local",
+      "错误的配置": "ipv6 address auto link-local -> ipv6 enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 1739,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 4959,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 6077,
+      "正确的配置": "ip vrf forwarding CTVPN193 -> ip address unnumbered interface loopback 1023",
+      "错误的配置": "ip address unnumbered interface loopback 1023 -> ip vrf forwarding CTVPN193",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 2761,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 8868,
+      "正确的配置": "interface lag 2 -> lag mac-address 6668-8668-6968",
+      "错误的配置": "lag mac-address 6668-8668-6968 -> interface lag 2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 43,
+      "正确的配置": "interface loopback 0 -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> interface loopback 0",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 6950,
+      "正确的配置": "capability frr -> ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer 10 level-2 -> capability frr",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 7730,
+      "正确的配置": "snmp-agent community fiberhomeRO default HZpublic@123 -> snmp-agent group fiberhomeRO v2c fiberhomeRO",
+      "错误的配置": "snmp-agent group fiberhomeRO v2c fiberhomeRO -> snmp-agent community fiberhomeRO default HZpublic@123",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 804,
+      "正确的配置": "sshd service start -> ftp service start",
+      "错误的配置": "ftp service start -> sshd service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 1467,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 1122,
+      "正确的配置": "telnetd service start -> sshd service start",
+      "错误的配置": "sshd service start -> telnetd service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 2683,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 3137,
+      "正确的配置": "spf-interval level-2 50 -> segment-routing sr-prefer",
+      "错误的配置": "segment-routing sr-prefer -> spf-interval level-2 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 5945,
+      "正确的配置": "segment-routing mpls -> capability remote-frr",
+      "错误的配置": "capability remote-frr -> segment-routing mpls",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 1352,
+      "正确的配置": "interface eth-10gi 0/3/2/1 -> pm-statistics enable",
+      "错误的配置": "pm-statistics enable -> interface eth-10gi 0/3/2/1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 7213,
+      "正确的配置": "snmp-agent community fiberhomeRO default HZpublic@123 -> snmp-agent access fiberhomeRO v2c exact _all_ _none_ _all_",
+      "错误的配置": "snmp-agent access fiberhomeRO v2c exact _all_ _none_ _all_ -> snmp-agent community fiberhomeRO default HZpublic@123",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 2438,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 2941,
+      "正确的配置": "interface lag 2 -> lag add interface eth-100gi 0/3/0/3",
+      "错误的配置": "lag add interface eth-100gi 0/3/0/3 -> interface lag 2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 4220,
+      "正确的配置": "encapsulation dot1q -> vlan-type dot1q 843",
+      "错误的配置": "vlan-type dot1q 843 -> encapsulation dot1q",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 6747,
+      "正确的配置": "telnetd service start -> sshd service start",
+      "错误的配置": "sshd service start -> telnetd service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 8146,
+      "正确的配置": "lag mac-address 4477-A446-4546 -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag mac-address 4477-A446-4546",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 4518,
+      "正确的配置": "address-family ipv4 unicast -> route <IPV4> nh-vrf 4G_RAN null 0",
+      "错误的配置": "route <IPV4> nh-vrf 4G_RAN null 0 -> address-family ipv4 unicast",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 8011,
+      "正确的配置": "lag mac-address 3334-7336-3434 -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag mac-address 3334-7336-3434",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 1268,
+      "正确的配置": "pm-statistics enable -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 4447,
+      "正确的配置": "ftp service start -> ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf CTVPN193 -> ftp service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 2432,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold crc-error 1 interval-second 900",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 5368,
+      "正确的配置": "spf-interval level-1 10 -> spf-interval level-2 10",
+      "错误的配置": "spf-interval level-2 10 -> spf-interval level-1 10",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 6949,
+      "正确的配置": "spf-interval level-2 10 -> segment-routing mpls",
+      "错误的配置": "segment-routing mpls -> spf-interval level-2 10",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 2725,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 7556,
+      "正确的配置": "telnetd service start vrf CTVPN193 -> sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf FHNMVPN -> telnetd service start vrf CTVPN193",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 5756,
+      "正确的配置": "interface eth-10gi 0/5/0/6.854 -> ip vrf forwarding wireless_OMC",
+      "错误的配置": "ip vrf forwarding wireless_OMC -> interface eth-10gi 0/5/0/6.854",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 205,
+      "正确的配置": "pm-statistics enable -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 3396,
+      "正确的配置": "ip vrf forwarding 5G_RAN -> ipv6 address <IPV6>/125",
+      "错误的配置": "ipv6 address <IPV6>/125 -> ip vrf forwarding 5G_RAN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 227,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900 -> dcn enable",
+      "错误的配置": "dcn enable -> trap-threshold packet-discard 100 interval-second 900",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 7769,
+      "正确的配置": "interface lag 1 -> lag add interface eth-100gi 0/8/0/1",
+      "错误的配置": "lag add interface eth-100gi 0/8/0/1 -> interface lag 1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 8429,
+      "正确的配置": "lag mac-address 3336-4336-3434 -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag mac-address 3336-4336-3434",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 4787,
+      "正确的配置": "pm-statistics enable -> ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 8107,
+      "正确的配置": "ipv6 address auto link-local -> ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000 -> ipv6 address auto link-local",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 1607,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 3491,
+      "正确的配置": "ipv6 mtu 9000 -> encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q -> ipv6 mtu 9000",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 8660,
+      "正确的配置": "track monitor-group 1 down-weight 100 -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> track monitor-group 1 down-weight 100",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 4173,
+      "正确的配置": "lag mode lacp -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 2655,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 4945,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 8466,
+      "正确的配置": "system name DZTP-NT-3B-N8G3-OI-Z033 -> set dcn-manager-addr ip-address <IPV4> private CTVPN193",
+      "错误的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193 -> system name DZTP-NT-3B-N8G3-OI-Z033",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 8189,
+      "正确的配置": "vrf 5G_RAN_VIP -> address-family ipv6 unicast",
+      "错误的配置": "address-family ipv6 unicast -> vrf 5G_RAN_VIP",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 2290,
+      "正确的配置": "ipv6 mtu 9000 -> encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q -> ipv6 mtu 9000",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 5372,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2 -> capability remote-frr",
+      "错误的配置": "capability remote-frr -> ti-lfa uloop-timer 10 level-2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 681,
+      "正确的配置": "vrf 4G_RAN -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> vrf 4G_RAN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 1220,
+      "正确的配置": "ip vrf forwarding FHNMVPN -> ipv6 address auto link-local",
+      "错误的配置": "ipv6 address auto link-local -> ip vrf forwarding FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 7342,
+      "正确的配置": "ip address <IPV4> -> track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 1 down-weight 100 -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 1446,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 4882,
+      "正确的配置": "dynamic hostname xianxianxianju_MAR -> segment-routing mpls",
+      "错误的配置": "segment-routing mpls -> dynamic hostname xianxianxianju_MAR",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 3153,
+      "正确的配置": "system name BXVT-YS-1B2Y-L850-MG-T1 -> set dcn-manager-addr ip-address <IPV4> private CTVPN193",
+      "错误的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193 -> system name BXVT-YS-1B2Y-L850-MG-T1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 413,
+      "正确的配置": "ip vrf forwarding FHNMVPN -> vlan-type dot1q 4093",
+      "错误的配置": "vlan-type dot1q 4093 -> ip vrf forwarding FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 7192,
+      "正确的配置": "lag mac-address 888A-C88A-8B8A -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> lag mac-address 888A-C88A-8B8A",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 5691,
+      "正确的配置": "ip address <IPV4> -> vlan-type dot1q 20",
+      "错误的配置": "vlan-type dot1q 20 -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 8076,
+      "正确的配置": "ipv6 mtu 9000 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> ipv6 mtu 9000",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 6244,
+      "正确的配置": "interface eth-10gi 0/2/1/2 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> interface eth-10gi 0/2/1/2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 198,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 3777,
+      "正确的配置": "mtu 9000 -> encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q -> mtu 9000",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 3735,
+      "正确的配置": "telnetd service start vrf CTVPN193 -> sshd service start",
+      "错误的配置": "sshd service start -> telnetd service start vrf CTVPN193",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 2557,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 9065,
+      "正确的配置": "lag mac-address 2222-8223-2523 -> lag add interface eth-100gi 0/3/0/1",
+      "错误的配置": "lag add interface eth-100gi 0/3/0/1 -> lag mac-address 2222-8223-2523",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 6115,
+      "正确的配置": "capability frr -> capability remote-frr",
+      "错误的配置": "capability remote-frr -> capability frr",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 7311,
+      "正确的配置": "ftp service start -> set dcn-manager-addr ip-address <IPV4> private CTVPN193",
+      "错误的配置": "set dcn-manager-addr ip-address <IPV4> private CTVPN193 -> ftp service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 6632,
+      "正确的配置": "telnetd service start -> telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf CTVPN193 -> telnetd service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 8885,
+      "正确的配置": "capability frr -> segment-routing mpls",
+      "错误的配置": "segment-routing mpls -> capability frr",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 8301,
+      "正确的配置": "lag mode lacp -> lag add interface eth-100gi 0/3/0/2",
+      "错误的配置": "lag add interface eth-100gi 0/3/0/2 -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 1111,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2 -> capability remote-frr",
+      "错误的配置": "capability remote-frr -> ti-lfa uloop-timer 10 level-2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 1492,
+      "正确的配置": "interface eth-10gi 0/1/0/17 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> interface eth-10gi 0/1/0/17",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 6189,
+      "正确的配置": "snmp-agent group fiberhomeRW v2c fiberhomeRW -> snmp-agent access fiberhomeRO v2c exact _all_ _none_ _all_",
+      "错误的配置": "snmp-agent access fiberhomeRO v2c exact _all_ _none_ _all_ -> snmp-agent group fiberhomeRW v2c fiberhomeRW",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 881,
+      "正确的配置": "ipv6 mtu 9000 -> vlan-type dot1q 843",
+      "错误的配置": "vlan-type dot1q 843 -> ipv6 mtu 9000",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 5464,
+      "正确的配置": "sshd service start vrf CTVPN193 -> sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf FHNMVPN -> sshd service start vrf CTVPN193",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 5545,
+      "正确的配置": "encapsulation dot1q -> vlan-type dot1q 854",
+      "错误的配置": "vlan-type dot1q 854 -> encapsulation dot1q",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 5466,
+      "正确的配置": "ftp service start -> ftp service start vrf FHNMVPN",
+      "错误的配置": "ftp service start vrf FHNMVPN -> ftp service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 8600,
+      "正确的配置": "ip address <IPV4> -> track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 1 down-weight 100 -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 4400,
+      "正确的配置": "lag add interface eth-10gi 0/5/0/1 -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> lag add interface eth-10gi 0/5/0/1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 7567,
+      "正确的配置": "lag mode lacp -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 7339,
+      "正确的配置": "lag mac-address 888B-C88B-898A -> lag mode lacp",
+      "错误的配置": "lag mode lacp -> lag mac-address 888B-C88B-898A",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 5587,
+      "正确的配置": "interface lag 5 -> lag add interface eth-10gi 0/5/0/1",
+      "错误的配置": "lag add interface eth-10gi 0/5/0/1 -> interface lag 5",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 6016,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 9157,
+      "正确的配置": "segment-routing mpls -> capability remote-frr",
+      "错误的配置": "capability remote-frr -> segment-routing mpls",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 8337,
+      "正确的配置": "metric-style wide level-2 -> redistribute isis 1000 route-map isis-loopback0 metric 10000",
+      "错误的配置": "redistribute isis 1000 route-map isis-loopback0 metric 10000 -> metric-style wide level-2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 3278,
+      "正确的配置": "interface lag 1 -> lag mode lacp",
+      "错误的配置": "lag mode lacp -> interface lag 1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 9135,
+      "正确的配置": "lag mode lacp -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 3693,
+      "正确的配置": "lag mac-address 6666-E667-6777 -> lag add interface eth-100gi 0/3/0/1",
+      "错误的配置": "lag add interface eth-100gi 0/3/0/1 -> lag mac-address 6666-E667-6777",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 1843,
+      "正确的配置": "vrf 5G_RAN -> track-route 500",
+      "错误的配置": "track-route 500 -> vrf 5G_RAN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 1917,
+      "正确的配置": "interface loopback 0 -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> interface loopback 0",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 4838,
+      "正确的配置": "interface eth-10gi 0/1/0/4.1843 -> ipv6 enable",
+      "错误的配置": "ipv6 enable -> interface eth-10gi 0/1/0/4.1843",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 5315,
+      "正确的配置": "ipv4-prefix SmartMAN_OUT seq 1000 deny any -> ipv6-prefix MCR_ipv6 seq 100 deny prefix ::/0",
+      "错误的配置": "ipv6-prefix MCR_ipv6 seq 100 deny prefix ::/0 -> ipv4-prefix SmartMAN_OUT seq 1000 deny any",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 469,
+      "正确的配置": "interface dcn-tunnel 0/1/0/4 -> ip vrf forwarding CTVPN193",
+      "错误的配置": "ip vrf forwarding CTVPN193 -> interface dcn-tunnel 0/1/0/4",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 972,
+      "正确的配置": "ftp service start -> ftp service start vrf FHNMVPN",
+      "错误的配置": "ftp service start vrf FHNMVPN -> ftp service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 5811,
+      "正确的配置": "interface loopback 0 -> prefix-sid index 10802 no-php",
+      "错误的配置": "prefix-sid index 10802 no-php -> interface loopback 0",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 4376,
+      "正确的配置": "sshd service start vrf CTVPN193 -> ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf CTVPN193 -> sshd service start vrf CTVPN193",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 7264,
+      "正确的配置": "track monitor-group 1 down-weight 100 -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> track monitor-group 1 down-weight 100",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 6314,
+      "正确的配置": "interface eth-10gi 0/2/2/3 -> pm-statistics enable",
+      "错误的配置": "pm-statistics enable -> interface eth-10gi 0/2/2/3",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 5396,
+      "正确的配置": "interface loopback 1020 -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> interface loopback 1020",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 6677,
+      "正确的配置": "spf-interval level-1 10 -> capability frr",
+      "错误的配置": "capability frr -> spf-interval level-1 10",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 2119,
+      "正确的配置": "interface lag 5 -> lag mac-address 5555-755A-5668",
+      "错误的配置": "lag mac-address 5555-755A-5668 -> interface lag 5",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 3941,
+      "正确的配置": "segment-routing mpls -> segment-routing sr-prefer",
+      "错误的配置": "segment-routing sr-prefer -> segment-routing mpls",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 4197,
+      "正确的配置": "sshd service start vrf CTVPN193 -> ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf CTVPN193 -> sshd service start vrf CTVPN193",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 1688,
+      "正确的配置": "interface eth-10gi 0/1/0/45 -> pm-statistics enable",
+      "错误的配置": "pm-statistics enable -> interface eth-10gi 0/1/0/45",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 5529,
+      "正确的配置": "ip address <IPV4> -> encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 5042,
+      "正确的配置": "pm-statistics enable -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 5876,
+      "正确的配置": "spf-interval level-2 10 -> capability frr",
+      "错误的配置": "capability frr -> spf-interval level-2 10",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 1902,
+      "正确的配置": "wide-metric 100 level-2 -> capability ti-lfa",
+      "错误的配置": "capability ti-lfa -> wide-metric 100 level-2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 7332,
+      "正确的配置": "lag mode lacp -> track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 1 down-weight 100 -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 4273,
+      "正确的配置": "lag mode lacp -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 1949,
+      "正确的配置": "interface lag 3 -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> interface lag 3",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 4509,
+      "正确的配置": "encapsulation dot1q -> vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 4094 -> encapsulation dot1q",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 4207,
+      "正确的配置": "ip vrf forwarding FHNMVPN -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> ip vrf forwarding FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 4287,
+      "正确的配置": "lag mode lacp -> lag add interface eth-10gi 0/2/0/3",
+      "错误的配置": "lag add interface eth-10gi 0/2/0/3 -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 835,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900 -> dcn enable",
+      "错误的配置": "dcn enable -> trap-threshold crc-error 1 interval-second 900",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 6344,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 2319,
+      "正确的配置": "ipv6 address <IPV6>/126 -> encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q -> ipv6 address <IPV6>/126",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 8088,
+      "正确的配置": "ipv6 address <IPV6>/126 -> encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q -> ipv6 address <IPV6>/126",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 3116,
+      "正确的配置": "ipv6 enable -> ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000 -> ipv6 enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 6598,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/2 -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> lag add interface eth-100gi 0/3/0/2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 3148,
+      "正确的配置": "sshd service start vrf FHNMVPN -> ftp service start vrf FHNMVPN",
+      "错误的配置": "ftp service start vrf FHNMVPN -> sshd service start vrf FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 6787,
+      "正确的配置": "lag mac-address 4446-B447-4546 -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag mac-address 4446-B447-4546",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 840,
+      "正确的配置": "interface eth-10gi 0/4/0/4 -> ipv6 mtu 9000",
+      "错误的配置": "ipv6 mtu 9000 -> interface eth-10gi 0/4/0/4",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 2163,
+      "正确的配置": "ip address <IPV4> -> ipv6 address ::D<PORT>B6:FB99/128",
+      "错误的配置": "ipv6 address ::D<PORT>B6:FB99/128 -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 2892,
+      "正确的配置": "pm-statistics enable -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 7536,
+      "正确的配置": "segment-routing mpls -> capability remote-frr",
+      "错误的配置": "capability remote-frr -> segment-routing mpls",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 1260,
+      "正确的配置": "interface eth-10gi 0/1/0/6 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> interface eth-10gi 0/1/0/6",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 1527,
+      "正确的配置": "interface eth-10gi 0/1/0/22 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> interface eth-10gi 0/1/0/22",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 164,
+      "错误行号": 1439,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 165,
+      "错误行号": 6286,
+      "正确的配置": "interface eth-10gi 0/2/1/8 -> pm-statistics enable",
+      "错误的配置": "pm-statistics enable -> interface eth-10gi 0/2/1/8",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 166,
+      "错误行号": 3261,
+      "正确的配置": "vrf 5G_RAN -> address-family ipv6 unicast",
+      "错误的配置": "address-family ipv6 unicast -> vrf 5G_RAN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 167,
+      "错误行号": 2107,
+      "正确的配置": "ip address <IPV4> -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 168,
+      "错误行号": 3858,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2 -> segment-routing sr-prefer",
+      "错误的配置": "segment-routing sr-prefer -> ti-lfa uloop-timer 10 level-2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 4555,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2 -> capability remote-frr",
+      "错误的配置": "capability remote-frr -> ti-lfa uloop-timer 10 level-2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 5643,
+      "正确的配置": "lag mac-address 3383-C335-3834 -> lag mode lacp",
+      "错误的配置": "lag mode lacp -> lag mac-address 3383-C335-3834",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 171,
+      "错误行号": 663,
+      "正确的配置": "neighbor <IPV4> -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> neighbor <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 1373,
+      "正确的配置": "interface eth-10gi 0/3/2/4 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> interface eth-10gi 0/3/2/4",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 173,
+      "错误行号": 8194,
+      "正确的配置": "telnetd service start -> sshd service start",
+      "错误的配置": "sshd service start -> telnetd service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 371,
+      "正确的配置": "ip vrf forwarding FHNMVPN -> encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q -> ip vrf forwarding FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 1345,
+      "正确的配置": "interface eth-10gi 0/3/1/9 -> pm-statistics enable",
+      "错误的配置": "pm-statistics enable -> interface eth-10gi 0/3/1/9",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 6875,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/2 -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> lag add interface eth-100gi 0/3/0/2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 177,
+      "错误行号": 2800,
+      "正确的配置": "interface eth-10gi 0/2/0/30 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> interface eth-10gi 0/2/0/30",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 5990,
+      "正确的配置": "interface eth-10gi 0/1/0/4 -> pm-statistics enable",
+      "错误的配置": "pm-statistics enable -> interface eth-10gi 0/1/0/4",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 179,
+      "错误行号": 7436,
+      "正确的配置": "pm-statistics enable -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 180,
+      "错误行号": 8915,
+      "正确的配置": "interface lag 3 -> lag mode lacp",
+      "错误的配置": "lag mode lacp -> interface lag 3",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 181,
+      "错误行号": 3840,
+      "正确的配置": "ip address <IPV4> -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 182,
+      "错误行号": 4699,
+      "正确的配置": "segment-routing mpls -> segment-routing sr-prefer",
+      "错误的配置": "segment-routing sr-prefer -> segment-routing mpls",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 183,
+      "错误行号": 635,
+      "正确的配置": "capability cspf -> spf-interval level-2 50",
+      "错误的配置": "spf-interval level-2 50 -> capability cspf",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 184,
+      "错误行号": 5852,
+      "正确的配置": "lag mac-address 999A-A99C-9B9A -> lag mode lacp",
+      "错误的配置": "lag mode lacp -> lag mac-address 999A-A99C-9B9A",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 185,
+      "错误行号": 4657,
+      "正确的配置": "route-policy MCR-IN-BGPVPN-MCR in -> route-policy MCR-OUT-BGPVPN-MCR out",
+      "错误的配置": "route-policy MCR-OUT-BGPVPN-MCR out -> route-policy MCR-IN-BGPVPN-MCR in",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 1625,
+      "正确的配置": "interface eth-10gi 0/1/0/36 -> pm-statistics enable",
+      "错误的配置": "pm-statistics enable -> interface eth-10gi 0/1/0/36",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 187,
+      "错误行号": 894,
+      "正确的配置": "ipv6 enable -> ipv6 address auto link-local",
+      "错误的配置": "ipv6 address auto link-local -> ipv6 enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 188,
+      "错误行号": 9096,
+      "正确的配置": "interface loopback 0 -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> interface loopback 0",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 189,
+      "错误行号": 3149,
+      "正确的配置": "ftp service start -> set device type A",
+      "错误的配置": "set device type A -> ftp service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 5242,
+      "正确的配置": "dynamic hostname xianxian_MER_2 -> spf-interval level-2 10",
+      "错误的配置": "spf-interval level-2 10 -> dynamic hostname xianxian_MER_2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 191,
+      "错误行号": 6308,
+      "正确的配置": "pm-statistics enable -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 192,
+      "错误行号": 7111,
+      "正确的配置": "snmp-agent acl SNMP -> system-id 0003-8002-0302",
+      "错误的配置": "system-id 0003-8002-0302 -> snmp-agent acl SNMP",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 193,
+      "错误行号": 8331,
+      "正确的配置": "segment-routing mpls -> capability remote-frr",
+      "错误的配置": "capability remote-frr -> segment-routing mpls",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 595,
+      "正确的配置": "user router password %&%&bNeOyR89bVqF9Qgf8qgRgw==%&%& -> user router privilege 15",
+      "错误的配置": "user router privilege 15 -> user router password %&%&bNeOyR89bVqF9Qgf8qgRgw==%&%&",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 195,
+      "错误行号": 4465,
+      "正确的配置": "ipv4-prefix isis-loopback0 seq 5 permit prefix <IPV4> -> ipv4-prefix MCR_IN seq 1000 permit any",
+      "错误的配置": "ipv4-prefix MCR_IN seq 1000 permit any -> ipv4-prefix isis-loopback0 seq 5 permit prefix <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 3091,
+      "正确的配置": "sshd service start vrf CTVPN193 -> ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf CTVPN193 -> sshd service start vrf CTVPN193",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 5233,
+      "正确的配置": "spf-interval level-1 10 -> spf-interval level-2 10",
+      "错误的配置": "spf-interval level-2 10 -> spf-interval level-1 10",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 6008,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 5978,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold crc-error 1 interval-second 900",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 200,
+      "错误行号": 3706,
+      "正确的配置": "interface lag 3 -> lag mac-address 6666-E669-6779",
+      "错误的配置": "lag mac-address 6666-E669-6779 -> interface lag 3",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 201,
+      "错误行号": 1825,
+      "正确的配置": "interface dcn-tunnel 0/3/1/1 -> vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 4094 -> interface dcn-tunnel 0/3/1/1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 202,
+      "错误行号": 6967,
+      "正确的配置": "lag mac-address 999C-F99A-9C9A -> lag mode lacp",
+      "错误的配置": "lag mode lacp -> lag mac-address 999C-F99A-9C9A",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 2380,
+      "正确的配置": "interface lag 5 -> lag mac-address 22B2-3227-2723",
+      "错误的配置": "lag mac-address 22B2-3227-2723 -> interface lag 5",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 1359,
+      "正确的配置": "interface eth-10gi 0/3/2/2 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> interface eth-10gi 0/3/2/2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 1641,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 206,
+      "错误行号": 8754,
+      "正确的配置": "lag mac-address 3334-5335-4334 -> lag mode lacp",
+      "错误的配置": "lag mode lacp -> lag mac-address 3334-5335-4334",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 207,
+      "错误行号": 1001,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900 -> dcn enable",
+      "错误的配置": "dcn enable -> trap-threshold crc-error 1 interval-second 900",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 8657,
+      "正确的配置": "lag mode lacp -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 335,
+      "正确的配置": "ip vrf forwarding FHNMVPN -> vlan-type dot1q 4093",
+      "错误的配置": "vlan-type dot1q 4093 -> ip vrf forwarding FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 210,
+      "错误行号": 7751,
+      "正确的配置": "capability frr -> segment-routing mpls",
+      "错误的配置": "segment-routing mpls -> capability frr",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 211,
+      "错误行号": 3083,
+      "正确的配置": "segment-routing mpls -> segment-routing sr-prefer",
+      "错误的配置": "segment-routing sr-prefer -> segment-routing mpls",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 7971,
+      "正确的配置": "interface loopback 0 -> prefix-sid index 61 no-php",
+      "错误的配置": "prefix-sid index 61 no-php -> interface loopback 0",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 7071,
+      "正确的配置": "telnetd service start vrf CTVPN193 -> sshd service start",
+      "错误的配置": "sshd service start -> telnetd service start vrf CTVPN193",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 214,
+      "错误行号": 8271,
+      "正确的配置": "ti-lfa uloop-timer 10 level-2 -> capability remote-frr",
+      "错误的配置": "capability remote-frr -> ti-lfa uloop-timer 10 level-2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 8018,
+      "正确的配置": "interface lag 4 -> lag add interface eth-10gi 0/1/0/2",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/2 -> interface lag 4",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 4929,
+      "正确的配置": "interface eth-10gi 0/5/1/4 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> interface eth-10gi 0/5/1/4",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 217,
+      "错误行号": 1416,
+      "正确的配置": "pm-statistics enable -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 2104,
+      "正确的配置": "lag mac-address 5556-D558-5667 -> lag add interface eth-10gi 0/1/0/2",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/2 -> lag mac-address 5556-D558-5667",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 1297,
+      "正确的配置": "pm-statistics enable -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 3519,
+      "正确的配置": "ipv6 address auto link-local -> ipv6 address <IPV6>",
+      "错误的配置": "ipv6 address <IPV6> -> ipv6 address auto link-local",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 6431,
+      "正确的配置": "spf-interval level-2 10 -> capability frr",
+      "错误的配置": "capability frr -> spf-interval level-2 10",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 222,
+      "错误行号": 6801,
+      "正确的配置": "ip address <IPV4> -> vlan-type dot1q 11",
+      "错误的配置": "vlan-type dot1q 11 -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 7155,
+      "正确的配置": "lag mode lacp -> track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 1 down-weight 100 -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 8313,
+      "正确的配置": "snmp-agent community fiberhomeRW default HZprivate@123 -> snmp-agent community fiberhomeRO default HZpublic@123",
+      "错误的配置": "snmp-agent community fiberhomeRO default HZpublic@123 -> snmp-agent community fiberhomeRW default HZprivate@123",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 225,
+      "错误行号": 7310,
+      "正确的配置": "sshd service start vrf FHNMVPN -> system name HEXT-LY-2F-R8K3-SM-E035",
+      "错误的配置": "system name HEXT-LY-2F-R8K3-SM-E035 -> sshd service start vrf FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 226,
+      "错误行号": 8097,
+      "正确的配置": "ipv6 address auto link-local -> ipv6 address <IPV6>/126",
+      "错误的配置": "ipv6 address <IPV6>/126 -> ipv6 address auto link-local",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 3791,
+      "正确的配置": "ip vrf forwarding 4G_RAN -> encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q -> ip vrf forwarding 4G_RAN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 5580,
+      "正确的配置": "ipv6 enable -> ipv6 address <IPV6>",
+      "错误的配置": "ipv6 address <IPV6> -> ipv6 enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 8655,
+      "正确的配置": "interface lag 4 -> lag add interface eth-10gi 0/1/1/2",
+      "错误的配置": "lag add interface eth-10gi 0/1/1/2 -> interface lag 4",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 7690,
+      "正确的配置": "telnetd service start vrf CTVPN193 -> sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf FHNMVPN -> telnetd service start vrf CTVPN193",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 231,
+      "错误行号": 152,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 232,
+      "错误行号": 1478,
+      "正确的配置": "interface eth-10gi 0/1/0/15 -> pm-statistics enable",
+      "错误的配置": "pm-statistics enable -> interface eth-10gi 0/1/0/15",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 354,
+      "正确的配置": "ip address unnumbered interface loopback 1020 -> encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q -> ip address unnumbered interface loopback 1020",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 234,
+      "错误行号": 2005,
+      "正确的配置": "address-family vpnv6 unicast -> route-policy MAR_IPV6-OUT-BGPVPN-LOOP1 out",
+      "错误的配置": "route-policy MAR_IPV6-OUT-BGPVPN-LOOP1 out -> address-family vpnv6 unicast",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 4144,
+      "正确的配置": "telnetd service start -> telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf CTVPN193 -> telnetd service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 8665,
+      "正确的配置": "spf-interval level-2 10 -> capability frr",
+      "错误的配置": "capability frr -> spf-interval level-2 10",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 6425,
+      "正确的配置": "redistribute isis 11 route-map SmartMAN_OUT metric 10000 -> redistribute isis 12 route-map SmartMAN_OUT metric 10000",
+      "错误的配置": "redistribute isis 12 route-map SmartMAN_OUT metric 10000 -> redistribute isis 11 route-map SmartMAN_OUT metric 10000",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 6527,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/1 -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> lag add interface eth-100gi 0/3/0/1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 239,
+      "错误行号": 7602,
+      "正确的配置": "sshd service start -> sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf FHNMVPN -> sshd service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 240,
+      "错误行号": 6081,
+      "正确的配置": "interface dcn-tunnel 0/1/0/9 -> ip address unnumbered interface loopback 1023",
+      "错误的配置": "ip address unnumbered interface loopback 1023 -> interface dcn-tunnel 0/1/0/9",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 241,
+      "错误行号": 6365,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 242,
+      "错误行号": 276,
+      "正确的配置": "ipv6 address <IPV6>/125 -> vlan-type dot1q 843",
+      "错误的配置": "vlan-type dot1q 843 -> ipv6 address <IPV6>/125",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 6399,
+      "正确的配置": "interface lag 4 -> lag mode lacp",
+      "错误的配置": "lag mode lacp -> interface lag 4",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 8713,
+      "正确的配置": "lag mac-address 5555-A559-5658 -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag mac-address 5555-A559-5658",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 3646,
+      "正确的配置": "ip address unnumbered interface loopback 1023 -> vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 4094 -> ip address unnumbered interface loopback 1023",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 8044,
+      "正确的配置": "segment-routing mpls -> ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer 10 level-2 -> segment-routing mpls",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 247,
+      "错误行号": 7949,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/2 -> track monitor-group 1 down-weight 100",
+      "错误的配置": "track monitor-group 1 down-weight 100 -> lag add interface eth-10gi 0/1/0/2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 5507,
+      "正确的配置": "telnetd service start -> sshd service start",
+      "错误的配置": "sshd service start -> telnetd service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 249,
+      "错误行号": 2753,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 6938,
+      "正确的配置": "snmp-agent access fiberhomeRW v2c exact _all_ _all_ _all_ -> snmp-agent service start",
+      "错误的配置": "snmp-agent service start -> snmp-agent access fiberhomeRW v2c exact _all_ _all_ _all_",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 6959,
+      "正确的配置": "sshd service start vrf CTVPN193 -> ftp service start",
+      "错误的配置": "ftp service start -> sshd service start vrf CTVPN193",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 8562,
+      "正确的配置": "capability remote-frr -> segment-routing sr-prefer",
+      "错误的配置": "segment-routing sr-prefer -> capability remote-frr",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 253,
+      "错误行号": 3047,
+      "正确的配置": "mtu 9000 -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> mtu 9000",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 254,
+      "错误行号": 5609,
+      "正确的配置": "spf-interval level-2 50 -> ti-lfa uloop-timer 10 level-2",
+      "错误的配置": "ti-lfa uloop-timer 10 level-2 -> spf-interval level-2 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 255,
+      "错误行号": 6304,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold crc-error 1 interval-second 900",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 256,
+      "错误行号": 6266,
+      "正确的配置": "pm-statistics enable -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 257,
+      "错误行号": 8283,
+      "正确的配置": "sshd service start -> sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf CTVPN193 -> sshd service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 258,
+      "错误行号": 2912,
+      "正确的配置": "interface eth-10gi 0/2/0/46 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> interface eth-10gi 0/2/0/46",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 259,
+      "错误行号": 815,
+      "正确的配置": "ip vrf forwarding FHNMVPN -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> ip vrf forwarding FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 260,
+      "错误行号": 821,
+      "正确的配置": "interface eth-10gi 0/1/0/2 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> interface eth-10gi 0/1/0/2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 261,
+      "错误行号": 5512,
+      "正确的配置": "sshd service start vrf FHNMVPN -> ftp service start",
+      "错误的配置": "ftp service start -> sshd service start vrf FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 262,
+      "错误行号": 6997,
+      "正确的配置": "snmp-agent acl SNMP -> snmp-agent trap source interface loopback 0",
+      "错误的配置": "snmp-agent trap source interface loopback 0 -> snmp-agent acl SNMP",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 263,
+      "错误行号": 7131,
+      "正确的配置": "sshd service start -> sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf FHNMVPN -> sshd service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 264,
+      "错误行号": 6433,
+      "正确的配置": "segment-routing mpls -> segment-routing sr-prefer",
+      "错误的配置": "segment-routing sr-prefer -> segment-routing mpls",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 265,
+      "错误行号": 609,
+      "正确的配置": "net <*> -> interface lag 1",
+      "错误的配置": "interface lag 1 -> net <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 266,
+      "错误行号": 7711,
+      "正确的配置": "ip address <IPV4> -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 267,
+      "错误行号": 5558,
+      "正确的配置": "mtu 9000 -> vlan-type dot1q 852",
+      "错误的配置": "vlan-type dot1q 852 -> mtu 9000",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 268,
+      "错误行号": 8995,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/1 -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag add interface eth-100gi 0/3/0/1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 269,
+      "错误行号": 8256,
+      "正确的配置": "snmp-agent access fiberhomeRO v2c exact _all_ _none_ _all_ -> snmp-agent access fiberhomeRW v2c exact _all_ _all_ _all_",
+      "错误的配置": "snmp-agent access fiberhomeRW v2c exact _all_ _all_ _all_ -> snmp-agent access fiberhomeRO v2c exact _all_ _none_ _all_",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 270,
+      "错误行号": 8423,
+      "正确的配置": "lag mac-address 3336-4335-3635 -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> lag mac-address 3336-4335-3635",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 271,
+      "错误行号": 126,
+      "正确的配置": "trap-threshold packet-discard 100 interval-second 900 -> pdcn enable",
+      "错误的配置": "pdcn enable -> trap-threshold packet-discard 100 interval-second 900",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 272,
+      "错误行号": 6752,
+      "正确的配置": "ftp service start -> system name EBUQ-BPK-6C-O8H3-PJ-B004",
+      "错误的配置": "system name EBUQ-BPK-6C-O8H3-PJ-B004 -> ftp service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 273,
+      "错误行号": 402,
+      "正确的配置": "ip address unnumbered interface loopback 1020 -> vlan-type dot1q 4093",
+      "错误的配置": "vlan-type dot1q 4093 -> ip address unnumbered interface loopback 1020",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 274,
+      "错误行号": 7967,
+      "正确的配置": "acl basic SNMP -> rule 1 permit source <IPV4> fragme-type non_fragment",
+      "错误的配置": "rule 1 permit source <IPV4> fragme-type non_fragment -> acl basic SNMP",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 275,
+      "错误行号": 5937,
+      "正确的配置": "capability remote-frr -> segment-routing sr-prefer",
+      "错误的配置": "segment-routing sr-prefer -> capability remote-frr",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 276,
+      "错误行号": 7197,
+      "正确的配置": "interface lag 3 -> lag mode lacp",
+      "错误的配置": "lag mode lacp -> interface lag 3",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 277,
+      "错误行号": 8050,
+      "正确的配置": "telnetd service start vrf CTVPN193 -> sshd service start vrf FHNMVPN",
+      "错误的配置": "sshd service start vrf FHNMVPN -> telnetd service start vrf CTVPN193",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 278,
+      "错误行号": 5522,
+      "正确的配置": "ip address <IPV4> -> ipv6 address auto link-local",
+      "错误的配置": "ipv6 address auto link-local -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 279,
+      "错误行号": 1888,
+      "正确的配置": "rule 1 permit source <IPV4> fragme-type non_fragment -> rule 1000 deny fragme-type non_fragment",
+      "错误的配置": "rule 1000 deny fragme-type non_fragment -> rule 1 permit source <IPV4> fragme-type non_fragment",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 280,
+      "错误行号": 5954,
+      "正确的配置": "sshd service start vrf FHNMVPN -> ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf CTVPN193 -> sshd service start vrf FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 281,
+      "错误行号": 4727,
+      "正确的配置": "ipv6 address auto link-local -> ipv6 address <IPV6>/126",
+      "错误的配置": "ipv6 address <IPV6>/126 -> ipv6 address auto link-local",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 282,
+      "错误行号": 5454,
+      "正确的配置": "dynamic hostname xianxianxinyuan_MAR -> spf-interval level-2 50",
+      "错误的配置": "spf-interval level-2 50 -> dynamic hostname xianxianxinyuan_MAR",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 283,
+      "错误行号": 4166,
+      "正确的配置": "lag mode lacp -> lag add interface eth-10gi 0/1/0/1",
+      "错误的配置": "lag add interface eth-10gi 0/1/0/1 -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 284,
+      "错误行号": 1006,
+      "正确的配置": "interface eth-10gi 0/5/0/3.843 -> ip vrf forwarding 5G_RAN",
+      "错误的配置": "ip vrf forwarding 5G_RAN -> interface eth-10gi 0/5/0/3.843",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 285,
+      "错误行号": 886,
+      "正确的配置": "ip vrf forwarding wireless_OMC -> encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q -> ip vrf forwarding wireless_OMC",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 286,
+      "错误行号": 8516,
+      "正确的配置": "sshd service start -> ftp service start",
+      "错误的配置": "ftp service start -> sshd service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 287,
+      "错误行号": 6000,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 288,
+      "错误行号": 3781,
+      "正确的配置": "interface eth-10gi 0/5/0/4.843 -> ipv6 address auto link-local",
+      "错误的配置": "ipv6 address auto link-local -> interface eth-10gi 0/5/0/4.843",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 289,
+      "错误行号": 6018,
+      "正确的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold crc-error 1 interval-second 900",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 290,
+      "错误行号": 7600,
+      "正确的配置": "telnetd service start -> sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf CTVPN193 -> telnetd service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 291,
+      "错误行号": 1017,
+      "正确的配置": "ip address <IPV4> -> mtu 9000",
+      "错误的配置": "mtu 9000 -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 292,
+      "错误行号": 4859,
+      "正确的配置": "lag add interface eth-10gi 0/1/0/1 -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag add interface eth-10gi 0/1/0/1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 293,
+      "错误行号": 3337,
+      "正确的配置": "ip vrf forwarding FHNMVPN -> ipv6 enable",
+      "错误的配置": "ipv6 enable -> ip vrf forwarding FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 294,
+      "错误行号": 7987,
+      "正确的配置": "telnetd service start vrf CTVPN193 -> sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf CTVPN193 -> telnetd service start vrf CTVPN193",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 295,
+      "错误行号": 8949,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/1 -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> lag add interface eth-100gi 0/3/0/1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 296,
+      "错误行号": 8266,
+      "正确的配置": "dynamic hostname HEXT-PX-2F-R8K3-SM-E031 -> capability frr",
+      "错误的配置": "capability frr -> dynamic hostname HEXT-PX-2F-R8K3-SM-E031",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 297,
+      "错误行号": 2446,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 298,
+      "错误行号": 3310,
+      "正确的配置": "capability frr -> capability remote-frr",
+      "错误的配置": "capability remote-frr -> capability frr",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 299,
+      "错误行号": 6477,
+      "正确的配置": "interface lag 2 -> lag mode lacp",
+      "错误的配置": "lag mode lacp -> interface lag 2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 300,
+      "错误行号": 3863,
+      "正确的配置": "telnetd service start vrf FHNMVPN -> sshd service start vrf CTVPN193",
+      "错误的配置": "sshd service start vrf CTVPN193 -> telnetd service start vrf FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 301,
+      "错误行号": 4152,
+      "正确的配置": "ftp service start vrf FHNMVPN -> set device type A",
+      "错误的配置": "set device type A -> ftp service start vrf FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 302,
+      "错误行号": 683,
+      "正确的配置": "redistribute connected -> additional-paths install",
+      "错误的配置": "additional-paths install -> redistribute connected",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 303,
+      "错误行号": 4502,
+      "正确的配置": "lag add interface eth-10gi 0/2/0/2 -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag add interface eth-10gi 0/2/0/2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 304,
+      "错误行号": 2668,
+      "正确的配置": "pm-statistics enable -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 305,
+      "错误行号": 5461,
+      "正确的配置": "telnetd service start vrf CTVPN193 -> sshd service start",
+      "错误的配置": "sshd service start -> telnetd service start vrf CTVPN193",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 306,
+      "错误行号": 8342,
+      "正确的配置": "telnetd service start -> telnetd service start vrf CTVPN193",
+      "错误的配置": "telnetd service start vrf CTVPN193 -> telnetd service start",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 307,
+      "错误行号": 2495,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 308,
+      "错误行号": 1189,
+      "正确的配置": "ipv6-prefix MCR_ipv6 seq 1100 permit any -> vrf 4G_RAN",
+      "错误的配置": "vrf 4G_RAN -> ipv6-prefix MCR_ipv6 seq 1100 permit any",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 309,
+      "错误行号": 1326,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 310,
+      "错误行号": 419,
+      "正确的配置": "ip vrf forwarding FHNMVPN -> encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q -> ip vrf forwarding FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 311,
+      "错误行号": 171,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold packet-discard 100 interval-second 900",
+      "错误的配置": "trap-threshold packet-discard 100 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 312,
+      "错误行号": 1767,
+      "正确的配置": "lag mac-address 3334-A335-3644 -> lag add interface eth-100gi 0/10/0/1",
+      "错误的配置": "lag add interface eth-100gi 0/10/0/1 -> lag mac-address 3334-A335-3644",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 313,
+      "错误行号": 2689,
+      "正确的配置": "pm-statistics enable -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 314,
+      "错误行号": 283,
+      "正确的配置": "ip address <IPV4> -> mtu 9000",
+      "错误的配置": "mtu 9000 -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 315,
+      "错误行号": 6231,
+      "正确的配置": "route-policy MAR_IPV6-OUT-BGPVPN-LOOP2 permit node 1 -> if-match extcommunity-filter LOOP2",
+      "错误的配置": "if-match extcommunity-filter LOOP2 -> route-policy MAR_IPV6-OUT-BGPVPN-LOOP2 permit node 1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 316,
+      "错误行号": 5445,
+      "正确的配置": "lag mode lacp -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 317,
+      "错误行号": 8152,
+      "正确的配置": "local-aaa -> user HE-XT-Manager password %&%&A8ALJIDEYj6+f+gBPgjcbA==%&%&",
+      "错误的配置": "user HE-XT-Manager password %&%&A8ALJIDEYj6+f+gBPgjcbA==%&%& -> local-aaa",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 318,
+      "错误行号": 2188,
+      "正确的配置": "ip vrf forwarding wireless_OMC -> encapsulation dot1q",
+      "错误的配置": "encapsulation dot1q -> ip vrf forwarding wireless_OMC",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 319,
+      "错误行号": 8919,
+      "正确的配置": "ip address <IPV4> -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 320,
+      "错误行号": 2387,
+      "正确的配置": "interface eth-10gi 0/4/0/1.854 -> dhcp relay source-ip <IPV4>",
+      "错误的配置": "dhcp relay source-ip <IPV4> -> interface eth-10gi 0/4/0/1.854",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 321,
+      "错误行号": 6769,
+      "正确的配置": "interface lag 1 -> lag mode lacp",
+      "错误的配置": "lag mode lacp -> interface lag 1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 322,
+      "错误行号": 7990,
+      "正确的配置": "sshd service start vrf FHNMVPN -> ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf CTVPN193 -> sshd service start vrf FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 323,
+      "错误行号": 8252,
+      "正确的配置": "snmp-agent community fiberhomeRW default HZprivate@123 -> snmp-agent community fiberhomeRO default HZpublic@123",
+      "错误的配置": "snmp-agent community fiberhomeRO default HZpublic@123 -> snmp-agent community fiberhomeRW default HZprivate@123",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 324,
+      "错误行号": 7247,
+      "正确的配置": "lag mode lacp -> lag add interface eth-100gi 0/3/0/1",
+      "错误的配置": "lag add interface eth-100gi 0/3/0/1 -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 325,
+      "错误行号": 6587,
+      "正确的配置": "interface lag 1 -> lag mode lacp",
+      "错误的配置": "lag mode lacp -> interface lag 1",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 326,
+      "错误行号": 8567,
+      "正确的配置": "router ospf 65534 vrf CTVPN193 -> interface dcn-tunnel 0/1/1/1",
+      "错误的配置": "interface dcn-tunnel 0/1/1/1 -> router ospf 65534 vrf CTVPN193",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 327,
+      "错误行号": 3503,
+      "正确的配置": "ip vrf forwarding 4G_RAN -> mtu 9000",
+      "错误的配置": "mtu 9000 -> ip vrf forwarding 4G_RAN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 328,
+      "错误行号": 6352,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 329,
+      "错误行号": 8471,
+      "正确的配置": "lag mode lacp -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 330,
+      "错误行号": 6240,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 331,
+      "错误行号": 5515,
+      "正确的配置": "ftp service start vrf FHNMVPN -> system name GDBY-WXX-1G2E-Q850-RL-Y1",
+      "错误的配置": "system name GDBY-WXX-1G2E-Q850-RL-Y1 -> ftp service start vrf FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 332,
+      "错误行号": 3314,
+      "正确的配置": "segment-routing sr-prefer -> capability ti-lfa node-protecting",
+      "错误的配置": "capability ti-lfa node-protecting -> segment-routing sr-prefer",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 333,
+      "错误行号": 7429,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 334,
+      "错误行号": 2900,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 335,
+      "错误行号": 6172,
+      "正确的配置": "lag add interface eth-100gi 0/3/0/2 -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> lag add interface eth-100gi 0/3/0/2",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 336,
+      "错误行号": 4664,
+      "正确的配置": "sshd service start vrf FHNMVPN -> ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf CTVPN193 -> sshd service start vrf FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 337,
+      "错误行号": 3696,
+      "正确的配置": "ip address <IPV4> -> lag-return-mode",
+      "错误的配置": "lag-return-mode -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 338,
+      "错误行号": 2976,
+      "正确的配置": "snmp-agent community fiberhomeRO default HZpublic@123 -> snmp-agent access fiberhomeRO v2c exact _all_ _none_ _all_",
+      "错误的配置": "snmp-agent access fiberhomeRO v2c exact _all_ _none_ _all_ -> snmp-agent community fiberhomeRO default HZpublic@123",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 339,
+      "错误行号": 4407,
+      "正确的配置": "snmp-agent group fiberhomeRW v2c fiberhomeRW -> snmp-agent service start",
+      "错误的配置": "snmp-agent service start -> snmp-agent group fiberhomeRW v2c fiberhomeRW",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 340,
+      "错误行号": 1635,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 341,
+      "错误行号": 5482,
+      "正确的配置": "lag mode lacp -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 342,
+      "错误行号": 3635,
+      "正确的配置": "ip vrf forwarding CTVPN193 -> ip address unnumbered interface loopback 1023",
+      "错误的配置": "ip address unnumbered interface loopback 1023 -> ip vrf forwarding CTVPN193",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 343,
+      "错误行号": 3806,
+      "正确的配置": "ip address <IPV4> -> vlan-type dot1q 854",
+      "错误的配置": "vlan-type dot1q 854 -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 344,
+      "错误行号": 5143,
+      "正确的配置": "interface dcn-tunnel 0/3/1/7 -> ip address unnumbered interface loopback 1023",
+      "错误的配置": "ip address unnumbered interface loopback 1023 -> interface dcn-tunnel 0/3/1/7",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 345,
+      "错误行号": 6471,
+      "正确的配置": "lag mode lacp -> ip address <IPV4>",
+      "错误的配置": "ip address <IPV4> -> lag mode lacp",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 346,
+      "错误行号": 5198,
+      "正确的配置": "interface dcn-tunnel 0/3/2/8 -> ip address unnumbered interface loopback 1023",
+      "错误的配置": "ip address unnumbered interface loopback 1023 -> interface dcn-tunnel 0/3/2/8",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 347,
+      "错误行号": 2331,
+      "正确的配置": "interface eth-10gi 0/4/0/3.852 -> mtu 9000",
+      "错误的配置": "mtu 9000 -> interface eth-10gi 0/4/0/3.852",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 348,
+      "错误行号": 1542,
+      "正确的配置": "pm-statistics enable -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 349,
+      "错误行号": 7828,
+      "正确的配置": "ipv6-prefix MCR_ipv6 seq 1100 permit any -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> ipv6-prefix MCR_ipv6 seq 1100 permit any",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 350,
+      "错误行号": 3272,
+      "正确的配置": "sshd service start vrf FHNMVPN -> ftp service start vrf CTVPN193",
+      "错误的配置": "ftp service start vrf CTVPN193 -> sshd service start vrf FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 351,
+      "错误行号": 7161,
+      "正确的配置": "dynamic hostname HEXT-LX-2F-R8K3-SM-E025 -> capability frr",
+      "错误的配置": "capability frr -> dynamic hostname HEXT-LX-2F-R8K3-SM-E025",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 352,
+      "错误行号": 5528,
+      "正确的配置": "ip vrf forwarding 4G_RAN -> mtu 9000",
+      "错误的配置": "mtu 9000 -> ip vrf forwarding 4G_RAN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 353,
+      "错误行号": 6689,
+      "正确的配置": "address-family ipv4 unicast -> additional-paths install",
+      "错误的配置": "additional-paths install -> address-family ipv4 unicast",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 354,
+      "错误行号": 4066,
+      "正确的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 355,
+      "错误行号": 8440,
+      "正确的配置": "snmp-agent access fiberhomeRO v2c exact _all_ _none_ _all_ -> snmp-agent service start",
+      "错误的配置": "snmp-agent service start -> snmp-agent access fiberhomeRO v2c exact _all_ _none_ _all_",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 356,
+      "错误行号": 8728,
+      "正确的配置": "spf-interval level-2 10 -> capability frr",
+      "错误的配置": "capability frr -> spf-interval level-2 10",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 357,
+      "错误行号": 7107,
+      "正确的配置": "snmp-agent access fiberhomeRW v2c exact _all_ _all_ _all_ -> snmp-agent service start",
+      "错误的配置": "snmp-agent service start -> snmp-agent access fiberhomeRW v2c exact _all_ _all_ _all_",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 358,
+      "错误行号": 2738,
+      "正确的配置": "pm-statistics enable -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> pm-statistics enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 359,
+      "错误行号": 6288,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 360,
+      "错误行号": 8985,
+      "正确的配置": "sshd service start vrf FHNMVPN -> fanctrl chassis 0 runmode auto",
+      "错误的配置": "fanctrl chassis 0 runmode auto -> sshd service start vrf FHNMVPN",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 361,
+      "错误行号": 5170,
+      "正确的配置": "ip address unnumbered interface loopback 1023 -> vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 4094 -> ip address unnumbered interface loopback 1023",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 362,
+      "错误行号": 2746,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold crc-error 1 interval-second 900",
+      "错误的配置": "trap-threshold crc-error 1 interval-second 900 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 363,
+      "错误行号": 476,
+      "正确的配置": "ip address unnumbered interface loopback 1023 -> vlan-type dot1q 4094",
+      "错误的配置": "vlan-type dot1q 4094 -> ip address unnumbered interface loopback 1023",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 364,
+      "错误行号": 1894,
+      "正确的配置": "net <*> -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> net <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 365,
+      "错误行号": 1410,
+      "正确的配置": "trap-threshold input-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold output-rate alarm-threshold 80 alert-threshold 50",
+      "错误的配置": "trap-threshold output-rate alarm-threshold 80 alert-threshold 50 -> trap-threshold input-rate alarm-threshold 80 alert-threshold 50",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 366,
+      "错误行号": 6063,
+      "正确的配置": "lag mac-address 3336-C335-3635 -> lag mode lacp",
+      "错误的配置": "lag mode lacp -> lag mac-address 3336-C335-3635",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 367,
+      "错误行号": 5841,
+      "正确的配置": "ip address <IPV4> -> mtu 9000",
+      "错误的配置": "mtu 9000 -> ip address <IPV4>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 368,
+      "错误行号": 6342,
+      "正确的配置": "interface eth-10gi 0/2/2/7 -> pm-statistics enable",
+      "错误的配置": "pm-statistics enable -> interface eth-10gi 0/2/2/7",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误"
+    }
+  ]
+}

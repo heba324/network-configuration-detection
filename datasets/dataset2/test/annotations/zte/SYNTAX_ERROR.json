@@ -1,0 +1,1291 @@
+{
+  "vendor": "zte",
+  "dataset": "test_dataset_2",
+  "错误类型": "SYNTAX_ERROR",
+  "错误类型描述": "语法/拼写错误",
+  "实际模板占比": "12.04%",
+  "数据集调整占比": "10.00%",
+  "错误数量": 160,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 5795,
+      "正确的配置": "vlan-configuration",
+      "错误的配置": "vlan-configuratino",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 2374,
+      "正确的配置": "ippool-openflow-disconnect response-delay 480",
+      "错误的配置": "ippool-openflow-disconnetc response-delay 480",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 3256,
+      "正确的配置": "dhcp user-detect count 1 timer 60",
+      "错误的配置": "dhpc user-detect count 1 timer 60",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 4783,
+      "正确的配置": "neighbor pgToBorderLeaf send-large-community",
+      "错误的配置": "neighbor pgToBorderLeaf send-large-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 1766,
+      "正确的配置": "rule 1000 deny any",
+      "错误的配置": "ruel 1000 deny any",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 4503,
+      "正确的配置": "neighbor pgToALeaf-v6 additional-paths send 16",
+      "错误的配置": "neighbro pgToALeaf-v6 additional-paths send 16",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 1117,
+      "正确的配置": "bind flexe_client <*>",
+      "错误的配置": "bidn flexe_client <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 4571,
+      "正确的配置": "neighbor pgTopUP-v6 announce-sid",
+      "错误的配置": "neighbro pgTopUP-v6 announce-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 1905,
+      "正确的配置": "bgp router-id <*>",
+      "错误的配置": "bgp routr-id <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 1308,
+      "正确的配置": "neighbor pgToRR-v6 activate",
+      "错误的配置": "neighbro pgToRR-v6 activate",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 547,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 2022,
+      "正确的配置": "syslog-server source interface loopback2",
+      "错误的配置": "syslog-server source interfce loopback2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 809,
+      "正确的配置": "neighbor <*> description <*>",
+      "错误的配置": "neighbor <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 6196,
+      "正确的配置": "redistribute user-special",
+      "错误的配置": "redistrbute user-special",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 110,
+      "正确的配置": "mpls mtu 9000",
+      "错误的配置": "mpsl mtu 9000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 4171,
+      "正确的配置": "neighbor pgToCloudLeaf-v6 srv6-l3-service-type 5",
+      "错误的配置": "neighbor pgToCloudLeaf-v6 srv6-l3-servce-type 5",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 3835,
+      "正确的配置": "neighbor pgToDCGW-CTVPN-CTC-NMAN remote-as 64667",
+      "错误的配置": "neighbro pgToDCGW-CTVPN-CTC-NMAN remote-as 64667",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 3811,
+      "正确的配置": "bgp bestpath external enable",
+      "错误的配置": "bgp bestpath external enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 2715,
+      "正确的配置": "alarm level-change 490203 warnings",
+      "错误的配置": "alamr level-change 490203 warnings",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 4158,
+      "正确的配置": "neighbor pgToBorderLeaf-v6 remote-as <*>",
+      "错误的配置": "neighbro pgToBorderLeaf-v6 remote-as <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 3489,
+      "正确的配置": "add-interface type uni interface <*>",
+      "错误的配置": "add-interfce type uni interface <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 952,
+      "正确的配置": "neighbor pgToRR-v6 additional-paths send 16",
+      "错误的配置": "neighbro pgToRR-v6 additional-paths send 16",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 4703,
+      "正确的配置": "neighbor pgToB activate",
+      "错误的配置": "neighbro pgToB activate",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 2575,
+      "正确的配置": "tacplus group-server js.admin.tacacs",
+      "错误的配置": "tacplsu group-server js.admin.tacacs",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 4482,
+      "正确的配置": "neighbor pgToSLeaf-v6 route-reflector-client",
+      "错误的配置": "neighbro pgToSLeaf-v6 route-reflector-client",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 4763,
+      "正确的配置": "bgp nexthop recursive-lookup default-route disable",
+      "错误的配置": "bgp nexthpo recursive-lookup default-route disable",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 4758,
+      "正确的配置": "neighbor pgTopUP additional-paths send 16",
+      "错误的配置": "neighbro pgTopUP additional-paths send 16",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 4676,
+      "正确的配置": "neighbor pgTopUP-v6 announce-sid",
+      "错误的配置": "neighbro pgTopUP-v6 announce-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 6001,
+      "正确的配置": "qos-statistics switch on <*> output",
+      "错误的配置": "qos-statistisc switch on <*> output",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 5793,
+      "正确的配置": "periodic daily <*> to <*>",
+      "错误的配置": "periodci daily <*> to <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 4416,
+      "正确的配置": "neighbor pgToBorderLeaf-v6 announce-sid",
+      "错误的配置": "neighbro pgToBorderLeaf-v6 announce-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 4914,
+      "正确的配置": "rule 20 deny link-protocol 34825 any 0180.c200.0002 0000.0000.0000",
+      "错误的配置": "rule 20 deny link-protocl 34825 any 0180.c200.0002 0000.0000.0000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 5128,
+      "正确的配置": "srv6 end-dt-sid auto",
+      "错误的配置": "sr6v end-dt-sid auto",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 4790,
+      "正确的配置": "neighbor pgToCloudLeaf send-large-community",
+      "错误的配置": "neighbor pgToCloudLeaf send-large-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 2946,
+      "正确的配置": "authorization-type mix-radius",
+      "错误的配置": "authorization-tyep mix-radius",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 3391,
+      "正确的配置": "start-ip <*> end-ip <*>",
+      "错误的配置": "start-pi <*> end-ip <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 4695,
+      "正确的配置": "bgp nexthop recursive-lookup srv6-sid enable",
+      "错误的配置": "bgp nexthop recursive-lookup srv6-sid enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 5832,
+      "正确的配置": "track <*>",
+      "错误的配置": "trakc <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 4621,
+      "正确的配置": "neighbor pgToCloudLeaf-v6 send-community",
+      "错误的配置": "neighbor pgToCloudLeaf-v6 send-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 5763,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 3448,
+      "正确的配置": "track <*> vxlan-alarm",
+      "错误的配置": "trakc <*> vxlan-alarm",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 4402,
+      "正确的配置": "neighbor pgToALeaf-v6 additional-paths receive",
+      "错误的配置": "neighbro pgToALeaf-v6 additional-paths receive",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 5411,
+      "正确的配置": "neighbor pgToRR-v6 additional-paths receive",
+      "错误的配置": "neighbro pgToRR-v6 additional-paths receive",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 4501,
+      "正确的配置": "neighbor pgToALeaf-v6 advertise tunnel-encapsulation srv6",
+      "错误的配置": "neighbor pgToALeaf-v6 advertise tunnel-encapslation srv6",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 855,
+      "正确的配置": "neighbor pgToRR-v6 srv6-l2-service-type 6",
+      "错误的配置": "neighbor pgToRR-v6 srv6-l2-servce-type 6",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 974,
+      "正确的配置": "te-link-delay enable",
+      "错误的配置": "te-link-delay enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 2823,
+      "正确的配置": "any-other-vlan qinq",
+      "错误的配置": "any-other-vlna qinq",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 5565,
+      "正确的配置": "ip multicast-routing",
+      "错误的配置": "ip multicas-routing",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 866,
+      "正确的配置": "neighbor <*> remote-as <*>",
+      "错误的配置": "neighbro <*> remote-as <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 4342,
+      "正确的配置": "neighbor pgToBorderLeaf-v6 send-med",
+      "错误的配置": "neighbro pgToBorderLeaf-v6 send-med",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 5593,
+      "正确的配置": "description <*>",
+      "错误的配置": "descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 2839,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 4002,
+      "正确的配置": "neighbor pgToSLeaf-v6 peer-group",
+      "错误的配置": "neighbro pgToSLeaf-v6 peer-group",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 676,
+      "正确的配置": "es-id static octets <*>",
+      "错误的配置": "es-di static octets <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 6052,
+      "正确的配置": "reflector-discriminator ip <*>",
+      "错误的配置": "reflector-discriminatro ip <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 5694,
+      "正确的配置": "description <*>",
+      "错误的配置": "descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 557,
+      "正确的配置": "snmp-server view n31view iso included",
+      "错误的配置": "snmp-servre view n31view iso included",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 3643,
+      "正确的配置": "ip address <*> <*>",
+      "错误的配置": "ip adress <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 5480,
+      "正确的配置": "bgp bestpath origin-from evpn",
+      "错误的配置": "bgp bestpaht origin-from evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 1708,
+      "正确的配置": "pimsm",
+      "错误的配置": "pimms",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 2167,
+      "正确的配置": "srv6 locator SRV6-ZWZX",
+      "错误的配置": "sr6v locator SRV6-ZWZX",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 5963,
+      "正确的配置": "srv6 encapsulation source-address <*>",
+      "错误的配置": "srv6 encapsulation source-adress <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 5327,
+      "正确的配置": "neighbor <*> peer-group pgToRR",
+      "错误的配置": "neighbro <*> peer-group pgToRR",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 3436,
+      "正确的配置": "dns-server 240e:5b::6666 second",
+      "错误的配置": "dns-servre 240e:5b::6666 second",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 951,
+      "正确的配置": "neighbor pgToRR-v6 additional-paths receive",
+      "错误的配置": "neighbro pgToRR-v6 additional-paths receive",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 209,
+      "正确的配置": "clock timezone beijing 8",
+      "错误的配置": "clokc timezone beijing 8",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 5036,
+      "正确的配置": "neighbor <*> peer-group pgToRR",
+      "错误的配置": "neighbro <*> peer-group pgToRR",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 6070,
+      "正确的配置": "neighbor pgToRR-v6 srv6-l3-service-type 5",
+      "错误的配置": "neighbor pgToRR-v6 srv6-l3-servce-type 5",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 1957,
+      "正确的配置": "segment-routing srv6 enable",
+      "错误的配置": "segment-routing srv6 enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 1288,
+      "正确的配置": "neighbor pgToRR-v6 advertise tunnel-encapsulation srv6",
+      "错误的配置": "neighbor pgToRR-v6 advertise tunnel-encapslation srv6",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 4634,
+      "正确的配置": "neighbor pgToDCLeaf-v6 advertise tunnel-encapsulation srv6",
+      "错误的配置": "neighbor pgToDCLeaf-v6 advertise tunnel-encapslation srv6",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 6250,
+      "正确的配置": "neighbor pgToRR-v6 additional-paths receive",
+      "错误的配置": "neighbro pgToRR-v6 additional-paths receive",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 4830,
+      "正确的配置": "router isis 800",
+      "错误的配置": "routr isis 800",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 3838,
+      "正确的配置": "neighbor pgToDCGW-CTVPN-CTC-NMAN ttl-security-hops 2",
+      "错误的配置": "neighbro pgToDCGW-CTVPN-CTC-NMAN ttl-security-hops 2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 3793,
+      "正确的配置": "bgp nexthop recursive-lookup null1 disable",
+      "错误的配置": "bgp nexthpo recursive-lookup null1 disable",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 4859,
+      "正确的配置": "bfd-enable",
+      "错误的配置": "bfd-enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 4075,
+      "正确的配置": "neighbor <*> description <*>",
+      "错误的配置": "neighbor <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 5063,
+      "正确的配置": "bgp nexthop recursive-lookup null1 disable",
+      "错误的配置": "bgp nexthpo recursive-lookup null1 disable",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 6163,
+      "正确的配置": "bgp select-global-nexthop",
+      "错误的配置": "bgp select-global-nexthpo",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 5640,
+      "正确的配置": "evpn tunnel-encapsulation srv6",
+      "错误的配置": "evpn tunnel-encapslation srv6",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 5329,
+      "正确的配置": "address-family ipv4",
+      "错误的配置": "adress-family ipv4",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 4906,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 2918,
+      "正确的配置": "authentication-type radius-none",
+      "错误的配置": "authentication-tyep radius-none",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 1409,
+      "正确的配置": "bgp nexthop recursive-lookup null1 disable",
+      "错误的配置": "bgp nexthpo recursive-lookup null1 disable",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 180,
+      "正确的配置": "bind flexe_group <*> calendar-template A interface <*> timeslots 18-19",
+      "错误的配置": "bind flexe_group <*> calendar-template A interfce <*> timeslots 18-19",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 213,
+      "正确的配置": "switchvlan-configuration",
+      "错误的配置": "switchvlan-configuratino",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 2200,
+      "正确的配置": "rd <*>",
+      "错误的配置": "rd <*>x",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 1805,
+      "正确的配置": "rule <*> permit <IPV4> <IPV4>",
+      "错误的配置": "rule <*> permt <IPV4> <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 3732,
+      "正确的配置": "neighbor <*> description <*>",
+      "错误的配置": "neighbor <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 3208,
+      "正确的配置": "session-offline-standardize 1000",
+      "错误的配置": "session-offline-standardiez 1000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 614,
+      "正确的配置": "etree-advertise leaf-flag",
+      "错误的配置": "etree-adverties leaf-flag",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 5988,
+      "正确的配置": "logging file default almlog",
+      "错误的配置": "loggign file default almlog",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 2194,
+      "正确的配置": "route-target export <*>",
+      "错误的配置": "route-targte export <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 510,
+      "正确的配置": "aging-time 600",
+      "错误的配置": "aging-tiem 600",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 3066,
+      "正确的配置": "accounting-type radius",
+      "错误的配置": "accounting-tyep radius",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 1348,
+      "正确的配置": "interface loopback1",
+      "错误的配置": "interfce loopback1",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 2525,
+      "正确的配置": "timeout 10",
+      "错误的配置": "timeotu 10",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 928,
+      "正确的配置": "bgp nexthop recursive-lookup srv6-sid enable",
+      "错误的配置": "bgp nexthop recursive-lookup srv6-sid enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 954,
+      "正确的配置": "address-family ipv4 vrf CTVPN193-JS",
+      "错误的配置": "adress-family ipv4 vrf CTVPN193-JS",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 2632,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 1619,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip adress <IPV4> <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 400,
+      "正确的配置": "authorization-tacacs-group js.admin.tacacs",
+      "错误的配置": "authorization-tacacs-gropu js.admin.tacacs",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 4218,
+      "正确的配置": "neighbor pgTopUP-v6 remote-as <*>",
+      "错误的配置": "neighbro pgTopUP-v6 remote-as <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 3920,
+      "正确的配置": "link-delay-down 100",
+      "错误的配置": "link-delay-donw 100",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 3629,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 940,
+      "正确的配置": "neighbor pgToRR-v6 activate",
+      "错误的配置": "neighbro pgToRR-v6 activate",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 2144,
+      "正确的配置": "route-target <*> <*>",
+      "错误的配置": "route-targte <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 2070,
+      "正确的配置": "nvram <*> <*>",
+      "错误的配置": "nvrma <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 3275,
+      "正确的配置": "vcc-configuration",
+      "错误的配置": "vcc-configuratino",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 1716,
+      "正确的配置": "ipv6 prefix-list ipFormRR seq 10 permit <IPV6>/128",
+      "错误的配置": "ipv6 prefix-list ipFormRR seq 10 permt <IPV6>/128",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 5255,
+      "正确的配置": "ipv6-dscp 34 mapped to phb af4 green",
+      "错误的配置": "ipv6-dspc 34 mapped to phb af4 green",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 2724,
+      "正确的配置": "ftp-server access-class aclPermitFTP",
+      "错误的配置": "ftp-servre access-class aclPermitFTP",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 5577,
+      "正确的配置": "pimsm",
+      "错误的配置": "pimms",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 3625,
+      "正确的配置": "mpls mtu 9000",
+      "错误的配置": "mpsl mtu 9000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 4495,
+      "正确的配置": "neighbor pgToALeaf-v6 activate",
+      "错误的配置": "neighbro pgToALeaf-v6 activate",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 2408,
+      "正确的配置": "enable",
+      "错误的配置": "enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 5879,
+      "正确的配置": "res-alloc-position remote ippool-name <*> low 70 high 90",
+      "错误的配置": "res-alloc-positino remote ippool-name <*> low 70 high 90",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 5316,
+      "正确的配置": "neighbor <*> description <*>",
+      "错误的配置": "neighbor <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 4009,
+      "正确的配置": "neighbor pgToSpine remote-as <*>",
+      "错误的配置": "neighbro pgToSpine remote-as <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 709,
+      "正确的配置": "df-election preference 100",
+      "错误的配置": "df-electino preference 100",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 309,
+      "正确的配置": "bind authentication-template 100",
+      "错误的配置": "bidn authentication-template 100",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 5045,
+      "正确的配置": "bgp nexthop recursive-lookup srv6-sid enable",
+      "错误的配置": "bgp nexthop recursive-lookup srv6-sid enble",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 2610,
+      "正确的配置": "keep-alive",
+      "错误的配置": "keep-aliev",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 5902,
+      "正确的配置": "dynamic source rule-id <*> ipv4-list <*> permit",
+      "错误的配置": "dynamic source rule-id <*> ipv4-list <*> permt",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 5295,
+      "正确的配置": "neighbor pgToRR peer-group",
+      "错误的配置": "neighbro pgToRR peer-group",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 1582,
+      "正确的配置": "ipv6 link-damped revert-interval 600 180000 180000",
+      "错误的配置": "ip6v link-damped revert-interval 600 180000 180000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 5494,
+      "正确的配置": "neighbor <*> remote-as <*>",
+      "错误的配置": "neighbro <*> remote-as <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 4507,
+      "正确的配置": "neighbor pgToB-v6 send-large-community",
+      "错误的配置": "neighbor pgToB-v6 send-large-comunity",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 554,
+      "正确的配置": "snmp-server enable trap <*>",
+      "错误的配置": "snmp-server enble trap <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 2911,
+      "正确的配置": "authentication-template 162",
+      "错误的配置": "authentication-templaet 162",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 3071,
+      "正确的配置": "accounting-radius-group first 163",
+      "错误的配置": "accounting-radius-gropu first 163",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 1973,
+      "正确的配置": "mpls traffic-eng level-2",
+      "错误的配置": "mpsl traffic-eng level-2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 4870,
+      "正确的配置": "network point-to-point",
+      "错误的配置": "netwrk point-to-point",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 4063,
+      "正确的配置": "neighbor <*> description <*>",
+      "错误的配置": "neighbor <*> descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 5069,
+      "正确的配置": "neighbor pgToRR-v6 send-med",
+      "错误的配置": "neighbro pgToRR-v6 send-med",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 4229,
+      "正确的配置": "neighbor <*> peer-group pgToMER-v6",
+      "错误的配置": "neighbro <*> peer-group pgToMER-v6",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 3843,
+      "正确的配置": "neighbor pgToDCGW-CTVPN-CTC-NMAN route-map rpToDCGW-CTVPN-CTC-NMAN out",
+      "错误的配置": "neighbro pgToDCGW-CTVPN-CTC-NMAN route-map rpToDCGW-CTVPN-CTC-NMAN out",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 702,
+      "正确的配置": "es-id static octets <*>",
+      "错误的配置": "es-di static octets <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 1385,
+      "正确的配置": "neighbor <*> <*> <*>",
+      "错误的配置": "neighbro <*> <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 5300,
+      "正确的配置": "neighbor pgToRR-v6 remote-as <*>",
+      "错误的配置": "neighbro pgToRR-v6 remote-as <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 4265,
+      "正确的配置": "neighbor <*> peer-group pgTopUP-v6",
+      "错误的配置": "neighbro <*> peer-group pgTopUP-v6",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 3957,
+      "正确的配置": "neighbor pgToB-v6 password encrypted <*>",
+      "错误的配置": "neighbro pgToB-v6 password encrypted <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 4615,
+      "正确的配置": "neighbor pgToBorderLeaf-v6 announce-sid",
+      "错误的配置": "neighbro pgToBorderLeaf-v6 announce-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 3654,
+      "正确的配置": "ipv6 mtu 9000",
+      "错误的配置": "ip6v mtu 9000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 1471,
+      "正确的配置": "neighbor pgToRR password encrypted *31*hmiTnRpoKsiIa8feGsEGBhrBBgYawQYGGsEGBnNTpy8GbaLYvzllaBTOMb0=",
+      "错误的配置": "neighbro pgToRR password encrypted *31*hmiTnRpoKsiIa8feGsEGBhrBBgYawQYGGsEGBnNTpy8GbaLYvzllaBTOMb0=",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 1120,
+      "正确的配置": "holdtime 300",
+      "错误的配置": "holdtiem 300",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 5944,
+      "正确的配置": "vxlan-tunnel-config",
+      "错误的配置": "vxlan-tunnel-confgi",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 1888,
+      "正确的配置": "neighbor <*> <*> <*>",
+      "错误的配置": "neighbro <*> <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 3255,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 2900,
+      "正确的配置": "max-wait-response-time 12",
+      "错误的配置": "max-wait-response-tiem 12",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 5885,
+      "正确的配置": "res-alloc-policy mask 26 assign forward",
+      "错误的配置": "res-alloc-poliyc mask 26 assign forward",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 3106,
+      "正确的配置": "user-service-ip-type ipv4",
+      "错误的配置": "user-servce-ip-type ipv4",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 3891,
+      "正确的配置": "multi-topology",
+      "错误的配置": "multi-topoloyg",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 687,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 2708,
+      "正确的配置": "command-authorization 15 config-command 2111",
+      "错误的配置": "command-authorizatino 15 config-command 2111",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 2179,
+      "正确的配置": "address-family ipv4",
+      "错误的配置": "adress-family ipv4",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 1186,
+      "正确的配置": "neighbor 240e:1a:2000::b4 description JS-NJ-JS-ASBR-1.MAN.SRV6.NE40E-X16",
+      "错误的配置": "neighbor 240e:1a:2000::b4 descrption JS-NJ-JS-ASBR-1.MAN.SRV6.NE40E-X16",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 3344,
+      "正确的配置": "ipoe-dns-server <*> second",
+      "错误的配置": "ipoe-dns-servre <*> second",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 1898,
+      "正确的配置": "neighbor <*> <*>",
+      "错误的配置": "neighbro <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 6202,
+      "正确的配置": "neighbor pgToRR-v6 announce-sid",
+      "错误的配置": "neighbro pgToRR-v6 announce-sid",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    }
+  ]
+}

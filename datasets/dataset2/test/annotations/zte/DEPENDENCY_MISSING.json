@@ -1,0 +1,75 @@
+{
+  "vendor": "zte",
+  "dataset": "test_dataset_2",
+  "错误类型": "DEPENDENCY_MISSING",
+  "错误类型描述": "引用了未定义的依赖对象",
+  "实际模板占比": "12.04%",
+  "数据集调整占比": "10.00%",
+  "错误数量": 8,
+  "details": [
+    {
+      "错误序号": 13,
+      "错误行号": 2156,
+      "正确的配置": "ip vrf E05-voip-untrust",
+      "错误的配置": "ip vrf E05-voip-untrust-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: E05-voip-untrust-BACKUP"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 2152,
+      "正确的配置": "ip vrf VPDN",
+      "错误的配置": "ip vrf VPDN_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: VPDN_DR"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 1726,
+      "正确的配置": "ip vrf CTVPN193-JS",
+      "错误的配置": "ip vrf CTVPN193-JS-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN193-JS-EDGE"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 5091,
+      "正确的配置": "ip vrf 2B_RAN",
+      "错误的配置": "ip vrf 2B_RAN-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 2B_RAN-EDGE"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 2300,
+      "正确的配置": "ip vrf forwarding <*>",
+      "错误的配置": "ip vrf forwarding 2B_RAN-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 2B_RAN-EDGE"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 5209,
+      "正确的配置": "ip vrf forwarding E07-HLWZX-BackHole",
+      "错误的配置": "ip vrf forwarding E07-HLWZX-BackHole-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: E07-HLWZX-BackHole-CORE"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 3641,
+      "正确的配置": "ip vrf forwarding CTVPN193-JS",
+      "错误的配置": "ip vrf forwarding CTVPN193-JS-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CTVPN193-JS-BACKUP"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 2124,
+      "正确的配置": "ip vrf CP2UP_L3VPN_ZTE",
+      "错误的配置": "ip vrf CP2UP_L3VPN_ZTE-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CP2UP_L3VPN_ZTE-EDGE"
+    }
+  ]
+}

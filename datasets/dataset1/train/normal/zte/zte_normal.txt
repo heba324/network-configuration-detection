@@ -1,0 +1,885 @@
+interface <*>
+ipv6 nd reachable-time 3600000
+ipv6 nd stale-switch
+#
+interface <*>
+ipv6 nd other-config-flag
+#
+service-policy <*> output NMAN1P4Q
+service-policy <*> output NMAN1P4Q overwrite
+#
+service-policy <*> output NMAN1P4Q
+#
+ip prefix-list 2576 seq 10 permit 224.0.0.0 23
+ip prefix-list 2576 seq 20 permit 239.49.0.0 21
+ip prefix-list 2576 seq 30 permit 239.49.8.0 22
+ip prefix-list 2576 seq 40 permit 238.1.32.0 21
+ip prefix-list 2576 seq 50 permit 239.252.151.0 24
+ipv6 prefix-list ipTrackSpine seq <*> permit <*>
+#
+interface <*>
+description <*>
+ip address <IPV4> <IPV4>
+#
+interface <*>
+description <*>
+ip address <*> <*>
+ip address <*> <*> secondary
+#
+interface <*>
+description <*>
+ip vrf forwarding <*>
+ip address <*> <*>
+ip address <*> <*> secondary
+#
+interface <*>
+flow limit flowtype snmp-default rate-limit 4000 quota-limit 4000
+flow limit flowtype snmp-known rate-limit 4000 quota-limit 4000
+#
+interface <*>
+flow limit flowtype icmp-app rate-limit 2000 quota-limit 2000
+#
+interface <*>
+description <*>
+ip vrf forwarding CTVPN193-JS
+ip address <IPV4> <IPV4>
+#
+sibtp-mgr
+source-ip <*> port 50001 peer-ip <*> port 50001
+source-ip <*> port 50002 peer-ip <*> port 50002
+source-ip <*> port 50003 peer-ip <*> port 50003
+source-ip <*> port 50004 peer-ip <*> port 50004
+#
+sibtp-mgr
+source-ip <*> port 10000 peer-ip <*> port 10000
+#
+interface <*>
+dhcp user-detect count 3 timer 300
+#
+interface <*>
+dhcp user-detect count 3 timer 180
+#
+domain <*>
+bind accounting-template 163
+bind authentication-template 163
+bind authorization-template 163
+user-service-ip-type ipv4
+#
+domain <*>
+bind accounting-template<*>
+bind authentication-template <*>
+bind authorization-template <*>
+ip vrf <*>
+user-service-ip-type ipv4
+#
+domain <*>
+bind accounting-template <*>
+bind authentication-template <*>
+bind authorization-template <*>
+#
+control-plane-security
+interface <*>
+flow limit flowtype icmp-app rate-limit 2000 quota-limit 2000
+#
+line console absolute-timeout 60
+line console idle-timeout 10
+line telnet server disable
+line telnet absolute-timeout 60
+line telnet idle-timeout 10
+line telnet access-class ipv4 aclPermitSSH
+line telnet access-class ipv6 v6aclPermitSSH
+line telnet max-link 10
+#
+ip route <*> 255.255.255.255 <*> <*> bfd enable name <*>
+ip route vrf CP2UP_L3VPN_ZTE <*> 255.255.255.255 <*> <*> bfd enable name <*>
+ip route vrf CTVPN-CTC-NMAN <*> 255.255.255.255 <*> <*> bfd enable name <*>
+ip route vrf CTVPN193-JS <*> 255.255.255.255 <*> <*> bfd enable name <*>
+#
+ip route <*> <*> <*> <*> bfd enable name Route-to-LAC
+ip route vrf VPDN <*> <*> <*> <*> bfd enable name Default-route-for-LAC-to-LNS
+#
+sal <*>
+default domain <*>
+none domain <*> keep
+#
+sal <*>
+default domain 163.js
+deny domain pre-vod
+none domain 163.js keep
+#
+address-family vpnv4
+bgp bestpath external
+bgp bestpath origin-from l3vpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToRR activate
+neighbor pgToRR send-community
+neighbor pgToRR send-large-community
+neighbor pgToRR send-med
+#
+address-family vpnv6
+bgp bestpath external
+bgp bestpath origin-from l3vpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToRR activate
+neighbor pgToRR send-community
+neighbor pgToRR send-large-community
+neighbor pgToRR send-med
+#
+address-family vpnv4
+bgp bestpath origin-from l3vpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR additional-paths send 16
+#
+address-family ipv6
+synchronization disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+#
+address-family ipv6
+synchronization disable
+bgp bestpath external
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+redistribute subscriber-aggregation
+redistribute user-special
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+#
+create interface PFU-0/3/0 port 4
+bind mac <*> index 1
+#
+create interface PFU-0/3/0 port 3
+bind mac <*> index 1
+#
+logging file default weblog
+accept on
+#
+logging file default netclog
+accept on
+#
+radius accounting-group 200
+local-buffer enable
+nas-ip-address <*>
+source-ip-address <*>
+server 1 61.132.58.197 key encrypted <*>
+server 2 218.2.118.250 key encrypted <*>
+#
+radius accounting-group 2000
+local-buffer enable
+nas-ip-address <*>
+source-ip-address <*>
+server 1 221.231.148.6 key encrypted <*>
+server 2 61.177.64.146 key encrypted <*>
+#
+create interface PFU-0/2/0 port 4
+bind mac <*> index 1
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+mpls mtu 9000
+ipv6 mtu 9000
+no shutdown
+#
+interface <*>
+description <*>
+mtu 9278
+ip mtu 9178
+mpls mtu 9228
+ipv6 mtu 9178
+no shutdown
+#
+bgp ipv4-unicast-config independent enable
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+neighbor pgToRR peer-group
+neighbor pgToRR remote-as <*>
+neighbor pgToRR update-source loopback1
+neighbor pgToRR password encrypted <*>
+neighbor pgToRR-v6 peer-group
+neighbor pgToRR-v6 remote-as <*>
+neighbor pgToRR-v6 update-source loopback20
+neighbor pgToRR-v6 srv6-l2-service-type 6
+neighbor pgToRR-v6 srv6-l3-service-type 5
+neighbor pgToRR-v6 password encrypted <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+address-family ipv4
+synchronization disable
+bgp bestpath external
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor pgToRR activate disable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> activate
+#
+bgp ipv4-unicast-config independent enable
+bgp srv6 dynamic-vpn locator SRV6-ZWZX
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+neighbor pgToCloudPE-v6 peer-group
+neighbor pgToCloudPE-v6 remote-as <*>
+neighbor pgToCloudPE-v6 ttl-security-hops 1
+neighbor pgToCloudPE-v6 update-source loopback20
+neighbor pgToCloudPE-v6 fall-over bfd interval <*> min-rx <*> multiplier <*>
+neighbor pgToCloudPE-v6 srv6-l2-service-type 6
+neighbor pgToCloudPE-v6 srv6-l3-service-type 5
+neighbor pgToCloudPE-v6 password encrypted <*>
+neighbor pgToNJ-Border-Leaf-v6 peer-group
+neighbor pgToNJ-Border-Leaf-v6 remote-as 2.9219
+neighbor pgToNJ-Border-Leaf-v6 ebgp-multihop ttl 255
+neighbor pgToNJ-Border-Leaf-v6 update-source loopback20
+neighbor pgToNJ-Border-Leaf-v6 srv6-l2-service-type 6
+neighbor pgToNJ-Border-Leaf-v6 srv6-l3-service-type 5
+neighbor pgToNJ-Border-Leaf-v6 password encrypted <*>
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 peer-group
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 remote-as 64660
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 ebgp-multihop ttl 255
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 update-source loopback20
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 srv6-l2-service-type 6
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 srv6-l3-service-type 5
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 password encrypted <*>
+neighbor pgToRR peer-group
+neighbor pgToRR remote-as <*>
+neighbor pgToRR update-source loopback1
+neighbor pgToRR password encrypted <*>
+neighbor pgToRR-v6 peer-group
+neighbor pgToRR-v6 remote-as <*>
+neighbor pgToRR-v6 update-source loopback20
+neighbor pgToRR-v6 srv6-l2-service-type 6
+neighbor pgToRR-v6 srv6-l3-service-type 5
+neighbor pgToRR-v6 password encrypted <*>
+neighbor 240e:1a:2000::b4 remote-as 64660
+neighbor 240e:1a:2000::b4 peer-group pgToNJ-JS-ASBR-MAN.SRV6-PE-v6
+neighbor 240e:1a:2000::b4 description JS-NJ-JS-ASBR-1.MAN.SRV6.NE40E-X16
+neighbor 240e:1a:2000::b5 remote-as 64660
+neighbor 240e:1a:2000::b5 peer-group pgToNJ-JS-ASBR-MAN.SRV6-PE-v6
+neighbor 240e:1a:2000::b5 description JS-NJ-JS-ASBR-2.MAN.SRV6.NE40E-X16
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCloudPE-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToCloudPE-v6
+neighbor <*> description <*>
+neighbor 240e:187:8188::5 remote-as 2.9219
+neighbor 240e:187:8188::5 peer-group pgToNJ-Border-Leaf-v6
+neighbor 240e:187:8188::5 description JS-NJ-GL-Border-Leaf-01.NMAN.CX600-X8A
+neighbor 240e:187:8188::6 remote-as 2.9219
+neighbor 240e:187:8188::6 peer-group pgToNJ-Border-Leaf-v6
+neighbor 240e:187:8188::6 description JS-NJ-YFXJ-Border-Leaf-01.NMAN.CX600-X8A
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+address-family ipv4
+synchronization disable
+bgp bestpath external
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor pgToCloudPE-v6 activate
+neighbor pgToNJ-Border-Leaf-v6 activate
+neighbor pgToNJ-Border-Leaf-v6 send-community
+neighbor pgToNJ-Border-Leaf-v6 announce-sid
+neighbor pgToNJ-Border-Leaf-v6 send-large-community
+neighbor pgToNJ-Border-Leaf-v6 send-med
+neighbor pgToNJ-Border-Leaf-v6 additional-paths receive
+neighbor pgToNJ-Border-Leaf-v6 additional-paths send 16
+neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 activate
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 next-hop-self
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+neighbor 240e:1a:2000::b4 activate disable
+neighbor 240e:1a:2000::b5 activate disable
+neighbor <*> activate disable
+neighbor 240e:187:8188::5 activate disable
+neighbor 240e:187:8188::6 activate disable
+neighbor <*> activate
+#
+radius authentication-group 2000
+deadtime 10
+nas-ip-address <*>
+source-ip-address <*>
+server 1 202.111.54.44 key encrypted <*>
+server 2 61.160.137.98 key encrypted <*>
+#
+radius authentication-group 2000
+deadtime 10
+nas-ip-address <*>
+source-ip-address <*>
+server 1 61.160.137.98 key encrypted <*>
+server 2 202.111.54.44 key encrypted <*>
+timeout 10
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+mpls mtu 9000
+ipv6 enable
+ipv6 mtu 9000
+ipv6 address <*>
+#
+interface <*>
+description <*>
+mtu 9278
+ip vrf forwarding E07-HLWZX-BackHole
+ip mtu 9178
+ip address <*> <*>
+mpls mtu 9228
+ipv6 enable
+ipv6 mtu 9178
+ipv6 address <*>
+#
+interface <*>
+description <*>
+mtu 9278
+ip vrf forwarding E07-HLWZX-Export
+ip mtu 9178
+ip address <*> <*>
+mpls mtu 9228
+ipv6 enable
+ipv6 mtu 9178
+ipv6 address <*>
+#
+interface <*>
+description FOR-vBRAS-SVR
+ip address <*> <*>
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+ip address <*> <*>
+mpls mtu 9000
+ipv6 enable
+ipv6 mtu 9000
+ipv6 address <*>
+no shutdown
+#
+interface <*>
+description <*>
+mtu 9050
+ip mtu 9000
+ip address <*> <*>
+mpls mtu 9000
+ipv6 enable
+ipv6 mtu 9000
+no shutdown
+#
+address-family vpnv6
+bgp bestpath external
+bgp bestpath origin-from l3vpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToRR activate
+neighbor pgToRR send-community
+neighbor pgToRR send-med
+neighbor pgToRR send-large-community
+neighbor pgToRR additional-paths receive
+neighbor pgToRR additional-paths send 16
+#
+address-family vpnv6
+bgp bestpath origin-from l3vpn
+bgp nexthop recursive-lookup default-route disable
+neighbor <*> <*>
+#
+interface <*>
+description FOR-vBRAS-C&U
+ip address <*> <*>
+#
+interface loopback10
+description FOR-vBRAS-C&U
+ip address <*> <*>
+#
+interface <*>
+description <*>
+ip address <IPV4> <IPV4>
+ipv6 enable
+ipv6 <*> <*>
+no shutdown
+#
+interface <*>
+description <*>
+ip address <*> <*>
+ip address <*> <*> secondary
+ipv6 enable
+#
+bgp ipv4-unicast-config independent enable
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+neighbor pgToRR peer-group
+neighbor pgToRR remote-as <*>
+neighbor pgToRR update-source loopback1
+neighbor pgToRR password encrypted <*>
+neighbor pgToRR-v6 peer-group
+neighbor pgToRR-v6 remote-as <*>
+neighbor pgToRR-v6 update-source loopback20
+neighbor pgToRR-v6 srv6-l2-service-type 6
+neighbor pgToRR-v6 srv6-l3-service-type 5
+neighbor pgToRR-v6 srv6-arg-shift disable
+neighbor pgToRR-v6 password encrypted <*>
+neighbor <*> remote-as <*>
+neighbor <*> update-source loopback20
+neighbor <*> srv6-l2-service-type 6
+neighbor <*> srv6-l3-service-type 5
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+address-family ipv4
+synchronization disable
+bgp bestpath external
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+neighbor pgToRR activate disable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> activate disable
+neighbor <*> activate
+#
+address-family ipv4 vrf CTVPN193-JS
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+redistribute connected
+#
+address-family ipv4 vrf CTVPN193-JS
+bgp bestpath external enable
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+redistribute connected
+redistribute static
+neighbor pgToDCGW-CTVPN193-JS peer-group
+neighbor pgToDCGW-CTVPN193-JS remote-as 64667
+neighbor pgToDCGW-CTVPN193-JS activate
+neighbor pgToDCGW-CTVPN193-JS ttl-security-hops 2
+neighbor pgToDCGW-CTVPN193-JS update-source loopback2
+neighbor pgToDCGW-CTVPN193-JS fall-over bfd interval 300 min-rx 300 multiplier 10
+neighbor pgToDCGW-CTVPN193-JS password encrypted <*>
+neighbor pgToDCGW-CTVPN193-JS route-map rpFromDCGW-CTVPN193-JS in
+neighbor pgToDCGW-CTVPN193-JS route-map rpToDCGW-CTVPN193-JS out
+neighbor <*> remote-as 64667
+neighbor <*> peer-group pgToDCGW-CTVPN193-JS
+neighbor <*> remote-as 64667
+neighbor <*> peer-group pgToDCGW-CTVPN193-JS
+#
+interface <*>
+description <*>
+mtu 9050
+ip vrf forwarding CP2UP_L3VPN_ZTE
+ip mtu 9000
+ip address <*> <*>
+mpls mtu 9000
+ipv6 mtu 9000
+#
+bgp ipv4-unicast-config independent enable
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+neighbor pgToRR peer-group
+neighbor pgToRR remote-as <*>
+neighbor pgToRR update-source loopback1
+neighbor pgToRR password encrypted <*>
+neighbor pgToRR-v6 peer-group
+neighbor pgToRR-v6 remote-as <*>
+neighbor pgToRR-v6 update-source loopback20
+neighbor pgToRR-v6 srv6-l2-service-type 6
+neighbor pgToRR-v6 srv6-l3-service-type 5
+neighbor pgToRR-v6 password encrypted <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+address-family ipv4
+synchronization disable
+bgp bestpath ecmp-igp-metric-compare
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+network <*> <*>
+redistribute nat-mask
+redistribute user-special
+redistribute subscriber-aggregation route-map rpToRR-DenyCGN
+neighbor pgToRR activate disable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 next-hop-self
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> activate
+#
+bgp ipv4-unicast-config independent enable
+router bgp <*>
+bgp router-id <*>
+bgp select-global-nexthop
+bgp graceful-restart
+neighbor pgToRR peer-group
+neighbor pgToRR remote-as <*>
+neighbor pgToRR update-source loopback1
+neighbor pgToRR password encrypted <*>
+neighbor pgToRR-v6 peer-group
+neighbor pgToRR-v6 remote-as <*>
+neighbor pgToRR-v6 update-source loopback20
+neighbor pgToRR-v6 srv6-l2-service-type 6
+neighbor pgToRR-v6 srv6-l3-service-type 5
+neighbor pgToRR-v6 password encrypted <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR-v6
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+neighbor <*> remote-as <*>
+neighbor <*> peer-group pgToRR
+neighbor <*> description <*>
+address-family ipv4
+synchronization disable
+bgp bestpath ecmp-igp-metric-compare
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+maximum-paths 32
+maximum-paths ibgp 32
+network <*> <*>
+redistribute nat-mask
+redistribute user-special
+redistribute subscriber-aggregation route-map rpToRR-DenyCGN
+neighbor pgToRR activate disable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 next-hop-self
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> activate
+#
+address-family l2vpn evpn
+esi-index ignore-rd enable
+bgp default route-target filter
+bgp bestpath external
+bgp bestpath origin-from evpn
+bgp nexthop recursive-lookup default-route disable
+bgp nexthop recursive-lookup null1 disable
+bgp nexthop recursive-lookup srv6-sid enable
+neighbor pgToRR-v6 activate
+neighbor pgToRR-v6 send-community
+neighbor pgToRR-v6 send-med
+neighbor pgToRR-v6 announce-sid
+neighbor pgToRR-v6 advertise tunnel-encapsulation srv6
+neighbor pgToRR-v6 send-large-community
+neighbor pgToRR-v6 additional-paths receive
+neighbor pgToRR-v6 additional-paths send 16
+#
+ip vrf <*>
+description <*>
+rd <*>
+evpn tunnel-encapsulation srv6
+srv6 end-dt-sid auto
+srv6 locator SRV6-ZWZX
+address-family ipv4
+evpn auto-originate-route disable
+route-target import <*>
+route-target export <*>
+route-target import <*>
+#
+ip vrf <*>
+description <*>
+rd <*>
+evpn tunnel-encapsulation srv6
+srv6 end-dt-sid auto
+srv6 locator SRV6-ZWZX
+address-family ipv4
+evpn auto-originate-route disable
+route-target import <*>
+route-target export <*>
+#
+bgp ipv4-unicast-config independent enable
+router bgp 2.9229
+bgp router-id <IPV4>
+bgp select-global-nexthop
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR password encrypted *31*hmiTnRpoKsiIa8feGsEGBhrBBgYawQYGGsEGBnNTpy8GbaLYvzllaBTOMb0=
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR-v6 password encrypted *31*hmiTnRpoKsiIa8feUB7bJFAe2yRQHtskUB7bJLj6eQNnR5TPaLWiT2n/ey8=
+neighbor <*> <*> <*>
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR-v6 additional-paths send 16
+#
+address-family ipv4 vrf <*>
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+redistribute connected
+redistribute static
+#
+bgp ipv4-unicast-config independent enable
+router bgp 2.9229
+bgp router-id <IPV4>
+bgp select-global-nexthop
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR password encrypted *31*hmiTnRpoKsiIa8ferRHeL60R3i+tEd4vrRHeL95m0e9XhiufewuOKcVM2NY=
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR-v6 password encrypted *31*hmiTnRpoKsiIa8felZFWKZWRVimVkVYplZFWKT/UATIfz+v+F7rQsrEeSZ0=
+neighbor <*> <*> <*>
+neighbor <*> <*>
+neighbor <*> <*> <*>
+neighbor pgToRR-v6 additional-paths send 16
+neighbor <*> <*>
+#
+address-family ipv4 vrf CP2UP_L3VPN_ZTE
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+network <*> <*>
+#
+address-family ipv4 vrf <*>
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+network <*> <*>
+#
+address-family ipv4 vrf CTVPN193-JS
+bgp bestpath origin-from evpn
+maximum-paths 32
+maximum-paths ibgp 32
+network <*> <*>
+redistribute connected
+#
+domain jsitv
+bind accounting-template jsitv
+bind authentication-template jsitv
+bind authorization-template jsitv
+#
+user-name nocfanshua@admin-local
+bind authentication-template 100
+bind authorization-template 100
+password encrypted <*>
+#
+ip vrf CTVPN193-JS
+description <*>
+rd 4134:1612
+ds-mode pipe af2 green
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+route-target import 4134:161200
+route-target export 4134:161200
+route-target import 4134:161201
+#
+ip vrf <*>
+description <*>
+rd <*>
+evpn tunnel-encapsulation srv6
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+route-target import <*>
+route-target export <*>
+#
+radius authentication-group 100
+attribute forbid 3902 83 receive
+attribute forbid 3902 89 receive
+nas-ip-address <*>
+source-ip-address <*>
+server 3 221.231.151.120 key encrypted <*> port 3799
+server 4 202.102.13.115 key encrypted <*> port 3799
+server 1 61.160.185.76 key encrypted <*> port 3799
+server 2 221.228.39.49 key encrypted <*> port 3799
+#
+interface <*>
+smartgroup <*> mode active
+lacp timeout short
+#
+interface <*>
+terminal-mode enable
+bind flexe_group <*> calendar-template A interface <*> timeslots 17-19
+client-number 3
+link-delay-down 100
+link-delay-up 5000
+#
+interface <*>
+terminal-mode enable
+bind flexe_group flexe_group1 calendar-template A interface <INTERFACE> timeslots 16-17
+client-number 3
+#
+interface <*>
+terminal-mode enable
+bind flexe_group <*> calendar-template A interface <*> timeslots 16-17
+client-number 2
+link-delay-down 100
+link-delay-up 5000
+#
+interface <*>
+terminal-mode enable
+bind flexe_group <*> calendar-template A interface <*> timeslots 18-19
+client-number 3
+link-delay-down 100
+link-delay-up 5000
+#
+interface <*>
+terminal-mode enable
+bind flexe_group flexe_group2 calendar-template A interface <INTERFACE> timeslots 0-15
+client-number 1
+#
+interface <*>
+terminal-mode enable
+bind flexe_group <*> calendar-template A interface <*> timeslots 16-17
+client-number 2
+#
+af-node <*>
+of
+ofls name <*> dpid <*>
+controller-main-connection ipv4 <*> vrf CP2UP_L3VPN_ZTE controller-name <*> port 6656 local-ip-addr <ipv4> tcp
+probe-interval 10 count 5
+tcp mss 1400
+#
+of
+probe-interval 10 count 3
+ofls name <*> dpid <*>
+controller-main-connection ipv4 <*> vrf CP2UP_L3VPN_ZTE controller-name <*> local-ip-address <*> tcp
+#
+ip vrf CTVPN193-JS
+description For-Managerment
+rd <*>
+ds-mode pipe af2 green
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn auto-originate-route disable
+route-target <*> <*>
+#
+ip vrf <*>
+description <*>
+rd <*>
+evpn tunnel-encapsulation srv6
+srv6 end-dt-sid auto
+srv6 locator SRV6-ZWZX
+address-family ipv4
+evpn auto-originate-route disable
+route-target <*> <*>
+#
+domain vod
+bind accounting-template 162
+bind authentication-template 162
+bind authorization-template 162
+#
+ip vrf CP2UP_L3VPN_ZTE
+description For-CP2UP_L3VPN_ZTE
+rd <*>
+ds-mode pipe cs6 green
+evpn tunnel-encapsulation srv6
+mpls label mode per-vrf
+srv6 end-dt-sid auto
+srv6 locator SRV6-GW
+address-family ipv4
+evpn auto-originate-route disable
+route-target <*> <*>
+#
+authorization-template <*>
+authorization-type <*>
+bind nat-domain-name <*> type ipv4
+nat-mode portrange
+nat-type inside
+#

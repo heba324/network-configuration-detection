@@ -1,0 +1,975 @@
+{
+  "vendor": "zte",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "RESOURCE_CONFLICT",
+  "错误类型别名": [
+    "RESOURCE_CONFLICT"
+  ],
+  "错误类型描述": "资源冲突（真实资源值重复分配）",
+  "实际模板占比": "12.04%",
+  "数据集调整占比": "10.00%",
+  "错误数量": 120,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 452,
+      "正确的配置": "ipv6-router-id <*>",
+      "错误的配置": "ipv6-router-id loopback1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 loopback1）"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 3251,
+      "正确的配置": "web-acl aclPermitPreEdu",
+      "错误的配置": "web-acl ipv4",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipv4）"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 5841,
+      "正确的配置": "server vrf CTVPN193-JS <*> master",
+      "错误的配置": "server vrf VPDN <*> master",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 VPDN）"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 5545,
+      "正确的配置": "redistribute static route-map rmToMER",
+      "错误的配置": "redistribute static route-map rpToNJ-JS-ASBR-SRV6-PE",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToNJ-JS-ASBR-SRV6-PE）"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 2136,
+      "正确的配置": "ip vrf CTVPN193-JS",
+      "错误的配置": "ip vrf mng",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 mng）"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 3898,
+      "正确的配置": "ip route vrf CP2UP_L3VPN_ZTE <*> 255.255.255.255 <*> <*> bfd enable name <*>",
+      "错误的配置": "ip route vrf CTVPN-CTC-NMAN <*> 255.255.255.255 <*> <*> bfd enable name <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 5714,
+      "正确的配置": "ip vrf forwarding VPDN",
+      "错误的配置": "ip vrf forwarding 2B_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 5503,
+      "正确的配置": "neighbor <*> route-map rpToCR-HLWZX-Export out",
+      "错误的配置": "neighbor <*> route-map BGPFromCloudPEToISIS-v6 out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 BGPFromCloudPEToISIS-v6）"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 6162,
+      "正确的配置": "bgp router-id <*>",
+      "错误的配置": "bgp router-id loopback1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 loopback1）"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 2220,
+      "正确的配置": "route-target import <*>",
+      "错误的配置": "route-target import 4134:161201",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4134:161201）"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 1772,
+      "正确的配置": "ipv4-access-list aclPermitSSH",
+      "错误的配置": "ipv4-access-list black-list-acl-V6",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 black-list-acl-V6）"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 846,
+      "正确的配置": "bgp router-id <*>",
+      "错误的配置": "bgp router-id loopback1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 loopback1）"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 5234,
+      "正确的配置": "ip prefix-list 2576 seq 30 permit 239.49.8.0 22",
+      "错误的配置": "ip prefix-list ipMulticastGroup seq 30 permit 239.49.8.0 22",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipMulticastGroup）"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 1340,
+      "正确的配置": "router-id <*>",
+      "错误的配置": "router-id loopback1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 loopback1）"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 2173,
+      "正确的配置": "ip vrf <*>",
+      "错误的配置": "ip vrf VPDN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 VPDN）"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 3576,
+      "正确的配置": "ip vrf CP2UP_L3VPN_ZTE",
+      "错误的配置": "ip vrf 2B_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 2133,
+      "正确的配置": "route-target import <*>",
+      "错误的配置": "route-target import 4134:161201",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4134:161201）"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 5623,
+      "正确的配置": "nvram boot-server <IPV4>",
+      "错误的配置": "nvram boot-server 239.252.148.0",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 239.252.148.0）"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 3145,
+      "正确的配置": "ip vrf <*>",
+      "错误的配置": "ip vrf E07-HLWZX-BackHole",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-HLWZX-BackHole）"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 5017,
+      "正确的配置": "bgp router-id <*>",
+      "错误的配置": "bgp router-id loopback1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 loopback1）"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 2860,
+      "正确的配置": "controller-main-connection ipv4 <*> vrf CP2UP_L3VPN_ZTE controller-name <*> port 6656 local-ip-addr <ipv4> tcp",
+      "错误的配置": "controller-main-connection ipv4 <*> vrf E05-voip-untrust controller-name <*> port 6656 local-ip-addr <ipv4> tcp",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E05-voip-untrust）"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 2159,
+      "正确的配置": "route-target import <*>",
+      "错误的配置": "route-target import 4134:161201",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4134:161201）"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 5178,
+      "正确的配置": "ip vrf forwarding E07-HLWZX-BackHole",
+      "错误的配置": "ip vrf forwarding CTVPN-CTC-NMAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 5917,
+      "正确的配置": "ipv6-black-list match ipv6-access-list black-list-acl-V6",
+      "错误的配置": "ipv6-black-list match ipv6-access-list aclPermitSNMP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 aclPermitSNMP）"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 5528,
+      "正确的配置": "neighbor <*> route-map rpFromCR-HLWZX-Export-V6 in",
+      "错误的配置": "neighbor <*> route-map rpFromCloudPE-V6 in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromCloudPE-V6）"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 3843,
+      "正确的配置": "neighbor pgToDCGW-CTVPN-CTC-NMAN route-map rpToDCGW-CTVPN-CTC-NMAN out",
+      "错误的配置": "neighbor pgToDCGW-CTVPN-CTC-NMAN route-map rpToCloudPE-V6 out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCloudPE-V6）"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 1722,
+      "正确的配置": "ip prefix-list ipMulticastGroup seq 30 permit <IPV4> 21 le 32",
+      "错误的配置": "ip prefix-list ipFormRR seq 30 permit <IPV4> 21 le 32",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipFormRR）"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 2206,
+      "正确的配置": "route-target import <*>",
+      "错误的配置": "route-target import 4134:161201",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4134:161201）"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 2300,
+      "正确的配置": "ip vrf forwarding <*>",
+      "错误的配置": "ip vrf forwarding CP2UP_L3VPN_ZTE",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_ZTE）"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 5534,
+      "正确的配置": "router-id <*>",
+      "错误的配置": "router-id loopback1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 loopback1）"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 5660,
+      "正确的配置": "ip vrf E05-itms",
+      "错误的配置": "ip vrf E07-HLWZX-BackHole",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-HLWZX-BackHole）"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 359,
+      "正确的配置": "track TrackSpine prefix-list ipv6 prefix-name ipTrackSpine",
+      "错误的配置": "track TrackSpine prefix-list ipDenyCGN prefix-name ipTrackSpine",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipDenyCGN）"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 551,
+      "正确的配置": "snmp-server access-list ipv6 v6aclPermitSNMP",
+      "错误的配置": "snmp-server access-list aclDenyMacFromDC-OLT v6aclPermitSNMP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 aclDenyMacFromDC-OLT）"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 1307,
+      "正确的配置": "neighbor pgToCloudPE-v6 route-map rpToCloudPE-V6 out",
+      "错误的配置": "neighbor pgToCloudPE-v6 route-map rpToDCGW-CTVPN193-JS out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToDCGW-CTVPN193-JS）"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 3700,
+      "正确的配置": "bgp router-id <*>",
+      "错误的配置": "bgp router-id loopback1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 loopback1）"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 1313,
+      "正确的配置": "neighbor pgToRR-v6 route-map rpToRR out",
+      "错误的配置": "neighbor pgToRR-v6 route-map rpToCR out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCR）"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 329,
+      "正确的配置": "ip prefix-list 2576 seq 20 permit 239.49.0.0 21",
+      "错误的配置": "ip prefix-list ipTrackSpine seq 20 permit 239.49.0.0 21",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipTrackSpine）"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 5466,
+      "正确的配置": "neighbor <*> route-map rpFromCR-HLWZX-BackHole-V6 in",
+      "错误的配置": "neighbor <*> route-map rpFromCR-V6 in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromCR-V6）"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 90,
+      "正确的配置": "ip vrf forwarding CTVPN193-JS",
+      "错误的配置": "ip vrf forwarding E07-HLWZX-BackHole",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-HLWZX-BackHole）"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 326,
+      "正确的配置": "ntp access-group ipv4-access-list aclPermitNTP",
+      "错误的配置": "ntp access-group ipv4-access-list aclPermitQianFei",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 aclPermitQianFei）"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 1710,
+      "正确的配置": "ip prefix-list 2576 seq 10 permit <IPV4> 23",
+      "错误的配置": "ip prefix-list ipTrackSpine seq 10 permit <IPV4> 23",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipTrackSpine）"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 6197,
+      "正确的配置": "redistribute subscriber-aggregation route-map rpToRR-DenyCGN",
+      "错误的配置": "redistribute subscriber-aggregation route-map rpToCR-HLWZX-BackHole-V6",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCR-HLWZX-BackHole-V6）"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 6264,
+      "正确的配置": "address-family ipv4 vrf CP2UP_L3VPN_ZTE",
+      "错误的配置": "address-family ipv4 vrf E05-voip-untrust",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E05-voip-untrust）"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 1467,
+      "正确的配置": "bgp router-id <IPV4>",
+      "错误的配置": "bgp router-id loopback1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 loopback1）"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 1787,
+      "正确的配置": "ipv4-access-list aclPermitSSH",
+      "错误的配置": "ipv4-access-list black-list-acl-V6",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 black-list-acl-V6）"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 333,
+      "正确的配置": "ipv6 prefix-list ipTrackSpine seq <*> permit <*>",
+      "错误的配置": "ipv6 prefix-list 2576 seq <*> permit <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2576）"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 1712,
+      "正确的配置": "ip prefix-list 2576 seq 30 permit <IPV4> 22",
+      "错误的配置": "ip prefix-list ipv6 seq 30 permit <IPV4> 22",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipv6）"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 2185,
+      "正确的配置": "ip vrf <*>",
+      "错误的配置": "ip vrf E05-itms",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E05-itms）"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 3588,
+      "正确的配置": "ip vrf CTVPN-CTC-NMAN",
+      "错误的配置": "ip vrf CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193-JS）"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 1794,
+      "正确的配置": "rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误的配置": "rule <*> permit vrf VPDN <IPV4> <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 VPDN）"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 5626,
+      "正确的配置": "nvram default-gateway ipv6 <IPV6>",
+      "错误的配置": "nvram default-gateway ipv6 4134:161200",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4134:161200）"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 6289,
+      "正确的配置": "address-family ipv4 vrf <*>",
+      "错误的配置": "address-family ipv4 vrf E07-HLWZX-BackHole",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-HLWZX-BackHole）"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 2124,
+      "正确的配置": "ip vrf CP2UP_L3VPN_ZTE",
+      "错误的配置": "ip vrf 2B_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 2194,
+      "正确的配置": "route-target export <*>",
+      "错误的配置": "route-target export 4134:161200",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4134:161200）"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 5809,
+      "正确的配置": "route-map rpToRR-DenyCGN deny 10",
+      "错误的配置": "route-map rpFromDCGW-public deny 10",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromDCGW-public）"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 5104,
+      "正确的配置": "ip vrf E07-HLWZX-BackHole",
+      "错误的配置": "ip vrf CP2UP_L3VPN_ZTE",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_ZTE）"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 1150,
+      "正确的配置": "bgp router-id <*>",
+      "错误的配置": "bgp router-id loopback1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 loopback1）"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 2311,
+      "正确的配置": "ip vrf forwarding <*>",
+      "错误的配置": "ip vrf forwarding mng",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 mng）"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 4931,
+      "正确的配置": "ipv6 prefix-list ipFormRR seq <*> permit <*>",
+      "错误的配置": "ipv6 prefix-list ipTrackSpine seq <*> permit <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipTrackSpine）"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 5441,
+      "正确的配置": "neighbor <*> route-map rpToCR-HLWZX-BackHole out",
+      "错误的配置": "neighbor <*> route-map rpToDCGW-CTVPN-CTC-NMAN out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToDCGW-CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 2059,
+      "正确的配置": "nvram boot-server ipv6 <IPV6>",
+      "错误的配置": "nvram boot-server ipv6 240e:187:8188::6",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 240e:187:8188::6）"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 5546,
+      "正确的配置": "redistribute bgp route-map BGPToISIS",
+      "错误的配置": "redistribute bgp route-map rpToDCGW-CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToDCGW-CTVPN193-JS）"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 5232,
+      "正确的配置": "ip prefix-list 2576 seq 10 permit 224.0.0.0 23",
+      "错误的配置": "ip prefix-list ipTrackSpine seq 10 permit 224.0.0.0 23",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipTrackSpine）"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 2149,
+      "正确的配置": "route-target import <*>",
+      "错误的配置": "route-target import 4134:161201",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4134:161201）"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 2573,
+      "正确的配置": "tacacs-server host vrf CTVPN193-JS 18.120.5.244 key encrypted <*>",
+      "错误的配置": "tacacs-server host vrf E05-itms 18.120.5.244 key encrypted <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E05-itms）"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 1763,
+      "正确的配置": "rule <*> permit <IPV4> <IPV4>",
+      "错误的配置": "rule <*> permit 239.252.151.0 <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 239.252.151.0）"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 1849,
+      "正确的配置": "ntp access-group ipv4-access-list aclPermitNTP",
+      "错误的配置": "ntp access-group ipv4-access-list aclPermitUniv",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 aclPermitUniv）"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 5825,
+      "正确的配置": "ip prefix-list 2576 seq <*> permit <*> <*>",
+      "错误的配置": "ip prefix-list ipFormRR seq <*> permit <*> <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipFormRR）"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 3934,
+      "正确的配置": "bgp router-id <*>",
+      "错误的配置": "bgp router-id loopback1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 loopback1）"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 5427,
+      "正确的配置": "address-family ipv4 vrf E07-HLWZX-BackHole",
+      "错误的配置": "address-family ipv4 vrf CTVPN193-JS",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN193-JS）"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 3650,
+      "正确的配置": "ip vrf forwarding CTVPN-CTC-NMAN",
+      "错误的配置": "ip vrf forwarding E05-itms",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E05-itms）"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 1779,
+      "正确的配置": "rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误的配置": "rule <*> permit vrf E05-voip-untrust <IPV4> <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E05-voip-untrust）"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 5946,
+      "正确的配置": "tunnel vrf CP2UP_L3VPN_ZTE",
+      "错误的配置": "tunnel vrf mng",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 mng）"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 1805,
+      "正确的配置": "rule <*> permit <IPV4> <IPV4>",
+      "错误的配置": "rule <*> permit 202.102.13.66 <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 202.102.13.66）"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 1758,
+      "正确的配置": "rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误的配置": "rule <*> permit vrf E07-HLWZX-BackHole <IPV4> <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-HLWZX-BackHole）"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 6270,
+      "正确的配置": "address-family ipv4 vrf CP2UP_L3VPN_ZTE",
+      "错误的配置": "address-family ipv4 vrf E07-HLWZX-Export",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-HLWZX-Export）"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 4929,
+      "正确的配置": "ip prefix-list 2576 seq 40 permit 239.49.8.0 22",
+      "错误的配置": "ip prefix-list ipDenyCGN seq 40 permit 239.49.8.0 22",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipDenyCGN）"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 324,
+      "正确的配置": "ntp server vrf CTVPN193-JS <*> priority <*>",
+      "错误的配置": "ntp server vrf E05-itms <*> priority <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E05-itms）"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 2779,
+      "正确的配置": "destination-group <*>",
+      "错误的配置": "destination-group DgZYkzqYZ",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 DgZYkzqYZ）"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 1453,
+      "正确的配置": "bind access-list ipv4 aclPermitSSH_viewonly",
+      "错误的配置": "bind access-list aclDenyMacToUP aclPermitSSH_viewonly",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 aclDenyMacToUP）"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 1723,
+      "正确的配置": "ip prefix-list ipMulticastGroup seq 40 permit <IPV4> 22 le 32",
+      "错误的配置": "ip prefix-list ipFormRR seq 40 permit <IPV4> 22 le 32",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipFormRR）"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 5091,
+      "正确的配置": "ip vrf 2B_RAN",
+      "错误的配置": "ip vrf mng",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 mng）"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 5505,
+      "正确的配置": "address-family ipv6 vrf E07-HLWZX-Export",
+      "错误的配置": "address-family ipv6 vrf 2B_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 3806,
+      "正确的配置": "neighbor pgToRR-v6 route-map rpToRR out",
+      "错误的配置": "neighbor pgToRR-v6 route-map rpToDCGW-CTVPN-CTC-NMAN out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToDCGW-CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 3849,
+      "正确的配置": "address-family ipv4 vrf CTVPN193-JS",
+      "错误的配置": "address-family ipv4 vrf E05-itms",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E05-itms）"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 1761,
+      "正确的配置": "ipv4-access-list aclPermitSNMP",
+      "错误的配置": "ipv4-access-list aclPermitSSH_viewonly",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 aclPermitSSH_viewonly）"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 795,
+      "正确的配置": "bgp router-id <*>",
+      "错误的配置": "bgp router-id loopback1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 loopback1）"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 1713,
+      "正确的配置": "ip prefix-list 2576 seq 40 permit <IPV4> 21",
+      "错误的配置": "ip prefix-list ipDenyCGN seq 40 permit <IPV4> 21",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipDenyCGN）"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 1905,
+      "正确的配置": "bgp router-id <*>",
+      "错误的配置": "bgp router-id loopback1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 loopback1）"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 1757,
+      "正确的配置": "ipv4-access-list aclPermitNTP",
+      "错误的配置": "ipv4-access-list aclDenyMacToUP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 aclDenyMacToUP）"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 3223,
+      "正确的配置": "redirect-web-acl aclPermitQianFei",
+      "错误的配置": "redirect-web-acl black-list-acl",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 black-list-acl）"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 5821,
+      "正确的配置": "ntp server vrf CTVPN193-JS <*> priority <*>",
+      "错误的配置": "ntp server vrf E05-voip-untrust <*> priority <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E05-voip-untrust）"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 1880,
+      "正确的配置": "bgp router-id <IPV4>",
+      "错误的配置": "bgp router-id loopback1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 loopback1）"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 4833,
+      "正确的配置": "router-id <*>",
+      "错误的配置": "router-id loopback1",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 loopback1）"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 1720,
+      "正确的配置": "ip prefix-list ipMulticastGroup seq 10 permit <IPV4> 23 le 32",
+      "错误的配置": "ip prefix-list ipFormRR seq 10 permit <IPV4> 23 le 32",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipFormRR）"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 5775,
+      "正确的配置": "ip vrf forwarding VPDN",
+      "错误的配置": "ip vrf forwarding E07-HLWZX-BackHole",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-HLWZX-BackHole）"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 372,
+      "正确的配置": "tacacs-server host vrf CTVPN193-JS <*> key encrypted <*>",
+      "错误的配置": "tacacs-server host vrf E07-HLWZX-Export <*> key encrypted <*>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E07-HLWZX-Export）"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 2216,
+      "正确的配置": "route-target import <*>",
+      "错误的配置": "route-target import 4134:161201",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4134:161201）"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 1795,
+      "正确的配置": "rule <*> permit <IPV4> <IPV4>",
+      "错误的配置": "rule <*> permit 221.231.148.6 <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 221.231.148.6）"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 5476,
+      "正确的配置": "neighbor <*> route-map rpFromCR-HLWZX-BackHole-V6 in",
+      "错误的配置": "neighbor <*> route-map rpToNJ-BorderLeaf-EVPN in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToNJ-BorderLeaf-EVPN）"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 3227,
+      "正确的配置": "redirect-web-acl aclPermitQianFei",
+      "错误的配置": "redirect-web-acl aclDenyMacToUP",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 aclDenyMacToUP）"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 5957,
+      "正确的配置": "srv6 encapsulation source-address <IPV6>",
+      "错误的配置": "srv6 encapsulation source-address 4134:1612",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4134:1612）"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 2193,
+      "正确的配置": "route-target import <*>",
+      "错误的配置": "route-target import 4134:161200",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4134:161200）"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 1810,
+      "正确的配置": "rule <*> permit <IPV4> <IPV4>",
+      "错误的配置": "rule <*> permit 224.0.0.0 <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 224.0.0.0）"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 6332,
+      "正确的配置": "controller-main-connection ipv4 <*> vrf CP2UP_L3VPN_ZTE controller-name <*> local-ip-address <*> tcp",
+      "错误的配置": "controller-main-connection ipv4 <*> vrf VPDN controller-name <*> local-ip-address <*> tcp",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 VPDN）"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 3800,
+      "正确的配置": "neighbor pgToDCGW-v6 route-map rpFromNMAN-vUP out",
+      "错误的配置": "neighbor pgToDCGW-v6 route-map rpFromDCGW-CTVPN-CTC-NMAN out",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpFromDCGW-CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 2160,
+      "正确的配置": "route-target export <*>",
+      "错误的配置": "route-target export 4134:161201",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4134:161201）"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 1776,
+      "正确的配置": "rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误的配置": "rule <*> permit vrf CP2UP_L3VPN_ZTE <IPV4> <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CP2UP_L3VPN_ZTE）"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 954,
+      "正确的配置": "address-family ipv4 vrf CTVPN193-JS",
+      "错误的配置": "address-family ipv4 vrf E05-itms",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E05-itms）"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 2150,
+      "正确的配置": "route-target export <*>",
+      "错误的配置": "route-target export 4134:161200",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4134:161200）"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 1769,
+      "正确的配置": "rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误的配置": "rule <*> permit vrf E05-voip-untrust <IPV4> <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 E05-voip-untrust）"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 6283,
+      "正确的配置": "address-family ipv4 vrf CTVPN193-JS",
+      "错误的配置": "address-family ipv4 vrf CTVPN-CTC-NMAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 5648,
+      "正确的配置": "ip vrf CTVPN193-JS",
+      "错误的配置": "ip vrf 2B_RAN",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 2B_RAN）"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 1749,
+      "正确的配置": "route-target import 4134:161200",
+      "错误的配置": "route-target import 4134:161201",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 4134:161201）"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 1724,
+      "正确的配置": "ip prefix-list ipMulticastGroup seq 50 permit <IPV4> 21 le 32",
+      "错误的配置": "ip prefix-list ipFormRR seq 50 permit <IPV4> 21 le 32",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipFormRR）"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 1356,
+      "正确的配置": "destination-group <*>",
+      "错误的配置": "destination-group DgZYkzqYZ",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 DgZYkzqYZ）"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 3863,
+      "正确的配置": "neighbor pgToDCGW-CTVPN193-JS route-map rpFromDCGW-CTVPN193-JS in",
+      "错误的配置": "neighbor pgToDCGW-CTVPN193-JS route-map rpToCR-HLWZX-Export-V6 in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCR-HLWZX-Export-V6）"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 1653,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip address 18.120.5.244 <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 18.120.5.244）"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 1781,
+      "正确的配置": "rule <*> permit vrf CTVPN193-JS <IPV4> <IPV4>",
+      "错误的配置": "rule <*> permit vrf CTVPN-CTC-NMAN <IPV4> <IPV4>",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 CTVPN-CTC-NMAN）"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 5233,
+      "正确的配置": "ip prefix-list 2576 seq 20 permit 239.49.0.0 21",
+      "错误的配置": "ip prefix-list ipDenyCGN seq 20 permit 239.49.0.0 21",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipDenyCGN）"
+    }
+  ]
+}

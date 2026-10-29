@@ -1,0 +1,2064 @@
+{
+  "vendor": "cisco",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "ORDER_ERROR",
+  "错误类型别名": [
+    "ORDER_DEPENDENCY_ERROR",
+    "ORDER_ERROR"
+  ],
+  "错误类型描述": "配置语句顺序依赖错误",
+  "实际模板占比": "15.20%",
+  "数据集调整占比": "16.00%",
+  "错误数量": 256,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 7215,
+      "正确的配置": "passive -> metric 100 level 2",
+      "错误的配置": "metric 100 level 2 -> passive",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 3149,
+      "正确的配置": "address-family ipv4 unicast -> prefix-sid index 740",
+      "错误的配置": "prefix-sid index 740 -> address-family ipv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 6899,
+      "正确的配置": "if destination in pl_CT_5G_RAN_in then -> set community cs_Core_Routes",
+      "错误的配置": "set community cs_Core_Routes -> if destination in pl_CT_5G_RAN_in then",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 5183,
+      "正确的配置": "passive -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> passive",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 1480,
+      "正确的配置": "address-family ipv4 unicast -> spf-interval maximum-wait 1000 initial-wait 5 secondary-wait 10 level 2",
+      "错误的配置": "spf-interval maximum-wait 1000 initial-wait 5 secondary-wait 10 level 2 -> address-family ipv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 1569,
+      "正确的配置": "metric 100000 -> redistribute isis 1000 level-2 metric 10000 route-policy rp_NMS_TO_RING",
+      "错误的配置": "redistribute isis 1000 level-2 metric 10000 route-policy rp_NMS_TO_RING -> metric 100000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 4965,
+      "正确的配置": "address-family ipv4 unicast -> maximum-paths ibgp 2",
+      "错误的配置": "maximum-paths ibgp 2 -> address-family ipv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 1496,
+      "正确的配置": "is-type level-2-only -> distribute link-state instance-id 1003 level 2",
+      "错误的配置": "distribute link-state instance-id 1003 level 2 -> is-type level-2-only",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 4764,
+      "正确的配置": "log adjacency changes -> max-lsp-lifetime 65535",
+      "错误的配置": "max-lsp-lifetime 65535 -> log adjacency changes",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 8058,
+      "正确的配置": "vrf GPRS_Gn_C -> address-family ipv6 unicast",
+      "错误的配置": "address-family ipv6 unicast -> vrf GPRS_Gn_C",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 6810,
+      "正确的配置": "bfd fast-detect -> bfd minimum-interval 150",
+      "错误的配置": "bfd minimum-interval 150 -> bfd fast-detect",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 6992,
+      "正确的配置": "ipsla -> source address <IPV4>",
+      "错误的配置": "source address <IPV4> -> ipsla",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 8153,
+      "正确的配置": "timers 30 90 -> session-open-mode both",
+      "错误的配置": "session-open-mode both -> timers 30 90",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 2192,
+      "正确的配置": "circuit-type level-2-only -> bfd multiplier 3",
+      "错误的配置": "bfd multiplier 3 -> circuit-type level-2-only",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 6551,
+      "正确的配置": "neighbor <IPV4> -> bfd multiplier 3",
+      "错误的配置": "bfd multiplier 3 -> neighbor <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 7866,
+      "正确的配置": "passive -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> passive",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 4176,
+      "正确的配置": "snmp-server traps snmp warmstart -> snmp-server traps snmp authentication",
+      "错误的配置": "snmp-server traps snmp authentication -> snmp-server traps snmp warmstart",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 7200,
+      "正确的配置": "interface <*> -> circuit-type level-2-only",
+      "错误的配置": "circuit-type level-2-only -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 7934,
+      "正确的配置": "circuit-type level-2-only -> metric 100 level 2",
+      "错误的配置": "metric 100 level 2 -> circuit-type level-2-only",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 5266,
+      "正确的配置": "rd <PORT> -> address-family ipv6 unicast",
+      "错误的配置": "address-family ipv6 unicast -> rd <PORT>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 6847,
+      "正确的配置": "vrf GPRS_Gn_C -> import route-target",
+      "错误的配置": "import route-target -> vrf GPRS_Gn_C",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 7511,
+      "正确的配置": "passive -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> passive",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 1596,
+      "正确的配置": "lsp-gen-interval maximum-wait 1000 initial-wait 1 secondary-wait 10 level 2 -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> lsp-gen-interval maximum-wait 1000 initial-wait 1 secondary-wait 10 level 2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 5318,
+      "正确的配置": "label mode per-vrf -> network <IPV6>/122 route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV6>/122 route-policy rp_Set_Core_Routes -> label mode per-vrf",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 5554,
+      "正确的配置": "bfd multiplier 3 -> address-family ipv6 unicast",
+      "错误的配置": "address-family ipv6 unicast -> bfd multiplier 3",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 3773,
+      "正确的配置": "selection input -> wait-to-restore 0",
+      "错误的配置": "wait-to-restore 0 -> selection input",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 6718,
+      "正确的配置": "route-policy rp_5GC_5GC_MGMN_in in -> default-originate",
+      "错误的配置": "default-originate -> route-policy rp_5GC_5GC_MGMN_in in",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 1174,
+      "正确的配置": "interface <*> -> passive",
+      "错误的配置": "passive -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 8261,
+      "正确的配置": "export route-target -> <PORT>01",
+      "错误的配置": "<PORT>01 -> export route-target",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 3147,
+      "正确的配置": "passive -> circuit-type level-2-only",
+      "错误的配置": "circuit-type level-2-only -> passive",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 253,
+      "正确的配置": "match dscp 40-47 -> end-class-map",
+      "错误的配置": "end-class-map -> match dscp 40-47",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 1670,
+      "正确的配置": "address-family vpnv4 unicast -> route-policy TO_MARRing4_VPN_OUT out",
+      "错误的配置": "route-policy TO_MARRing4_VPN_OUT out -> address-family vpnv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 4775,
+      "正确的配置": "redistribute isis 4 level-2 metric 10000 route-policy rp_RING_TO_CORE -> redistribute isis 7 level-2 metric 10000 route-policy rp_RING_TO_CORE",
+      "错误的配置": "redistribute isis 7 level-2 metric 10000 route-policy rp_RING_TO_CORE -> redistribute isis 4 level-2 metric 10000 route-policy rp_RING_TO_CORE",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 711,
+      "正确的配置": "snmp-server traps ospf errors virt-bad-packet -> snmp-server traps ospf retransmit packets",
+      "错误的配置": "snmp-server traps ospf retransmit packets -> snmp-server traps ospf errors virt-bad-packet",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 2677,
+      "正确的配置": "vrf 5G_RAN -> ipv6 address <IPV6>/126",
+      "错误的配置": "ipv6 address <IPV6>/126 -> vrf 5G_RAN",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 2642,
+      "正确的配置": "circuit-type level-2-only -> prefix-sid index 720",
+      "错误的配置": "prefix-sid index 720 -> circuit-type level-2-only",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 7194,
+      "正确的配置": "passive -> circuit-type level-2-only",
+      "错误的配置": "circuit-type level-2-only -> passive",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 2844,
+      "正确的配置": "rd <PORT> -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> rd <PORT>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 4579,
+      "正确的配置": "neighbor-group RRC4 -> update-source Loopback0",
+      "错误的配置": "update-source Loopback0 -> neighbor-group RRC4",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 277,
+      "正确的配置": "match traffic-class 2 -> end-class-map",
+      "错误的配置": "end-class-map -> match traffic-class 2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 7879,
+      "正确的配置": "rd <PORT> -> maximum-paths ibgp 2",
+      "错误的配置": "maximum-paths ibgp 2 -> rd <PORT>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 8073,
+      "正确的配置": "metric 100 level 2 -> prefix-sid index 143",
+      "错误的配置": "prefix-sid index 143 -> metric 100 level 2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 2220,
+      "正确的配置": "is-type level-2-only -> distribute link-state instance-id 1011 level 2",
+      "错误的配置": "distribute link-state instance-id 1011 level 2 -> is-type level-2-only",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 3229,
+      "正确的配置": "vrf 4G_OAM -> rd <PORT>",
+      "错误的配置": "rd <PORT> -> vrf 4G_OAM",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 6458,
+      "正确的配置": "metric-style wide -> router-id Loopback0",
+      "错误的配置": "router-id Loopback0 -> metric-style wide",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 2006,
+      "正确的配置": "rd <PORT> -> maximum-paths ibgp 2",
+      "错误的配置": "maximum-paths ibgp 2 -> rd <PORT>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 3175,
+      "正确的配置": "label mode per-vrf -> network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Default_Routes -> label mode per-vrf",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 1048,
+      "正确的配置": "ipv4 unreachables disable -> load-interval 30",
+      "错误的配置": "load-interval 30 -> ipv4 unreachables disable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 7717,
+      "正确的配置": "ntp -> authenticate",
+      "错误的配置": "authenticate -> ntp",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 1965,
+      "正确的配置": "metric 100 level 2 -> prefix-sid index 732",
+      "错误的配置": "prefix-sid index 732 -> metric 100 level 2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 2953,
+      "正确的配置": "interface <*> -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 6534,
+      "正确的配置": "remote-as 64585.101 -> bfd multiplier 3",
+      "错误的配置": "bfd multiplier 3 -> remote-as 64585.101",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 1868,
+      "正确的配置": "interface <*> -> ptp",
+      "错误的配置": "ptp -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 4402,
+      "正确的配置": "address-family ipv4 unicast -> prefix-sid index 133",
+      "错误的配置": "prefix-sid index 133 -> address-family ipv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 3553,
+      "正确的配置": "interface <*> -> vrf 5G_RAN",
+      "错误的配置": "vrf 5G_RAN -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 3462,
+      "正确的配置": "address-family ipv4 unicast -> prefix-sid index 746",
+      "错误的配置": "prefix-sid index 746 -> address-family ipv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 3777,
+      "正确的配置": "route-policy rp_RRC_VPN_IN -> end-policy",
+      "错误的配置": "end-policy -> route-policy rp_RRC_VPN_IN",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 2187,
+      "正确的配置": "address-family ipv4 unicast -> prefix-sid index 722",
+      "错误的配置": "prefix-sid index 722 -> address-family ipv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 2823,
+      "正确的配置": "address-family ipv4 unicast -> maximum-paths ibgp 2",
+      "错误的配置": "maximum-paths ibgp 2 -> address-family ipv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 5541,
+      "正确的配置": "neighbor <IPV6> -> remote-as 64587",
+      "错误的配置": "remote-as 64587 -> neighbor <IPV6>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 7721,
+      "正确的配置": "peer <IPV4> -> access-group ipv4 peer ntp_acl",
+      "错误的配置": "access-group ipv4 peer ntp_acl -> peer <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 2039,
+      "正确的配置": "load-interval 30 -> encapsulation dot1q 5",
+      "错误的配置": "encapsulation dot1q 5 -> load-interval 30",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 7148,
+      "正确的配置": "neighbor-group RR -> remote-as 64585",
+      "错误的配置": "remote-as 64585 -> neighbor-group RR",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 5361,
+      "正确的配置": "snmp-server community SdqdspDC@2020RW RW -> ntp",
+      "错误的配置": "ntp -> snmp-server community SdqdspDC@2020RW RW",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 73,
+      "正确的配置": "profile g.8275.1 clock-type T-BC -> clock-class 165",
+      "错误的配置": "clock-class 165 -> profile g.8275.1 clock-type T-BC",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 3527,
+      "正确的配置": "circuit-type level-2-only -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> circuit-type level-2-only",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 1168,
+      "正确的配置": "metric 100000 -> router-id Loopback0",
+      "错误的配置": "router-id Loopback0 -> metric 100000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 3332,
+      "正确的配置": "vrf 3G_OAM -> label mode per-vrf",
+      "错误的配置": "label mode per-vrf -> vrf 3G_OAM",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 3496,
+      "正确的配置": "snmp-server traps snmp authentication -> snmp-server traps config",
+      "错误的配置": "snmp-server traps config -> snmp-server traps snmp authentication",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 650,
+      "正确的配置": "vrf 5G_OAM -> label mode per-vrf",
+      "错误的配置": "label mode per-vrf -> vrf 5G_OAM",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 7793,
+      "正确的配置": "address-family ipv4 <IPV4> port 8896 -> protocol grpc no-tls",
+      "错误的配置": "protocol grpc no-tls -> address-family ipv4 <IPV4> port 8896",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 7175,
+      "正确的配置": "interface <*> -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 7833,
+      "正确的配置": "ipv4 address <IPV4> <IPV4> -> encapsulation dot1q 2956",
+      "错误的配置": "encapsulation dot1q 2956 -> ipv4 address <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 2876,
+      "正确的配置": "snmp-server traps system -> dhcp ipv4",
+      "错误的配置": "dhcp ipv4 -> snmp-server traps system",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 3198,
+      "正确的配置": "label mode per-vrf -> network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Default_Routes -> label mode per-vrf",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 7800,
+      "正确的配置": "profile g.8275.1 clock-type T-BC -> clock-class 165",
+      "错误的配置": "clock-class 165 -> profile g.8275.1 clock-type T-BC",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 3682,
+      "正确的配置": "vrf 4G_RAN -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> vrf 4G_RAN",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 2210,
+      "正确的配置": "max-lsp-lifetime 65535 -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> max-lsp-lifetime 65535",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 7468,
+      "正确的配置": "passive -> metric 100 level 2",
+      "错误的配置": "metric 100 level 2 -> passive",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 5451,
+      "正确的配置": "set community cs_Core_Routes -> pass",
+      "错误的配置": "pass -> set community cs_Core_Routes",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 2787,
+      "正确的配置": "net <*> -> distribute link-state instance-id 1000 level 2",
+      "错误的配置": "distribute link-state instance-id 1000 level 2 -> net <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 8331,
+      "正确的配置": "address-family ipv6 unicast -> label mode per-vrf",
+      "错误的配置": "label mode per-vrf -> address-family ipv6 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 1675,
+      "正确的配置": "address-family vpnv6 unicast -> route-policy TO_MARRing4_VPN_OUT out",
+      "错误的配置": "route-policy TO_MARRing4_VPN_OUT out -> address-family vpnv6 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 7939,
+      "正确的配置": "service-policy input PM_NNI_IN -> carrier-delay up 2000 down 0",
+      "错误的配置": "carrier-delay up 2000 down 0 -> service-policy input PM_NNI_IN",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 5457,
+      "正确的配置": "if destination in pl_YT_5G_RAN then -> endif",
+      "错误的配置": "endif -> if destination in pl_YT_5G_RAN then",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 246,
+      "正确的配置": "match dscp 32-39 -> match mpls experimental topmost 4",
+      "错误的配置": "match mpls experimental topmost 4 -> match dscp 32-39",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 6547,
+      "正确的配置": "maximum-paths ibgp 2 -> redistribute connected",
+      "错误的配置": "redistribute connected -> maximum-paths ibgp 2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 7751,
+      "正确的配置": "snmp-server traps entity-redundancy all -> snmp-server trap-source Loopback0",
+      "错误的配置": "snmp-server trap-source Loopback0 -> snmp-server traps entity-redundancy all",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 5192,
+      "正确的配置": "ssh server v2 -> operation 101",
+      "错误的配置": "operation 101 -> ssh server v2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 6801,
+      "正确的配置": "bfd multiplier 3 -> password encrypted <PASSWORD>",
+      "错误的配置": "password encrypted <PASSWORD> -> bfd multiplier 3",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 5546,
+      "正确的配置": "password encrypted <PASSWORD> -> route-policy rp_QD_5GC_CITY_out out",
+      "错误的配置": "route-policy rp_QD_5GC_CITY_out out -> password encrypted <PASSWORD>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 7145,
+      "正确的配置": "ibgp policy out enforce-modifications -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> ibgp policy out enforce-modifications",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 858,
+      "正确的配置": "snmp-server traps snmp authentication -> snmp-server traps flash insertion",
+      "错误的配置": "snmp-server traps flash insertion -> snmp-server traps snmp authentication",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 2687,
+      "正确的配置": "interface <*> -> ipv4 address <IPV4> <IPV4>",
+      "错误的配置": "ipv4 address <IPV4> <IPV4> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 6615,
+      "正确的配置": "address-family ipv6 unicast -> route-policy rp_5G_RAN_in in",
+      "错误的配置": "route-policy rp_5G_RAN_in in -> address-family ipv6 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 1528,
+      "正确的配置": "is-type level-2-only -> net <*>",
+      "错误的配置": "net <*> -> is-type level-2-only",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 575,
+      "正确的配置": "password encrypted <PASSWORD> -> update-source Loopback0",
+      "错误的配置": "update-source Loopback0 -> password encrypted <PASSWORD>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 6511,
+      "正确的配置": "local-as 64585.102 no-prepend replace-as -> route-policy rp_WCDMA_OAM_in in",
+      "错误的配置": "route-policy rp_WCDMA_OAM_in in -> local-as 64585.102 no-prepend replace-as",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 8103,
+      "正确的配置": "address-family ipv6 unicast -> network ::/0 route-policy rp_Set_Default_Routes",
+      "错误的配置": "network ::/0 route-policy rp_Set_Default_Routes -> address-family ipv6 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 7021,
+      "正确的配置": "passive -> circuit-type level-2-only",
+      "错误的配置": "circuit-type level-2-only -> passive",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 3041,
+      "正确的配置": "rd <PORT> -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> rd <PORT>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 4828,
+      "正确的配置": "rd <PORT> -> maximum-paths ibgp 2",
+      "错误的配置": "maximum-paths ibgp 2 -> rd <PORT>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 8196,
+      "正确的配置": "vrf GPRS_Gn_C -> <IPV6> Bundle-Ether1.2954 <IPV6>",
+      "错误的配置": "<IPV6> Bundle-Ether1.2954 <IPV6> -> vrf GPRS_Gn_C",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 1041,
+      "正确的配置": "interface <*> -> mtu 9000",
+      "错误的配置": "mtu 9000 -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 4532,
+      "正确的配置": "redistribute isis 3 level-2 metric 10000 route-policy rp_RING_TO_CORE -> redistribute isis 4 level-2 metric 10000 route-policy rp_RING_TO_CORE",
+      "错误的配置": "redistribute isis 4 level-2 metric 10000 route-policy rp_RING_TO_CORE -> redistribute isis 3 level-2 metric 10000 route-policy rp_RING_TO_CORE",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 6442,
+      "正确的配置": "vrf SmartMAN_AUTO_ONLINE -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> vrf SmartMAN_AUTO_ONLINE",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 4694,
+      "正确的配置": "maximum-paths eibgp 2 -> network ::/0 route-policy rp_Set_Default_Routes",
+      "错误的配置": "network ::/0 route-policy rp_Set_Default_Routes -> maximum-paths eibgp 2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 8387,
+      "正确的配置": "passive -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> passive",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 1197,
+      "正确的配置": "router bgp 64585 -> bgp log neighbor changes detail",
+      "错误的配置": "bgp log neighbor changes detail -> router bgp 64585",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 2933,
+      "正确的配置": "label mode per-vrf -> network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Default_Routes -> label mode per-vrf",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 6766,
+      "正确的配置": "neighbor <IPV4> -> bfd multiplier 3",
+      "错误的配置": "bfd multiplier 3 -> neighbor <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 2864,
+      "正确的配置": "snmp-server traps rf -> snmp-server traps snmp linkup",
+      "错误的配置": "snmp-server traps snmp linkup -> snmp-server traps rf",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 6485,
+      "正确的配置": "bfd fast-detect -> bfd minimum-interval 150",
+      "错误的配置": "bfd minimum-interval 150 -> bfd fast-detect",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 3792,
+      "正确的配置": "logging source-interface Loopback0 -> logging events link-status software-interfaces",
+      "错误的配置": "logging events link-status software-interfaces -> logging source-interface Loopback0",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 4225,
+      "正确的配置": "metric-style wide -> router-id Loopback0",
+      "错误的配置": "router-id Loopback0 -> metric-style wide",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 5327,
+      "正确的配置": "priority 200 -> address global <IPV6>",
+      "错误的配置": "address global <IPV6> -> priority 200",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 6256,
+      "正确的配置": "pass -> endif",
+      "错误的配置": "endif -> pass",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 2387,
+      "正确的配置": "address-family vpnv6 unicast -> route-reflector-client",
+      "错误的配置": "route-reflector-client -> address-family vpnv6 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 5555,
+      "正确的配置": "bfd minimum-interval 150 -> route-policy rp_WH_5G_RAN_in in",
+      "错误的配置": "route-policy rp_WH_5G_RAN_in in -> bfd minimum-interval 150",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 5449,
+      "正确的配置": "route-policy rp_WH_5G_RAN_in -> if destination in pl_WH_5G_RAN then",
+      "错误的配置": "if destination in pl_WH_5G_RAN then -> route-policy rp_WH_5G_RAN_in",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 7840,
+      "正确的配置": "ipv4 address <IPV4> <IPV4> -> encapsulation dot1q 2968",
+      "错误的配置": "encapsulation dot1q 2968 -> ipv4 address <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 4441,
+      "正确的配置": "fpd auto-upgrade enable -> authenticate",
+      "错误的配置": "authenticate -> fpd auto-upgrade enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 2930,
+      "正确的配置": "vrf 4G_OAM -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> vrf 4G_OAM",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 3804,
+      "正确的配置": "interface <*> -> circuit-type level-2-only",
+      "错误的配置": "circuit-type level-2-only -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 5113,
+      "正确的配置": "passive -> metric 100 level 2",
+      "错误的配置": "metric 100 level 2 -> passive",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 775,
+      "正确的配置": "authenticate -> server <IPV4> prefer",
+      "错误的配置": "server <IPV4> prefer -> authenticate",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 4253,
+      "正确的配置": "interface <*> -> circuit-type level-2-only",
+      "错误的配置": "circuit-type level-2-only -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 2068,
+      "正确的配置": "description <*> -> ipv4 address <IPV4> <IPV4>",
+      "错误的配置": "ipv4 address <IPV4> <IPV4> -> description <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 2640,
+      "正确的配置": "interface <*> -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 7000,
+      "正确的配置": "operation 102 -> destination address <IPV4>",
+      "错误的配置": "destination address <IPV4> -> operation 102",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 3560,
+      "正确的配置": "vrf 4G_OAM -> ipv4 address <IPV4> <IPV4>",
+      "错误的配置": "ipv4 address <IPV4> <IPV4> -> vrf 4G_OAM",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 4948,
+      "正确的配置": "rd <PORT> -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> rd <PORT>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 1280,
+      "正确的配置": "address-family ipv6 unicast -> label mode per-vrf",
+      "错误的配置": "label mode per-vrf -> address-family ipv6 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 6722,
+      "正确的配置": "neighbor <IPV4> -> bfd fast-detect",
+      "错误的配置": "bfd fast-detect -> neighbor <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 8130,
+      "正确的配置": "interface <*> -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 7777,
+      "正确的配置": "service-policy input PM_NNI_IN -> service-policy output PM_NNI_OUT",
+      "错误的配置": "service-policy output PM_NNI_OUT -> service-policy input PM_NNI_IN",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 6950,
+      "正确的配置": "rd <PORT> -> label mode per-vrf",
+      "错误的配置": "label mode per-vrf -> rd <PORT>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 6282,
+      "正确的配置": "pass -> endif",
+      "错误的配置": "endif -> pass",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 5692,
+      "正确的配置": "snmp-server trap-source Loopback0 -> dhcp ipv4",
+      "错误的配置": "dhcp ipv4 -> snmp-server trap-source Loopback0",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 7182,
+      "正确的配置": "snmp-server traps bgp -> bgp router-id <IPV4>",
+      "错误的配置": "bgp router-id <IPV4> -> snmp-server traps bgp",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 2258,
+      "正确的配置": "max-lsp-lifetime 65535 -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> max-lsp-lifetime 65535",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 1511,
+      "正确的配置": "router isis 4 -> net <*>",
+      "错误的配置": "net <*> -> router isis 4",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 7989,
+      "正确的配置": "interface <*> -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 4196,
+      "正确的配置": "ipv4 address <IPV4> <IPV4> -> ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables disable -> ipv4 address <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 864,
+      "正确的配置": "snmp-server traps entity-redundancy all -> snmp-server trap-source Loopback0",
+      "错误的配置": "snmp-server trap-source Loopback0 -> snmp-server traps entity-redundancy all",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 3475,
+      "正确的配置": "username <*> -> group root-lr",
+      "错误的配置": "group root-lr -> username <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 1163,
+      "正确的配置": "lsp-gen-interval maximum-wait 1000 initial-wait 1 secondary-wait 10 level 2 -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> lsp-gen-interval maximum-wait 1000 initial-wait 1 secondary-wait 10 level 2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 5796,
+      "正确的配置": "interface <*> -> vrf 5G_OAM",
+      "错误的配置": "vrf 5G_OAM -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 1624,
+      "正确的配置": "redistribute isis 6 level-2 metric 10000 route-policy rp_RING_TO_CORE -> redistribute isis 7 level-2 metric 10000 route-policy rp_RING_TO_CORE",
+      "错误的配置": "redistribute isis 7 level-2 metric 10000 route-policy rp_RING_TO_CORE -> redistribute isis 6 level-2 metric 10000 route-policy rp_RING_TO_CORE",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 3771,
+      "正确的配置": "dampening 1 250 950 1 -> priority 10",
+      "错误的配置": "priority 10 -> dampening 1 250 950 1",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 4556,
+      "正确的配置": "router bgp 64585 -> bgp router-id <IPV4>",
+      "错误的配置": "bgp router-id <IPV4> -> router bgp 64585",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 2619,
+      "正确的配置": "description <*> -> profile <*>",
+      "错误的配置": "profile <*> -> description <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 3694,
+      "正确的配置": "ssh server rate-limit 600 -> ssh server v2",
+      "错误的配置": "ssh server v2 -> ssh server rate-limit 600",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 6610,
+      "正确的配置": "remote-as 38351 -> bfd minimum-interval 150",
+      "错误的配置": "bfd minimum-interval 150 -> remote-as 38351",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 5672,
+      "正确的配置": "snmp-server ifindex persist -> snmp-server ifmib stats cache",
+      "错误的配置": "snmp-server ifmib stats cache -> snmp-server ifindex persist",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 1647,
+      "正确的配置": "address-family vpnv6 unicast -> route-reflector-client",
+      "错误的配置": "route-reflector-client -> address-family vpnv6 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 5605,
+      "正确的配置": "server <IPV4> -> source Loopback0",
+      "错误的配置": "source Loopback0 -> server <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 1171,
+      "正确的配置": "redistribute isis 2 level-2 metric 10000 route-policy rp_RING_TO_CORE -> segment-routing mpls",
+      "错误的配置": "segment-routing mpls -> redistribute isis 2 level-2 metric 10000 route-policy rp_RING_TO_CORE",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 1356,
+      "正确的配置": "ipv4 unreachables disable -> encapsulation dot1q 6",
+      "错误的配置": "encapsulation dot1q 6 -> ipv4 unreachables disable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 5885,
+      "正确的配置": "interface <*> -> ipv6 address <IPV6>",
+      "错误的配置": "ipv6 address <IPV6> -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 7618,
+      "正确的配置": "ntp -> authenticate",
+      "错误的配置": "authenticate -> ntp",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 162,
+      "错误行号": 7123,
+      "正确的配置": "passive -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> passive",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 1915,
+      "正确的配置": "ptp -> port state slave-only",
+      "错误的配置": "port state slave-only -> ptp",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 164,
+      "错误行号": 2087,
+      "正确的配置": "load-interval 30 -> dampening 1 250 950 1",
+      "错误的配置": "dampening 1 250 950 1 -> load-interval 30",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 165,
+      "错误行号": 1704,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in -> route-reflector-client",
+      "错误的配置": "route-reflector-client -> route-policy rp_RRC_VPN_IN in",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 166,
+      "错误行号": 1681,
+      "正确的配置": "remote-as 64585 -> address-family vpnv4 unicast",
+      "错误的配置": "address-family vpnv4 unicast -> remote-as 64585",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 167,
+      "错误行号": 98,
+      "正确的配置": "vrf 3G_RAN -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> vrf 3G_RAN",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 168,
+      "错误行号": 1854,
+      "正确的配置": "mtu 9000 -> ptp",
+      "错误的配置": "ptp -> mtu 9000",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 169,
+      "错误行号": 2803,
+      "正确的配置": "circuit-type level-2-only -> prefix-sid index 724",
+      "错误的配置": "prefix-sid index 724 -> circuit-type level-2-only",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 170,
+      "错误行号": 7463,
+      "正确的配置": "address-family ipv4 unicast -> metric 100 level 2",
+      "错误的配置": "metric 100 level 2 -> address-family ipv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 171,
+      "错误行号": 4157,
+      "正确的配置": "address-family ipv4 unicast -> prefix-sid index 710",
+      "错误的配置": "prefix-sid index 710 -> address-family ipv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 4355,
+      "正确的配置": "address-family ipv4 unicast -> metric 100 level 2",
+      "错误的配置": "metric 100 level 2 -> address-family ipv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 173,
+      "错误行号": 3640,
+      "正确的配置": "frequency synchronization -> selection input",
+      "错误的配置": "selection input -> frequency synchronization",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 174,
+      "错误行号": 8452,
+      "正确的配置": "interface <*> -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 1447,
+      "正确的配置": "route-policy TO_MARRing9_VPN_OUT -> if community matches-any cs_Default_Routes then",
+      "错误的配置": "if community matches-any cs_Default_Routes then -> route-policy TO_MARRing9_VPN_OUT",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 360,
+      "正确的配置": "bandwidth remaining percent 30 -> random-detect 6400 kbytes 8000 kbytes",
+      "错误的配置": "random-detect 6400 kbytes 8000 kbytes -> bandwidth remaining percent 30",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 177,
+      "错误行号": 7691,
+      "正确的配置": "tcp selective-ack -> snmp-server ifmib stats cache",
+      "错误的配置": "snmp-server ifmib stats cache -> tcp selective-ack",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 2839,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes -> network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes -> network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 179,
+      "错误行号": 7670,
+      "正确的配置": "fpd auto-upgrade enable -> ntp",
+      "错误的配置": "ntp -> fpd auto-upgrade enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 180,
+      "错误行号": 6450,
+      "正确的配置": "is-type level-2-only -> distribute link-state instance-id 1000 level 2",
+      "错误的配置": "distribute link-state instance-id 1000 level 2 -> is-type level-2-only",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 181,
+      "错误行号": 1564,
+      "正确的配置": "lsp-gen-interval maximum-wait 1000 initial-wait 1 secondary-wait 10 level 2 -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> lsp-gen-interval maximum-wait 1000 initial-wait 1 secondary-wait 10 level 2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 182,
+      "错误行号": 7340,
+      "正确的配置": "interface <*> -> passive",
+      "错误的配置": "passive -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 183,
+      "错误行号": 8203,
+      "正确的配置": "circuit-type level-2-only -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> circuit-type level-2-only",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 184,
+      "错误行号": 5677,
+      "正确的配置": "snmp-server community SdqdspDC@2020RW RW -> snmp-server traps ntp",
+      "错误的配置": "snmp-server traps ntp -> snmp-server community SdqdspDC@2020RW RW",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 185,
+      "错误行号": 7583,
+      "正确的配置": "circuit-type level-2-only -> prefix-sid index 183",
+      "错误的配置": "prefix-sid index 183 -> circuit-type level-2-only",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 8009,
+      "正确的配置": "import route-target -> <PORT>",
+      "错误的配置": "<PORT> -> import route-target",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 187,
+      "错误行号": 7857,
+      "正确的配置": "frequency synchronization -> wait-to-restore 0",
+      "错误的配置": "wait-to-restore 0 -> frequency synchronization",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 188,
+      "错误行号": 7704,
+      "正确的配置": "snmp-server traps snmp linkdown -> snmp-server traps snmp coldstart",
+      "错误的配置": "snmp-server traps snmp coldstart -> snmp-server traps snmp linkdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 189,
+      "错误行号": 4426,
+      "正确的配置": "interface <*> -> passive",
+      "错误的配置": "passive -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 411,
+      "正确的配置": "vrf 3G_RAN -> encapsulation dot1q 1001",
+      "错误的配置": "encapsulation dot1q 1001 -> vrf 3G_RAN",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 191,
+      "错误行号": 6901,
+      "正确的配置": "endif -> end-policy",
+      "错误的配置": "end-policy -> endif",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 192,
+      "错误行号": 5436,
+      "正确的配置": "if destination in pl_LY_5G_RAN then -> endif",
+      "错误的配置": "endif -> if destination in pl_LY_5G_RAN then",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 193,
+      "错误行号": 2063,
+      "正确的配置": "load-interval 30 -> encapsulation dot1q 12",
+      "错误的配置": "encapsulation dot1q 12 -> load-interval 30",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 194,
+      "错误行号": 6230,
+      "正确的配置": "route-policy rp_5G_OAM_v6_out -> if destination in pl_5G_OAM_V6_out then",
+      "错误的配置": "if destination in pl_5G_OAM_V6_out then -> route-policy rp_5G_OAM_v6_out",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 195,
+      "错误行号": 2666,
+      "正确的配置": "redistribute isis 5 level-2 metric 10000 route-policy rp_RING_TO_CORE -> segment-routing mpls",
+      "错误的配置": "segment-routing mpls -> redistribute isis 5 level-2 metric 10000 route-policy rp_RING_TO_CORE",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 5641,
+      "正确的配置": "snmp-server traps flash removal -> snmp-server traps syslog",
+      "错误的配置": "snmp-server traps syslog -> snmp-server traps flash removal",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 7134,
+      "正确的配置": "point-to-point -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> point-to-point",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 198,
+      "错误行号": 7326,
+      "正确的配置": "net <*> -> log adjacency changes",
+      "错误的配置": "log adjacency changes -> net <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 199,
+      "错误行号": 6676,
+      "正确的配置": "password encrypted <PASSWORD> -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> password encrypted <PASSWORD>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 200,
+      "错误行号": 7432,
+      "正确的配置": "passive -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> passive",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 201,
+      "错误行号": 7768,
+      "正确的配置": "profile <*> -> transport ethernet",
+      "错误的配置": "transport ethernet -> profile <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 202,
+      "错误行号": 643,
+      "正确的配置": "address-family ipv4 unicast -> label mode per-vrf",
+      "错误的配置": "label mode per-vrf -> address-family ipv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 203,
+      "错误行号": 6643,
+      "正确的配置": "bfd fast-detect -> bfd minimum-interval 150",
+      "错误的配置": "bfd minimum-interval 150 -> bfd fast-detect",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 2598,
+      "正确的配置": "address-family ipv6 unicast -> label mode per-vrf",
+      "错误的配置": "label mode per-vrf -> address-family ipv6 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 3212,
+      "正确的配置": "vrf 3G_RAN -> label mode per-vrf",
+      "错误的配置": "label mode per-vrf -> vrf 3G_RAN",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 206,
+      "错误行号": 7631,
+      "正确的配置": "ipv4 unreachables disable -> carrier-delay up 2000 down 0",
+      "错误的配置": "carrier-delay up 2000 down 0 -> ipv4 unreachables disable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 207,
+      "错误行号": 4181,
+      "正确的配置": "snmp-server traps syslog -> snmp-server trap-source Loopback0",
+      "错误的配置": "snmp-server trap-source Loopback0 -> snmp-server traps syslog",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 208,
+      "错误行号": 7160,
+      "正确的配置": "address-family ipv4 unicast -> route-reflector-client",
+      "错误的配置": "route-reflector-client -> address-family ipv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 7615,
+      "正确的配置": "snmp-server community SdqdspDC@2020RW RW -> fpd auto-upgrade enable",
+      "错误的配置": "fpd auto-upgrade enable -> snmp-server community SdqdspDC@2020RW RW",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 210,
+      "错误行号": 4598,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in -> route-policy rp_RRC5_VPN_OUT out",
+      "错误的配置": "route-policy rp_RRC5_VPN_OUT out -> route-policy rp_RRC_VPN_IN in",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 211,
+      "错误行号": 5638,
+      "正确的配置": "snmp-server traps snmp coldstart -> snmp-server traps snmp warmstart",
+      "错误的配置": "snmp-server traps snmp warmstart -> snmp-server traps snmp coldstart",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 766,
+      "正确的配置": "snmp-server traps flash insertion -> snmp-server traps system",
+      "错误的配置": "snmp-server traps system -> snmp-server traps flash insertion",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 213,
+      "错误行号": 1373,
+      "正确的配置": "load-interval 30 -> dampening 1 250 950 1",
+      "错误的配置": "dampening 1 250 950 1 -> load-interval 30",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 214,
+      "错误行号": 3870,
+      "正确的配置": "address-family ipv6 unicast -> network ::/0 route-policy rp_Set_Default_Routes",
+      "错误的配置": "network ::/0 route-policy rp_Set_Default_Routes -> address-family ipv6 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 215,
+      "错误行号": 7729,
+      "正确的配置": "snmp-server ifindex persist -> snmp-server ifmib stats cache",
+      "错误的配置": "snmp-server ifmib stats cache -> snmp-server ifindex persist",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 216,
+      "错误行号": 1379,
+      "正确的配置": "ipv4 address <IPV4> <IPV4> -> ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables disable -> ipv4 address <IPV4> <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 217,
+      "错误行号": 1712,
+      "正确的配置": "address-family vpnv4 unicast -> route-policy TO_MARRing8_VPN_OUT out",
+      "错误的配置": "route-policy TO_MARRing8_VPN_OUT out -> address-family vpnv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 1151,
+      "正确的配置": "point-to-point -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> point-to-point",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 219,
+      "错误行号": 6292,
+      "正确的配置": "route-policy rp_5GC_5GC_MGMN_in -> if destination in pl_5GC_5GC_MGMN_in then",
+      "错误的配置": "if destination in pl_5GC_5GC_MGMN_in then -> route-policy rp_5GC_5GC_MGMN_in",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 1025,
+      "正确的配置": "description <*> -> ipv4 unreachables disable",
+      "错误的配置": "ipv4 unreachables disable -> description <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 221,
+      "错误行号": 2401,
+      "正确的配置": "address-family vpnv6 unicast -> route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_RRC_VPN_IN in -> address-family vpnv6 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 222,
+      "错误行号": 4735,
+      "正确的配置": "trusted-key 1 -> server <IPV4> prefer",
+      "错误的配置": "server <IPV4> prefer -> trusted-key 1",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 223,
+      "错误行号": 554,
+      "正确的配置": "bgp router-id <IPV4> -> ibgp policy out enforce-modifications",
+      "错误的配置": "ibgp policy out enforce-modifications -> bgp router-id <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 224,
+      "错误行号": 4154,
+      "正确的配置": "interface <*> -> passive",
+      "错误的配置": "passive -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 225,
+      "错误行号": 5688,
+      "正确的配置": "snmp-server traps config -> snmp-server traps entity-redundancy all",
+      "错误的配置": "snmp-server traps entity-redundancy all -> snmp-server traps config",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 226,
+      "错误行号": 1364,
+      "正确的配置": "ipv4 unreachables disable -> dampening 1 250 950 1",
+      "错误的配置": "dampening 1 250 950 1 -> ipv4 unreachables disable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 227,
+      "错误行号": 5172,
+      "正确的配置": "service-policy input PM_NNI_IN -> ipv4 address <IPV4> <IPV4>",
+      "错误的配置": "ipv4 address <IPV4> <IPV4> -> service-policy input PM_NNI_IN",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 3679,
+      "正确的配置": "metric 100 level 2 -> prefix-sid index 780",
+      "错误的配置": "prefix-sid index 780 -> metric 100 level 2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 229,
+      "错误行号": 1543,
+      "正确的配置": "router isis 7 -> is-type level-2-only",
+      "错误的配置": "is-type level-2-only -> router isis 7",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 230,
+      "错误行号": 8373,
+      "正确的配置": "ipsla -> destination address <IPV4>",
+      "错误的配置": "destination address <IPV4> -> ipsla",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 231,
+      "错误行号": 6841,
+      "正确的配置": "route-policy rp_SmartMAN_AUTO_ONLINE_IN in -> route-policy rp_SmartMAN_OUT out",
+      "错误的配置": "route-policy rp_SmartMAN_OUT out -> route-policy rp_SmartMAN_AUTO_ONLINE_IN in",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 232,
+      "错误行号": 2504,
+      "正确的配置": "address-family ipv4 unicast -> maximum-paths ibgp 2",
+      "错误的配置": "maximum-paths ibgp 2 -> address-family ipv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 233,
+      "错误行号": 2392,
+      "正确的配置": "neighbor-group MARRing14 -> remote-as 64585",
+      "错误的配置": "remote-as 64585 -> neighbor-group MARRing14",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 234,
+      "错误行号": 1921,
+      "正确的配置": "selection input -> priority 10",
+      "错误的配置": "priority 10 -> selection input",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 7453,
+      "正确的配置": "interface <*> -> circuit-type level-2-only",
+      "错误的配置": "circuit-type level-2-only -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 7756,
+      "正确的配置": "authenticate -> trusted-key 1",
+      "错误的配置": "trusted-key 1 -> authenticate",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 7700,
+      "正确的配置": "snmp-server traps bfd -> snmp-server traps snmp",
+      "错误的配置": "snmp-server traps snmp -> snmp-server traps bfd",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 4875,
+      "正确的配置": "address-family ipv4 unicast -> label mode per-vrf",
+      "错误的配置": "label mode per-vrf -> address-family ipv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 239,
+      "错误行号": 6522,
+      "正确的配置": "address-family ipv4 unicast -> route-policy rp_LTE_WCDMA_OAM_in in",
+      "错误的配置": "route-policy rp_LTE_WCDMA_OAM_in in -> address-family ipv4 unicast",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 240,
+      "错误行号": 5338,
+      "正确的配置": "passive -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> passive",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 241,
+      "错误行号": 7347,
+      "正确的配置": "interface <*> -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 242,
+      "错误行号": 511,
+      "正确的配置": "vrf 5G_RAN -> address-family ipv6 unicast",
+      "错误的配置": "address-family ipv6 unicast -> vrf 5G_RAN",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 243,
+      "错误行号": 4221,
+      "正确的配置": "lsp-gen-interval maximum-wait 1000 initial-wait 1 secondary-wait 10 level 2 -> lsp-refresh-interval 65000",
+      "错误的配置": "lsp-refresh-interval 65000 -> lsp-gen-interval maximum-wait 1000 initial-wait 1 secondary-wait 10 level 2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 7578,
+      "正确的配置": "metric 1000 level 2 -> prefix-sid index 183",
+      "错误的配置": "prefix-sid index 183 -> metric 1000 level 2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 245,
+      "错误行号": 67,
+      "正确的配置": "destination-id Dest_Group1 -> source-interface Loopback0",
+      "错误的配置": "source-interface Loopback0 -> destination-id Dest_Group1",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 3645,
+      "正确的配置": "router static -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> router static",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 247,
+      "错误行号": 1639,
+      "正确的配置": "remote-as 64585 -> address-family vpnv4 unicast",
+      "错误的配置": "address-family vpnv4 unicast -> remote-as 64585",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 7622,
+      "正确的配置": "peer <IPV4> -> master 3",
+      "错误的配置": "master 3 -> peer <IPV4>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 249,
+      "错误行号": 3854,
+      "正确的配置": "label mode per-vrf -> network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Default_Routes -> label mode per-vrf",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 250,
+      "错误行号": 8037,
+      "正确的配置": "interface <*> -> mtu 9000",
+      "错误的配置": "mtu 9000 -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 7658,
+      "正确的配置": "snmp-server traps snmp linkdown -> snmp-server traps snmp authentication",
+      "错误的配置": "snmp-server traps snmp authentication -> snmp-server traps snmp linkdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 463,
+      "正确的配置": "vrf 3G_OAM -> address-family ipv4 unicast",
+      "错误的配置": "address-family ipv4 unicast -> vrf 3G_OAM",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 253,
+      "错误行号": 5210,
+      "正确的配置": "interface <*> -> passive",
+      "错误的配置": "passive -> interface <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 254,
+      "错误行号": 1134,
+      "正确的配置": "spf-interval maximum-wait 1000 initial-wait 5 secondary-wait 10 level 2 -> router-id Loopback0",
+      "错误的配置": "router-id Loopback0 -> spf-interval maximum-wait 1000 initial-wait 5 secondary-wait 10 level 2",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 255,
+      "错误行号": 3294,
+      "正确的配置": "vrf 3G_OAM -> encapsulation dot1q 1002",
+      "错误的配置": "encapsulation dot1q 1002 -> vrf 3G_OAM",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 256,
+      "错误行号": 6859,
+      "正确的配置": "description <*> -> vrf GPRS_Gn_C",
+      "错误的配置": "vrf GPRS_Gn_C -> description <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    }
+  ]
+}

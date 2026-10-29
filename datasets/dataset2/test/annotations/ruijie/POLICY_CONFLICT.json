@@ -1,0 +1,451 @@
+{
+  "vendor": "ruijie",
+  "dataset": "test_dataset_2",
+  "错误类型": "POLICY_CONFLICT",
+  "错误类型描述": "策略冲突（permit/deny、import/export 等策略动作矛盾）",
+  "实际模板占比": "6.25%",
+  "数据集调整占比": "5.00%",
+  "错误数量": 55,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 985,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 3923,
+      "正确的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误的配置": "route-map SET-ATTRIBUTES-<*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 3729,
+      "正确的配置": "neighbor <*> route-map SET-ATTRIBUTES-<*> in",
+      "错误的配置": "neighbor <*> route-map SET-ATTRIBUTES-<*> out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 2259,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list out-FILTER-<*> in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 3573,
+      "正确的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误的配置": "route-map SET-ATTRIBUTES-<*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 4285,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 4263,
+      "正确的配置": "neighbor <*> route-map ISP-IN-<*> in",
+      "错误的配置": "neighbor <*> route-map ISP-out-<*> in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 4182,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list out-FILTER-<*> in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 1419,
+      "正确的配置": "ip community-list expanded COM-LIST-<*> permit _2448714571:.*",
+      "错误的配置": "ip community-list expanded COM-LIST-<*> deny _2448714571:.*",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 2466,
+      "正确的配置": "access-list <*> deny host <*>",
+      "错误的配置": "access-list <*> permit host <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 2172,
+      "正确的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误的配置": "route-map SET-ATTRIBUTES-<*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 137,
+      "正确的配置": "neighbor <*> route-map SET-ATTRIBUTES-<*> in",
+      "错误的配置": "neighbor <*> route-map SET-ATTRIBUTES-<*> out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 2108,
+      "正确的配置": "neighbor <*> prefix-list OUT-FILTER-<*> out",
+      "错误的配置": "neighbor <*> prefix-list in-FILTER-<*> out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 1097,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 954,
+      "正确的配置": "route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 127,
+      "正确的配置": "neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list out-FILTER-<*> in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 829,
+      "正确的配置": "access-list <*> deny <*> <*>",
+      "错误的配置": "access-list <*> permit <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 3025,
+      "正确的配置": "ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>",
+      "错误的配置": "ip prefix-list OUT-FILTER-<*> seq <*> deny <*>/<*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 899,
+      "正确的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误的配置": "route-map SET-ATTRIBUTES-<*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 826,
+      "正确的配置": "access-list <*> permit host <*>",
+      "错误的配置": "access-list <*> deny host <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 3659,
+      "正确的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误的配置": "route-map SET-ATTRIBUTES-<*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 3545,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 4085,
+      "正确的配置": "access-list <*> deny <*> <*>",
+      "错误的配置": "access-list <*> permit <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 2381,
+      "正确的配置": "route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 2759,
+      "正确的配置": "access-list <*> permit <*> <*>",
+      "错误的配置": "access-list <*> deny <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 1626,
+      "正确的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误的配置": "route-map SET-ATTRIBUTES-<*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 182,
+      "正确的配置": "neighbor <*> prefix-list OUT-FILTER-<*> out",
+      "错误的配置": "neighbor <*> prefix-list in-FILTER-<*> out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 2523,
+      "正确的配置": "neighbor <*> route-map SET-ATTRIBUTES-<*> in",
+      "错误的配置": "neighbor <*> route-map SET-ATTRIBUTES-<*> out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 3534,
+      "正确的配置": "ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>",
+      "错误的配置": "ip prefix-list OUT-FILTER-<*> seq <*> deny <*>/<*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 4187,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 972,
+      "正确的配置": "access-list <*> deny any log",
+      "错误的配置": "access-list <*> permit any log",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 3475,
+      "正确的配置": "access-list <*> deny <*> <*>",
+      "错误的配置": "access-list <*> permit <*> <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 1663,
+      "正确的配置": "access-list <*> permit host <*>",
+      "错误的配置": "access-list <*> deny host <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 2464,
+      "正确的配置": "access-list <*> permit host <*>",
+      "错误的配置": "access-list <*> deny host <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 185,
+      "正确的配置": "ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>",
+      "错误的配置": "ip prefix-list OUT-FILTER-<*> seq <*> deny <*>/<*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 971,
+      "正确的配置": "access-list <*> deny host <*>",
+      "错误的配置": "access-list <*> permit host <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 2539,
+      "正确的配置": "route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 1490,
+      "正确的配置": "route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 1383,
+      "正确的配置": "access-list <*> permit host <*>",
+      "错误的配置": "access-list <*> deny host <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 2732,
+      "正确的配置": "access-list <*> deny any log",
+      "错误的配置": "access-list <*> permit any log",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 3751,
+      "正确的配置": "neighbor <*> route-map SET-ATTRIBUTES-<*> in",
+      "错误的配置": "neighbor <*> route-map SET-ATTRIBUTES-<*> out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 1666,
+      "正确的配置": "access-list <*> deny host <*>",
+      "错误的配置": "access-list <*> permit host <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 741,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 1326,
+      "正确的配置": "route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 2585,
+      "正确的配置": "neighbor <*> route-map ISP-IN-<*> in",
+      "错误的配置": "neighbor <*> route-map ISP-out-<*> in",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 1126,
+      "正确的配置": "ip community-list expanded COM-LIST-<*> permit _1023684083:.*",
+      "错误的配置": "ip community-list expanded COM-LIST-<*> deny _1023684083:.*",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 2625,
+      "正确的配置": "route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 4103,
+      "正确的配置": "access-list <*> permit host <*>",
+      "错误的配置": "access-list <*> deny host <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 664,
+      "正确的配置": "neighbor <*> route-map ISP-OUT-<*> out",
+      "错误的配置": "neighbor <*> route-map ISP-in-<*> out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 3544,
+      "正确的配置": "ip prefix-list OUT-FILTER-<*> seq <*> permit <*>/<*>",
+      "错误的配置": "ip prefix-list OUT-FILTER-<*> seq <*> deny <*>/<*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 953,
+      "正确的配置": "ip community-list expanded COM-LIST-<*> permit _2669976176:.*",
+      "错误的配置": "ip community-list expanded COM-LIST-<*> deny _2669976176:.*",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 3758,
+      "正确的配置": "route-map SET-ATTRIBUTES-<*> permit <*>",
+      "错误的配置": "route-map SET-ATTRIBUTES-<*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 2724,
+      "正确的配置": "route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 4264,
+      "正确的配置": "neighbor <*> route-map ISP-OUT-<*> out",
+      "错误的配置": "neighbor <*> route-map ISP-in-<*> out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 1054,
+      "正确的配置": "ip prefix-list IN-FILTER-<*> seq <*> deny <*>/<*> le <*>",
+      "错误的配置": "ip prefix-list IN-FILTER-<*> seq <*> permit <*>/<*> le <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）"
+    }
+  ]
+}

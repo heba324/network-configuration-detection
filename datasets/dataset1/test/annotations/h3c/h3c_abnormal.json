@@ -1,0 +1,240 @@
+{
+  "vendor": "h3c",
+  "dataset": "test_dataset_1",
+  "实际模板占比": "6.07%",
+  "数据集调整占比": "3.00%",
+  "正常配置块数": 24,
+  "异常配置块数": 24,
+  "每个异常块错误类型数": 1,
+  "总错误数": 24,
+  "错误类型分布": {
+    "RESOURCE_CONFLICT": 2,
+    "SYNTAX_ERROR": 3,
+    "MISSING_STATEMENT": 4,
+    "PARAM_TYPE_MISMATCH": 3,
+    "SEMANTIC_INCONSISTENCY": 2,
+    "ORDER_DEPENDENCY_ERROR": 3,
+    "REDUNDANT_STATEMENT": 3,
+    "DEPENDENCY_MISSING": 3,
+    "POLICY_CONFLICT": 1
+  },
+  "errors": [
+    {
+      "错误序号": 1,
+      "错误行号": 4,
+      "正确的配置": "ip address <IPV4> 255.255.255.255",
+      "错误的配置": "ip address 255.255.255.255 255.255.255.255",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 255.255.255.255）",
+      "配置块序号": 1
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 1,
+      "正确的配置": "bfd static <*> peer-ipv6 <*> source-ipv6 <*> discriminator auto",
+      "错误的配置": "bfd statci <*> peer-ipv6 <*> source-ipv6 <*> discriminator auto",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误",
+      "配置块序号": 2
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 1,
+      "正确的配置": "bfd static <*> peer-ipv6 <*> source-ipv6 <*> discriminator local <*> remote <*>",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 3,
+      "计划错误类型": "POLICY_CONFLICT"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 1,
+      "正确的配置": "l2tp enable",
+      "错误的配置": "l2tp enable 70000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配",
+      "配置块序号": 4
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 8,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致",
+      "配置块序号": 5
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 1,
+      "正确的配置": "track 221 bfd echo interface Route-Aggregation2.2 remote ip <*> local ip <*>",
+      "错误的配置": "track 221 bfd echo interface Route-Aggregation2.2 remote ip 999999 local ip <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配",
+      "配置块序号": 6
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 3,
+      "正确的配置": "queue af2 wrr group 1 weight 25 -> queue ef wrr group 1 weight 35",
+      "错误的配置": "queue ef wrr group 1 weight 35 -> queue af2 wrr group 1 weight 25",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误",
+      "配置块序号": 7
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 1,
+      "正确的配置": "sbfd local-discriminator <*>",
+      "错误的配置": "sbfd local-discriminator <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1行被重复，冗余语句",
+      "配置块序号": 8
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 1,
+      "正确的配置": "ssh server enable -> ssh server ipv6 acl ipv6 2577",
+      "错误的配置": "ssh server ipv6 acl ipv6 2577 -> ssh server enable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误",
+      "配置块序号": 9
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 3,
+      "正确的配置": "user-role network-admin",
+      "错误的配置": "user-role netwrk-admin",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误",
+      "配置块序号": 10
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 3,
+      "正确的配置": "bfd min-receive-interval 1000",
+      "错误的配置": "bfd min-receive-intervla 1000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误",
+      "配置块序号": 11
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 6,
+      "正确的配置": "control-tunnel-down switchover delay 5",
+      "错误的配置": "control-tunnel-down switchover delay 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配",
+      "配置块序号": 12
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 1,
+      "正确的配置": "ip vpn-instance CTVPN-CTC-NMAN",
+      "错误的配置": "ip vpn-instance <*>",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: <*>",
+      "配置块序号": 13
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 9,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致",
+      "配置块序号": 14
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 2,
+      "正确的配置": "description <*>",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 15
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 4,
+      "正确的配置": "import-route bgp <*> route-policy <*>",
+      "错误的配置": "export-route bgp <*> route-policy <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）",
+      "配置块序号": 16
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 2,
+      "正确的配置": "bind nat-instance <*>",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 17
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 1,
+      "正确的配置": "ip vpn-instance CP2UP_L3VPN_H3C",
+      "错误的配置": "ip vpn-instance <*>",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: <*>",
+      "配置块序号": 18
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 5,
+      "正确的配置": "segment-routing ipv6 best-effort",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 19
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 3,
+      "正确的配置": "ip address <IPV4> 255.255.255.255",
+      "错误的配置": "ip address 255.255.255.255 255.255.255.255",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 255.255.255.255）",
+      "配置块序号": 20
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 1,
+      "正确的配置": "ip prefix-list <*> index <*> permit <*> <*> less-equal <*>",
+      "错误的配置": "ip prefix-list <*> index <*> permit <*> <*> less-equal <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1行被重复，冗余语句",
+      "配置块序号": 21
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 1,
+      "正确的配置": "ip prefix-list <*> index <*> permit <*> <*> -> ip prefix-list <*> index <*> permit <*> <*> less-equal <*>",
+      "错误的配置": "ip prefix-list <*> index <*> permit <*> <*> less-equal <*> -> ip prefix-list <*> index <*> permit <*> <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误",
+      "配置块序号": 22
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 1,
+      "正确的配置": "ip vpn-instance CP2UP_L3VPN_H3C",
+      "错误的配置": "ip vpn-instance <*>",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: <*>",
+      "配置块序号": 23
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 4,
+      "正确的配置": "nat address-group <*> bind-ip-pool <*>",
+      "错误的配置": "nat address-group <*> bind-ip-pool <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第4行被重复，冗余语句",
+      "配置块序号": 24
+    }
+  ]
+}

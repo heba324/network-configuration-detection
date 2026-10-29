@@ -1,0 +1,1295 @@
+{
+  "vendor": "zte",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "SEMANTIC_INCONSISTENCY",
+  "错误类型别名": [
+    "SEMANTIC_INCONSISTENCY"
+  ],
+  "错误类型描述": "语义不一致（shutdown/enable/active 等运行语义矛盾）",
+  "实际模板占比": "12.04%",
+  "数据集调整占比": "10.00%",
+  "错误数量": 160,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 3778,
+      "正确的配置": "bgp nexthop recursive-lookup default-route disable",
+      "错误的配置": "bgp nexthop recursive-lookup default-route enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 4383,
+      "正确的配置": "neighbor <*> activate disable",
+      "错误的配置": "neighbor <*> activate enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 1854,
+      "正确的配置": "synchronization disable",
+      "错误的配置": "synchronization enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 2785,
+      "正确的配置": "no shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 833,
+      "正确的配置": "neighbor pgToRR activate disable",
+      "错误的配置": "neighbor pgToRR activate enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 5933,
+      "正确的配置": "ssh server encryption none disable",
+      "错误的配置": "ssh server encryption none enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 4344,
+      "正确的配置": "neighbor pgToCloudLeaf activate disable",
+      "错误的配置": "neighbor pgToCloudLeaf activate enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 1833,
+      "正确的配置": "logging trap-enable informational",
+      "错误的配置": "logging trap-disable informational",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 255,
+      "正确的配置": "smartgroup <*> mode active",
+      "错误的配置": "smartgroup <*> mode standby",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 1904,
+      "正确的配置": "synchronization disable",
+      "错误的配置": "synchronization enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 5856,
+      "正确的配置": "enable",
+      "错误的配置": "disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 2643,
+      "正确的配置": "ip unreachable disable",
+      "错误的配置": "ip unreachable enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 5770,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 5709,
+      "正确的配置": "no shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 1241,
+      "正确的配置": "neighbor 240e:187:8188::5 activate disable",
+      "错误的配置": "neighbor 240e:187:8188::5 activate enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 2520,
+      "正确的配置": "local-buffer enable",
+      "错误的配置": "local-buffer disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 493,
+      "正确的配置": "srv6 global enable",
+      "错误的配置": "srv6 global disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 4950,
+      "正确的配置": "mpls l2vpn enable",
+      "错误的配置": "mpls l2vpn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 54,
+      "正确的配置": "no shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 2317,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 3894,
+      "正确的配置": "segment-routing srv6 enable",
+      "错误的配置": "segment-routing srv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 3606,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 5194,
+      "正确的配置": "no shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 5815,
+      "正确的配置": "strong-password check disable",
+      "错误的配置": "strong-password check enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 2143,
+      "正确的配置": "evpn auto-originate-route disable",
+      "错误的配置": "evpn auto-originate-route enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 1673,
+      "正确的配置": "terminal-mode enable",
+      "错误的配置": "terminal-mode disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 879,
+      "正确的配置": "bgp nexthop recursive-lookup srv6-sid enable",
+      "错误的配置": "bgp nexthop recursive-lookup srv6-sid disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 5120,
+      "正确的配置": "route-reoriginate l3vpn-to-evpn disable",
+      "错误的配置": "route-reoriginate l3vpn-to-evpn enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 3270,
+      "正确的配置": "arp-safeguard enable",
+      "错误的配置": "arp-safeguard disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 3899,
+      "正确的配置": "ip route vrf CTVPN-CTC-NMAN <*> 255.255.255.255 <*> <*> bfd enable name <*>",
+      "错误的配置": "ip route vrf CTVPN-CTC-NMAN <*> 255.255.255.255 <*> <*> bfd disable name <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 4765,
+      "正确的配置": "bgp nexthop recursive-lookup srv6-sid enable",
+      "错误的配置": "bgp nexthop recursive-lookup srv6-sid disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 1633,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 5364,
+      "正确的配置": "bgp nexthop recursive-lookup null1 disable",
+      "错误的配置": "bgp nexthop recursive-lookup null1 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 857,
+      "正确的配置": "neighbor pgToRR-v6 srv6-arg-shift disable",
+      "错误的配置": "neighbor pgToRR-v6 srv6-arg-shift enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 4322,
+      "正确的配置": "synchronization disable",
+      "错误的配置": "synchronization enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 4492,
+      "正确的配置": "bgp nexthop recursive-lookup default-route disable",
+      "错误的配置": "bgp nexthop recursive-lookup default-route enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 1983,
+      "正确的配置": "segment-routing srv6 enable",
+      "错误的配置": "segment-routing srv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 5455,
+      "正确的配置": "bgp nexthop recursive-lookup default-route disable",
+      "错误的配置": "bgp nexthop recursive-lookup default-route enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 2531,
+      "正确的配置": "local-buffer enable",
+      "错误的配置": "local-buffer disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 5861,
+      "正确的配置": "port-range enable 4096",
+      "错误的配置": "port-range disable 4096",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 1018,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 3749,
+      "正确的配置": "synchronization disable",
+      "错误的配置": "synchronization enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 1957,
+      "正确的配置": "segment-routing srv6 enable",
+      "错误的配置": "segment-routing srv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 1390,
+      "正确的配置": "bgp nexthop recursive-lookup srv6-sid enable",
+      "错误的配置": "bgp nexthop recursive-lookup srv6-sid disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 119,
+      "正确的配置": "no shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 1136,
+      "正确的配置": "mpls l2vpn enable",
+      "错误的配置": "mpls l2vpn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 1954,
+      "正确的配置": "microloop-prevention segment-routing srv6 enable",
+      "错误的配置": "microloop-prevention segment-routing srv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 1251,
+      "正确的配置": "bgp nexthop recursive-lookup null1 disable",
+      "错误的配置": "bgp nexthop recursive-lookup null1 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 5925,
+      "正确的配置": "ip icmp timestamp-reply disable",
+      "错误的配置": "ip icmp timestamp-reply enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 5942,
+      "正确的配置": "netconf agent enable",
+      "错误的配置": "netconf agent disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 2648,
+      "正确的配置": "ssh server diffie-hellman group-exchange-sha1 disable",
+      "错误的配置": "ssh server diffie-hellman group-exchange-sha1 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 1005,
+      "正确的配置": "ipv6 link-damped adj-establish enable",
+      "错误的配置": "ipv6 link-damped adj-establish disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 1575,
+      "正确的配置": "bfd-enable",
+      "错误的配置": "bfd-disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 5883,
+      "正确的配置": "port-range enable 4096",
+      "错误的配置": "port-range disable 4096",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 897,
+      "正确的配置": "bgp nexthop recursive-lookup default-route disable",
+      "错误的配置": "bgp nexthop recursive-lookup default-route enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 1534,
+      "正确的配置": "link-damped adj-establish enable",
+      "错误的配置": "link-damped adj-establish disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 5876,
+      "正确的配置": "port-range enable 4096",
+      "错误的配置": "port-range disable 4096",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 2656,
+      "正确的配置": "ssh server hmac md5 disable",
+      "错误的配置": "ssh server hmac md5 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 5868,
+      "正确的配置": "port-range enable 4096",
+      "错误的配置": "port-range disable 4096",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 1337,
+      "正确的配置": "microloop-prevention segment-routing srv6 enable",
+      "错误的配置": "microloop-prevention segment-routing srv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 423,
+      "正确的配置": "ssh server encryption none disable",
+      "错误的配置": "ssh server encryption none enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 417,
+      "正确的配置": "ssh server diffie-hellman group1-sha1 disable",
+      "错误的配置": "ssh server diffie-hellman group1-sha1 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 917,
+      "正确的配置": "bgp nexthop recursive-lookup srv6-sid enable",
+      "错误的配置": "bgp nexthop recursive-lookup srv6-sid disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 4127,
+      "正确的配置": "bgp ipv4-unicast-config independent enable",
+      "错误的配置": "bgp ipv4-unicast-config independent disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 5699,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 1000,
+      "正确的配置": "bfd-enable",
+      "错误的配置": "bfd-disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 1603,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 6312,
+      "正确的配置": "ipv6 bfd-enable",
+      "错误的配置": "ipv6 bfd-disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 5063,
+      "正确的配置": "bgp nexthop recursive-lookup null1 disable",
+      "错误的配置": "bgp nexthop recursive-lookup null1 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 1325,
+      "正确的配置": "fast-reroute lfa enable",
+      "错误的配置": "fast-reroute lfa disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 983,
+      "正确的配置": "segment-routing srv6 enable",
+      "错误的配置": "segment-routing srv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 1409,
+      "正确的配置": "bgp nexthop recursive-lookup null1 disable",
+      "错误的配置": "bgp nexthop recursive-lookup null1 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 6256,
+      "正确的配置": "bgp nexthop recursive-lookup default-route disable",
+      "错误的配置": "bgp nexthop recursive-lookup default-route enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 103,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 420,
+      "正确的配置": "ssh server encryption aes192-cbc disable",
+      "错误的配置": "ssh server encryption aes192-cbc enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 6140,
+      "正确的配置": "synchronization disable",
+      "错误的配置": "synchronization enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 4358,
+      "正确的配置": "neighbor pgToMER activate disable",
+      "错误的配置": "neighbor pgToMER activate enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 4834,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 3669,
+      "正确的配置": "tacacs enable",
+      "错误的配置": "tacacs disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 408,
+      "正确的配置": "ip source-route disable",
+      "错误的配置": "ip source-route enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 81,
+      "错误行号": 5547,
+      "正确的配置": "te-link-delay enable",
+      "错误的配置": "te-link-delay disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 82,
+      "错误行号": 62,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 2735,
+      "正确的配置": "snmp-server version v2c enable",
+      "错误的配置": "snmp-server version v2c disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 84,
+      "错误行号": 2657,
+      "正确的配置": "ssh server hmac none disable",
+      "错误的配置": "ssh server hmac none enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 2540,
+      "正确的配置": "local-buffer enable",
+      "错误的配置": "local-buffer disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 86,
+      "错误行号": 1678,
+      "正确的配置": "terminal-mode enable",
+      "错误的配置": "terminal-mode disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 4763,
+      "正确的配置": "bgp nexthop recursive-lookup default-route disable",
+      "错误的配置": "bgp nexthop recursive-lookup default-route enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 88,
+      "错误行号": 5785,
+      "正确的配置": "lacp admin-status-linkage enable",
+      "错误的配置": "lacp admin-status-linkage disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 5344,
+      "正确的配置": "neighbor pgToCR-V6 activate disable",
+      "错误的配置": "neighbor pgToCR-V6 activate enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 90,
+      "错误行号": 6030,
+      "正确的配置": "arp-safeguard enable",
+      "错误的配置": "arp-safeguard disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 91,
+      "错误行号": 2649,
+      "正确的配置": "ssh server diffie-hellman group1-sha1 disable",
+      "错误的配置": "ssh server diffie-hellman group1-sha1 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 2663,
+      "正确的配置": "server disable",
+      "错误的配置": "server enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 93,
+      "错误行号": 582,
+      "正确的配置": "mpls l2vpn enable",
+      "错误的配置": "mpls l2vpn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 3479,
+      "正确的配置": "user-consistency-verify enable",
+      "错误的配置": "user-consistency-verify disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 95,
+      "错误行号": 830,
+      "正确的配置": "bgp nexthop recursive-lookup srv6-sid enable",
+      "错误的配置": "bgp nexthop recursive-lookup srv6-sid disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 96,
+      "错误行号": 5355,
+      "正确的配置": "neighbor <*> activate disable",
+      "错误的配置": "neighbor <*> activate enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 3794,
+      "正确的配置": "bgp nexthop recursive-lookup srv6-sid enable",
+      "错误的配置": "bgp nexthop recursive-lookup srv6-sid disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 98,
+      "错误行号": 3898,
+      "正确的配置": "ip route vrf CP2UP_L3VPN_ZTE <*> 255.255.255.255 <*> <*> bfd enable name <*>",
+      "错误的配置": "ip route vrf CP2UP_L3VPN_ZTE <*> 255.255.255.255 <*> <*> bfd disable name <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 99,
+      "错误行号": 3761,
+      "正确的配置": "neighbor pgToRR activate disable",
+      "错误的配置": "neighbor pgToRR activate enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 100,
+      "错误行号": 424,
+      "正确的配置": "ssh server hmac md5 disable",
+      "错误的配置": "ssh server hmac md5 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 101,
+      "错误行号": 4387,
+      "正确的配置": "neighbor <*> activate disable",
+      "错误的配置": "neighbor <*> activate enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 6188,
+      "正确的配置": "synchronization disable",
+      "错误的配置": "synchronization enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 4368,
+      "正确的配置": "neighbor pgToSpine activate disable",
+      "错误的配置": "neighbor pgToSpine activate enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 104,
+      "错误行号": 323,
+      "正确的配置": "ntp enable",
+      "错误的配置": "ntp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 2291,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 554,
+      "正确的配置": "snmp-server enable trap <*>",
+      "错误的配置": "snmp-server disable trap <*>",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 107,
+      "错误行号": 1423,
+      "正确的配置": "bgp nexthop recursive-lookup default-route disable",
+      "错误的配置": "bgp nexthop recursive-lookup default-route enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 108,
+      "错误行号": 1240,
+      "正确的配置": "neighbor <*> activate disable",
+      "错误的配置": "neighbor <*> activate enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 109,
+      "错误行号": 6315,
+      "正确的配置": "ipv6 link-damped adj-establish enable",
+      "错误的配置": "ipv6 link-damped adj-establish disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 4359,
+      "正确的配置": "neighbor pgToMER-v6 activate disable",
+      "错误的配置": "neighbor pgToMER-v6 activate enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 894,
+      "正确的配置": "esi-index ignore-rd enable",
+      "错误的配置": "esi-index ignore-rd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 112,
+      "错误行号": 5330,
+      "正确的配置": "synchronization disable",
+      "错误的配置": "synchronization enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 113,
+      "错误行号": 1012,
+      "正确的配置": "link-damped adj-establish enable",
+      "错误的配置": "link-damped adj-establish disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 114,
+      "错误行号": 1341,
+      "正确的配置": "segment-routing srv6 enable",
+      "错误的配置": "segment-routing srv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 115,
+      "错误行号": 3793,
+      "正确的配置": "bgp nexthop recursive-lookup null1 disable",
+      "错误的配置": "bgp nexthop recursive-lookup null1 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 3282,
+      "正确的配置": "per-mac-multi-ipv4 disable",
+      "错误的配置": "per-mac-multi-ipv4 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 117,
+      "错误行号": 1510,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 118,
+      "错误行号": 4340,
+      "正确的配置": "neighbor pgToBorderLeaf-v6 activate disable",
+      "错误的配置": "neighbor pgToBorderLeaf-v6 activate enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 119,
+      "错误行号": 558,
+      "正确的配置": "snmp-server version v2c enable",
+      "错误的配置": "snmp-server version v2c disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 120,
+      "错误行号": 5657,
+      "正确的配置": "evpn auto-originate-route disable",
+      "错误的配置": "evpn auto-originate-route enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 3779,
+      "正确的配置": "bgp nexthop recursive-lookup null1 disable",
+      "错误的配置": "bgp nexthop recursive-lookup null1 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 3874,
+      "正确的配置": "is-type level-2-only",
+      "错误的配置": "is-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 5848,
+      "正确的配置": "alg ftp enable icmp enable rtsp enable pptp enable",
+      "错误的配置": "alg ftp disable icmp enable rtsp enable pptp enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 5059,
+      "正确的配置": "esi-index ignore-rd enable",
+      "错误的配置": "esi-index ignore-rd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 2650,
+      "正确的配置": "ssh server encryption 3des-cbc disable",
+      "错误的配置": "ssh server encryption 3des-cbc enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 5717,
+      "正确的配置": "no shutdown",
+      "错误的配置": "shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 1540,
+      "正确的配置": "bfd-enable",
+      "错误的配置": "bfd-disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 128,
+      "错误行号": 5962,
+      "正确的配置": "srv6 global enable",
+      "错误的配置": "srv6 global disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 1009,
+      "正确的配置": "circuit-type level-2-only",
+      "错误的配置": "circuit-type level-1-only",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 5114,
+      "正确的配置": "route-reoriginate l3vpn-to-evpn disable",
+      "错误的配置": "route-reoriginate l3vpn-to-evpn enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 131,
+      "错误行号": 1147,
+      "正确的配置": "bgp ipv4-unicast-config independent enable",
+      "错误的配置": "bgp ipv4-unicast-config independent disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 1092,
+      "正确的配置": "evpn auto-originate-route disable",
+      "错误的配置": "evpn auto-originate-route enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 133,
+      "错误行号": 5645,
+      "正确的配置": "evpn auto-originate-route disable",
+      "错误的配置": "evpn auto-originate-route enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 134,
+      "错误行号": 416,
+      "正确的配置": "ssh server diffie-hellman group-exchange-sha1 disable",
+      "错误的配置": "ssh server diffie-hellman group-exchange-sha1 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 4392,
+      "正确的配置": "bgp nexthop recursive-lookup null1 disable",
+      "错误的配置": "bgp nexthop recursive-lookup null1 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 3890,
+      "正确的配置": "microloop-prevention segment-routing srv6 enable",
+      "错误的配置": "microloop-prevention segment-routing srv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 137,
+      "错误行号": 569,
+      "正确的配置": "mpls l2vpn enable",
+      "错误的配置": "mpls l2vpn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 138,
+      "错误行号": 5115,
+      "正确的配置": "route-reoriginate evpn-to-l3vpn disable",
+      "错误的配置": "route-reoriginate evpn-to-l3vpn enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 139,
+      "错误行号": 4589,
+      "正确的配置": "bgp nexthop recursive-lookup default-route disable",
+      "错误的配置": "bgp nexthop recursive-lookup default-route enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 140,
+      "错误行号": 1843,
+      "正确的配置": "netconf agent enable",
+      "错误的配置": "netconf agent disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 968,
+      "正确的配置": "fast-reroute lfa enable",
+      "错误的配置": "fast-reroute lfa disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 142,
+      "错误行号": 1528,
+      "正确的配置": "ipv6 link-damped adj-establish enable",
+      "错误的配置": "ipv6 link-damped adj-establish disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 143,
+      "错误行号": 6058,
+      "正确的配置": "bgp ipv4-unicast-config independent enable",
+      "错误的配置": "bgp ipv4-unicast-config independent disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 144,
+      "错误行号": 5922,
+      "正确的配置": "ip fragment enable",
+      "错误的配置": "ip fragment disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 5934,
+      "正确的配置": "ssh server encryption 3des-cbc disable",
+      "错误的配置": "ssh server encryption 3des-cbc enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 146,
+      "错误行号": 5789,
+      "正确的配置": "lacp admin-status-linkage enable",
+      "错误的配置": "lacp admin-status-linkage disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 147,
+      "错误行号": 5042,
+      "正确的配置": "synchronization disable",
+      "错误的配置": "synchronization enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 1250,
+      "正确的配置": "bgp nexthop recursive-lookup default-route disable",
+      "错误的配置": "bgp nexthop recursive-lookup default-route enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 6214,
+      "正确的配置": "bgp nexthop recursive-lookup null1 disable",
+      "错误的配置": "bgp nexthop recursive-lookup null1 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 2639,
+      "正确的配置": "ip source-route disable",
+      "错误的配置": "ip source-route enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 151,
+      "错误行号": 2736,
+      "正确的配置": "snmp-server version v3 enable",
+      "错误的配置": "snmp-server version v3 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 152,
+      "错误行号": 1693,
+      "正确的配置": "terminal-mode enable",
+      "错误的配置": "terminal-mode disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 153,
+      "错误行号": 5936,
+      "正确的配置": "ssh server hmac none disable",
+      "错误的配置": "ssh server hmac none enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 154,
+      "错误行号": 926,
+      "正确的配置": "synchronization disable",
+      "错误的配置": "synchronization enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 6327,
+      "正确的配置": "ip route vrf VPDN <*> <*> <*> <*> bfd enable name Default-route-for-LAC-to-LNS",
+      "错误的配置": "ip route vrf VPDN <*> <*> <*> <*> bfd disable name Default-route-for-LAC-to-LNS",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 2391,
+      "正确的配置": "enable",
+      "错误的配置": "disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 1246,
+      "正确的配置": "esi-index ignore-rd enable",
+      "错误的配置": "esi-index ignore-rd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 1424,
+      "正确的配置": "bgp nexthop recursive-lookup null1 disable",
+      "错误的配置": "bgp nexthop recursive-lookup null1 enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 4393,
+      "正确的配置": "bgp nexthop recursive-lookup srv6-sid enable",
+      "错误的配置": "bgp nexthop recursive-lookup srv6-sid disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 160,
+      "错误行号": 1296,
+      "正确的配置": "bgp nexthop recursive-lookup srv6-sid enable",
+      "错误的配置": "bgp nexthop recursive-lookup srv6-sid disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    }
+  ]
+}

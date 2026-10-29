@@ -1,0 +1,4496 @@
+interface <*>
+mtu 9000
+description <DESCRIPTION>
+ipv6 enable
+ipv6 mtu 9000
+mac-address <*>
+mode lacp-static
+e-trunk <*>
+timer es-recovery 90
+#
+ssh client first-time enable
+ssh client peer <*> assign rsa-key <*>
+#
+ipv6-family vpnv6
+policy vpn-target
+nexthop recursive-lookup <*> <*>
+bestroute nexthop-resolved tunnel
+bestroute add-path path-number 16
+peer <*> enable
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+#
+ospf 704 router-id <IPV4> vpn-instance CP2UP_L3VPN_HW
+description <DESCRIPTION>
+bfd all-interfaces enable
+bfd all-interfaces min-tx-interval 500 min-rx-interval 500 detect-multiplier 4
+import-route <*>
+spf-schedule-interval intelligent-timer 50 50 50
+lsa-originate-interval intelligent-timer 500 50 100
+lsa-arrival-interval intelligent-timer 50 50 50
+opaque-capability enable
+vpn-instance-capability simple
+area <IPV4>
+network <IPV4> <IPV4>
+#
+vpn-instance <*>
+peer <*> as-number <*>
+peer <*> ebgp-max-hop <*>
+peer <*> connect-interface <*>
+peer <*> as-number <*>
+peer <*> ebgp-max-hop <*>
+peer <*> connect-interface <*>
+peer <*> as-number <*>
+peer <*> ebgp-max-hop <*>
+peer <*> connect-interface <*>
+peer <*> as-number <*>
+peer <*> ebgp-max-hop <*>
+peer <*> connect-interface <*>
+#
+ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*>
+#
+remote-backup-profile <*>
+service-type igmp
+backup-id <*> remote-backup-service <*>
+peer-backup hot
+e-trunk <*> eth-trunk <*>
+#
+interface <*>
+mtu 9000
+description <DESCRIPTION>
+ipv6 enable
+ipv6 mtu 9000
+mac-address <*>
+mode lacp-static
+e-trunk <*>
+es track bfd <DEVICE>
+esi <*>
+timer es-recovery 90
+#
+interface <*>
+mtu 9000
+description <DESCRIPTION>
+ipv6 enable
+ipv6 mtu 9000
+track monitor-group leaf-to-spine trigger-down-weight <*>
+mac-address <*>
+mode lacp-static
+e-trunk <*>
+e-trunk mode force-master
+lacp system-id <*>
+es track bfd <DEVICE>
+esi <*>
+timer es-recovery 90
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+access-type layer2-subscriber default-domain pre-authentication <*> authentication <*>
+nas-port-type <*>
+dhcp session-mismatch action offline
+authentication-method <*>
+user detect retransmit <*> interval <*>
+#
+acl number <*>
+description <DESCRIPTION>
+step <*>
+rule <*> permit source <IPV4> <*>
+rule <*> deny
+#
+tunnel-policy <*>
+tunnel select-seq cr-lsp load-balance-number 1
+tunnel select-seq ipv6 srv6-te-policy load-balance-number 1
+#
+isis 800
+is-level level-2
+cost-style wide
+bfd all-interfaces enable
+bfd all-interfaces min-tx-interval 30 min-rx-interval 30 frr-binding
+bgp-ls enable <*>
+network-entity <*>
+is-name <DEVICE>
+preference 105
+timer spf 1 50 50
+traffic-eng level-1-2
+timer lsp-max-age 65535
+timer lsp-refresh 32768
+set-overload on-startup route-delay-distribute 60
+frr
+loop-free-alternate level-1
+loop-free-alternate level-2
+ti-lfa level-1
+ti-lfa level-2
+#
+interface <*>
+ipv6 enable
+ipv6 address auto link-local
+statistic enable
+user-vlan <*> <*> qinq <*> <*>
+pim sm
+igmp enable
+igmp prompt-leave
+cu-mode
+multicast copy by-session
+#
+evpn vpn-instance <*> bd-mode
+route-distinguisher <*>
+segment-routing ipv6 best-effort
+mac-duplication disable
+segment-routing ipv6 locator <*>
+etree enable
+vpn-target <*> export-extcommunity
+vpn-target <*> import-extcommunity
+#
+interface <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+ip address <IPV4> <IPV4>
+ospf cost 1000
+ospf dr-priority 0
+ospf <*>
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis small-hello
+isis peer hold-max-cost timer <*>
+mpls
+mpls ldp
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+up <*>
+netconf-client enable
+bind netconf-connection <*>
+control-tunnel cusp-agent <*>
+protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW
+protocol-tunnel track nqa counter 8 recovery-count 1 interval 1 timeout 1 udp-port 65000 plr 5 10
+remote up-board <*>
+#
+slot <*>
+load-balance identify pppoe
+cpu-defend-policy 1
+#
+ipv6-family vpn-instance <*>
+maximum load-balancing <*>
+nexthop recursive-lookup non-critical-event delay 0
+bestroute nexthop-priority ipv6
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer best-effort evpn
+peer <*> enable
+peer <*> route-policy <*> import
+peer <*> route-policy <*> export
+#
+ipv4-family vpn-instance <*>
+network <IPV4> <IPV4>
+maximum load-balancing eibgp <*>
+bestroute nexthop-priority ipv6
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer best-effort evpn
+#
+interface <*>
+description <DESCRIPTION>
+shutdown
+user-vlan <*> <*> qinq <*>
+user-vlan <*> <*> qinq <*> <*>
+user-vlan <*> <*> qinq <*>
+bas
+#
+dap-server ip pool <*>
+subnet warning-threshold <*>
+subnet warning-exhaust
+network <IPV4> <*> subnet length <*>
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+pim sm
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis small-hello
+isis peer hold-max-cost timer <*>
+mpls
+mpls ldp
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+ssh client first-time enable
+ssh client peer <*> assign rsa-key <*>
+sftp client-source -a <IPV4> -vpn-instance <*>
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+pim sm
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis peer hold-max-cost timer <*>
+mpls
+mpls ldp
+#
+ipv6 pool <*> bas delegation
+dns-server <IPV6> <IPV6>
+prefix <*>
+#
+subscription <*>
+local-source-address ipv4 <IPV4> port 1445
+sensor-group <*> sample-interval <*>
+destination-group <*>
+#
+interface <*>
+vlan-type dot1q <*>
+mtu 1600
+description <*>
+set flow-stat interval 30
+control-flap
+ip binding vpn-instance <*>
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 1600
+statistic enable
+trust upstream <*>
+arp-proxy enable
+ip netstream inbound
+ipv6 netstream inbound
+qos phb dscp disable
+#
+interface <INTERFACE> mode l2
+statistic enable mode single
+encapsulation dot1q vid <*> to <*>
+trust upstream <*>
+trust 8021p
+qos-profile <*> inbound identifier none
+qos phb dscp disable
+#
+interface <*>
+vlan-type dot1q <*>
+mtu 9000
+description <DESCRIPTION>
+ipv6 enable
+ip address <IPV4> <IPV4>
+#
+domain <*>
+authentication-scheme <*>
+accounting-scheme <*>
+radius-server group <*>
+ip-pool <*>
+user-group <*>
+ip-warning-threshold 95
+multicast max-list 1
+multicast-profile <*>
+qos rate-limit-mode car inbound
+qos rate-limit-mode car outbound
+trust upstream <*>
+user-priority upstream <*>
+user-priority downstream <*>
+#
+mac-duplication
+black-hole-dup-mac
+#
+dap-server ip pool <*>
+network <IPV4> <*> subnet length <*>
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+description <DESCRIPTION>
+undo shutdown
+undo dcn
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+statistic enable
+#
+segment-routing ipv6
+timer end-x update-delay 60000
+path-mtu 9000
+encapsulation source-address <IPV6>
+locator <*> ipv6-prefix <IPV6> <*> static 12 args 16
+opcode <IPV6> end-op
+locator <*> ipv6-prefix <IPV6> <*> static 12 args 16
+opcode <IPV6> end-op
+locator <*> ipv6-prefix <IPV6> <*> static 12 args 16
+opcode <IPV6> end-op
+locator <*> ipv6-prefix <IPV6> <*> static 12 args 16
+opcode <IPV6> end-op
+locator <*> ipv6-prefix <IPV6> <*> static 12 args 16
+opcode <IPV6> end-op
+srv6-te-policy bfd seamless enable
+srv6-te-policy <*> enable
+#
+interface <*>
+vlan-type dot1q <*>
+mtu 9000
+description <DESCRIPTION>
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 mtu 9000
+trust upstream <*>
+qos phb dscp disable
+#
+interface <*>
+description <DESCRIPTION>
+undo enable snmp trap updown
+ip binding vpn-instance <*>
+ipv6 enable
+ip address <IPV4> <IPV4>
+statistic enable
+encapsulation qinq-termination
+qinq termination pe-vid <*> ce-vid <*>
+arp broadcast enable
+traffic-policy <*> outbound
+ipv6 nd ns multicast-enable
+qos-profile <*> inbound pe-vid <*> ce-vid <*> identifier none
+qos-profile <*> outbound pe-vid <*> ce-vid <*> identifier none
+ip urpf strict
+#
+bgp <*>
+router-id <IPV4>
+graceful-restart
+graceful-restart peer-reset
+peer <*> as-number <*>
+peer <*> description <*>
+peer <*> ebgp-max-hop <*>
+peer <*> connect-interface <*>
+peer <*> as-number <*>
+peer <*> description <*>
+peer <*> ebgp-max-hop <*>
+peer <*> connect-interface <*>
+group <*> <*>
+peer <*> bfd min-tx-interval <*> min-rx-interval <*> detect-multiplier <*>
+peer <*> bfd enable
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> connect-interface <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> tracking delay 30
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> tracking delay 30
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+#
+nqa twamp-light
+client
+test-session <*> sender-ip <IPV4> reflector-ip <IPV4> sender-port <*> reflector-port <*>
+sender
+test start-continual test-session <*> period 1000
+responder
+#
+ospf <*> vpn-instance <*>
+description <DESCRIPTION>
+bfd all-interfaces enable
+bfd all-interfaces min-tx-interval 500 min-rx-interval 500 detect-multiplier 4
+spf-schedule-interval intelligent-timer 50 50 50
+lsa-originate-interval intelligent-timer 500 50 100
+lsa-arrival-interval intelligent-timer 50 50 50
+opaque-capability enable
+vpn-instance-capability simple
+virtual-system enable
+area <IPV4>
+network <IPV4> <IPV4>
+#
+interface <INTERFACE> mode l2
+description <DESCRIPTION>
+statistic enable mode single
+trust upstream <*>
+trust 8021p
+qos-profile <*> inbound identifier none
+#
+user-interface vty 0 <*>
+authentication-mode <*>
+#
+route-policy <*> permit node <*>
+if-match ip-prefix <*>
+apply local-preference <*>
+#
+interface <*>
+vlan-type dot1q <*>
+ip address unnumbered interface LoopBack1
+statistic enable
+trust upstream <*>
+pim sm
+igmp enable
+remote-backup-profile <*>
+trust 8021p
+#
+domain <*>
+authentication-scheme <*>
+accounting-scheme <*>
+radius-server group <*>
+prefix-assign-mode unshared
+ip-pool <*>
+ipv6-pool <*>
+user-group <*>
+l2tp-user radius-force
+ip-warning-threshold 100
+user-basic-service-ip-type ipv4
+qos rate-limit-mode car inbound
+qos rate-limit-mode car outbound
+trust upstream <*>
+user-priority upstream <*>
+user-priority downstream <*>
+#
+acl number <*>
+description <DESCRIPTION>
+step <*>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> description <DESCRIPTION>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> description <DESCRIPTION>
+rule <*> permit source <IPV4> <*>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> permit source <IPV4> <*>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> description <DESCRIPTION>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> description <DESCRIPTION>
+rule <*> deny
+#
+diffserv domain <*>
+ip-dscp-outbound af1 green map 8
+ip-dscp-outbound af2 green map 16
+ip-dscp-outbound af3 green map 24
+ip-dscp-outbound af4 green map 32
+ip-dscp-outbound ef green map 40
+#
+ipv6 route-static bfd <*> <IPV6> local-address <IPV6> min-tx-interval 100 min-rx-interval 100 detect-multiplier 5
+ipv6 route-static <IPV6> 128 <*> <IPV6> bfd enable description <*>
+ipv6 route-static vpn-instance 2B_RAN <IPV6> 0 <INTERFACE> <IPV6> track bfd-session <*>
+ipv6 route-static vpn-instance <*> <IPV6> 128 <IPV6>
+ipv6 route-static vpn-instance <*> <IPV6> 128 <*> <IPV6> bfd enable description <*>
+#
+license
+active nat session-table size 32 slot <*> engine <*>
+active nat bandwidth-enhance 160 slot <*>
+#
+l2vpn-family evpn
+policy vpn-target
+nexthop recursive-lookup non-critical-event delay 0
+bestroute add-path path-number 16
+peer <*> enable
+peer <*> advertise encap-type srv6 advertise-srv6-locator
+peer <*> advertise-community
+peer <*> advertise evpn mac-route detail-only
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> advertise encap-type srv6 advertise-srv6-locator
+peer <*> advertise arp
+peer <*> advertise-community
+peer <*> esad-route-compatible
+peer <*> route-update-interval 0
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> advertise-large-community
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+#
+bridge-domain <*>
+statistic enable
+evpn binding vpn-instance <*>
+umr originate detail-suppressed
+esi <*>
+#
+ssh client first-time enable
+ssh client peer <*> assign rsa-key <*>
+sftp client-source -i <*>
+#
+dhcp server request-packet all-interface disable
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+pim sm
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis small-hello
+isis ldp-sync
+isis timer ldp-sync hold-max-cost 60
+isis peer hold-max-cost timer <*>
+mpls
+te link administrative group <*>
+te bandwidth max-reservable-bandwidth dynamic 100
+te bandwidth dynamic bc0 100
+mpls ldp
+qos phb disable
+network-slice <*>
+#
+authorization-scheme default
+#
+ip vpn-instance <*>
+description <DESCRIPTION>
+ipv4-family
+route-distinguisher <*>
+export route-policy rpToCloudPE
+apply-label per-instance
+export route-policy <*> evpn
+vpn-target <*> export-extcommunity evpn
+vpn-target <*> export-extcommunity
+vpn-target <*> import-extcommunity evpn
+vpn-target <*> import-extcommunity
+#
+accounting-scheme <*>
+accounting-mode none
+accounting start-fail online
+#
+dap-server ipv6 pool <*>
+prefix <*> subnet length <*>
+#
+acl number <*>
+description <DESCRIPTION>
+step <*>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> description <DESCRIPTION>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> description <DESCRIPTION>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> permit source <IPV4> <*>
+rule <*> description <DESCRIPTION>
+rule <*> permit source <IPV4> <*>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> permit source <IPV4> <*>
+rule <*> deny
+#
+stelnet server enable
+sftp server enable
+snetconf server enable
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type snetconf stelnet
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh server-source -i <*>
+ssh server-source all-interface
+ssh ipv6 server-source all-interface
+ssh server acl 2577
+ssh authorization-type default <*>
+#
+interface <*>
+carrier up-hold-time <*>
+undo shutdown
+eth-trunk <*>
+undo dcn
+undo dcn mode vlan
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+pim sm
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis small-hello
+isis ldp-sync
+isis timer ldp-sync hold-max-cost 60
+isis bfd enable
+isis ipv6 bfd enable
+isis peer hold-max-cost timer <*>
+mpls
+mpls ldp
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+interface <INTERFACE> mode l2
+statistic enable mode single
+encapsulation dot1q vid <*>
+bridge-domain <*>
+trust upstream <*>
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+pim sm
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis small-hello
+isis ldp-sync
+isis timer ldp-sync hold-max-cost 60
+isis peer hold-max-cost timer <*>
+mpls
+mpls ldp
+undo dcn
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+acl number <*>
+description <DESCRIPTION>
+step <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+#
+nat distributed-policy <*>
+#
+interface <*>
+description <DESCRIPTION>
+ppp authentication-mode <*>
+#
+undo user-security-policy enable
+#
+user-interface vty 5 <*>
+acl 2577 inbound
+authentication-mode <*>
+idle-timeout <*> <*>
+#
+interface <*>
+vlan-type dot1q <*>
+mtu 9000
+description <DESCRIPTION>
+ip address <IPV4> <IPV4>
+trust upstream <*>
+ospf cost 1000
+ospf dr-priority 100
+#
+interface <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+ipv4-family vpn-instance <*>
+default-route imported
+preference 20 200 200
+maximum load-balancing <*>
+nexthop recursive-lookup <*> <*>
+nexthop recursive-lookup non-critical-event delay 0
+bestroute nexthop-priority ipv6
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer best-effort evpn
+peer <*> enable
+peer <*> route-policy <*> import
+peer <*> route-policy <*> export
+peer <*> enable
+peer <*> route-policy <*> import
+peer <*> route-policy <*> export
+#
+interface <*>
+description <DESCRIPTION>
+ipv6 enable
+ipv6 address auto link-local
+statistic enable
+user-vlan <*> qinq <*>
+user-vlan <*> qinq <*> <*>
+cu-mode
+#
+ssh client first-time enable
+ssh client peer <*> assign rsa-key <*>
+#
+stelnet server enable
+snetconf server enable
+sftp ipv4 server enable
+sftp server default-directory cfcard:
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type snetconf stelnet
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh server-source all-interface
+ssh ipv6 server-source all-interface
+ssh server acl 2577
+ssh authorization-type default <*>
+#
+set save-configuration interval 1440 cpu-limit 60
+#
+qos-profile <*>
+user-queue cir <*> pir <*>
+#
+interface <*>
+port-speed 100GE
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+description <DESCRIPTION>
+undo shutdown
+undo dcn
+undo dcn mode vlan
+phy-number <*>
+clock synchronization enable
+clock priority <*>
+ptp enable
+#
+flexe enable port <*>
+#
+ipv6 enable topology ipv6
+ipv6 preference 105
+ipv6 bgp-ls enable <*>
+ipv6 advertise link attributes
+ipv6 bfd all-interfaces enable
+ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30 frr-binding
+ipv6 traffic-eng <*>
+ipv6 metric-delay advertisement enable level-2
+segment-routing ipv6 locator <*> auto-sid-disable
+segment-routing ipv6 locator <*>
+segment-routing ipv6 locator <*> auto-sid-disable
+ipv6 avoid-microloop segment-routing
+ipv6 avoid-microloop segment-routing rib-update-delay 10000
+ipv6 filter-policy route-policy <*> import
+ipv6 import-route <*> tag <*> route-policy <*>
+ipv6 frr
+loop-free-alternate level-2
+ti-lfa level-2
+#
+interface <*>
+vlan-type dot1q <*>
+mtu 9178
+description <DESCRIPTION>
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 mtu 9178
+statistic enable
+isis enable 800
+isis 800
+isis circuit-level level-2
+#
+stelnet server enable
+snetconf server enable
+sftp ipv4 server enable
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh server-source all-interface
+ssh ipv6 server-source all-interface
+ssh server acl 2577
+ssh authorization-type default <*>
+#
+bgp <*>
+router-id <IPV4>
+graceful-restart
+graceful-restart peer-reset
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> tracking delay 30
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> tracking delay 30
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+#
+ip vpn-instance <*>
+description <DESCRIPTION>
+vpn-id <*>
+ipv4-family
+route-distinguisher <*>
+vpn frr
+apply-label per-instance
+vpn-target <*> export-extcommunity evpn
+vpn-target <*> export-extcommunity
+vpn-target <*> import-extcommunity evpn
+vpn-target <*> import-extcommunity
+#
+l2tp-group <*>
+tunnel name <*>
+tunnel source up <*> to <*> loopback 6
+#
+bgp <*>
+router-id <IPV4>
+graceful-restart
+graceful-restart peer-reset
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> valid-ttl-hops <*>
+peer <*> bfd min-tx-interval <*> min-rx-interval <*>
+peer <*> bfd enable
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> valid-ttl-hops <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> valid-ttl-hops <*>
+peer <*> bfd min-tx-interval <*> min-rx-interval <*>
+peer <*> bfd enable
+peer <*> tracking delay 30
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> tracking delay 30
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> tracking delay 30
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+#
+interface <*>
+speed auto
+duplex auto
+shutdown
+#
+interface <INTERFACE> mode l2
+mtu 9000
+statistic enable mode single
+encapsulation dot1q vid <*>
+encapsulation dot1q vid <*> to <*>
+bridge-domain <*>
+trust upstream <*>
+trust 8021p
+qos-profile <*> inbound identifier none
+qos phb dscp disable
+#
+ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*>
+#
+ipv4-family unicast
+undo synchronization
+preference 20 200 200
+maximum load-balancing <*>
+bestroute add-path path-number 16
+bestroute nexthop-priority ipv6
+segment-routing ipv6 locator <*>
+undo peer <*> enable
+segment-routing ipv6 best-effort
+undo peer <*> enable
+peer <*> enable
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+#
+interface <*>
+description <DESCRIPTION>
+track monitor-group leaf-to-spine trigger-down-weight <*>
+mode lacp-static
+e-trunk <*>
+e-trunk mode force-master
+es track bfd <DEVICE>
+esi <*>
+timer es-recovery 90
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+stelnet server enable
+snetconf server enable
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type snetconf stelnet
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh server-source all-interface
+ssh ipv6 server-source all-interface
+ssh server acl 2577
+ssh authorization-type default <*>
+#
+dap-server ip pool <*>
+subnet warning-threshold <*>
+network <IPV4> <*> subnet length <*>
+#
+mpls-in-udp
+#
+monitor all-vpn-instance
+route-mode ipv4-family unicast adj-rib-in post-policy
+route-mode ipv4-family unicast adj-rib-out post-policy
+#
+ipv4-family vpn-instance <*>
+preference 130 255 255
+network <IPV4> <IPV4>
+maximum load-balancing <*>
+peer <*> enable
+peer <*> route-policy <*> import
+peer <*> route-policy <*> export
+peer <*> advertise-community
+peer <IPV4> route-update-interval 5
+peer <*> enable
+peer <*> route-policy <*> import
+peer <*> route-policy <*> export
+peer <*> advertise-community
+peer <IPV4> route-update-interval 5
+#
+ip vpn-instance <*>
+ipv4-family
+route-distinguisher <*>
+tnl-policy <*>
+apply-label per-instance
+vpn-target <*> export-extcommunity evpn
+vpn-target <*> export-extcommunity
+vpn-target <*> import-extcommunity evpn
+vpn-target <*> import-extcommunity
+tnl-policy <*> evpn
+default-color <*> evpn
+#
+interface <*>
+description <DESCRIPTION>
+track monitor-group leaf-to-spine trigger-down-weight <*>
+mode lacp-static
+e-trunk <*>
+e-trunk mode force-master
+es track bfd <DEVICE>
+esi <*>
+timer es-recovery 90
+#
+interface <*>
+description <DESCRIPTION>
+undo shutdown
+ipv6 enable
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis peer hold-max-cost timer <*>
+te link administrative group <*>
+te bandwidth max-reservable-bandwidth dynamic 100
+te bandwidth dynamic bc0 100
+qos phb disable
+network-slice <*>
+#
+interface <*>
+vlan-type dot1q <*>
+mtu 9178
+description <*>
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9178
+statistic enable
+trust upstream <*>
+arp-proxy enable
+pim bsr-boundary
+pim sm
+isis enable 800
+isis ipv6 enable 800
+isis silent
+ip netstream inbound
+ipv6 netstream inbound
+qos phb dscp disable
+#
+interface <*>
+description <DESCRIPTION>
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address auto link-local
+encapsulation qinq-termination
+qinq termination pe-vid <*> ce-vid <*>
+arp broadcast enable
+qos-profile <*> inbound pe-vid <*> ce-vid <*> identifier none
+qos-profile <*> outbound pe-vid <*> ce-vid <*> identifier none
+#
+acl number <*>
+description <DESCRIPTION>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> deny
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+description <DESCRIPTION>
+undo shutdown
+undo dcn
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+statistic enable
+statistic mode forward
+#
+interface <*>
+description <DESCRIPTION>
+ipv6 enable
+ipv6 address auto link-local
+user-vlan <*> <*> qinq <*> <*>
+pppoe-server bind Virtual-Template <*>
+ipv6 nd autoconfig other-flag
+bas
+#
+interface <*>
+speed auto
+duplex full
+undo shutdown
+ip address <IPV4> <IPV4>
+#
+interface <*>
+description <DESCRIPTION>
+undo shutdown
+undo dcn
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+acl number <*>
+description <DESCRIPTION>
+step <*>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> description <DESCRIPTION>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> description <DESCRIPTION>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> permit source <IPV4> <*>
+rule <*> description <DESCRIPTION>
+rule <*> permit source <IPV4> <*>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> deny
+#
+stelnet server enable
+sftp server enable
+snetconf server enable
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh server-source all-interface
+ssh ipv6 server-source all-interface
+ssh server acl 2577
+ssh authorization-type default <*>
+#
+clock ssm-control on
+clock ethernet-synchronization enable
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+undo dcn
+#
+disaster-recovery group <*>
+up <*> <*>
+dap-server ip-pool <*>
+dap-server ipv6-pool <*>
+radius-server source interface <*>
+web-auth-server source interface <*>
+switch-mode auto
+priority 90
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 mtu 9000
+trust upstream <*>
+pim sm
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis peer hold-max-cost timer <*>
+mpls
+mpls ldp
+#
+ipv4-family vpn-instance <*>
+preference 130 255 255
+network <IPV4> <IPV4>
+import-route ospf 701 route-policy rpFromospf701
+maximum load-balancing <*>
+peer <*> enable
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+undo dcn
+undo dcn mode vlan
+#
+aaa
+user-password password-force-change disable
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+local-user <*> service-type ssh
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+local-user <*> level <*>
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis ldp-sync
+isis timer ldp-sync hold-max-cost 60
+isis peer hold-max-cost timer <*>
+mpls
+te link administrative group <*>
+te metric <*>
+te bandwidth max-reservable-bandwidth dynamic 100
+te bandwidth dynamic bc0 100
+mpls ldp
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+network-slice <*>
+#
+interface <*>
+statistic enable
+user-vlan <*> qinq <*> <*>
+cu-mode
+#
+aaa
+user-password password-force-change disable
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+local-user <*> service-type telnet ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+#
+interface <*>
+undo shutdown
+undo dcn
+undo dcn mode vlan
+#
+ipv4-family vpn-instance <*>
+preference 130 255 255
+network <IPV4> <IPV4>
+import-route <*>
+maximum load-balancing <*>
+peer <*> enable
+peer <*> advertise-community
+peer <IPV4> route-update-interval 5
+peer <*> enable
+peer <*> advertise-community
+peer <IPV4> route-update-interval 5
+#
+interface <*>
+vlan-type dot1q <*>
+mtu 9178
+description <DESCRIPTION>
+set flow-stat interval 30
+control-flap
+ip binding vpn-instance <*>
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9178
+statistic enable
+trust upstream <*>
+arp-proxy enable
+ip netstream inbound
+ipv6 netstream inbound
+qos phb dscp disable
+#
+stelnet server enable
+snetconf server enable
+ssh server compatible-ssh1x enable
+sftp ipv4 server enable
+sftp server default-directory cfcard:
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh server-source all-interface
+undo ssh ipv6 server-source all-interface
+ssh server acl 2577
+ssh authorization-type default <*>
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis small-hello
+isis peer hold-max-cost timer <*>
+mpls
+te link administrative group <*>
+te bandwidth max-reservable-bandwidth dynamic 100
+te bandwidth dynamic bc0 100
+mpls ldp
+network-slice <*>
+#
+ospf 701 router-id <IPV4> vpn-instance CTVPN-CTC-NMAN
+description <DESCRIPTION>
+default-route-advertise
+bfd all-interfaces enable
+bfd all-interfaces min-tx-interval 500 min-rx-interval 500 detect-multiplier 4
+import-route <*>
+silent-interface <INTERFACE>
+spf-schedule-interval intelligent-timer 50 50 50
+lsa-originate-interval intelligent-timer 500 50 100
+lsa-arrival-interval intelligent-timer 50 50 50
+opaque-capability enable
+vpn-instance-capability simple
+area <IPV4>
+network <IPV4> <IPV4>
+#
+route-policy <*> deny node <*>
+if-match cost greater-equal 65510 less-equal 4294967295
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9178
+description <DESCRIPTION>
+undo shutdown
+ipv6 enable
+ipv6 mtu 9178
+undo dcn
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+isis 800
+is-level level-2
+cost-style wide
+timer lsp-generation 1 50 50 level-2
+bfd all-interfaces enable
+bfd all-interfaces min-tx-interval 30 min-rx-interval 30 frr-binding
+bgp-ls enable <*>
+network-entity <*>
+avoid-microloop frr-protected
+avoid-microloop frr-protected rib-update-delay 5000
+is-name <DEVICE>
+preference 105
+timer spf 1 50 50
+traffic-eng level-2
+timer lsp-max-age 65535
+timer lsp-refresh 32768
+set-overload on-startup send-sa-bit 120
+frr
+loop-free-alternate level-2
+ti-lfa level-2
+#
+nqa twamp-light
+client
+test-session <*> sender-ipv6 <IPV6> reflector-ipv6 <IPV6> sender-port <*> reflector-port <*>
+sender
+test start-continual test-session <*>
+responder
+test-session <*> local-ip <IPV4> remote-ip <IPV4> local-port 6402 remote-port 45700
+test-session <*> local-ipv6 <IPV6> remote-ipv6 <IPV6> local-port <*> remote-port <*>
+#
+ipv6 prefix <*> dynamic
+permit hot-standby up-group master-up-id <*> slave-up-id <*>
+prefix <IPV6>/44 delegating-prefix-length 60
+excluded-ipv6-prefix <IPV6>/60 <IPV6>/60
+#
+ospf 705 router-id <IPV4> vpn-instance CTVPN193-JS
+description <DESCRIPTION>
+default-route-advertise
+bfd all-interfaces enable
+bfd all-interfaces min-tx-interval 500 min-rx-interval 500 detect-multiplier 4
+import-route <*>
+spf-schedule-interval intelligent-timer 50 50 50
+lsa-originate-interval intelligent-timer 500 50 100
+lsa-arrival-interval intelligent-timer 50 50 50
+opaque-capability enable
+vpn-instance-capability simple
+area <IPV4>
+network <IPV4> <IPV4>
+#
+domain <*>
+authentication-scheme <*>
+accounting-scheme <*>
+radius-server group <*>
+prefix-assign-mode unshared
+ip-pool <*>
+l2tp-user radius-force
+nat distributed-policy <*>
+qos rate-limit-mode car inbound
+qos rate-limit-mode car outbound
+trust upstream <*>
+user-priority upstream <*>
+user-priority downstream <*>
+#
+interface <INTERFACE> mode l2
+mtu 9000
+description <DESCRIPTION>
+statistic enable mode single
+encapsulation dot1q vid <*> to <*>
+bridge-domain <*>
+trust upstream <*>
+evpn e-tree-leaf
+trust 8021p
+qos-profile <*> inbound identifier none
+qos phb dscp disable
+#
+aaa
+user-password password-force-change disable
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+#
+ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>
+#
+ip vpn-instance <*>
+description <DESCRIPTION>
+ipv4-family
+route-distinguisher <*>
+apply-label per-instance
+vpn-target <*> export-extcommunity
+vpn-target <*> import-extcommunity
+#
+ipv4-family unicast
+undo synchronization
+preference 20 200 200
+maximum load-balancing <*>
+bestroute add-path path-number 16
+bestroute nexthop-priority ipv6
+segment-routing ipv6 locator <*>
+undo peer <*> enable
+segment-routing ipv6 best-effort
+undo peer <*> enable
+peer <*> enable
+peer <*> route-policy <*> import
+peer <*> route-policy <*> export
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> route-policy <*> import
+peer <*> route-policy <*> export
+peer <*> substitute-as
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> route-policy <*> export
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> enable
+peer <*> route-policy <*> export
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+#
+up <*>
+netconf-client enable
+bind netconf-connection <*>
+control-tunnel cusp-agent <*>
+protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW
+protocol-tunnel track nqa counter 8 recovery-count 1 interval 1 timeout 1 udp-port 65000 plr 5 10
+remote interface <INTERFACE>
+remote up-board <*>
+#
+interface <*>
+ipv6 enable
+ipv6 address auto link-local
+statistic enable
+user-vlan <*>
+pim sm
+igmp enable
+igmp prompt-leave
+cu-mode
+multicast copy by-session
+#
+bgp <*>
+router-id <IPV4>
+graceful-restart
+graceful-restart peer-reset
+peer <*> as-number <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> tracking delay 30
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> tracking delay 30
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+#
+ipv4-family vpn-instance <*>
+preference 130 255 255
+network <IPV4> <IPV4>
+import-route ospf 704 route-policy rpFromospf704
+maximum load-balancing <*>
+peer <*> enable
+peer <*> advertise-community
+peer <IPV4> route-update-interval 5
+peer <*> enable
+peer <*> advertise-community
+peer <IPV4> route-update-interval 5
+#
+up <*>
+netconf-client enable
+bind netconf-connection <*>
+control-tunnel cusp-agent <*>
+protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW
+protocol-tunnel track nqa counter 8 recovery-count 1 interval 1 timeout 1 udp-port 65000 plr 5 10
+remote interface <INTERFACE>
+remote up-board <*>
+#
+ssh client first-time enable
+ssh client peer <*> assign rsa-key <*>
+#
+domain <*>
+authentication-scheme <*>
+accounting-scheme <*>
+radius-server group <*>
+ip-pool <*>
+nat distributed-policy <*>
+trust upstream <*>
+user-priority upstream <*>
+user-priority downstream <*>
+#
+acl number <*>
+description <DESCRIPTION>
+rule <*> permit ip source <IPV4> <*>
+rule <*> permit ip destination <IPV4> 0
+#
+domain <*>
+authentication-scheme <*>
+authorization-scheme hwtacacs
+accounting-scheme <*>
+hwtacacs-server js.admin.tacacs
+#
+interface <*>
+port-speed 100GE
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+pim sm
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis small-hello
+isis peer hold-max-cost timer <*>
+mpls
+mpls ldp
+undo dcn
+undo dcn mode vlan
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+bgp <*>
+router-id <IPV4>
+private-4-byte-as enable
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> valid-ttl-hops <*>
+peer <*> bfd min-tx-interval <*> min-rx-interval <*>
+peer <*> bfd enable
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+#
+interface <INTERFACE> mode l2
+mtu 9000
+description <DESCRIPTION>
+statistic enable mode single
+encapsulation dot1q vid <*> to <*>
+bridge-domain <*>
+trust upstream <*>
+trust 8021p
+qos-profile <*> inbound identifier none
+qos phb dscp disable
+#
+interface <*>
+vlan-type dot1q <*>
+mtu 9178
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9178
+#
+ipv4-family unicast
+undo synchronization
+preference 20 200 200
+network <IPV4> <IPV4>
+import-route <*> route-policy <*>
+maximum load-balancing <*>
+bestroute add-path path-number 16
+bestroute nexthop-priority ipv6
+segment-routing ipv6 locator <*>
+undo peer <*> enable
+segment-routing ipv6 best-effort
+undo peer <*> enable
+peer <*> enable
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis small-hello
+isis ldp-sync
+isis timer ldp-sync hold-max-cost 60
+isis peer hold-max-cost timer <*>
+mpls
+te link administrative group <*>
+te bandwidth max-reservable-bandwidth dynamic 100
+te bandwidth dynamic bc0 100
+mpls ldp
+qos phb disable
+network-slice <*>
+#
+ipv6-family unicast
+undo synchronization
+preference 130 255 255
+network <IPV6> <*>
+maximum load-balancing <*>
+nexthop recursive-lookup non-critical-event delay 0
+peer <*> enable
+peer <*> group <*>
+#
+stelnet server enable
+sftp server enable
+snetconf server enable
+sftp server default-directory cfcard:
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh server-source all-interface
+ssh ipv6 server-source all-interface
+ssh server acl 2577
+ssh authorization-type default <*>
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis small-hello
+isis ldp-sync
+isis timer ldp-sync hold-max-cost 60
+isis peer hold-max-cost timer <*>
+mpls
+te link administrative group <*>
+te bandwidth max-reservable-bandwidth dynamic 100
+te bandwidth dynamic bc0 100
+mpls ldp
+network-slice <*>
+#
+mpls
+mpls bfd enable
+mpls bfd min-tx-interval 50 min-rx-interval 50
+#
+ssh client first-time enable
+ssh client peer <*> assign rsa-key <*>
+ssh client peer <IPV4> assign ecc-key <IPV4>
+ssh client peer <*> assign rsa-key <*>
+ssh client peer <IPV4> assign ecc-key <IPV4>
+ssh client peer <*> assign rsa-key <*>
+#
+l2vpn-family evpn
+policy vpn-target
+nexthop recursive-lookup non-critical-event delay 0
+bestroute add-path path-number 16
+peer <*> enable
+peer <*> advertise encap-type srv6 advertise-srv6-locator
+peer <*> advertise arp
+peer <*> advertise-community
+peer <*> esad-route-compatible
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> advertise-large-community
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+description <DESCRIPTION>
+undo shutdown
+undo dcn
+statistic enable
+#
+interface <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+ip address <IPV4> <IPV4>
+traffic-policy <*> inbound
+traffic-policy <*> outbound
+undo dcn
+undo dcn mode vlan
+#
+flexe enable port <*>
+#
+aaa
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type telnet ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+local-user <*> service-type telnet ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+#
+ip vpn-instance <*>
+traffic-statistics enable
+ipv4-family
+route-distinguisher <*>
+apply-label per-instance
+vpn-target <*> export-extcommunity evpn
+vpn-target <*> export-extcommunity
+vpn-target <*> import-extcommunity evpn
+vpn-target <*> import-extcommunity
+vpn-target <*> import-extcommunity evpn
+vpn-target <*> import-extcommunity
+tnl-policy <*> evpn
+default-color <*> evpn
+#
+interface <*>
+#
+interface <*>
+vlan-type dot1q <*>
+description <DESCRIPTION>
+ipv6 enable
+ip address <IPV4> <IPV4>
+#
+route-policy <*> permit node <*>
+if-match ip-prefix <*>
+#
+nat distributed-policy <*>
+user-group <*> bind nat instance <*>
+#
+acl number <*>
+description <DESCRIPTION>
+step <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+#
+nat ip-pool <*> dynamic
+subnet length initial <*> extend <*>
+bind dynamic-pool-server pool-name <*>
+#
+acl number <*>
+description <DESCRIPTION>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit icmp source user-group vod
+rule <*> permit icmp destination user-group vod
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+rule <*> permit ip source ip-address <IPV4> <*> destination user-group <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+#
+ssh client first-time enable
+ssh client peer <IPV4> assign ecc-key <IPV4>
+ssh client peer <*> assign rsa-key <*>
+ssh client peer <IPV4> assign ecc-key <IPV4>
+#
+acl number <*>
+description <DESCRIPTION>
+rule <*> permit source <IPV4> <*>
+#
+ntp-service ipv6 server disable
+ntp-service server source-interface all disable
+ntp-service ipv6 server source-interface all disable
+ntp-service unicast-server <IPV4> preference
+ntp-service unicast-server <IPV4>
+ntp-service source-interface <*>
+#
+ospf 705 router-id <IPV4> vpn-instance CTVPN193-JS
+description <DESCRIPTION>
+bfd all-interfaces enable
+import-route <*>
+spf-schedule-interval intelligent-timer 50 50 50
+lsa-originate-interval intelligent-timer 500 50 100
+lsa-arrival-interval intelligent-timer 50 50 50
+opaque-capability enable
+vpn-instance-capability simple
+area <IPV4>
+network <IPV4> <IPV4>
+#
+mpls ldp
+#
+ospfv3 <*>
+description <DESCRIPTION>
+router-id <IPV4>
+default-route-advertise
+bfd all-interfaces enable
+area <IPV4>
+#
+domain <*>
+authentication-scheme <*>
+accounting-scheme <*>
+radius-server group <*>
+ip-pool <*>
+user-group <*>
+ip-warning-threshold 90
+dhcp reboot-request user offline
+multicast-profile <*>
+trust upstream <*>
+user-priority upstream <*>
+user-priority downstream <*>
+#
+acl number <*>
+description <DESCRIPTION>
+step <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+#
+interface <*>
+mtu 9000
+description <DESCRIPTION>
+ipv6 enable
+ipv6 mtu 9000
+track monitor-group leaf-to-spine trigger-down-weight <*>
+mode lacp-static
+e-trunk <*>
+e-trunk mode force-master
+es track bfd <DEVICE>
+esi <*>
+timer es-recovery 90
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+ip vpn-instance <*>
+ipv4-family
+route-distinguisher <*>
+apply-label per-instance
+vpn-target <*> export-extcommunity
+vpn-target <*> import-extcommunity
+#
+interface <*>
+description <DESCRIPTION>
+undo shutdown
+ipv6 enable
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis peer hold-max-cost timer <*>
+te link administrative group <*>
+te metric <*>
+te bandwidth max-reservable-bandwidth dynamic 100
+te bandwidth dynamic bc0 100
+qos phb disable
+network-slice <*>
+#
+acl number <*>
+description <DESCRIPTION>
+rule <*> permit source <IPV4> <*>
+#
+interface <*>
+statistic enable
+user-vlan <*> <*> qinq <*> <*>
+user-vlan <*> qinq <*>
+user-vlan <*> <*> qinq <*>
+user-vlan <*> qinq <*>
+user-vlan <*> <*> qinq <*>
+user-vlan <*> qinq <*>
+user-vlan <*> qinq <*> <*>
+cu-mode
+#
+interface <*>
+description <DESCRIPTION>
+ipv6 enable
+ipv6 address auto link-local
+user-vlan <*>
+pppoe-server bind Virtual-Template <*>
+ipv6 nd autoconfig other-flag
+bas
+#
+snetconf server enable
+stelnet ipv4 server enable
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh server-source all-interface
+undo ssh ipv6 server-source all-interface
+ssh server acl 2577
+ssh authorization-type default <*>
+#
+interface <*>
+vlan-type dot1q <*>
+mtu 9178
+description <DESCRIPTION>
+set flow-stat interval 30
+control-flap
+ip binding vpn-instance <*>
+ip address <IPV4> <IPV4>
+statistic enable
+trust upstream <*>
+#
+e-trunk <*>
+peer-ipv6 <IPV6> source-ipv6 <IPV6>
+timer revert delay 300
+e-trunk track bfd-session session-name <DEVICE>
+authentication-mode <*>
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis small-hello
+isis peer hold-max-cost timer <*>
+mpls
+mpls ldp
+undo dcn
+undo dcn mode vlan
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+ipv4-family vpn-instance <*>
+preference 20 200 200
+maximum load-balancing <*>
+bestroute nexthop-priority ipv6
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer best-effort evpn
+peer <*> enable
+peer <*> route-policy <*> import
+peer <*> enable
+peer <*> route-policy <*> import
+#
+ipv4-family vpn-instance <*>
+default-route imported
+preference 20 200 200
+network <IPV4> <IPV4>
+maximum load-balancing <*>
+nexthop recursive-lookup <*> <*>
+nexthop recursive-lookup non-critical-event delay 0
+bestroute nexthop-priority ipv6
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer best-effort evpn
+peer <*> enable
+peer <*> route-policy <*> export
+#
+acl number <*>
+description <DESCRIPTION>
+rule <*> permit ip source <*> <*> destination <*> <*>
+#
+user-interface vty 0 <*>
+acl 2577 inbound
+authentication-mode <*>
+idle-timeout 15 0
+screen-length <*>
+protocol inbound ssh
+#
+interface <INTERFACE> mode l2
+statistic enable mode single
+encapsulation dot1q vid <*> to <*>
+encapsulation dot1q vid <*>
+bridge-domain <*>
+trust upstream <*>
+evpn e-tree-leaf
+trust 8021p
+qos-profile <*> inbound identifier none
+qos phb dscp disable
+#
+l2vpn-family evpn
+policy vpn-target
+bestroute add-path path-number 16
+peer <*> enable
+peer <*> advertise-community
+peer <*> advertise encap-type srv6 advertise-srv6-locator
+peer <*> advertise evpn mac-route detail-only
+peer <*> enable
+peer <*> advertise encap-type srv6 advertise-srv6-locator
+peer <*> advertise-community
+peer <*> esad-route-compatible
+peer <*> route-update-interval 0
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> advertise-large-community
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+#
+database enable
+#
+stelnet server enable
+sftp server enable
+snetconf server enable
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh server-source -i <*>
+ssh server-source all-interface
+ssh ipv6 server-source all-interface
+ssh server acl 2577
+ssh authorization-type default <*>
+#
+interface <*>
+description <DESCRIPTION>
+track monitor-group leaf-to-spine trigger-down-weight <*>
+mac-address <*>
+mode lacp-static
+e-trunk <*>
+e-trunk mode force-master
+es track bfd <DEVICE>
+esi <*>
+timer es-recovery 90
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+ssh server hmac sha2_256_96 sha2_256 sha1_96
+ssh <*> key-exchange dh_group_exchange_sha256 dh_group_exchange_sha1 ecdh_sha2_nistp256 ecdh_sha2_nistp384 ecdh_sha2_nistp521 sm2_kep dh_group16_sha512 curve25519_sha256
+#
+interface <*>
+vlan-type dot1q <*>
+description <DESCRIPTION>
+ip binding vpn-instance <*>
+ipv6 enable
+ipv6 address <*>
+ospfv3 <*> area <IPV4>
+#
+ip vpn-instance <*>
+ipv4-family
+route-distinguisher <*>
+apply-label per-instance
+vpn-target <*> export-extcommunity evpn
+vpn-target <*> export-extcommunity
+ipv6-family
+route-distinguisher <*>
+apply-label per-instance
+vpn-target <*> export-extcommunity evpn
+vpn-target <*> export-extcommunity
+#
+interface <*>
+mtu 9000
+description <DESCRIPTION>
+ip binding vpn-instance <*>
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 mtu 9000
+statistic enable
+encapsulation dot1q-termination
+dot1q termination vid <*>
+arp broadcast enable
+#
+ip vpn-instance <*>
+ipv4-family
+route-distinguisher <*>
+apply-label per-instance
+vpn-target <*> export-extcommunity evpn
+vpn-target <*> export-extcommunity
+vpn-target <*> import-extcommunity evpn
+vpn-target <*> import-extcommunity
+#
+flexe enable port <*>
+#
+traffic policy <*>
+share-mode
+statistics enable
+classifier <*> behavior <*> precedence <*>
+#
+ip ipv6-prefix <*> index <*> permit <IPV6> <*> greater-equal <*> less-equal <*>
+#
+bgp <*>
+router-id <IPV4>
+graceful-restart
+graceful-restart peer-reset
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> valid-ttl-hops <*>
+peer <*> bfd min-tx-interval <*> min-rx-interval <*>
+peer <*> bfd enable
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> bfd min-tx-interval <*> min-rx-interval <*>
+peer <*> tracking delay 30
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> bfd min-tx-interval <*> min-rx-interval <*>
+peer <*> tracking delay 30
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+#
+interface <*>
+description <DESCRIPTION>
+undo shutdown
+eth-trunk <*>
+dcn
+#
+aaa
+user-password password-force-change disable
+local-user <*> service-type telnet ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+local-user <*> service-type telnet ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+pim sm
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis peer hold-max-cost timer <*>
+mpls
+te link administrative group <*>
+te metric <*>
+te bandwidth max-reservable-bandwidth dynamic 100
+te bandwidth dynamic bc0 100
+mpls ldp
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+acl number <*>
+description <DESCRIPTION>
+rule <*> permit ip source <*> <*> destination <*> <*>
+rule <*> deny ip
+#
+access-type layer2-subscriber default-domain pre-authentication <*> authentication <*>
+authentication-method <*>
+arp-trigger
+vpn-instance <*>
+#
+acl ipv6 number 3161
+description <DESCRIPTION>
+rule <*> permit tcp destination-port eq <*>
+#
+evpn vpn-instance <*> bd-mode
+route-distinguisher <*>
+description <DESCRIPTION>
+segment-routing ipv6 best-effort
+segment-routing ipv6 locator <*>
+vpn-target <*> import-extcommunity
+#
+interface <INTERFACE> mode l2
+mtu 9000
+description <DESCRIPTION>
+statistic enable mode single
+encapsulation dot1q vid <*> to <*>
+bridge-domain <*>
+trust upstream <*>
+evpn e-tree-leaf
+trust 8021p
+qos-profile <*> inbound identifier none
+#
+interface <*>
+description <DESCRIPTION>
+ip address <IPV4> <IPV4>
+statistic enable
+encapsulation qinq-termination
+qinq termination pe-vid <*> ce-vid <*>
+arp broadcast enable
+traffic-policy <*> outbound
+qos-profile <*> inbound pe-vid <*> ce-vid <*> identifier none
+qos-profile <*> outbound pe-vid <*> ce-vid <*> identifier none
+#
+bfd <*> bind peer-ip <IPV4> interface <INTERFACE> source-ip <IPV4>
+discriminator local <*>
+discriminator remote <*>
+min-tx-interval 100
+min-rx-interval 100
+#
+domain <*>
+authentication-scheme <*>
+accounting-scheme <*>
+prefix-assign-mode unshared
+ip-pool <*>
+user-group <*>
+http-hostcar enable
+#
+flexe enable port <*>
+#
+authentication-scheme <*>
+authentication-mode <*> <*>
+#
+access-type layer2-subscriber default-domain authentication <*>
+client-option82 basinfo-insert cn-telecom
+dhcp session-mismatch action offline
+authentication-method <*>
+service-identify-policy jsitv
+user detect retransmit <*> interval <*>
+ip-trigger
+arp-trigger
+default-user-name-template jsitv
+#
+bfd <*> bind peer-ip <IPV4> source-ip <IPV4>
+discriminator local <*>
+discriminator remote <*>
+min-tx-interval 100
+min-rx-interval 100
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+#
+pim sm
+igmp enable
+igmp prompt-leave
+#
+ipv4-family vpn-instance <*>
+preference 20 200 200
+import-route <*>
+maximum load-balancing <*>
+bestroute nexthop-priority ipv6
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer best-effort evpn
+peer <*> enable
+peer <*> route-policy <*> import
+peer <*> route-policy <*> export
+peer <IPV4> soo <*>
+peer <*> advertise-community
+peer <*> substitute-as
+#
+interface <*>
+shutdown
+undo dcn
+#
+aaa
+user-password password-force-change disable
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type telnet ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+#
+interface <*>
+mtu 9000
+description <DESCRIPTION>
+ipv6 enable
+ipv6 mtu 9000
+mac-address <*>
+mode lacp-static
+e-trunk <*>
+e-trunk mode force-master
+es track bfd <DEVICE>
+esi <*>
+timer es-recovery 90
+#
+evpn vpn-instance <*> bd-mode
+route-distinguisher <*>
+segment-routing ipv6 best-effort
+default-color <*>
+tnl-policy <*>
+segment-routing ipv6 locator <*>
+vpn-target <*> export-extcommunity
+vpn-target <*> import-extcommunity
+#
+bridge-domain <*>
+statistic enable
+description <DESCRIPTION>
+traffic-policy <*> <*> link-layer
+evpn binding vpn-instance <*>
+#
+acl number <*>
+description <DESCRIPTION>
+step <*>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> deny
+#
+dap-server ipv6 pool <*>
+prefix warning-threshold 85
+prefix <*> subnet length <*>
+#
+FTP server-source all-interface
+undo FTP ipv6 server-source all-interface
+#
+stelnet server enable
+snetconf server enable
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh server-source -i <*>
+ssh server-source all-interface
+ssh ipv6 server-source all-interface
+ssh server acl 2577
+ssh authorization-type default <*>
+#
+traffic policy <*>
+share-mode
+classifier <*> behavior <*> precedence <*>
+#
+traffic classifier <*> operator or
+if-match acl <*> precedence <*>
+#
+tunnel-policy <*>
+tunnel select-seq ipv6 srv6-te-policy load-balance-number 1
+#
+dap-server ip pool <*>
+#
+interface <*>
+description <DESCRIPTION>
+shutdown
+user-vlan <*> <*> qinq <*>
+#
+interface <INTERFACE> mode l2
+mtu 9000
+description <DESCRIPTION>
+statistic enable mode single
+encapsulation dot1q vid <*> to <*>
+trust upstream <*>
+trust 8021p
+qos-profile <*> inbound identifier none
+qos phb dscp disable
+#
+interface <*>
+port-speed 100GE
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis peer hold-max-cost timer <*>
+mpls
+mpls ldp
+undo dcn
+undo dcn mode vlan
+#
+domain <*>
+authentication-scheme <*>
+accounting-scheme <*>
+radius-server group <*>
+ip-pool <*>
+vpn-instance <*>
+user-group <*>
+l2tp-user radius-force
+trust upstream <*>
+user-priority upstream <*>
+user-priority downstream <*>
+#
+snetconf server enable
+ssh server compatible-ssh1x enable
+stelnet ipv4 server enable
+sftp ipv4 server enable
+sftp server default-directory cfcard:
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh server-source all-interface
+undo ssh ipv6 server-source all-interface
+ssh server acl 2577
+ssh authorization-type default <*>
+#
+ipv6-family vpn-instance <*>
+import-route <*>
+maximum load-balancing eibgp <*>
+nexthop recursive-lookup <*> <*>
+nexthop recursive-lookup non-critical-event delay 0
+bestroute nexthop-priority ipv6
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer evpn
+#
+ospf 703 router-id <IPV4>
+description <DESCRIPTION>
+default-route-advertise
+bfd all-interfaces enable
+bfd all-interfaces min-tx-interval 500 min-rx-interval 500 detect-multiplier 4
+spf-schedule-interval intelligent-timer 50 50 50
+lsa-originate-interval intelligent-timer 500 50 100
+lsa-arrival-interval intelligent-timer 50 50 50
+opaque-capability enable
+area <IPV4>
+network <IPV4> <IPV4>
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+pim sm
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis peer hold-max-cost timer <*>
+mpls
+te link administrative group <*>
+te metric <*>
+te bandwidth max-reservable-bandwidth dynamic 100
+te bandwidth dynamic bc0 100
+te metric <*>
+mpls ldp
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+domain <*>
+authentication-scheme <*>
+accounting-scheme <*>
+radius-server group <*>
+ip-pool <*>
+user-group <*>
+ip-warning-threshold 90
+dhcp reboot-request user offline
+multicast-profile <*>
+trust upstream <*>
+user-priority upstream <*>
+user-priority downstream <*>
+#
+acl number <*>
+description <DESCRIPTION>
+step <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+#
+domain <*>
+authentication-scheme <*>
+accounting-scheme <*>
+ip-pool <*>
+idle-cut <*> <*>
+ip-warning-threshold 95
+nat distributed-policy <*>
+trust upstream <*>
+user-priority upstream <*>
+user-priority downstream <*>
+#
+bgp <*>
+router-id <IPV4>
+graceful-restart
+graceful-restart peer-reset
+private-4-byte-as disable
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> tracking delay 30
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> tracking delay 30
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+#
+interface <*>
+statistic enable
+user-vlan <*> <*> qinq <*> <*>
+user-vlan <*> <*> qinq <*>
+user-vlan <*> qinq <*>
+user-vlan <*> <*> qinq <*>
+user-vlan <*> qinq <*> <*>
+cu-mode
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+mpls
+mpls ldp
+#
+ipv4-family unicast
+undo synchronization
+preference 20 200 200
+maximum load-balancing <*>
+bestroute add-path path-number 16
+segment-routing ipv6 locator <*>
+undo peer <*> enable
+segment-routing ipv6 best-effort
+undo peer <*> enable
+peer <*> enable
+peer <*> route-policy <*> import
+peer <*> advertise-community
+peer <*> substitute-as
+peer <*> enable
+peer <*> group <*>
+peer <IPV4> route-update-interval 5
+peer <*> enable
+peer <*> group <*>
+peer <IPV4> route-update-interval 5
+peer <*> enable
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+#
+ipv6 route-static <IPV6> <*> <*> <IPV6> description <*>
+#
+license
+active <*> slot <*> card 0 port <*>
+#
+interface <INTERFACE> mode l2
+#
+user-interface vty 0 <*>
+acl 2577 inbound
+idle-timeout 0 0
+screen-length <*>
+#
+snmp-agent blacklist ip-block disable
+snmp-agent blacklist user-block disable
+#
+ipv4-family vpn-instance <*>
+preference 20 200 200
+network <IPV4> <IPV4>
+maximum load-balancing <*>
+bestroute nexthop-priority ipv6
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer best-effort evpn
+peer <*> enable
+peer <*> route-policy <*> import
+peer <*> route-policy <*> export
+peer <IPV4> soo <*>
+peer <*> advertise-community
+peer <IPV4> route-update-interval 5
+peer <*> substitute-as
+peer <*> enable
+peer <*> route-policy <*> import
+peer <*> route-policy <*> export
+peer <IPV4> soo <*>
+peer <*> advertise-community
+peer <IPV4> route-update-interval 5
+peer <*> substitute-as
+#
+dap-server ip pool <*>
+subnet warning-threshold <*>
+network <IPV4> <*> subnet length <*>
+#
+ospf 701 router-id <IPV4> vpn-instance CTVPN-CTC-NMAN
+bfd all-interfaces enable
+bfd all-interfaces min-tx-interval 500 min-rx-interval 500 detect-multiplier 4
+silent-interface <INTERFACE>
+spf-schedule-interval intelligent-timer 50 50 50
+lsa-originate-interval intelligent-timer 500 50 100
+lsa-arrival-interval intelligent-timer 50 50 50
+opaque-capability enable
+vpn-instance-capability simple
+area <IPV4>
+network <IPV4> <IPV4>
+#
+ipv4-family unicast
+undo synchronization
+preference 20 200 200
+maximum load-balancing <*>
+bestroute add-path path-number 16
+bestroute nexthop-priority ipv6
+segment-routing ipv6 locator <*>
+undo peer <*> enable
+segment-routing ipv6 best-effort
+undo peer <*> enable
+peer <*> enable
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+#
+acl number <*>
+description <DESCRIPTION>
+step <*>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> permit source <IPV4> <*>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> permit source <IPV4> <*>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> permit vpn-instance <*>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> deny
+#
+ipv4-family vpn-instance <*>
+network <IPV4> <IPV4>
+import-route <*>
+maximum load-balancing <*>
+bestroute nexthop-priority ipv6
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer best-effort evpn
+peer <*> enable
+#
+ipv6 prefix <*> dynamic
+pd-unshare-only
+dap-server pool <*>
+prefix-unshared length initial 54 extend 54 delegating-prefix-length 60
+#
+ip vpn-instance <*>
+description <DESCRIPTION>
+ipv4-family
+route-distinguisher <*>
+apply-label per-instance
+vpn-target <*> export-extcommunity evpn
+vpn-target <*> export-extcommunity
+vpn-target <*> import-extcommunity evpn
+vpn-target <*> import-extcommunity
+ipv6-family
+route-distinguisher <*>
+apply-label per-instance
+vpn-target <*> export-extcommunity
+vpn-target <*> export-extcommunity evpn
+vpn-target <*> import-extcommunity
+vpn-target <*> import-extcommunity evpn
+#
+interface <*>
+vlan-type dot1q <*>
+mtu 9000
+description <DESCRIPTION>
+ip binding vpn-instance <*>
+ip address <IPV4> <IPV4>
+trust upstream <*>
+vrrp vrid <*> virtual-ip <IPV4>
+vrrp vrid <*> priority <*>
+vrrp vrid <*> preempt-mode timer delay 120
+#
+domain <*>
+authentication-scheme <*>
+accounting-scheme <*>
+radius-server group <*>
+l2tp-group <*>
+l2tp-user radius-force
+#
+ipv6 enable topology ipv6
+ipv6 preference 105
+ipv6 bgp-ls enable <*>
+ipv6 advertise link attributes
+ipv6 bfd all-interfaces enable
+ipv6 bfd all-interfaces min-tx-interval 30 min-rx-interval 30
+ipv6 traffic-eng <*>
+ipv6 metric-delay advertisement enable level-2
+segment-routing ipv6 locator <*> auto-sid-disable
+segment-routing ipv6 locator <*>
+segment-routing ipv6 locator <*> auto-sid-disable
+ipv6 frr
+loop-free-alternate level-2
+ti-lfa level-2
+#
+acl number <*>
+description <DESCRIPTION>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> deny
+#
+disaster-recovery group <*>
+up <*> <*>
+dap-server ip-pool <*>
+dap-server ipv6-pool <*>
+radius-server source interface <*>
+web-auth-server source interface <*>
+switch-mode auto
+priority 80
+#
+ipv6-family vpnv6
+policy vpn-target
+nexthop recursive-lookup non-critical-event delay 0
+bestroute nexthop-resolved tunnel
+peer <*> enable
+peer <*> advertise-community
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+#
+up <*>
+description <DESCRIPTION>
+netconf-client enable
+bind netconf-connection <*>
+control-tunnel cusp-agent <*>
+protocol-tunnel vni <*> source <IPV4> destination <IPV4> vpn-instance CP2UP_L3VPN_HW
+protocol-tunnel track nqa counter 8 recovery-count 1 interval 1 timeout 1 udp-port 65000 plr 5 10
+remote interface <INTERFACE>
+remote up-board <*>
+#
+isis 800
+is-level level-2
+cost-style wide
+bfd all-interfaces enable
+bfd all-interfaces min-tx-interval 30 min-rx-interval 30
+bgp-ls enable <*>
+network-entity <*>
+avoid-microloop frr-protected
+avoid-microloop frr-protected rib-update-delay 5000
+is-name <DEVICE>
+filter-policy route-policy <*> import
+import-route <*> route-policy <*>
+import-route <*> level-1-2 tag <*> route-policy <*>
+preference 105
+timer spf 1 50 50
+traffic-eng level-1-2
+timer lsp-max-age 65535
+timer lsp-refresh 32768
+set-overload on-startup send-sa-bit 120
+frr
+loop-free-alternate level-1
+loop-free-alternate level-2
+ti-lfa level-1
+ti-lfa level-2
+#
+user-interface vty 0 <*>
+authentication-mode <*>
+user privilege level 3
+screen-length <*>
+#
+stelnet server enable
+sftp server enable
+snetconf server enable
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type snetconf stelnet
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh server-source -i <*>
+ssh server-source all-interface
+ssh ipv6 server-source all-interface
+ssh server acl 2577
+ssh authorization-type default <*>
+#
+service-instance-group <*>
+service-location 4
+#
+ipv4-family vpn-instance <*>
+network <IPV4> <IPV4>
+import-route <*>
+maximum load-balancing <*>
+bestroute nexthop-priority ipv6
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer best-effort evpn
+peer <*> enable
+#
+ipv6-family unicast
+undo synchronization
+preference 20 200 200
+maximum load-balancing <*>
+bestroute add-path path-number 16
+segment-routing ipv6 locator <*>
+segment-routing ipv6 best-effort
+peer <*> enable
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+pim sm
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis peer hold-max-cost timer <*>
+mpls
+mpls ldp
+undo dcn
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+interface <*>
+description <DESCRIPTION>
+ip binding vpn-instance <*>
+ip address <IPV4> <IPV4>
+statistic enable
+encapsulation qinq-termination
+qinq termination pe-vid <*> ce-vid <*>
+arp broadcast enable
+qos-profile <*> inbound pe-vid <*> ce-vid <*> identifier none
+qos-profile <*> outbound pe-vid <*> ce-vid <*> identifier none
+#
+qos-profile <*>
+user-queue cir <*> pir <*> inbound
+user-queue cir <*> pir <*> outbound
+car cir <*> cbs <*> pbs <*> green pass yellow pass red discard inbound
+car cir <*> cbs <*> pbs <*> green pass yellow pass red discard outbound
+#
+interface <*>
+port-speed 100GE
+description <DESCRIPTION>
+undo shutdown
+undo dcn
+phy-number <*>
+clock synchronization enable
+clock priority <*>
+ptp enable
+#
+acl ipv6 number 6015
+rule <*> permit <*> <*> user-group <*> <*> eq <*>
+#
+bgp <*>
+router-id <IPV4>
+graceful-restart
+graceful-restart peer-reset
+private-4-byte-as disable
+group <*> <*>
+peer <*> as-number <*>
+peer <*> connect-interface <*>
+peer <*> valid-ttl-hops <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> as-number <*>
+peer <*> connect-interface <*>
+peer <*> valid-ttl-hops <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> tracking delay 30
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+group <*> <*>
+peer <*> connect-interface <*>
+peer <*> tracking delay 30
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+peer <*> as-number <*>
+peer <*> group <*>
+peer <*> description <*>
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9178
+description <DESCRIPTION>
+undo shutdown
+ipv6 enable
+ipv6 mtu 9178
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+route-policy <*> deny node <*>
+if-match community-filter <*>
+#
+recording-scheme tacacs
+recording-mode hwtacacs js.admin.tacacs
+#
+alloc board <*> boardtype <*>
+#
+ipv4-family vpn-instance <*>
+default-route imported
+preference 20 200 200
+maximum load-balancing <*>
+nexthop recursive-lookup <*> <*>
+nexthop recursive-lookup non-critical-event delay 0
+bestroute nexthop-priority ipv6
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer best-effort evpn
+peer <*> enable
+#
+stelnet server enable
+snetconf server enable
+sftp server default-directory cfcard:
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh server-source all-interface
+undo ssh ipv6 server-source all-interface
+ssh server acl 2577
+ssh authorization-type default <*>
+#
+nat instance <*> id <*>
+port-range 4096
+service-instance-group <*>
+nat address-group <*> group-id <*> bind-ip-pool <*>
+nat outbound <*> address-group <*>
+nat session-limit total 4096
+nat reverse-session-limit total 4096
+nat alg all
+nat filter mode full-cone
+#
+ssh client first-time enable
+ssh client peer <*> assign rsa-key <*>
+sftp client-source -i <*>
+#
+l2vpn-family evpn
+undo policy vpn-target
+bestroute add-path path-number 16
+peer <*> enable
+peer <*> route-policy <*> export
+peer <*> next-hop-invariable
+peer <*> advertise-community
+peer <*> advertise encap-type srv6
+peer <*> enable
+peer <*> advertise encap-type srv6 advertise-srv6-locator
+peer <*> route-policy <*> import
+peer <*> route-policy <*> export
+peer <*> advertise-community
+peer <*> esad-route-compatible
+peer <*> route-update-interval 0
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> advertise-large-community
+peer <*> enable
+peer <*> group <*>
+peer <*> advertise add-path path-number <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> advertise add-path path-number <*>
+peer <*> enable
+peer <*> advertise encap-type srv6 advertise-srv6-locator
+peer <*> advertise arp
+peer <*> next-hop-invariable
+peer <*> advertise-community
+peer <*> esad-route-compatible
+peer <*> route-update-interval 0
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> advertise-large-community
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+#
+acl number <*>
+description <DESCRIPTION>
+rule <*> permit ip source <*> <*> destination <*> <*>
+rule <*> deny ip
+#
+authorization-scheme local
+#
+acl number <*>
+description <DESCRIPTION>
+step <*>
+rule <*> permit source <IPV4> <*>
+rule <*> deny
+#
+access-type layer2-subscriber default-domain authentication <*>
+multicast copy by-session
+authentication-method ppp web
+authentication-method-ipv6 ppp web
+ipv6-trigger
+nd-trigger
+#
+service-location 1
+location slot <*> engine <*> backup slot <*> engine <*>
+#
+acl number <*>
+step <*>
+rule <*> permit source <IPV4> <*>
+#
+interface <*>
+vlan-type dot1q <*>
+mtu 9178
+description <DESCRIPTION>
+shutdown
+set flow-stat interval 30
+control-flap
+ip binding vpn-instance <*>
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9178
+statistic enable
+trust upstream <*>
+arp-proxy enable
+ip netstream inbound
+ipv6 netstream inbound
+#
+interface <*>
+vlan-type dot1q <*>
+ip binding vpn-instance <*>
+ip address <IPV4> <IPV4>
+#
+traffic policy <*>
+share-mode
+statistics enable
+classifier <*> behavior <*> precedence <*>
+#
+ssh client first-time enable
+ssh client peer <*> assign rsa-key <*>
+#
+ip ipv6-prefix <*> index <*> permit <IPV6> <*>
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis ldp-sync
+isis timer ldp-sync hold-max-cost 60
+isis peer hold-max-cost timer <*>
+mpls
+te link administrative group <*>
+te bandwidth max-reservable-bandwidth dynamic 100
+te bandwidth dynamic bc0 100
+mpls ldp
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+network-slice <*>
+#
+ipv6-family unicast
+undo synchronization
+maximum load-balancing <*>
+nexthop recursive-lookup non-critical-event delay 0
+bestroute add-path path-number 16
+segment-routing ipv6 best-effort
+peer <*> enable
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+#
+ssh server hmac sha2_256_96 sha2_256 sha1_96
+ssh <*> key-exchange dh_group_exchange_sha256 dh_group_exchange_sha1 dh_group14_sha1 ecdh_sha2_nistp256 ecdh_sha2_nistp384 ecdh_sha2_nistp521
+#
+acl number <*>
+description <DESCRIPTION>
+step <*>
+rule <*> permit ip source user-group <*>
+#
+interface <*>
+description <DESCRIPTION>
+undo shutdown
+phy-number <*>
+clock synchronization enable
+ptp announce-drop enable
+ptp enable
+#
+ipv4-family vpn-instance <*>
+import-route <*>
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer best-effort evpn
+#
+interface <*>
+mtu 9000
+description <DESCRIPTION>
+ipv6 enable
+ipv6 mtu 9000
+mac-address <*>
+mode lacp-static
+e-trunk <*>
+e-trunk mode force-master
+es track bfd <DEVICE>
+esi <*>
+timer es-recovery 90
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+interface <*>
+statistic enable
+user-vlan <*> <*> qinq <*> <*>
+user-vlan <*> qinq <*>
+user-vlan <*> <*> qinq <*>
+user-vlan <*> <*> qinq <*> <*>
+user-vlan <*> <*> qinq <*>
+user-vlan <*> qinq <*>
+user-vlan <*> <*> qinq <*>
+user-vlan <*> qinq <*>
+user-vlan <*> <*> qinq <*>
+user-vlan <*> qinq <*>
+user-vlan <*> <*> qinq <*> <*>
+user-vlan <*> <*> qinq <*>
+user-vlan <*> qinq <*> <*>
+cu-mode
+#
+aaa
+user-password password-force-change disable
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+#
+ip vpn-instance <*>
+description <DESCRIPTION>
+ipv4-family
+route-distinguisher <*>
+vpn frr
+apply-label per-instance
+vpn-target <*> export-extcommunity evpn
+vpn-target <*> export-extcommunity
+vpn-target <*> export-extcommunity evpn
+vpn-target <*> export-extcommunity
+vpn-target <*> export-extcommunity evpn
+vpn-target <*> export-extcommunity
+vpn-target <*> import-extcommunity evpn
+vpn-target <*> import-extcommunity
+ipv6-family
+route-distinguisher <*>
+vpn frr
+apply-label per-instance
+vpn-target <*> export-extcommunity evpn
+vpn-target <*> export-extcommunity
+vpn-target <*> export-extcommunity evpn
+vpn-target <*> export-extcommunity
+vpn-target <*> import-extcommunity evpn
+vpn-target <*> import-extcommunity
+#
+acl number <*>
+description <DESCRIPTION>
+step <*>
+rule <*> permit <*> source user-group <*> destination ip-address <IPV4> <*>
+#
+acl number <*>
+description <DESCRIPTION>
+step <*>
+rule <*> permit <*> <*> user-group <*> <*> eq <*>
+rule <*> permit ip source user-group <*>
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ip address <IPV4> <IPV4>
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis small-hello
+isis peer hold-max-cost timer <*>
+#
+ip ipv6-prefix <*> index <*> permit <IPV6> <*>
+ip ipv6-prefix <*> index <*> permit <IPV6> <*> greater-equal <*> less-equal <*>
+ip ipv6-prefix <*> index <*> permit <IPV6> <*>
+ip ipv6-prefix <*> index <*> permit <IPV6> <*> greater-equal <*> less-equal <*>
+ip ipv6-prefix <*> index <*> permit <IPV6> <*>
+ip ipv6-prefix <*> index <*> permit <IPV6> <*> greater-equal <*> less-equal <*>
+ip ipv6-prefix <*> index <*> permit <IPV6> <*>
+ip ipv6-prefix <*> index <*> permit <IPV6> <*> greater-equal <*> less-equal <*>
+ip ipv6-prefix <*> index <*> permit <IPV6> <*>
+ip ipv6-prefix <*> index <*> permit <IPV6> <*> greater-equal <*> less-equal <*>
+ip ipv6-prefix <*> index <*> permit <IPV6> <*>
+ip ipv6-prefix <*> index <*> permit <IPV6> <*> greater-equal <*> less-equal <*>
+ip ipv6-prefix <*> index <*> permit <IPV6> <*>
+ip ipv6-prefix <*> index <*> permit <IPV6> <*> greater-equal <*> less-equal <*>
+ip ipv6-prefix <*> index <*> permit <IPV6> <*>
+#
+ipv6-family unicast
+undo synchronization
+preference 20 200 200
+network <IPV6> <*>
+peer <*> enable
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+#
+radius-server group <*>
+radius-server authentication <IPV4> 1812 weight 50
+radius-server accounting <IPV4> 1813 weight 50
+radius-server group <*>
+radius-server class-as-car
+radius-server algorithm loading-share
+radius-attribute include <*>
+#
+acl number <*>
+description <DESCRIPTION>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> deny
+#
+ip vpn-instance <*>
+ipv4-family
+route-distinguisher <*>
+apply-label per-instance
+vpn-target <*> export-extcommunity
+vpn-target <*> import-extcommunity
+#
+ipv6-family unicast
+undo synchronization
+reflector cluster-id <IPV4>
+dampening
+routing-table rib-only route-policy rpribonly-v6
+preference 20 200 200
+maximum load-balancing <*>
+nexthop recursive-lookup non-critical-event delay 5
+bestroute add-path path-number 16
+segment-routing ipv6 locator <*>
+segment-routing ipv6 best-effort
+peer <*> enable
+peer <*> reflect-client
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> reflect-client
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> reflect-client
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> reflect-client
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> reflect-client
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> reflect-client
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> reflect-client
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> reflect-client
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> reflect-client
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> reflect-client
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+#
+interface <*>
+carrier up-hold-time <*>
+carrier down-hold-time <*>
+mtu 9000
+description <DESCRIPTION>
+undo shutdown
+set flow-stat interval 30
+control-flap
+ipv6 enable
+ipv6 address <*>
+ipv6 mtu 9000
+trust upstream <*>
+isis enable 800
+isis ipv6 enable 800
+isis circuit-type p2p
+isis circuit-level level-2
+isis ipv6 cost <*>
+isis cost <*>
+isis small-hello
+isis peer hold-max-cost timer <*>
+te link administrative group <*>
+te bandwidth max-reservable-bandwidth dynamic 100
+te bandwidth dynamic bc0 100
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+network-slice <*>
+#
+e-trunk <*>
+priority 80
+peer-ipv6 <IPV6> source-ipv6 <IPV6>
+timer revert delay 300
+e-trunk track bfd-session session-name <DEVICE>
+authentication-mode <*>
+#
+ipv4-family vpnv4
+policy vpn-target
+bestroute add-path path-number 16
+peer <*> enable
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+#
+interface <*>
+vlan-type dot1q <*>
+description <DESCRIPTION>
+ip binding vpn-instance <*>
+ipv6 enable
+ipv6 address <*>
+#
+acl number <*>
+description <DESCRIPTION>
+rule <*> permit source-mac <*>
+#
+ipv6-family vpn-instance <*>
+default-route imported
+import-route <*> route-policy <*>
+maximum load-balancing <*>
+nexthop recursive-lookup non-critical-event delay 0
+bestroute nexthop-priority ipv6
+route-select delay 100
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer best-effort evpn
+#
+segment-routing ipv6
+sr-te frr enable
+timer end-x update-delay 60000
+path-mtu 9000
+encapsulation source-address <IPV6>
+locator <*> ipv6-prefix <IPV6> <*> static 12 args 16
+opcode <IPV6> end-op
+locator <*> ipv6-prefix <IPV6> <*> static 12 args 16
+srv6-te-policy locator SRV6-END
+srv6-te-policy bfd seamless enable
+srv6-te-policy <*> enable
+srv6-te-policy <*> min-tx-interval <*>
+#
+ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>
+#
+interface <*>
+undo shutdown
+ip binding vpn-instance <*>
+ip address <IPV4> <IPV4>
+#
+interface <*>
+carrier up-hold-time <*>
+description <DESCRIPTION>
+shutdown
+#
+l2vpn-family evpn
+policy vpn-target
+bestroute add-path path-number 16
+peer <*> enable
+peer <*> advertise-community
+peer <*> esad-route-compatible
+peer <*> route-update-interval 0
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> advertise-large-community
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+#
+ipv6-family unicast
+undo synchronization
+dampening
+preference 20 200 200
+maximum load-balancing <*>
+bestroute add-path path-number 16
+segment-routing ipv6 locator <*>
+segment-routing ipv6 best-effort
+peer <*> enable
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+peer <*> enable
+peer <*> group <*>
+peer <*> prefix-sid
+#
+ipv4-family vpnv4
+policy vpn-target
+bestroute nexthop-resolved tunnel
+bestroute add-path path-number 16
+peer <*> enable
+peer <*> capability-advertise add-path both
+peer <*> advertise add-path path-number <*>
+peer <*> enable
+peer <*> group <*>
+peer <*> enable
+peer <*> group <*>
+#
+disaster-recovery group <*>
+up <*> <*>
+dap-server ip-pool <*>
+dap-server ipv6-pool <*>
+radius-server source interface <*>
+web-auth-server source interface <*>
+switch-mode auto
+priority 90
+#
+interface <INTERFACE> mode l2
+mtu 9000
+description <DESCRIPTION>
+statistic enable mode single
+encapsulation dot1q vid <*>
+bridge-domain <*>
+trust upstream <*>
+evpn e-tree-leaf
+trust 8021p
+#
+ssh <*> publickey dsa ecc rsa rsa_sha2_256 rsa_sha2_512
+#
+ipv4-family vpn-instance <*>
+network <IPV4> <IPV4>
+import-route <*>
+maximum load-balancing <*>
+bestroute nexthop-priority ipv6
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer best-effort evpn
+peer <*> enable
+#
+interface <*>
+description <DESCRIPTION>
+undo enable snmp trap updown
+ipv6 enable
+ipv6 address auto link-local
+user-vlan <*> <*> qinq <*>
+pppoe-server bind Virtual-Template <*>
+ipv6 nd autoconfig other-flag
+bas
+#
+service-location 4
+location slot <*> engine <*> backup slot <*> engine <*>
+#
+interface <INTERFACE> mode l2
+mtu 9000
+statistic enable mode single
+encapsulation dot1q vid <*> to <*>
+bridge-domain <*>
+trust upstream <*>
+evpn e-tree-leaf
+trust 8021p
+qos-profile <*> inbound identifier none
+qos phb dscp disable
+#
+ip ipv6-prefix <*> index <*> permit <IPV6> <*> greater-equal <*> less-equal <*>
+ip ipv6-prefix <*> index <*> permit <IPV6> <*>
+#
+ipv4-family vpn-instance <*>
+preference 20 200 200
+maximum load-balancing <*>
+bestroute nexthop-priority ipv6
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer best-effort evpn
+peer <*> enable
+peer <*> route-policy <*> import
+peer <IPV4> soo <*>
+peer <*> advertise-community
+peer <IPV4> route-update-interval 5
+peer <*> substitute-as
+peer <*> enable
+peer <*> route-policy <*> import
+peer <IPV4> soo <*>
+peer <*> advertise-community
+peer <IPV4> route-update-interval 5
+peer <*> substitute-as
+#
+dap-server ip pool <*>
+subnet warning-threshold <*>
+#
+pim
+static-rp <IPV4>
+#
+interface <*>
+vlan-type dot1q <*>
+mtu 9000
+ip binding vpn-instance <*>
+ip address <IPV4> <IPV4>
+#
+ssh client first-time enable
+ssh client peer <IPV4> assign ecc-key <IPV4>
+ssh client peer <*> assign rsa-key <*>
+ssh client peer <IPV4> assign ecc-key <IPV4>
+sftp client-source -i <*>
+#
+ip ip-prefix <*> index <*> permit <IPV4> <*> greater-equal <*> less-equal <*>
+ip ip-prefix <*> index <*> permit <IPV4> <*>
+#
+user-interface vty 0 <*>
+acl 2577 inbound
+authentication-mode <*>
+idle-timeout 5 0
+#
+acl number <*>
+rule <*> permit udp <*> user-group any fragment-type fragment-subseq
+#
+acl number <*>
+description <DESCRIPTION>
+rule <*> permit source <IPV4> <*>
+rule <*> permit vpn-instance <*> source <IPV4> <*>
+rule <*> deny
+#
+interface <INTERFACE> mode l2
+mtu 9000
+description <DESCRIPTION>
+encapsulation dot1q vid <*> to <*>
+bridge-domain <*>
+trust upstream <*>
+evpn e-tree-leaf
+trust 8021p
+qos-profile <*> inbound identifier none
+qos phb dscp disable
+#
+interface <*>
+description <DESCRIPTION>
+undo shutdown
+stp instance 0 cost 10000
+undo dcn
+undo dcn mode vlan
+port-queue be wfq weight 50 outbound
+port-queue af1 wfq weight 25 outbound
+port-queue af2 wfq weight 25 outbound
+port-queue af3 wfq weight 30 outbound
+port-queue af4 pq shaping shaping-percentage 20 outbound
+port-queue ef wfq weight 70 outbound
+port-queue cs6 pq shaping shaping-percentage 20 outbound
+port-queue cs7 pq shaping shaping-percentage 20 outbound
+#
+ipv4-family vpn-instance <*>
+import-route <*>
+maximum load-balancing <*>
+advertise l2vpn evpn
+segment-routing ipv6 locator <*> evpn
+segment-routing ipv6 traffic-engineer best-effort evpn
+#
+interface <*>
+vlan-type dot1q <*>
+mtu 9000
+description <DESCRIPTION>
+trust upstream <*>
+#
+aaa
+user-password password-force-change disable
+local-user <*> service-type telnet ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> service-type telnet ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+local-user <*> user-group manage-ug
+local-user <*> service-type ssh
+local-user <*> level <*>
+local-user <*> state block fail-times 3 interval 5
+#
+stelnet server enable
+sftp server enable
+snetconf server enable
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh user <*> sftp-directory <*>
+ssh user <*>
+ssh user <*> authentication-type <*>
+ssh user <*> service-type <*>
+ssh server-source -i <*>
+ssh server-source all-interface
+undo ssh ipv6 server-source all-interface
+ssh server acl 2577
+ssh authorization-type default <*>
+#
+ssh client first-time enable
+ssh client peer <IPV4> assign ecc-key <IPV4>
+ssh client peer <*> assign rsa-key <*>
+#

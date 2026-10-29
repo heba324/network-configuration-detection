@@ -1,0 +1,463 @@
+{
+  "vendor": "cisco",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "DEPENDENCY_MISSING",
+  "错误类型别名": [
+    "DEPENDENCY_MISSING"
+  ],
+  "错误类型描述": "引用了未定义的依赖对象",
+  "实际模板占比": "15.20%",
+  "数据集调整占比": "16.00%",
+  "错误数量": 56,
+  "details": [
+    {
+      "错误序号": 4,
+      "错误行号": 6774,
+      "正确的配置": "route-policy rp_default_v4_out out",
+      "错误的配置": "route-policy rp_default_v4_out_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_default_v4_out_DR"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 1748,
+      "正确的配置": "route-policy TO_MARRing10_VPN_OUT out",
+      "错误的配置": "route-policy TO_MARRing10_VPN_OUT_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: TO_MARRing10_VPN_OUT_DR"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 633,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-BACKUP"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 1685,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_RRC_VPN_IN_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_RRC_VPN_IN_DR"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 7451,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes_EDGE"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 639,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes_DR"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 1701,
+      "正确的配置": "route-policy TO_MARRing7_VPN_OUT out",
+      "错误的配置": "route-policy TO_MARRing7_VPN_OUT_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: TO_MARRing7_VPN_OUT_DR"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 5230,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-EDGE"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 1217,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_RRC_VPN_IN_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_RRC_VPN_IN_DR"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 2733,
+      "正确的配置": "network <IPV6> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV6> route-policy rp_Set_Core_Routes-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-BACKUP"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 5142,
+      "正确的配置": "network ::/0 route-policy rp_Set_Local_Routes",
+      "错误的配置": "network ::/0 route-policy rp_Set_Local_Routes-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Local_Routes-CORE"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 1732,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_RRC_VPN_IN_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_RRC_VPN_IN_DR"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 3417,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes_EDGE"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 611,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-CORE"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 4270,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_RRC_VPN_IN_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_RRC_VPN_IN_DR"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 2839,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Default_Routes-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Default_Routes-BACKUP"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 4662,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-BACKUP"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 2402,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_RRC_VPN_IN_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_RRC_VPN_IN_DR"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 1245,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Default_Routes_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Default_Routes_DR"
+    },
+    {
+      "错误序号": 83,
+      "错误行号": 6667,
+      "正确的配置": "route-policy rp_5GC_5GC_WAP_in in",
+      "错误的配置": "route-policy rp_5GC_5GC_WAP_in_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_5GC_5GC_WAP_in_DR"
+    },
+    {
+      "错误序号": 89,
+      "错误行号": 971,
+      "正确的配置": "network <IPV6> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV6> route-policy rp_Set_Core_Routes_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes_EDGE"
+    },
+    {
+      "错误序号": 94,
+      "错误行号": 6729,
+      "正确的配置": "route-policy rp_5GC_5GC_MGMN_in in",
+      "错误的配置": "route-policy rp_5GC_5GC_MGMN_in_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_5GC_5GC_MGMN_in_DR"
+    },
+    {
+      "错误序号": 97,
+      "错误行号": 636,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-CORE"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 2376,
+      "正确的配置": "route-policy TO_MARRing12_VPN_OUT out",
+      "错误的配置": "route-policy TO_MARRing12_VPN_OUT_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: TO_MARRing12_VPN_OUT_DR"
+    },
+    {
+      "错误序号": 111,
+      "错误行号": 5135,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-EDGE"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 2360,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_RRC_VPN_IN_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_RRC_VPN_IN_DR"
+    },
+    {
+      "错误序号": 121,
+      "错误行号": 1788,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Default_Routes-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Default_Routes-EDGE"
+    },
+    {
+      "错误序号": 124,
+      "错误行号": 2851,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes_EDGE"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 4311,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-CORE"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 6842,
+      "正确的配置": "route-policy rp_SmartMAN_OUT out",
+      "错误的配置": "route-policy rp_SmartMAN_OUT_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_SmartMAN_OUT_DR"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 617,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-EDGE"
+    },
+    {
+      "错误序号": 148,
+      "错误行号": 2444,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-BACKUP"
+    },
+    {
+      "错误序号": 150,
+      "错误行号": 1275,
+      "正确的配置": "network <IPV6>/112 route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV6>/112 route-policy rp_Set_Core_Routes_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes_DR"
+    },
+    {
+      "错误序号": 155,
+      "错误行号": 5077,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Default_Routes_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Default_Routes_DR"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 5569,
+      "正确的配置": "route-policy rp_QD_5GC_CITY_out out",
+      "错误的配置": "route-policy rp_QD_5GC_CITY_out_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_QD_5GC_CITY_out_DR"
+    },
+    {
+      "错误序号": 157,
+      "错误行号": 630,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-CORE"
+    },
+    {
+      "错误序号": 158,
+      "错误行号": 4697,
+      "正确的配置": "network <IPV6> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV6> route-policy rp_Set_Core_Routes-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-BACKUP"
+    },
+    {
+      "错误序号": 159,
+      "错误行号": 2852,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes_EDGE"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 2385,
+      "正确的配置": "route-policy TO_MARRing13_VPN_OUT out",
+      "错误的配置": "route-policy TO_MARRing13_VPN_OUT_DR out",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: TO_MARRing13_VPN_OUT_DR"
+    },
+    {
+      "错误序号": 178,
+      "错误行号": 2850,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-BACKUP"
+    },
+    {
+      "错误序号": 186,
+      "错误行号": 4132,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-EDGE"
+    },
+    {
+      "错误序号": 190,
+      "错误行号": 8334,
+      "正确的配置": "network ::/0 route-policy rp_Set_Local_Routes",
+      "错误的配置": "network ::/0 route-policy rp_Set_Local_Routes_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Local_Routes_DR"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 3086,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-EDGE"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 7248,
+      "正确的配置": "network <IPV6> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV6> route-policy rp_Set_Core_Routes_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes_EDGE"
+    },
+    {
+      "错误序号": 207,
+      "错误行号": 2815,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-CORE"
+    },
+    {
+      "错误序号": 209,
+      "错误行号": 4696,
+      "正确的配置": "network ::/0 route-policy rp_Set_Default_Routes",
+      "错误的配置": "network ::/0 route-policy rp_Set_Default_Routes_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Default_Routes_EDGE"
+    },
+    {
+      "错误序号": 212,
+      "错误行号": 8106,
+      "正确的配置": "network ::/0 route-policy rp_Set_Default_Routes",
+      "错误的配置": "network ::/0 route-policy rp_Set_Default_Routes-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Default_Routes-CORE"
+    },
+    {
+      "错误序号": 218,
+      "错误行号": 614,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-BACKUP"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 5558,
+      "正确的配置": "route-policy rp_WH_5G_RAN_in in",
+      "错误的配置": "route-policy rp_WH_5G_RAN_in_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_WH_5G_RAN_in_DR"
+    },
+    {
+      "错误序号": 236,
+      "错误行号": 2355,
+      "正确的配置": "route-policy rp_RRC_VPN_IN in",
+      "错误的配置": "route-policy rp_RRC_VPN_IN_DR in",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_RRC_VPN_IN_DR"
+    },
+    {
+      "错误序号": 237,
+      "错误行号": 5270,
+      "正确的配置": "network <IPV6> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV6> route-policy rp_Set_Core_Routes-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-CORE"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 2848,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Default_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Default_Routes-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Default_Routes-BACKUP"
+    },
+    {
+      "错误序号": 244,
+      "错误行号": 629,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes_EDGE"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 2819,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-EDGE"
+    },
+    {
+      "错误序号": 251,
+      "错误行号": 4310,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-EDGE"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 3899,
+      "正确的配置": "network <IPV4> route-policy rp_Set_Core_Routes",
+      "错误的配置": "network <IPV4> route-policy rp_Set_Core_Routes-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: rp_Set_Core_Routes-CORE"
+    }
+  ]
+}

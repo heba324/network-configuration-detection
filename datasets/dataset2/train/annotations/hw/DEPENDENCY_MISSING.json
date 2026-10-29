@@ -1,0 +1,1503 @@
+{
+  "vendor": "hw",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "DEPENDENCY_MISSING",
+  "错误类型别名": [
+    "DEPENDENCY_MISSING"
+  ],
+  "错误类型描述": "引用了未定义的依赖对象",
+  "实际模板占比": "38.91%",
+  "数据集调整占比": "42.00%",
+  "错误数量": 186,
+  "details": [
+    {
+      "错误序号": 2,
+      "错误行号": 22425,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 16983,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 32054,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 14571,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 28062,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 29177,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy RP_CORE-CORE import",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: RP_CORE-CORE"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 16262,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 16785,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 31780,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 22635,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 26689,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 17257,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 22343,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 10840,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 13071,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 32891,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 12930,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 22379,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 6228,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 85,
+      "错误行号": 136,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 87,
+      "错误行号": 31954,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 92,
+      "错误行号": 221,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 102,
+      "错误行号": 19496,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 103,
+      "错误行号": 37372,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 105,
+      "错误行号": 16953,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 106,
+      "错误行号": 10290,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 110,
+      "错误行号": 3581,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 116,
+      "错误行号": 9197,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 122,
+      "错误行号": 42118,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy RP_CORE-CORE export",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: RP_CORE-CORE"
+    },
+    {
+      "错误序号": 123,
+      "错误行号": 40218,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 125,
+      "错误行号": 33743,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 126,
+      "错误行号": 33509,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 127,
+      "错误行号": 36166,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 129,
+      "错误行号": 3313,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 130,
+      "错误行号": 19372,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy RP_CORE_DR export",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: RP_CORE_DR"
+    },
+    {
+      "错误序号": 132,
+      "错误行号": 13973,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 135,
+      "错误行号": 20835,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 136,
+      "错误行号": 2448,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 141,
+      "错误行号": 2171,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 145,
+      "错误行号": 8558,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 149,
+      "错误行号": 14637,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 156,
+      "错误行号": 14851,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 161,
+      "错误行号": 17003,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 163,
+      "错误行号": 18571,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy RP_CORE-BACKUP import",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: RP_CORE-BACKUP"
+    },
+    {
+      "错误序号": 172,
+      "错误行号": 3511,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 175,
+      "错误行号": 41977,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy RP_CORE_DR export",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: RP_CORE_DR"
+    },
+    {
+      "错误序号": 176,
+      "错误行号": 21623,
+      "正确的配置": "import-route <*> route-policy <*>",
+      "错误的配置": "import-route RP_CORE-EDGE route-policy <*>",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: RP_CORE-EDGE"
+    },
+    {
+      "错误序号": 191,
+      "错误行号": 12781,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 196,
+      "错误行号": 22397,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 197,
+      "错误行号": 17199,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 200,
+      "错误行号": 13473,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 204,
+      "错误行号": 5040,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 205,
+      "错误行号": 35788,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 220,
+      "错误行号": 8628,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 222,
+      "错误行号": 29249,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 228,
+      "错误行号": 10899,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 232,
+      "错误行号": 32424,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 235,
+      "错误行号": 8709,
+      "正确的配置": "disaster-recovery source <IPV4> peer <IPV4> vpn-instance CP2UP_L3VPN_HW",
+      "错误的配置": "disaster-recovery source <IPV4> peer <IPV4> vpn-instance CP2UP_L3VPN_HW_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: CP2UP_L3VPN_HW_DR"
+    },
+    {
+      "错误序号": 238,
+      "错误行号": 13970,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 240,
+      "错误行号": 4410,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 246,
+      "错误行号": 35989,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 248,
+      "错误行号": 20349,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 252,
+      "错误行号": 30768,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 257,
+      "错误行号": 14569,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 258,
+      "错误行号": 27985,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 261,
+      "错误行号": 27956,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 262,
+      "错误行号": 27128,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 269,
+      "错误行号": 6276,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 274,
+      "错误行号": 19609,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 277,
+      "错误行号": 30728,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 279,
+      "错误行号": 10742,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 289,
+      "错误行号": 15076,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 290,
+      "错误行号": 18153,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy RP_CORE_DR export",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: RP_CORE_DR"
+    },
+    {
+      "错误序号": 291,
+      "错误行号": 13059,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 295,
+      "错误行号": 34049,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 296,
+      "错误行号": 2403,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 297,
+      "错误行号": 27384,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy RP_CORE-CORE export",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: RP_CORE-CORE"
+    },
+    {
+      "错误序号": 299,
+      "错误行号": 10428,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 302,
+      "错误行号": 40390,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 304,
+      "错误行号": 14721,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 305,
+      "错误行号": 11083,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 306,
+      "错误行号": 19552,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 311,
+      "错误行号": 22663,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 313,
+      "错误行号": 40126,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 314,
+      "错误行号": 23425,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 316,
+      "错误行号": 139,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy RP_CORE-EDGE export",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: RP_CORE-EDGE"
+    },
+    {
+      "错误序号": 317,
+      "错误行号": 31968,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 322,
+      "错误行号": 17283,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 328,
+      "错误行号": 12889,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 329,
+      "错误行号": 42076,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy RP_CORE_EDGE export",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: RP_CORE_EDGE"
+    },
+    {
+      "错误序号": 337,
+      "错误行号": 12811,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 338,
+      "错误行号": 30589,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 340,
+      "错误行号": 27904,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 351,
+      "错误行号": 14841,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 352,
+      "错误行号": 20695,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy RP_CORE-CORE export",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: RP_CORE-CORE"
+    },
+    {
+      "错误序号": 355,
+      "错误行号": 17055,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 358,
+      "错误行号": 23419,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 360,
+      "错误行号": 22545,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 363,
+      "错误行号": 5256,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 367,
+      "错误行号": 18921,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 368,
+      "错误行号": 14763,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 369,
+      "错误行号": 18935,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 370,
+      "错误行号": 13014,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 373,
+      "错误行号": 40248,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 379,
+      "错误行号": 24710,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 384,
+      "错误行号": 12941,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 385,
+      "错误行号": 42358,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 390,
+      "错误行号": 11664,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 395,
+      "错误行号": 27970,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 396,
+      "错误行号": 31994,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 399,
+      "错误行号": 33533,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 402,
+      "错误行号": 14984,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 405,
+      "错误行号": 2068,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 409,
+      "错误行号": 22569,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 419,
+      "错误行号": 6234,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 424,
+      "错误行号": 33904,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 430,
+      "错误行号": 42060,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 436,
+      "错误行号": 10580,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 440,
+      "错误行号": 3620,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 444,
+      "错误行号": 30647,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 448,
+      "错误行号": 14603,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 456,
+      "错误行号": 19498,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 457,
+      "错误行号": 2229,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 460,
+      "错误行号": 22521,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 461,
+      "错误行号": 9523,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 465,
+      "错误行号": 34245,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 470,
+      "错误行号": 17271,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 479,
+      "错误行号": 8622,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 482,
+      "错误行号": 25566,
+      "正确的配置": "peer <*> route-policy <*> import",
+      "错误的配置": "peer <*> route-policy RP_CORE-CORE import",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: RP_CORE-CORE"
+    },
+    {
+      "错误序号": 483,
+      "错误行号": 27950,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 486,
+      "错误行号": 12771,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 488,
+      "错误行号": 18587,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 490,
+      "错误行号": 22385,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 494,
+      "错误行号": 19209,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 496,
+      "错误行号": 35725,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 497,
+      "错误行号": 27854,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 498,
+      "错误行号": 18902,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 500,
+      "错误行号": 22684,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 504,
+      "错误行号": 20903,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 505,
+      "错误行号": 34243,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 507,
+      "错误行号": 17059,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 509,
+      "错误行号": 34045,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 511,
+      "错误行号": 30796,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 516,
+      "错误行号": 33389,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 518,
+      "错误行号": 35932,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 520,
+      "错误行号": 18575,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 523,
+      "错误行号": 22465,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 524,
+      "错误行号": 3305,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 525,
+      "错误行号": 6306,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 530,
+      "错误行号": 35716,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 539,
+      "错误行号": 2010,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 553,
+      "错误行号": 8673,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 558,
+      "错误行号": 26547,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 565,
+      "错误行号": 9711,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 566,
+      "错误行号": 22153,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 571,
+      "错误行号": 27998,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 576,
+      "错误行号": 2480,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 579,
+      "错误行号": 34079,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 583,
+      "错误行号": 36495,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 586,
+      "错误行号": 8975,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 594,
+      "错误行号": 16767,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 595,
+      "错误行号": 33747,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 596,
+      "错误行号": 2446,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 597,
+      "错误行号": 36031,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 599,
+      "错误行号": 21300,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 601,
+      "错误行号": 19211,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 608,
+      "错误行号": 19036,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 609,
+      "错误行号": 9900,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 610,
+      "错误行号": 17285,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 612,
+      "错误行号": 6934,
+      "正确的配置": "peer <*> route-policy <*> export",
+      "错误的配置": "peer <*> route-policy RP_CORE-CORE export",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Route Policy: RP_CORE-CORE"
+    },
+    {
+      "错误序号": 620,
+      "错误行号": 3232,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 621,
+      "错误行号": 13397,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 629,
+      "错误行号": 32036,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 642,
+      "错误行号": 2440,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 644,
+      "错误行号": 10764,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 645,
+      "错误行号": 1940,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 646,
+      "错误行号": 28144,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 647,
+      "错误行号": 17151,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 649,
+      "错误行号": 4972,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    },
+    {
+      "错误序号": 656,
+      "错误行号": 35629,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 660,
+      "错误行号": 17253,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 663,
+      "错误行号": 35911,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-BACKUP",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-BACKUP"
+    },
+    {
+      "错误序号": 665,
+      "错误行号": 8822,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_DR",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_DR"
+    },
+    {
+      "错误序号": 666,
+      "错误行号": 22610,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-EDGE"
+    },
+    {
+      "错误序号": 667,
+      "错误行号": 3261,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any-CORE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any-CORE"
+    },
+    {
+      "错误序号": 669,
+      "错误行号": 2490,
+      "正确的配置": "peer <*> group <*>",
+      "错误的配置": "peer <*> group any_EDGE",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Peer Group: any_EDGE"
+    }
+  ]
+}

@@ -1,0 +1,656 @@
+{
+  "vendor": "ruijie",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "ORDER_ERROR",
+  "错误类型别名": [
+    "ORDER_DEPENDENCY_ERROR",
+    "ORDER_ERROR"
+  ],
+  "错误类型描述": "配置语句顺序依赖错误",
+  "实际模板占比": "6.25%",
+  "数据集调整占比": "5.00%",
+  "错误数量": 80,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 194,
+      "正确的配置": "switchport port-security violation protect -> spanning-tree portfast",
+      "错误的配置": "spanning-tree portfast -> switchport port-security violation protect",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 3483,
+      "正确的配置": "match ip dscp cs3 -> match ip dscp af41",
+      "错误的配置": "match ip dscp af41 -> match ip dscp cs3",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 2003,
+      "正确的配置": "interface GigabitEthernet <*> -> ip ospf authentication message-digest",
+      "错误的配置": "ip ospf authentication message-digest -> interface GigabitEthernet <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 3087,
+      "正确的配置": "snmp-server contact NetAdmin-<*> -> snmp-server enable traps ospf state-change",
+      "错误的配置": "snmp-server enable traps ospf state-change -> snmp-server contact NetAdmin-<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 1948,
+      "正确的配置": "logging file LOGFILE size <*> -> service timestamps log datetime msec",
+      "错误的配置": "service timestamps log datetime msec -> logging file LOGFILE size <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 938,
+      "正确的配置": "max-lsa <*> -> log-adjacency-changes detail",
+      "错误的配置": "log-adjacency-changes detail -> max-lsa <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 633,
+      "正确的配置": "neighbor IBGP-PEERS-<*> peer-group -> neighbor IBGP-PEERS-<*> update-source Loopback <*>",
+      "错误的配置": "neighbor IBGP-PEERS-<*> update-source Loopback <*> -> neighbor IBGP-PEERS-<*> peer-group",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 1677,
+      "正确的配置": "class CMAP-<*> -> set ip dscp ef",
+      "错误的配置": "set ip dscp ef -> class CMAP-<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 1593,
+      "正确的配置": "snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv des PrivPass123 -> snmp-server contact NetAdmin-<*>",
+      "错误的配置": "snmp-server contact NetAdmin-<*> -> snmp-server user SnmpUser-<*> SecureGroup-<*> v3 auth md5 AuthPass123 priv des PrivPass123",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 4329,
+      "正确的配置": "address-family ipv4 -> neighbor <*> prefix-list IN-FILTER-<*> in",
+      "错误的配置": "neighbor <*> prefix-list IN-FILTER-<*> in -> address-family ipv4",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 3912,
+      "正确的配置": "aaa authentication login default group RAD-GROUP-<*> none -> aaa authorization exec default group RAD-GROUP-<*> local if-authenticated",
+      "错误的配置": "aaa authorization exec default group RAD-GROUP-<*> local if-authenticated -> aaa authentication login default group RAD-GROUP-<*> none",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 3355,
+      "正确的配置": "exit -> match community COM-LIST-<*>",
+      "错误的配置": "match community COM-LIST-<*> -> exit",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 4044,
+      "正确的配置": "permit ip any any -> interface Vlan <*>",
+      "错误的配置": "interface Vlan <*> -> permit ip any any",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 1812,
+      "正确的配置": "switchport port-security violation shutdown -> no cdp enable",
+      "错误的配置": "no cdp enable -> switchport port-security violation shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 4299,
+      "正确的配置": "ip access-list extended FW-POLICY-<*> -> deny icmp <*> <*> any",
+      "错误的配置": "deny icmp <*> <*> any -> ip access-list extended FW-POLICY-<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 3582,
+      "正确的配置": "is-type level-<*> -> exit",
+      "错误的配置": "exit -> is-type level-<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 1072,
+      "正确的配置": "match ip address prefix-list CRITICAL-PREFIX-<*> -> set weight <*>",
+      "错误的配置": "set weight <*> -> match ip address prefix-list CRITICAL-PREFIX-<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 3705,
+      "正确的配置": "router isis AREA1-<*> -> net <*>.<*>.<*>.<*>.<*>.<*>",
+      "错误的配置": "net <*>.<*>.<*>.<*>.<*>.<*> -> router isis AREA1-<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 3376,
+      "正确的配置": "switchport port-security mac-address sticky -> spanning-tree bpduguard enable",
+      "错误的配置": "spanning-tree bpduguard enable -> switchport port-security mac-address sticky",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 1712,
+      "正确的配置": "router isis AREA1-<*> -> log-adjacency-changes",
+      "错误的配置": "log-adjacency-changes -> router isis AREA1-<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 1945,
+      "正确的配置": "logging host <*> transport udp port <*> -> logging trap warnings",
+      "错误的配置": "logging trap warnings -> logging host <*> transport udp port <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 1916,
+      "正确的配置": "neighbor <*> send-community extended -> exit",
+      "错误的配置": "exit -> neighbor <*> send-community extended",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 760,
+      "正确的配置": "switchport port-security violation shutdown -> spanning-tree portfast",
+      "错误的配置": "spanning-tree portfast -> switchport port-security violation shutdown",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 1836,
+      "正确的配置": "match community COM-LIST-<*> -> set community <*>:<*> additive",
+      "错误的配置": "set community <*>:<*> additive -> match community COM-LIST-<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 1635,
+      "正确的配置": "deny ip <*> <*> any -> permit tcp <*> <*> any eq <*>",
+      "错误的配置": "permit tcp <*> <*> any eq <*> -> deny ip <*> <*> any",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 2099,
+      "正确的配置": "switchport port-security violation protect -> switchport port-security mac-address sticky <*>",
+      "错误的配置": "switchport port-security mac-address sticky <*> -> switchport port-security violation protect",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 3864,
+      "正确的配置": "default-information originate metric <*> -> log-adjacency-changes detail",
+      "错误的配置": "log-adjacency-changes detail -> default-information originate metric <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 3563,
+      "正确的配置": "route-map PBR-MAP-<*> permit <*> -> match ip address PBR-ACL-<*>",
+      "错误的配置": "match ip address PBR-ACL-<*> -> route-map PBR-MAP-<*> permit <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 2121,
+      "正确的配置": "switchport port-security violation protect -> spanning-tree bpduguard enable",
+      "错误的配置": "spanning-tree bpduguard enable -> switchport port-security violation protect",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 2764,
+      "正确的配置": "access-list <*> deny any log -> access-class <*> in",
+      "错误的配置": "access-class <*> in -> access-list <*> deny any log",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 673,
+      "正确的配置": "snmp-server enable traps config -> snmp-server enable traps bgp",
+      "错误的配置": "snmp-server enable traps bgp -> snmp-server enable traps config",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 1443,
+      "正确的配置": "ip dhcp snooping -> ip dhcp snooping information option",
+      "错误的配置": "ip dhcp snooping information option -> ip dhcp snooping",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 254,
+      "正确的配置": "ip dhcp snooping vlan <*>,<*>,<*>,<*> -> ip dhcp snooping verify mac-address",
+      "错误的配置": "ip dhcp snooping verify mac-address -> ip dhcp snooping vlan <*>,<*>,<*>,<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 586,
+      "正确的配置": "ip dhcp snooping verify mac-address -> exit",
+      "错误的配置": "exit -> ip dhcp snooping verify mac-address",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 659,
+      "正确的配置": "neighbor <*> remote-as <*> -> address-family ipv4",
+      "错误的配置": "address-family ipv4 -> neighbor <*> remote-as <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 3217,
+      "正确的配置": "router bgp <*> -> neighbor <*> send-community standard",
+      "错误的配置": "neighbor <*> send-community standard -> router bgp <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 1670,
+      "正确的配置": "access-class <*> in -> transport input ssh",
+      "错误的配置": "transport input ssh -> access-class <*> in",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 3649,
+      "正确的配置": "log-adjacency-changes -> exit",
+      "错误的配置": "exit -> log-adjacency-changes",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 3954,
+      "正确的配置": "interface Vlan <*> -> ip access-group FW-POLICY-<*> out",
+      "错误的配置": "ip access-group FW-POLICY-<*> out -> interface Vlan <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 3331,
+      "正确的配置": "router bgp <*> -> graceful-restart stalepath-time <*>",
+      "错误的配置": "graceful-restart stalepath-time <*> -> router bgp <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 4159,
+      "正确的配置": "router bgp <*> -> address-family ipv4",
+      "错误的配置": "address-family ipv4 -> router bgp <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 1125,
+      "正确的配置": "exit -> route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> permit <*> -> exit",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 1962,
+      "正确的配置": "router-id <*> -> auto-cost reference-bandwidth <*>",
+      "错误的配置": "auto-cost reference-bandwidth <*> -> router-id <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 3431,
+      "正确的配置": "auto-cost reference-bandwidth <*> -> max-lsa <*>",
+      "错误的配置": "max-lsa <*> -> auto-cost reference-bandwidth <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 4261,
+      "正确的配置": "address-family ipv4 -> neighbor <*> activate",
+      "错误的配置": "neighbor <*> activate -> address-family ipv4",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 49,
+      "正确的配置": "deny icmp <*> <*> any -> exit",
+      "错误的配置": "exit -> deny icmp <*> <*> any",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 1323,
+      "正确的配置": "exit-address-family -> route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> permit <*> -> exit-address-family",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 4323,
+      "正确的配置": "ip community-list expanded COM-LIST-<*> permit _2922259916:.* -> set community <*>:<*> additive",
+      "错误的配置": "set community <*>:<*> additive -> ip community-list expanded COM-LIST-<*> permit _2922259916:.*",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 2936,
+      "正确的配置": "address-family ipv4 vrf VRF-CUST-A-<*> -> redistribute connected",
+      "错误的配置": "redistribute connected -> address-family ipv4 vrf VRF-CUST-A-<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 1992,
+      "正确的配置": "neighbor <*> send-community both -> exit-address-family",
+      "错误的配置": "exit-address-family -> neighbor <*> send-community both",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 2965,
+      "正确的配置": "router isis AREA1-<*> -> is-type level-<*>-only",
+      "错误的配置": "is-type level-<*>-only -> router isis AREA1-<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 3741,
+      "正确的配置": "net <*>.<*>.<*>.<*>.<*>.<*> -> log-adjacency-changes",
+      "错误的配置": "log-adjacency-changes -> net <*>.<*>.<*>.<*>.<*>.<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 911,
+      "正确的配置": "no cdp enable -> spanning-tree bpduguard enable",
+      "错误的配置": "spanning-tree bpduguard enable -> no cdp enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 3420,
+      "正确的配置": "interface GigabitEthernet <*> -> switchport port-security",
+      "错误的配置": "switchport port-security -> interface GigabitEthernet <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 3643,
+      "正确的配置": "no cdp enable -> spanning-tree bpduguard enable",
+      "错误的配置": "spanning-tree bpduguard enable -> no cdp enable",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 2753,
+      "正确的配置": "snmp-server host <*> traps version <*> priv SnmpUser-<*> -> snmp-server enable traps snmp",
+      "错误的配置": "snmp-server enable traps snmp -> snmp-server host <*> traps version <*> priv SnmpUser-<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 3464,
+      "正确的配置": "snmp-server contact NetAdmin-<*> -> snmp-server enable traps snmp",
+      "错误的配置": "snmp-server enable traps snmp -> snmp-server contact NetAdmin-<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 1029,
+      "正确的配置": "interface Vlan <*> -> ip access-group FW-POLICY-<*> in",
+      "错误的配置": "ip access-group FW-POLICY-<*> in -> interface Vlan <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 1310,
+      "正确的配置": "router bgp <*> -> neighbor <*> remote-as <*>",
+      "错误的配置": "neighbor <*> remote-as <*> -> router bgp <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 859,
+      "正确的配置": "switchport port-security maximum <*> -> spanning-tree bpduguard enable",
+      "错误的配置": "spanning-tree bpduguard enable -> switchport port-security maximum <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 4001,
+      "正确的配置": "permit ip any any -> ip access-group FW-POLICY-<*> out",
+      "错误的配置": "ip access-group FW-POLICY-<*> out -> permit ip any any",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 1643,
+      "正确的配置": "match ip dscp cs3 -> policy-map PMAP-MARKING-<*>",
+      "错误的配置": "policy-map PMAP-MARKING-<*> -> match ip dscp cs3",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 1418,
+      "正确的配置": "exit -> route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> permit <*> -> exit",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 3981,
+      "正确的配置": "ip community-list expanded COM-LIST-<*> permit _2104817162:.* -> route-map SET-COMMUNITY-<*> permit <*>",
+      "错误的配置": "route-map SET-COMMUNITY-<*> permit <*> -> ip community-list expanded COM-LIST-<*> permit _2104817162:.*",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 65,
+      "错误行号": 2731,
+      "正确的配置": "access-list <*> deny <*> <*> -> access-list <*> deny any log",
+      "错误的配置": "access-list <*> deny any log -> access-list <*> deny <*> <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 66,
+      "错误行号": 645,
+      "正确的配置": "ip access-list extended FW-POLICY-<*> -> deny icmp <*> <*> any",
+      "错误的配置": "deny icmp <*> <*> any -> ip access-list extended FW-POLICY-<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 67,
+      "错误行号": 86,
+      "正确的配置": "snmp-server group SecureGroup-<*> v3 priv -> snmp-server contact NetAdmin-<*>",
+      "错误的配置": "snmp-server contact NetAdmin-<*> -> snmp-server group SecureGroup-<*> v3 priv",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 68,
+      "错误行号": 3746,
+      "正确的配置": "interface GigabitEthernet <*> -> isis metric <*>",
+      "错误的配置": "isis metric <*> -> interface GigabitEthernet <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 69,
+      "错误行号": 2411,
+      "正确的配置": "neighbor <*> activate -> exit-address-family",
+      "错误的配置": "exit-address-family -> neighbor <*> activate",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 70,
+      "错误行号": 3613,
+      "正确的配置": "router ospf <*> -> router-id <*>",
+      "错误的配置": "router-id <*> -> router ospf <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 71,
+      "错误行号": 2811,
+      "正确的配置": "router-id <*> -> auto-cost reference-bandwidth <*>",
+      "错误的配置": "auto-cost reference-bandwidth <*> -> router-id <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 72,
+      "错误行号": 2704,
+      "正确的配置": "ip dhcp snooping trust -> ip dhcp snooping limit rate <*>",
+      "错误的配置": "ip dhcp snooping limit rate <*> -> ip dhcp snooping trust",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 73,
+      "错误行号": 2192,
+      "正确的配置": "router bgp <*> -> exit-address-family",
+      "错误的配置": "exit-address-family -> router bgp <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 74,
+      "错误行号": 3904,
+      "正确的配置": "aaa new-model -> key <*> <*>-<*>",
+      "错误的配置": "key <*> <*>-<*> -> aaa new-model",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 75,
+      "错误行号": 2407,
+      "正确的配置": "neighbor <*> description Peer-to-ISP -> neighbor <*> update-source Loopback <*>",
+      "错误的配置": "neighbor <*> update-source Loopback <*> -> neighbor <*> description Peer-to-ISP",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 76,
+      "错误行号": 3972,
+      "正确的配置": "set ip dscp cs3 -> set ip precedence <*>",
+      "错误的配置": "set ip precedence <*> -> set ip dscp cs3",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 77,
+      "错误行号": 2813,
+      "正确的配置": "default-information originate metric <*> -> max-lsa <*>",
+      "错误的配置": "max-lsa <*> -> default-information originate metric <*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 78,
+      "错误行号": 2991,
+      "正确的配置": "neighbor <*> send-community standard -> ip community-list expanded COM-LIST-<*> permit _3122748274:.*",
+      "错误的配置": "ip community-list expanded COM-LIST-<*> permit _3122748274:.* -> neighbor <*> send-community standard",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 79,
+      "错误行号": 3465,
+      "正确的配置": "snmp-server host <*> traps version <*> priv SnmpUser-<*> -> snmp-server enable traps bgp",
+      "错误的配置": "snmp-server enable traps bgp -> snmp-server host <*> traps version <*> priv SnmpUser-<*>",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    },
+    {
+      "错误序号": 80,
+      "错误行号": 2185,
+      "正确的配置": "exit -> policy-map PMAP-MARKING-<*>",
+      "错误的配置": "policy-map PMAP-MARKING-<*> -> exit",
+      "错误类型": "ORDER_ERROR",
+      "错误描述": "顺序依赖错误"
+    }
+  ]
+}

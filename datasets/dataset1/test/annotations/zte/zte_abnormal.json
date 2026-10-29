@@ -1,0 +1,603 @@
+{
+  "vendor": "zte",
+  "dataset": "test_dataset_1",
+  "实际模板占比": "12.04%",
+  "数据集调整占比": "8.00%",
+  "正常配置块数": 64,
+  "异常配置块数": 64,
+  "每个异常块错误类型数": 1,
+  "总错误数": 64,
+  "错误类型分布": {
+    "POLICY_CONFLICT": 7,
+    "RESOURCE_CONFLICT": 3,
+    "PARAM_TYPE_MISMATCH": 7,
+    "MISSING_STATEMENT": 12,
+    "ORDER_DEPENDENCY_ERROR": 7,
+    "SYNTAX_ERROR": 7,
+    "REDUNDANT_STATEMENT": 7,
+    "DEPENDENCY_MISSING": 7,
+    "SEMANTIC_INCONSISTENCY": 7
+  },
+  "errors": [
+    {
+      "错误序号": 1,
+      "错误行号": 2,
+      "正确的配置": "ip prefix-list 2576 seq 20 permit 239.49.0.0 21",
+      "错误的配置": "ip prefix-list 2576 seq 20 deny 239.49.0.0 21",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）",
+      "配置块序号": 1
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 1,
+      "正确的配置": "ip prefix-list 2576 seq 10 permit 224.0.0.0 23",
+      "错误的配置": "ip prefix-list ipTrackSpine seq 10 permit 224.0.0.0 23",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipTrackSpine）",
+      "配置块序号": 2
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 5,
+      "正确的配置": "maximum-paths 16",
+      "错误的配置": "maximum-paths 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配",
+      "配置块序号": 3
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 1,
+      "正确的配置": "interface <*>",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 4
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 2,
+      "正确的配置": "alarm-threshold static-port-range-block 90 -> res-alloc-policy mask 26 assign forward",
+      "错误的配置": "res-alloc-policy mask 26 assign forward -> alarm-threshold static-port-range-block 90",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误",
+      "配置块序号": 5
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 3,
+      "正确的配置": "bgp nexthop recursive-lookup default-route disable -> neighbor pgToRR activate",
+      "错误的配置": "neighbor pgToRR activate -> bgp nexthop recursive-lookup default-route disable",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误",
+      "配置块序号": 6
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 2,
+      "正确的配置": "description For-5G-2B",
+      "错误的配置": "descrption For-5G-2B",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误",
+      "配置块序号": 7
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 3,
+      "正确的配置": "ip prefix-list 2576 seq 30 permit 239.49.8.0 22",
+      "错误的配置": "ip prefix-list 2576 seq 30 permit 239.49.8.0 22  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3行被重复，冗余语句",
+      "配置块序号": 8
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 3,
+      "正确的配置": "local-privilege-level 5",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 9,
+      "计划错误类型": "RESOURCE_CONFLICT"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 3,
+      "正确的配置": "ip vrf forwarding CTVPN193-JS",
+      "错误的配置": "ip vrf forwarding 2B_RAN",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 2B_RAN",
+      "配置块序号": 10
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 5,
+      "正确的配置": "rule 1000 permit any any",
+      "错误的配置": "rule 1000 deny any any",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）",
+      "配置块序号": 11
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 1,
+      "正确的配置": "ip route <*> 255.255.255.255 <*> <*> bfd enable name <*>",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 12,
+      "计划错误类型": "RESOURCE_CONFLICT"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 2,
+      "正确的配置": "end-sid func-code <IPV6>",
+      "错误的配置": "end-sid func-code 10.255.0.1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配",
+      "配置块序号": 13
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 4,
+      "正确的配置": "ip vrf forwarding CTVPN193-JS",
+      "错误的配置": "ip vrf forwarding 2B_RAN",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 2B_RAN",
+      "配置块序号": 14
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 1,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误",
+      "配置块序号": 15
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 1,
+      "正确的配置": "interface <*> -> description <*>",
+      "错误的配置": "description <*> -> interface <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误",
+      "配置块序号": 16
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 2,
+      "正确的配置": "!configuration saved in txt mode at <*> on <*> <*> <*> <*> by the system automatically",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 17,
+      "计划错误类型": "RESOURCE_CONFLICT"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 1,
+      "正确的配置": "interface <*>",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 18
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 2,
+      "正确的配置": "ip address <*> <*>",
+      "错误的配置": "ip address <*> <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2行被重复，冗余语句",
+      "配置块序号": 19
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 1,
+      "正确的配置": "ip prefix-list 2576 seq 10 permit 224.0.0.0 23",
+      "错误的配置": "ip prefix-list ipDenyCGN seq 10 permit 224.0.0.0 23",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的Prefix List: ipDenyCGN",
+      "配置块序号": 20
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 3,
+      "正确的配置": "keep-alive",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 21
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 4,
+      "正确的配置": "ip vrf forwarding E07-HLWZX-Export",
+      "错误的配置": "ip vrf forwarding 2B_RAN",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 2B_RAN",
+      "配置块序号": 22
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 2,
+      "正确的配置": "synchronization disable",
+      "错误的配置": "synchronization enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致",
+      "配置块序号": 23
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 2,
+      "正确的配置": "description <*>",
+      "错误的配置": "description 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配",
+      "配置块序号": 24
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 1,
+      "正确的配置": "af-node <*>",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 25
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 8,
+      "正确的配置": "sa-filter in list aclPermitCacheSA",
+      "错误的配置": "sa-filtre in list aclPermitCacheSA",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误",
+      "配置块序号": 26
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 6,
+      "正确的配置": "bgp nexthop recursive-lookup srv6-sid enable",
+      "错误的配置": "bgp nexthop recursive-lookup srv6-sid disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致",
+      "配置块序号": 27
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 3,
+      "正确的配置": "ip prefix-list 2576 seq 30 permit 239.49.8.0 22",
+      "错误的配置": "ip prefix-list ipTrackSpine seq 30 permit 239.49.8.0 22",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 ipTrackSpine）",
+      "配置块序号": 28
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 5,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致",
+      "配置块序号": 29
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 1,
+      "正确的配置": "ip prefix-list 2576 seq 10 permit 224.0.0.0 23",
+      "错误的配置": "ip prefix-list 2576 seq 10 deny 224.0.0.0 23",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）",
+      "配置块序号": 30
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 8,
+      "正确的配置": "nvram default-gateway ipv6 <IPV6>",
+      "错误的配置": "nvram default-gateway ipv6 10.255.0.1",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配",
+      "配置块序号": 31
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 1,
+      "正确的配置": "ip extcommunity-list advanced NJ-JS-ASBR-SRV6-PE-TestSystem <*> permit <*>",
+      "错误的配置": "ip extcommunity-list advanced NJ-JS-ASBR-SRV6-PE-TestSystem <*> deny <*>",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）",
+      "配置块序号": 32
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 7,
+      "正确的配置": "no shutdown",
+      "错误的配置": "no shutdown  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第7行被重复，冗余语句",
+      "配置块序号": 33
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 3,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 34
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 3,
+      "正确的配置": "router pim",
+      "错误的配置": "router pim  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第3行被重复，冗余语句",
+      "配置块序号": 35
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 3,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致",
+      "配置块序号": 36
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 44,
+      "正确的配置": "neighbor pgToDCLeaf-v6 activate",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 37
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 1,
+      "正确的配置": "service <*> cgn_ext enable",
+      "错误的配置": "service <*> cgn_ext enable  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第1行被重复，冗余语句",
+      "配置块序号": 38
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 4,
+      "正确的配置": "ip vrf forwarding E07-HLWZX-Export",
+      "错误的配置": "ip vrf forwarding 2B_RAN",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 2B_RAN",
+      "配置块序号": 39
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 4,
+      "正确的配置": "tunnel source ipv4 <*> -> tunnel destination ipv4 <*>",
+      "错误的配置": "tunnel destination ipv4 <*> -> tunnel source ipv4 <*>",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误",
+      "配置块序号": 40
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 6,
+      "正确的配置": "mc-lag mode force-master -> mc-lag sys-id <*> sys-priority 1",
+      "错误的配置": "mc-lag sys-id <*> sys-priority 1 -> mc-lag mode force-master",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误",
+      "配置块序号": 41
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 1,
+      "正确的配置": "mac -> umr es-id static <*> no-vlan detail-suppressed",
+      "错误的配置": "umr es-id static <*> no-vlan detail-suppressed -> mac",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误",
+      "配置块序号": 42
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 14,
+      "正确的配置": "neighbor pgToDCGW-CP2UP-L3VPN-ZTE route-map rpFromDCGW-CP2UP-L3VPN-ZTE in",
+      "错误的配置": "neighbor pgToDCGW-CP2UP-L3VPN-ZTE route-map rpFromDCGW-CP2UP-L3VPN-ZTE out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）",
+      "配置块序号": 43
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 2,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误",
+      "配置块序号": 44
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 4,
+      "正确的配置": "lacp admin-status-linkage enable",
+      "错误的配置": "lacp admin-status-linkage disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致",
+      "配置块序号": 45
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 2,
+      "正确的配置": "description <*>",
+      "错误的配置": "description <*>  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2行被重复，冗余语句",
+      "配置块序号": 46
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 14,
+      "正确的配置": "neighbor <*> route-map rpFromCR-HLWZX-Export-V6 in",
+      "错误的配置": "neighbor <*> route-map rpToCR-HLWZX-Export-V6 in",
+      "错误类型": "RESOURCE_CONFLICT",
+      "错误描述": "资源冲突（重复使用已存在的真实资源值 rpToCR-HLWZX-Export-V6）",
+      "配置块序号": 47
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 15,
+      "正确的配置": "neighbor pgToCloudPE-v6 route-map rpFromCloudPE-V6 in",
+      "错误的配置": "neighbor pgToCloudPE-v6 route-map rpFromCloudPE-V6 out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）",
+      "配置块序号": 48
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 35,
+      "正确的配置": "neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 route-map rpFromNJ-JS-ASBR-SRV6-PE in",
+      "错误的配置": "neighbor pgToNJ-JS-ASBR-MAN.SRV6-PE-v6 route-map rpFromNJ-JS-ASBR-SRV6-PE out",
+      "错误类型": "POLICY_CONFLICT",
+      "错误描述": "策略动作冲突（如 permit/deny、import/export 方向矛盾）",
+      "配置块序号": 49
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 9,
+      "正确的配置": "route-target export <*>",
+      "错误的配置": "route-targte export <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误",
+      "配置块序号": 50
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 19,
+      "正确的配置": "multi-user configure enable",
+      "错误的配置": "multi-user configure disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致",
+      "配置块序号": 51
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 2,
+      "正确的配置": "bandwidth percent 25",
+      "错误的配置": "bandwidht percent 25",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误",
+      "配置块序号": 52
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 4,
+      "正确的配置": "server 1 61.132.58.197 key encrypted <*>",
+      "错误的配置": "server 1 2001:db8::1 key encrypted <*>",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配",
+      "配置块序号": 53
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 4,
+      "正确的配置": "ip vrf forwarding CTVPN-CTC-NMAN",
+      "错误的配置": "ip vrf forwarding 2B_RAN",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 2B_RAN",
+      "配置块序号": 54
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 1,
+      "正确的配置": "interface <*>",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 55
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 1,
+      "正确的配置": "create interface PFU-0/2/0 port 3 -> bind mac <*> index 1",
+      "错误的配置": "bind mac <*> index 1 -> create interface PFU-0/2/0 port 3",
+      "错误类型": "ORDER_DEPENDENCY_ERROR",
+      "错误描述": "顺序依赖错误",
+      "配置块序号": 56
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 3,
+      "正确的配置": "sensor-group <*> sample-interval 30000",
+      "错误的配置": "sensor-group 999999 sample-interval 30000",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配",
+      "配置块序号": 57
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 2,
+      "正确的配置": "bind mac <*> index 1",
+      "错误的配置": "bidn mac <*> index 1",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误",
+      "配置块序号": 58
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 6,
+      "正确的配置": "ipv6 enable",
+      "错误的配置": "ipv6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致",
+      "配置块序号": 59
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 1,
+      "正确的配置": "ip vrf <*>",
+      "错误的配置": "ip vrf 2B_RAN",
+      "错误类型": "DEPENDENCY_MISSING",
+      "错误描述": "引用了真实但未在当前配置中定义的VRF: 2B_RAN",
+      "配置块序号": 60
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 1,
+      "正确的配置": "route-map rpToRR-DenyCGN permit 20",
+      "错误的配置": "route-map rpToRR-DenyCGN permit 999999",
+      "错误类型": "PARAM_TYPE_MISMATCH",
+      "错误描述": "参数类型不匹配",
+      "配置块序号": 61
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 2,
+      "正确的配置": "bind mac <*> index 1",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 62
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 6,
+      "正确的配置": "tacplus group-server js.admin.tacacs",
+      "错误的配置": "<该行缺失>",
+      "错误类型": "MISSING_STATEMENT",
+      "错误描述": "删除了必选语句",
+      "配置块序号": 63,
+      "计划错误类型": "RESOURCE_CONFLICT"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 2,
+      "正确的配置": "policy-map af4-cs6-cs7",
+      "错误的配置": "policy-map af4-cs6-cs7  ← 重复行",
+      "错误类型": "REDUNDANT_STATEMENT",
+      "错误描述": "第2行被重复，冗余语句",
+      "配置块序号": 64
+    }
+  ]
+}

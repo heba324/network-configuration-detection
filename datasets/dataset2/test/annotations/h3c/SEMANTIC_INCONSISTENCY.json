@@ -1,0 +1,523 @@
+{
+  "vendor": "h3c",
+  "dataset": "test_dataset_2",
+  "错误类型": "SEMANTIC_INCONSISTENCY",
+  "错误类型描述": "语义不一致（shutdown/enable/active 等运行语义矛盾）",
+  "实际模板占比": "6.07%",
+  "数据集调整占比": "4.00%",
+  "错误数量": 64,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 72,
+      "正确的配置": "lldp global enable",
+      "错误的配置": "lldp global disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 1237,
+      "正确的配置": "switchover auto enable",
+      "错误的配置": "switchover auto disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 1562,
+      "正确的配置": "undo tunnel-alarm enable",
+      "错误的配置": "undo tunnel-alarm disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 1981,
+      "正确的配置": "segment-routing ipv6 locator SRV6-GW auto-sid-disable",
+      "错误的配置": "segment-routing ipv6 locator SRV6-GW auto-sid-enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 2269,
+      "正确的配置": "igmp authorization-enable",
+      "错误的配置": "igmp authorization-disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 503,
+      "正确的配置": "peer pgToRR enable",
+      "错误的配置": "peer pgToRR disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 495,
+      "正确的配置": "peer pgToRR-v6 enable",
+      "错误的配置": "peer pgToRR-v6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 1168,
+      "正确的配置": "igmp enable",
+      "错误的配置": "igmp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 1213,
+      "正确的配置": "igmp enable",
+      "错误的配置": "igmp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 1200,
+      "正确的配置": "igmp enable",
+      "错误的配置": "igmp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 1310,
+      "正确的配置": "server-load-sharing enable",
+      "错误的配置": "server-load-sharing disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 535,
+      "正确的配置": "peer <*> enable",
+      "错误的配置": "peer <*> disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 1817,
+      "正确的配置": "peer pgToRR-v6 enable",
+      "错误的配置": "peer pgToRR-v6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 1215,
+      "正确的配置": "igmp authorization-enable",
+      "错误的配置": "igmp authorization-disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 2067,
+      "正确的配置": "isis bfd enable",
+      "错误的配置": "isis bfd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 1979,
+      "正确的配置": "segment-routing ipv6 locator SRV6-BoCe auto-sid-disable",
+      "错误的配置": "segment-routing ipv6 locator SRV6-BoCe auto-sid-enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 95,
+      "正确的配置": "password-recovery enable",
+      "错误的配置": "password-recovery disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 1848,
+      "正确的配置": "peer pgToRR-v6 enable",
+      "错误的配置": "peer pgToRR-v6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 362,
+      "正确的配置": "isis ipv6 bfd enable",
+      "错误的配置": "isis ipv6 bfd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 2194,
+      "正确的配置": "password-recovery enable",
+      "错误的配置": "password-recovery disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 696,
+      "正确的配置": "domain default enable js.admin.tacacs",
+      "错误的配置": "domain default disable js.admin.tacacs",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 424,
+      "正确的配置": "mpls ldp enable",
+      "错误的配置": "mpls ldp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 1982,
+      "正确的配置": "segment-routing ipv6 locator SRV6-ZWZX auto-sid-disable",
+      "错误的配置": "segment-routing ipv6 locator SRV6-ZWZX auto-sid-enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 1622,
+      "正确的配置": "fast-reroute microloop-avoidance enable",
+      "错误的配置": "fast-reroute microloop-avoidance disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 1071,
+      "正确的配置": "ppp authentication-mode chap ms-chap ms-chap-v2 pap domain default enable 163.js",
+      "错误的配置": "ppp authentication-mode chap ms-chap ms-chap-v2 pap domain default disable 163.js",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 1857,
+      "正确的配置": "peer pgToRR-v6 enable",
+      "错误的配置": "peer pgToRR-v6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 1261,
+      "正确的配置": "ssh server enable",
+      "错误的配置": "ssh server disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 2048,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 2317,
+      "正确的配置": "peer pgToRR-v6 enable",
+      "错误的配置": "peer pgToRR-v6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 77,
+      "正确的配置": "ptp path-trace disable",
+      "错误的配置": "ptp path-trace enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 78,
+      "正确的配置": "ptp clock-state enable",
+      "错误的配置": "ptp clock-state disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 1183,
+      "正确的配置": "igmp authorization-enable",
+      "错误的配置": "igmp authorization-disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 1202,
+      "正确的配置": "igmp authorization-enable",
+      "错误的配置": "igmp authorization-disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 1729,
+      "正确的配置": "mpls enable",
+      "错误的配置": "mpls disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 2091,
+      "正确的配置": "isis ipv6 enable 800",
+      "错误的配置": "isis ipv6 disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 421,
+      "正确的配置": "isis ipv6 bfd enable",
+      "错误的配置": "isis ipv6 bfd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 2104,
+      "正确的配置": "mpls ldp enable",
+      "错误的配置": "mpls ldp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 3,
+      "正确的配置": "hardware bfd enable",
+      "错误的配置": "hardware bfd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 1637,
+      "正确的配置": "password-recovery enable",
+      "错误的配置": "password-recovery disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 330,
+      "正确的配置": "isis bfd enable",
+      "错误的配置": "isis bfd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 1538,
+      "正确的配置": "default-lac-group enable",
+      "错误的配置": "default-lac-group disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 2222,
+      "正确的配置": "bfd enable template CUSP-BFD",
+      "错误的配置": "bfd disable template CUSP-BFD",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 1977,
+      "正确的配置": "segment-routing ipv6 locator SRV6-5G2B auto-sid-disable",
+      "错误的配置": "segment-routing ipv6 locator SRV6-5G2B auto-sid-enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 915,
+      "正确的配置": "password-recovery enable",
+      "错误的配置": "password-recovery disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 52,
+      "正确的配置": "fast-reroute microloop-avoidance enable",
+      "错误的配置": "fast-reroute microloop-avoidance disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 1079,
+      "正确的配置": "ppp authentication-mode chap ms-chap ms-chap-v2 pap domain default enable vod",
+      "错误的配置": "ppp authentication-mode chap ms-chap ms-chap-v2 pap domain default disable vod",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 657,
+      "正确的配置": "ntp-service enable",
+      "错误的配置": "ntp-service disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 1634,
+      "正确的配置": "segment-routing ipv6 locator SRV6-ZWZX auto-sid-disable",
+      "错误的配置": "segment-routing ipv6 locator SRV6-ZWZX auto-sid-enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 2232,
+      "正确的配置": "l2vpn enable",
+      "错误的配置": "l2vpn disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 63,
+      "正确的配置": "segment-routing ipv6 locator SRV6-ZWZX auto-sid-disable",
+      "错误的配置": "segment-routing ipv6 locator SRV6-ZWZX auto-sid-enable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 284,
+      "正确的配置": "shutdown",
+      "错误的配置": "undo shutdown",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 514,
+      "正确的配置": "peer pgToRR-v6 enable",
+      "错误的配置": "peer pgToRR-v6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 1905,
+      "正确的配置": "peer pgToDCGW enable",
+      "错误的配置": "peer pgToDCGW disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 365,
+      "正确的配置": "mpls enable",
+      "错误的配置": "mpls disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 10,
+      "正确的配置": "forward-path-detection enable",
+      "错误的配置": "forward-path-detection disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 383,
+      "正确的配置": "isis enable 800",
+      "错误的配置": "isis disable 800",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 422,
+      "正确的配置": "mpls enable",
+      "错误的配置": "mpls disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 1170,
+      "正确的配置": "igmp authorization-enable",
+      "错误的配置": "igmp authorization-disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 2330,
+      "正确的配置": "peer pgToRR-v6 enable",
+      "错误的配置": "peer pgToRR-v6 disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 420,
+      "正确的配置": "isis bfd enable",
+      "错误的配置": "isis bfd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 391,
+      "正确的配置": "isis bfd enable",
+      "错误的配置": "isis bfd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 1281,
+      "正确的配置": "server-load-sharing enable",
+      "错误的配置": "server-load-sharing disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 367,
+      "正确的配置": "mpls ldp enable",
+      "错误的配置": "mpls ldp disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 2098,
+      "正确的配置": "isis bfd enable",
+      "错误的配置": "isis bfd disable",
+      "错误类型": "SEMANTIC_INCONSISTENCY",
+      "错误描述": "语义不一致"
+    }
+  ]
+}

@@ -1,0 +1,527 @@
+{
+  "vendor": "h3c",
+  "dataset": "train_dataset2",
+  "split": "train",
+  "错误类型": "SYNTAX_ERROR",
+  "错误类型别名": [
+    "SYNTAX_ERROR"
+  ],
+  "错误类型描述": "语法/拼写错误",
+  "实际模板占比": "6.07%",
+  "数据集调整占比": "4.00%",
+  "错误数量": 64,
+  "details": [
+    {
+      "错误序号": 1,
+      "错误行号": 1269,
+      "正确的配置": "ntp-service peer acl 2579",
+      "错误的配置": "ntp-servce peer acl 2579",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 2,
+      "错误行号": 2411,
+      "正确的配置": "nat log bandwidth-usage threshold <*>",
+      "错误的配置": "nat log bandwidth-usaeg threshold <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 3,
+      "错误行号": 2137,
+      "正确的配置": "undo peer <IPV4> timer",
+      "错误的配置": "unod peer <IPV4> timer",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 4,
+      "错误行号": 2112,
+      "正确的配置": "bfd min-receive-interval 30",
+      "错误的配置": "bfd min-receive-intervla 30",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 5,
+      "错误行号": 1008,
+      "正确的配置": "ipv6 pool <*> odap pool-index <*>",
+      "错误的配置": "ip6v pool <*> odap pool-index <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 6,
+      "错误行号": 785,
+      "正确的配置": "client 2 binding interface <*> timeslot 16-17",
+      "错误的配置": "client 2 binding interfce <*> timeslot 16-17",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 7,
+      "错误行号": 328,
+      "正确的配置": "isis small-hello",
+      "错误的配置": "issi small-hello",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 8,
+      "错误行号": 453,
+      "正确的配置": "bfd multi-hop min-transmit-interval <*>",
+      "错误的配置": "bfd multi-hpo min-transmit-interval <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 9,
+      "错误行号": 380,
+      "正确的配置": "link-delay down msec <*>",
+      "错误的配置": "link-delya down msec <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 10,
+      "错误行号": 1668,
+      "正确的配置": "link-aggregation mode dynamic",
+      "错误的配置": "link-aggregatino mode dynamic",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 11,
+      "错误行号": 783,
+      "正确的配置": "bind interface <INTERFACE> phy-number <*>",
+      "错误的配置": "bind interfce <INTERFACE> phy-number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 12,
+      "错误行号": 913,
+      "正确的配置": "protocol-tunnel vxlan <*> source <*> destination <*> vpn-instance CP2UP_L3VPN_H3C",
+      "错误的配置": "protocl-tunnel vxlan <*> source <*> destination <*> vpn-instance CP2UP_L3VPN_H3C",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 13,
+      "错误行号": 1334,
+      "正确的配置": "domain name <*>",
+      "错误的配置": "domani name <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 14,
+      "错误行号": 1192,
+      "正确的配置": "ip subscriber nas-port-id format cn-telecom version5.0",
+      "错误的配置": "ip subscribre nas-port-id format cn-telecom version5.0",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 15,
+      "错误行号": 1700,
+      "正确的配置": "qos trust auto",
+      "错误的配置": "qos truts auto",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 16,
+      "错误行号": 1415,
+      "正确的配置": "authorization-attribute user-priority outbound 5",
+      "错误的配置": "authorization-attribute user-prority outbound 5",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 17,
+      "错误行号": 2158,
+      "正确的配置": "irf link-detect-time 100",
+      "错误的配置": "irf link-detect-tiem 100",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 18,
+      "错误行号": 587,
+      "正确的配置": "locator SRV6-5G2C ipv6-prefix <*> 84 static 12 args 16",
+      "错误的配置": "locator SRV6-5G2C ipv6-prefx <*> 84 static 12 args 16",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 19,
+      "错误行号": 198,
+      "正确的配置": "segment-routing ipv6 best-effort",
+      "错误的配置": "segment-routign ipv6 best-effort",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 20,
+      "错误行号": 415,
+      "正确的配置": "isis circuit-level level-2",
+      "错误的配置": "issi circuit-level level-2",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 21,
+      "错误行号": 839,
+      "正确的配置": "track 130 list boolean or",
+      "错误的配置": "trakc 130 list boolean or",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 22,
+      "错误行号": 340,
+      "正确的配置": "qos apply qmprofile NMAN1P4Q",
+      "错误的配置": "qos appyl qmprofile NMAN1P4Q",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 23,
+      "错误行号": 1692,
+      "正确的配置": "vlan-type dot1q vid <*>",
+      "错误的配置": "vlan-tyep dot1q vid <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 24,
+      "错误行号": 969,
+      "正确的配置": "gateway <*> mask <*>",
+      "错误的配置": "gatewya <*> mask <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 25,
+      "错误行号": 1517,
+      "正确的配置": "local-user adminnocsj@admin-local class manage",
+      "错误的配置": "local-usre adminnocsj@admin-local class manage",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 26,
+      "错误行号": 823,
+      "正确的配置": "track 110 list boolean or",
+      "错误的配置": "trakc 110 list boolean or",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 27,
+      "错误行号": 335,
+      "正确的配置": "mpls mtu 9000",
+      "错误的配置": "mpsl mtu 9000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 28,
+      "错误行号": 1193,
+      "正确的配置": "pppoe-server access-line-id bas-info",
+      "错误的配置": "pppoe-servre access-line-id bas-info",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 29,
+      "错误行号": 359,
+      "正确的配置": "isis small-hello",
+      "错误的配置": "issi small-hello",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 30,
+      "错误行号": 632,
+      "正确的配置": "protocol bgp4+ nexthop recursive-lookup route-policy <*>",
+      "错误的配置": "protocl bgp4+ nexthop recursive-lookup route-policy <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 31,
+      "错误行号": 1390,
+      "正确的配置": "authorization-attribute user-priority inbound 0",
+      "错误的配置": "authorization-attribute user-prority inbound 0",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 32,
+      "错误行号": 321,
+      "正确的配置": "pim sm",
+      "错误的配置": "pim smx",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 33,
+      "错误行号": 610,
+      "正确的配置": "line con 0 1",
+      "错误的配置": "lien con 0 1",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 34,
+      "错误行号": 217,
+      "正确的配置": "interface <*>",
+      "错误的配置": "interfce <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 35,
+      "错误行号": 2366,
+      "正确的配置": "segment-routing ipv6 best-effort evpn",
+      "错误的配置": "segment-routign ipv6 best-effort evpn",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 36,
+      "错误行号": 22,
+      "正确的配置": "lacp system-mac <*>",
+      "错误的配置": "lapc system-mac <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 37,
+      "错误行号": 370,
+      "正确的配置": "qos apply qmprofile NMAN1P4Q",
+      "错误的配置": "qos appyl qmprofile NMAN1P4Q",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 38,
+      "错误行号": 555,
+      "正确的配置": "network <IPV4> <IPV4>",
+      "错误的配置": "netwrk <IPV4> <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 39,
+      "错误行号": 76,
+      "正确的配置": "ptp domain 24",
+      "错误的配置": "ptp domani 24",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 40,
+      "错误行号": 1667,
+      "正确的配置": "isis silent",
+      "错误的配置": "issi silent",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 41,
+      "错误行号": 1005,
+      "正确的配置": "ip pool-group <*>",
+      "错误的配置": "ip pool-gropu <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 42,
+      "错误行号": 1795,
+      "正确的配置": "additional-paths select-best 16",
+      "错误的配置": "additional-patsh select-best 16",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 43,
+      "错误行号": 262,
+      "正确的配置": "igmp static-group <IPV4> inc-step-mask <IPV4> number <*>",
+      "错误的配置": "igpm static-group <IPV4> inc-step-mask <IPV4> number <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 44,
+      "错误行号": 1971,
+      "正确的配置": "fast-reroute microloop-avoidance rib-update-delay 30000",
+      "错误的配置": "fast-rerouet microloop-avoidance rib-update-delay 30000",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 45,
+      "错误行号": 1245,
+      "正确的配置": "failure-recovery-switch enable delay 1800",
+      "错误的配置": "failure-recovery-switch enble delay 1800",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 46,
+      "错误行号": 868,
+      "正确的配置": "track 230 list boolean or",
+      "错误的配置": "trakc 230 list boolean or",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 47,
+      "错误行号": 1531,
+      "正确的配置": "authorization-attribute user-role network-operator",
+      "错误的配置": "authorization-attribute user-role netwrk-operator",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 48,
+      "错误行号": 1438,
+      "正确的配置": "authorization ppp radius-scheme js.itv.radius none",
+      "错误的配置": "authorizatino ppp radius-scheme js.itv.radius none",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 49,
+      "错误行号": 282,
+      "正确的配置": "port link-mode route",
+      "错误的配置": "potr link-mode route",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 50,
+      "错误行号": 1583,
+      "正确的配置": "connection <*>",
+      "错误的配置": "connectino <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 51,
+      "错误行号": 1840,
+      "正确的配置": "preference 20 200 200",
+      "错误的配置": "preferenec 20 200 200",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 52,
+      "错误行号": 487,
+      "正确的配置": "undo peer <IPV6> timer",
+      "错误的配置": "unod peer <IPV6> timer",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 53,
+      "错误行号": 1088,
+      "正确的配置": "ip address <*> <*>",
+      "错误的配置": "ip adress <*> <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 54,
+      "错误行号": 767,
+      "正确的配置": "peer <IPV6> group pgToRR-v6",
+      "错误的配置": "pere <IPV6> group pgToRR-v6",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 55,
+      "错误行号": 2088,
+      "正确的配置": "ip address <IPV4> <IPV4>",
+      "错误的配置": "ip adress <IPV4> <IPV4>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 56,
+      "错误行号": 240,
+      "正确的配置": "igmp vsrp-instance <*>",
+      "错误的配置": "igpm vsrp-instance <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 57,
+      "错误行号": 1957,
+      "正确的配置": "peer pgToRR-v6 password cipher <PASSWORD>",
+      "错误的配置": "pere pgToRR-v6 password cipher <PASSWORD>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 58,
+      "错误行号": 1307,
+      "正确的配置": "user-name-format keep-original",
+      "错误的配置": "user-name-formta keep-original",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 59,
+      "错误行号": 233,
+      "正确的配置": "xconnect vsi <*> access-mode ethernet leaf",
+      "错误的配置": "xconnetc vsi <*> access-mode ethernet leaf",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 60,
+      "错误行号": 316,
+      "正确的配置": "description <*>",
+      "错误的配置": "descrption <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 61,
+      "错误行号": 1969,
+      "正确的配置": "fast-reroute ti-lfa",
+      "错误的配置": "fast-rerouet ti-lfa",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 62,
+      "错误行号": 2329,
+      "正确的配置": "import-route unr",
+      "错误的配置": "import-rouet unr",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 63,
+      "错误行号": 1364,
+      "正确的配置": "accounting start-delay 35",
+      "错误的配置": "accountign start-delay 35",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    },
+    {
+      "错误序号": 64,
+      "错误行号": 1037,
+      "正确的配置": "vlan-type dot1q vid <*>",
+      "错误的配置": "vlan-tyep dot1q vid <*>",
+      "错误类型": "SYNTAX_ERROR",
+      "错误描述": "语法/拼写错误"
+    }
+  ]
+}
